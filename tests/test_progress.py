@@ -36,6 +36,21 @@ class ProgressTrackerTest(unittest.TestCase):
         self.assertEqual(len(self.tracker.active_hypotheses), 0)
         self.assertEqual(self.tracker.progress.hypotheses[0].status, "refuted")
 
+    def test_open_hypotheses_includes_active_and_contested(self):
+        # open_hypotheses drives the investigation loop: untested (active) AND
+        # contested (unresolved) hypotheses stay open; supported/refuted are done.
+        self.tracker.add_hypothesis("H1", "untested")
+        self.tracker.add_hypothesis("H2", "conflicting evidence")
+        self.tracker.add_hypothesis("H3", "clearly supported")
+        self.tracker.add_hypothesis("H4", "clearly refuted")
+        self.tracker.update_hypothesis("H2", "contested")
+        self.tracker.update_hypothesis("H3", "supported")
+        self.tracker.update_hypothesis("H4", "refuted")
+
+        self.assertEqual({h.id for h in self.tracker.open_hypotheses}, {"H1", "H2"})
+        # active_hypotheses stays strict (untested only).
+        self.assertEqual({h.id for h in self.tracker.active_hypotheses}, {"H1"})
+
     def test_record_failure(self):
         self.tracker.record_failure(
             "log2timeline",

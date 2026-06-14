@@ -259,6 +259,19 @@ class ProgressTracker:
         return [h for h in self.progress.hypotheses if h.status == "active"]
 
     @property
+    def open_hypotheses(self) -> list[Hypothesis]:
+        """Hypotheses still worth investigating: untested ("active") AND
+        "contested" (supported by some evidence but contradicted by other —
+        unresolved). Cleanly "supported"/"refuted"/"inconclusive" ones are
+        resolved and excluded. The investigation loop drives off this set so a
+        contested hypothesis is re-investigated in later rounds (and its status
+        re-evaluated) instead of silently ending the run with unused round budget.
+        """
+        return [
+            h for h in self.progress.hypotheses if h.status in ("active", "contested")
+        ]
+
+    @property
     def failed_tools(self) -> set[str]:
         """Tools that have failed — sub-agents should avoid these."""
         return {fa.tool for fa in self.progress.failed_approaches}

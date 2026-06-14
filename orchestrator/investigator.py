@@ -344,7 +344,10 @@ class Investigator:
             while self.progress.can_continue:
                 round_num = self.progress.iteration + 1
 
-                active = self.progress.active_hypotheses
+                # "open" = untested (active) + contested (conflicting evidence,
+                # still unresolved). Contested hypotheses are re-investigated in
+                # later rounds rather than ending the run with budget to spare.
+                active = self.progress.open_hypotheses
                 if not active:
                     break
 
@@ -384,8 +387,9 @@ class Investigator:
                 if not self.progress.increment_iteration():
                     break
 
-                # Done once no hypotheses remain open and none were proposed.
-                if not self.progress.active_hypotheses:
+                # Done once no hypotheses remain open (active or contested) and
+                # none were proposed.
+                if not self.progress.open_hypotheses:
                     break
 
             # The investigation itself (triage, hypothesis loop, verification,
@@ -1290,7 +1294,9 @@ If nothing new is warranted, return empty lists."""
         if not findings:
             return
 
-        for hypothesis in self.progress.active_hypotheses:
+        # Re-evaluate open hypotheses (active + contested) so a later round can
+        # resolve a previously-contested one — not just the strictly-"active" set.
+        for hypothesis in self.progress.open_hypotheses:
             h_findings = [f for f in findings if f.hypothesis_id == hypothesis.id]
             if not h_findings:
                 continue

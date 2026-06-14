@@ -123,6 +123,22 @@ class HypothesisEvaluationTest(unittest.TestCase):
         self.assertTrue(h1.evidence_for)
         self.assertTrue(h1.evidence_against)
 
+    def test_contested_hypothesis_is_reevaluated(self):
+        # Regression: _evaluate_hypotheses used to iterate only strictly-"active"
+        # hypotheses, so a "contested" one was never revisited — the run ended
+        # with unused round budget. It must now re-evaluate contested hypotheses
+        # so a later round's findings can resolve them.
+        self.inv.progress.start("inv-test", "/cases/img.E01", "disk")
+        self.inv.progress.add_hypothesis("H1", "Malware persistence")
+        self.inv.progress.update_hypothesis("H1", "contested")
+
+        sup = Finding.new("Confirmed persistence via Run key", "confirmed", ["e9"])
+        sup.hypothesis_id = "H1"
+        self.inv._evaluate_hypotheses([sup])
+
+        h1 = next(h for h in self.inv.progress.progress.hypotheses if h.id == "H1")
+        self.assertEqual(h1.status, "supported")
+
     def test_evaluate_skips_hypothesis_with_no_findings(self):
         self.inv.progress.start("inv-test", "/cases/img.E01", "disk")
         self.inv.progress.add_hypothesis("H1", "Malware")
