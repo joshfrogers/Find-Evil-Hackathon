@@ -1,0 +1,46 @@
+{
+  "_comment": "Ground-truth baseline template. Copy this file to <case_id>.json and replace placeholder values. Loader strips _comment / _doc_* keys (they're never required). Schema enforced by accuracy/baseline.py.",
+  "_doc_case_id": "REQUIRED. Stable unique identifier (lowercase, hyphenated). Used as the directory name under tests/fixtures/snapshots/<case_id>/ and reported in accuracy_score.baseline_id.",
+  "case_id": "REPLACE-ME",
+  "_doc_evidence_image": "REQUIRED. Filename of the source image, for human cross-referencing only.",
+  "evidence_image": "example.E01",
+  "_doc_evidence_type": "Optional. One of: disk, memory, pcap, logs. Defaults to disk.",
+  "evidence_type": "disk",
+  "_doc_source": "Optional. Where this ground truth came from — analyst report, SAMPLE_REPORT.md transcoding, vendor write-up, etc. Useful for provenance.",
+  "source": "describe origin (e.g. transcoded from <doc>, validated against <image>)",
+  "_doc_todo_validate_against_image": "Optional flag for the v0 -> validated upgrade pass. Drop it once you have manually confirmed every finding against the actual evidence image.",
+  "todo_validate_against_image": true,
+  "_doc_attack_chains": "Optional. Group related findings into named chains for human readability. Not used by the scorer's matching logic — the link is via per-finding `attack_chain: AC-N`.",
+  "attack_chains": [
+    {
+      "id": "AC-1",
+      "name": "human-readable chain name",
+      "summary": "one-sentence narrative"
+    }
+  ],
+  "_doc_findings": "REQUIRED. List of ground-truth artifacts. Each entry needs at minimum `id` and `description`; everything else is optional but improves match quality.",
+  "_doc_finding_fields": {
+    "id": "REQUIRED. Stable identifier (e.g. B-001, B-002 ...). Reported back as matched_findings.baseline_id and missed_baseline_findings.",
+    "description": "REQUIRED. Plain-English description an analyst would write. Used for fuzzy description matching when no IOC is present.",
+    "attack_chain": "Optional. ID of the attack_chains entry this finding belongs to.",
+    "ioc_type": "Optional. One of: ip, domain, file_path, registry_key, hash. Match priority: scorer prefers exact IOC over fuzzy description.",
+    "ioc_value": "Optional. Normalized at match time (casing + slashes), so 'C:\\\\Temp\\\\evil.exe' matches 'c:/temp/EVIL.exe'. Leave blank if no IOC (e.g. timestomping, prefetch-only execution proof).",
+    "artifact_type": "Optional. mft, registry, evtx, prefetch, amcache, browser_history, etc. Informational only today; available for future filtering.",
+    "expected_confidence": "Optional. confirmed | inferred | possible. The level a correct agent would assign; not enforced by the scorer.",
+    "must_find": "Optional. Defaults to true. true => counts toward recall denominator. false => bonus credit only (agent gets credit for finding, no penalty for missing).",
+    "notes": "Optional. Free-form analyst notes — where to look, why it matters, common pitfalls. Surfaces in human review but not in the scoring metric."
+  },
+  "findings": [
+    {
+      "id": "B-001",
+      "attack_chain": "AC-1",
+      "description": "Example finding: registry Run key for persistence",
+      "ioc_type": "registry_key",
+      "ioc_value": "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run\\Example",
+      "artifact_type": "registry",
+      "expected_confidence": "confirmed",
+      "must_find": true,
+      "notes": "RegRipper on SOFTWARE hive; cross-check with svchost.exe payload location"
+    }
+  ]
+}

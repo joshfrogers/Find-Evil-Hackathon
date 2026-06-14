@@ -1,0 +1,201 @@
+{
+  "case_id": "NIST-DATALEAK-001",
+  "evidence_image": "cfreds_2015_data_leakage_rm#3_type3.E01",
+  "evidence_type": "disk",
+  "source": "NIST CFReDS 2015 Data Leakage Case (cfreds.nist.gov/data_leakage_case/data-leakage-case.html). Step-by-step answer key available at NIST. Enriched from VIGIA-REAL-002.",
+  "todo_validate_against_image": true,
+  "host_info": {
+    "os": "Windows",
+    "suspect_user": "Sr. Informant",
+    "suspect_email_work": "iaman.informant@nist.gov",
+    "suspect_email_personal": "iaman.informant.personal@gmail.com",
+    "conspirator_email": "spy.conspirator@nist.gov",
+    "suspect_ip": "10.11.11.128",
+    "pc_ip": "10.11.11.129"
+  },
+  "additional_evidence": [
+    "cfreds_2015_data_leakage_pc.7z.001",
+    "cfreds_2015_data_leakage_pc.7z.002",
+    "cfreds_2015_data_leakage_pc.7z.003",
+    "cfreds_2015_data_leakage_rm#3_type1.7z",
+    "cfreds_2015_data_leakage_rm#3_type2.7z"
+  ],
+  "attack_chains": [
+    {
+      "id": "AC-1",
+      "name": "Coordination & Planning",
+      "summary": "Email communication between Sr. Informant (iaman.informant@nist.gov) and conspirator (spy.conspirator@nist.gov) coordinating data requests and exfiltration plan."
+    },
+    {
+      "id": "AC-2",
+      "name": "Data Discovery & Collection",
+      "summary": "Suspect searches for and identifies sensitive corporate files, copies them to staging locations and removable media."
+    },
+    {
+      "id": "AC-3",
+      "name": "Exfiltration",
+      "summary": "Data exfiltrated via personal email (iaman.informant.personal@gmail.com), web services, and removable USB media. Files renamed to evade detection."
+    },
+    {
+      "id": "AC-4",
+      "name": "Anti-Forensics & Cover-Up",
+      "summary": "Installation and use of cleanup tools to destroy evidence of data access and exfiltration. File renaming and deletion to hide tracks."
+    }
+  ],
+  "findings": [
+    {
+      "id": "B-001",
+      "attack_chain": "AC-1",
+      "description": "Email correspondence between iaman.informant@nist.gov and spy.conspirator@nist.gov discussing data requests",
+      "ioc_type": "domain",
+      "ioc_value": "spy.conspirator@nist.gov",
+      "artifact_type": "email",
+      "expected_confidence": "confirmed",
+      "must_find": true,
+      "notes": "Coordination emails establish conspiracy. Look in Outlook PST/OST, email client databases, or webmail cache. Shows planning and intent."
+    },
+    {
+      "id": "B-002",
+      "attack_chain": "AC-3",
+      "description": "Personal Gmail account iaman.informant.personal@gmail.com used for data exfiltration",
+      "ioc_type": "domain",
+      "ioc_value": "iaman.informant.personal@gmail.com",
+      "artifact_type": "browser_history",
+      "expected_confidence": "confirmed",
+      "must_find": true,
+      "notes": "Personal email used to send corporate data outside the organization. Check browser history, email client config, sent items. T1567 - Exfiltration Over Web Service."
+    },
+    {
+      "id": "B-003",
+      "attack_chain": "AC-2",
+      "description": "Evidence of file searches for sensitive corporate data on the workstation",
+      "ioc_type": "",
+      "ioc_value": "",
+      "artifact_type": "registry",
+      "expected_confidence": "confirmed",
+      "must_find": true,
+      "notes": "Check Windows Search history (WordWheelQuery in NTUSER.DAT), Explorer TypedPaths, Recent docs. Shows suspect actively sought out sensitive files."
+    },
+    {
+      "id": "B-004",
+      "attack_chain": "AC-2",
+      "description": "Sensitive files copied to removable USB media (rm#3)",
+      "ioc_type": "",
+      "ioc_value": "",
+      "artifact_type": "usnjrnl",
+      "expected_confidence": "confirmed",
+      "must_find": true,
+      "notes": "USN Journal, shellbags, LNK files, or MFT entries showing file copy operations to removable drive. Cross-reference with USB device connection artifacts (SYSTEM\\MountedDevices, setupapi.dev.log). T1048 exfiltration channel."
+    },
+    {
+      "id": "B-005",
+      "attack_chain": "AC-3",
+      "description": "Files renamed with misleading extensions or names to evade detection during exfiltration",
+      "ioc_type": "",
+      "ioc_value": "",
+      "artifact_type": "filesystem",
+      "expected_confidence": "confirmed",
+      "must_find": true,
+      "notes": "File rename operations visible in USN Journal or MFT $FN vs $SI. Renamed files to disguise data type/content. T1564 - Hide Artifacts."
+    },
+    {
+      "id": "B-006",
+      "attack_chain": "AC-4",
+      "description": "Anti-forensic cleanup tool installed and executed on the system",
+      "ioc_type": "",
+      "ioc_value": "",
+      "artifact_type": "prefetch",
+      "expected_confidence": "confirmed",
+      "must_find": true,
+      "notes": "CCleaner or similar cleanup tool. Check prefetch files, program installation artifacts (Uninstall registry keys), Amcache. T1070 - Indicator Removal on Host."
+    },
+    {
+      "id": "B-007",
+      "attack_chain": "AC-2",
+      "description": "USB removable device connected to workstation (device serial number and connection timestamps)",
+      "ioc_type": "registry_key",
+      "ioc_value": "SYSTEM\\CurrentControlSet\\Enum\\USBSTOR",
+      "artifact_type": "registry",
+      "expected_confidence": "confirmed",
+      "must_find": true,
+      "notes": "USBSTOR registry entries, setupapi.dev.log first/last connection times. Links the removable media evidence (rm#3) to the suspect's PC. Essential for chain of custody."
+    },
+    {
+      "id": "B-008",
+      "attack_chain": "AC-1",
+      "description": "Work email account iaman.informant@nist.gov identifies the suspect user",
+      "ioc_type": "domain",
+      "ioc_value": "iaman.informant@nist.gov",
+      "artifact_type": "email",
+      "expected_confidence": "confirmed",
+      "must_find": true,
+      "notes": "Suspect's work identity. Found in email client configuration, Outlook profile, or account settings. Links workstation activity to the named insider."
+    },
+    {
+      "id": "B-009",
+      "attack_chain": "AC-3",
+      "description": "Network activity from suspect IP 10.11.11.128 showing data transfer",
+      "ioc_type": "ip",
+      "ioc_value": "10.11.11.128",
+      "artifact_type": "network",
+      "expected_confidence": "inferred",
+      "must_find": false,
+      "notes": "VIGIA key_iocs. Suspect's IP. May appear in network connection logs, browser history URLs, or SRUM network usage data."
+    },
+    {
+      "id": "B-010",
+      "attack_chain": "AC-2",
+      "description": "PC workstation IP 10.11.11.129 identified in authentication or network logs",
+      "ioc_type": "ip",
+      "ioc_value": "10.11.11.129",
+      "artifact_type": "evtx",
+      "expected_confidence": "inferred",
+      "must_find": false,
+      "notes": "VIGIA key_iocs. PC IP from auth_log context. May correlate with logon events or network shares accessed."
+    },
+    {
+      "id": "B-011",
+      "attack_chain": "AC-2",
+      "description": "LNK files or Recent documents showing access to sensitive corporate files",
+      "ioc_type": "",
+      "ioc_value": "",
+      "artifact_type": "filesystem",
+      "expected_confidence": "confirmed",
+      "must_find": false,
+      "notes": "Windows .lnk shortcut files in Recent folder preserve timestamps and paths of accessed files even after originals are deleted. Strong evidence of what was accessed and when."
+    },
+    {
+      "id": "B-012",
+      "attack_chain": "AC-3",
+      "description": "Browser history showing access to personal email or cloud storage services for exfiltration",
+      "ioc_type": "",
+      "ioc_value": "",
+      "artifact_type": "browser_history",
+      "expected_confidence": "confirmed",
+      "must_find": false,
+      "notes": "Web browser artifacts (Chrome History db, IE WebCacheV01.dat, Firefox places.sqlite) showing Gmail access, cloud uploads. Timestamps correlate with data collection phase."
+    },
+    {
+      "id": "B-013",
+      "attack_chain": "AC-4",
+      "description": "Evidence of file deletion or wiping activity post-exfiltration",
+      "ioc_type": "",
+      "ioc_value": "",
+      "artifact_type": "usnjrnl",
+      "expected_confidence": "inferred",
+      "must_find": false,
+      "notes": "USN Journal deletion entries, $Recycle.Bin artifacts, or cleanup tool logs showing deliberate destruction of evidence after exfiltration completed."
+    },
+    {
+      "id": "B-014",
+      "attack_chain": "AC-1",
+      "description": "Timeline correlation shows coherent sequence: request \u2192 search \u2192 copy \u2192 rename \u2192 exfiltrate \u2192 cleanup",
+      "ioc_type": "",
+      "ioc_value": "",
+      "artifact_type": "timeline",
+      "expected_confidence": "inferred",
+      "must_find": false,
+      "notes": "Super-timeline analysis (plaso/log2timeline) showing the attack sequence compressed into a suspicious timeframe. Supports intent/planning interpretation over coincidental activity."
+    }
+  ]
+}

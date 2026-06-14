@@ -1,0 +1,247 @@
+{
+  "case_id": "NIST-HACKING-001",
+  "evidence_image": "4Dell Latitude CPi.E01",
+  "evidence_type": "disk",
+  "source": "NIST CFReDS Hacking Case (cfreds-archive.nist.gov/Hacking_Case.html). Community-validated answers from multiple independent forensic writeups. Enriched from VIGIA-REAL-001. Note: NIST does not publish an official answer key \u2014 answers cross-validated across independent sources.",
+  "todo_validate_against_image": true,
+  "host_info": {
+    "os": "Windows XP Professional",
+    "hostname": "N-1A9ODN6ZXK4LQ",
+    "suspect_ip": "192.168.1.111",
+    "primary_user": "Mr. Evil",
+    "owner": "Greg Schardt",
+    "mac_address": "00:10:a4:93:3e:09"
+  },
+  "additional_evidence": [
+    "4Dell Latitude CPi.E02",
+    "SCHARDT.001",
+    "SCHARDT.002",
+    "SCHARDT.003",
+    "SCHARDT.004",
+    "SCHARDT.005",
+    "SCHARDT.006",
+    "SCHARDT.007"
+  ],
+  "attack_chains": [
+    {
+      "id": "AC-1",
+      "name": "System & User Identification",
+      "summary": "Registry analysis identifies the suspect (Greg Schardt), computer name (N-1A9ODN6ZXK4LQ), user account (Mr. Evil), timezone, and system configuration."
+    },
+    {
+      "id": "AC-2",
+      "name": "Network Reconnaissance & War Driving",
+      "summary": "Wireless network scanning tools (Network Stumbler) and network discovery tools (Look@LAN) used for active reconnaissance of WiFi networks. Packet captures of third-party traffic found."
+    },
+    {
+      "id": "AC-3",
+      "name": "Communication & Identity",
+      "summary": "mIRC client configured with aliases (Mr, mrevilrulez), Yahoo Messenger account (mrevil2000), and email accounts (mrevilrulez@yahoo.com, whoknowsme@sbcglobal.net) establish the suspect's online identity and communication channels."
+    },
+    {
+      "id": "AC-4",
+      "name": "Credential Theft & Network Sniffing",
+      "summary": "Ethereal/packet capture tools used to intercept network traffic and capture credentials from wireless networks."
+    }
+  ],
+  "findings": [
+    {
+      "id": "B-001",
+      "attack_chain": "AC-1",
+      "description": "Computer name identified as N-1A9ODN6ZXK4LQ from registry SYSTEM\\ControlSet001\\Control\\ComputerName",
+      "ioc_type": "registry_key",
+      "ioc_value": "SYSTEM\\ControlSet001\\Control\\ComputerName\\ComputerName",
+      "artifact_type": "registry",
+      "expected_confidence": "confirmed",
+      "must_find": true,
+      "notes": "NIST Q2. Found in SYSTEM hive. Hostname N-1A9ODN6ZXK4LQ."
+    },
+    {
+      "id": "B-002",
+      "attack_chain": "AC-1",
+      "description": "Registered owner identified as Greg Schardt from SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\RegisteredOwner",
+      "ioc_type": "registry_key",
+      "ioc_value": "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion",
+      "artifact_type": "registry",
+      "expected_confidence": "confirmed",
+      "must_find": true,
+      "notes": "NIST Q1. RegisteredOwner = Greg Schardt. Links physical identity to the device."
+    },
+    {
+      "id": "B-003",
+      "attack_chain": "AC-1",
+      "description": "User account Mr. Evil (SID S-1-5-21-2000478354-688789844-1708537768-1003) exists with last login evidence",
+      "ioc_type": "registry_key",
+      "ioc_value": "SAM\\Domains\\Account\\Users",
+      "artifact_type": "registry",
+      "expected_confidence": "confirmed",
+      "must_find": true,
+      "notes": "NIST Q3/Q6/Q7. Mr. Evil account with known SID. Was last to log in. Has admin privileges (member of Administrators group)."
+    },
+    {
+      "id": "B-004",
+      "attack_chain": "AC-1",
+      "description": "System timezone set to Central Standard Time (UTC-6)",
+      "ioc_type": "registry_key",
+      "ioc_value": "SYSTEM\\ControlSet001\\Control\\TimeZoneInformation",
+      "artifact_type": "registry",
+      "expected_confidence": "confirmed",
+      "must_find": true,
+      "notes": "NIST Q4. TimeZoneInformation in SYSTEM hive. Important for timestamp correlation."
+    },
+    {
+      "id": "B-005",
+      "attack_chain": "AC-1",
+      "description": "Network configuration shows IP 192.168.1.111 and MAC 00:10:a4:93:3e:09",
+      "ioc_type": "ip",
+      "ioc_value": "192.168.1.111",
+      "artifact_type": "registry",
+      "expected_confidence": "confirmed",
+      "must_find": true,
+      "notes": "NIST Q9/Q10. Found in SYSTEM\\ControlSet001\\Services\\Tcpip\\Parameters\\Interfaces. MAC address 00:10:a4:93:3e:09 from network adapter config."
+    },
+    {
+      "id": "B-006",
+      "attack_chain": "AC-3",
+      "description": "Look@LAN configuration file C:\\Program Files\\Look@LAN\\irunin.ini links Greg Schardt to alias Mr. Evil",
+      "ioc_type": "file_path",
+      "ioc_value": "C:\\Program Files\\Look@LAN\\irunin.ini",
+      "artifact_type": "filesystem",
+      "expected_confidence": "confirmed",
+      "must_find": true,
+      "notes": "NIST Q12. Critical finding: irunin.ini contains registration to Greg Schardt AND references Mr. Evil alias. This is the key link between real identity and hacker persona."
+    },
+    {
+      "id": "B-007",
+      "attack_chain": "AC-3",
+      "description": "mIRC configuration C:\\Program Files\\mIRC\\mirc.ini shows user=Mini Me, nick=Mr, alternate nick=mrevilrulez",
+      "ioc_type": "file_path",
+      "ioc_value": "C:\\Program Files\\mIRC\\mirc.ini",
+      "artifact_type": "filesystem",
+      "expected_confidence": "confirmed",
+      "must_find": true,
+      "notes": "NIST Q13. mIRC installed and configured. Nick aliases connect to the Mr. Evil persona. Check mirc.ini [mirc] section for user, nick, anick fields."
+    },
+    {
+      "id": "B-008",
+      "attack_chain": "AC-2",
+      "description": "Network Stumbler (wireless network scanner/war driving tool) installed and used",
+      "ioc_type": "file_path",
+      "ioc_value": "C:\\Program Files\\Network Stumbler",
+      "artifact_type": "filesystem",
+      "expected_confidence": "confirmed",
+      "must_find": true,
+      "notes": "NIST Q15. War driving tool for discovering wireless networks. Look in Program Files, prefetch, or registry Uninstall keys. May also check for .ns1 scan result files."
+    },
+    {
+      "id": "B-009",
+      "attack_chain": "AC-4",
+      "description": "Ethereal (packet capture/network sniffer) installed for intercepting network traffic",
+      "ioc_type": "file_path",
+      "ioc_value": "C:\\Program Files\\Ethereal",
+      "artifact_type": "filesystem",
+      "expected_confidence": "confirmed",
+      "must_find": true,
+      "notes": "NIST Q14. Ethereal (predecessor to Wireshark) installed. Used for capturing packets on wireless networks. Check for .pcap/.cap files as evidence of actual use."
+    },
+    {
+      "id": "B-010",
+      "attack_chain": "AC-2",
+      "description": "Look@LAN network discovery tool installed for reconnaissance",
+      "ioc_type": "file_path",
+      "ioc_value": "C:\\Program Files\\Look@LAN",
+      "artifact_type": "filesystem",
+      "expected_confidence": "confirmed",
+      "must_find": true,
+      "notes": "NIST Q12. Network enumeration tool. The irunin.ini file within provides the identity link. Also check for scan results."
+    },
+    {
+      "id": "B-011",
+      "attack_chain": "AC-3",
+      "description": "Email account mrevilrulez@yahoo.com found in application configuration",
+      "ioc_type": "domain",
+      "ioc_value": "mrevilrulez@yahoo.com",
+      "artifact_type": "filesystem",
+      "expected_confidence": "confirmed",
+      "must_find": true,
+      "notes": "VIGIA key_iocs. Found in email client or mIRC config. Connects the Mr. Evil alias to a communication channel. Also check Outlook Express .dbx files."
+    },
+    {
+      "id": "B-012",
+      "attack_chain": "AC-3",
+      "description": "Yahoo Messenger account mrevil2000 configured on the system",
+      "ioc_type": "file_path",
+      "ioc_value": "mrevil2000",
+      "artifact_type": "registry",
+      "expected_confidence": "confirmed",
+      "must_find": false,
+      "notes": "VIGIA key_iocs. Yahoo Messenger profile ID. Check registry SOFTWARE\\Yahoo\\Pager or Yahoo Messenger program data folder."
+    },
+    {
+      "id": "B-013",
+      "attack_chain": "AC-3",
+      "description": "Secondary email whoknowsme@sbcglobal.net found in email configuration",
+      "ioc_type": "domain",
+      "ioc_value": "whoknowsme@sbcglobal.net",
+      "artifact_type": "filesystem",
+      "expected_confidence": "confirmed",
+      "must_find": false,
+      "notes": "VIGIA key_iocs. Additional email account. Check Outlook Express identity folders and .dbx files."
+    },
+    {
+      "id": "B-014",
+      "attack_chain": "AC-1",
+      "description": "Last system shutdown time recorded in registry (Windows XP stores in SYSTEM\\ControlSet001\\Control\\Windows\\ShutdownTime)",
+      "ioc_type": "registry_key",
+      "ioc_value": "SYSTEM\\ControlSet001\\Control\\Windows",
+      "artifact_type": "registry",
+      "expected_confidence": "confirmed",
+      "must_find": false,
+      "notes": "NIST Q5. ShutdownTime value in Windows key. Binary value needs to be decoded as FILETIME. Establishes timeline boundary."
+    },
+    {
+      "id": "B-015",
+      "attack_chain": "AC-4",
+      "description": "Network packet capture files (.pcap or .cap) found containing intercepted third-party traffic",
+      "ioc_type": "",
+      "ioc_value": "",
+      "artifact_type": "filesystem",
+      "expected_confidence": "inferred",
+      "must_find": false,
+      "notes": "Evidence of actual network sniffing/interception activity. Look for .pcap, .cap, .eth files in user directories or Ethereal output folders. Proves tools were actually used, not just installed."
+    },
+    {
+      "id": "B-016",
+      "attack_chain": "AC-1",
+      "description": "File hash MD5 aee4fcd9301c03b3b054623ca261959a for key evidence file",
+      "ioc_type": "hash",
+      "ioc_value": "aee4fcd9301c03b3b054623ca261959a",
+      "artifact_type": "file_metadata",
+      "expected_confidence": "confirmed",
+      "must_find": false,
+      "notes": "VIGIA key_iocs. MD5 hash for verification/chain of custody. From ART-004 file metadata context."
+    },
+    {
+      "id": "B-017",
+      "attack_chain": "AC-2",
+      "description": "Wireless network scan results or war driving logs found (Network Stumbler output)",
+      "ioc_type": "",
+      "ioc_value": "",
+      "artifact_type": "filesystem",
+      "expected_confidence": "inferred",
+      "must_find": false,
+      "notes": "Network Stumbler saves .ns1 files with discovered SSIDs, BSSIDs, channels, signal strength. Proves active reconnaissance was conducted, not just that tools were installed."
+    },
+    {
+      "id": "B-018",
+      "attack_chain": "AC-1",
+      "description": "Windows SID S-1-5-21-2000478354-688789844-1708537768-1003 confirms Mr. Evil account identity",
+      "ioc_type": "registry_key",
+      "ioc_value": "S-1-5-21-2000478354-688789844-1708537768-1003",
+      "artifact_type": "registry",
+      "expected_confidence": "confirmed",
+      "must_find": false,
+      "notes": "VIGIA key_iocs. The specific SID for Mr. Evil account. RID 1003 indicates third user account created. Correlates with SAM and ProfileList entries."
+    }
+  ]
+}

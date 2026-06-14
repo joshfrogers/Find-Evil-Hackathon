@@ -1,0 +1,131 @@
+{
+  "case_id": "sample-case",
+  "evidence_image": "base-sample-case-cdrive.E01",
+  "evidence_type": "disk",
+  "source": "transcoded from correlation/SAMPLE_REPORT.md (v0 ground truth)",
+  "todo_validate_against_image": true,
+  "attack_chains": [
+    {
+      "id": "AC-1",
+      "name": "svchost_update.exe full lifecycle",
+      "summary": "Drive-by download, file-write, Run-key + service persistence, execution, C2 callback."
+    },
+    {
+      "id": "AC-2",
+      "name": "Credential theft and lateral movement",
+      "summary": "Mimikatz credential harvest, NTLM auth to DC with stolen creds, PsExec lateral movement, MFT timestomping."
+    }
+  ],
+  "findings": [
+    {
+      "id": "B-001",
+      "attack_chain": "AC-1",
+      "description": "Browser history records download of svchost_update.exe from evil-update.example.com",
+      "ioc_type": "domain",
+      "ioc_value": "evil-update.example.com",
+      "artifact_type": "browser_history",
+      "expected_confidence": "confirmed",
+      "must_find": true,
+      "notes": "Initial infection vector. Browser cache / history under user profile."
+    },
+    {
+      "id": "B-002",
+      "attack_chain": "AC-1",
+      "description": "Suspicious executable C:\\Windows\\Temp\\svchost_update.exe written to disk",
+      "ioc_type": "file_path",
+      "ioc_value": "C:\\Windows\\Temp\\svchost_update.exe",
+      "artifact_type": "mft",
+      "expected_confidence": "confirmed",
+      "must_find": true,
+      "notes": "Dropped payload. Look in MFT, $LogFile, USN journal."
+    },
+    {
+      "id": "B-003",
+      "attack_chain": "AC-1",
+      "description": "Registry Run key persistence: HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run\\WindowsUpdate -> svchost_update.exe",
+      "ioc_type": "registry_key",
+      "ioc_value": "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run\\WindowsUpdate",
+      "artifact_type": "registry",
+      "expected_confidence": "confirmed",
+      "must_find": true,
+      "notes": "Primary persistence mechanism. RegRipper / hivexsh on SOFTWARE hive."
+    },
+    {
+      "id": "B-004",
+      "attack_chain": "AC-1",
+      "description": "Windows Event Log 7045: Service WindowsUpdateSvc installed pointing to svchost_update.exe",
+      "ioc_type": "file_path",
+      "ioc_value": "C:\\Windows\\Temp\\svchost_update.exe",
+      "artifact_type": "evtx",
+      "expected_confidence": "confirmed",
+      "must_find": true,
+      "notes": "Secondary persistence. System.evtx event 7045."
+    },
+    {
+      "id": "B-005",
+      "attack_chain": "AC-1",
+      "description": "Prefetch confirms execution of SVCHOST_UPDATE.EXE at 02:15 UTC",
+      "ioc_type": "",
+      "ioc_value": "",
+      "artifact_type": "prefetch",
+      "expected_confidence": "confirmed",
+      "must_find": true,
+      "notes": "PECmd / prefetch parsing. Proves execution actually happened."
+    },
+    {
+      "id": "B-006",
+      "attack_chain": "AC-1",
+      "description": "Outbound C2 connection to 185.143.223.47:443 from svchost_update.exe",
+      "ioc_type": "ip",
+      "ioc_value": "185.143.223.47",
+      "artifact_type": "evtx",
+      "expected_confidence": "inferred",
+      "must_find": true,
+      "notes": "Sysmon network connect event or netstat artifact."
+    },
+    {
+      "id": "B-007",
+      "attack_chain": "AC-2",
+      "description": "PowerShell Event 4104 script block records Invoke-Mimikatz execution",
+      "ioc_type": "file_path",
+      "ioc_value": "Invoke-Mimikatz",
+      "artifact_type": "evtx",
+      "expected_confidence": "confirmed",
+      "must_find": true,
+      "notes": "Microsoft-Windows-PowerShell/Operational.evtx event 4104."
+    },
+    {
+      "id": "B-008",
+      "attack_chain": "AC-2",
+      "description": "NTLM authentication to domain controller 10.0.0.1 with harvested credentials (Event 4624 Type 3)",
+      "ioc_type": "ip",
+      "ioc_value": "10.0.0.1",
+      "artifact_type": "evtx",
+      "expected_confidence": "inferred",
+      "must_find": true,
+      "notes": "Security.evtx event 4624 Logon Type 3. Cross-reference with B-007 timing."
+    },
+    {
+      "id": "B-009",
+      "attack_chain": "AC-2",
+      "description": "Amcache shows PsExec.exe executed for lateral movement",
+      "ioc_type": "file_path",
+      "ioc_value": "PsExec.exe",
+      "artifact_type": "amcache",
+      "expected_confidence": "confirmed",
+      "must_find": true,
+      "notes": "Amcache.hve. Look for SysInternals PsExec."
+    },
+    {
+      "id": "B-010",
+      "attack_chain": "AC-2",
+      "description": "MFT $SI timestamp for svchost_update.exe backdated to 2017-01-01 (timestomping)",
+      "ioc_type": "",
+      "ioc_value": "",
+      "artifact_type": "mft",
+      "expected_confidence": "inferred",
+      "must_find": true,
+      "notes": "Compare $SI vs $FN timestamps in MFT entry. Anti-forensics technique."
+    }
+  ]
+}

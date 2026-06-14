@@ -1,0 +1,257 @@
+{
+  "case_id": "SYSINTERNALS-001",
+  "evidence_image": "SysInternalsCase.E01",
+  "evidence_type": "disk",
+  "source": "Synthesized from two independent writeups: walshcat (Medium/Case_1) and dissect-based analysis (case_2). Conflicts resolved by user on 2026-06-09. Enriched 2026-06-12 with IOCs from VIGIA-REAL-004 (Ali Hadi Challenge #7 ground truth).",
+  "todo_validate_against_image": true,
+  "host_info": {
+    "os": "Windows 10 Enterprise (amd64) build 17763.279",
+    "hostname": "MSEDGEWIN10",
+    "victim_ip": "192.168.15.130",
+    "primary_user": "IEUser"
+  },
+  "attack_chains": [
+    {
+      "id": "AC-1",
+      "name": "Pre-Staging / Defense Evasion",
+      "summary": "Hosts file modified to redirect www.sysinternals.com to attacker-controlled IP 192.168.15.10; Windows Defender exclusion added to C: drive prior to download via PowerShell."
+    },
+    {
+      "id": "AC-2",
+      "name": "Delivery & Initial Access",
+      "summary": "User navigated to www.sysinternals.com (resolved to 192.168.15.10 via poisoned hosts file) and downloaded malicious SysInternals.exe to C:\\Users\\Public\\Downloads."
+    },
+    {
+      "id": "AC-3",
+      "name": "Execution",
+      "summary": "User double-clicked SysInternals.exe; execution confirmed via UserAssist, Amcache, Shimcache, and BAM artifacts at ~21:19:00 UTC on 2022-11-15."
+    },
+    {
+      "id": "AC-4",
+      "name": "Persistence & Post-Exploitation",
+      "summary": "Malware downloaded secondary payload (VMwareUpdate.exe) from malware430.com and installed vmtoolsIO.exe as VMwareIOHelperService Windows service. Prefetch files subsequently deleted as anti-forensics."
+    }
+  ],
+  "findings": [
+    {
+      "id": "B-001",
+      "attack_chain": "AC-2",
+      "description": "Malicious SysInternals.exe present in C:\\Users\\Public\\Downloads\\SysInternals.exe (marked for deletion)",
+      "ioc_type": "file_path",
+      "ioc_value": "C:\\Users\\Public\\Downloads\\SysInternals.exe",
+      "artifact_type": "mft",
+      "expected_confidence": "confirmed",
+      "must_find": true,
+      "notes": "Both writeups confirm file in Downloads via MFT. Path confirmed as C:\\Users\\Public\\Downloads per Doc 2 MFT analysis. MFT creation time ~2022-11-15 21:18:51 UTC. USN Journal confirms subsequent deletion."
+    },
+    {
+      "id": "B-002",
+      "attack_chain": "AC-3",
+      "description": "Amcache entry for SysInternals.exe confirms execution with SHA256 hash 72e6d1728a546c2f3ee32c063ed09fa6ba8c46ac33b0dd2e354087c1ad26ef48",
+      "ioc_type": "hash",
+      "ioc_value": "72e6d1728a546c2f3ee32c063ed09fa6ba8c46ac33b0dd2e354087c1ad26ef48",
+      "artifact_type": "amcache",
+      "expected_confidence": "confirmed",
+      "must_find": true,
+      "notes": "Both writeups confirm Amcache entry. SHA256 confirmed via VirusTotal. Registry modification timestamp 2022-11-15 21:19:01 UTC. Program ID 0006d7bfadc0b7889d7c68a8542f389becce00000904. Executable link time: 2020-11-18 19:09:04 UTC."
+    },
+    {
+      "id": "B-003",
+      "attack_chain": "AC-2",
+      "description": "Browser history/webcache shows user visited http://www.sysinternals.com/SysInternals.exe to download the malicious file",
+      "ioc_type": "domain",
+      "ioc_value": "http://www.sysinternals.com/SysInternals.exe",
+      "artifact_type": "browser_history",
+      "expected_confidence": "confirmed",
+      "must_find": true,
+      "notes": "Both writeups confirm browser artifacts show visit to www.sysinternals.com to download SysInternals.exe. Confirmed as HTTP (not HTTPS) with filename SysInternals.exe (plural)."
+    },
+    {
+      "id": "B-004",
+      "attack_chain": "AC-1",
+      "description": "Hosts file modified to redirect www.sysinternals.com (and vmware update site) to attacker IP 192.168.15.10",
+      "ioc_type": "ip",
+      "ioc_value": "192.168.15.10",
+      "artifact_type": "filesystem",
+      "expected_confidence": "confirmed",
+      "must_find": true,
+      "notes": "Doc 1 explicitly shows hosts file at C:\\Windows\\System32\\drivers\\etc\\hosts with entries pointing to 192.168.15.10. Doc 2 notes DNS anomalies and that it's unclear the user connected to the proper IP, corroborating DNS manipulation. Victim IP is 192.168.15.130 (different from the attacker-controlled 192.168.15.10)."
+    },
+    {
+      "id": "B-005",
+      "attack_chain": "AC-3",
+      "description": "UserAssist registry entry confirms user executed SysInternals.exe at 2022-11-15 21:19:00 UTC",
+      "ioc_type": "registry_key",
+      "ioc_value": "NTUSER.DAT\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\UserAssist",
+      "artifact_type": "registry",
+      "expected_confidence": "confirmed",
+      "must_find": true,
+      "notes": "Doc 1 explicitly confirms UserAssist execution at 21:19:00. Doc 2 confirms execution via amcache/shimcache in same timeframe."
+    },
+    {
+      "id": "B-006",
+      "attack_chain": "AC-1",
+      "description": "Windows Defender exclusion added for C: drive via PowerShell prior to malware download (21:17:03 UTC)",
+      "ioc_type": "registry_key",
+      "ioc_value": "HKLM\\SOFTWARE\\Microsoft\\Windows Defender\\Exclusions\\Paths",
+      "artifact_type": "evtx",
+      "expected_confidence": "inferred",
+      "must_find": true,
+      "notes": "Doc 1 shows Defender AV rules changed event with C: drive exclusion added before the download. VIGIA confirms PowerShell as the mechanism at 21:17:03 UTC. Suggests pre-staging by attacker or prior compromise."
+    },
+    {
+      "id": "B-007",
+      "attack_chain": "AC-4",
+      "description": "vmtoolsIO.exe installed as VMwareIOHelperService Windows service (Event ID 7045 in System event log)",
+      "ioc_type": "registry_key",
+      "ioc_value": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\VMwareIOHelperService",
+      "artifact_type": "evtx",
+      "expected_confidence": "inferred",
+      "must_find": true,
+      "notes": "Doc 1 confirms service installation via Event ID 7045. VIGIA confirms service name is VMwareIOHelperService (not vmtoolsIO \u2014 that is the binary name). Service set to auto-start. Also visible in prefetch (USN Journal)."
+    },
+    {
+      "id": "B-008",
+      "attack_chain": "AC-4",
+      "description": "Large number of prefetch files deleted after SysInternals.exe execution",
+      "ioc_type": "file_path",
+      "ioc_value": "C:\\Windows\\Prefetch\\*.pf",
+      "artifact_type": "usnjrnl",
+      "expected_confidence": "confirmed",
+      "must_find": true,
+      "notes": "Both writeups confirm prefetch files were deleted. Doc 1 shows USN Journal deletion entries. Doc 2 notes Prefetch plugin returns no output and actual .pf files are gone, but MFT shows they were created at the relevant time. This explains system slowdown. VIGIA confirms this as anti-forensics technique."
+    },
+    {
+      "id": "B-009",
+      "attack_chain": "AC-3",
+      "description": "SRUM shows significant network activity from SysInternals.exe: 600,880 bytes received, 8,347 bytes sent",
+      "ioc_type": "",
+      "ioc_value": "",
+      "artifact_type": "srum",
+      "expected_confidence": "inferred",
+      "must_find": false,
+      "notes": "Doc 1 only. Indicates the malware downloaded a payload (likely vmtoolsIO). Doc 2 does not reference SRUM. Byte counts (received=600880, sent=8347) remain in the description for the matcher."
+    },
+    {
+      "id": "B-010",
+      "attack_chain": "AC-3",
+      "description": "BAM (Background Activity Moderator) shows SysInternals.exe last execution end time at 2022-11-15 21:21:09 UTC",
+      "ioc_type": "registry_key",
+      "ioc_value": "SYSTEM\\CurrentControlSet\\Services\\bam\\State\\UserSettings",
+      "artifact_type": "registry",
+      "expected_confidence": "inferred",
+      "must_find": false,
+      "notes": "Doc 1 only. Establishes execution duration (~2 minutes from 21:19:00 to 21:21:09). System shutdown 3 seconds later at 21:21:12."
+    },
+    {
+      "id": "B-011",
+      "attack_chain": "AC-2",
+      "description": "MFT shows SysInternals.exe traversal through Edge download pipeline: Edge Cache -> TempState\\Downloads (.partial) -> C:\\Users\\Public\\Downloads\\SysInternals.exe",
+      "ioc_type": "file_path",
+      "ioc_value": "C:\\Users\\Public\\Downloads\\SysInternals.exe",
+      "artifact_type": "mft",
+      "expected_confidence": "confirmed",
+      "must_find": false,
+      "notes": "Doc 2 explicitly describes the download pipeline visible in MFT entries. Doc 1 references MFT entries but focuses on the final file location and timestamps."
+    },
+    {
+      "id": "B-012",
+      "attack_chain": "AC-2",
+      "description": "USN Journal confirms creation and rapid deletion of SysInternals.exe",
+      "ioc_type": "file_path",
+      "ioc_value": "C:\\Users\\Public\\Downloads\\SysInternals.exe",
+      "artifact_type": "usnjrnl",
+      "expected_confidence": "confirmed",
+      "must_find": true,
+      "notes": "Doc 1 explicitly shows USN Journal file deletion entries. Doc 2 references USN Journal in the broader timeline analysis confirming file activity."
+    },
+    {
+      "id": "B-013",
+      "attack_chain": "AC-3",
+      "description": "Shimcache entry confirms SysInternals.exe execution",
+      "ioc_type": "file_path",
+      "ioc_value": "C:\\Users\\Public\\Downloads\\SysInternals.exe",
+      "artifact_type": "shimcache",
+      "expected_confidence": "confirmed",
+      "must_find": false,
+      "notes": "Doc 2 explicitly includes shimcache in mini-timeline confirming execution. Doc 1 confirms execution via other artifacts in the same timeframe."
+    },
+    {
+      "id": "B-014",
+      "attack_chain": "AC-2",
+      "description": "Shellbags show user navigated to Public Downloads folder",
+      "ioc_type": "registry_key",
+      "ioc_value": "UsrClass.dat\\Local Settings\\Software\\Microsoft\\Windows\\Shell\\BagMRU",
+      "artifact_type": "registry",
+      "expected_confidence": "confirmed",
+      "must_find": false,
+      "notes": "Doc 2 confirms shellbag entries for navigation to Public Downloads. Doc 1 does not mention shellbags specifically."
+    },
+    {
+      "id": "B-015",
+      "attack_chain": "AC-3",
+      "description": "System shutdown at 2022-11-15 21:21:12 UTC, 3 seconds after malware execution ended",
+      "ioc_type": "",
+      "ioc_value": "",
+      "artifact_type": "evtx",
+      "expected_confidence": "inferred",
+      "must_find": false,
+      "notes": "Doc 1 only. May indicate automated shutdown by malware or user action. Shutdown timestamp (2022-11-15T21:21:12Z) preserved in the description."
+    },
+    {
+      "id": "B-016",
+      "attack_chain": "AC-4",
+      "description": "SysInternals.exe downloads secondary payload VMwareUpdate.exe from http://www.malware430.com/html/VMwareUpdate.exe at 21:19:17 UTC",
+      "ioc_type": "domain",
+      "ioc_value": "www.malware430.com",
+      "artifact_type": "network",
+      "expected_confidence": "confirmed",
+      "must_find": true,
+      "notes": "From VIGIA ART-002/ART-003. Secondary C2 domain used to deliver vmtoolsIO payload. Download occurs 17 seconds after SysInternals.exe execution. URL: http://www.malware430.com/html/VMwareUpdate.exe. Agent should find this in network artifacts, SRUM, or browser cache."
+    },
+    {
+      "id": "B-017",
+      "attack_chain": "AC-4",
+      "description": "Secondary payload vmtoolsIO.exe written to C:\\Windows\\vmtoolsIO.exe",
+      "ioc_type": "file_path",
+      "ioc_value": "C:\\Windows\\vmtoolsIO.exe",
+      "artifact_type": "mft",
+      "expected_confidence": "confirmed",
+      "must_find": true,
+      "notes": "From VIGIA ART-003/ART-004. The downloaded VMwareUpdate.exe is written as vmtoolsIO.exe in C:\\Windows. Complements B-007 (service registration) \u2014 this is the file on disk. Look in MFT, USN Journal."
+    },
+    {
+      "id": "B-018",
+      "attack_chain": "AC-1",
+      "description": "PowerShell script execution at 21:17:03 UTC modifies hosts file and Defender exclusions prior to malware download",
+      "ioc_type": "file_path",
+      "ioc_value": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "artifact_type": "evtx",
+      "expected_confidence": "inferred",
+      "must_find": false,
+      "notes": "From VIGIA ART-002. Establishes PowerShell as the pre-staging mechanism for both B-004 (hosts file) and B-006 (Defender exclusion). Look in PowerShell Operational log (Event 4104) or Sysmon process creation. Bonus finding \u2014 B-004 and B-006 cover the effects; this captures the mechanism."
+    },
+    {
+      "id": "B-019",
+      "attack_chain": "AC-2",
+      "description": "SysInternals.exe has spoofed PE version info: CompanyName='SysInternals, Inc.', FileDescription='SysInternals Suite Downloader'",
+      "ioc_type": "hash",
+      "ioc_value": "72e6d1728a546c2f3ee32c063ed09fa6ba8c46ac33b0dd2e354087c1ad26ef48",
+      "artifact_type": "file_metadata",
+      "expected_confidence": "confirmed",
+      "must_find": false,
+      "notes": "From VIGIA ART-001. Static analysis indicator \u2014 PE version info masquerades as legitimate SysInternals Suite. Imports URLDownloadToFileA, InternetOpenUrlA, ShellExecuteA indicate downloader functionality. Bonus: demonstrates agent can do static analysis beyond artifact timeline."
+    },
+    {
+      "id": "B-020",
+      "attack_chain": "AC-1",
+      "description": "Hosts file also redirects malware430.com to attacker IP (prevents victim from reaching real malware430.com after infection)",
+      "ioc_type": "domain",
+      "ioc_value": "malware430.com",
+      "artifact_type": "filesystem",
+      "expected_confidence": "inferred",
+      "must_find": false,
+      "notes": "From VIGIA ART-003. The hosts file redirects both sysinternals.com AND malware430.com. B-004 covers the sysinternals.com redirect; this captures the additional domain manipulation. May indicate staged attack preparation or anti-analysis intent."
+    }
+  ]
+}

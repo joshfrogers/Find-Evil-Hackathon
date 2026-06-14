@@ -1,0 +1,12 @@
+{"event_id": "EX-001", "event_type": "tool_execution", "tool_name": "fls", "exit_code": 0}
+{"event_id": "EX-002", "event_type": "tool_execution", "tool_name": "regripper", "exit_code": 0}
+{"event_id": "EX-003", "event_type": "tool_execution", "tool_name": "evtx_dump", "exit_code": 0}
+{"event_id": "EX-004", "event_type": "tool_execution", "tool_name": "PECmd", "exit_code": 0}
+{"event_id": "EX-005", "event_type": "tool_execution", "tool_name": "evtx_dump", "exit_code": 0}
+{"event_id": "EX-006", "event_type": "tool_execution", "tool_name": "evtx_dump", "exit_code": 0}
+{"event_id": "EX-007", "event_type": "tool_execution", "tool_name": "evtx_dump", "exit_code": 0}
+{"event_id": "EX-008", "event_type": "tool_execution", "tool_name": "regripper", "exit_code": 0}
+{"event_id": "EX-009", "event_type": "tool_execution", "tool_name": "sqlite3", "exit_code": 0}
+{"event_id": "EX-099", "event_type": "tool_execution", "tool_name": "fls", "exit_code": 0}
+{"event_id": "v-purged-1", "event_type": "verification", "verdict": "refuted", "finding_id": "F-snap-rejected-1", "verifier_agent": "verifier"}
+{"event_id": "sc-1", "event_type": "self_correction", "finding_id": "F-snap-rejected-1", "verdict": "refuted", "previous_confidence": "confirmed", "new_confidence": "refuted", "rounds_taken": 2}
