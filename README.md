@@ -13,7 +13,7 @@ same machine:
 
 ```bash
 # Clone the repo
-git clone <repo-url>
+git clone https://github.com/amemon22/Find-Evil-Hackathon.git agentic-sift
 cd agentic-sift
 
 # Run an investigation (local, single-machine — no SSH)
