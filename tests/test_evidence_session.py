@@ -178,6 +178,23 @@ class TestMountPipeline(unittest.TestCase):
             self.assertIn("-P", attach)  # kernel partition scan -> /dev/loopNpK
             os.unlink(img)
 
+    def test_partition_nodes_forced_after_losetup(self):
+        # `losetup -P` is unreliable over a FUSE-backed image, so the session
+        # forces the partition table to materialize (partx) and waits for udev
+        # before enumerating — otherwise partitioned images mount nothing.
+        runner = RecordingRunner(_partitioned_script(loop="/dev/loop9"))
+        with tempfile.TemporaryDirectory() as work:
+            img = _write_image()
+            EvidenceSession(img, runner=runner, work_dir=work).open()
+            seq = runner.command_sequence()
+            self.assertIn("partx", seq)
+            self.assertIn("udevadm", seq)
+            # Ordering: losetup -> partx -> udevadm -> lsblk (enumerate).
+            self.assertLess(seq.index("losetup"), seq.index("partx"))
+            self.assertLess(seq.index("partx"), seq.index("udevadm"))
+            self.assertLess(seq.index("udevadm"), seq.index("lsblk"))
+            os.unlink(img)
+
     def test_raw_device_is_base_loop(self):
         runner = RecordingRunner(_partitionless_script(loop="/dev/loop7"))
         with tempfile.TemporaryDirectory() as work:

@@ -660,6 +660,17 @@ class EvidenceSession:
         device = result.stdout.strip()
         if not device:
             raise RuntimeError(f"losetup returned no device for {source}")
+        # `losetup -P`'s in-kernel partition scan is unreliable when the backing
+        # file is a FUSE mount (ewfmount's ewf1): the /dev/loopNpK partition nodes
+        # frequently never appear, so lsblk reports zero partitions and the whole
+        # disk gets (mis)handled as one unmountable filesystem — leaving an empty
+        # mount and a raw-only run. Force the partition table to be read and wait
+        # for udev to create the device nodes before enumerating. Both are
+        # best-effort and read-only-safe (the loop is already `-r`): `-P` alone
+        # suffices where it works, and partx/udevadm may be absent on minimal
+        # hosts (hence check=False).
+        self._run("partx", ["-a", device], check=False)
+        self._run("udevadm", ["settle"], check=False)
         return device
 
     def _enumerate_volumes(self) -> list[Volume]:
