@@ -43,6 +43,7 @@ import os
 import re
 import signal
 import subprocess
+import sys
 import tempfile
 import time
 from dataclasses import dataclass
@@ -270,6 +271,16 @@ _FS_MOUNT = {
 
 _E01_SUFFIXES = (".e01", ".ex01", ".s01")
 _SECTOR = 512  # lsblk/sysfs START is always in 512-byte units (4Kn-safe)
+
+# Windows is detected by a marker directory. ntfs-3g preserves on-disk case and
+# isdir is case-sensitive on Linux, so probe the realistic casings: modern
+# installs use Windows/System32, XP-era images use WINDOWS/system32.
+_WINDOWS_MARKERS = (
+    ("Windows", "System32"),
+    ("WINDOWS", "system32"),
+    ("WINDOWS", "System32"),
+    ("Windows", "system32"),
+)
 
 
 class EvidenceSession:
@@ -660,17 +671,6 @@ class EvidenceSession:
         device = result.stdout.strip()
         if not device:
             raise RuntimeError(f"losetup returned no device for {source}")
-        # `losetup -P`'s in-kernel partition scan is unreliable when the backing
-        # file is a FUSE mount (ewfmount's ewf1): the /dev/loopNpK partition nodes
-        # frequently never appear, so lsblk reports zero partitions and the whole
-        # disk gets (mis)handled as one unmountable filesystem — leaving an empty
-        # mount and a raw-only run. Force the partition table to be read and wait
-        # for udev to create the device nodes before enumerating. Both are
-        # best-effort and read-only-safe (the loop is already `-r`): `-P` alone
-        # suffices where it works, and partx/udevadm may be absent on minimal
-        # hosts (hence check=False).
-        self._run("partx", ["-a", device], check=False)
-        self._run("udevadm", ["settle"], check=False)
         return device
 
     def _enumerate_volumes(self) -> list[Volume]:
@@ -698,7 +698,7 @@ class EvidenceSession:
                 # Not a mountable filesystem (swap / LVM2_member / crypto_LUKS /
                 # unformatted). LVM/LUKS handling is a deferred enhancement.
                 continue
-            start = int(r["start"] or 0)
+            start = self._partition_start_sector(r["name"])
             volumes.append(
                 Volume(
                     index=len(volumes),
@@ -713,9 +713,22 @@ class EvidenceSession:
     def _lsblk(self, base: str) -> list[dict]:
         # `-P` pairs form is robust to empty fields (e.g. a partition libblkid
         # can't identify), unlike whitespace-split columns.
-        result = self._run(
-            "lsblk", ["-Pno", "NAME,TYPE,FSTYPE,START", base], check=False
-        )
+        #
+        # Do NOT request the START column here: it only exists on util-linux
+        # >= 2.39, and on older lsblk the whole call fails with "unknown column:
+        # START" and exits non-zero. Since this runs check=False, that failure was
+        # swallowed -> zero rows -> _enumerate_volumes' partitionless branch
+        # misfired and the disk mounted nothing (empty mnt/volN, raw-only run).
+        # The start sector is read from sysfs instead (see _partition_start_sector).
+        result = self._run("lsblk", ["-Pno", "NAME,TYPE,FSTYPE", base], check=False)
+        if result.returncode != 0:
+            # Surface the failure rather than swallowing it — a silent lsblk
+            # error is exactly what masked this bug across multiple runs.
+            print(
+                f"[evidence] lsblk failed ({result.returncode}) on {base}: "
+                f"{result.stderr.strip()}",
+                file=sys.stderr,
+            )
         rows: list[dict] = []
         for line in result.stdout.splitlines():
             if not line.strip():
@@ -726,10 +739,23 @@ class EvidenceSession:
                     "name": kv.get("NAME", ""),
                     "type": kv.get("TYPE", ""),
                     "fstype": kv.get("FSTYPE", ""),
-                    "start": kv.get("START", ""),
                 }
             )
         return rows
+
+    def _partition_start_sector(self, name: str) -> int:
+        """Start sector of a partition, read from sysfs.
+
+        Replaces lsblk's START column (util-linux >= 2.39 only). sysfs is present
+        on every kernel and its ``start`` is always in 512-byte units, so 4Kn
+        disks need no special handling. Read through the runner so it works on the
+        remote VM under an SSH runner too.
+        """
+        res = self._run("cat", [f"/sys/class/block/{name}/start"], check=False)
+        try:
+            return int(res.stdout.strip() or 0)
+        except ValueError:
+            return 0
 
     def _blkid_device(self, device: str) -> str:
         result = self._run("blkid", ["-s", "TYPE", "-o", "value", device], check=False)
@@ -760,7 +786,10 @@ class EvidenceSession:
         # Stat the mounted tree on the host where it is mounted (local, or the
         # remote VM under an SSH runner), so OS detection works in both setups.
         for root in roots:
-            if self._runner.isdir(os.path.join(root, "Windows", "System32")):
+            if any(
+                self._runner.isdir(os.path.join(root, w, s))
+                for w, s in _WINDOWS_MARKERS
+            ):
                 return "windows"
             if self._runner.isdir(os.path.join(root, "System", "Library")):
                 return "macos"

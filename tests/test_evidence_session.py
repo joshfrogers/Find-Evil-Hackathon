@@ -94,6 +94,15 @@ class RecordingRunner:
         return [os.path.basename(c[0]) for c in self.calls]
 
 
+class _RaisingExecutor:
+    """Executor whose add_evidence_root raises, to exercise open()'s teardown
+    path with a failure that happens AFTER the loop device is attached and
+    mounted (step 6 of open)."""
+
+    def add_evidence_root(self, path):
+        raise ValueError("simulated post-mount failure")
+
+
 def _ok(stdout="", stderr="", rc=0) -> RunResult:
     return RunResult(argv=[], returncode=rc, stdout=stdout, stderr=stderr)
 
@@ -132,21 +141,44 @@ def _partitionless_script(loop="/dev/loop9", fstype="ntfs", blkid=""):
     }
 
 
+def _sysfs_start_fn(starts_by_name):
+    """Answer `cat /sys/class/block/<name>/start` with the partition's sector.
+
+    Mirrors the sysfs backfill the session uses instead of lsblk's
+    version-fragile START column (util-linux >= 2.39 only).
+    """
+
+    def fn(argv):
+        path = argv[-1]  # /sys/class/block/<name>/start
+        name = path.split("/")[-2]
+        return _ok(stdout=str(starts_by_name.get(name, "0")) + "\n")
+
+    return fn
+
+
 def _partitioned_script(loop="/dev/loop9", parts=None, blkid=""):
     """Partitioned image: base loop row + one TYPE=part row per partition.
 
     parts: list of (suffix, fstype, start). Empty fstype exercises the blkid
     fallback (libblkid couldn't ID it, e.g. APFS).
+
+    lsblk output deliberately carries NO START column (it does not exist on
+    util-linux < 2.39); the start sector is served from a fake sysfs `cat`, just
+    like the real pipeline. This means a regression that re-reads START from
+    lsblk would compute the wrong offset and fail the offset assertions.
     """
     base = os.path.basename(loop)
     parts = parts or [("p1", "exfat", "2048"), ("p2", "btrfs", "122880")]
-    lines = [_lsblk_line(base, "loop", "", "")]
+    lines = [f'NAME="{base}" TYPE="loop" FSTYPE=""']
+    starts: dict = {}
     for suf, fs, start in parts:
-        lines.append(_lsblk_line(base + suf, "part", fs, start))
+        lines.append(f'NAME="{base}{suf}" TYPE="part" FSTYPE="{fs}"')
+        starts[base + suf] = start
     return {
         "ewfmount": _ok(),
         "losetup": _losetup_fn(loop),
         "lsblk": _ok(stdout="\n".join(lines) + "\n"),
+        "cat": _sysfs_start_fn(starts),
         "blkid": _ok(stdout=(blkid + "\n") if blkid else "\n"),
         "mount": _ok(),
         "umount": _ok(),
@@ -176,23 +208,6 @@ class TestMountPipeline(unittest.TestCase):
             )
             self.assertIn("-r", attach)  # read-only = primary write-block
             self.assertIn("-P", attach)  # kernel partition scan -> /dev/loopNpK
-            os.unlink(img)
-
-    def test_partition_nodes_forced_after_losetup(self):
-        # `losetup -P` is unreliable over a FUSE-backed image, so the session
-        # forces the partition table to materialize (partx) and waits for udev
-        # before enumerating — otherwise partitioned images mount nothing.
-        runner = RecordingRunner(_partitioned_script(loop="/dev/loop9"))
-        with tempfile.TemporaryDirectory() as work:
-            img = _write_image()
-            EvidenceSession(img, runner=runner, work_dir=work).open()
-            seq = runner.command_sequence()
-            self.assertIn("partx", seq)
-            self.assertIn("udevadm", seq)
-            # Ordering: losetup -> partx -> udevadm -> lsblk (enumerate).
-            self.assertLess(seq.index("losetup"), seq.index("partx"))
-            self.assertLess(seq.index("partx"), seq.index("udevadm"))
-            self.assertLess(seq.index("udevadm"), seq.index("lsblk"))
             os.unlink(img)
 
     def test_raw_device_is_base_loop(self):
@@ -244,6 +259,46 @@ class TestVolumeEnumeration(unittest.TestCase):
             self.assertEqual(vols[0].offset_bytes, 2048 * 512)
             self.assertEqual(vols[1].offset_bytes, 122880 * 512)
             os.unlink(img)
+
+    def test_offsets_from_sysfs_not_lsblk_start_old_util_linux(self):
+        # Regression: on util-linux < 2.39 `lsblk ... START` fails, so START is
+        # not queried at all. The mock lsblk carries no START column; partitions
+        # must still enumerate with the correct offset (read from sysfs), proving
+        # the partitionless fallback no longer fires on a partitioned image (the
+        # bug that emptied mnt/vol0 on the NIST hacking image).
+        runner = RecordingRunner(
+            _partitioned_script(loop="/dev/loop9", parts=[("p1", "ntfs", "63")])
+        )
+        with tempfile.TemporaryDirectory() as work:
+            img = _write_image()
+            sess = EvidenceSession(img, runner=runner, work_dir=work).open()
+            vols = sess.volumes()
+            self.assertEqual(len(vols), 1)
+            self.assertEqual(vols[0].device, "/dev/loop9p1")
+            self.assertEqual(vols[0].fs_type, "ntfs")
+            self.assertEqual(vols[0].start_sector, 63)
+            self.assertEqual(vols[0].offset_bytes, 63 * 512)
+            os.unlink(img)
+
+
+class TestOsDetection(unittest.TestCase):
+    def test_detect_os_windows_uppercase_xp_layout(self):
+        # XP-era NTFS images store WINDOWS/system32 (not Windows/System32), and
+        # ntfs-3g preserves on-disk case while isdir is case-sensitive on Linux.
+        # Detection must match the realistic casings. An exact-case fake runner
+        # ensures a case-insensitive host FS can't mask the check.
+        class _ExactCaseRunner(RecordingRunner):
+            def __init__(self, true_path):
+                super().__init__()
+                self._true = true_path
+
+            def isdir(self, p):
+                return p == self._true
+
+        runner = _ExactCaseRunner("/mnt/vol0/WINDOWS/system32")
+        with tempfile.TemporaryDirectory() as work:
+            sess = EvidenceSession("img.E01", runner=runner, work_dir=work)
+            self.assertEqual(sess._detect_os(["/mnt/vol0"]), "windows")
 
     def test_partition_without_filesystem_is_dropped(self):
         # A partition libblkid can't ID and blkid also can't -> not mountable
@@ -408,17 +463,15 @@ class TestRawImage(unittest.TestCase):
 
 class TestOpenIsTransactional(unittest.TestCase):
     def test_open_failure_after_loop_tears_down_loop(self):
-        # A non-numeric partition START makes _enumerate_volumes raise after the
-        # loop device is already attached. open() must clean up (detach the loop)
-        # before re-raising, so no FUSE mount / loop device / partition mount
-        # leaks.
-        runner = RecordingRunner(
-            _partitioned_script(parts=[("p1", "ntfs", "not-a-number")])
-        )
+        # A failure AFTER the loop device is attached (here: registering evidence
+        # roots once volumes are mounted) must clean up (detach the loop) before
+        # re-raising, so no FUSE mount / loop device / partition mount leaks.
+        runner = RecordingRunner(_partitioned_script())
         with tempfile.TemporaryDirectory() as work:
             img = _write_image()
-            sess = EvidenceSession(img, runner=runner, work_dir=work)
-            # A non-numeric partition start makes int() parsing raise ValueError.
+            sess = EvidenceSession(
+                img, runner=runner, work_dir=work, executor=_RaisingExecutor()
+            )
             with self.assertRaises(ValueError):
                 sess.open()
             detach = [c for c in runner.calls if "losetup" in c[0] and "-d" in c]
@@ -776,18 +829,19 @@ class TestCrashSafety(unittest.TestCase):
         # If a step after the loop is attached raises, open() must tear the loop
         # back down rather than leak it — the failure path the teardown exists
         # for. (A non-numeric partition start makes enumeration raise here.)
-        script = _partitioned_script(parts=[("p1", "ntfs", "not-a-number")])
-        runner = RecordingRunner(script)
+        runner = RecordingRunner(_partitioned_script())
         with tempfile.TemporaryDirectory() as work:
             img = _write_image()
             sess = EvidenceSession(
                 img,
                 runner=runner,
                 work_dir=work,
+                executor=_RaisingExecutor(),
                 atexit_register=lambda fn: None,
                 signal_register=lambda s, h: None,
             )
-            # A non-numeric partition start makes int() parsing raise ValueError.
+            # A failure after the loop is attached (registering evidence roots)
+            # makes open() raise; the attached loop must still be detached.
             with self.assertRaises(ValueError):
                 sess.open()
             detached = [c for c in runner.calls if "losetup" in c[0] and "-d" in c]
