@@ -26,6 +26,14 @@ python -m cli.main investigate --evidence /cases/image.E01 --type disk
 > `--remote HOST:PORT` (the port is required) and `--remote-user LOGIN`. See
 > [Remote execution (development)](#remote-execution-development).
 
+> **Mounting evidence needs root.** Disk images are mounted **read-only** via
+> `sudo` (`losetup -r` + `mount`). As its first step, a local investigation
+> prompts for your sudo password (on a stock SANS SIFT workstation the default
+> user's password is `forensics`). To run non-interactively, set
+> `AGENTIC_SIFT_SUDO_PASSWORD` in the environment. If sudo is already
+> passwordless (a `NOPASSWD` sudoers entry, or credentials already cached), just
+> press Enter at the prompt.
+
 ## Architecture
 
 ![Agentic SIFT architecture diagram](docs/architecture.svg)

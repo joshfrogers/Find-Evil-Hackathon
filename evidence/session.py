@@ -98,21 +98,41 @@ class SubprocessPrivilegedRunner:
 
     These commands originate only from EvidenceSession's own code, so they run
     directly rather than through any command-validation/allowlist layer that
-    untrusted commands would be subject to. `use_sudo` prefixes `sudo -n` for the
-    privileged mount/loop operations; turn it off for unprivileged use and in
-    tests. Never raises on a non-zero exit — the caller inspects RunResult.
+    untrusted commands would be subject to. `use_sudo` prefixes the privileged
+    mount/loop operations with sudo: `sudo -n` (passwordless / cached creds) by
+    default, or `sudo -S` reading a supplied password from stdin when
+    `sudo_password` is set (for hosts where sudo needs a password — e.g. the SANS
+    SIFT default user). Turn `use_sudo` off for unprivileged use and in tests.
+    Never raises on a non-zero exit — the caller inspects RunResult.
     """
 
-    def __init__(self, use_sudo: bool = True) -> None:
+    def __init__(
+        self, use_sudo: bool = True, sudo_password: str | None = None
+    ) -> None:
         self._use_sudo = use_sudo
+        self._sudo_password = sudo_password
 
     def _build_argv(self, argv: list[str]) -> list[str]:
-        return (["sudo", "-n", *argv]) if self._use_sudo else list(argv)
+        if not self._use_sudo:
+            return list(argv)
+        if self._sudo_password is not None:
+            # -S reads the password from stdin; -p "" suppresses the prompt text
+            # so it never contaminates captured stderr.
+            return ["sudo", "-S", "-p", "", *argv]
+        return ["sudo", "-n", *argv]
+
+    def _sudo_stdin(self) -> bytes | None:
+        """Password bytes to feed `sudo -S` on stdin, or None for passwordless."""
+        if self._use_sudo and self._sudo_password is not None:
+            return (self._sudo_password + "\n").encode()
+        return None
 
     def run(self, argv: list[str], timeout: int = 120) -> RunResult:
         full = self._build_argv(argv)
         try:
-            proc = subprocess.run(full, capture_output=True, timeout=timeout)
+            proc = subprocess.run(
+                full, capture_output=True, timeout=timeout, input=self._sudo_stdin()
+            )
             return RunResult(
                 argv=full,
                 returncode=proc.returncode,
@@ -131,7 +151,11 @@ class SubprocessPrivilegedRunner:
         try:
             with open(dest, "wb") as out:
                 proc = subprocess.run(
-                    full, stdout=out, stderr=subprocess.PIPE, timeout=timeout
+                    full,
+                    stdout=out,
+                    stderr=subprocess.PIPE,
+                    timeout=timeout,
+                    input=self._sudo_stdin(),
                 )
             return RunResult(
                 full, proc.returncode, "", proc.stderr.decode("utf-8", "replace")

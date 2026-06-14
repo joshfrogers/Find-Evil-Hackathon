@@ -832,6 +832,27 @@ class TestSubprocessRunner(unittest.TestCase):
         self.assertEqual(argv[0], "sudo")
         self.assertIn("losetup", argv)
 
+    def test_passwordless_sudo_uses_dash_n(self):
+        # Default (no password) keeps the non-interactive `sudo -n` behavior.
+        runner = SubprocessPrivilegedRunner(use_sudo=True)
+        self.assertEqual(runner._build_argv(["losetup", "-r"])[:2], ["sudo", "-n"])
+        self.assertIsNone(runner._sudo_stdin())
+
+    def test_password_sudo_uses_dash_s_and_feeds_stdin(self):
+        # A supplied password switches to `sudo -S -p ""` and is fed on stdin,
+        # so password-protected sudo (e.g. the SANS SIFT default user) works.
+        runner = SubprocessPrivilegedRunner(use_sudo=True, sudo_password="forensics")
+        argv = runner._build_argv(["losetup", "-r"])
+        self.assertEqual(argv[:4], ["sudo", "-S", "-p", ""])
+        self.assertEqual(argv[-2:], ["losetup", "-r"])
+        self.assertEqual(runner._sudo_stdin(), b"forensics\n")
+
+    def test_no_sudo_ignores_password(self):
+        # With sudo disabled, neither the prefix nor the stdin password applies.
+        runner = SubprocessPrivilegedRunner(use_sudo=False, sudo_password="forensics")
+        self.assertEqual(runner._build_argv(["echo", "x"]), ["echo", "x"])
+        self.assertIsNone(runner._sudo_stdin())
+
 
 class TestSubprocessRunnerIO(unittest.TestCase):
     """The runner owns host-side IO — sha256 / makedirs / isdir — so that

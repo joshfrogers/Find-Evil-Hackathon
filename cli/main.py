@@ -298,11 +298,94 @@ def _apply_fast_mode(args: argparse.Namespace) -> None:
     )
 
 
+def _acquire_local_sudo_password() -> str | None:
+    """Collect (and verify) a sudo password for the local read-only mount.
+
+    Run as the first step of a local investigation so a password-protected sudo
+    (e.g. the SANS SIFT default user, password ``forensics``) is handled up front
+    instead of failing deep into the evidence mount. Resolution order:
+
+      1. ``AGENTIC_SIFT_SUDO_PASSWORD`` env var (non-interactive / CI). An empty
+         value means "use passwordless sudo".
+      2. An interactive ``getpass`` prompt (press Enter to use passwordless sudo).
+
+    The candidate is verified with ``sudo -S -v`` before the run starts; an
+    interactive user gets up to 3 attempts. Returns the verified password, or
+    None to fall back to passwordless ``sudo -n`` (NOPASSWD sudoers or already
+    cached credentials).
+    """
+    import getpass
+    import subprocess
+
+    def _verify(pw: str) -> bool:
+        try:
+            proc = subprocess.run(
+                ["sudo", "-S", "-p", "", "-v"],
+                input=(pw + "\n").encode(),
+                capture_output=True,
+                timeout=30,
+            )
+            return proc.returncode == 0
+        except (subprocess.TimeoutExpired, FileNotFoundError):
+            return False
+
+    env_pw = os.environ.get("AGENTIC_SIFT_SUDO_PASSWORD")
+    if env_pw is not None:
+        if env_pw == "":
+            return None
+        if _verify(env_pw):
+            print("[agentic-sift] sudo password accepted (from environment).")
+            return env_pw
+        print(
+            "[agentic-sift] WARNING: AGENTIC_SIFT_SUDO_PASSWORD was rejected by "
+            "sudo; falling back to passwordless sudo.",
+            file=sys.stderr,
+        )
+        return None
+
+    if not sys.stdin.isatty():
+        # Non-interactive with no env password: use passwordless sudo.
+        return None
+
+    for remaining in (2, 1, 0):
+        try:
+            pw = getpass.getpass(
+                "[agentic-sift] sudo password for the read-only evidence mount "
+                "(press Enter for passwordless sudo): "
+            )
+        except (EOFError, KeyboardInterrupt):
+            print()
+            return None
+        if pw == "":
+            return None
+        if _verify(pw):
+            print("[agentic-sift] sudo password accepted.")
+            return pw
+        if remaining:
+            print(
+                f"[agentic-sift] Sorry, try again ({remaining} left).",
+                file=sys.stderr,
+            )
+    print(
+        "[agentic-sift] WARNING: no valid sudo password; falling back to "
+        "passwordless sudo (the evidence mount may fail).",
+        file=sys.stderr,
+    )
+    return None
+
+
 def cmd_investigate(args: argparse.Namespace) -> None:
     """Run a forensic investigation."""
 
     if getattr(args, "fast", False):
         _apply_fast_mode(args)
+
+    # First step: for a LOCAL investigation, collect (and verify) any sudo
+    # password needed to mount the evidence read-only. The dev remote-mount mode
+    # mounts on the remote host over SSH, so this is skipped there.
+    local_sudo_password = None
+    if not getattr(args, "remote_mount", None):
+        local_sudo_password = _acquire_local_sudo_password()
 
     tools, cat_path = load_catalog_tools(args.catalog)
     _print_staleness(cat_path)
@@ -355,6 +438,13 @@ def cmd_investigate(args: argparse.Namespace) -> None:
     mount_runner = None
     if getattr(args, "remote_mount", None):
         mount_runner = build_remote_mount_runner(args.remote_mount, args.remote_user)
+    elif local_sudo_password is not None:
+        # Local mount using the supplied sudo password (sudo -S). With no
+        # password supplied, mount_runner stays None and the default passwordless
+        # (sudo -n) local runner is used unchanged.
+        from evidence.session import SubprocessPrivilegedRunner
+
+        mount_runner = SubprocessPrivilegedRunner(sudo_password=local_sudo_password)
 
     focus = args.focus.split(",") if args.focus else None
 
