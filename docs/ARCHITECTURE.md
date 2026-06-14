@@ -56,6 +56,11 @@ The diagram shows the five required elements — the agent/orchestrator, the SIF
 forensic tools, the executor, the evidence sources, and the output pipeline —
 and the trust boundary that separates LLM reasoning from tool execution.
 
+![Agentic SIFT architecture diagram](architecture.svg)
+
+<details>
+<summary>Text version of the diagram (for accessibility / plain-text viewers)</summary>
+
 ```
                           AGENTIC SIFT  —  single SIFT workstation (local-first)
 
@@ -131,6 +136,8 @@ and the trust boundary that separates LLM reasoning from tool execution.
   [ARCHITECTURAL] = enforced in code; the LLM cannot bypass it regardless of its prompt.
   [PROMPT-BASED]  = instructed via the system prompt; shapes behaviour but is not enforced.
 ```
+
+</details>
 
 ## Why No MCP Server (MCP is N/A)
 

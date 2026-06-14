@@ -28,6 +28,13 @@ python -m cli.main investigate --evidence /cases/image.E01 --type disk
 
 ## Architecture
 
+![Agentic SIFT architecture diagram](docs/architecture.svg)
+
+> Full diagram with trust boundaries and the architectural-vs-prompt guardrail table: **[docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)**.
+
+<details>
+<summary>Text version</summary>
+
 ```
 User → CLI → Orchestrator (hypothesis-driven)
                   │
@@ -49,6 +56,8 @@ User → CLI → Orchestrator (hypothesis-driven)
                   ↓
           Report Generator
 ```
+
+</details>
 
 **Key design:** The LLM never touches `subprocess` directly. Every command passes through the executor's validation pipeline:
 
