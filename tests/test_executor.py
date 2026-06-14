@@ -1,6 +1,7 @@
 """Tests for the executor validation pipeline."""
 
 import os
+import shutil
 import subprocess
 import sys
 import tempfile
@@ -14,6 +15,11 @@ PROJECT_ROOT = Path(__file__).parent.parent
 sys.path.insert(0, str(PROJECT_ROOT))
 
 from executor.runner import ExecutionResult, LocalExecutor
+
+# `echo` lives at different paths across platforms (/bin/echo on macOS,
+# /usr/bin/echo on many Linux distros); resolve it so these tests execute a real
+# binary on any host instead of hardcoding a path that may not exist.
+ECHO = shutil.which("echo") or "/bin/echo"
 
 
 def _make_executor(
@@ -102,11 +108,11 @@ class TestOutputPersistence(unittest.TestCase):
     def test_stdout_persisted_to_file_keyed_by_execution_id(self):
         with tempfile.TemporaryDirectory() as out:
             ex = LocalExecutor(
-                allowed_tools={"/usr/bin/echo": "echo"},
+                allowed_tools={ECHO: "echo"},
                 evidence_roots=["/cases"],
                 output_dir=out,
             )
-            result = ex.run("/usr/bin/echo", ["hello-trace"])
+            result = ex.run(ECHO, ["hello-trace"])
             self.assertEqual(result.exit_code, 0)
             self.assertTrue(result.stdout_path, "expected a stdout_path")
             self.assertIn(result.execution_id, result.stdout_path)
@@ -130,10 +136,10 @@ class TestOutputPersistence(unittest.TestCase):
     def test_no_output_dir_means_no_paths(self):
         # Backward compatible: without an output_dir, nothing is persisted.
         ex = LocalExecutor(
-            allowed_tools={"/usr/bin/echo": "echo"},
+            allowed_tools={ECHO: "echo"},
             evidence_roots=["/cases"],
         )
-        result = ex.run("/usr/bin/echo", ["hi"])
+        result = ex.run(ECHO, ["hi"])
         self.assertIsNone(result.stdout_path)
         self.assertIsNone(result.stderr_path)
 
@@ -149,8 +155,8 @@ class TestOutputPersistence(unittest.TestCase):
             )
             result = ExecutionResult(
                 execution_id="e-utf8",
-                tool="/usr/bin/echo",
-                argv=["/usr/bin/echo"],
+                tool=ECHO,
+                argv=[ECHO],
                 cwd="/tmp",
                 exit_code=0,
                 duration_ms=1,
@@ -205,10 +211,10 @@ class TestExecution(unittest.TestCase):
 
     def test_real_command(self):
         ex = _make_executor(
-            tools={"/usr/bin/echo": "echo"},
+            tools={ECHO: "echo"},
             roots=["/cases"],
         )
-        result = ex.run("/usr/bin/echo", ["hello"])
+        result = ex.run(ECHO, ["hello"])
         self.assertEqual(result.exit_code, 0)
         self.assertEqual(result.stdout.strip(), "hello")
         self.assertFalse(result.rejected)
@@ -268,9 +274,9 @@ class TestCwdAutoCreate(unittest.TestCase):
         with tempfile.TemporaryDirectory() as base:
             cwd = os.path.join(base, "scratch", "run1")  # does not exist yet
             ex = LocalExecutor(
-                allowed_tools={"/usr/bin/echo": "echo"}, evidence_roots=["/cases"]
+                allowed_tools={ECHO: "echo"}, evidence_roots=["/cases"]
             )
-            result = ex.run("/usr/bin/echo", ["hi"], cwd=cwd)
+            result = ex.run(ECHO, ["hi"], cwd=cwd)
             self.assertEqual(result.exit_code, 0)
             self.assertTrue(os.path.isdir(cwd))
 
@@ -280,7 +286,7 @@ class TestCwdAutoCreate(unittest.TestCase):
         from executor.runner import SSHExecutor
 
         ex = SSHExecutor(
-            allowed_tools={"/usr/bin/echo": "echo"},
+            allowed_tools={ECHO: "echo"},
             evidence_roots=["/cases"],
             host="h",
             port=22,
@@ -288,7 +294,7 @@ class TestCwdAutoCreate(unittest.TestCase):
         )
         with patch("executor.runner.subprocess.run") as m:
             m.return_value = MagicMock(returncode=0, stdout=b"", stderr=b"")
-            ex.run("/usr/bin/echo", ["hi"], cwd="/scratch/run1")
+            ex.run(ECHO, ["hi"], cwd="/scratch/run1")
         remote_cmd = m.call_args.args[0][-1]  # last arg of ssh argv
         self.assertIn("mkdir -p", remote_cmd)
         self.assertIn("/scratch/run1", remote_cmd)

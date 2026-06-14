@@ -1,0 +1,106 @@
+{
+  "metadata": {
+    "refreshed_at": "2026-06-01T00:00:00Z",
+    "installed_hash": "fixture-6-tool-set",
+    "tool_count": 6
+  },
+  "tools": [
+    {
+      "name": "fls",
+      "path": "/usr/bin/fls",
+      "category": "disk_forensics",
+      "runtime": "native",
+      "target_os": ["any"],
+      "input_types": ["disk_image", "filesystem"],
+      "capabilities": ["list_files", "timeline"],
+      "description": "The Sleuth Kit: list file and directory names in a disk image.",
+      "provenance": {
+        "category": "man_page",
+        "runtime": "man_page",
+        "target_os": "man_page",
+        "input_types": "man_page"
+      }
+    },
+    {
+      "name": "vol",
+      "path": "/usr/local/bin/vol",
+      "category": "memory_analysis",
+      "runtime": "python3",
+      "target_os": ["any"],
+      "input_types": ["memory_image"],
+      "capabilities": ["process_list", "netscan", "malfind"],
+      "description": "Volatility 3: memory-forensics framework (cross-platform analysis).",
+      "provenance": {
+        "category": "man_page",
+        "runtime": "man_page",
+        "target_os": "man_page",
+        "input_types": "man_page"
+      }
+    },
+    {
+      "name": "RegRipper",
+      "path": "/usr/local/bin/rip.pl",
+      "symlink": "rip.pl",
+      "category": "windows_artifact_analysis",
+      "runtime": "perl",
+      "target_os": ["windows"],
+      "input_types": ["registry_hive"],
+      "capabilities": ["registry"],
+      "description": "RegRipper: parse extracted Windows registry hives.",
+      "provenance": {
+        "category": "man_page",
+        "runtime": "man_page",
+        "target_os": "man_page",
+        "input_types": "man_page"
+      }
+    },
+    {
+      "name": "MFTECmd",
+      "path": "/opt/zimmermantools/MFTECmd.dll",
+      "category": "windows_artifact_analysis",
+      "runtime": ".net",
+      "target_os": ["windows"],
+      "input_types": ["mft"],
+      "capabilities": ["mft"],
+      "description": "Zimmerman MFTECmd: parse $MFT / $J (.NET; Windows-native).",
+      "provenance": {
+        "category": "man_page",
+        "runtime": "man_page",
+        "target_os": "man_page",
+        "input_types": "man_page"
+      }
+    },
+    {
+      "name": "tshark",
+      "path": "/usr/bin/tshark",
+      "category": "network_forensics",
+      "runtime": "native",
+      "target_os": ["any"],
+      "input_types": ["pcap"],
+      "capabilities": ["packet_analysis"],
+      "description": "Wireshark CLI: analyze packet captures.",
+      "provenance": {
+        "category": "man_page",
+        "runtime": "man_page",
+        "target_os": "man_page",
+        "input_types": "man_page"
+      }
+    },
+    {
+      "name": "yara",
+      "path": "/usr/local/bin/yara",
+      "category": "malware_analysis",
+      "runtime": "native",
+      "target_os": ["any"],
+      "input_types": ["file", "directory"],
+      "capabilities": ["pattern_match"],
+      "description": "YARA: match files against malware signature rules.",
+      "provenance": {
+        "category": "man_page",
+        "runtime": "man_page",
+        "target_os": "man_page",
+        "input_types": "man_page"
+      }
+    }
+  ]
+}

@@ -1,7 +1,9 @@
-# Locally-generated, per-environment tool catalog + sticky overrides (D8).
+# Locally-generated, per-environment tool catalog + sticky overrides.
 # Built by `agentic-sift refresh` on each box; never committed.
-tool_catalog.json
-overrides.json
+# Anchored to the repo root so the committed test fixture
+# (tests/fixtures/catalog/tool_catalog.json) is NOT ignored.
+/tool_catalog.json
+/overrides.json
 
 # Python caches and local run output.
 __pycache__/
