@@ -376,6 +376,11 @@ class Investigator:
                 # Evaluate hypotheses based on findings
                 self._evaluate_hypotheses(round_findings)
 
+                # Churn guard: turn each unresolved (contested) hypothesis into a
+                # focused follow-up so the next round does NEW work on the
+                # conflict instead of replaying the same dispatch.
+                self._spawn_contested_followups()
+
                 # Deepen/pivot: form new hypotheses from what this round revealed
                 # and record pivots away from refuted ones. This is what makes
                 # the later rounds mean something — the loop follows the evidence
@@ -1338,6 +1343,57 @@ If nothing new is warranted, return empty lists."""
                 hypothesis.description,
                 f"{len(supporting)} supporting, {len(contradicting)} contradicting findings",
             )
+
+    def _spawn_contested_followups(self) -> int:
+        """Churn guard for the deepen/pivot loop.
+
+        A "contested" hypothesis (both supporting and refuted evidence) is
+        unresolved and worth another round — but re-dispatching it unchanged just
+        replays the same work. So for each newly-contested hypothesis, spawn ONE
+        new, more specific "active" hypothesis aimed at reconciling the conflict
+        and mark the original handled (``followup_spawned``) so it is never
+        re-dispatched as-is (it keeps its "contested" status in the report). The
+        next round then does NEW work, not a replay. Bounded by the hypothesis
+        cap; returns the number of follow-ups added.
+        """
+        existing = self.progress.progress.hypotheses
+        cap = _int_env("AGENTIC_SIFT_MAX_HYPOTHESES", MAX_HYPOTHESES)
+        existing_desc = [h.description for h in existing]
+        spawned = 0
+        # Snapshot with list(): add_hypothesis() appends to this same live list.
+        for h in list(existing):
+            if h.status != "contested" or h.followup_spawned:
+                continue
+            # Mark handled regardless of whether a follow-up is actually added,
+            # so a contested hypothesis is never re-queued for an identical replay.
+            h.followup_spawned = True
+            if len(existing) >= cap:
+                continue
+            desc = self._contested_followup_text(h)
+            if not is_novel_hypothesis(desc, existing_desc):
+                continue
+            hid = f"H-{uuid.uuid4().hex[:8]}"
+            self.progress.add_hypothesis(hid, desc)
+            self.audit.log_hypothesis(
+                hid, "formed", desc, f"Follow-up to resolve contested {h.id}"
+            )
+            existing_desc.append(desc)
+            spawned += 1
+        self.progress.save()
+        return spawned
+
+    @staticmethod
+    def _contested_followup_text(h) -> str:
+        """A focused, deterministic follow-up hypothesis for a contested one."""
+        support = h.evidence_for[0] if h.evidence_for else "the supporting evidence"
+        against = (
+            h.evidence_against[0] if h.evidence_against else "the contradicting evidence"
+        )
+        return (
+            f"Resolve the conflict in {h.id} ({h.description}): reconcile support "
+            f"[{support}] against refutation [{against}] with targeted, "
+            f"corroborating evidence."
+        )
 
     def _find_tool_by_name(self, name: str) -> Optional[dict]:
         """Find a tool in the registry by name (partial match)."""

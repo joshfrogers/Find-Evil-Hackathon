@@ -26,11 +26,15 @@ class Hypothesis:
 
     id: str
     description: str
-    status: str = "active"  # active, supported, refuted, inconclusive
+    status: str = "active"  # active, supported, refuted, contested, inconclusive
     evidence_for: list[str] = field(default_factory=list)
     evidence_against: list[str] = field(default_factory=list)
     formed_at: str = ""
     resolved_at: str = ""
+    # Set once a contested hypothesis has had a focused follow-up spawned for it,
+    # so it is retired from re-dispatch and never replays identical work
+    # (see ProgressTracker.open_hypotheses and Investigator._spawn_contested_followups).
+    followup_spawned: bool = False
 
     def __post_init__(self) -> None:
         if not self.formed_at:
@@ -260,15 +264,22 @@ class ProgressTracker:
 
     @property
     def open_hypotheses(self) -> list[Hypothesis]:
-        """Hypotheses still worth investigating: untested ("active") AND
-        "contested" (supported by some evidence but contradicted by other —
-        unresolved). Cleanly "supported"/"refuted"/"inconclusive" ones are
-        resolved and excluded. The investigation loop drives off this set so a
-        contested hypothesis is re-investigated in later rounds (and its status
-        re-evaluated) instead of silently ending the run with unused round budget.
+        """Hypotheses still worth investigating: untested ("active") and
+        "contested" ones that have not yet had a focused follow-up spawned.
+
+        A "contested" hypothesis (supported by some evidence, contradicted by
+        other) is unresolved, so the loop keeps going while it remains — instead
+        of silently ending the run with unused round budget. But once a follow-up
+        has been spawned to chase the conflict (Investigator._spawn_contested_
+        followups), the original is retired from re-dispatch so it never replays
+        identical work. Cleanly supported/refuted/inconclusive ones are resolved
+        and excluded.
         """
         return [
-            h for h in self.progress.hypotheses if h.status in ("active", "contested")
+            h
+            for h in self.progress.hypotheses
+            if h.status == "active"
+            or (h.status == "contested" and not h.followup_spawned)
         ]
 
     @property

@@ -139,6 +139,48 @@ class HypothesisEvaluationTest(unittest.TestCase):
         h1 = next(h for h in self.inv.progress.progress.hypotheses if h.id == "H1")
         self.assertEqual(h1.status, "supported")
 
+    def test_contested_hypothesis_spawns_followup_and_is_retired(self):
+        # Churn guard (3a): a contested hypothesis spawns a focused active
+        # follow-up and is retired from re-dispatch, so the next round does NEW
+        # work on the conflict instead of replaying the same dispatch.
+        self.inv.progress.start("inv-test", "/cases/img.E01", "disk")
+        self.inv.progress.add_hypothesis("H1", "System used as hacking platform")
+        self.inv.progress.update_hypothesis(
+            "H1",
+            "contested",
+            evidence_for=["Mr. Evil profile present"],
+            evidence_against=["binary is MS-signed"],
+        )
+
+        self.assertEqual(self.inv._spawn_contested_followups(), 1)
+
+        h1 = next(h for h in self.inv.progress.progress.hypotheses if h.id == "H1")
+        self.assertTrue(h1.followup_spawned)
+        self.assertEqual(h1.status, "contested")  # status kept for the report
+
+        followups = [
+            h
+            for h in self.inv.progress.progress.hypotheses
+            if h.status == "active" and h.id != "H1"
+        ]
+        self.assertEqual(len(followups), 1)
+        self.assertIn("H1", followups[0].description)
+
+        # open_hypotheses now drives the next round: the follow-up is open, the
+        # retired contested original is not (no replay).
+        open_ids = {h.id for h in self.inv.progress.open_hypotheses}
+        self.assertIn(followups[0].id, open_ids)
+        self.assertNotIn("H1", open_ids)
+
+    def test_spawn_followups_is_idempotent(self):
+        # Running the spawn step again must not keep adding follow-ups for the
+        # same contested hypothesis (no unbounded growth / no per-round replay).
+        self.inv.progress.start("inv-test", "/cases/img.E01", "disk")
+        self.inv.progress.add_hypothesis("H1", "X")
+        self.inv.progress.update_hypothesis("H1", "contested")
+        self.assertEqual(self.inv._spawn_contested_followups(), 1)
+        self.assertEqual(self.inv._spawn_contested_followups(), 0)
+
     def test_evaluate_skips_hypothesis_with_no_findings(self):
         self.inv.progress.start("inv-test", "/cases/img.E01", "disk")
         self.inv.progress.add_hypothesis("H1", "Malware")

@@ -51,6 +51,13 @@ class ProgressTrackerTest(unittest.TestCase):
         # active_hypotheses stays strict (untested only).
         self.assertEqual({h.id for h in self.tracker.active_hypotheses}, {"H1"})
 
+        # Once H2's follow-up has been spawned it is retired from the open set,
+        # so it is never re-dispatched as an identical replay.
+        for h in self.tracker.progress.hypotheses:
+            if h.id == "H2":
+                h.followup_spawned = True
+        self.assertEqual({h.id for h in self.tracker.open_hypotheses}, {"H1"})
+
     def test_record_failure(self):
         self.tracker.record_failure(
             "log2timeline",
