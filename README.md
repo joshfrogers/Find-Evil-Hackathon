@@ -2,18 +2,19 @@
 
 Autonomous forensic analysis powered by Claude + SIFT. Built for the [SANS Find Evil! Hackathon](https://findevil.devpost.com/) (Apr 15 – Jun 15, 2026).
 
-A Python CLI orchestrator that drives Claude Code through hypothesis-driven forensic investigations on the SIFT workstation. The LLM decides *what* to investigate and *how to interpret* results. Our Python code controls *what can be executed* and *what tools are available*.
+A Python CLI orchestrator that drives Claude (via the Anthropic API) through hypothesis-driven forensic investigations on the SIFT workstation. The LLM decides *what* to investigate and *how to interpret* results. The Python code controls *what can be executed* and *what tools are available*.
 
 ## Quick Start
 
 The default and recommended way to run is locally, on a single SIFT
-workstation with Claude Code installed — Claude, the forensic tools, the
-evidence image, and the read-only mount all live on the same machine:
+workstation with Claude API access configured (`ANTHROPIC_API_KEY`) — the
+forensic tools, the evidence image, and the read-only mount all live on the
+same machine:
 
 ```bash
 # Clone the repo
 git clone <repo-url>
-cd agentic_sift
+cd agentic-sift
 
 # Run an investigation (local, single-machine — no SSH)
 python -m cli.main investigate --evidence /cases/image.E01 --type disk
@@ -36,7 +37,7 @@ User → CLI → Orchestrator (hypothesis-driven)
       (Disk)    (Memory)   (Timeline)
           │       │         │
           ↓       ↓         ↓
-      Tool Registry (277 tools, 22 categories)
+      Tool Catalog (scanned + gated per machine)
           │       │         │
           ↓       ↓         ↓
       Executor (allowlist + path validation)
@@ -71,30 +72,36 @@ These are **architectural guardrails**, not prompt-based. The code enforces them
 ## Project Structure
 
 ```
-agentic_sift/
-├── sift_sentinel/          # Tool registry — 277 SIFT tools, crawler, inventory
-│   ├── tool_inventory.json # Dynamic catalog (refreshed by crawler)
-│   └── tool_registry/      # Crawler, models, schema
+agentic-sift/
+├── tool_registry/          # Tool catalog — scanner, enrichment, staleness gates
+│   ├── scanner.py          # Enumerate installed tools (PATH/dpkg/pip)
+│   ├── enrich.py           # LLM-grounded tool metadata with provenance
+│   └── catalog.py          # Load/merge/staleness; CatalogMissing handling
+├── catalog/                # Fail-open tool gating (installed/target_os/input_type)
+│   └── gates.py            # gate_tools — architectural tool filtering
 ├── executor/               # Validation pipeline + Local/SSH execution
 │   └── runner.py           # LocalExecutor, SSHExecutor, allowlist, path checks
+├── evidence/               # Read-only mounting + SHA-256 integrity bracketing
+│   ├── session.py          # EvidenceSession: mount, volumes, spoliation check
+│   └── view.py             # EvidenceView: open/close, type-aware mount
 ├── audit/                  # Structured JSON audit logging
 │   └── logger.py           # 8 event types: execution, message, finding, etc.
 ├── progress/               # Cross-iteration learning
 │   └── tracker.py          # Hypotheses, failures, pivots, iteration caps
 ├── agents/                 # Sub-agents + verifier
 │   ├── base.py             # DomainAgent, VerifierAgent, Finding
-│   ├── claude.py           # Claude Code subprocess interface
+│   ├── claude.py           # Claude transport (env-driven; ANTHROPIC_API_KEY)
 │   └── domains.py          # 6 domain definitions (disk, memory, timeline, etc.)
 ├── orchestrator/           # Hypothesis-driven investigation loop
 │   └── investigator.py     # Triage → hypotheses → dispatch → verify → report
+├── verification/           # Multi-round adversarial verification + corroboration
+├── correlation/            # Temporal + semantic correlation (event chains, gaps)
+├── accuracy/               # Ground-truth scoring (precision/recall/F1) + hallucination
 ├── report/                 # Report generation
 │   └── generator.py        # Markdown + JSON with accuracy metadata
 ├── cli/                    # CLI entry point
-│   └── main.py             # agentic-sift investigate / refresh
-└── tests/                  # 22 tests
-    ├── test_executor.py    # 9 tests: allowlist, path validation, execution
-    ├── test_audit.py       # 7 tests: all event types, JSONL output
-    └── test_progress.py    # 6 tests: hypotheses, failures, iteration caps
+│   └── main.py             # agentic-sift investigate / refresh / score / compare-agents
+└── tests/                  # 563 tests (unittest)
 ```
 
 ## CLI Usage
@@ -230,19 +237,29 @@ Only findings that survive verification make it into the final report.
 ## Running Tests
 
 ```bash
-cd agentic_sift
+cd agentic-sift
 python -m unittest discover -s tests -v
 ```
 
 ## Dependencies
 
 - Python 3.10+
-- Claude Code (installed and authenticated)
-- SIFT Workstation tools (pre-installed on SIFT VM)
-- No pip install required — stdlib only
+- Claude API access — set `ANTHROPIC_API_KEY` (the orchestrator calls the Anthropic Messages API over HTTPS)
+- SIFT Workstation tools (pre-installed on the SIFT VM)
+- No pip install required — Python standard library only
 
-<!-- Author/team credits intentionally omitted from the public repo
-     pending the credit decision; add before publishing if desired. -->
+## Documentation
+
+| Document | What it covers |
+|----------|----------------|
+| [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) | Components, the trust boundary, and a table marking every guardrail as architectural (enforced in code) vs prompt-based. |
+| [docs/ACCURACY.md](docs/ACCURACY.md) | Self-critical accuracy report: methodology, scored results, false positives, missed findings, hallucination detection, evidence integrity, and spoliation testing. |
+| [docs/DATASET.md](docs/DATASET.md) | Test datasets (public NIST CFReDS images), their sources, the ground-truth baseline schema, and findings. |
+| [docs/PROJECT_DESCRIPTION.md](docs/PROJECT_DESCRIPTION.md) | Project story: motivation, what it does, how it was built, challenges, and what's next. |
+
+Sample agent execution logs (a full `audit.jsonl` + `report.json`) live under
+[`tests/fixtures/snapshots/`](tests/fixtures/snapshots/) — every finding traces
+back to the exact tool execution that produced it.
 
 ## License
 

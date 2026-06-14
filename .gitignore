@@ -1,0 +1,8 @@
+# Locally-generated, per-environment tool catalog + sticky overrides (D8).
+# Built by `agentic-sift refresh` on each box; never committed.
+tool_catalog.json
+overrides.json
+
+# Python caches and local run output.
+__pycache__/
+*.pyc

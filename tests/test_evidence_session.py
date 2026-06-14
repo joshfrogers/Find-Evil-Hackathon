@@ -440,11 +440,11 @@ class TestMountFailureIsGraceful(unittest.TestCase):
 class TestMaterialize(unittest.TestCase):
     """materialize(): live-in-place, real-copy, and icat extraction.
 
-    Three storage buckets (design §13, C3):
+    Three storage buckets:
       - live + read-in-place  -> return the mount path (zero copy, the default)
       - live + copy=True      -> real local copy for mmap/sidecar/seek tools
       - inode                 -> icat non-addressable bytes (deleted / $MFT)
-    No size guard (2026-06-09 decision). Symlink-escape + content dedup kept.
+    No size guard. Symlink-escape + content dedup kept.
     """
 
     def _open(self, work, runner):
