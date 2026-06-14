@@ -4,14 +4,10 @@ Calls the Messages API directly with the Python standard library (``http.client`
 + ``ssl``) — no third-party SDK, no ``pip`` — so it runs on a stdlib-only SIFT
 workstation. Each call is a single short-lived HTTPS request (~1-2s).
 
-Transport is selected from the environment (see ``_request_target``), with no
-deployment specifics baked into the source:
-
-- **Public Anthropic API** (default) — ``api.anthropic.com/v1/messages``
-  authenticated by ``ANTHROPIC_API_KEY``.
-- **Optional mTLS gateway/proxy** — set ``AGENTIC_SIFT_CLIENT_CERT`` (a client
-  cert PEM) and ``AGENTIC_SIFT_API_HOST`` to route through a self-hosted gateway
-  authenticated by a client certificate instead of an API key.
+The Messages API is authenticated by ``ANTHROPIC_API_KEY`` and reached at
+``api.anthropic.com`` by default; ``AGENTIC_SIFT_API_HOST`` can override the host
+to route through a self-hosted proxy. No deployment specifics are baked into the
+source.
 
 The LLM decides what to investigate and how to interpret results; our Python
 code controls what can be executed and what tools are available.
@@ -51,7 +47,7 @@ class ClaudeTimeoutError(ClaudeError):
 
 
 class ClaudeNotFoundError(ClaudeError):
-    """No usable Claude transport (no client cert and no ANTHROPIC_API_KEY)."""
+    """No Claude transport configured (ANTHROPIC_API_KEY is not set)."""
 
 
 # Transient gateway/network failures (5xx, connection resets, timeouts) are
@@ -65,66 +61,41 @@ _MODEL = os.environ.get("AGENTIC_SIFT_MODEL", "claude-opus-4-8")
 _MAX_TOKENS = int(os.environ.get("AGENTIC_SIFT_MAX_TOKENS", "8192"))
 _ANTHROPIC_VERSION = "2023-06-01"
 
-# Default to the public Anthropic API. An optional self-hosted/proxied gateway
-# is configured purely through environment variables (no endpoint or credential
-# path is baked into the source), so this file carries no deployment-specific
-# details:
-#   ANTHROPIC_API_KEY            - public Anthropic API key (default transport)
-#   AGENTIC_SIFT_API_HOST        - override host for a gateway/proxy (optional)
-#   AGENTIC_SIFT_CLIENT_CERT     - client cert PEM (cert+key) for an mTLS gateway
-#                                  (used instead of an API key when set)
+# Default to the public Anthropic API. Configuration is purely environmental
+# (no endpoint or credential is baked into the source):
+#   ANTHROPIC_API_KEY      - Anthropic API key (required)
+#   AGENTIC_SIFT_API_HOST  - override host to route through a self-hosted proxy (optional)
 _DEFAULT_API_HOST = "api.anthropic.com"
 
-# Cache the (host, headers, ssl_context) target so the cert/context is built once
-# and reused across calls/threads (a fresh HTTPSConnection per call is created
-# from this shared, read-only context — thread-safe).
+# Cache the (host, headers, ssl_context) target so it is built once and reused
+# across calls/threads (a fresh HTTPSConnection per call is created from this
+# shared, read-only context — thread-safe).
 _TARGET: Optional[tuple] = None
 
 
 def _request_target() -> tuple:
     """Resolve (host, base_headers, ssl_context) for the Messages API.
 
-    Transport is chosen from the environment, with no deployment specifics in the
-    source: a client-cert PEM (``AGENTIC_SIFT_CLIENT_CERT``) selects an mTLS
-    gateway at ``AGENTIC_SIFT_API_HOST``; otherwise the public Anthropic API with
-    ``ANTHROPIC_API_KEY``. Cached after first resolution.
+    Authenticated by ``ANTHROPIC_API_KEY`` against ``api.anthropic.com`` (or
+    ``AGENTIC_SIFT_API_HOST`` if set). Cached after first resolution.
     """
     global _TARGET
     if _TARGET is not None:
         return _TARGET
 
     # NOTE: no ``anthropic-beta: prompt-caching-*`` header. Prompt caching is GA
-    # — ``cache_control`` blocks are honored without it — and the mTLS gateway
-    # rejects the beta header value with HTTP 400, which would break every call.
+    # — ``cache_control`` blocks are honored without it.
     headers = {
         "content-type": "application/json",
         "anthropic-version": _ANTHROPIC_VERSION,
     }
     host = os.environ.get("AGENTIC_SIFT_API_HOST", _DEFAULT_API_HOST)
 
-    cert = os.environ.get("AGENTIC_SIFT_CLIENT_CERT")
-    if cert and os.path.exists(cert):
-        # mTLS gateway: WE authenticate with the client cert; the gateway is a
-        # trusted host reached over a private network, so server-cert
-        # verification is relaxed. (The public path below uses full verification.)
-        if host == _DEFAULT_API_HOST:
-            raise ClaudeNotFoundError(
-                "AGENTIC_SIFT_CLIENT_CERT is set but AGENTIC_SIFT_API_HOST is "
-                "not — an mTLS gateway needs its host configured."
-            )
-        ctx = ssl.create_default_context()
-        ctx.load_cert_chain(certfile=cert)
-        ctx.check_hostname = False
-        ctx.verify_mode = ssl.CERT_NONE
-        _TARGET = (host, headers, ctx)
-        return _TARGET
-
     key = os.environ.get("ANTHROPIC_API_KEY")
     if not key:
         raise ClaudeNotFoundError(
-            "No Claude credentials: set ANTHROPIC_API_KEY for the public "
-            "Anthropic API, or AGENTIC_SIFT_CLIENT_CERT + AGENTIC_SIFT_API_HOST "
-            "for an mTLS gateway."
+            "No Claude credentials: set ANTHROPIC_API_KEY for the Anthropic "
+            "Messages API."
         )
     headers["x-api-key"] = key
     _TARGET = (host, headers, ssl.create_default_context())
