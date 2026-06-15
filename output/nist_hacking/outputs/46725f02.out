@@ -1,0 +1,20 @@
+parse [option]
+Parse contents event file to produce a timeline; output goes to STDOUT
+
+  -f file........event file to be parsed; must be 5-field TLN
+                 format
+  -c ............CSV output format (for opening in Excel), time in 
+                 YYYY-MM-DD hh:mm:ss format (RFC 3339 profile for ISO 8601)
+  -o ............sort showing oldest events first               
+  -r range ......range of dates, MM/DD/YYYY-MM/DD/YYYY format; time range of
+                 00:00:00 is automatically added to the first date, and 
+                 23:59:59 is automatically added to the second date.                         
+  -h ............Help (print this information)
+  
+Ex: C:\>parse -f events.txt -o > tln.txt
+    C:\>parse -f events.txt -r 02/12/2008-03/16/2008 > tln.txt
+    C:\>parse -f events.txt -c > tln.csv
+
+**All times printed as GMT/UTC
+
+copyright 2020 Quantum Analytics Research, LLC

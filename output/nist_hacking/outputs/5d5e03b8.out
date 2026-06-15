@@ -1,0 +1,10 @@
+timezone v.20200518
+(System) Get TimeZoneInformation key contents
+
+TimeZoneInformation key
+ControlSet001\Control\TimeZoneInformation
+LastWrite Time 2004-08-19 17:20:02Z
+  DaylightName   -> Central Daylight Time
+  StandardName   -> Central Standard Time
+  Bias           -> 360 (6 hours)
+  ActiveTimeBias -> 300 (5 hours)

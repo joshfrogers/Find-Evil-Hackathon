@@ -1,0 +1,85 @@
+nic2 v.20200525
+(System) Gets NIC info from System hive
+
+Adapter: {417ECA57-8D1D-49AE-990C-18E6A627A059}
+LastWrite Time: 2004-08-19 22:21:42Z
+  UseZeroBroadcast             0                   
+  EnableDHCP                   0                   
+  IPAddress                    0.0.0.0             
+  SubnetMask                   0.0.0.0             
+  DefaultGateway                                   
+  EnableDeadGWDetect           1                   
+  DontAddDefaultGateway        0                   
+
+ControlSet001\Services\Tcpip\Parameters\Interfaces has no subkeys.
+Adapter: {6E4090C2-FAEF-489A-8575-505D21FC1049}
+LastWrite Time: 2004-08-27 15:30:17Z
+  UseZeroBroadcast             0                   
+  EnableDeadGWDetect           1                   
+  EnableDHCP                   1                   
+  IPAddress                    0.0.0.0             
+  SubnetMask                   0.0.0.0             
+  DefaultGateway                                   
+  DefaultGatewayMetric                             
+  NameServer                                       
+  Domain                                           
+  RegistrationEnabled          1                   
+  RegisterAdapterName          0                   
+  TCPAllowedPorts              0                   
+  UDPAllowedPorts              0                   
+  RawIPAllowedProtocols        0                   
+  NTEContextList                                   
+  DhcpClassIdBin                                   
+  DhcpServer                   255.255.255.255     
+  Lease                        3600                
+  LeaseObtainedTime            2004-08-27 15:30:17Z
+  T1                           2004-08-27 16:00:17Z
+  T2                           2004-08-27 16:22:47Z
+  LeaseTerminatesTime          2004-08-27 16:30:17Z
+  IPAutoconfigurationAddress   0.0.0.0             
+  IPAutoconfigurationMask      255.255.0.0         
+  IPAutoconfigurationSeed      0                   
+  AddressType                  0                   
+
+ControlSet001\Services\Tcpip\Parameters\Interfaces has no subkeys.
+Adapter: {86FC0C96-3FF2-4D59-9ABA-C602F213B5D2}
+LastWrite Time: 2004-08-27 15:46:19Z
+  UseZeroBroadcast             0                   
+  EnableDeadGWDetect           1                   
+  EnableDHCP                   1                   
+  IPAddress                    0.0.0.0             
+  SubnetMask                   0.0.0.0             
+  DefaultGateway                                   
+  DefaultGatewayMetric                             
+  NameServer                                       
+  Domain                                           
+  RegistrationEnabled          1                   
+  RegisterAdapterName          0                   
+  TCPAllowedPorts              0                   
+  UDPAllowedPorts              0                   
+  RawIPAllowedProtocols        0                   
+  NTEContextList                                   
+  DhcpClassIdBin                                   
+  DhcpServer                   255.255.255.255     
+  Lease                        3600                
+  LeaseObtainedTime            2004-08-27 15:46:18Z
+  T1                           2004-08-27 16:16:18Z
+  T2                           2004-08-27 16:38:48Z
+  LeaseTerminatesTime          2004-08-27 16:46:18Z
+  IPAutoconfigurationAddress   0.0.0.0             
+  IPAutoconfigurationMask      255.255.0.0         
+  IPAutoconfigurationSeed      0                   
+  AddressType                  0                   
+
+ControlSet001\Services\Tcpip\Parameters\Interfaces has no subkeys.
+Adapter: {F9356994-E82B-49FC-BFE9-59568F68F497}
+LastWrite Time: 2004-08-19 22:21:42Z
+  UseZeroBroadcast             0                   
+  EnableDHCP                   0                   
+  IPAddress                    0.0.0.0             
+  SubnetMask                   0.0.0.0             
+  DefaultGateway                                   
+  EnableDeadGWDetect           1                   
+  DontAddDefaultGateway        0                   
+
+ControlSet001\Services\Tcpip\Parameters\Interfaces has no subkeys.

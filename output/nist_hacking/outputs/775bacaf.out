@@ -1,0 +1,17 @@
+typedurls v.20200526
+(NTUSER.DAT) Returns contents of user's TypedURLs key.
+
+TypedURLs
+Software\Microsoft\Internet Explorer\TypedURLs
+LastWrite Time 2004-08-27 15:44:44Z
+  url1 -> http://www.maktoob.com/
+  url2 -> http://www.ethereal.com/
+  url3 -> http://www.wardriving.com/
+  url4 -> http://4.12.220.254/temp/
+  url5 -> ftp://4.12.220.254/temp
+  url6 -> ftp://4.12.220.254
+  url7 -> http://www.drudgereport.com/
+  url8 -> http://www.majorgeeks.com/
+  url9 -> http://www.yahoo.com/
+  url10 -> http://www.2600.org/
+  url11 -> http://www.microsoft.com/isapi/redir.dll?prd=ie&pver=6&ar=msnhome

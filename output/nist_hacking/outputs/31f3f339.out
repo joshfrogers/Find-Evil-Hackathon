@@ -1,0 +1,47 @@
+# Recent settings file for Ethereal 0.10.6.
+# This file is regenerated each time Ethereal is quit.
+# So be careful, if you want to make manual changes here.
+######## Recent capture files (latest last) ########
+recent.capture_file: C:\Documents and Settings\Mr. Evil\interception
+######## Recent display filters (latest last) ########
+recent.display_filter: (ip.addr eq 192.168.254.2 and ip.addr eq 207.68.174.248) and (tcp.port eq 1337 and tcp.port eq 80)
+# Main Toolbar show (hide).
+# TRUE or FALSE (case-insensitive).
+gui.toolbar_main_show: TRUE
+# Filter Toolbar show (hide).
+# TRUE or FALSE (case-insensitive).
+gui.filter_toolbar_show: TRUE
+# Packet list show (hide).
+# TRUE or FALSE (case-insensitive).
+gui.packet_list_show: TRUE
+# Tree view show (hide).
+# TRUE or FALSE (case-insensitive).
+gui.tree_view_show: TRUE
+# Byte view show (hide).
+# TRUE or FALSE (case-insensitive).
+gui.byte_view_show: TRUE
+# Statusbar show (hide).
+# TRUE or FALSE (case-insensitive).
+gui.statusbar_show: TRUE
+# Timestamp display format.
+# One of: RELATIVE, ABSOLUTE, ABSOLUTE_WITH_DATE, DELTA
+gui.time_format: RELATIVE
+# Zoom level.
+# A decimal number.
+gui.zoom_level: 0
+# Main window geometry.
+# Decimal integers.
+gui.geometry_main_x: 20
+gui.geometry_main_y: 20
+gui.geometry_main_width: 800
+gui.geometry_main_height: 553
+# Main window maximized (GTK2 only).
+# TRUE or FALSE (case-insensitive).
+gui.geometry_main_maximized: TRUE
+# Main window panes (GTK2 only).
+# Decimal numbers.
+gui.geometry_main_upper_pane: 280
+gui.geometry_main_lower_pane: 68
+gui.geometry_status_pane: 141
+# Last directory navigated to in File Open dialog.
+gui.fileopen_remembered_dir: C:\Documents and Settings\Mr. Evil\

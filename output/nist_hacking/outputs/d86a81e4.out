@@ -1,0 +1,176 @@
+UserAssist
+Software\Microsoft\Windows\CurrentVersion\Explorer\UserAssist
+LastWrite Time 2004-08-19 23:04:14Z
+
+{5E6AB780-7743-11CF-A12B-00AA004AE837}
+2004-08-27 15:11:28Z
+  UEME_UITOOLBAR (27)
+  UEME_UITOOLBAR:0x1,120 (1)
+2004-08-27 15:10:20Z
+  UEME_UITOOLBAR:0x1,124 (3)
+2004-08-26 16:03:33Z
+  UEME_UITOOLBAR:0x1,130 (19)
+2004-08-25 16:08:01Z
+  UEME_UITOOLBAR:0x1,125 (2)
+2004-08-20 15:32:56Z
+  UEME_UITOOLBAR:0x1,122 (1)
+
+Value names with no time stamps:
+  HRZR_PGYPHNPbhag:pgbe
+
+{75048700-EF1F-11D0-9888-006097DEACF9}
+2004-08-27 15:46:00Z
+  UEME_UISCUT (42)
+2004-08-27 15:42:40Z
+  UEME_RUNPATH (76)
+  UEME_RUNPATH:::{871C5380-42A0-1069-A2EA-08002B30309D} (14)
+  UEME_RUNPATH:C:\Program Files\Internet Explorer\iexplore.exe (14)
+2004-08-27 15:34:54Z
+  UEME_RUNPATH:C:\Program Files\Ethereal\ethereal.exe (1)
+2004-08-27 15:33:02Z
+  UEME_RUNPATH:C:\Program Files\Cain\Cain.exe (2)
+2004-08-27 15:28:36Z
+  UEME_RUNPATH:C:\Documents and Settings\Mr. Evil\Desktop\ethereal-setup-0.10.6.exe (1)
+2004-08-27 15:15:08Z
+  UEME_RUNPATH:C:\Documents and Settings\Mr. Evil\Desktop\WinPcap_3_01_a.exe (1)
+2004-08-27 15:14:44Z
+  UEME_RUNCPL (4)
+  UEME_RUNCPL:"C:\WINDOWS\System32\appwiz.cpl",Add or Remove Programs (1)
+2004-08-27 15:12:35Z
+  UEME_RUNPATH:C:\Program Files\Network Stumbler\NetStumbler.exe (1)
+2004-08-27 15:12:11Z
+  UEME_RUNPATH:C:\Documents and Settings\Mr. Evil\Desktop\netstumblerinstaller_0_4_0.exe (1)
+2004-08-26 16:03:17Z
+  UEME_RUNPATH:::{208D2C60-3AEA-1069-A2D7-08002B30309D} (3)
+2004-08-26 15:13:57Z
+  UEME_RUNPATH:C:\Program Files\Whois\whois.exe (2)
+2004-08-26 15:06:14Z
+  UEME_RUNPATH:Look@LAN.lnk (2)
+  UEME_RUNPATH:C:\Program Files\Look@LAN\LookAtLan.exe (2)
+2004-08-26 15:05:15Z
+  UEME_RUNPATH:C:\WINDOWS\System32\telnet.exe (1)
+2004-08-26 14:58:25Z
+  UEME_RUNPATH:Look@Host.lnk (1)
+  UEME_RUNPATH:C:\Program Files\Look@LAN\LookAtHost.exe (1)
+2004-08-25 16:20:27Z
+  UEME_RUNPATH:C:\Program Files\mIRC\mirc.exe (3)
+2004-08-25 15:55:34Z
+  UEME_RUNPATH:C:\Program Files\Agent\agent.exe (2)
+2004-08-25 15:55:26Z
+  UEME_RUNPATH:C:\Documents and Settings\Mr. Evil\Desktop\lalsetup250.exe (1)
+2004-08-25 15:27:27Z
+  UEME_RUNPATH:C:\Program Files\Faber Toys\Faber Toys.exe (2)
+2004-08-25 15:23:44Z
+  UEME_RUNPATH:C:\WINDOWS\System32\cmd.exe (1)
+2004-08-25 15:22:37Z
+  UEME_RUNPATH:C:\WINDOWS\System32\netplwiz.dll (1)
+2004-08-20 21:13:23Z
+  UEME_RUNPIDL:%csidl2%\Outlook Express.lnk (1)
+  UEME_RUNPIDL (1)
+  UEME_RUNPATH:C:\Program Files\Outlook Express\msimn.exe (1)
+2004-08-20 15:50:40Z
+  UEME_RUNPATH:C:\WINDOWS\system32\NOTEPAD.EXE (2)
+2004-08-20 15:50:26Z
+  UEME_RUNPATH:::{20D04FE0-3AEA-1069-A2D8-08002B30309D} (6)
+2004-08-20 15:23:17Z
+  UEME_RUNCPL:"C:\WINDOWS\System32\sysdm.cpl",System (2)
+2004-08-20 15:18:30Z
+  UEME_RUNCPL:NCPA.CPL (1)
+2004-08-20 15:12:54Z
+  UEME_RUNPATH:D:\Drivers\Password recovery\123wasp_setup.exe (1)
+2004-08-20 15:11:56Z
+  UEME_RUNPATH:C:\Documents and Settings\Mr. Evil\Local Settings\Temp\Temporary Directory 1 for powertoysetup.zip\PowerToySetup.exe (1)
+2004-08-20 15:10:47Z
+  UEME_RUNPATH:D:\Drivers\Whois\whois.exe (1)
+2004-08-20 15:09:46Z
+  UEME_RUNPATH:D:\Drivers\IRC\mirc612.exe (1)
+2004-08-20 15:09:16Z
+  UEME_RUNPATH:C:\Program Files\Windows NT\Accessories\WORDPAD.EXE (1)
+2004-08-20 15:08:37Z
+  UEME_RUNPATH:D:\Drivers\FTP\cute3032.exe (1)
+2004-08-20 15:08:02Z
+  UEME_RUNPATH:D:\Drivers\Forte Agent\a32-19.exe (1)
+2004-08-20 15:06:45Z
+  UEME_RUNPATH:D:\Drivers\Fabertoys\FaberToys_FullSetup.exe (1)
+2004-08-20 15:05:52Z
+  UEME_RUNPATH:D:\Drivers\Cain & Abel\cain25b45.exe (1)
+2004-08-20 15:05:00Z
+  UEME_RUNPATH:D:\Drivers\Anonyymizer\setup.exe (1)
+2004-08-19 23:06:21Z
+  UEME_RUNCPL:desk.cpl (1)
+2004-08-19 23:03:11Z
+  UEME_RUNPIDL:%csidl2%\MSN Explorer.lnk (2)
+  UEME_RUNPIDL:%csidl2%\Windows Media Player.lnk (2)
+  UEME_RUNPIDL:%csidl2%\Accessories\Windows Movie Maker.lnk (12)
+  UEME_RUNPIDL:%csidl2%\Accessories\Tour Windows XP.lnk (11)
+  UEME_RUNPIDL:%csidl2%\Accessories\System Tools\Files and Settings Transfer Wizard.lnk (10)
+
+Value names with no time stamps:
+  HRZR_PGYPHNPbhag:pgbe
+  HRZR_EHACVQY:%pfvqy2%\Nabalzvmre Gbbyone\Havafgnyy.yax
+  HRZR_EHACVQY:%pfvqy2%\Nabalzvmre Gbbyone\Uryc.yax
+  HRZR_EHACVQY:%pfvqy2%\Nabalzvmre Gbbyone\Nabalzvmre JroFvgr.yax
+  HRZR_EHACVQY:%pfvqy2%\Pnva\Pnva i2.5.yax
+  HRZR_EHACVQY:%pfvqy2%\Pnva\Havafgnyy Pnva.yax
+  HRZR_EHACVQY:%pfvqy2%\Ntrag Arjfernqre\Ntrag Uryc.yax
+  HRZR_EHACVQY:%pfvqy2%\Ntrag Arjfernqre\Ernqzr.yax
+  HRZR_EHACVQY:%pfvqy2%\TybonyFPNCR\PhgrSGC\PhgrSGC.yax
+  HRZR_EHACVQY:%pfvqy2%\TybonyFPNCR\PhgrSGC\Havafgnyy PhgrSGC.yax
+  HRZR_EHACVQY:%pfvqy2%\TybonyFPNCR\PhgrSGC\PhgrSGC Uryc.yax
+  HRZR_EHACVQY:%pfvqy2%\TybonyFPNCR\PhgrSGC\PhgrSGC Ernq Zr.yax
+  HRZR_EHACVQY:%pfvqy2%\TybonyFPNCR\PhgrUGZY\PhgrUGZY.yax
+  HRZR_EHACVQY:%pfvqy2%\TybonyFPNCR\PhgrUGZY\Havafgnyy PhgrUGZY.yax
+  HRZR_EHACVQY:%pfvqy2%\TybonyFPNCR\PhgrUGZY\PhgrUGZY Uryc.yax
+  HRZR_EHACVQY:%pfvqy2%\TybonyFPNCR\PhgrUGZY\PhgrUGZY Ernqzr.yax
+  HRZR_EHACVQY:%pfvqy2%\zVEP
+  HRZR_EHACVQY:%pfvqy2%\zVEP\zVEP Uryc.yax
+  HRZR_EHACVQY:%pfvqy2%\zVEP\VEP Vageb.yax
+  HRZR_EHACVQY:%pfvqy2%\Cbjregblf sbe Jvaqbjf KC\GjrnxHV sbe Jvaqbjf KC.yax
+  HRZR_EHACVQY:%pfvqy2%\Cbjregblf sbe Jvaqbjf KC\CbjreGbl Pnyphyngbe.yax
+  HRZR_EHACVQY:%pfvqy2%\Cbjregblf sbe Jvaqbjf KC\GvzreFubg.yax
+  HRZR_EHACVQY:%pfvqy2%\Cbjregblf sbe Jvaqbjf KC\Ernq zr.yax
+  HRZR_EHACVQY:%pfvqy2%\Cbjregblf sbe Jvaqbjf KC
+  HRZR_EHACVQY:%pfvqy2%\Cbjregblf sbe Jvaqbjf KC\Fyvqr Fubj Jvmneq.yax
+  HRZR_EHACVQY:%pfvqy2%\123 JNFC\URYC.yax
+  HRZR_EHACVQY:%pfvqy2%\123 JNFC\YVPRAFR.yax
+  HRZR_EHACVQY:%pfvqy2%\Jvaqbjf Zrffratre.yax
+  HRZR_EHACVQY:%pfvqy2%\Erzbgr Nffvfgnapr.yax
+  HRZR_EHACVQY:%pfvqy2%\Vagrearg Rkcybere.yax
+  HRZR_EHACVQY:%pfvqy2%\Fgneghc
+  HRZR_EHACVQY:%pfvqy2%\TybonyFPNCR
+  HRZR_EHACVQY:%pfvqy2%\Tnzrf
+  HRZR_EHACVQY:%pfvqy2%\Snore Gblf
+  HRZR_EHACVQY:%pfvqy2%\Pnva
+  HRZR_EHACVQY:%pfvqy2%\Nabalzvmre Gbbyone
+  HRZR_EHACVQY:%pfvqy2%\Ntrag Arjfernqre
+  HRZR_EHACVQY:%pfvqy2%\Npprffbevrf
+  HRZR_EHACVQY:%pfvqy2%\123 JNFC
+  HRZR_EHACVQY:%pfvqy2%\zVEP\Irefvbaf.gkg.yax
+  HRZR_EHACVQY:%pfvqy2%\zVEP\Ernqzr.gkg.yax
+  HRZR_EHACVQY:%pfvqy2%\zVEP\zVEP.yax
+  HRZR_EHACVQY:%pfvqy2%\TybonyFPNCR\PhgrUGZY
+  HRZR_EHACVQY:%pfvqy2%\TybonyFPNCR\PhgrSGC
+  HRZR_EHACVQY:%pfvqy2%\Tnzrf\Fcvqre Fbyvgnver.yax
+  HRZR_EHACVQY:%pfvqy2%\Tnzrf\Fbyvgnver.yax
+  HRZR_EHACVQY:%pfvqy2%\Tnzrf\Cvaonyy.yax
+  HRZR_EHACVQY:%pfvqy2%\Tnzrf\Zvarfjrrcre.yax
+  HRZR_EHACVQY:%pfvqy2%\Tnzrf\Vagrearg Fcnqrf.yax
+  HRZR_EHACVQY:%pfvqy2%\Tnzrf\Vagrearg Erirefv.yax
+  HRZR_EHACVQY:%pfvqy2%\Tnzrf\Vagrearg Urnegf.yax
+  HRZR_EHACVQY:%pfvqy2%\Tnzrf\Vagrearg Purpxref.yax
+  HRZR_EHACVQY:%pfvqy2%\Tnzrf\Vagrearg Onpxtnzzba.yax
+  HRZR_EHACVQY:%pfvqy2%\Tnzrf\Urnegf.yax
+  HRZR_EHACVQY:%pfvqy2%\Tnzrf\Serrpryy.yax
+  HRZR_EHACVQY:%pfvqy2%\Snore Gblf\Jvaqbjf Rkcybere.yax
+  HRZR_EHACVQY:%pfvqy2%\Snore Gblf\Cebtenz Nyvnfrf.yax
+  HRZR_EHACVQY:%pfvqy2%\Snore Gblf\Rknzvar Svyr.yax
+  HRZR_EHACVQY:%pfvqy2%\Snore Gblf\Qrcraqrapvrf.yax
+  HRZR_EHACVQY:%pfvqy2%\Snore Gblf\NhgbEha.yax
+  HRZR_EHACVQY:%pfvqy2%\Ntrag Arjfernqre\Ntrag.yax
+  HRZR_EHACVQY:%pfvqy2%\123 JNFC\123 JNFC.yax
+  HRZR_EHACVQY:%pfvqy2%\Ybbx@YNA
+  HRZR_EHACVQY:%pfvqy2%\Ybbx@YNA\Havafgnyy Ybbx@YNA.yax
+  HRZR_EHACVQY:%pfvqy2%\Ybbx@YNA\Ybbx@YNA.yax
+  HRZR_EHACVQY:%pfvqy2%\Ybbx@YNA\Ybbx@Ubfg.yax
+  HRZR_EHACVQY:%pfvqy2%\Argjbex Fghzoyre.yax
+

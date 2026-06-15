@@ -1,0 +1,199 @@
+Parsed Plugins file.
+Launching winscp v.20201227
+winscp complete.
+Launching profiler v.20200525
+profiler complete.
+Launching recentapps_tln v.20190513
+recentapps_tln complete.
+Launching recentdocs_tln v.20140220
+recentdocs_tln complete.
+appx_tln complete.
+Launching adobe v.20200522
+adobe complete.
+Launching recentdocs v.20200427
+recentdocs complete.
+lxss_tln complete.
+Launching mp2 v.20200526
+mp2 complete.
+Launching compdesc v.20200511
+compdesc complete.
+Launching inprocserver v.20200427
+inprocserver complete.
+Launching mndmru v.20120829
+mndmru_tln complete.
+[*] Launching iconlayouts v.20211001
+Error in iconlayouts: Can't call method "get_data" on an undefined value at /usr/share/regripper/plugins/iconlayouts.pl line 47.
+
+iconlayouts complete.
+Launching cmdproc_tln v.20130425
+cmdproc_tln complete.
+Launching mmc v.20200517
+mmc complete.
+Launching attachmgr v.20200525
+attachmgr complete.
+Launching uninstall v.20200525
+uninstall complete.
+Launching shellfolders v.20200515
+shellfolders complete.
+Launching run v.20200511
+run complete.
+Launching lxss v.20200511
+lxss complete.
+Launching WinZip v.20200526
+winzip complete.
+Launching appcompatflags v.20200525
+appcompatflags complete.
+Launching speech v.20200427
+speech complete.
+Launching featureusage v.20200511
+featureusage complete.
+Launching run_tln v.20221222
+run_tln complete.
+Launching userassist_tln v.20180710
+userassist_tln complete.
+Launching oisc v.20091125
+oisc complete.
+Launching typedurlstime v.20200526
+typedurlstime complete.
+Launching psscript v.20200525
+psscript complete.
+Launching recentapps v.20200515
+recentapps complete.
+Launching applets_tln v.20120613
+applets_tln complete.
+Launching uninstall v.20120523
+uninstall_tln complete.
+Launching mpmru v.20200517
+mpmru complete.
+Launching onedrivev.20200515
+onedrive complete.
+Launching appspecific v.20200515
+appspecific complete.
+msoffice_tln complete.
+Launching cmdproc v.20200515
+cmdproc complete.
+Launching 7-zip v.20210329
+sevenzip complete.
+Launching gpohist v.
+gpohist complete.
+wordwheelquery_tln complete.
+Launching disableuserassist v.20230710
+disableuserassist complete.
+Launching applets v.20200525
+applets complete.
+Launching typedurls v.20120827
+typedurls_tln complete.
+Launching attachmgr_tln v.20130425
+attachmgr_tln complete.
+Launching load v.20200517
+load complete.
+Launching apppaths v.20200511
+apppaths complete.
+Launching DDO v.20140414
+ddo complete.
+Launching runmru v.20120828
+runmru_tln complete.
+Launching tsclient v.20200518
+tsclient complete.
+Launching comdlg32 v.20200517
+comdlg32 complete.
+Launching sysinternals v.20080324
+sysinternals complete.
+Launching arpcache v.20200515
+arpcache complete.
+Launching searchscopes v.20200517
+searchscopes complete.
+Launching mndmru v.20200517
+mndmru complete.
+Launching typedpaths v.20200526
+typedpaths complete.
+Launching appkeys v.20200517
+appkeys complete.
+Launching mmo v.20200517
+mmo complete.
+Launching appassoc v.20200515
+appassoc complete.
+speech_tln complete.
+Launching pendinggpos v.20200427
+pendinggpos complete.
+Launching mixer v.20141112
+mixer_tln complete.
+onedrive_tln complete.
+Launching wordwheelquery v.20200823
+wordwheelquery complete.
+Launching mmc v.20120828
+mmc_tln complete.
+Launching logonstats v.20200517
+logonstats complete.
+Launching runvirtual v.20200427
+runvirtual complete.
+Launching tsclient v.20120827
+tsclient_tln complete.
+Launching userassist v.20170204
+userassist complete.
+Launching knowndev v.20200515
+knowndev complete.
+Launching cached v.20200525
+cached complete.
+Launching gpohist_tln v.
+gpohist_tln complete.
+Launching  msoffice v.20200518
+msoffice complete.
+Launching winrar v.20120829
+winrar_tln complete.
+Launching runmru v.20200525
+runmru complete.
+Launching pslogging v.20200515
+pslogging complete.
+Launching disablemru v.20190924
+disablemru complete.
+Launching jumplistdata v.20200517
+jumplistdata complete.
+Launching apppaths_tln v.20130429
+apppaths_tln complete.
+Launching environment v.20200512
+environment complete.
+Launching typedurls v.20200526
+typedurls complete.
+Launching allowedenum v.20200511
+allowedenum complete.
+Launching osversion_tln v.20120608
+osversion_tln complete.
+Launching putty v.20200515
+putty complete.
+Launching typedpaths v.20120828
+typedpaths_tln complete.
+Launching typedurlstime v.20120613
+typedurlstime_tln complete.
+mp2_tln complete.
+Launching winrar v.20200526
+winrar complete.
+Launching identities v.20200525
+identities complete.
+Launching muicache v.20200525
+muicache complete.
+Launching wc_shares v.20200515
+wc_shares complete.
+Launching injectdll64 v.20200427
+injectdll64 complete.
+[*] Launching heidisql v.20201227
+heidisql complete.
+Launching shc v.20200427
+shc complete.
+muicache_tln complete.
+Launching mixer v.20200517
+mixer complete.
+Launching osversion v.20200511
+osversion complete.
+Launching outlook_homepage v.20201002
+outlook_homepage complete.
+Launching appx v.20200427
+appx complete.
+appkeys_tln complete.
+Launching sysinternals_tln v.20080324
+sysinternals_tln complete.
+Launching cached_tln v.20150608
+cached_tln complete.
+runvirtual_tln complete.
+Launching listsoft v.20200517
+listsoft complete.

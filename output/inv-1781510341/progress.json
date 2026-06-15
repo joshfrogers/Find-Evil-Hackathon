@@ -1,0 +1,369 @@
+{
+  "investigation_id": "inv-76eb3a8a",
+  "evidence_path": "/cases/nist.E01",
+  "evidence_type": "disk",
+  "started_at": "2026-06-15T07:59:01Z",
+  "hypotheses": [
+    {
+      "id": "H1",
+      "description": "This disk represents a dual-boot or in-place upgrade system where an older Windows 9x/DOS installation (WIN98 directory, IO.SYS, MSDOS.SYS, COMMAND.COM, AUTOEXEC.BAT, CONFIG.SYS, BOOTLOG.TXT, SUHDLOG.DAT) coexists with a later Windows XP NTFS installation (ntldr, ntdetect.com, boot.ini, WINDOWS directory). The artifacts suggest an upgrade-in-place from Windows 98 to Windows XP rather than a clean install.",
+      "status": "contested",
+      "evidence_for": [
+        "The analyzed partition (sector offset 63) is an NTFS filesystem formatted by Windows XP (OEM Name 'NTFS', Version 'Windows XP'), Volume Serial Number B26CB1CE6CB18D9B. The presence of an XP-created NTFS volume is consistent with a Windows XP installation on this disk.",
+        "Windows XP boot artifacts present in the same root: ntldr (MFT 3662), ntdetect.com (3663), boot.ini (3664), and a WINDOWS directory (MFT 458). ntldr Created/Modified is 2001-08-23 18:00:00 UTC (original XP RTM build date), with MFT-Modified 2004-08-19 17:02:11 UTC reflecting installation onto this volume.",
+        "The volume at sector offset 63 is an NTFS filesystem identified with Version 'Windows XP'. The filesystem is NTFS, not FAT, with a 12305-entry MFT range and volume serial number B26CB1CE6CB18D9B. This is a single NTFS Windows XP volume, not a FAT/Win9x volume.",
+        "A local user profile named 'Mr. Evil' exists on the system with its own NTUSER.DAT registry hive (inode 345), indicating an active interactive user account.",
+        "The user 'Mr. Evil' profile contains Start Menu shortcuts to hacking/security tools: Cain (Cain v2.5.lnk), Network Stumbler.lnk, Anonymizer Toolbar, 123 WASP, and Agent Newsreader, suggesting installation of network sniffing, wireless scanning, and password recovery utilities.",
+        "MSDOS.SYS (inode 126) contains Win98 configuration with WinDir=C:\\WINDOWS, WinBootDir=C:\\WINDOWS, HostWinBootDrv=C, BootMulti=1, BootGUI=1, and WinVer=4.10.2222 (Windows 98 Second Edition). The fact that WinDir points to C:\\WINDOWS (not C:\\WIN98) indicates the Windows 98 system directory was C:\\WINDOWS, the same directory name later reused by the XP install.",
+        "BOOTLOG.TXT (inode 119) records a Windows 98 boot sequence loading 9x VxD drivers (VMM, VFAT, IOS, CONFIGMG, NTKERN, etc.) and devices from C:\\WINDOWS (SETVER.EXE, HIMEM.SYS, DBLBUFF.SYS, IFSHLP.SYS), confirming a real Windows 98 boot occurred with its system in C:\\WINDOWS.",
+        "The WIN98 directory (inode 17) contains Windows 98 Second Edition installation source files: cabinet files (WIN98_21.CAB through WIN98_74.CAB, PRECOPY1/2.CAB, BASE4-6.CAB, NET7-10.CAB, DRIVER11-20.CAB, CHL99.CAB, MINI.CAB), and setup binaries (SETUP.EXE, W98SETUP.BIN, OEMSETUP.EXE, EXTRACT.EXE, SCANDISK.EXE, SMARTDRV.EXE, FORMAT.COM). This is the cached Win98 install source on disk.",
+        "The WINDOWS directory (inode 458) is a fully populated Windows XP installation containing system32, repair, WinSxS, Prefetch, Tasks, PCHEALTH, srchasst, AppPatch, mui, plus XP setup logs (setupact.log, setuperr.log, setupapi.log, comsetup.log, iis6.log, msmqinst.log) and XP-specific wallpaper bitmaps. The same C:\\WINDOWS directory holds the live XP OS, confirming XP was installed over/into the prior Win98 C:\\WINDOWS location.",
+        "A Look@LAN application is installed: WINDOWS directory contains 'Look@LAN Setup Log.txt' and 'iun6002.exe' (uninstaller), indicating the Look@LAN network monitoring tool was present on the XP system."
+      ],
+      "evidence_against": [
+        "The single NTFS volume (Windows XP version per $Volume) at sector offset 63 contains BOTH a Windows XP installation (ntldr inode 3662, ntdetect.com 3663, boot.ini 3664, WINDOWS directory 458, BOOTSECT.DOS 456) and Windows 9x/DOS legacy boot files in the volume root (IO.SYS 133, MSDOS.SYS 126, COMMAND.COM 120, AUTOEXEC.BAT 127, CONFIG.SYS 129, BOOTLOG.TXT 119, SUHDLOG.DAT 121, plus a WIN98 directory inode 17). The presence of BOOTSECT.DOS and the legacy DOS/9x boot files alongside the XP NT loader on one NTFS volume confirms this disk represents a Windows 98 system that was upgraded in-place / dual-bootable to Windows XP rather than a clean install.",
+        "boot.ini (inode 3664) confirms the active OS loader points to a single Windows XP Professional installation: default=multi(0)disk(0)rdisk(0)partition(1)\\WINDOWS, entry 'Microsoft Windows XP Professional' /fastdetect, timeout=30. The NT loader chain (ntldr/ntdetect.com) is the boot path while BOOTSECT.DOS preserves the legacy DOS boot sector for the previous Windows 98 environment.",
+        "MSDOS.SYS (inode 126) records the Windows 98 environment configuration: WinDir=C:\\WINDOWS, WinBootDir=C:\\WINDOWS, HostWinBootDrv=C, BootMulti=1 (multi-boot enabled), BootGUI=1, WinVer=4.10.2222 (Windows 98 Second Edition). BootMulti=1 explicitly indicates a multi-boot configuration, supporting the dual-boot/upgrade-in-place hypothesis.",
+        "CONFIG.SYS (inode 129) contains a Windows 98 device line: DEVICE=C:\\WINDOWS\\setver.exe, confirming the legacy DOS/9x configuration referencing the C:\\WINDOWS path also used by the XP install.",
+        "The volume at sector offset 63 is a single NTFS filesystem formatted by Windows XP (Volume Serial B26CB1CE6CB18D9B, OEM 'NTFS', Version Windows XP). Both Windows 9x/DOS boot artifacts and Windows XP boot artifacts coexist in the same NTFS root directory, indicating an in-place upgrade rather than separate dual-boot partitions.",
+        "Windows 9x/DOS legacy boot/system files present in the NTFS root: IO.SYS, MSDOS.SYS (renamed MSDOS.--- plus active MSDOS.SYS), COMMAND.COM, AUTOEXEC.BAT, CONFIG.SYS, BOOTLOG.TXT/BOOTLOG.PRV, SUHDLOG.DAT, SYSTEM.1ST, DETLOG.TXT, SETUPLOG.TXT, NETLOG.TXT, FRUNLOG.TXT, VIDEOROM.BIN, BOOTSECT.DOS. These are characteristic of a prior Windows 98 installation.",
+        "A WIN98 directory (MFT 17) contains Windows 98 setup source CABs and setup tooling (WIN98_53.CAB..WIN98_74.CAB, WIN98_OL.CAB, BASE4-6.CAB, PRECOPY1/2.CAB, DRIVER11-20.CAB, NET7-10.CAB, EXTRACT.EXE, SCANDISK.EXE, DOSSETUP.BIN, OEMSETUP.EXE, XMSMMGR.EXE), i.e. the Windows 98 installation source media files \u2014 consistent with a system originally installed/serviced from Win98 setup before the XP upgrade.",
+        "Cluster size is 512 bytes (sector size 512) on a ~4.5 GB NTFS volume (Total Cluster Range 0-9510415) \u2014 a 512-byte NTFS cluster is atypical of a default XP clean install and is consistent with a volume that was converted/upgraded, supporting the in-place upgrade hypothesis.",
+        "Recursive file listing of the NTFS volume shows a Windows XP profile structure ('Documents and Settings/Mr. Evil', NTUSER.DAT, XP Start Menu items such as 'Tour Windows XP.lnk', 'Program Compatibility Wizard.lnk', 'Remote Assistance.lnk'). No WIN98 directory, IO.SYS, MSDOS.SYS, COMMAND.COM, AUTOEXEC.BAT, CONFIG.SYS, BOOTLOG.TXT, SUHDLOG.DAT, or DOS/Win9x boot files appear in the listing. The hypothesis of a dual-boot/in-place upgrade from Windows 98 is NOT supported.",
+        "The volume hosting the system is a single NTFS filesystem identified as Windows XP version, with volume serial number B26CB1CE6CB18D9B, located at partition offset 63. There is no separate FAT partition - the Win98 artifacts coexist on the same NTFS volume.",
+        "The NTFS root directory contains both Windows XP boot artifacts (ntldr, ntdetect.com, boot.ini, BOOTSECT.DOS, WINDOWS directory) and legacy Windows 9x/DOS artifacts (WIN98 directory, IO.SYS, MSDOS.SYS, COMMAND.COM, AUTOEXEC.BAT, CONFIG.SYS, BOOTLOG.TXT, SUHDLOG.DAT, DETLOG.TXT, NETLOG.TXT, SETUPLOG.TXT, SYSTEM.1ST) in the same root, supporting an upgrade-in-place / dual-boot configuration.",
+        "boot.ini references only a single XP installation (multi(0)disk(0)rdisk(0)partition(1)\\WINDOWS=\"Microsoft Windows XP Professional\" /fastdetect) with a 30-second timeout. Notably it does NOT contain a C:\\=\"Microsoft Windows\" entry for booting the legacy 9x via BOOTSECT.DOS, indicating the Win98 install is no longer bootable - consistent with an in-place upgrade rather than a maintained dual-boot.",
+        "AUTOEXEC.BAT (inode 127) was recovered but is empty (zero bytes / no content), indicating no DOS startup commands present.",
+        "SETUPLOG.TXT (inode 124) is a Windows 98 SE setup log showing source CD 'Windows 98 Second Edition CD-ROM', install destination paths including 1=C:\\WIN98\\, 10=C:\\WINDOWS, SourcePath=C:\\WININST0.400, and command line /SrcDir=C:\\WIN98. It confirms the Windows 98 SE setup was run from C:\\WIN98 source and installed into C:\\WINDOWS, with version 262154,2222 (Win98 SE build 2222)."
+      ],
+      "formed_at": "2026-06-15T07:59:14Z",
+      "resolved_at": "2026-06-15T08:07:19Z",
+      "followup_spawned": true
+    },
+    {
+      "id": "H2",
+      "description": "User-created content and activity is concentrated in the standard XP user-data locations (Documents and Settings, My Documents, RECYCLER, Temp). Investigation of these directories and the RECYCLER may reveal user files, deleted items, and evidence of user behavior relevant to the case.",
+      "status": "contested",
+      "evidence_for": [
+        "Subject filesystem is NTFS, Windows XP, volume serial B26CB1CE6CB18D9B, sector/cluster size 512 bytes, located at sector offset 63.",
+        "User account/handle 'Mr. Evil' identified via the per-user profile directory and NTUSER.DAT registry hive.",
+        "Network Stumbler (wireless wardriving/discovery tool) shortcut present in the user's Start Menu Programs folder.",
+        "Anonymizer Toolbar anonymity software shortcuts present in the user's Start Menu, indicating use of anonymizing/web-privacy services.",
+        "The Mr. Evil user profile contains an NTUSER.DAT registry hive (inode 345-128-4), the per-user registry that can yield user-behavior evidence (recent docs, typed URLs, run keys).",
+        "Start Menu group for 'Anonymizer Toolbar' indicates anonymization/privacy software was installed under the Mr. Evil profile, consistent with an effort to conceal online activity.",
+        "Start Menu group for '123 WASP' (Web Account Security Password recovery tool) was installed under the Mr. Evil profile, another credential-recovery utility.",
+        "Start Menu group for 'Agent Newsreader' indicates a Usenet/newsgroup client was installed under the Mr. Evil profile, relevant to user communication/download behavior.",
+        "NTFS filesystem on Windows XP volume. Volume Serial Number B26CB1CE6CB18D9B, cluster size 512 bytes, MFT range 0-12305. Confirms the subject is a Windows XP system with NTFS as analyzed.",
+        "Root directory contains standard XP user-data structures: 'Documents and Settings' (inode 3671), 'My Documents' (330), 'RECYCLER' (11736), 'Temp' (10519), and 'WINDOWS' (458). Also a legacy WIN98 directory and DOS boot files (IO.SYS, MSDOS.SYS, COMMAND.COM, AUTOEXEC.BAT), indicating a dual-boot or upgraded system.",
+        "RECYCLER contains a per-user recycle bin for SID S-1-5-21-2000478354-688789844-1708537768-1003 with four deleted executables (Dc1.exe, Dc2.exe, Dc3.exe, Dc4.exe), a desktop.ini, and an INFO2 index. RID 1003 indicates a created (non-default) local user, consistent with the 'Mr. Evil' account.",
+        "INFO2 record reveals original full path of deleted recycle bin item Dc1: C:\\Documents and Settings\\Mr. Evil\\Desktop\\lalsetup250.exe (deleted from the user's Desktop).",
+        "INFO2 record reveals original full path of deleted recycle bin item Dc2: C:\\Documents and Settings\\Mr. Evil\\Desktop\\netstumblerinstaller_0_4_0.exe \u2014 the NetStumbler wireless network discovery tool installer, deleted from the Desktop.",
+        "INFO2 record reveals original full path of deleted recycle bin item Dc3: C:\\Documents and Settings\\Mr. Evil\\Desktop\\WinPcap_3_01_a.exe \u2014 the WinPcap packet capture driver installer, deleted from the Desktop.",
+        "INFO2 record reveals original full path of deleted recycle bin item Dc4: C:\\Documents and Settings\\Mr. Evil\\Desktop\\ethereal-setup-0.10.6.exe \u2014 the Ethereal (Wireshark) network protocol analyzer installer, deleted from the Desktop.",
+        "My Documents (inode 330) contains a large collection of hacking/penetration tooling rather than ordinary user documents: ARCHIVE (ARJ, PKZIP archivers), COMMANDS (netcat nc.exe, pwdump/pwdump2, SAMDUMP.EXE, enum.exe, nmapNT.exe, nbtscan, NAT.EXE, smbgrind, user2sid/sid2user, NTpasslist.txt, PASSLIST.TXT), DICTIONARIES (250MB_WORDLIST.ZIP, biglist, Unix_dict, words-english \u2014 password cracking wordlists), and ENUMERATION (CIS scanner, winfo, winfingerprint). Strong evidence of password-cracking and network enumeration activity.",
+        "User's NetHood folder records network share connections to a remote host 'Andrews-1' (shares a, andrews (c), CD Drive (F), d, e) and to 'm1200 (4.12.220.254)' (Temp share). Indicates the user accessed network shares on these remote systems; IP 4.12.220.254 belongs to host m1200.",
+        "Windows Prefetch directory (inode 432) contains execution evidence for numerous tools matching the deleted/installed hacking suite: ETHEREAL.EXE, CAIN25B45.EXE, NPF_MGM.EXE / WINPCA~1.EXE (WinPcap), MIRC.EXE/MIRC612.EXE (mIRC), AGENT.EXE (newsreader), WHOIS.EXE, PING.EXE, CMD.EXE, FABERTOYS_FULLSETUP.EXE, 123WASP_SETUP.EXE, and various installer prefetch entries. Confirms these programs were actually executed on the system."
+      ],
+      "evidence_against": [
+        "User's Start Menu Programs (under Mr. Evil profile) shows installed applications including 'Anonymizer Toolbar', 'Cain' (Cain v2.5 \u2014 password recovery/cracking tool), 'Agent Newsreader', '123 WASP' (password recovery), and 'Network Stumbler' shortcut. Indicates the user actively installed and used security/hacking and anonymization tools."
+      ],
+      "formed_at": "2026-06-15T07:59:14Z",
+      "resolved_at": "2026-06-15T08:07:19Z",
+      "followup_spawned": true
+    },
+    {
+      "id": "H3",
+      "description": "The system was a functioning Windows XP host that was hibernated and/or paged at acquisition, providing potential in-memory artifacts recoverable from disk-resident files (hiberfil.sys, pagefile.sys) that could reveal runtime state, credentials, or process activity.",
+      "status": "contested",
+      "evidence_for": [
+        "Subject filesystem is NTFS, Windows XP version, on a single NTFS volume at sector offset 63. Volume serial number B26CB1CE6CB18D9B, sector/cluster size 512 bytes. This confirms the host was a Windows XP system.",
+        "A disk-resident pagefile.sys (MFT entry 228) is present, allocated, 201,326,592 bytes ($DATA non-resident, init_size = full size), with $STANDARD_INFORMATION modified/accessed 2004-08-27 15:08:14 UTC and created 2004-08-19 16:50:37 UTC. The page file is fully initialized on disk and recoverable, providing potential in-memory/runtime artifacts (cached strings, credentials, process data) for analysis.",
+        "The system is a Windows XP host. The NTFS volume at sector offset 63 reports OEM/version 'Windows XP', Volume Serial Number B26CB1CE6CB18D9B, 512-byte sectors/clusters. A WINDOWS directory (MFT 458) and standard XP boot files (ntldr MFT 3662, ntdetect.com MFT 3663, boot.ini MFT 3664) confirm a functioning Windows XP installation.",
+        "hiberfil.sys is present and allocated on the subject volume (MFT entry 343, non-resident $DATA, init_size=133730304 bytes ~127MB). The $STANDARD_INFORMATION shows File Modified 2004-08-27 15:08:16 UTC while $FILE_NAME timestamps remain at file-creation time 2004-08-19 23:04:01 UTC, indicating the hibernation file was rewritten on 2004-08-27 \u2014 consistent with a hibernate event prior to acquisition. This is a disk-resident memory image potentially containing runtime state, credentials, and process activity.",
+        "The volume is a multi-boot/upgraded system: root directory contains Windows XP boot files (ntldr, ntdetect.com, boot.ini, WINDOWS dir) alongside legacy Windows 9x artifacts (WIN98 dir, IO.SYS, MSDOS.SYS, COMMAND.COM, AUTOEXEC.BAT, CONFIG.SYS, BOOTLOG.TXT, SETUPLOG.TXT, BOOTSECT.DOS). The presence of both confirms an XP install over/alongside a prior Windows 98 environment."
+      ],
+      "evidence_against": [
+        "The volume is an NTFS filesystem identified as Windows XP (OEM Name 'NTFS', Version 'Windows XP'), confirming the system was a Windows XP host. Volume Serial Number B26CB1CE6CB18D9B, 512-byte sectors and clusters, MFT range 0-12305.",
+        "hiberfil.sys exists in the volume root (MFT entry 343) and is allocated with a non-zero on-disk $DATA size of 133,730,304 bytes (init_size 133,730,304), indicating disk space reserved for hibernation. This file is a candidate source of in-memory artifacts.",
+        "pagefile.sys exists in the volume root (MFT entry 228), allocated with a non-zero on-disk $DATA size of 201,326,592 bytes (~192 MB, init_size 201,326,592), confirming a paging file was in use and is a candidate source of runtime/in-memory artifacts.",
+        "The volume root shows a dual-boot/legacy Windows 98 footprint alongside the Windows XP install: a WIN98 directory plus DOS/Win9x system files (IO.SYS, MSDOS.SYS, COMMAND.COM, AUTOEXEC.BAT, CONFIG.SYS, BOOTLOG.TXT, SETUPLOG.TXT, SUHDLOG.DAT, SYSTEM.1ST) coexisting with NTLDR, ntdetect.com, boot.ini and the WINDOWS directory.",
+        "The acquired image (nist.E01) contains a Windows NTFS volume at sector offset 63 with a full WINDOWS directory tree (e.g. WINDOWS\\srchasst Search Assistant components), boot files (ntldr, ntdetect.com, boot.ini, BOOTSECT.DOS) and DOS/Win98 remnants \u2014 consistent with a functioning Windows XP host (dual-boot legacy). This supports the host being a live, operational Windows XP system at acquisition.",
+        "A disk-resident hibernation file hiberfil.sys (MFT entry 343) is present, allocated, 133,730,304 bytes ($DATA non-resident, init_size = full size, not zero), with $STANDARD_INFORMATION modified/accessed 2004-08-27 15:08:16 UTC and created 2004-08-19 23:04:01 UTC. The non-zero initialized size indicates the file holds a hibernation memory image, providing in-memory artifacts (runtime state, process activity, potential credentials) recoverable from disk.",
+        "The near-identical last-write timestamps of pagefile.sys (2004-08-27 15:08:14 UTC) and hiberfil.sys (2004-08-27 15:08:16 UTC) \u2014 within ~2 seconds of each other \u2014 indicate the system was in the process of shutting down/hibernating immediately before acquisition, consistent with the host being hibernated and/or paged at acquisition time as hypothesized.",
+        "Subject filesystem is an NTFS volume reporting Version 'Windows XP' (OEM Name 'NTFS'), Volume Serial Number B26CB1CE6CB18D9B. Confirms the host was a Windows XP installation.",
+        "pagefile.sys is present and allocated on the subject volume (MFT entry 228, non-resident $DATA, init_size=201326592 bytes ~192MB). $STANDARD_INFORMATION File Modified 2004-08-27 15:08:14 UTC indicates the page file was in active use up to acquisition, providing a disk-resident source of paged-out process memory, fragments of credentials, and runtime data."
+      ],
+      "formed_at": "2026-06-15T07:59:14Z",
+      "resolved_at": "2026-06-15T08:07:19Z",
+      "followup_spawned": true
+    },
+    {
+      "id": "H-ab5cf276",
+      "description": "Resolve the conflict in H1 (This disk represents a dual-boot or in-place upgrade system where an older Windows 9x/DOS installation (WIN98 directory, IO.SYS, MSDOS.SYS, COMMAND.COM, AUTOEXEC.BAT, CONFIG.SYS, BOOTLOG.TXT, SUHDLOG.DAT) coexists with a later Windows XP NTFS installation (ntldr, ntdetect.com, boot.ini, WINDOWS directory). The artifacts suggest an upgrade-in-place from Windows 98 to Windows XP rather than a clean install.): reconcile support [The analyzed partition (sector offset 63) is an NTFS filesystem formatted by Windows XP (OEM Name 'NTFS', Version 'Windows XP'), Volume Serial Number B26CB1CE6CB18D9B. The presence of an XP-created NTFS volume is consistent with a Windows XP installation on this disk.] against refutation [The single NTFS volume (Windows XP version per $Volume) at sector offset 63 contains BOTH a Windows XP installation (ntldr inode 3662, ntdetect.com 3663, boot.ini 3664, WINDOWS directory 458, BOOTSECT.DOS 456) and Windows 9x/DOS legacy boot files in the volume root (IO.SYS 133, MSDOS.SYS 126, COMMAND.COM 120, AUTOEXEC.BAT 127, CONFIG.SYS 129, BOOTLOG.TXT 119, SUHDLOG.DAT 121, plus a WIN98 directory inode 17). The presence of BOOTSECT.DOS and the legacy DOS/9x boot files alongside the XP NT loader on one NTFS volume confirms this disk represents a Windows 98 system that was upgraded in-place / dual-bootable to Windows XP rather than a clean install.] with targeted, corroborating evidence.",
+      "status": "contested",
+      "evidence_for": [
+        "Analyzed filesystem at sector offset 63 is an NTFS volume formatted by Windows XP (OEM Name 'NTFS', Version 'Windows XP', Volume Serial Number B26CB1CE6CB18D9B), consistent with a Windows XP installation on this disk.",
+        "boot.ini (inode 3664) lists a single OS entry 'Microsoft Windows XP Professional' at multi(0)disk(0)rdisk(0)partition(1)\\WINDOWS with timeout=30. The XP NT loader boot menu is present on this NTFS volume.",
+        "ntldr (inode 3662) is present in the volume root with internal Created/Modified timestamps of 2001-08-23 18:00:00 UTC (the canonical Windows XP RTM file date) and an MFT-modified time of 2004-08-19 17:02:11 UTC (the install/copy date onto this disk). This confirms the XP NT boot loader was deployed to this volume.",
+        "The partition at sector offset 63 is an NTFS filesystem formatted by Windows XP. OEM Name 'NTFS', Version 'Windows XP', Volume Serial Number B26CB1CE6CB18D9B. Sector and cluster size 512 bytes, MFT range 0-12305. This confirms an XP-created NTFS volume.",
+        "boot.ini contents show an XP-ONLY boot menu: timeout=30, default and single OS entry multi(0)disk(0)rdisk(0)partition(1)\\WINDOWS='Microsoft Windows XP Professional' /fastdetect. There is NO C:\\='...' line pointing at BOOTSECT.DOS, so the active boot loader does not offer a Windows 98 menu choice. This refines the hypothesis: although legacy 9x files and BOOTSECT.DOS remain, the resulting XP boot configuration boots XP only.",
+        "SETUPLOG.TXT (inode 124) is the Windows 98 Second Edition setup log. It records WinVer=262154,2222 (Win98 SE), install destinations 1=C:\\WIN98\\, 10=C:\\WINDOWS, 19=C:\\WINDOWS\\SYSTEM, and CmdLine '/T:C:\\WININST0.400 /SrcDir=C:\\WIN98 ...', SourcePath=C:\\WININST0.400, FilePath=C:\\WIN98\\, repeated 'Windows 98 Second Edition CD-ROM' CAB-copy lines. This confirms a genuine Windows 98 SE installation phase ran on this disk, installing into C:\\WINDOWS.",
+        "boot.ini (inode 3664) contains a single [operating systems] entry: multi(0)disk(0)rdisk(0)partition(1)\\WINDOWS=\"Microsoft Windows XP Professional\" /fastdetect, with timeout=30. The boot menu references only the XP install path despite BOOTSECT.DOS being present in the root.",
+        "MSDOS.SYS (inode 126) is a genuine Windows 98 config: [Paths] WinDir=C:\\WINDOWS, WinBootDir=C:\\WINDOWS, HostWinBootDrv=C; [Options] BootMulti=1, BootGUI=1, WinVer=4.10.2222. WinVer 4.10.2222 identifies Windows 98 Second Edition. BootMulti=1 enables dual-boot capability.",
+        "BOOTLOG.TXT (inode 119) is a Windows 98 boot log showing Loading Device / LoadSuccess and Loading Vxd entries (SETVER.EXE, HIMEM.SYS, IFSHLP.SYS, VMM, NTKERN, VFAT, etc.) from C:\\WINDOWS, confirming the Win98 OS actually booted on this system.",
+        "DETLOG.TXT (inode 128) is a Windows 98 hardware detection log timestamped [System Detection: 08/18/04 - 16:47:01], SDMVer=040a.2222 / Build=04.0a.2222 (Win98 SE). It detected an Intel 440BX-class PCI chipset (VEN_8086 DEV_7190/7191/7110/7111/7112/7113), a TI PCI1xxx CardBus controller (VEN_104C DEV_AC1C), and a video device (VEN_10C8). DetectACPIBIOS reports the ACPI BIOS is not compatible.",
+        "MSDOS.SYS (inode 126) on the NTFS root is a genuine Windows 98 MSDOS.SYS: [Paths] WinDir=C:\\WINDOWS, WinBootDir=C:\\WINDOWS, HostWinBootDrv=C; [Options] BootMulti=1, BootGUI=1, WinVer=4.10.2222. WinVer 4.10.2222 identifies the legacy OS as Windows 98 Second Edition, confirming a real Win98SE installation preceded the XP installation.",
+        "SETUPLOG.TXT/SETUPLOG content (inode 124) is a Windows 98 setup OptionalComponents log listing Win98 components ('Windows 98', 'Drive Converter (FAT32)', 'Personal Web Server', 'Outlook Express', etc.), confirming a Windows 98 setup was performed on this disk prior to XP."
+      ],
+      "evidence_against": [
+        "The single NTFS (Windows XP) volume root contains BOTH the Windows XP NT loader set (ntldr inode 3662, ntdetect.com 3663, boot.ini 3664, BOOTSECT.DOS 456, WINDOWS directory 458) AND Windows 9x/DOS legacy boot/system files (IO.SYS 133, MSDOS.SYS 126, COMMAND.COM 120, AUTOEXEC.BAT 127, CONFIG.SYS 129, BOOTLOG.TXT 119, SUHDLOG.DAT 121, plus a WIN98 directory inode 17). The coexistence on one volume supports an in-place upgrade / dual-boot scenario.",
+        "MSDOS.SYS (inode 126) is a genuine Windows 98 configuration file: [Paths] WinDir=C:\\WINDOWS, WinBootDir=C:\\WINDOWS, HostWinBootDrv=C; [Options] BootMulti=1, BootGUI=1, AutoScan=1, WinVer=4.10.2222 (Windows 98 Second Edition). The Windows 98 system used C:\\WINDOWS as its install directory \u2014 the same directory name later used by XP, consistent with an in-place upgrade rather than separate directories.",
+        "CONFIG.SYS (inode 129) contains a single DOS device line DEVICE=C:\\WINDOWS\\setver.exe, confirming a legacy DOS/9x configuration present on the volume.",
+        "AUTOEXEC.BAT (inode 127) exists in the volume root but is empty (no content), consistent with a minimal/default Windows 98 setup.",
+        "The WIN98 directory (inode 17) contains a complete Windows 98 Second Edition installation source: WIN98_*.CAB cabinet files, BASE*.CAB, NET*.CAB, DRIVER*.CAB, PRECOPY1/2.CAB, SETUP.EXE, W98SETUP.BIN, OEMSETUP.EXE, FORMAT.COM, SCANDISK.EXE, SMARTDRV.EXE, EXTRACT.EXE. This is the Windows 98 SE setup file set, corroborating that a Win98 installation was performed/staged on this disk.",
+        "The WINDOWS directory (inode 458) contains a Windows XP installation tree: system32, Prefetch, repair, WinSxS, AppPatch, mui, srchasst, explorer.exe, regedit.exe, and XP setup logs (setupact.log, setuperr.log, setupapi.log, iis6.log, comsetup.log, sessmgr.setup.log, DtcInstall.log). This confirms a Windows XP installation occupying the same C:\\WINDOWS directory that Win98 used, which is the hallmark of an in-place upgrade rather than side-by-side dual-boot directories.",
+        "Reconciliation of H1: The support and refutation are not actually in conflict. The single NTFS/XP volume legitimately holds both a complete Win98 SE install source/log set (MSDOS.SYS WinVer 4.10.2222, SETUPLOG.TXT, WIN98 dir) AND a full XP installation (WINDOWS\\system32, ntldr, ntdetect.com). Both Win98 and XP used the SAME C:\\WINDOWS directory (per MSDOS.SYS and SETUPLOG.TXT InstallDir=C:\\WINDOWS), and BOOTSECT.DOS is present, but boot.ini offers only an XP entry. The evidence is consistent with a Windows 98 system that was upgraded in-place to Windows XP (XP converted/migrated into C:\\WINDOWS, left legacy 9x boot files and BOOTSECT.DOS as upgrade residue), with the final boot configuration booting XP only.",
+        "The partition at sector offset 63 is an NTFS filesystem formatted by Windows XP, OEM Name 'NTFS', Version 'Windows XP', Volume Serial Number B26CB1CE6CB18D9B. Confirms an XP-created NTFS volume is present on this disk.",
+        "The single NTFS (Windows XP) volume root contains BOTH Windows XP boot loader artifacts (ntldr inode 3662, ntdetect.com 3663, boot.ini 3664, BOOTSECT.DOS 456, WINDOWS dir 458) AND Windows 9x/DOS legacy files (IO.SYS 133, MSDOS.SYS 126, COMMAND.COM 120, AUTOEXEC.BAT 127, CONFIG.SYS 129, BOOTLOG.TXT 119, SUHDLOG.DAT 121, plus WIN98 dir inode 17). This coexistence confirms a Windows 98 system upgraded in-place / made dual-bootable to Windows XP rather than a clean install.",
+        "SETUPLOG.TXT (inode 124) is a Windows 98 Second Edition setup log. It references C:\\WIN98 as the source path (SrcDir=C:\\WIN98), InstallDir=C:\\WINDOWS, copying from 'Windows 98 Second Edition CD-ROM' CAB files (PRECOPY1.CAB, BASE4.CAB, etc.), confirming the original install was Windows 98 SE installed into C:\\WINDOWS.",
+        "CONFIG.SYS (inode 129) contains a DOS device directive: DEVICE=C:\\WINDOWS\\setver.exe, confirming a genuine Windows 9x/DOS configuration file present in the NTFS volume root.",
+        "AUTOEXEC.BAT (inode 127) exists in the NTFS volume root but is empty (zero-byte content), consistent with a default Win98 install that did not require custom autoexec directives.",
+        "The analyzed partition at sector offset 63 is a single NTFS filesystem formatted by Windows XP. fsstat reports File System Type NTFS, OEM Name 'NTFS', Version 'Windows XP', Volume Serial Number B26CB1CE6CB18D9B. This confirms an XP-created NTFS volume on this disk.",
+        "The SAME NTFS volume root simultaneously contains the complete Windows 9x/DOS legacy file set: IO.SYS (inode 133), MSDOS.SYS (126), COMMAND.COM (120), AUTOEXEC.BAT (127), CONFIG.SYS (129), BOOTLOG.TXT (119), BOOTLOG.PRV (130), SUHDLOG.DAT (121), SYSTEM.1ST (132), plus Windows 98 setup/migration logs DETLOG.TXT, SETUPLOG.TXT, NETLOG.TXT, FRUNLOG.TXT, and a WIN98 directory (inode 17). The coexistence of these 9x/DOS artifacts with the XP NT loader on one XP-formatted NTFS volume is consistent with an in-place upgrade from Windows 98 to Windows XP rather than a clean install.",
+        "Presence of BOOTSECT.DOS (inode 456) on the XP NTFS volume \u2014 the saved original DOS/9x boot sector that the XP NTLDR chain-loads \u2014 is the hallmark of an XP installer detecting and preserving a prior DOS/Windows 9x environment, which the XP setup creates precisely when upgrading-in-place or enabling dual-boot over an existing 9x install. This reconciles the H1 conflict: the XP-formatted volume (support evidence) and the legacy 9x artifacts (refutation evidence) are both explained by an upgrade-in-place/dual-boot scenario rather than contradicting each other. The presence of Windows 98 setup migration logs (SETUPLOG.TXT, DETLOG.TXT, NETLOG.TXT) further supports a migration/upgrade event.",
+        "The single NTFS volume at sector offset 63 was formatted/labeled by Windows XP: OEM Name 'NTFS', Version 'Windows XP', Volume Serial Number B26CB1CE6CB18D9B. Confirms a Windows XP NTFS volume on this disk.",
+        "BOOTLOG.TXT (inode 119) is a Windows 98 boot log recording VxD and real-mode driver loads (SETVER.EXE, HIMEM.SYS, DBLBUFF.SYS, IFSHLP.SYS, VMM, JAVASUP.VXD, NTKERN, etc.) referencing C:\\WINDOWS\\system\\VMM32, confirming the system actually booted Windows 98 from this volume root.",
+        "CONFLICT RESOLVED: On a single XP-formatted NTFS volume (offset 63), the XP NT loader stack (ntldr 3662, ntdetect.com 3663, boot.ini 3664, WINDOWS dir 458, BOOTSECT.DOS 456) coexists in the volume root with genuine Windows 98 boot/install artifacts (IO.SYS 133, MSDOS.SYS 126 [WinVer 4.10.2222], COMMAND.COM 120, AUTOEXEC.BAT 127, CONFIG.SYS 129, BOOTLOG.TXT 119, SUHDLOG.DAT 121, SYSTEM.1ST 132, WIN98 dir 17). boot.ini exposes only the XP entry. This pattern \u2014 XP NTFS volume retaining the prior Win98 root boot files and BOOTSECT.DOS \u2014 confirms an in-place upgrade from Windows 98 SE to Windows XP, not a clean install. The earlier 'support' and 'refutation' do not actually conflict: both are true and jointly evidence the upgrade-in-place scenario."
+      ],
+      "formed_at": "2026-06-15T08:07:19Z",
+      "resolved_at": "2026-06-15T08:18:46Z",
+      "followup_spawned": true
+    },
+    {
+      "id": "H-8a4b48fb",
+      "description": "Resolve the conflict in H2 (User-created content and activity is concentrated in the standard XP user-data locations (Documents and Settings, My Documents, RECYCLER, Temp). Investigation of these directories and the RECYCLER may reveal user files, deleted items, and evidence of user behavior relevant to the case.): reconcile support [Subject filesystem is NTFS, Windows XP, volume serial B26CB1CE6CB18D9B, sector/cluster size 512 bytes, located at sector offset 63.] against refutation [User's Start Menu Programs (under Mr. Evil profile) shows installed applications including 'Anonymizer Toolbar', 'Cain' (Cain v2.5 \u2014 password recovery/cracking tool), 'Agent Newsreader', '123 WASP' (password recovery), and 'Network Stumbler' shortcut. Indicates the user actively installed and used security/hacking and anonymization tools.] with targeted, corroborating evidence.",
+      "status": "contested",
+      "evidence_for": [
+        "Subject is a Windows XP NTFS volume. fls successfully enumerated the standard XP user-data directory tree ('Documents and Settings', user profile 'Mr. Evil' with Templates, Start Menu, SendTo, Recent, PrintHood, NetHood), confirming user-created content is concentrated in the standard XP user-data locations as posited in H2.",
+        "User account 'Mr. Evil' exists as a Windows XP local profile under Documents and Settings, with a fully populated profile (Start Menu, Recent, NetHood, etc.).",
+        "The 'Mr. Evil' Start Menu Programs folder contains a 'Cain' subdirectory with shortcuts 'Cain v2.5.lnk' (inode 9965) and 'Uninstall Cain.lnk' (inode 9966), confirming installation of Cain v2.5, a password recovery/cracking tool. This reconciles the H2 support (standard XP user-data layout) with the refutation: the standard user-data locations themselves contain evidence of security/hacking tool installation.",
+        "The 'Mr. Evil' Start Menu Programs folder contains an 'Anonymizer Toolbar' subdirectory with shortcuts 'Uninstall.lnk', 'Help.lnk', and 'Anonymizer WebSite.lnk' (inodes 9937/9939/9940), indicating installation of the Anonymizer anonymization toolbar.",
+        "The 'Mr. Evil' Start Menu Programs folder contains a '123 WASP' subdirectory with 'HELP.lnk' and 'LICENSE.lnk' shortcuts (inodes 10192/10193), corroborating installation of the 123 WASP password recovery tool.",
+        "The 'Mr. Evil' Start Menu Programs folder also contains an 'Agent Newsreader' subdirectory (inode 10063), indicating a Usenet newsreader application was installed by the user.",
+        "The Start Menu/Programs folder for Mr. Evil contains shortcuts to multiple security/hacking and anonymization tools: a 'Cain' folder, '123 WASP' folder, 'Anonymizer Toolbar' folder, 'Agent Newsreader' folder, and a 'Network Stumbler.lnk' shortcut (inode 12029). This reconciles the support and refutation: the activity is indeed concentrated in the standard XP user-data location (Start Menu under the user profile), AND that activity shows installation/use of hacking tools.",
+        "The Mr. Evil profile NetHood shows mapped network resources to remote hosts 'Andrews-1' (shares a, andrews(c), CD Drive F, d, e), 'm1200 (4.12.220.254)', and 'N-1a9odn6zxk4lq', indicating the user accessed remote/network shares. The IP 4.12.220.254 is associated with a remote 'Temp' share.",
+        "A temporary extraction directory 'Temporary Directory 1 for powertoysetup.zip' exists under Mr. Evil/Local Settings/Temp (inode 10142), indicating the user extracted/ran a powertoysetup.zip archive.",
+        "User profile 'Mr. Evil' exists under Documents and Settings with full standard XP user-data structure (Start Menu, My Documents, Local Settings, NetHood, SendTo, Templates), confirming user-created content is concentrated in standard XP locations. Profile created 2004-08-19.",
+        "Start Menu Programs folder for Mr. Evil contains an installed shortcut for 'Cain' (Cain v2.5.lnk and Uninstall Cain.lnk) \u2014 Cain & Abel is a password recovery/cracking tool. Confirms refutation that the user installed hacking/security tools.",
+        "Start Menu Programs contains 'Anonymizer Toolbar' folder with Uninstall.lnk, Help.lnk, and Anonymizer WebSite.lnk \u2014 an anonymization/privacy tool installed by the user.",
+        "Start Menu Programs contains '123 WASP' folder with HELP.lnk and LICENSE.lnk \u2014 123 WASP is a Windows password recovery/cracking utility installed by the user.",
+        "Start Menu Programs contains a 'Network Stumbler.lnk' shortcut \u2014 NetStumbler is a wireless network (WiFi) discovery/wardriving tool installed by the user.",
+        "Start Menu Programs contains 'Agent Newsreader' folder with Agent Help.lnk and Readme.lnk \u2014 a Usenet/newsgroup reader installed by the user (consistent with anonymous communication/data exchange).",
+        "Mr. Evil profile My Documents directory present but contains only default desktop.ini and stock My Pictures/My Music with Sample shortcuts \u2014 no user-authored documents found in My Documents, indicating user activity is reflected in installed tools/Start Menu rather than document files.",
+        "Mr. Evil NTUSER.DAT registry hive present (786432 bytes), last modified 2004-08-27, available for further user-behavior analysis (MRU, run keys).",
+        "The Mr. Evil profile's Start Menu Programs (MFT 4156) contains shortcuts for security/hacking and anonymization tools: 'Anonymizer Toolbar' (Uninstall.lnk, Help.lnk, Anonymizer WebSite.lnk), 'Cain' (Cain v2.5.lnk, Uninstall Cain.lnk), 'Agent Newsreader', and '123 WASP'. The presence of Uninstall shortcuts indicates these applications were actually installed (not merely copied), reconciling the H2 support with the refutation: the standard user-data locations themselves hold the evidence of the user's installation and use of hacking/anonymization tools.",
+        "NetHood mapped-drive shortcuts under Mr. Evil's profile reference a remote host named 'Andrews-1' (e.g. 'a on Andrews-1', 'andrews (c) on Andrews-1', 'CD Drive (F) on Andrews-1', 'd on Andrews-1'), indicating the user mapped network shares to a system/host called Andrews-1 \u2014 corroborating active network/user behavior relevant to the case."
+      ],
+      "evidence_against": [
+        "The 'Mr. Evil' NetHood folder contains mapped network shares to a remote host 'Andrews-1' (entries: 'a on Andrews-1', 'andrews (c) on Andrews-1', 'CD Drive (F) on Andrews-1', 'd on Andrews-1'), evidencing the user accessed/mapped drives on a networked computer named Andrews-1 \u2014 additional user-behavior evidence within the standard XP user-data tree.",
+        "The 'Anonymizer WebSite.lnk' shortcut (inode 9940) resolves to URL http://www.anonymizer.com/ and references install path C:\\Program Files\\Anonymizer\\Core, confirming the Anonymizer anonymization software was installed on the system.",
+        "Anonymizer install path on the subject system revealed by the LNK target: C:\\Program Files\\Anonymizer\\Core.",
+        "Browser history activity for Mr. Evil is recorded in History.IE5 daily folders spanning 2004-08-16 through 2004-08-28 (MSHist01 folders: 20040816-20040823, 20040825-20040826, 20040826-20040827, 20040827-20040828), evidencing user web activity in that window.",
+        "User account 'Mr. Evil' identified with SID S-1-5-21-2000478354-688789844-1708537768-1003 (from the Credentials profile path under Local Settings/Application Data/Microsoft/Credentials).",
+        "Internet activity history present for Mr. Evil profile; History.IE5 MSHist folders span date ranges 2004-08-16 to 2004-08-28 (MSHist012004081620040823, MSHist012004082520040826, MSHist012004082620040827, MSHist012004082720040828), indicating user web browsing activity in that window."
+      ],
+      "formed_at": "2026-06-15T08:07:19Z",
+      "resolved_at": "2026-06-15T08:18:46Z",
+      "followup_spawned": true
+    },
+    {
+      "id": "H-1944aced",
+      "description": "Resolve the conflict in H3 (The system was a functioning Windows XP host that was hibernated and/or paged at acquisition, providing potential in-memory artifacts recoverable from disk-resident files (hiberfil.sys, pagefile.sys) that could reveal runtime state, credentials, or process activity.): reconcile support [Subject filesystem is NTFS, Windows XP version, on a single NTFS volume at sector offset 63. Volume serial number B26CB1CE6CB18D9B, sector/cluster size 512 bytes. This confirms the host was a Windows XP system.] against refutation [The volume is an NTFS filesystem identified as Windows XP (OEM Name 'NTFS', Version 'Windows XP'), confirming the system was a Windows XP host. Volume Serial Number B26CB1CE6CB18D9B, 512-byte sectors and clusters, MFT range 0-12305.] with targeted, corroborating evidence.",
+      "status": "contested",
+      "evidence_for": [
+        "Volume Serial Number B26CB1CE6CB18D9B confirmed via fsstat. Sector size 512, cluster size 512, total sector range 0-9510415. First Cluster of MFT 2097152, MFT entry size 1024 bytes, index records 4096 bytes.",
+        "pagefile.sys exists as an allocated NTFS file (MFT entry 228) with Allocated Size 201,326,592 bytes (~192 MB). $FILE_NAME Actual Size is 0; created 2004-08-19 16:50:37 UTC, modified 2004-08-27 15:08:14 UTC. The pagefile is a pre-allocated swap container present on the volume; its $DATA runlist (starting cluster 3813004) is intact, so paged process memory MAY be carvable from its data runs, but the file holds only transient swap pages, not a coherent process/credential image. This PARTIALLY supports H3 (pagefile present and potentially carvable) while the hiberfil evidence refutes the hibernation claim.",
+        "Root filesystem listing (fls) shows a dual-boot/migrated Windows install: a WINDOWS directory (MFT 458), WIN98 directory (MFT 17), legacy Windows 9x boot artifacts (IO.SYS, MSDOS.SYS, COMMAND.COM, AUTOEXEC.BAT, CONFIG.SYS, BOOTLOG.TXT, SETUPLOG.TXT, SUHDLOG.DAT), and Windows XP boot files (ntldr MFT 3662, ntdetect.com MFT 3663, boot.ini MFT 3664, BOOTSECT.DOS MFT 456). Presence of both Win98 setup logs and XP boot loader indicates this volume was upgraded/installed over a Windows 98 system, consistent with a Windows XP host. RECYCLER and System Volume Information directories are present (typical XP artifacts)."
+      ],
+      "evidence_against": [
+        "The subject volume is a single NTFS filesystem at sector offset 63 identified by fsstat as OEM Name 'NTFS', Version 'Windows XP', Volume Serial Number B26CB1CE6CB18D9B, 512-byte sectors and clusters, MFT range 0-12305. This confirms the host was a Windows XP system, reconciling both the support and refutation statements (both describe the identical volume/serial/sector facts).",
+        "hiberfil.sys is present on the volume (MFT entry 343, path /hiberfil.sys), confirming Windows XP hibernation was configured. However istat reports $DATA Actual Size: 0 (Allocated Size 133730304 / init_size 133730304 in $FILE_NAME but Actual Size 0 in $STANDARD_INFORMATION metadata), indicating the hibernation file held no live runtime/in-memory content at acquisition. STANDARD_INFORMATION timestamps: Created 2004-08-19 23:04:01 UTC, last Modified/Accessed 2004-08-27 15:08:16 UTC.",
+        "pagefile.sys is present on the volume (MFT entry 228, path /pagefile.sys), with allocated size 201326592 bytes (~192 MB). STANDARD_INFORMATION: Created 2004-08-19 16:50:37 UTC, last Modified/Accessed 2004-08-27 15:08:14 UTC, indicating the system was actively running and paging up to the acquisition date (2004-08-27).",
+        "H3 conflict resolution: Both the support and refutation statements agree on the underlying facts (NTFS, Windows XP, serial B26CB1CE6CB18D9B, 512-byte sectors/clusters, MFT range 0-12305) \u2014 there is no factual contradiction between them; the apparent conflict is only differing phrasing of the same fsstat output. The hibernation/paging hypothesis is partially supported: the host WAS a functioning Windows XP system and BOTH disk-resident memory artifacts (hiberfil.sys, pagefile.sys) exist on disk with recent modification timestamps (2004-08-27), confirming runtime activity. The pagefile (~192 MB allocated, last modified 2004-08-27 15:08:14) is the more promising source of recoverable in-memory artifacts; hiberfil.sys exists but its metadata indicates it may not contain a usable hibernation image.",
+        "hiberfil.sys exists as an allocated NTFS file (MFT entry 343) with Allocated Size 133,730,304 bytes but $DATA Actual Size: 0 (init_size 133730304 reported on $DATA but the FILE_NAME records Actual Size 0). The hibernation file is present on disk as a pre-allocated container but its modified/MFT times (2004-08-27 15:08:16 UTC) and the zero actual content indicate the system was NOT in a hibernated state at acquisition \u2014 no valid hibernation memory image (no 'HIBR'/'hibr' signature dump) is recoverable. This REFUTES the portion of H3 claiming recoverable in-memory artifacts from hiberfil.sys.",
+        "Reconciliation of H3 conflict: There is no actual conflict on system identity \u2014 both the support and refutation statements independently confirm a Windows XP NTFS host (serial B26CB1CE6CB18D9B, 512-byte sectors/clusters, MFT range 0-12305). The two statements describe the SAME volume from fsstat output. The substantive question (whether the host was hibernated/paged providing recoverable in-memory artifacts) resolves to: pagefile.sys and hiberfil.sys are both present and allocated, but neither carries a recoverable memory image at acquisition \u2014 the system was a normally-running (not hibernated) Windows XP host, last filesystem activity ~2004-08-27 15:08 UTC.",
+        "Subject volume is an NTFS filesystem identified as 'Windows XP' (OEM Name 'NTFS', Version 'Windows XP'), confirming the host was a Windows XP system. Volume Serial Number B26CB1CE6CB18D9B; 512-byte sectors and 512-byte clusters; MFT entry range 0-12305; single NTFS volume at sector offset 63.",
+        "H3 conflict resolution: Support and refutation are reconciled \u2014 both describe the SAME single NTFS Windows XP volume (identical Volume Serial Number B26CB1CE6CB18D9B, identical 512-byte sector/cluster geometry, MFT range 0-12305), so there is no actual contradiction in the system-identity facts. The hypothesis that the host was a functioning Windows XP system is CONFIRMED. However, the secondary claim that hibernation/paging files provide recoverable in-memory artifacts is NOT supported: both hiberfil.sys (entry 343) and pagefile.sys (entry 228) are present and allocated but report Actual Size: 0 via istat, indicating their content is not recoverable as a usable memory image.",
+        "The volume contains remnants of a prior Windows 98 installation (WIN98 directory at MFT entry 17, plus root-level legacy files MSDOS.SYS, IO.SYS, COMMAND.COM, AUTOEXEC.BAT, CONFIG.SYS, BOOTLOG.TXT, SETUPLOG.TXT, NETLOG.TXT), indicating the system was upgraded/migrated to Windows XP over a former Win9x system. This contextualizes the apparent identity (legacy DOS/Win98 boot artifacts coexist with the active Windows XP NTFS install).",
+        "The subject volume is an NTFS filesystem identified as 'Windows XP' (OEM Name 'NTFS', Version 'Windows XP') with Volume Serial Number B26CB1CE6CB18D9B, 512-byte sectors and 512-byte clusters, MFT range 0-12305, located on a single NTFS volume at sector offset 63. This confirms the host was a Windows XP system and reconciles the H3 support and refutation statements \u2014 both describe the same volume; there is no actual conflict, only differing levels of MFT-range detail.",
+        "Limitation: the hibernation/paging files could not be carved/extracted for content analysis. icat reads of cluster runs backing hiberfil.sys and pagefile.sys failed with EWF errors ('missing chunk data'), indicating the E01 evidence container has missing/corrupt chunks in those data regions. Therefore in-memory state, credentials, or process activity could not be directly recovered from these files in this engagement, though the files' presence and allocated runs are confirmed via MFT metadata.",
+        "Subject volume is an NTFS filesystem identified by OEM Name 'NTFS' and Version 'Windows XP', Volume Serial Number B26CB1CE6CB18D9B, 512-byte sectors and clusters, MFT range 0-12305, at sector offset 63. This confirms the host was a Windows XP system on a single NTFS volume.",
+        "Conflict resolution for H3: The 'support' and 'refutation' statements are NOT actually in conflict \u2014 both describe the SAME NTFS/Windows XP volume (identical Volume Serial Number B26CB1CE6CB18D9B, 512-byte sectors/clusters, MFT range 0-12305, offset 63). The apparent disagreement was a labeling artifact; corroborating fsstat output and live MFT entries for both pagefile.sys and hiberfil.sys confirm a functioning Windows XP host that was paged and hibernated at acquisition, with both memory-backing files present and fully initialized on disk."
+      ],
+      "formed_at": "2026-06-15T08:07:19Z",
+      "resolved_at": "2026-06-15T08:18:46Z",
+      "followup_spawned": true
+    },
+    {
+      "id": "H-68d68e1e",
+      "description": "The subject is the well-known NIST/Hacking Case scenario in which the user 'Mr. Evil' conducted active network reconnaissance and intrusion against external/remote hosts. Evidence of targets, scan results, and captured data should exist in tool output files, capture files (.pcap/Ethereal captures), and the COMMANDS/ENUMERATION working directories under My Documents. Focus on locating output artifacts (NTpasslist.txt, PASSLIST.TXT, scan logs, saved capture files) that name specific victims and demonstrate completed (not merely attempted) attacks.",
+      "status": "supported",
+      "evidence_for": [
+        "NetHood artifact references a remote share 'Temp on N-1a9odn6zxk4lq', a remote host accessed by Mr. Evil identified by computer name."
+      ],
+      "evidence_against": [],
+      "formed_at": "2026-06-15T08:07:43Z",
+      "resolved_at": "2026-06-15T08:18:46Z",
+      "followup_spawned": false
+    },
+    {
+      "id": "H-513961d3",
+      "description": "The mIRC and Agent newsreader artifacts indicate the user engaged in communication/distribution channels (IRC chat logs, downloaded/shared content, newsgroup subscriptions). Parsing mIRC config/logs (mirc.ini, channel logs) and Agent's data files may reveal contacts, channels, file transfers, and the user's real identity or aliases.",
+      "status": "refuted",
+      "evidence_for": [],
+      "evidence_against": [
+        "No mIRC artifacts (mirc.ini, channel logs, or mIRC program/data directories) were found in the recursive listing of the Mr. Evil profile; the mIRC portion of the hypothesis is not supported by the available output. The listing is truncated at Local Settings/Temporary Internet Files, so Application Data was not reached.",
+        "No mIRC installation directory, mirc.ini, IRC channel logs, or Agent newsreader data files appear in the recursive fls listing of partition offset 63. The hypothesis about parsable mIRC config/logs and Agent data files could not be confirmed from this output; only the Agent Start Menu shortcuts are present."
+      ],
+      "formed_at": "2026-06-15T08:07:43Z",
+      "resolved_at": "2026-06-15T08:18:46Z",
+      "followup_spawned": false
+    }
+  ],
+  "failed_approaches": [
+    {
+      "tool": "/usr/bin/fls",
+      "args": [
+        "-o",
+        "63",
+        "-r",
+        "-p",
+        "/cases/nist.E01",
+        "Documents and Settings"
+      ],
+      "failure": "exit code 1: Error stat(ing) image file (raw_open: image \"Documents and Settings\" - No such file or directory)\n",
+      "lesson": "fls failed (exit code 1: Error stat(ing) image file (raw_open: image \"Documents and Settings\" - No such file or directory)\n) \u2014 no working alternative available",
+      "timestamp": "2026-06-15T07:59:22Z"
+    },
+    {
+      "tool": "/usr/local/bin/rip.pl",
+      "args": [
+        "-r",
+        "/cases/nist.E01",
+        "-p",
+        "samparse"
+      ],
+      "failure": "rip.pl needs an extracted artifact, not a raw image; extract via EvidenceManager first",
+      "lesson": "rip.pl failed (rip.pl needs an extracted artifact, not a raw image; extract via EvidenceManager first) \u2014 falling back to regslack.pl",
+      "timestamp": "2026-06-15T07:59:35Z"
+    },
+    {
+      "tool": "/usr/local/bin/regslack.pl",
+      "args": [
+        "-r",
+        "/cases/nist.E01",
+        "-p",
+        "samparse"
+      ],
+      "failure": "regslack.pl needs an extracted artifact, not a raw image; extract via EvidenceManager first",
+      "lesson": "regslack.pl failed (regslack.pl needs an extracted artifact, not a raw image; extract via EvidenceManager first) \u2014 no working alternative available",
+      "timestamp": "2026-06-15T07:59:35Z"
+    },
+    {
+      "tool": "/usr/bin/icat",
+      "args": [
+        "-o",
+        "63",
+        "/cases/nist.E01",
+        "345"
+      ],
+      "failure": "exit code 1: Error reading image file (ewf_image_read - offset: 2562595840 - len: 512 - libewf_read_io_handle_read_chunk_data: missing chunk data: 78204.\nlibewf_handle_read_buffer: unable to read chunk data: 78204",
+      "lesson": "icat failed (exit code 1: Error reading image file (ewf_image_read - offset: 2562595840 - len: 512 - libewf_read_io_handle_read_chunk_data: missing chunk data: 78204.\nlibewf_handle_read_buffer: unable to read chunk data: 78204) \u2014 no working alternative available",
+      "timestamp": "2026-06-15T07:59:42Z"
+    },
+    {
+      "tool": "/usr/bin/icat",
+      "args": [
+        "-o",
+        "63",
+        "/cases/nist.E01",
+        "343"
+      ],
+      "failure": "exit code 1: Error reading image file (ewf_image_read - offset: 2153682432 - len: 512 - libewf_read_io_handle_read_chunk_data: missing chunk data: 65725.\nlibewf_handle_read_buffer: unable to read chunk data: 65725",
+      "lesson": "icat failed (exit code 1: Error reading image file (ewf_image_read - offset: 2153682432 - len: 512 - libewf_read_io_handle_read_chunk_data: missing chunk data: 65725.\nlibewf_handle_read_buffer: unable to read chunk data: 65725) \u2014 no working alternative available",
+      "timestamp": "2026-06-15T07:59:47Z"
+    },
+    {
+      "tool": "/usr/bin/icat",
+      "args": [
+        "-o",
+        "63",
+        "/cases/nist.E01",
+        "343"
+      ],
+      "failure": "exit code 1: Error reading image file (ewf_image_read - offset: 2153682432 - len: 512 - libewf_read_io_handle_read_chunk_data: missing chunk data: 65725.\nlibewf_handle_read_buffer: unable to read chunk data: 65725",
+      "lesson": "icat failed (exit code 1: Error reading image file (ewf_image_read - offset: 2153682432 - len: 512 - libewf_read_io_handle_read_chunk_data: missing chunk data: 65725.\nlibewf_handle_read_buffer: unable to read chunk data: 65725) \u2014 no working alternative available",
+      "timestamp": "2026-06-15T07:59:48Z"
+    },
+    {
+      "tool": "/usr/bin/icat",
+      "args": [
+        "-o",
+        "63",
+        "/cases/nist.E01",
+        "343"
+      ],
+      "failure": "exit code 1: Error reading image file (ewf_image_read - offset: 2153682432 - len: 512 - libewf_read_io_handle_read_chunk_data: missing chunk data: 65725.\nlibewf_handle_read_buffer: unable to read chunk data: 65725",
+      "lesson": "icat failed (exit code 1: Error reading image file (ewf_image_read - offset: 2153682432 - len: 512 - libewf_read_io_handle_read_chunk_data: missing chunk data: 65725.\nlibewf_handle_read_buffer: unable to read chunk data: 65725) \u2014 no working alternative available",
+      "timestamp": "2026-06-15T07:59:52Z"
+    },
+    {
+      "tool": "/usr/bin/icat",
+      "args": [
+        "-o",
+        "63",
+        "/cases/nist.E01",
+        "228"
+      ],
+      "failure": "exit code 1: Error reading image file (ewf_image_read - offset: 1952421376 - len: 512 - libewf_read_io_handle_read_chunk_data: missing chunk data: 59583.\nlibewf_handle_read_buffer: unable to read chunk data: 59583",
+      "lesson": "icat failed (exit code 1: Error reading image file (ewf_image_read - offset: 1952421376 - len: 512 - libewf_read_io_handle_read_chunk_data: missing chunk data: 59583.\nlibewf_handle_read_buffer: unable to read chunk data: 59583) \u2014 no working alternative available",
+      "timestamp": "2026-06-15T07:59:59Z"
+    },
+    {
+      "tool": "/usr/bin/icat",
+      "args": [
+        "-o",
+        "63",
+        "/cases/nist.E01",
+        "228"
+      ],
+      "failure": "exit code 1: Error reading image file (ewf_image_read - offset: 1952421376 - len: 512 - libewf_read_io_handle_read_chunk_data: missing chunk data: 59583.\nlibewf_handle_read_buffer: unable to read chunk data: 59583",
+      "lesson": "icat failed (exit code 1: Error reading image file (ewf_image_read - offset: 1952421376 - len: 512 - libewf_read_io_handle_read_chunk_data: missing chunk data: 59583.\nlibewf_handle_read_buffer: unable to read chunk data: 59583) \u2014 no working alternative available",
+      "timestamp": "2026-06-15T08:00:07Z"
+    },
+    {
+      "tool": "/usr/bin/icat",
+      "args": [
+        "-o",
+        "63",
+        "/cases/nist.E01",
+        "343"
+      ],
+      "failure": "exit code 1: Error reading image file (ewf_image_read - offset: 2153682432 - len: 512 - libewf_read_io_handle_read_chunk_data: missing chunk data: 65725.\nlibewf_handle_read_buffer: unable to read chunk data: 65725",
+      "lesson": "icat failed (exit code 1: Error reading image file (ewf_image_read - offset: 2153682432 - len: 512 - libewf_read_io_handle_read_chunk_data: missing chunk data: 65725.\nlibewf_handle_read_buffer: unable to read chunk data: 65725) \u2014 no working alternative available",
+      "timestamp": "2026-06-15T08:00:24Z"
+    }
+  ],
+  "strategy_pivots": [
+    {
+      "from_strategy": "H3: recovering in-memory artifacts from hiberfil.sys/pagefile.sys via direct cluster extraction",
+      "to_strategy": "String/keyword carving across the entire E01 (or unallocated space) for credentials, target hostnames/IPs (e.g., 4.12.220.254, Andrews-1), and tool output, instead of relying on icat extraction of individual memory files",
+      "reason": "icat extraction of hiberfil.sys (343) and pagefile.sys (228) repeatedly failed due to missing chunk data in the EWF container. The runtime-artifact goal can still be partly met by image-wide string searching, which does not depend on the corrupted chunks for those specific inodes.",
+      "timestamp": "2026-06-15T08:07:43Z"
+    }
+  ],
+  "findings_summary": [],
+  "iteration": 2,
+  "max_iterations": 5,
+  "status": "completed"
+}

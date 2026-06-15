@@ -1,0 +1,12 @@
+
+rla version 2.1.0.0
+
+Author: Eric Zimmerman (saericzimmerman@gmail.com)
+https://github.com/EricZimmerman/RECmd
+
+Note: Enclose all strings containing spaces with double quotes
+
+Command line: -f /cases/extracted/NTUSER.DAT --out /cases/out
+
+File /cases/extracted/NTUSER.DAT does not exist
+

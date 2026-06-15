@@ -1,0 +1,32 @@
+MFT Entry Header Values:
+Entry: 7        Sequence: 7
+$LogFile Sequence Number: 0
+Allocated File
+Links: 1
+
+$STANDARD_INFORMATION Attribute Values:
+Flags: Hidden, System
+Owner ID: 0
+Security ID: 0  ()
+Created:	2004-08-19 16:57:43.694987200 (UTC)
+File Modified:	2004-08-19 16:57:43.694987200 (UTC)
+MFT Modified:	2004-08-19 16:57:43.694987200 (UTC)
+Accessed:	2004-08-19 16:57:43.694987200 (UTC)
+
+$FILE_NAME Attribute Values:
+Flags: Hidden, System
+Name: $Boot
+Parent MFT Entry: 5 	Sequence: 5
+Allocated Size: 8192   	Actual Size: 8192
+Created:	2004-08-19 16:57:43.694987200 (UTC)
+File Modified:	2004-08-19 16:57:43.694987200 (UTC)
+MFT Modified:	2004-08-19 16:57:43.694987200 (UTC)
+Accessed:	2004-08-19 16:57:43.694987200 (UTC)
+
+Attributes: 
+Type: $STANDARD_INFORMATION (16-0)   Name: N/A   Resident   size: 48
+Type: $FILE_NAME (48-2)   Name: N/A   Resident   size: 76
+Type: $SECURITY_DESCRIPTOR (80-3)   Name: N/A   Resident   size: 104
+Type: $DATA (128-1)   Name: N/A   Non-Resident   size: 8192  init_size: 8192
+0 1 2 3 4 5 6 7 
+8 9 10 11 12 13 14 15 

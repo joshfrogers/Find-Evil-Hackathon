@@ -1,0 +1,44 @@
+-/d 3671-144-7:	Documents and Settings
+r/r 128-128-3:	DETLOG.TXT
+-/r 0-128-7:	$MFT
+-/r 1-128-1:	$MFTMirr
+-/r 2-128-1:	$LogFile
+-/r 3-128-3:	$Volume
+-/r 4-128-4:	$AttrDef
+-/r 6-128-1:	$Bitmap
+-/r 7-128-1:	$Boot
+-/r 8-128-2:	$BadClus
+-/r 8-128-1:	$BadClus:$Bad
+-/r 9-128-8:	$Secure:$SDS
+-/r 9-144-11:	$Secure:$SDH
+-/r 9-144-14:	$Secure:$SII
+-/r 10-128-1:	$UpCase
+-/d 11-144-4:	$Extend
+-/d 17-144-3:	WIN98
+-/r 119-128-3:	BOOTLOG.TXT
+-/r 120-128-3:	COMMAND.COM
+-/r 121-128-3:	SUHDLOG.DAT
+-/r 122-128-3:	FRUNLOG.TXT
+-/r 123-128-3:	MSDOS.---
+-/r 124-128-3:	SETUPLOG.TXT
+-/r 125-128-3:	NETLOG.TXT
+-/r 126-128-3:	MSDOS.SYS
+-/r 127-128-3:	AUTOEXEC.BAT
+-/r 129-128-3:	CONFIG.SYS
+-/r 130-128-3:	BOOTLOG.PRV
+-/r 131-128-3:	VIDEOROM.BIN
+-/r 132-128-3:	SYSTEM.1ST
+-/r 133-128-3:	IO.SYS
+-/d 134-144-4:	Program Files
+-/d 330-144-7:	My Documents
+-/d 411-144-1:	System Volume Information
+-/r 456-128-3:	BOOTSECT.DOS
+-/r 3662-128-3:	ntldr
+-/r 3663-128-3:	ntdetect.com
+-/r 3664-128-4:	boot.ini
+-/d 10519-144-1:	Temp
+-/d 11736-144-1:	RECYCLER
+-/d 458-144-6:	WINDOWS
+V/V 12305:	$OrphanFiles
+-/r 228-128-1:	pagefile.sys
+-/r 343-128-1:	hiberfil.sys

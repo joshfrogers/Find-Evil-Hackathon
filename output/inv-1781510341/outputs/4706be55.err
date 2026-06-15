@@ -1,0 +1,2 @@
+usage: chunkymonkey.py [-h] inputfile term chunksize delta
+chunkymonkey.py: error: the following arguments are required: chunksize, delta

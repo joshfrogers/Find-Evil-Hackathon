@@ -1,0 +1,218 @@
+Parsed Plugins file.
+Launching routes v.20200526
+Error in routes: Unable to open '/tmp/agentic-sift-evidence-mhmhnwjl/mnt/vol0/WINDOWS/SYSTEM.DAT': No such file or directory at /usr/share/regripper/plugins/routes.pl line 46.
+
+routes complete.
+Launching pagefile v.20140505
+Error in pagefile: Unable to open '/tmp/agentic-sift-evidence-mhmhnwjl/mnt/vol0/WINDOWS/SYSTEM.DAT': No such file or directory at /usr/share/regripper/plugins/pagefile.pl line 44.
+
+pagefile complete.
+Launching profiler v.20200525
+Error in profiler: Unable to open '/tmp/agentic-sift-evidence-mhmhnwjl/mnt/vol0/WINDOWS/SYSTEM.DAT': No such file or directory at /usr/share/regripper/plugins/profiler.pl line 44.
+
+profiler complete.
+Launching disableeventlog v.20230710
+Error in disableeventlog: Unable to open '/tmp/agentic-sift-evidence-mhmhnwjl/mnt/vol0/WINDOWS/SYSTEM.DAT': No such file or directory at /usr/share/regripper/plugins/disableeventlog.pl line 45.
+
+disableeventlog complete.
+Launching remoteaccess v.20200517
+Error in remoteaccess: Unable to open '/tmp/agentic-sift-evidence-mhmhnwjl/mnt/vol0/WINDOWS/SYSTEM.DAT': No such file or directory at /usr/share/regripper/plugins/remoteaccess.pl line 47.
+
+remoteaccess complete.
+Error in printmon_tln: Unable to open '/tmp/agentic-sift-evidence-mhmhnwjl/mnt/vol0/WINDOWS/SYSTEM.DAT': No such file or directory at /usr/share/regripper/plugins/printmon_tln.pl line 46.
+
+printmon_tln complete.
+Launching processor_architecture v.20140505
+Error in processor_architecture: Unable to open '/tmp/agentic-sift-evidence-mhmhnwjl/mnt/vol0/WINDOWS/SYSTEM.DAT': No such file or directory at /usr/share/regripper/plugins/processor_architecture.pl line 40.
+
+processor_architecture complete.
+Launching termserv v.20200506
+Error in termserv: Unable to open '/tmp/agentic-sift-evidence-mhmhnwjl/mnt/vol0/WINDOWS/SYSTEM.DAT': No such file or directory at /usr/share/regripper/plugins/termserv.pl line 57.
+
+termserv complete.
+Launching termcert v.20200526
+Error in termcert: Unable to open '/tmp/agentic-sift-evidence-mhmhnwjl/mnt/vol0/WINDOWS/SYSTEM.DAT': No such file or directory at /usr/share/regripper/plugins/termcert.pl line 39.
+
+termcert complete.
+Launching shimcache_tln v.20220921
+Error in shimcache_tln: Unable to open '/tmp/agentic-sift-evidence-mhmhnwjl/mnt/vol0/WINDOWS/SYSTEM.DAT': No such file or directory at /usr/share/regripper/plugins/shimcache_tln.pl line 58.
+
+shimcache_tln complete.
+Launching disableremotescm v.20200513
+Error in disableremotescm: Unable to open '/tmp/agentic-sift-evidence-mhmhnwjl/mnt/vol0/WINDOWS/SYSTEM.DAT': No such file or directory at /usr/share/regripper/plugins/disableremotescm.pl line 44.
+
+disableremotescm complete.
+Error in usbdevices: Unable to open '/tmp/agentic-sift-evidence-mhmhnwjl/mnt/vol0/WINDOWS/SYSTEM.DAT': No such file or directory at /usr/share/regripper/plugins/usbdevices.pl line 40.
+
+usbdevices complete.
+Launching wpdbusenum v.20200515
+Error in wpdbusenum: Unable to open '/tmp/agentic-sift-evidence-mhmhnwjl/mnt/vol0/WINDOWS/SYSTEM.DAT': No such file or directory at /usr/share/regripper/plugins/wpdbusenum.pl line 47.
+
+wpdbusenum complete.
+Launching dafupnp v.20200525
+Error in dafupnp: Unable to open '/tmp/agentic-sift-evidence-mhmhnwjl/mnt/vol0/WINDOWS/SYSTEM.DAT': No such file or directory at /usr/share/regripper/plugins/dafupnp.pl line 43.
+
+dafupnp complete.
+Launching svc v.20200525
+Error in svc: Unable to open '/tmp/agentic-sift-evidence-mhmhnwjl/mnt/vol0/WINDOWS/SYSTEM.DAT': No such file or directory at /usr/share/regripper/plugins/svc.pl line 84.
+
+svc complete.
+Launching timezone v.20200518
+Error in timezone: Unable to open '/tmp/agentic-sift-evidence-mhmhnwjl/mnt/vol0/WINDOWS/SYSTEM.DAT': No such file or directory at /usr/share/regripper/plugins/timezone.pl line 48.
+
+timezone complete.
+Launching imagedev v.20140104
+Error in imagedev: Unable to open '/tmp/agentic-sift-evidence-mhmhnwjl/mnt/vol0/WINDOWS/SYSTEM.DAT': No such file or directory at /usr/share/regripper/plugins/imagedev.pl line 40.
+
+imagedev complete.
+Launching prefetch v.20200515
+Error in prefetch: Unable to open '/tmp/agentic-sift-evidence-mhmhnwjl/mnt/vol0/WINDOWS/SYSTEM.DAT': No such file or directory at /usr/share/regripper/plugins/prefetch.pl line 44.
+
+prefetch complete.
+Launching svcdll v.20200525
+Error in svcdll: Unable to open '/tmp/agentic-sift-evidence-mhmhnwjl/mnt/vol0/WINDOWS/SYSTEM.DAT': No such file or directory at /usr/share/regripper/plugins/svcdll.pl line 65.
+
+svcdll complete.
+Launching usb v.20200515
+Error in usb: Unable to open '/tmp/agentic-sift-evidence-mhmhnwjl/mnt/vol0/WINDOWS/SYSTEM.DAT': No such file or directory at /usr/share/regripper/plugins/usb.pl line 44.
+
+usb complete.
+Launching bthenum v.20200515
+Error in bthenum: Unable to open '/tmp/agentic-sift-evidence-mhmhnwjl/mnt/vol0/WINDOWS/SYSTEM.DAT': No such file or directory at /usr/share/regripper/plugins/bthenum.pl line 42.
+
+bthenum complete.
+Launching mountdev2 v.20200517
+Error in mountdev2: Unable to open '/tmp/agentic-sift-evidence-mhmhnwjl/mnt/vol0/WINDOWS/SYSTEM.DAT': No such file or directory at /usr/share/regripper/plugins/mountdev2.pl line 76.
+
+mountdev2 complete.
+Launching svc_tln v.20130911
+Error in svc_tln: Unable to open '/tmp/agentic-sift-evidence-mhmhnwjl/mnt/vol0/WINDOWS/SYSTEM.DAT': No such file or directory at /usr/share/regripper/plugins/svc_tln.pl line 81.
+
+svc_tln complete.
+Launching appcertdlls v.20200427
+Error in appcertdlls: Unable to open '/tmp/agentic-sift-evidence-mhmhnwjl/mnt/vol0/WINDOWS/SYSTEM.DAT': No such file or directory at /usr/share/regripper/plugins/appcertdlls.pl line 46.
+
+appcertdlls complete.
+Launching usbstor v.20200515
+Error in usbstor: Unable to open '/tmp/agentic-sift-evidence-mhmhnwjl/mnt/vol0/WINDOWS/SYSTEM.DAT': No such file or directory at /usr/share/regripper/plugins/usbstor.pl line 49.
+
+usbstor complete.
+Launching ScanButton v.20131210
+Error in ScanButton: Unable to open '/tmp/agentic-sift-evidence-mhmhnwjl/mnt/vol0/WINDOWS/SYSTEM.DAT': No such file or directory at /usr/share/regripper/plugins/ScanButton.pl line 51.
+
+ScanButton complete.
+Launching shimcache v.20220921
+Error in shimcache: Unable to open '/tmp/agentic-sift-evidence-mhmhnwjl/mnt/vol0/WINDOWS/SYSTEM.DAT': No such file or directory at /usr/share/regripper/plugins/shimcache.pl line 60.
+
+shimcache complete.
+Launching rdpport v.20200526
+Error in rdpport: Unable to open '/tmp/agentic-sift-evidence-mhmhnwjl/mnt/vol0/WINDOWS/SYSTEM.DAT': No such file or directory at /usr/share/regripper/plugins/rdpport.pl line 43.
+
+rdpport complete.
+Launching pending v.20130711
+Error in pending: Unable to open '/tmp/agentic-sift-evidence-mhmhnwjl/mnt/vol0/WINDOWS/SYSTEM.DAT': No such file or directory at /usr/share/regripper/plugins/pending.pl line 46.
+
+pending complete.
+Launching nic2 v.20200525
+Error in nic2: Unable to open '/tmp/agentic-sift-evidence-mhmhnwjl/mnt/vol0/WINDOWS/SYSTEM.DAT': No such file or directory at /usr/share/regripper/plugins/nic2.pl line 44.
+
+nic2 complete.
+Launching netlogon v.20200515
+Error in netlogon: Unable to open '/tmp/agentic-sift-evidence-mhmhnwjl/mnt/vol0/WINDOWS/SYSTEM.DAT': No such file or directory at /usr/share/regripper/plugins/netlogon.pl line 49.
+
+netlogon complete.
+Launching services v.20191024
+Error in services: Unable to open '/tmp/agentic-sift-evidence-mhmhnwjl/mnt/vol0/WINDOWS/SYSTEM.DAT': No such file or directory at /usr/share/regripper/plugins/services.pl line 62.
+
+services complete.
+Launching appcompatcache_tln v.20220921
+Error in appcompatcache_tln: Unable to open '/tmp/agentic-sift-evidence-mhmhnwjl/mnt/vol0/WINDOWS/SYSTEM.DAT': No such file or directory at /usr/share/regripper/plugins/appcompatcache_tln.pl line 69.
+
+appcompatcache_tln complete.
+Launching devclass v.20200525
+Error in devclass: Unable to open '/tmp/agentic-sift-evidence-mhmhnwjl/mnt/vol0/WINDOWS/SYSTEM.DAT': No such file or directory at /usr/share/regripper/plugins/devclass.pl line 43.
+
+devclass complete.
+Launching compname v.20090727
+Error in compname: Unable to open '/tmp/agentic-sift-evidence-mhmhnwjl/mnt/vol0/WINDOWS/SYSTEM.DAT': No such file or directory at /usr/share/regripper/plugins/compname.pl line 41.
+
+compname complete.
+Error in bam_tln: Unable to open '/tmp/agentic-sift-evidence-mhmhnwjl/mnt/vol0/WINDOWS/SYSTEM.DAT': No such file or directory at /usr/share/regripper/plugins/bam_tln.pl line 45.
+
+bam_tln complete.
+Launching ntds v.20200427
+Error in ntds: Unable to open '/tmp/agentic-sift-evidence-mhmhnwjl/mnt/vol0/WINDOWS/SYSTEM.DAT': No such file or directory at /usr/share/regripper/plugins/ntds.pl line 48.
+
+ntds complete.
+Launching bthport_tln v.20180705
+Error in bthport_tln: Unable to open '/tmp/agentic-sift-evidence-mhmhnwjl/mnt/vol0/WINDOWS/SYSTEM.DAT': No such file or directory at /usr/share/regripper/plugins/bthport_tln.pl line 44.
+
+bthport_tln complete.
+Launching lsa v.20200517
+Error in lsa: Unable to open '/tmp/agentic-sift-evidence-mhmhnwjl/mnt/vol0/WINDOWS/SYSTEM.DAT': No such file or directory at /usr/share/regripper/plugins/lsa.pl line 50.
+
+lsa complete.
+Launching environment v.20200512
+Error in environment: Unable to open '/tmp/agentic-sift-evidence-mhmhnwjl/mnt/vol0/WINDOWS/SYSTEM.DAT': No such file or directory at /usr/share/regripper/plugins/environment.pl line 46.
+
+environment complete.
+Launching disablelastaccess v.20200517
+Error in disablelastaccess: Unable to open '/tmp/agentic-sift-evidence-mhmhnwjl/mnt/vol0/WINDOWS/SYSTEM.DAT': No such file or directory at /usr/share/regripper/plugins/disablelastaccess.pl line 51.
+
+disablelastaccess complete.
+Launching shutdown v.20200518
+Error in shutdown: Unable to open '/tmp/agentic-sift-evidence-mhmhnwjl/mnt/vol0/WINDOWS/SYSTEM.DAT': No such file or directory at /usr/share/regripper/plugins/shutdown.pl line 43.
+
+shutdown complete.
+Launching mountdev v.20200517
+Error in mountdev: Unable to open '/tmp/agentic-sift-evidence-mhmhnwjl/mnt/vol0/WINDOWS/SYSTEM.DAT': No such file or directory at /usr/share/regripper/plugins/mountdev.pl line 46.
+
+mountdev complete.
+Launching backuprestore v.20200517
+Error in backuprestore: Unable to open '/tmp/agentic-sift-evidence-mhmhnwjl/mnt/vol0/WINDOWS/SYSTEM.DAT': No such file or directory at /usr/share/regripper/plugins/backuprestore.pl line 50.
+
+backuprestore complete.
+Launching bthport v.20200517
+Error in bthport: Unable to open '/tmp/agentic-sift-evidence-mhmhnwjl/mnt/vol0/WINDOWS/SYSTEM.DAT': No such file or directory at /usr/share/regripper/plugins/bthport.pl line 45.
+
+bthport complete.
+Launching bam v.20200427
+Error in bam: Unable to open '/tmp/agentic-sift-evidence-mhmhnwjl/mnt/vol0/WINDOWS/SYSTEM.DAT': No such file or directory at /usr/share/regripper/plugins/bam.pl line 49.
+
+bam complete.
+Launching macaddr v.20200515
+Error in macaddr: Unable to open '/tmp/agentic-sift-evidence-mhmhnwjl/mnt/vol0/WINDOWS/SYSTEM.DAT': No such file or directory at /usr/share/regripper/plugins/macaddr.pl line 44.
+
+macaddr complete.
+Launching ips v.20200518
+Error in ips: Unable to open '/tmp/agentic-sift-evidence-mhmhnwjl/mnt/vol0/WINDOWS/SYSTEM.DAT': No such file or directory at /usr/share/regripper/plugins/ips.pl line 44.
+
+ips complete.
+Launching appcompatcache v.20220921
+Error in appcompatcache: Unable to open '/tmp/agentic-sift-evidence-mhmhnwjl/mnt/vol0/WINDOWS/SYSTEM.DAT': No such file or directory at /usr/share/regripper/plugins/appcompatcache.pl line 70.
+
+appcompatcache complete.
+Launching source_os v.20200511
+Error in source_os: Unable to open '/tmp/agentic-sift-evidence-mhmhnwjl/mnt/vol0/WINDOWS/SYSTEM.DAT': No such file or directory at /usr/share/regripper/plugins/source_os.pl line 48.
+
+source_os complete.
+Launching shares v.20200525
+Error in shares: Unable to open '/tmp/agentic-sift-evidence-mhmhnwjl/mnt/vol0/WINDOWS/SYSTEM.DAT': No such file or directory at /usr/share/regripper/plugins/shares.pl line 49.
+
+shares complete.
+Launching printmon v.20200427
+Error in printmon: Unable to open '/tmp/agentic-sift-evidence-mhmhnwjl/mnt/vol0/WINDOWS/SYSTEM.DAT': No such file or directory at /usr/share/regripper/plugins/printmon.pl line 47.
+
+printmon complete.
+Launching PortProxy v.20210622
+Error in portproxy: Unable to open '/tmp/agentic-sift-evidence-mhmhnwjl/mnt/vol0/WINDOWS/SYSTEM.DAT': No such file or directory at /usr/share/regripper/plugins/portproxy.pl line 46.
+
+portproxy complete.
+Launching securityproviders v.20200526
+Error in securityproviders: Unable to open '/tmp/agentic-sift-evidence-mhmhnwjl/mnt/vol0/WINDOWS/SYSTEM.DAT': No such file or directory at /usr/share/regripper/plugins/securityproviders.pl line 43.
+
+securityproviders complete.
+Launching networksetup2 v.20191004
+Error in networksetup2: Unable to open '/tmp/agentic-sift-evidence-mhmhnwjl/mnt/vol0/WINDOWS/SYSTEM.DAT': No such file or directory at /usr/share/regripper/plugins/networksetup2.pl line 45.
+
+networksetup2 complete.

@@ -1,0 +1,348 @@
+Parsed Plugins file.
+Launching disablesr v.20200515
+Error in disablesr: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/disablesr.pl line 45.
+
+disablesr complete.
+Launching runonceex v.20200427
+Error in runonceex: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/runonceex.pl line 46.
+
+runonceex complete.
+Launching srum v.20200518
+Error in srum: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/srum.pl line 45.
+
+srum complete.
+Launching termserv v.20200506
+Error in termserv: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/termserv.pl line 58.
+
+termserv complete.
+Error in tracing: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/tracing.pl line 44.
+
+tracing complete.
+Launching dcom v.20200525
+Error in dcom: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/dcom.pl line 50.
+
+dcom complete.
+Launching inprocserver v.20200427
+Error in inprocserver: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/inprocserver.pl line 66.
+
+inprocserver complete.
+Error in killsuit_tln: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/killsuit_tln.pl line 43.
+
+killsuit_tln complete.
+Launching printdemon v.20200514
+Error in printdemon: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/printdemon.pl line 42.
+
+printdemon complete.
+Launching emdmgmt v.20200511
+Error in emdmgmt: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/emdmgmt.pl line 45.
+
+emdmgmt complete.
+Launching shelloverlay v.20100308
+Error in shelloverlay: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/shelloverlay.pl line 47.
+
+shelloverlay complete.
+Error in at_tln: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/at_tln.pl line 38.
+
+at_tln complete.
+Error in direct: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/direct.pl line 46.
+
+direct complete.
+Launching networklist_tln v.20150812
+Error in networklist_tln: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/networklist_tln.pl line 49.
+
+networklist_tln complete.
+Launching uninstall v.20200525
+Error in uninstall: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/uninstall.pl line 57.
+
+uninstall complete.
+Launching run v.20200511
+Error in run: Can't call method "get_embedded_filename" on an undefined value at /usr/local/bin/rip.pl line 460.
+
+run complete.
+Launching heap v.20200427
+Error in heap: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/heap.pl line 46.
+
+heap complete.
+Launching appcompatflags v.20200525
+Error in appcompatflags: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/appcompatflags.pl line 67.
+
+appcompatflags complete.
+Launching powershellcore v.20200525
+Error in powershellcore: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/powershellcore.pl line 47.
+
+powershellcore complete.
+Launching spp_clients v.20130429
+Error in spp_clients: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/spp_clients.pl line 39.
+
+spp_clients complete.
+Launching clsid v.20200526
+Error in clsid: Can't call method "get_embedded_filename" on an undefined value at /usr/local/bin/rip.pl line 460.
+
+clsid complete.
+Launching run_tln v.20221222
+Error in run_tln: Can't call method "get_embedded_filename" on an undefined value at /usr/local/bin/rip.pl line 460.
+
+run_tln complete.
+Launching systemindex v.20200518
+Error in systemindex: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/systemindex.pl line 41.
+
+systemindex complete.
+Launching calibrator v.20200427
+Error in calibrator: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/calibrator.pl line 44.
+
+calibrator complete.
+Launching susclient v.20200518
+Error in susclient: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/susclient.pl line 47.
+
+susclient complete.
+Launching psscript v.20200525
+Error in psscript: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/psscript.pl line 45.
+
+psscript complete.
+Launching tasks v.20200427
+Error in tasks: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/tasks.pl line 47.
+
+tasks complete.
+Launching uninstall v.20120523
+Error in uninstall_tln: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/uninstall_tln.pl line 53.
+
+uninstall_tln complete.
+Launching scriptleturl v.20200525
+Error in scriptleturl: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/scriptleturl.pl line 47.
+
+scriptleturl complete.
+Launching ddpe v.20221128
+Error in ddpe: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/ddpe.pl line 45.
+
+ddpe complete.
+Launching wbem v.20200511
+Error in wbem: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/wbem.pl line 46.
+
+wbem complete.
+Launching landesk (TLN) v.20130214
+Error in landesk_tln: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/landesk_tln.pl line 42.
+
+landesk_tln complete.
+Launching gpohist v.
+Error in gpohist: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/gpohist.pl line 52.
+
+gpohist complete.
+Launching landesk v.20200517
+Error in landesk: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/landesk.pl line 48.
+
+landesk complete.
+Launching apppaths v.20200511
+Error in apppaths: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/apppaths.pl line 54.
+
+apppaths complete.
+Error in clsid_tln: Can't call method "get_embedded_filename" on an undefined value at /usr/local/bin/rip.pl line 460.
+
+clsid_tln complete.
+Launching taskcache v.20200427
+Error in taskcache: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/taskcache.pl line 51.
+
+taskcache complete.
+Launching uac v.20200427
+Error in uac: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/uac.pl line 46.
+
+uac complete.
+Launching wow64 v.20200515
+Error in wow64: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/wow64.pl line 47.
+
+wow64 complete.
+Launching winlogon_tln v.20130429
+Error in winlogon_tln: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/winlogon_tln.pl line 43.
+
+winlogon_tln complete.
+Launching watp v.20200427
+Error in watp: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/watp.pl line 46.
+
+watp complete.
+Launching netsh v.20200515
+Error in netsh: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/netsh.pl line 47.
+
+netsh complete.
+Launching appkeys v.20200517
+Error in appkeys: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/appkeys.pl line 46.
+
+appkeys complete.
+Launching audiodev v.20200525
+Error in audiodev: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/audiodev.pl line 50.
+
+audiodev complete.
+Launching lastloggedon v.20200517
+Error in lastloggedon: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/lastloggedon.pl line 45.
+
+lastloggedon complete.
+Launching execpolicy v.20200517
+Error in execpolicy: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/execpolicy.pl line 45.
+
+execpolicy complete.
+Launching btconfig v.20200526
+Error in btconfig: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/btconfig.pl line 40.
+
+btconfig complete.
+Launching drivers32 v.20200525
+Error in drivers32: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/drivers32.pl line 48.
+
+drivers32 complete.
+Launching runvirtual v.20200427
+Error in runvirtual: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/runvirtual.pl line 43.
+
+runvirtual complete.
+Launching wab v.20200427
+Error in wab: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/wab.pl line 45.
+
+wab complete.
+Launching gpohist_tln v.
+Error in gpohist_tln: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/gpohist_tln.pl line 51.
+
+gpohist_tln complete.
+Launching msis v.20200517
+Error in msis: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/msis.pl line 46.
+
+msis complete.
+Launching secctr v.20200517
+Error in secctr: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/secctr.pl line 43.
+
+secctr complete.
+Launching appinitdlls v.20200427
+Error in appinitdlls: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/appinitdlls.pl line 54.
+
+appinitdlls complete.
+Error in tasks_tln: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/tasks_tln.pl line 45.
+
+tasks_tln complete.
+Launching winver v.20200525
+Error in winver: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/winver.pl line 53.
+
+winver complete.
+Launching pslogging v.20200515
+Error in pslogging: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/pslogging.pl line 45.
+
+pslogging complete.
+Launching disablemru v.20190924
+Error in disablemru: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/disablemru.pl line 42.
+
+disablemru complete.
+Launching installer v.20200517
+Error in installer: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/installer.pl line 41.
+
+installer complete.
+Launching thispcpolicy v.20200511
+Error in thispcpolicy: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/thispcpolicy.pl line 58.
+
+thispcpolicy complete.
+Error in tracing_tln: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/tracing_tln.pl line 43.
+
+tracing_tln complete.
+Launching apppaths_tln v.20130429
+Error in apppaths_tln: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/apppaths_tln.pl line 48.
+
+apppaths_tln complete.
+Launching profilelist v.20200518
+Error in profilelist: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/profilelist.pl line 46.
+
+profilelist complete.
+Launching ssid v.20200515
+Error in ssid: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/ssid.pl line 159.
+
+ssid complete.
+Launching defender v.20200427
+Error in defender: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/defender.pl line 51.
+
+defender complete.
+Launching allowedenum v.20200511
+Error in allowedenum: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/allowedenum.pl line 54.
+
+allowedenum complete.
+Launching sfc v.20200517
+Error in sfc: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/sfc.pl line 43.
+
+sfc complete.
+Launching killsuit v.20200427
+Error in killsuit: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/killsuit.pl line 44.
+
+killsuit complete.
+Launching at v.20200525
+Error in at: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/at.pl line 42.
+
+at complete.
+Launching ryuk_gpo v.20200427
+Error in ryuk_gpo: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/ryuk_gpo.pl line 46.
+
+ryuk_gpo complete.
+Launching ica_sessions v.20200528
+Error in ica_sessions: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/ica_sessions.pl line 44.
+
+ica_sessions complete.
+Error in wab_tln: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/wab_tln.pl line 44.
+
+wab_tln complete.
+Launching macaddr v.20200515
+Error in macaddr: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/macaddr.pl line 45.
+
+macaddr complete.
+Launching licenses v.20200526
+Error in licenses: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/licenses.pl line 44.
+
+licenses complete.
+Launching injectdll64 v.20200427
+Error in injectdll64: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/injectdll64.pl line 49.
+
+injectdll64 complete.
+Launching uacbypass v.20200511
+Error in uacbypass: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/uacbypass.pl line 48.
+
+uacbypass complete.
+Launching networkcards v.20200518
+Error in networkcards: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/networkcards.pl line 39.
+
+networkcards complete.
+Launching cmd_shell v.20200515
+Error in cmd_shell: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/cmd_shell.pl line 52.
+
+cmd_shell complete.
+Error in volinfocache: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/volinfocache.pl line 50.
+
+volinfocache complete.
+Launching outlook_homepage v.20201002
+Error in outlook_homepage: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/outlook_homepage.pl line 49.
+
+outlook_homepage complete.
+Launching exefile v.20211214
+Error in exefile: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/exefile.pl line 45.
+
+exefile complete.
+Launching schedagent v.20200518
+Error in schedagent: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/schedagent.pl line 40.
+
+schedagent complete.
+Error in direct_tln: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/direct_tln.pl line 45.
+
+direct_tln complete.
+Launching wsh_settings v.20200517
+Error in wsh_settings: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/wsh_settings.pl line 46.
+
+wsh_settings complete.
+Error in taskcache_tln: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/taskcache_tln.pl line 48.
+
+taskcache_tln complete.
+Error in appkeys_tln: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/appkeys_tln.pl line 44.
+
+appkeys_tln complete.
+Error in runvirtual_tln: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/runvirtual_tln.pl line 42.
+
+runvirtual_tln complete.
+Launching portdev v.20090118
+Error in portdev: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/portdev.pl line 42.
+
+portdev complete.
+Launching networklist v.20200518
+Error in networklist: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/networklist.pl line 55.
+
+networklist complete.
+Launching imagefile v.20200515
+Error in imagefile: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/imagefile.pl line 52.
+
+imagefile complete.

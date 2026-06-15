@@ -1,0 +1,31 @@
+MFT Entry Header Values:
+Entry: 3664        Sequence: 3664
+$LogFile Sequence Number: 37894054
+Allocated File
+Links: 1
+
+$STANDARD_INFORMATION Attribute Values:
+Flags: Hidden, System
+Owner ID: 0
+Security ID: 0  ()
+Version 6370040 of 468224
+Created:	2004-08-19 16:47:33.460000000 (UTC)
+File Modified:	2004-08-19 22:20:04.400894400 (UTC)
+MFT Modified:	2004-08-19 22:40:19.648334400 (UTC)
+Accessed:	2004-08-26 15:51:47.383883200 (UTC)
+
+$FILE_NAME Attribute Values:
+Flags: Read Only, Hidden, System, Archive
+Name: boot.ini
+Parent MFT Entry: 5 	Sequence: 5
+Allocated Size: 200   	Actual Size: 193
+Created:	2004-08-19 16:47:33.460000000 (UTC)
+File Modified:	2004-08-19 16:56:22.000000000 (UTC)
+MFT Modified:	2004-08-19 16:56:22.000000000 (UTC)
+Accessed:	2004-08-19 00:00:00.000000000 (UTC)
+
+Attributes: 
+Type: $STANDARD_INFORMATION (16-0)   Name: N/A   Resident   size: 48
+Type: $FILE_NAME (48-1)   Name: N/A   Resident   size: 82
+Type: $SECURITY_DESCRIPTOR (80-2)   Name: N/A   Resident   size: 128
+Type: $DATA (128-4)   Name: N/A   Resident   size: 194

@@ -1,0 +1,11 @@
+
+Help for bing-bar-parser.pl v2012-11-10
+
+Perl script to parse selected fields from a given Bing Bar searchhs.dat file
+
+Usage: bing-bar-parser.pl [-h|help] [-file filename]
+-h|help ... Help (print this information). Does not run anything else.
+-f file ... Bing Bar searchhs.dat file to be parsed.
+-d ........ Applies URI decoding to search terms (eg replaces %20 with space).
+
+Example: bing-bar-parser.pl -f /cases/searchhs.dat -d

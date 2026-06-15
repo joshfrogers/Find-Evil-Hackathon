@@ -1,0 +1,36 @@
+MFT Entry Header Values:
+Entry: 3        Sequence: 3
+$LogFile Sequence Number: 26484207
+Allocated File
+Links: 1
+
+$STANDARD_INFORMATION Attribute Values:
+Flags: Hidden, System
+Owner ID: 0
+Security ID: 0  ()
+Created:	2004-08-19 16:57:43.694987200 (UTC)
+File Modified:	2004-08-19 16:57:43.694987200 (UTC)
+MFT Modified:	2004-08-19 16:57:43.694987200 (UTC)
+Accessed:	2004-08-19 16:57:43.694987200 (UTC)
+
+$FILE_NAME Attribute Values:
+Flags: Hidden, System
+Name: $Volume
+Parent MFT Entry: 5 	Sequence: 5
+Allocated Size: 0   	Actual Size: 0
+Created:	2004-08-19 16:57:43.694987200 (UTC)
+File Modified:	2004-08-19 16:57:43.694987200 (UTC)
+MFT Modified:	2004-08-19 16:57:43.694987200 (UTC)
+Accessed:	2004-08-19 16:57:43.694987200 (UTC)
+
+$OBJECT_ID Attribute Values:
+Object Id: 764dbc66-cebf-40e1-a089-668bf908bd89
+
+Attributes: 
+Type: $STANDARD_INFORMATION (16-0)   Name: N/A   Resident   size: 48
+Type: $FILE_NAME (48-1)   Name: N/A   Resident   size: 80
+Type: $OBJECT_ID (64-6)   Name: N/A   Resident   size: 16
+Type: $SECURITY_DESCRIPTOR (80-2)   Name: N/A   Resident   size: 104
+Type: $VOLUME_NAME (96-4)   Name: N/A   Resident   size: 0
+Type: $VOLUME_INFORMATION (112-5)   Name: N/A   Resident   size: 12
+Type: $DATA (128-3)   Name: N/A   Resident   size: 0

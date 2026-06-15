@@ -1,0 +1,790 @@
+d/d 10091-144-1:	ARCHIVE
+d/d 10209-144-5:	ARCHIVE/Arj
+r/r 10210-128-3:	ARCHIVE/Arj/AGENTS.TXT
+r/r 10211-128-3:	ARCHIVE/Arj/ARJ.EXE
+r/r 10212-128-3:	ARCHIVE/Arj/ARJ.TXT
+r/r 10213-128-1:	ARCHIVE/Arj/ARJBACK.BAT
+r/r 10214-128-1:	ARCHIVE/Arj/ARJINCR.BAT
+r/r 10215-128-1:	ARCHIVE/Arj/ARJREST.BAT
+r/r 10216-128-3:	ARCHIVE/Arj/ARJSORT.BAT
+r/r 10217-128-3:	ARCHIVE/Arj/ARJSORT.COM
+r/r 10218-128-3:	ARCHIVE/Arj/ARJSORT.TXT
+r/r 10219-128-3:	ARCHIVE/Arj/ARJTEST.EXE
+r/r 10220-128-3:	ARCHIVE/Arj/ARJ_BBS.TXT
+r/r 10221-128-3:	ARCHIVE/Arj/CREDIT.TXT
+r/r 10222-128-3:	ARCHIVE/Arj/DEARJ.EXE
+r/r 10223-128-3:	ARCHIVE/Arj/ERRORS.TXT
+r/r 10224-128-1:	ARCHIVE/Arj/FILE_ID.DIZ
+r/r 10225-128-3:	ARCHIVE/Arj/INTRO.TXT
+r/r 10226-128-3:	ARCHIVE/Arj/LICENSE.TXT
+r/r 10227-128-3:	ARCHIVE/Arj/ORDERFRM.TXT
+r/r 10228-128-3:	ARCHIVE/Arj/PUBKEY.TXT
+r/r 10229-128-3:	ARCHIVE/Arj/README.TXT
+r/r 10230-128-1:	ARCHIVE/Arj/REARJ.CFG
+r/r 10231-128-3:	ARCHIVE/Arj/REARJ.EXE
+r/r 10232-128-3:	ARCHIVE/Arj/REARJ.TXT
+r/r 10233-128-1:	ARCHIVE/Arj/REARJALL.BAT
+r/r 10234-128-3:	ARCHIVE/Arj/REGISTER.EXE
+r/r 10235-128-3:	ARCHIVE/Arj/REGISTER.TXT
+r/r 10236-128-3:	ARCHIVE/Arj/SFX.TXT
+r/r 10237-128-3:	ARCHIVE/Arj/SYSOP.TXT
+r/r 10238-128-3:	ARCHIVE/Arj/TECHNOTE.TXT
+r/r 10239-128-3:	ARCHIVE/Arj/TESTARJ.BAT
+r/r 10240-128-3:	ARCHIVE/Arj/UPD260.TXT
+r/r 10241-128-3:	ARCHIVE/Arj/UPDATE.TXT
+r/r 10242-128-3:	ARCHIVE/Arj/WHATSNEW.TXT
+r/r 10243-128-3:	ARCHIVE/Arj/WHY_ARJ.TXT
+r/r 10244-128-3:	ARCHIVE/Arj/YEAR2000.TXT
+r/r 10144-128-3:	ARCHIVE/arj275a.exe
+r/r 10145-128-3:	ARCHIVE/pkz204g.exe
+d/d 10146-144-5:	ARCHIVE/Pkzip
+r/r 10147-128-3:	ARCHIVE/Pkzip/ADDENDUM.DOC
+r/r 10149-128-3:	ARCHIVE/Pkzip/AUTHVERI.FRM
+r/r 10150-128-3:	ARCHIVE/Pkzip/HINTS.TXT
+r/r 10196-128-3:	ARCHIVE/Pkzip/LICENSE.DOC
+r/r 10197-128-3:	ARCHIVE/Pkzip/MANUAL.DOC
+r/r 10198-128-1:	ARCHIVE/Pkzip/OMBUDSMN.ASP
+r/r 10199-128-3:	ARCHIVE/Pkzip/ORDER.DOC
+r/r 10200-128-3:	ARCHIVE/Pkzip/PKUNZIP.EXE
+r/r 10201-128-3:	ARCHIVE/Pkzip/PKUNZJR.COM
+r/r 10202-128-3:	ARCHIVE/Pkzip/PKZIP.EXE
+r/r 10203-128-3:	ARCHIVE/Pkzip/PKZIPFIX.EXE
+r/r 10204-128-3:	ARCHIVE/Pkzip/README.DOC
+r/r 10205-128-1:	ARCHIVE/Pkzip/SHAREWAR.DOC
+r/r 10206-128-3:	ARCHIVE/Pkzip/V204G.NEW
+r/r 10207-128-3:	ARCHIVE/Pkzip/WHATSNEW.204
+r/r 10208-128-3:	ARCHIVE/Pkzip/ZIP2EXE.EXE
+d/d 10245-144-5:	COMMANDS
+r/r 10263-128-3:	COMMANDS/ncreadme.txt
+r/r 10246-128-3:	COMMANDS/CMD.EXE
+r/r 10247-128-3:	COMMANDS/crack.exe
+r/r 10248-128-3:	COMMANDS/cygwin1.dll
+r/r 10249-128-4:	COMMANDS/cygwinb19.dll
+r/r 10250-128-3:	COMMANDS/ELDUMP.EXE
+r/r 10251-128-3:	COMMANDS/ELSAVCLR.EXE
+r/r 10252-128-3:	COMMANDS/ELSAVE.EXE
+r/r 10253-128-3:	COMMANDS/enum.exe
+r/r 10254-128-3:	COMMANDS/epdump.exe
+r/r 10255-128-1:	COMMANDS/epdump.txt
+r/r 10256-128-4:	COMMANDS/getpolicy.exe
+r/r 10257-128-1:	COMMANDS/GrindUI.exe
+r/r 10258-128-3:	COMMANDS/gsd.exe
+r/r 10259-128-3:	COMMANDS/NAT.EXE
+r/r 10260-128-3:	COMMANDS/nbtdump.exe
+r/r 10261-128-3:	COMMANDS/nbtscan.exe
+r/r 10262-128-3:	COMMANDS/nc.exe
+r/- * 0:	COMMANDS/ncreadme.txt
+r/r 10264-128-3:	COMMANDS/NETVIEWX.EXE
+r/r 10265-128-3:	COMMANDS/nmapNT.exe
+r/r 10266-128-1:	COMMANDS/NTpasslist.txt
+r/r 10267-128-1:	COMMANDS/NTuserlist.txt
+r/r 10268-128-1:	COMMANDS/PASSLIST.TXT
+r/r 10269-128-3:	COMMANDS/pwdump.exe
+r/r 10270-128-3:	COMMANDS/pwdump2.exe
+r/r 10271-128-3:	COMMANDS/README
+r/r 10272-128-3:	COMMANDS/readme.txt
+r/r 10273-128-3:	COMMANDS/SAMDUMP.EXE
+r/r 10274-128-3:	COMMANDS/setowner.exe
+r/r 10275-128-3:	COMMANDS/sid2user.exe
+r/r 10276-128-3:	COMMANDS/smbgrind.exe
+r/r 10277-128-3:	COMMANDS/snitch.exe
+r/r 10278-128-3:	COMMANDS/SRVBOOT.BAT
+r/r 10279-128-4:	COMMANDS/STREAMFIND.EXE
+r/r 10280-128-3:	COMMANDS/user2sid.exe
+r/r 10281-128-1:	COMMANDS/USERLIST.TXT
+r/r 10282-128-3:	COMMANDS/USERSES.BAT
+r/r 10283-128-3:	COMMANDS/webscan.exe
+r/r 10284-128-3:	COMMANDS/winfo.exe
+r/r 10285-128-3:	COMMANDS/WSSES.BAT
+r/r 331-128-3:	desktop.ini
+d/d 10286-144-6:	DICTIONARIES
+r/r 10287-128-4:	DICTIONARIES/250MB_WORDLIST.ZIP
+r/r 10288-128-4:	DICTIONARIES/biglist_990218.zip
+r/r 10290-128-4:	DICTIONARIES/pocket-dic.gz
+r/r 10291-128-3:	DICTIONARIES/test.zip
+r/r 10292-128-4:	DICTIONARIES/Unix_dict.gz
+r/r 10293-128-4:	DICTIONARIES/words-english.gz
+d/d 10294-144-1:	ENUMERATION
+d/d 10304-144-5:	ENUMERATION/NT
+d/d 10487-144-5:	ENUMERATION/NT/Cerberus
+r/r 10488-128-3:	ENUMERATION/NT/Cerberus/cis.exe
+r/r 10489-128-3:	ENUMERATION/NT/Cerberus/dnsscan.dll
+r/r 10490-128-4:	ENUMERATION/NT/Cerberus/fingerscan.dll
+r/r 10491-128-3:	ENUMERATION/NT/Cerberus/ftpscan.dll
+r/r 10492-128-3:	ENUMERATION/NT/Cerberus/nbtscan.dll
+r/r 10493-128-4:	ENUMERATION/NT/Cerberus/ntregscan.dll
+r/r 10494-128-4:	ENUMERATION/NT/Cerberus/ntsvcscan.dll
+r/r 10495-128-3:	ENUMERATION/NT/Cerberus/pop3scan.dll
+d/d 10501-144-1:	ENUMERATION/NT/Cerberus/Reports
+r/r 10502-128-3:	ENUMERATION/NT/Cerberus/Reports/logo.jpg
+r/r 10496-128-3:	ENUMERATION/NT/Cerberus/rpcscan.dll
+r/r 10497-128-3:	ENUMERATION/NT/Cerberus/smtpscan.dll
+r/r 10498-128-4:	ENUMERATION/NT/Cerberus/sqlntscan.dll
+r/r 10499-128-3:	ENUMERATION/NT/Cerberus/webscan.dll
+r/r 10500-128-4:	ENUMERATION/NT/Cerberus/wwwbrwchk.dll
+d/d 10450-144-6:	ENUMERATION/NT/Cerberus Internet Scanner
+r/r 10451-128-4:	ENUMERATION/NT/Cerberus Internet Scanner/CIS-5.0.02.zip
+d/d 10454-144-5:	ENUMERATION/NT/Cerberus Internet Scanner/files
+r/r 10455-128-3:	ENUMERATION/NT/Cerberus Internet Scanner/files/cis.exe
+r/r 10456-128-3:	ENUMERATION/NT/Cerberus Internet Scanner/files/dnsscan.dll
+r/r 10457-128-4:	ENUMERATION/NT/Cerberus Internet Scanner/files/fingerscan.dll
+r/r 10458-128-3:	ENUMERATION/NT/Cerberus Internet Scanner/files/ftpscan.dll
+r/r 10459-128-3:	ENUMERATION/NT/Cerberus Internet Scanner/files/nbtscan.dll
+r/r 10460-128-4:	ENUMERATION/NT/Cerberus Internet Scanner/files/ntregscan.dll
+r/r 10461-128-4:	ENUMERATION/NT/Cerberus Internet Scanner/files/ntsvcscan.dll
+r/r 10462-128-3:	ENUMERATION/NT/Cerberus Internet Scanner/files/pop3scan.dll
+d/d 10468-144-5:	ENUMERATION/NT/Cerberus Internet Scanner/files/Reports
+r/r 10469-128-1:	ENUMERATION/NT/Cerberus Internet Scanner/files/Reports/172.16.0.2.html
+r/r 10470-128-1:	ENUMERATION/NT/Cerberus Internet Scanner/files/Reports/browser172.16.0.2.html
+r/r 10471-128-1:	ENUMERATION/NT/Cerberus Internet Scanner/files/Reports/dns172.16.0.2.html
+r/r 10472-128-1:	ENUMERATION/NT/Cerberus Internet Scanner/files/Reports/finger172.16.0.2.html
+r/r 10473-128-1:	ENUMERATION/NT/Cerberus Internet Scanner/files/Reports/ftp172.16.0.2.html
+r/r 10474-128-3:	ENUMERATION/NT/Cerberus Internet Scanner/files/Reports/logo.jpg
+r/r 10475-128-1:	ENUMERATION/NT/Cerberus Internet Scanner/files/Reports/main172.16.0.2.html
+r/r 10476-128-1:	ENUMERATION/NT/Cerberus Internet Scanner/files/Reports/nav172.16.0.2.html
+r/r 10477-128-1:	ENUMERATION/NT/Cerberus Internet Scanner/files/Reports/nbt172.16.0.2.html
+r/r 10478-128-1:	ENUMERATION/NT/Cerberus Internet Scanner/files/Reports/ntreg172.16.0.2.html
+r/r 10479-128-1:	ENUMERATION/NT/Cerberus Internet Scanner/files/Reports/ntsvc172.16.0.2.html
+r/r 10480-128-1:	ENUMERATION/NT/Cerberus Internet Scanner/files/Reports/pop3172.16.0.2.html
+r/r 10481-128-1:	ENUMERATION/NT/Cerberus Internet Scanner/files/Reports/rpc172.16.0.2.html
+r/r 10482-128-1:	ENUMERATION/NT/Cerberus Internet Scanner/files/Reports/smtp172.16.0.2.html
+r/r 10483-128-1:	ENUMERATION/NT/Cerberus Internet Scanner/files/Reports/sqlnt172.16.0.2.html
+r/r 10484-128-1:	ENUMERATION/NT/Cerberus Internet Scanner/files/Reports/web172.16.0.2.html
+r/r 10463-128-3:	ENUMERATION/NT/Cerberus Internet Scanner/files/rpcscan.dll
+r/r 10464-128-3:	ENUMERATION/NT/Cerberus Internet Scanner/files/smtpscan.dll
+r/r 10465-128-4:	ENUMERATION/NT/Cerberus Internet Scanner/files/sqlntscan.dll
+r/r 10466-128-3:	ENUMERATION/NT/Cerberus Internet Scanner/files/webscan.dll
+r/r 10467-128-4:	ENUMERATION/NT/Cerberus Internet Scanner/files/wwwbrwchk.dll
+r/r 10452-128-4:	ENUMERATION/NT/Cerberus Internet Scanner/ntinfoscan.htm
+r/r 10453-128-3:	ENUMERATION/NT/Cerberus Internet Scanner/vulndb.txt
+d/d 10485-144-1:	ENUMERATION/NT/Cerberus Webscan
+r/r 10486-128-3:	ENUMERATION/NT/Cerberus Webscan/webscan.exe
+r/r 10305-128-4:	ENUMERATION/NT/CIS-5.0.02.zip
+d/d 10432-144-6:	ENUMERATION/NT/DumpTools
+r/r 10433-128-3:	ENUMERATION/NT/DumpTools/dumpacl.zip
+d/d 443-144-1:	ENUMERATION/NT/DumpTools/Dumpevt
+r/r 451-128-3:	ENUMERATION/NT/DumpTools/Dumpevt/DUMPEVT.exe
+r/r 10445-128-3:	ENUMERATION/NT/DumpTools/Dumpevt/Dumpevt.GID
+r/r 10446-128-3:	ENUMERATION/NT/DumpTools/Dumpevt/Dumpevt.hlp
+r/r 10447-128-1:	ENUMERATION/NT/DumpTools/Dumpevt/Dumpevt.ini
+r/r 10448-128-3:	ENUMERATION/NT/DumpTools/Dumpevt/Dumpevt.mdb
+r/r 10449-128-3:	ENUMERATION/NT/DumpTools/Dumpevt/Readme.txt
+r/r 10434-128-3:	ENUMERATION/NT/DumpTools/dumpevt.zip
+d/d 10439-144-1:	ENUMERATION/NT/DumpTools/Dumpreg
+r/r 10440-128-3:	ENUMERATION/NT/DumpTools/Dumpreg/dumpreg.exe
+r/r 10441-128-3:	ENUMERATION/NT/DumpTools/Dumpreg/Dumpreg.GID
+r/r 10443-128-3:	ENUMERATION/NT/DumpTools/Dumpreg/Dumpreg.hlp
+r/r 10444-128-3:	ENUMERATION/NT/DumpTools/Dumpreg/Readme.txt
+r/r 10435-128-3:	ENUMERATION/NT/DumpTools/dumpreg.zip
+d/d 10436-144-1:	ENUMERATION/NT/DumpTools/DumpSec
+r/r 10437-128-4:	ENUMERATION/NT/DumpTools/DumpSec/SystemTools.EXE
+d/d 10409-144-5:	ENUMERATION/NT/enum
+r/r 10410-128-4:	ENUMERATION/NT/enum/enum readme file.htm
+d/d 10419-144-6:	ENUMERATION/NT/enum/enum readme file_files
+r/r 10420-128-4:	ENUMERATION/NT/enum/enum readme file_files/background.jpeg
+r/r 10421-128-4:	ENUMERATION/NT/enum/enum readme file_files/bvlogo.jpeg
+r/r 10422-128-1:	ENUMERATION/NT/enum/enum readme file_files/clear.gif
+r/r 10423-128-1:	ENUMERATION/NT/enum/enum readme file_files/homeicon.gif
+r/r 10424-128-3:	ENUMERATION/NT/enum/enum readme file_files/navmenu.js
+r/r 10425-128-1:	ENUMERATION/NT/enum/enum readme file_files/papersicon.gif
+r/r 10426-128-1:	ENUMERATION/NT/enum/enum readme file_files/presenticon.gif
+r/r 10427-128-3:	ENUMERATION/NT/enum/enum readme file_files/quote.gif
+r/r 10428-128-4:	ENUMERATION/NT/enum/enum readme file_files/razorlogo.gif
+r/r 10429-128-4:	ENUMERATION/NT/enum/enum readme file_files/toolBarRamp.jpeg
+r/r 10430-128-3:	ENUMERATION/NT/enum/enum readme file_files/tools.gif
+r/r 10431-128-1:	ENUMERATION/NT/enum/enum readme file_files/toolsicon.gif
+r/r 10411-128-4:	ENUMERATION/NT/enum/enum.tar.gz
+d/d 10412-144-5:	ENUMERATION/NT/enum/files
+r/r 10413-128-1:	ENUMERATION/NT/enum/files/description
+r/r 10414-128-3:	ENUMERATION/NT/enum/files/enum.cpp
+r/r 10415-128-3:	ENUMERATION/NT/enum/files/enum.exe
+r/r 10416-128-3:	ENUMERATION/NT/enum/files/getopt.cpp
+r/r 10417-128-1:	ENUMERATION/NT/enum/files/getopt.h
+r/r 10418-128-3:	ENUMERATION/NT/enum/files/README
+r/r 10306-128-3:	ENUMERATION/NT/Epdump.zip
+d/d 10405-144-1:	ENUMERATION/NT/ferret suite
+r/r 10406-128-4:	ENUMERATION/NT/ferret suite/emailferret.exe
+r/r 10407-128-4:	ENUMERATION/NT/ferret suite/fileferret.exe
+r/r 10408-128-3:	ENUMERATION/NT/ferret suite/wferet.exe
+d/d 10403-144-1:	ENUMERATION/NT/GetAcct
+r/r 10404-128-4:	ENUMERATION/NT/GetAcct/getacct002.zip
+r/r 10307-128-4:	ENUMERATION/NT/getpolicy.zip
+d/d 10382-144-5:	ENUMERATION/NT/Legion
+r/r 10383-128-3:	ENUMERATION/NT/Legion/APIGID32.DL_
+r/r 10384-128-3:	ENUMERATION/NT/Legion/AsycFilt.dl_
+r/r 10385-128-3:	ENUMERATION/NT/Legion/Chrono.dl_
+r/r 10386-128-3:	ENUMERATION/NT/Legion/ComCat.dl_
+r/r 10387-128-3:	ENUMERATION/NT/Legion/COMCTL32.OC_
+r/r 10388-128-3:	ENUMERATION/NT/Legion/COMDLG32.OC_
+r/r 10389-128-3:	ENUMERATION/NT/Legion/Ctl3d32.dl_
+r/r 10390-128-3:	ENUMERATION/NT/Legion/Legion.ex_
+r/r 10391-128-3:	ENUMERATION/NT/Legion/MSVBVM50.dl_
+r/r 10392-128-3:	ENUMERATION/NT/Legion/NetTools.ex_
+r/r 10393-128-3:	ENUMERATION/NT/Legion/OleAut32.dl_
+r/r 10394-128-3:	ENUMERATION/NT/Legion/OlePro32.dl_
+r/r 10395-128-3:	ENUMERATION/NT/Legion/README.tx_
+r/r 10396-128-3:	ENUMERATION/NT/Legion/scandll2.dl_
+r/r 10397-128-3:	ENUMERATION/NT/Legion/SETUP.EXE
+r/r 10398-128-3:	ENUMERATION/NT/Legion/SETUP.LST
+r/r 10399-128-3:	ENUMERATION/NT/Legion/setup1.ex_
+r/r 10400-128-3:	ENUMERATION/NT/Legion/ST5UNST.EX_
+r/r 10401-128-3:	ENUMERATION/NT/Legion/StdOle2.tl_
+r/r 10402-128-3:	ENUMERATION/NT/Legion/VB5StKit.dl_
+d/d 10378-144-1:	ENUMERATION/NT/nbtdump
+r/r 10379-128-1:	ENUMERATION/NT/nbtdump/172.16.0.1.html
+r/r 10380-128-1:	ENUMERATION/NT/nbtdump/172.16.0.2.html
+r/r 10381-128-3:	ENUMERATION/NT/nbtdump/nbtdump.exe
+r/r 10308-128-3:	ENUMERATION/NT/Nbtdump.zip
+d/d 10368-144-5:	ENUMERATION/NT/nbtscan
+d/d 10372-144-1:	ENUMERATION/NT/nbtscan/files
+r/r 10373-128-4:	ENUMERATION/NT/nbtscan/files/ChangeLog
+r/r 10374-128-3:	ENUMERATION/NT/nbtscan/files/COPYING
+r/r 10375-128-3:	ENUMERATION/NT/nbtscan/files/cygwin1.dll
+r/r 10376-128-3:	ENUMERATION/NT/nbtscan/files/nbtscan.exe
+r/r 10377-128-3:	ENUMERATION/NT/nbtscan/files/README
+r/r 10369-128-4:	ENUMERATION/NT/nbtscan/nbtscan.html
+r/r 10370-128-4:	ENUMERATION/NT/nbtscan/nbtscan1_0_1.zip
+r/r 10371-128-4:	ENUMERATION/NT/nbtscan/nbtscan1_0_2.zip
+r/r 10309-128-3:	ENUMERATION/NT/ntreskit.zip
+d/d 10361-144-6:	ENUMERATION/NT/Nt_admin_tools
+r/r 10362-128-3:	ENUMERATION/NT/Nt_admin_tools/DHCPADMN.EXE
+r/r 10363-128-3:	ENUMERATION/NT/Nt_admin_tools/NTUSER.EXE
+r/r 10364-128-3:	ENUMERATION/NT/Nt_admin_tools/rasadmin.exe
+r/r 10365-128-3:	ENUMERATION/NT/Nt_admin_tools/srvmgr.exe
+r/r 10366-128-3:	ENUMERATION/NT/Nt_admin_tools/usrmgr.exe
+r/r 10367-128-3:	ENUMERATION/NT/Nt_admin_tools/WINSADMN.EXE
+d/d 10339-144-5:	ENUMERATION/NT/ogre
+r/r 10340-128-3:	ENUMERATION/NT/ogre/AsycFilt.dl_
+r/r 10341-128-1:	ENUMERATION/NT/ogre/install.bat
+r/r 10342-128-3:	ENUMERATION/NT/ogre/INSTALL.PIF
+r/r 10343-128-1:	ENUMERATION/NT/ogre/install2.bat
+r/r 10344-128-3:	ENUMERATION/NT/ogre/MSVBVM50.dl_
+r/r 10345-128-3:	ENUMERATION/NT/ogre/ogre.ex_
+r/r 10346-128-3:	ENUMERATION/NT/ogre/OleAut32.dl_
+r/r 10347-128-3:	ENUMERATION/NT/ogre/OlePro32.dl_
+r/r 10348-128-1:	ENUMERATION/NT/ogre/README.FIRST
+r/r 10349-128-3:	ENUMERATION/NT/ogre/rhino9x.exe
+r/r 10350-128-3:	ENUMERATION/NT/ogre/SETUP.LST
+r/r 10351-128-3:	ENUMERATION/NT/ogre/setup1.ex_
+r/r 10352-128-3:	ENUMERATION/NT/ogre/ST5UNST.EX_
+r/r 10353-128-3:	ENUMERATION/NT/ogre/StdOle2.tl_
+r/r 10354-128-1:	ENUMERATION/NT/ogre/tracea.bat
+r/r 10355-128-3:	ENUMERATION/NT/ogre/TRACEA.PIF
+r/r 10356-128-1:	ENUMERATION/NT/ogre/tracem.bat
+r/r 10357-128-3:	ENUMERATION/NT/ogre/TRACEM.PIF
+r/r 10358-128-1:	ENUMERATION/NT/ogre/tracex.bat
+r/r 10359-128-3:	ENUMERATION/NT/ogre/TRACEX.PIF
+r/r 10360-128-3:	ENUMERATION/NT/ogre/VB5StKit.dl_
+d/d 10328-144-5:	ENUMERATION/NT/SamSpade
+r/r 10329-128-3:	ENUMERATION/NT/SamSpade/hhupd.exe
+r/r 10330-128-3:	ENUMERATION/NT/SamSpade/readme.txt
+r/r 10331-128-3:	ENUMERATION/NT/SamSpade/spade.chm
+r/r 10332-128-3:	ENUMERATION/NT/SamSpade/spade.cnt
+r/r 10333-128-3:	ENUMERATION/NT/SamSpade/spade.exe
+r/r 10334-128-3:	ENUMERATION/NT/SamSpade/spade.hlp
+r/r 10335-128-3:	ENUMERATION/NT/SamSpade/startup.sl
+r/r 10336-128-3:	ENUMERATION/NT/SamSpade/unins000.dat
+r/r 10337-128-3:	ENUMERATION/NT/SamSpade/unins000.exe
+r/r 10338-128-3:	ENUMERATION/NT/SamSpade/unins000.msg
+d/d 10326-144-1:	ENUMERATION/NT/Sid2user User2sid
+r/r 10327-128-3:	ENUMERATION/NT/Sid2user User2sid/sid.zip
+d/d 10324-144-1:	ENUMERATION/NT/Userdump
+r/r 10325-128-3:	ENUMERATION/NT/Userdump/userdump.zip
+d/d 10318-144-6:	ENUMERATION/NT/winfingerprint
+r/r 10319-128-4:	ENUMERATION/NT/winfingerprint/About Winfingerprint 2.htm
+d/d 10321-144-1:	ENUMERATION/NT/winfingerprint/About Winfingerprint 2_files
+r/r 10322-128-4:	ENUMERATION/NT/winfingerprint/About Winfingerprint 2_files/wfp.jpeg
+r/r 10323-128-4:	ENUMERATION/NT/winfingerprint/About Winfingerprint 2_files/winfingerprint.jpeg
+r/r 10320-128-4:	ENUMERATION/NT/winfingerprint/winfingerprint-229.zip
+d/d 10310-144-5:	ENUMERATION/NT/winfo
+r/r 10311-128-4:	ENUMERATION/NT/winfo/The winfo FAQ.htm
+d/d 10316-144-1:	ENUMERATION/NT/winfo/The winfo FAQ_files
+r/r 10317-128-3:	ENUMERATION/NT/winfo/The winfo FAQ_files/logo.gif
+r/r 10312-128-3:	ENUMERATION/NT/winfo/winfo.exe
+r/r 10313-128-3:	ENUMERATION/NT/winfo/winfo.htm
+d/d 10314-144-1:	ENUMERATION/NT/winfo/winfo_files
+r/r 10315-128-3:	ENUMERATION/NT/winfo/winfo_files/logo.gif
+d/d 10295-144-5:	ENUMERATION/Unix
+r/r 10296-128-3:	ENUMERATION/Unix/nc110.gz
+d/d 10300-144-5:	ENUMERATION/Unix/Nessus
+r/r 10301-128-4:	ENUMERATION/Unix/Nessus/nessus-1.0.5-1.i386.rpm
+r/r 10302-128-4:	ENUMERATION/Unix/Nessus/nessus-client-1.0.5-1.i386.rpm
+r/r 10303-128-4:	ENUMERATION/Unix/Nessus/nessus-plugins-1.0.5-1.i386.rpm
+r/r 10297-128-4:	ENUMERATION/Unix/nmap-2.54BETA29-1.i386.rpm
+r/r 10298-128-4:	ENUMERATION/Unix/nmap-frontend-0.2.54BETA29-1.i386.rpm
+r/r 10299-128-4:	ENUMERATION/Unix/whisker.tar.gz
+d/d 10503-144-1:	EXPLOITATION
+d/d 10525-144-5:	EXPLOITATION/NT
+d/d 10632-144-5:	EXPLOITATION/NT/Brutus
+r/r 10633-128-3:	EXPLOITATION/NT/Brutus/BrutusA2.exe
+r/r 10634-128-1:	EXPLOITATION/NT/Brutus/example-combo.txt
+r/r 10635-128-3:	EXPLOITATION/NT/Brutus/NetBus.bad
+r/r 10636-128-3:	EXPLOITATION/NT/Brutus/Overview.doc
+r/r 10637-128-3:	EXPLOITATION/NT/Brutus/readme.doc
+r/r 10638-128-1:	EXPLOITATION/NT/Brutus/users.txt
+r/r 10639-128-3:	EXPLOITATION/NT/Brutus/words.txt
+r/r 10526-128-3:	EXPLOITATION/NT/brutus.zip
+d/d 10629-144-1:	EXPLOITATION/NT/bsniff
+d/d 10631-144-1:	EXPLOITATION/NT/bsniff/dump
+r/r 10630-128-3:	EXPLOITATION/NT/bsniff/readme.txt
+r/r 10527-128-3:	EXPLOITATION/NT/elsave.zip
+d/d 10627-144-1:	EXPLOITATION/NT/fpipe
+r/r 10628-128-1:	EXPLOITATION/NT/fpipe/fpipe.url
+d/d 10624-144-1:	EXPLOITATION/NT/Get Admin
+r/r 10625-128-3:	EXPLOITATION/NT/Get Admin/GASYS.DLL
+r/r 10626-128-3:	EXPLOITATION/NT/Get Admin/GetAdmin.exe
+d/d 10622-144-1:	EXPLOITATION/NT/Hk
+r/r 10623-128-4:	EXPLOITATION/NT/Hk/hk-0.1.zip
+d/d 10620-144-1:	EXPLOITATION/NT/John
+r/r 10621-128-3:	EXPLOITATION/NT/John/john-16w.zip
+d/d 10618-144-1:	EXPLOITATION/NT/l0pht301
+r/r 10619-128-4:	EXPLOITATION/NT/l0pht301/lc3setup01.exe
+d/d 10592-144-5:	EXPLOITATION/NT/lsadump2
+r/r 10593-128-4:	EXPLOITATION/NT/lsadump2/DISCLAIMER
+r/r 10594-128-3:	EXPLOITATION/NT/lsadump2/dumplsa.c
+r/r 10595-128-3:	EXPLOITATION/NT/lsadump2/dumplsa.dll
+r/r 10596-128-3:	EXPLOITATION/NT/lsadump2/dumplsa.dsp
+r/r 10597-128-3:	EXPLOITATION/NT/lsadump2/getpid.c
+r/r 10603-128-4:	EXPLOITATION/NT/lsadump2/LSADUMP2 Readme file.htm
+d/d 10605-144-6:	EXPLOITATION/NT/lsadump2/LSADUMP2 Readme file_files
+r/r 10606-128-4:	EXPLOITATION/NT/lsadump2/LSADUMP2 Readme file_files/background.jpeg
+r/r 10607-128-4:	EXPLOITATION/NT/lsadump2/LSADUMP2 Readme file_files/bvlogo.jpeg
+r/r 10608-128-1:	EXPLOITATION/NT/lsadump2/LSADUMP2 Readme file_files/clear.gif
+r/r 10609-128-1:	EXPLOITATION/NT/lsadump2/LSADUMP2 Readme file_files/homeicon.gif
+r/r 10610-128-3:	EXPLOITATION/NT/lsadump2/LSADUMP2 Readme file_files/navmenu.js
+r/r 10611-128-1:	EXPLOITATION/NT/lsadump2/LSADUMP2 Readme file_files/papersicon.gif
+r/r 10612-128-1:	EXPLOITATION/NT/lsadump2/LSADUMP2 Readme file_files/presenticon.gif
+r/r 10613-128-3:	EXPLOITATION/NT/lsadump2/LSADUMP2 Readme file_files/quote.gif
+r/r 10614-128-4:	EXPLOITATION/NT/lsadump2/LSADUMP2 Readme file_files/razorlogo.gif
+r/r 10615-128-4:	EXPLOITATION/NT/lsadump2/LSADUMP2 Readme file_files/toolBarRamp.jpeg
+r/r 10616-128-3:	EXPLOITATION/NT/lsadump2/LSADUMP2 Readme file_files/tools.gif
+r/r 10617-128-1:	EXPLOITATION/NT/lsadump2/LSADUMP2 Readme file_files/toolsicon.gif
+r/r 10598-128-3:	EXPLOITATION/NT/lsadump2/lsadump2.c
+r/r 10599-128-3:	EXPLOITATION/NT/lsadump2/lsadump2.dsp
+r/r 10600-128-3:	EXPLOITATION/NT/lsadump2/lsadump2.exe
+r/r 10601-128-3:	EXPLOITATION/NT/lsadump2/lsadump2.h
+r/r 10602-128-3:	EXPLOITATION/NT/lsadump2/lsadump2.zip
+r/r 10604-128-4:	EXPLOITATION/NT/lsadump2/README.html
+d/d 10590-144-1:	EXPLOITATION/NT/NAT
+r/r 10591-128-3:	EXPLOITATION/NT/NAT/nat.zip
+d/d 10585-144-1:	EXPLOITATION/NT/netbus
+r/r 10586-128-1:	EXPLOITATION/NT/netbus/Hosts.txt
+r/r 10587-128-1:	EXPLOITATION/NT/netbus/Memo.txt
+r/r 10588-128-3:	EXPLOITATION/NT/netbus/NetBus.rtf
+r/r 10589-128-4:	EXPLOITATION/NT/netbus/NetBus170.zip
+d/d 10583-144-1:	EXPLOITATION/NT/Netcat
+r/r 10584-128-4:	EXPLOITATION/NT/Netcat/netcat11nt.zip
+d/d 10575-144-1:	EXPLOITATION/NT/Pwdump
+r/r 10576-128-3:	EXPLOITATION/NT/Pwdump/Pwdump.zip
+r/r 10577-128-3:	EXPLOITATION/NT/Pwdump/pwdump2.zip
+r/r 10578-128-3:	EXPLOITATION/NT/Pwdump/pwdump3.htm
+r/r 10579-128-3:	EXPLOITATION/NT/Pwdump/pwdump3.zip
+d/d 10580-144-1:	EXPLOITATION/NT/Pwdump/pwdump3_files
+r/r 10581-128-3:	EXPLOITATION/NT/Pwdump/pwdump3_files/dwnldbtn.gif
+r/r 10582-128-4:	EXPLOITATION/NT/Pwdump/pwdump3_files/pwdumpbanner.gif
+d/d 10572-144-1:	EXPLOITATION/NT/Scripts
+r/r 10573-128-1:	EXPLOITATION/NT/Scripts/credentials.txt
+r/r 10574-128-1:	EXPLOITATION/NT/Scripts/FOR Script.txt
+d/d 10438-144-1:	EXPLOITATION/NT/sechole
+r/r 10442-128-3:	EXPLOITATION/NT/sechole/ADMINDLL.DLL
+r/r 10568-128-3:	EXPLOITATION/NT/sechole/PSAPI.DLL
+r/r 10569-128-3:	EXPLOITATION/NT/sechole/SECHOLE.EXE
+r/r 10570-128-3:	EXPLOITATION/NT/sechole/sechole3.zip
+r/r 10571-128-3:	EXPLOITATION/NT/sechole/SECHOLED.EXE
+d/d 10551-144-6:	EXPLOITATION/NT/SMBGrind Crack
+r/r 10552-128-3:	EXPLOITATION/NT/SMBGrind Crack/CrackUI.exe
+r/r 10553-128-3:	EXPLOITATION/NT/SMBGrind Crack/GrindUI.exe
+r/r 10554-128-1:	EXPLOITATION/NT/SMBGrind Crack/NTpasslist.txt
+r/r 10555-128-1:	EXPLOITATION/NT/SMBGrind Crack/NTuserlist.txt
+r/r 10556-128-1:	EXPLOITATION/NT/SMBGrind Crack/passlist.txt
+d/d 10564-144-1:	EXPLOITATION/NT/SMBGrind Crack/Password User Lists
+r/r 10565-128-4:	EXPLOITATION/NT/SMBGrind Crack/Password User Lists/NTpasslist.txt
+r/r 10557-128-3:	EXPLOITATION/NT/SMBGrind Crack/readme.txt
+r/r 10558-128-1:	EXPLOITATION/NT/SMBGrind Crack/TempPassword.$$$
+r/r 10559-128-1:	EXPLOITATION/NT/SMBGrind Crack/userlist.txt
+d/d 10560-144-1:	EXPLOITATION/NT/SMBGrind Crack/utils
+r/r 10561-128-3:	EXPLOITATION/NT/SMBGrind Crack/utils/crack.exe
+r/r 10562-128-4:	EXPLOITATION/NT/SMBGrind Crack/utils/cygwinb19.dll
+r/r 10563-128-3:	EXPLOITATION/NT/SMBGrind Crack/utils/smbgrind.exe
+d/d 10533-144-1:	EXPLOITATION/NT/vnc
+d/d 10549-144-1:	EXPLOITATION/NT/vnc/vncviewer
+r/r 10550-128-4:	EXPLOITATION/NT/vnc/vncviewer/vncviewer.exe
+d/d 10534-144-5:	EXPLOITATION/NT/vnc/winvnc
+r/r 10535-128-1:	EXPLOITATION/NT/vnc/winvnc/DATA.TAG
+r/r 10536-128-3:	EXPLOITATION/NT/vnc/winvnc/data1.cab
+r/r 10537-128-3:	EXPLOITATION/NT/vnc/winvnc/language.dat
+r/r 10538-128-1:	EXPLOITATION/NT/vnc/winvnc/layout.bin
+r/r 10539-128-3:	EXPLOITATION/NT/vnc/winvnc/os.dat
+r/r 10540-128-3:	EXPLOITATION/NT/vnc/winvnc/setup.bmp
+r/r 10541-128-3:	EXPLOITATION/NT/vnc/winvnc/SETUP.EXE
+r/r 10542-128-1:	EXPLOITATION/NT/vnc/winvnc/SETUP.INI
+r/r 10543-128-3:	EXPLOITATION/NT/vnc/winvnc/setup.ins
+r/r 10544-128-3:	EXPLOITATION/NT/vnc/winvnc/_INST32I.EX_
+r/r 10545-128-3:	EXPLOITATION/NT/vnc/winvnc/_ISDEL.EXE
+r/r 10546-128-3:	EXPLOITATION/NT/vnc/winvnc/_setup.dll
+r/r 10547-128-3:	EXPLOITATION/NT/vnc/winvnc/_sys1.cab
+r/r 10548-128-3:	EXPLOITATION/NT/vnc/winvnc/_user1.cab
+d/d 10528-144-1:	EXPLOITATION/NT/WinVNC
+d/d 10531-144-1:	EXPLOITATION/NT/WinVNC/Docs
+r/r 10532-128-4:	EXPLOITATION/NT/WinVNC/Docs/vnc-latest_doc.zip
+d/d 10529-144-1:	EXPLOITATION/NT/WinVNC/Windows
+r/r 10530-128-4:	EXPLOITATION/NT/WinVNC/Windows/vnc-3.3.3r7_x86_win32.zip
+d/d 10504-144-1:	EXPLOITATION/Unix
+d/d 10513-144-6:	EXPLOITATION/Unix/dsniff 2.3
+r/r 10515-128-4:	EXPLOITATION/Unix/dsniff 2.3/dsniff Frequently Asked Questions.htm
+d/d 10523-144-1:	EXPLOITATION/Unix/dsniff 2.3/dsniff Frequently Asked Questions_files
+r/r 10524-128-3:	EXPLOITATION/Unix/dsniff 2.3/dsniff Frequently Asked Questions_files/monkey6.gif
+r/r 10514-128-4:	EXPLOITATION/Unix/dsniff 2.3/dsniff-2.3.tar.gz
+d/d 10517-144-6:	EXPLOITATION/Unix/dsniff 2.3/Switched networks lose security advantage due packet tool
+r/r 10518-128-1:	EXPLOITATION/Unix/dsniff 2.3/Switched networks lose security advantage due packet tool/clearpixel.gif
+r/r 10520-128-4:	EXPLOITATION/Unix/dsniff 2.3/Switched networks lose security advantage due packet tool/securitywatch.html
+d/d 10521-144-1:	EXPLOITATION/Unix/dsniff 2.3/Switched networks lose security advantage due packet tool/securitywatchfiles
+r/r 10522-128-3:	EXPLOITATION/Unix/dsniff 2.3/Switched networks lose security advantage due packet tool/securitywatchfiles/522467~1.GIF
+r/r 10516-128-4:	EXPLOITATION/Unix/dsniff 2.3/Switched networks lose security advantage due packet tool.htm
+r/r 10505-128-4:	EXPLOITATION/Unix/john-1.6.tar.gz
+d/d 10506-144-1:	EXPLOITATION/Unix/WinVNC
+d/d 10511-144-1:	EXPLOITATION/Unix/WinVNC/Docs
+r/r 10512-128-4:	EXPLOITATION/Unix/WinVNC/Docs/vnc-latest_doc.zip
+d/d 10509-144-1:	EXPLOITATION/Unix/WinVNC/Linux
+r/r 10510-128-4:	EXPLOITATION/Unix/WinVNC/Linux/vnc-3.3.3r2_x86_linux_2.0.zip
+d/d 10507-144-1:	EXPLOITATION/Unix/WinVNC/Solaris Sparc
+r/r 10508-128-4:	EXPLOITATION/Unix/WinVNC/Solaris Sparc/vnc-3.3.3r2_sun4_sosV_5.5.zip
+d/d 10640-144-1:	FOOTPRINTING
+d/d 10644-144-5:	FOOTPRINTING/NT
+d/d 10670-144-5:	FOOTPRINTING/NT/Nmapnt
+d/d 10866-144-1:	FOOTPRINTING/NT/Nmapnt/DRIVERS
+d/d 10875-144-1:	FOOTPRINTING/NT/Nmapnt/DRIVERS/Packet2K
+r/r 10876-128-3:	FOOTPRINTING/NT/Nmapnt/DRIVERS/Packet2K/Packet.dll
+r/r 10877-128-3:	FOOTPRINTING/NT/Nmapnt/DRIVERS/Packet2K/PACKET.SYS
+r/r 10878-128-4:	FOOTPRINTING/NT/Nmapnt/DRIVERS/Packet2K/Packet_2k.inf
+d/d 10871-144-1:	FOOTPRINTING/NT/Nmapnt/DRIVERS/Packet95
+r/r 10872-128-3:	FOOTPRINTING/NT/Nmapnt/DRIVERS/Packet95/Packet.dll
+r/r 10873-128-3:	FOOTPRINTING/NT/Nmapnt/DRIVERS/Packet95/packet.inf
+r/r 10874-128-3:	FOOTPRINTING/NT/Nmapnt/DRIVERS/Packet95/PACKET.VXD
+d/d 10867-144-1:	FOOTPRINTING/NT/Nmapnt/DRIVERS/PacketNT
+r/r 10868-128-3:	FOOTPRINTING/NT/Nmapnt/DRIVERS/PacketNT/OEMSETUP.INF
+r/r 10869-128-3:	FOOTPRINTING/NT/Nmapnt/DRIVERS/PacketNT/Packet.dll
+r/r 10870-128-3:	FOOTPRINTING/NT/Nmapnt/DRIVERS/PacketNT/PACKET.SYS
+r/r 10671-128-4:	FOOTPRINTING/NT/Nmapnt/nmap-os-fingerprints
+r/r 10672-128-3:	FOOTPRINTING/NT/Nmapnt/nmap-rpc
+r/r 10673-128-4:	FOOTPRINTING/NT/Nmapnt/nmap-services
+d/d 10676-144-6:	FOOTPRINTING/NT/Nmapnt/nmapNT-src
+r/r 10690-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/getopt.h
+r/r 10697-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/nmap.1
+r/r 10713-128-4:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/nmap_spanish.1
+r/r 10677-128-4:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/CHANGELOG
+r/r 10678-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/charpool.c
+r/r 10679-128-1:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/charpool.h
+r/r 10682-128-4:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/config.guess
+r/r 10683-128-4:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/config.h.in
+r/r 10680-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/config.sub
+r/r 10681-128-4:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/configure
+r/r 10684-128-4:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/configure.in
+r/r 10685-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/COPYING
+r/r 10686-128-4:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/copying.html
+d/d 10852-144-5:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/docs
+r/r 10853-128-4:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/docs/copying.html
+r/r 10855-128-4:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/docs/nmap-fingerprinting-article.txt
+r/r 10854-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/docs/nmap.1
+r/r 10856-128-4:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/docs/nmap.deprecated.txt
+r/r 10858-128-4:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/docs/nmap.usage.txt
+r/r 10857-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/docs/nmapfe.1
+r/r 10859-128-4:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/docs/nmap_doc.html
+r/r 10860-128-4:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/docs/nmap_manpage-es.html
+r/r 10861-128-4:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/docs/nmap_manpage-fr.html
+r/r 10862-128-4:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/docs/nmap_manpage.html
+r/r 10863-128-4:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/docs/nmap_spanish.1
+r/r 10864-128-1:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/docs/README
+r/r 10865-128-1:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/docs/xnmap.1
+r/r 10687-128-1:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/error.c
+r/r 10688-128-1:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/error.h
+r/r 10689-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/getopt.c
+r/r 10692-128-4:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/global_structures.h
+r/r 10693-128-4:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/inet_aton.c
+r/r 10694-128-1:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/INSTALL
+r/r 10695-128-4:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/install-sh
+r/r 10696-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/Makefile.in
+r/r 10700-128-4:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/nmap-2.53-1.spec
+r/r 10701-128-4:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/nmap-fingerprinting-article.txt
+r/r 10702-128-4:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/nmap-os-fingerprints
+r/r 10698-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/nmap.c
+r/r 10699-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/nmap.h
+r/r 10691-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/getopt1.c
+d/d 10791-144-6:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/libpcap-possiblymodified
+r/r 10804-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/libpcap-possiblymodified/gencode.c
+r/r 10825-128-4:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/libpcap-possiblymodified/pcap-namedb.h
+r/r 10792-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/libpcap-possiblymodified/aclocal.m4
+d/d 10848-144-1:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/libpcap-possiblymodified/bpf
+d/d 10849-144-1:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/libpcap-possiblymodified/bpf/net
+r/r 10850-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/libpcap-possiblymodified/bpf/net/bpf.h
+r/r 10851-128-4:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/libpcap-possiblymodified/bpf/net/bpf_filter.c
+r/r 10793-128-4:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/libpcap-possiblymodified/bpf_image.c
+r/r 10794-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/libpcap-possiblymodified/CHANGES
+r/r 10798-128-4:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/libpcap-possiblymodified/config.guess
+r/r 10795-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/libpcap-possiblymodified/config.log
+r/r 10800-128-4:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/libpcap-possiblymodified/config.status
+r/r 10796-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/libpcap-possiblymodified/config.sub
+r/r 10797-128-4:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/libpcap-possiblymodified/configure
+r/r 10799-128-4:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/libpcap-possiblymodified/configure.in
+r/r 10801-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/libpcap-possiblymodified/etherent.c
+r/r 10802-128-4:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/libpcap-possiblymodified/ethertype.h
+r/r 10803-128-1:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/libpcap-possiblymodified/FILES
+r/r 10805-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/libpcap-possiblymodified/gencode.h
+r/r 10806-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/libpcap-possiblymodified/grammar.y
+r/r 10807-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/libpcap-possiblymodified/inet.c
+r/r 10808-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/libpcap-possiblymodified/INSTALL
+r/r 10809-128-4:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/libpcap-possiblymodified/install-sh
+r/r 10810-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/libpcap-possiblymodified/Makefile.in
+r/r 10811-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/libpcap-possiblymodified/mkdep
+r/r 10812-128-4:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/libpcap-possiblymodified/nametoaddr.c
+r/r 10813-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/libpcap-possiblymodified/optimize.c
+r/r 10817-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/libpcap-possiblymodified/pcap-bpf.c
+r/r 10818-128-4:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/libpcap-possiblymodified/pcap-dlpi.c
+r/r 10819-128-4:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/libpcap-possiblymodified/pcap-enet.c
+r/r 10814-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/libpcap-possiblymodified/pcap.3
+r/r 10815-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/libpcap-possiblymodified/pcap.c
+r/r 10816-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/libpcap-possiblymodified/pcap.h
+d/d 10843-144-5:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/libpcap-possiblymodified/lbl
+r/r 10844-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/libpcap-possiblymodified/lbl/gnuc.h
+r/r 10845-128-4:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/libpcap-possiblymodified/lbl/os-solaris2.h
+r/r 10846-128-4:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/libpcap-possiblymodified/lbl/os-sunos4.h
+r/r 10847-128-4:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/libpcap-possiblymodified/lbl/os-ultrix4.h
+d/d 10839-144-1:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/libpcap-possiblymodified/linux-include
+d/d 10840-144-1:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/libpcap-possiblymodified/linux-include/netinet
+r/r 10841-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/libpcap-possiblymodified/linux-include/netinet/if_ether.h
+r/r 10842-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/libpcap-possiblymodified/linux-include/netinet/ip_var.h
+r/r 10820-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/libpcap-possiblymodified/pcap-int.h
+r/r 10821-128-4:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/libpcap-possiblymodified/pcap-linux.c
+r/r 10824-128-4:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/libpcap-possiblymodified/pcap-null.c
+r/r 10826-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/libpcap-possiblymodified/pcap-pf.c
+r/r 10827-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/libpcap-possiblymodified/pcap-pf.h
+r/r 10828-128-4:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/libpcap-possiblymodified/pcap-snit.c
+r/r 10829-128-4:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/libpcap-possiblymodified/pcap-snoop.c
+r/r 10830-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/libpcap-possiblymodified/ppp.h
+r/r 10831-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/libpcap-possiblymodified/README
+r/r 10832-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/libpcap-possiblymodified/savefile.c
+r/r 10833-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/libpcap-possiblymodified/scanner.l
+r/r 10834-128-1:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/libpcap-possiblymodified/VERSION
+r/r 10822-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/libpcap-possiblymodified/pcap-nit.c
+r/r 10823-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/libpcap-possiblymodified/pcap-nit.h
+d/d 10835-144-1:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/libpcap-possiblymodified/SUNOS4
+r/r 10837-128-4:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/libpcap-possiblymodified/SUNOS4/nit_if.o.sparc
+r/r 10838-128-4:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/libpcap-possiblymodified/SUNOS4/nit_if.o.sun3
+r/r 10836-128-4:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/libpcap-possiblymodified/SUNOS4/nit_if.o.sun4c.4.0.3c
+r/r 10703-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/nmap-rpc
+r/r 10704-128-4:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/nmap-services
+r/r 10708-128-4:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/nmap.usage.txt
+r/r 10706-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/nmapfe.1
+r/r 10707-128-1:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/nmapfe.desktop
+r/r 10709-128-4:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/nmap_doc.html
+r/r 10710-128-4:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/nmap_manpage-es.html
+r/r 10711-128-4:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/nmap_manpage-fr.html
+r/r 10712-128-4:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/nmap_manpage.html
+r/r 10705-128-4:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/nmap.deprecated.txt
+d/d 10782-144-5:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/nmapfe
+r/r 10783-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/nmapfe/aclocal.m4
+r/r 10784-128-4:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/nmapfe/configure
+r/r 10785-128-4:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/nmapfe/configure.in
+r/r 10786-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/nmapfe/Makefile.in
+r/r 10787-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/nmapfe/nmapfe.c
+r/r 10788-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/nmapfe/nmapfe.h
+r/r 10789-128-4:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/nmapfe/nmapfe_sig.c
+r/r 10790-128-4:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/nmapfe/nmapfe_sig.h
+d/d 10732-144-5:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/nmapNT
+r/r 10733-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/nmapNT/Devioctl.h
+r/r 10734-128-1:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/nmapNT/globals.c
+r/r 10735-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/nmapNT/GNUC.H
+r/r 10736-128-4:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/nmapNT/ifaddrlist.h
+r/r 10737-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/nmapNT/IPExport.h
+r/r 10738-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/nmapNT/IPHlpApi.h
+r/r 10739-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/nmapNT/IPHlpApi.Lib
+r/r 10740-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/nmapNT/IPTypes.h
+r/r 10741-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/nmapNT/libpcap.lib
+d/d 10776-144-1:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/nmapNT/NET
+r/r 10777-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/nmapNT/NET/Bpf.h
+r/r 10778-128-4:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/nmapNT/NET/bpf_filter.c
+r/r 10779-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/nmapNT/NET/if.h
+r/r 10780-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/nmapNT/NET/if_arp.h
+r/r 10781-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/nmapNT/NET/NETDB.H
+d/d 10765-144-5:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/nmapNT/NETINET
+r/r 10766-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/nmapNT/NETINET/IF_ETHER.H
+r/r 10767-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/nmapNT/NETINET/IN_SYSTM.H
+r/r 10768-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/nmapNT/NETINET/IP.H
+r/r 10769-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/nmapNT/NETINET/IP_ICMP.H
+r/r 10770-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/nmapNT/NETINET/IP_VAR.H
+r/r 10771-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/nmapNT/NETINET/TCP.H
+r/r 10772-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/nmapNT/NETINET/TCPIP.H
+r/r 10773-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/nmapNT/NETINET/TCP_VAR.H
+r/r 10774-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/nmapNT/NETINET/UDP.H
+r/r 10775-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/nmapNT/NETINET/UDP_VAR.H
+r/r 10742-128-4:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/nmapNT/nmap-os-fingerprints
+r/r 10743-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/nmapNT/nmap-rpc
+r/r 10744-128-4:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/nmapNT/nmap-services
+r/r 10745-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/nmapNT/nmapNT.dep
+r/r 10746-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/nmapNT/nmapNT.dsp
+r/r 10747-128-1:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/nmapNT/nmapNT.dsw
+r/r 10748-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/nmapNT/nmapNT.mak
+r/r 10749-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/nmapNT/nmapNT.ncb
+r/r 10750-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/nmapNT/nmapNT.opt
+r/r 10751-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/nmapNT/nmapNT.plg
+r/r 10752-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/nmapNT/NTDDNDIS.H
+r/r 10753-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/nmapNT/Ntddpack.h
+r/r 10754-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/nmapNT/PACKET32.H
+r/r 10755-128-4:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/nmapNT/packet_types.h
+r/r 10756-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/nmapNT/Pcap.h
+d/d 10763-144-1:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/nmapNT/RPC
+r/r 10764-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/nmapNT/RPC/Rpc_cut.h
+r/r 10757-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/nmapNT/snmphlpr.c
+r/r 10758-128-1:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/nmapNT/UNISTD.H
+r/r 10759-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/nmapNT/winclude.h
+r/r 10760-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/nmapNT/winfix.c
+r/r 10761-128-1:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/nmapNT/winfix.h
+r/r 10762-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/nmapNT/wintcpip.c
+r/r 10714-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/osscan.c
+r/r 10715-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/osscan.h
+r/r 10716-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/portlist.c
+r/r 10717-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/portlist.h
+r/r 10718-128-1:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/README
+r/r 10719-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/rpc.c
+r/r 10720-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/rpc.h
+r/r 10721-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/services.c
+r/r 10722-128-1:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/services.h
+r/r 10723-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/shtool
+r/r 10724-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/snprintf.c
+r/r 10725-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/targets.c
+r/r 10726-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/targets.h
+r/r 10727-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/tcpip.c
+r/r 10728-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/tcpip.h
+r/r 10729-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/utils.c
+r/r 10730-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/utils.h
+r/r 10731-128-1:	FOOTPRINTING/NT/Nmapnt/nmapNT-src/xnmap.1
+r/r 10674-128-3:	FOOTPRINTING/NT/Nmapnt/nmapNT.exe
+r/r 10675-128-3:	FOOTPRINTING/NT/Nmapnt/README
+r/r 10645-128-4:	FOOTPRINTING/NT/nmapntsp1.zip
+d/d 10653-144-5:	FOOTPRINTING/NT/NSTPro2
+r/r 10654-128-1:	FOOTPRINTING/NT/NSTPro2/DATA.TAG
+r/r 10655-128-3:	FOOTPRINTING/NT/NSTPro2/data1.cab
+r/r 10656-128-3:	FOOTPRINTING/NT/NSTPro2/lang.dat
+r/r 10657-128-1:	FOOTPRINTING/NT/NSTPro2/layout.bin
+r/r 10658-128-3:	FOOTPRINTING/NT/NSTPro2/nstp2kr2.zip
+r/r 10659-128-1:	FOOTPRINTING/NT/NSTPro2/os.dat
+r/r 10660-128-3:	FOOTPRINTING/NT/NSTPro2/setup.bmp
+r/r 10661-128-3:	FOOTPRINTING/NT/NSTPro2/SETUP.EXE
+r/r 10662-128-1:	FOOTPRINTING/NT/NSTPro2/SETUP.INI
+r/r 10663-128-3:	FOOTPRINTING/NT/NSTPro2/setup.ins
+r/r 10664-128-1:	FOOTPRINTING/NT/NSTPro2/setup.lid
+r/r 10665-128-3:	FOOTPRINTING/NT/NSTPro2/_INST32I.EX_
+r/r 10666-128-3:	FOOTPRINTING/NT/NSTPro2/_ISDEL.EXE
+r/r 10667-128-3:	FOOTPRINTING/NT/NSTPro2/_SETUP.DLL
+r/r 10668-128-3:	FOOTPRINTING/NT/NSTPro2/_sys1.cab
+r/r 10669-128-3:	FOOTPRINTING/NT/NSTPro2/_user1.cab
+r/r 10646-128-3:	FOOTPRINTING/NT/spade114.exe
+d/d 10651-144-1:	FOOTPRINTING/NT/superscan
+r/r 10652-128-4:	FOOTPRINTING/NT/superscan/superscan.exe
+r/r 10647-128-3:	FOOTPRINTING/NT/vr54a.exe
+d/d 10648-144-1:	FOOTPRINTING/NT/wspingpropack
+r/r 10649-128-4:	FOOTPRINTING/NT/wspingpropack/v201v210(2).exe
+r/r 10650-128-3:	FOOTPRINTING/NT/wspingpropack/wsp_eval.exe
+d/d 10641-144-1:	FOOTPRINTING/UNIX
+r/r 10642-128-1:	FOOTPRINTING/UNIX/readme.txt
+r/r 10643-128-4:	FOOTPRINTING/UNIX/unix_hack.tgz
+d/d 10879-144-1:	MISCELLANEOUS
+d/d 10883-144-1:	MISCELLANEOUS/MSSQL
+r/r 10884-128-3:	MISCELLANEOUS/MSSQL/ISQLW.EXE
+r/r 10885-128-3:	MISCELLANEOUS/MSSQL/ISQLW.HLP
+r/r 10886-128-3:	MISCELLANEOUS/MSSQL/NTWDBLIB.DLL
+r/r 10887-128-3:	MISCELLANEOUS/MSSQL/SQLGUI32.DLL
+r/r 10888-128-3:	MISCELLANEOUS/MSSQL/SQLQRY32.DLL
+r/r 10889-128-3:	MISCELLANEOUS/MSSQL/SQLSVC32.DLL
+d/d 10881-144-1:	MISCELLANEOUS/PhoneSweep
+r/r 10882-128-1:	MISCELLANEOUS/PhoneSweep/Sandstorm Enterprises, Inc..url
+r/r 10880-128-3:	MISCELLANEOUS/ToneLoc.zip
+d/d 10890-144-5:	NOVELL
+r/r 10891-128-3:	NOVELL/BINDERY.DOC
+r/r 10892-128-3:	NOVELL/BINDERY.EXE
+r/r 10893-128-3:	NOVELL/bindery.zip
+r/r 10894-128-3:	NOVELL/BINDIN.EXE
+r/r 10895-128-3:	NOVELL/CHKNULL.EXE
+r/r 10896-128-3:	NOVELL/dsbrowse.exe
+r/r 10897-128-3:	NOVELL/hack.exe
+r/r 10898-128-4:	NOVELL/hack.exe.pif
+r/r 10899-128-3:	NOVELL/ndssnoop.exe
+d/d 10910-144-5:	NOVELL/Nut18
+r/r 10929-128-3:	NOVELL/Nut18/NDELFILE.EXE
+r/r 10948-128-3:	NOVELL/Nut18/NOPNFILE.EXE
+r/r 10911-128-3:	NOVELL/Nut18/ADVERT.TXT
+r/r 10912-128-3:	NOVELL/Nut18/NADDRESS.EXE
+r/r 10913-128-3:	NOVELL/Nut18/NALLCARD.EXE
+r/r 10914-128-3:	NOVELL/Nut18/NASKRPRN.EXE
+r/r 10915-128-3:	NOVELL/Nut18/NCARD.EXE
+r/r 10916-128-3:	NOVELL/Nut18/NCHGOWN.EXE
+r/r 10917-128-3:	NOVELL/Nut18/NCHKCSYS.EXE
+r/r 10918-128-3:	NOVELL/Nut18/NCHKMODM.EXE
+r/r 10919-128-3:	NOVELL/Nut18/NCHKPASS.EXE
+r/r 10920-128-3:	NOVELL/Nut18/NCHKRPRN.EXE
+r/r 10921-128-3:	NOVELL/Nut18/NCMPDATE.EXE
+r/r 10922-128-3:	NOVELL/Nut18/NCMPDRVR.EXE
+r/r 10923-128-3:	NOVELL/Nut18/NCOPYIPX.EXE
+r/r 10924-128-3:	NOVELL/Nut18/NCOPYNEW.EXE
+r/r 10925-128-3:	NOVELL/Nut18/NCOPYSCR.EXE
+r/r 10926-128-3:	NOVELL/Nut18/NCPY2SUB.EXE
+r/r 10927-128-3:	NOVELL/Nut18/NDATEDIR.EXE
+r/r 10928-128-3:	NOVELL/Nut18/NDELAY.EXE
+r/- * 0:	NOVELL/Nut18/NDELFILE.EXE
+r/r 10930-128-3:	NOVELL/Nut18/NDELPRNJ.EXE
+r/r 10931-128-3:	NOVELL/Nut18/NDISK.EXE
+r/r 10932-128-3:	NOVELL/Nut18/NDOSVER.EXE
+r/r 10933-128-3:	NOVELL/Nut18/NEMSMEM.EXE
+r/r 10934-128-3:	NOVELL/Nut18/NEQUA.EXE
+r/r 10935-128-3:	NOVELL/Nut18/NEXPIRE.EXE
+r/r 10936-128-3:	NOVELL/Nut18/NEXTMEM.EXE
+r/r 10937-128-3:	NOVELL/Nut18/NFINDMSG.EXE
+r/r 10938-128-3:	NOVELL/Nut18/NGETTIME.EXE
+r/r 10939-128-3:	NOVELL/Nut18/NGROUP.EXE
+r/r 10940-128-3:	NOVELL/Nut18/NINVENT.EXE
+r/r 10941-128-3:	NOVELL/Nut18/NLOGADDR.EXE
+r/r 10942-128-3:	NOVELL/Nut18/NLOGEVT.EXE
+r/r 10943-128-3:	NOVELL/Nut18/NLOGMSG.EXE
+r/r 10944-128-3:	NOVELL/Nut18/NMANPCON.EXE
+r/r 10945-128-3:	NOVELL/Nut18/NMARK.EXE
+r/r 10946-128-3:	NOVELL/Nut18/NMEM.EXE
+r/r 10947-128-3:	NOVELL/Nut18/NMHS2TXT.EXE
+r/- * 0:	NOVELL/Nut18/NOPNFILE.EXE
+r/r 10949-128-3:	NOVELL/Nut18/NPHONE.EXE
+r/r 10950-128-3:	NOVELL/Nut18/NQUOTES.EXE
+r/r 10951-128-3:	NOVELL/Nut18/NQUOTES.TXT
+r/r 10952-128-3:	NOVELL/Nut18/NRPTBIND.EXE
+r/r 10953-128-3:	NOVELL/Nut18/NRPTCONN.EXE
+r/r 10954-128-3:	NOVELL/Nut18/NRPTEQUA.EXE
+r/r 10955-128-3:	NOVELL/Nut18/NRPTMHS.EXE
+r/r 10956-128-3:	NOVELL/Nut18/NRPTMHSU.EXE
+r/r 10957-128-3:	NOVELL/Nut18/NRPTOWN.EXE
+r/r 10958-128-3:	NOVELL/Nut18/NRPTPCON.EXE
+r/r 10959-128-3:	NOVELL/Nut18/NRPTSCRP.EXE
+r/r 10960-128-3:	NOVELL/Nut18/NRPTSUB.EXE
+r/r 10961-128-3:	NOVELL/Nut18/NSCANDIR.EXE
+r/r 10962-128-3:	NOVELL/Nut18/NSCRIPT.EXE
+r/r 10963-128-3:	NOVELL/Nut18/NSELPRNJ.EXE
+r/r 10964-128-3:	NOVELL/Nut18/NSETTIME.EXE
+r/r 10965-128-3:	NOVELL/Nut18/NSLIST.EXE
+r/r 10966-128-3:	NOVELL/Nut18/NSTRING.EXE
+r/r 10967-128-3:	NOVELL/Nut18/NSUBOWN.EXE
+r/r 10968-128-3:	NOVELL/Nut18/NTRAFFIC.EXE
+r/r 10969-128-3:	NOVELL/Nut18/NUTIL.DOC
+r/r 10970-128-3:	NOVELL/Nut18/NXMSMEM.EXE
+r/r 10971-128-3:	NOVELL/Nut18/README.1ST
+r/r 10972-128-3:	NOVELL/Nut18/REGISTER.FRM
+r/r 10973-128-3:	NOVELL/Nut18/SHELLUP.ZIP
+r/r 10974-128-3:	NOVELL/Nut18/SUMMARY.DOC
+r/r 10975-128-3:	NOVELL/Nut18/ULIST.EXE
+r/r 10976-128-3:	NOVELL/Nut18/WHATSNEW.700
+d/d 10907-144-1:	NOVELL/Pandora (use under Linux)
+r/r 10908-128-1:	NOVELL/Pandora (use under Linux)/ORIGNAME
+r/r 10909-128-3:	NOVELL/Pandora (use under Linux)/PANDORA.TGZ
+r/r 10900-128-1:	NOVELL/readme.txt
+r/r 10901-128-3:	NOVELL/snlist.exe
+r/r 10902-128-3:	NOVELL/USERDUMP.EXE
+r/r 10903-128-3:	NOVELL/USERINFO.DOC
+r/r 10904-128-3:	NOVELL/USERINFO.EXE
+r/r 10905-128-3:	NOVELL/view.exe
+r/r 10906-128-4:	NOVELL/view.exe.pif

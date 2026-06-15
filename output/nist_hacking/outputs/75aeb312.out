@@ -1,0 +1,15 @@
+rawie v.20130215 [option]
+Parse IE history index.dat files (up to IE 9) on a binary basis
+
+  -f file........Path to a file
+  -t ............TLN output 
+  -s server......Use with -t
+  -u user........Use with -t                      
+  -h ............Help (print this information)
+  
+Ex: C:\>rawie -f index.dat
+    C:\>rawie -f index.dat -t -u user -s system
+
+**All times printed as GMT/UTC
+
+copyright 2014 Quantum Analytics Research, LLC

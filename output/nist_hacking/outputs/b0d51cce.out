@@ -1,0 +1,22 @@
+profilelist v.20200518
+(Software) Get content of ProfileList key
+
+Microsoft\Windows NT\CurrentVersion\ProfileList
+
+Path      : %systemroot%\system32\config\systemprofile
+SID       : S-1-5-18
+LastWrite : 2004-08-19 22:48:26Z
+
+Path      : %SystemDrive%\Documents and Settings\LocalService
+SID       : S-1-5-19
+LastWrite : 2004-08-27 15:08:21Z
+
+Path      : %SystemDrive%\Documents and Settings\NetworkService
+SID       : S-1-5-20
+LastWrite : 2004-08-27 15:08:20Z
+
+Path      : %SystemDrive%\Documents and Settings\Mr. Evil
+SID       : S-1-5-21-2000478354-688789844-1708537768-1003
+LastWrite : 2004-08-27 15:46:23Z
+
+Domain Accounts

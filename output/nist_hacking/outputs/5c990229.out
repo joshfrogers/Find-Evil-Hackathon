@@ -1,0 +1,9 @@
+SQLECmd version 1.1.0.0
+
+Author: Eric Zimmerman (saericzimmerman@gmail.com)
+https://github.com/EricZimmerman/SQLECmd
+Command line: -f wmplibrary_v_0_12.db --csv /cases/out
+
+Maps loaded: 92
+wmplibrary_v_0_12.db does not exist! Exiting
+

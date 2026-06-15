@@ -1,0 +1,80 @@
+uninstall v.20200525
+(Software, NTUSER.DAT) Gets contents of Uninstall keys from Software, NTUSER.DAT hives
+
+Uninstall
+Microsoft\Windows\CurrentVersion\Uninstall
+
+2004-08-27 15:29:19Z
+  Ethereal 0.10.6 v.0.10.6
+
+2004-08-27 15:15:19Z
+  WinPcap 3.01 alpha
+
+2004-08-27 15:12:15Z
+  Network Stumbler 0.4.0 (remove only)
+
+2004-08-25 15:56:11Z
+  Look@LAN 2.50 Build 29
+
+2004-08-20 15:13:08Z
+  123 Write All Stored Passwords
+
+2004-08-20 15:12:43Z
+  Powertoys For Windows XP v.1.00.0000
+
+2004-08-20 15:10:04Z
+  mIRC
+
+2004-08-20 15:09:03Z
+  CuteHTML
+
+2004-08-20 15:09:02Z
+  CuteFTP
+
+2004-08-20 15:08:19Z
+  Forté Agent
+
+2004-08-20 15:07:25Z
+  Faber Toys v.2.4 Build 216
+
+2004-08-20 15:05:58Z
+  Cain & Abel v2.5 beta45
+
+2004-08-20 15:05:09Z
+  Anonymizer Bar 2.0 (remove only)
+
+2004-08-19 23:04:50Z
+  WebFldrs XP v.9.50.5318
+
+2004-08-19 23:04:36Z
+  Microsoft NetShow Player 2.0
+  MPlayer2
+
+2004-08-19 22:37:31Z
+  Branding
+
+2004-08-19 22:32:06Z
+  PCHealth
+
+2004-08-19 22:31:52Z
+  DirectAnimation
+  NetMeeting
+
+2004-08-19 22:31:51Z
+  AddressBook
+  ICW
+  OutlookExpress
+
+2004-08-19 22:31:32Z
+  DirectDrawEx
+  Fontcore
+  IE40
+  IE4Data
+  IE5BAKEX
+  IEData
+  MobileOptionPack
+  SchedulingAgent
+
+2004-08-19 22:21:41Z
+  Connection Manager
+

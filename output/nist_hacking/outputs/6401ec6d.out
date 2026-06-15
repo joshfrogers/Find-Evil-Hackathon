@@ -1,0 +1,45 @@
+recentdocs v.20200427
+(NTUSER.DAT) Gets contents of user's RecentDocs key
+
+RecentDocs
+**All values printed in MRUList\MRUListEx order.
+Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs
+LastWrite Time: 2004-08-26 15:08:15Z
+  7 = Temp on m1200 (4.12.220.254)
+  6 = yng13.bmp
+  5 = channels
+  4 = channels.txt
+  3 = GhostWare
+  2 = Receipt.rtf
+  1 = Anonyymizer
+  0 = keys.txt
+
+Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.bmp
+LastWrite Time 2004-08-26 15:08:12Z
+MRUListEx = 0
+  0 = yng13.bmp
+
+Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.rtf
+LastWrite Time 2004-08-20 15:09:16Z
+MRUListEx = 0
+  0 = Receipt.rtf
+
+Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.txt
+LastWrite Time 2004-08-20 15:50:40Z
+MRUListEx = 1,0
+  1 = channels.txt
+  0 = keys.txt
+
+Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\Folder
+LastWrite Time 2004-08-26 15:08:14Z
+MRUListEx = 3,2,1,0
+  3 = Temp on m1200 (4.12.220.254)
+  2 = channels
+  1 = GhostWare
+  0 = Anonyymizer
+
+Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\NetHood
+LastWrite Time 2004-08-26 15:08:15Z
+MRUListEx = 0
+  0 = \\4.12.220.254\Temp
+

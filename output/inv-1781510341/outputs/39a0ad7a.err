@@ -1,0 +1,3 @@
+Error reading image file (ewf_image_read - offset: 2153682432 - len: 512 - libewf_read_io_handle_read_chunk_data: missing chunk data: 65725.
+libewf_handle_read_buffer: unable to read chunk data: 65725.
+libewf_handle_read_random: unable to read buffer.) (tsk_fs_file_walk: Error reading block at 4206348)

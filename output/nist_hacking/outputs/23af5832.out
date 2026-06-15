@@ -1,0 +1,866 @@
+winscp v.20201227
+(NTUSER.DAT) Gets user's WinSCP 2 data
+
+Software\Martin Prikryl\WinSCP 2 not found.
+----------------------------------------
+profiler v.20200525
+(NTUSER.DAT, System) Environment profiler information
+
+Environment
+LastWrite Time 2004-08-19 23:04:06Z
+
+TEMP -> %USERPROFILE%\Local Settings\Temp
+TMP -> %USERPROFILE%\Local Settings\Temp
+
+----------------------------------------
+Software\Microsoft\Windows\CurrentVersion\Search\RecentApps not found.
+----------------------------------------
+1093532895|REG|||RecentDocs - Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs - Temp on m1200 (4.12.220.254)
+1093532892|REG|||RecentDocs - Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.bmp - yng13.bmp
+1093014556|REG|||RecentDocs - Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.rtf - Receipt.rtf
+1093017040|REG|||RecentDocs - Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.txt - channels.txt
+1093532894|REG|||RecentDocs - Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\Folder - Temp on m1200 (4.12.220.254)
+1093532895|REG|||RecentDocs - Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\NetHood - \\4.12.220.254\Temp
+----------------------------------------
+----------------------------------------
+adobe v.20200522
+(NTUSER.DAT) Gets user's Adobe app cRecentFiles values
+
+Could not access Software\Adobe\Adobe Acrobat\\AVGeneral\cRecentFiles
+
+Could not access Software\Adobe\Acrobat Reader\\AVGeneral\cRecentFiles
+
+----------------------------------------
+recentdocs v.20200427
+(NTUSER.DAT) Gets contents of user's RecentDocs key
+
+RecentDocs
+**All values printed in MRUList\MRUListEx order.
+Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs
+LastWrite Time: 2004-08-26 15:08:15Z
+  7 = Temp on m1200 (4.12.220.254)
+  6 = yng13.bmp
+  5 = channels
+  4 = channels.txt
+  3 = GhostWare
+  2 = Receipt.rtf
+  1 = Anonyymizer
+  0 = keys.txt
+
+Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.bmp
+LastWrite Time 2004-08-26 15:08:12Z
+MRUListEx = 0
+  0 = yng13.bmp
+
+Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.rtf
+LastWrite Time 2004-08-20 15:09:16Z
+MRUListEx = 0
+  0 = Receipt.rtf
+
+Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.txt
+LastWrite Time 2004-08-20 15:50:40Z
+MRUListEx = 1,0
+  1 = channels.txt
+  0 = keys.txt
+
+Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\Folder
+LastWrite Time 2004-08-26 15:08:14Z
+MRUListEx = 3,2,1,0
+  3 = Temp on m1200 (4.12.220.254)
+  2 = channels
+  1 = GhostWare
+  0 = Anonyymizer
+
+Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\NetHood
+LastWrite Time 2004-08-26 15:08:15Z
+MRUListEx = 0
+  0 = \\4.12.220.254\Temp
+
+----------------------------------------
+----------------------------------------
+mp2 v.20200526
+(NTUSER.DAT) Gets user's MountPoints2 key contents
+
+MountPoints2
+Software\Microsoft\Windows\CurrentVersion\Explorer\MountPoints2
+LastWrite Time 2004-08-27 15:08:25Z
+
+Remote Drives:
+
+Volumes:
+2004-08-20 15:21:27Z
+  {aa630441-f1ff-11d8-8a13-806d6172696f}
+2004-08-19 23:04:58Z
+  {aa630442-f1ff-11d8-8a13-806d6172696f}
+
+Drives:
+2004-08-19 23:04:06Z - C,D
+
+Unique MAC Addresses:
+80:6D:61:72:69:6F
+
+Analysis Tip: Correlate the Volume entries to those found in the MountedDevices
+entries that begin with "\??\Volume".
+----------------------------------------
+compdesc v.20200511
+(NTUSER.DAT) Gets contents of user's ComputerDescriptions key
+
+ComputerDescriptions
+Software\Microsoft\Windows\CurrentVersion\Explorer\ComputerDescriptions
+LastWrite Time 2004-08-26 15:07:12Z
+  4.12.220.254   m1200
+  TOWER   Tower
+  TOWER2   
+  ECSAP_LAB_SRVR   
+  ECSAP_LMS   ECSAP_LMS
+  N-1A9ODN6ZXK4LQ   
+  BB   
+  D77KSG41   
+  PREFERRE-GG31M4   
+  SM181068849   
+  ANDREWS-1   
+----------------------------------------
+inprocserver v.20200427
+(Software) Checks CLSID InProcServer32 values for indications of malware
+
+----------------------------------------
+----------------------------------------
+----------------------------------------
+----------------------------------------
+mmc v.20200517
+(NTUSER.DAT) Get contents of user's MMC\Recent File List key
+
+Software\Microsoft\Microsoft Management Console\Recent File List not found.
+----------------------------------------
+attachmgr v.20200525
+(NTUSER.DAT) Checks user's keys that manage the Attachment Manager functionality
+
+Software\Microsoft\Windows\CurrentVersion\Policies\Associations not found.
+
+Software\Microsoft\Windows\CurrentVersion\Policies\Attachments not found.
+
+----------------------------------------
+uninstall v.20200525
+(Software, NTUSER.DAT) Gets contents of Uninstall keys from Software, NTUSER.DAT hives
+
+Uninstall
+----------------------------------------
+shellfolders v.20200515
+Gets user's shell folders values
+
+Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders
+LastWrite Time 2004-08-19 23:05:02Z
+StartUp folder : C:\Documents and Settings\Mr. Evil\Start Menu\Programs\Startup
+
+Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders
+LastWrite Time 2004-08-20 15:12:05Z
+StartUp folder : %USERPROFILE%\Start Menu\Programs\Startup
+----------------------------------------
+run v.20200511
+(Software, NTUSER.DAT) [Autostart] Get autostart key contents from Software hive
+
+Software\Microsoft\Windows\CurrentVersion\Run
+LastWrite Time 2004-08-19 23:04:32Z
+  MSMSGS - "C:\Program Files\Messenger\msmsgs.exe" /background
+
+Software\Microsoft\Windows\CurrentVersion\Run has no subkeys.
+
+Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Run not found.
+
+Software\Microsoft\Windows\CurrentVersion\RunOnce not found.
+
+Software\Microsoft\Windows\CurrentVersion\RunServices not found.
+
+Software\Microsoft\Windows\CurrentVersion\RunServicesOnce not found.
+
+Software\Microsoft\Windows NT\CurrentVersion\Terminal Server\Install\Software\Microsoft\Windows\CurrentVersion\Run not found.
+
+Software\Microsoft\Windows NT\CurrentVersion\Terminal Server\Install\Software\Microsoft\Windows\CurrentVersion\RunOnce not found.
+
+Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\Run not found.
+
+Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Policies\Explorer\Run not found.
+
+Software\Microsoft\Windows\CurrentVersion\StartupApproved\Run not found.
+
+Software\Microsoft\Windows\CurrentVersion\StartupApproved\Run32 not found.
+
+Software\Microsoft\Windows\CurrentVersion\StartupApproved\StartupFolder not found.
+
+----------------------------------------
+lxss v.20200511
+(NTUSER.DAT) Gets WSL config.
+
+Software\Microsoft\Windows\CurrentVersion\Lxss not found.
+----------------------------------------
+winzip v.20200526
+(NTUSER.DAT) Get WinZip extract and filemenu values
+
+Software\Nico Mak Computing\WinZip not found.
+----------------------------------------
+appcompatflags v.20200525
+(NTUSER.DAT, Software) Extracts AppCompatFlags for Windows.
+
+
+----------------------------------------
+speech v.20200427
+(NTUSER.DAT) Get values from user's Speech key
+
+Software\Microsoft\Speech not found.
+----------------------------------------
+featureusage v.20200511
+(NTUSER.DAT) Extracts user's FeatureUsage data.
+
+Software\Microsoft\Windows\CurrentVersion\Explorer\FeatureUsage not found.
+----------------------------------------
+1092956672|REG|||Autoruns - Last Write key Software\Microsoft\Windows\CurrentVersion\Run modified entries: 1 content: MSMSGS -> "C:\Program Files\Messenger\msmsgs.exe" /background;
+----------------------------------------
+1093619488|REG|||[Program Execution] UserAssist - UEME_UITOOLBAR (27)
+1093619488|REG|||[Program Execution] UserAssist - UEME_UITOOLBAR:0x1,120 (1)
+1093619420|REG|||[Program Execution] UserAssist - UEME_UITOOLBAR:0x1,124 (3)
+1093536213|REG|||[Program Execution] UserAssist - UEME_UITOOLBAR:0x1,130 (19)
+1093450081|REG|||[Program Execution] UserAssist - UEME_UITOOLBAR:0x1,125 (2)
+1093015976|REG|||[Program Execution] UserAssist - UEME_UITOOLBAR:0x1,122 (1)
+1093621560|REG|||[Program Execution] UserAssist - UEME_UISCUT (42)
+1093621360|REG|||[Program Execution] UserAssist - UEME_RUNPATH (76)
+1093621360|REG|||[Program Execution] UserAssist - UEME_RUNPATH:::{871C5380-42A0-1069-A2EA-08002B30309D} (14)
+1093621360|REG|||[Program Execution] UserAssist - UEME_RUNPATH:C:\Program Files\Internet Explorer\iexplore.exe (14)
+1093620894|REG|||[Program Execution] UserAssist - UEME_RUNPATH:C:\Program Files\Ethereal\ethereal.exe (1)
+1093620782|REG|||[Program Execution] UserAssist - UEME_RUNPATH:C:\Program Files\Cain\Cain.exe (2)
+1093620516|REG|||[Program Execution] UserAssist - UEME_RUNPATH:C:\Documents and Settings\Mr. Evil\Desktop\ethereal-setup-0.10.6.exe (1)
+1093619708|REG|||[Program Execution] UserAssist - UEME_RUNPATH:C:\Documents and Settings\Mr. Evil\Desktop\WinPcap_3_01_a.exe (1)
+1093619684|REG|||[Program Execution] UserAssist - UEME_RUNCPL (4)
+1093619684|REG|||[Program Execution] UserAssist - UEME_RUNCPL:"C:\WINDOWS\System32\appwiz.cpl",Add or Remove Programs (1)
+1093619555|REG|||[Program Execution] UserAssist - UEME_RUNPATH:C:\Program Files\Network Stumbler\NetStumbler.exe (1)
+1093619531|REG|||[Program Execution] UserAssist - UEME_RUNPATH:C:\Documents and Settings\Mr. Evil\Desktop\netstumblerinstaller_0_4_0.exe (1)
+1093536197|REG|||[Program Execution] UserAssist - UEME_RUNPATH:::{208D2C60-3AEA-1069-A2D7-08002B30309D} (3)
+1093533237|REG|||[Program Execution] UserAssist - UEME_RUNPATH:C:\Program Files\Whois\whois.exe (2)
+1093532774|REG|||[Program Execution] UserAssist - UEME_RUNPATH:Look@LAN.lnk (2)
+1093532774|REG|||[Program Execution] UserAssist - UEME_RUNPATH:C:\Program Files\Look@LAN\LookAtLan.exe (2)
+1093532715|REG|||[Program Execution] UserAssist - UEME_RUNPATH:C:\WINDOWS\System32\telnet.exe (1)
+1093532305|REG|||[Program Execution] UserAssist - UEME_RUNPATH:Look@Host.lnk (1)
+1093532305|REG|||[Program Execution] UserAssist - UEME_RUNPATH:C:\Program Files\Look@LAN\LookAtHost.exe (1)
+1093450827|REG|||[Program Execution] UserAssist - UEME_RUNPATH:C:\Program Files\mIRC\mirc.exe (3)
+1093449334|REG|||[Program Execution] UserAssist - UEME_RUNPATH:C:\Program Files\Agent\agent.exe (2)
+1093449326|REG|||[Program Execution] UserAssist - UEME_RUNPATH:C:\Documents and Settings\Mr. Evil\Desktop\lalsetup250.exe (1)
+1093447647|REG|||[Program Execution] UserAssist - UEME_RUNPATH:C:\Program Files\Faber Toys\Faber Toys.exe (2)
+1093447424|REG|||[Program Execution] UserAssist - UEME_RUNPATH:C:\WINDOWS\System32\cmd.exe (1)
+1093447357|REG|||[Program Execution] UserAssist - UEME_RUNPATH:C:\WINDOWS\System32\netplwiz.dll (1)
+1093036403|REG|||[Program Execution] UserAssist - UEME_RUNPIDL:%csidl2%\Outlook Express.lnk (1)
+1093036403|REG|||[Program Execution] UserAssist - UEME_RUNPIDL (1)
+1093036403|REG|||[Program Execution] UserAssist - UEME_RUNPATH:C:\Program Files\Outlook Express\msimn.exe (1)
+1093017040|REG|||[Program Execution] UserAssist - UEME_RUNPATH:C:\WINDOWS\system32\NOTEPAD.EXE (2)
+1093017026|REG|||[Program Execution] UserAssist - UEME_RUNPATH:::{20D04FE0-3AEA-1069-A2D8-08002B30309D} (6)
+1093015397|REG|||[Program Execution] UserAssist - UEME_RUNCPL:"C:\WINDOWS\System32\sysdm.cpl",System (2)
+1093015110|REG|||[Program Execution] UserAssist - UEME_RUNCPL:NCPA.CPL (1)
+1093014774|REG|||[Program Execution] UserAssist - UEME_RUNPATH:D:\Drivers\Password recovery\123wasp_setup.exe (1)
+1093014716|REG|||[Program Execution] UserAssist - UEME_RUNPATH:C:\Documents and Settings\Mr. Evil\Local Settings\Temp\Temporary Directory 1 for powertoysetup.zip\PowerToySetup.exe (1)
+1093014647|REG|||[Program Execution] UserAssist - UEME_RUNPATH:D:\Drivers\Whois\whois.exe (1)
+1093014586|REG|||[Program Execution] UserAssist - UEME_RUNPATH:D:\Drivers\IRC\mirc612.exe (1)
+1093014556|REG|||[Program Execution] UserAssist - UEME_RUNPATH:C:\Program Files\Windows NT\Accessories\WORDPAD.EXE (1)
+1093014517|REG|||[Program Execution] UserAssist - UEME_RUNPATH:D:\Drivers\FTP\cute3032.exe (1)
+1093014482|REG|||[Program Execution] UserAssist - UEME_RUNPATH:D:\Drivers\Forte Agent\a32-19.exe (1)
+1093014405|REG|||[Program Execution] UserAssist - UEME_RUNPATH:D:\Drivers\Fabertoys\FaberToys_FullSetup.exe (1)
+1093014352|REG|||[Program Execution] UserAssist - UEME_RUNPATH:D:\Drivers\Cain & Abel\cain25b45.exe (1)
+1093014300|REG|||[Program Execution] UserAssist - UEME_RUNPATH:D:\Drivers\Anonyymizer\setup.exe (1)
+1092956781|REG|||[Program Execution] UserAssist - UEME_RUNCPL:desk.cpl (1)
+1092956591|REG|||[Program Execution] UserAssist - UEME_RUNPIDL:%csidl2%\MSN Explorer.lnk (2)
+1092956591|REG|||[Program Execution] UserAssist - UEME_RUNPIDL:%csidl2%\Windows Media Player.lnk (2)
+1092956591|REG|||[Program Execution] UserAssist - UEME_RUNPIDL:%csidl2%\Accessories\Windows Movie Maker.lnk (12)
+1092956591|REG|||[Program Execution] UserAssist - UEME_RUNPIDL:%csidl2%\Accessories\Tour Windows XP.lnk (11)
+1092956591|REG|||[Program Execution] UserAssist - UEME_RUNPIDL:%csidl2%\Accessories\System Tools\Files and Settings Transfer Wizard.lnk (10)
+----------------------------------------
+oisc v.20091125
+(NTUSER.DAT) Gets contents of user's Office Internet Server Cache
+
+Office Version: 
+Software\Microsoft\Office\\Common\Internet\Server Cache not found.
+----------------------------------------
+typedurlstime v.20200526
+(NTUSER.DAT) Returns contents of user's TypedURLsTime key.
+
+Software\Microsoft\Internet Explorer\TypedURLsTime not found.
+----------------------------------------
+----------------------------------------
+recentapps v.20200515
+- Gets contents of user's RecentApps key
+
+Software\Microsoft\Windows\CurrentVersion\Search\RecentApps not found.
+----------------------------------------
+----------------------------------------
+Uninstall
+----------------------------------------
+mpmru v.20200517
+(NTUSER.DAT) Gets user's Media Player RecentFileList values
+
+Software\Microsoft\MediaPlayer\Player\RecentFileList not found.
+----------------------------------------
+onedrive v.20200515
+(NTUSER.DAT) Gets contents of user's OneDrive key
+
+Software\Microsoft\OneDrive not found.
+----------------------------------------
+Software\Microsoft\IntelliPoint\AppSpecific not found.
+----------------------------------------
+----------------------------------------
+cmdproc v.20200515
+(NTUSER.DAT) Autostart - get Command Processor\AutoRun value from NTUSER.DAT hive
+
+Software\Microsoft\Command Processor
+LastWrite Time 2004-08-19 23:04:06Z
+AutoRun value not found.
+----------------------------------------
+sevenzip v.20210329
+- Gets records of histories from 7-Zip keys
+
+Software\7-Zip not found.
+Software\Wow6432Node\7-Zip not found.
+----------------------------------------
+gpohist v.
+(Software) Collects system/user GPO history
+
+----------------------------------------
+----------------------------------------
+disableuserassist v.20230710
+(NTUSER.DAT) Get Start_TrackEnabled and Start_TrackProgs values which confirm if UserAssist was disabled.
+
+----------------------------------------
+applets v.20200525
+(NTUSER.DAT) Gets contents of user's Applets key
+
+Applets
+Software\Microsoft\Windows\CurrentVersion\Applets
+LastWrite Time 2004-08-20 15:09:16Z
+
+Software\Microsoft\Windows\CurrentVersion\Applets\Paint\Recent File List not found.
+----------------------------------------
+1093621484|REG|||TypedURLs - url1: http://www.maktoob.com/
+----------------------------------------
+----------------------------------------
+load v.20200517
+(NTUSER.DAT) Gets load and run values from user hive
+
+load
+Software\Microsoft\Windows NT\CurrentVersion\Windows
+LastWrite Time 2004-08-27 15:08:52Z
+
+load = 
+run value not found.
+----------------------------------------
+apppaths v.20200511
+(NTUSER.DAT,Software) Gets content of App Paths subkeys
+
+----------------------------------------
+DDO v.20140414
+(NTUSER.DAT) Gets user's DeviceDisplayObjects key contents
+
+Software\Microsoft\Windows NT\CurrentVersion\DeviceDisplayObjects not found.
+----------------------------------------
+1093532715|REG|||RunMRU: telnet\1
+----------------------------------------
+Launching tsclient v.20200518
+(NTUSER.DAT) Displays contents of user's Terminal Server Client\Default key
+
+Software\Microsoft\Terminal Server Client\Default not found.
+
+Software\Microsoft\Terminal Server Client\Servers not found.
+----------------------------------------
+comdlg32 v.20200517
+
+Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32
+LastWrite Time 2004-08-25 15:50:26Z
+LastVisitedMRU
+LastWrite: 2004-08-27 15:10:08Z
+  MRUList = ba
+  b -> EXE: iexplore.exe
+    -> Last Dir: C:\Documents and Settings\Mr. Evil\Desktop
+  a -> EXE: Explorer.EXE
+    -> Last Dir: C:\Documents and Settings\Mr. Evil\Desktop
+
+
+OpenSaveMRU
+LastWrite: 2004-08-25 15:50:26Z
+OpenSaveMRU\OpenSaveMRU
+LastWrite time: 2004-08-25 15:50:26Z
+OpenSaveMRU has no values.
+
+OpenSaveMRU\*
+LastWrite time: 2004-08-27 15:18:05Z
+  MRUList = cdba
+  c -> C:\Documents and Settings\Mr. Evil\Desktop\ethereal-setup-0.10.6.exe
+  d -> C:\Documents and Settings\Mr. Evil\Desktop\WinPcap_3_01_a.exe
+  b -> C:\Documents and Settings\Mr. Evil\Desktop\netstumblerinstaller_0_4_0.exe
+  a -> C:\Documents and Settings\Mr. Evil\Desktop\lalsetup250.exe
+
+OpenSaveMRU\exe
+LastWrite time: 2004-08-27 15:18:05Z
+  MRUList = cdba
+  c -> C:\Documents and Settings\Mr. Evil\Desktop\ethereal-setup-0.10.6.exe
+  d -> C:\Documents and Settings\Mr. Evil\Desktop\WinPcap_3_01_a.exe
+  b -> C:\Documents and Settings\Mr. Evil\Desktop\netstumblerinstaller_0_4_0.exe
+  a -> C:\Documents and Settings\Mr. Evil\Desktop\lalsetup250.exe
+
+
+
+----------------------------------------
+Software\SysInternals not found.
+----------------------------------------
+arpcache v.20200515
+(NTUSER.DAT) Retrieves CurrentVersion\App Management\ARPCache entries
+
+Software\Microsoft\Windows\CurrentVersion\App Management\ARPCache not found.
+----------------------------------------
+searchscopes v.20200517
+- Gets contents of user's SearchScopes key
+
+Software\Microsoft\Internet Explorer\SearchScopes not found.
+----------------------------------------
+mndmru v.20200517
+(NTUSER.DAT) Get contents of user's Map Network Drive MRU
+
+Software\Microsoft\Windows\CurrentVersion\Explorer\Map Network Drive MRU not found.
+----------------------------------------
+typedpaths v.20200526
+(NTUSER.DAT) Gets contents of user's typedpaths key
+
+Software\Microsoft\Windows\CurrentVersion\Explorer\TypedPaths not found.
+----------------------------------------
+appkeys v.20200517
+(NTUSER.DAT, Software) Extracts AppKeys entries.
+
+----------------------------------------
+mmo v.20200517
+(NTUSER.DAT) Checks NTUSER for Multimedia\Other values [malware]
+
+Software\Microsoft\Multimedia\Other not found.
+Software\Microsoft\CTF\LangBarAddIn not found.
+----------------------------------------
+appassoc v.20200515
+- Gets contents of user's ApplicationAssociationToasts key
+
+Software\Microsoft\Windows\CurrentVersion\ApplicationAssociationToasts not found.
+----------------------------------------
+----------------------------------------
+pendinggpos v.20200427
+NTUSER.DAT - Gets contents of user's PendingGPOs key
+
+Software\Microsoft\IEAK\GroupPolicy\PendingGPOs not found.
+----------------------------------------
+----------------------------------------
+----------------------------------------
+wordwheelquery v.20200823
+(NTUSER.DAT) Gets contents of user's WordWheelQuery key
+
+Software\Microsoft\Windows\CurrentVersion\Explorer\WordWheelQuery not found.
+----------------------------------------
+----------------------------------------
+logonstats v.20200517
+Gets contents of user's LogonStats key
+
+Software\Microsoft\Windows\CurrentVersion\Explorer\LogonStats not found.
+----------------------------------------
+runvirtual v.20200427
+(NTUSER.DAT, Software) Gets RunVirtual entries
+
+----------------------------------------
+
+----------------------------------------
+UserAssist
+Software\Microsoft\Windows\CurrentVersion\Explorer\UserAssist
+LastWrite Time 2004-08-19 23:04:14Z
+
+{5E6AB780-7743-11CF-A12B-00AA004AE837}
+2004-08-27 15:11:28Z
+  UEME_UITOOLBAR (27)
+  UEME_UITOOLBAR:0x1,120 (1)
+2004-08-27 15:10:20Z
+  UEME_UITOOLBAR:0x1,124 (3)
+2004-08-26 16:03:33Z
+  UEME_UITOOLBAR:0x1,130 (19)
+2004-08-25 16:08:01Z
+  UEME_UITOOLBAR:0x1,125 (2)
+2004-08-20 15:32:56Z
+  UEME_UITOOLBAR:0x1,122 (1)
+
+Value names with no time stamps:
+  HRZR_PGYPHNPbhag:pgbe
+
+{75048700-EF1F-11D0-9888-006097DEACF9}
+2004-08-27 15:46:00Z
+  UEME_UISCUT (42)
+2004-08-27 15:42:40Z
+  UEME_RUNPATH (76)
+  UEME_RUNPATH:::{871C5380-42A0-1069-A2EA-08002B30309D} (14)
+  UEME_RUNPATH:C:\Program Files\Internet Explorer\iexplore.exe (14)
+2004-08-27 15:34:54Z
+  UEME_RUNPATH:C:\Program Files\Ethereal\ethereal.exe (1)
+2004-08-27 15:33:02Z
+  UEME_RUNPATH:C:\Program Files\Cain\Cain.exe (2)
+2004-08-27 15:28:36Z
+  UEME_RUNPATH:C:\Documents and Settings\Mr. Evil\Desktop\ethereal-setup-0.10.6.exe (1)
+2004-08-27 15:15:08Z
+  UEME_RUNPATH:C:\Documents and Settings\Mr. Evil\Desktop\WinPcap_3_01_a.exe (1)
+2004-08-27 15:14:44Z
+  UEME_RUNCPL (4)
+  UEME_RUNCPL:"C:\WINDOWS\System32\appwiz.cpl",Add or Remove Programs (1)
+2004-08-27 15:12:35Z
+  UEME_RUNPATH:C:\Program Files\Network Stumbler\NetStumbler.exe (1)
+2004-08-27 15:12:11Z
+  UEME_RUNPATH:C:\Documents and Settings\Mr. Evil\Desktop\netstumblerinstaller_0_4_0.exe (1)
+2004-08-26 16:03:17Z
+  UEME_RUNPATH:::{208D2C60-3AEA-1069-A2D7-08002B30309D} (3)
+2004-08-26 15:13:57Z
+  UEME_RUNPATH:C:\Program Files\Whois\whois.exe (2)
+2004-08-26 15:06:14Z
+  UEME_RUNPATH:Look@LAN.lnk (2)
+  UEME_RUNPATH:C:\Program Files\Look@LAN\LookAtLan.exe (2)
+2004-08-26 15:05:15Z
+  UEME_RUNPATH:C:\WINDOWS\System32\telnet.exe (1)
+2004-08-26 14:58:25Z
+  UEME_RUNPATH:Look@Host.lnk (1)
+  UEME_RUNPATH:C:\Program Files\Look@LAN\LookAtHost.exe (1)
+2004-08-25 16:20:27Z
+  UEME_RUNPATH:C:\Program Files\mIRC\mirc.exe (3)
+2004-08-25 15:55:34Z
+  UEME_RUNPATH:C:\Program Files\Agent\agent.exe (2)
+2004-08-25 15:55:26Z
+  UEME_RUNPATH:C:\Documents and Settings\Mr. Evil\Desktop\lalsetup250.exe (1)
+2004-08-25 15:27:27Z
+  UEME_RUNPATH:C:\Program Files\Faber Toys\Faber Toys.exe (2)
+2004-08-25 15:23:44Z
+  UEME_RUNPATH:C:\WINDOWS\System32\cmd.exe (1)
+2004-08-25 15:22:37Z
+  UEME_RUNPATH:C:\WINDOWS\System32\netplwiz.dll (1)
+2004-08-20 21:13:23Z
+  UEME_RUNPIDL:%csidl2%\Outlook Express.lnk (1)
+  UEME_RUNPIDL (1)
+  UEME_RUNPATH:C:\Program Files\Outlook Express\msimn.exe (1)
+2004-08-20 15:50:40Z
+  UEME_RUNPATH:C:\WINDOWS\system32\NOTEPAD.EXE (2)
+2004-08-20 15:50:26Z
+  UEME_RUNPATH:::{20D04FE0-3AEA-1069-A2D8-08002B30309D} (6)
+2004-08-20 15:23:17Z
+  UEME_RUNCPL:"C:\WINDOWS\System32\sysdm.cpl",System (2)
+2004-08-20 15:18:30Z
+  UEME_RUNCPL:NCPA.CPL (1)
+2004-08-20 15:12:54Z
+  UEME_RUNPATH:D:\Drivers\Password recovery\123wasp_setup.exe (1)
+2004-08-20 15:11:56Z
+  UEME_RUNPATH:C:\Documents and Settings\Mr. Evil\Local Settings\Temp\Temporary Directory 1 for powertoysetup.zip\PowerToySetup.exe (1)
+2004-08-20 15:10:47Z
+  UEME_RUNPATH:D:\Drivers\Whois\whois.exe (1)
+2004-08-20 15:09:46Z
+  UEME_RUNPATH:D:\Drivers\IRC\mirc612.exe (1)
+2004-08-20 15:09:16Z
+  UEME_RUNPATH:C:\Program Files\Windows NT\Accessories\WORDPAD.EXE (1)
+2004-08-20 15:08:37Z
+  UEME_RUNPATH:D:\Drivers\FTP\cute3032.exe (1)
+2004-08-20 15:08:02Z
+  UEME_RUNPATH:D:\Drivers\Forte Agent\a32-19.exe (1)
+2004-08-20 15:06:45Z
+  UEME_RUNPATH:D:\Drivers\Fabertoys\FaberToys_FullSetup.exe (1)
+2004-08-20 15:05:52Z
+  UEME_RUNPATH:D:\Drivers\Cain & Abel\cain25b45.exe (1)
+2004-08-20 15:05:00Z
+  UEME_RUNPATH:D:\Drivers\Anonyymizer\setup.exe (1)
+2004-08-19 23:06:21Z
+  UEME_RUNCPL:desk.cpl (1)
+2004-08-19 23:03:11Z
+  UEME_RUNPIDL:%csidl2%\MSN Explorer.lnk (2)
+  UEME_RUNPIDL:%csidl2%\Windows Media Player.lnk (2)
+  UEME_RUNPIDL:%csidl2%\Accessories\Windows Movie Maker.lnk (12)
+  UEME_RUNPIDL:%csidl2%\Accessories\Tour Windows XP.lnk (11)
+  UEME_RUNPIDL:%csidl2%\Accessories\System Tools\Files and Settings Transfer Wizard.lnk (10)
+
+Value names with no time stamps:
+  HRZR_PGYPHNPbhag:pgbe
+  HRZR_EHACVQY:%pfvqy2%\Nabalzvmre Gbbyone\Havafgnyy.yax
+  HRZR_EHACVQY:%pfvqy2%\Nabalzvmre Gbbyone\Uryc.yax
+  HRZR_EHACVQY:%pfvqy2%\Nabalzvmre Gbbyone\Nabalzvmre JroFvgr.yax
+  HRZR_EHACVQY:%pfvqy2%\Pnva\Pnva i2.5.yax
+  HRZR_EHACVQY:%pfvqy2%\Pnva\Havafgnyy Pnva.yax
+  HRZR_EHACVQY:%pfvqy2%\Ntrag Arjfernqre\Ntrag Uryc.yax
+  HRZR_EHACVQY:%pfvqy2%\Ntrag Arjfernqre\Ernqzr.yax
+  HRZR_EHACVQY:%pfvqy2%\TybonyFPNCR\PhgrSGC\PhgrSGC.yax
+  HRZR_EHACVQY:%pfvqy2%\TybonyFPNCR\PhgrSGC\Havafgnyy PhgrSGC.yax
+  HRZR_EHACVQY:%pfvqy2%\TybonyFPNCR\PhgrSGC\PhgrSGC Uryc.yax
+  HRZR_EHACVQY:%pfvqy2%\TybonyFPNCR\PhgrSGC\PhgrSGC Ernq Zr.yax
+  HRZR_EHACVQY:%pfvqy2%\TybonyFPNCR\PhgrUGZY\PhgrUGZY.yax
+  HRZR_EHACVQY:%pfvqy2%\TybonyFPNCR\PhgrUGZY\Havafgnyy PhgrUGZY.yax
+  HRZR_EHACVQY:%pfvqy2%\TybonyFPNCR\PhgrUGZY\PhgrUGZY Uryc.yax
+  HRZR_EHACVQY:%pfvqy2%\TybonyFPNCR\PhgrUGZY\PhgrUGZY Ernqzr.yax
+  HRZR_EHACVQY:%pfvqy2%\zVEP
+  HRZR_EHACVQY:%pfvqy2%\zVEP\zVEP Uryc.yax
+  HRZR_EHACVQY:%pfvqy2%\zVEP\VEP Vageb.yax
+  HRZR_EHACVQY:%pfvqy2%\Cbjregblf sbe Jvaqbjf KC\GjrnxHV sbe Jvaqbjf KC.yax
+  HRZR_EHACVQY:%pfvqy2%\Cbjregblf sbe Jvaqbjf KC\CbjreGbl Pnyphyngbe.yax
+  HRZR_EHACVQY:%pfvqy2%\Cbjregblf sbe Jvaqbjf KC\GvzreFubg.yax
+  HRZR_EHACVQY:%pfvqy2%\Cbjregblf sbe Jvaqbjf KC\Ernq zr.yax
+  HRZR_EHACVQY:%pfvqy2%\Cbjregblf sbe Jvaqbjf KC
+  HRZR_EHACVQY:%pfvqy2%\Cbjregblf sbe Jvaqbjf KC\Fyvqr Fubj Jvmneq.yax
+  HRZR_EHACVQY:%pfvqy2%\123 JNFC\URYC.yax
+  HRZR_EHACVQY:%pfvqy2%\123 JNFC\YVPRAFR.yax
+  HRZR_EHACVQY:%pfvqy2%\Jvaqbjf Zrffratre.yax
+  HRZR_EHACVQY:%pfvqy2%\Erzbgr Nffvfgnapr.yax
+  HRZR_EHACVQY:%pfvqy2%\Vagrearg Rkcybere.yax
+  HRZR_EHACVQY:%pfvqy2%\Fgneghc
+  HRZR_EHACVQY:%pfvqy2%\TybonyFPNCR
+  HRZR_EHACVQY:%pfvqy2%\Tnzrf
+  HRZR_EHACVQY:%pfvqy2%\Snore Gblf
+  HRZR_EHACVQY:%pfvqy2%\Pnva
+  HRZR_EHACVQY:%pfvqy2%\Nabalzvmre Gbbyone
+  HRZR_EHACVQY:%pfvqy2%\Ntrag Arjfernqre
+  HRZR_EHACVQY:%pfvqy2%\Npprffbevrf
+  HRZR_EHACVQY:%pfvqy2%\123 JNFC
+  HRZR_EHACVQY:%pfvqy2%\zVEP\Irefvbaf.gkg.yax
+  HRZR_EHACVQY:%pfvqy2%\zVEP\Ernqzr.gkg.yax
+  HRZR_EHACVQY:%pfvqy2%\zVEP\zVEP.yax
+  HRZR_EHACVQY:%pfvqy2%\TybonyFPNCR\PhgrUGZY
+  HRZR_EHACVQY:%pfvqy2%\TybonyFPNCR\PhgrSGC
+  HRZR_EHACVQY:%pfvqy2%\Tnzrf\Fcvqre Fbyvgnver.yax
+  HRZR_EHACVQY:%pfvqy2%\Tnzrf\Fbyvgnver.yax
+  HRZR_EHACVQY:%pfvqy2%\Tnzrf\Cvaonyy.yax
+  HRZR_EHACVQY:%pfvqy2%\Tnzrf\Zvarfjrrcre.yax
+  HRZR_EHACVQY:%pfvqy2%\Tnzrf\Vagrearg Fcnqrf.yax
+  HRZR_EHACVQY:%pfvqy2%\Tnzrf\Vagrearg Erirefv.yax
+  HRZR_EHACVQY:%pfvqy2%\Tnzrf\Vagrearg Urnegf.yax
+  HRZR_EHACVQY:%pfvqy2%\Tnzrf\Vagrearg Purpxref.yax
+  HRZR_EHACVQY:%pfvqy2%\Tnzrf\Vagrearg Onpxtnzzba.yax
+  HRZR_EHACVQY:%pfvqy2%\Tnzrf\Urnegf.yax
+  HRZR_EHACVQY:%pfvqy2%\Tnzrf\Serrpryy.yax
+  HRZR_EHACVQY:%pfvqy2%\Snore Gblf\Jvaqbjf Rkcybere.yax
+  HRZR_EHACVQY:%pfvqy2%\Snore Gblf\Cebtenz Nyvnfrf.yax
+  HRZR_EHACVQY:%pfvqy2%\Snore Gblf\Rknzvar Svyr.yax
+  HRZR_EHACVQY:%pfvqy2%\Snore Gblf\Qrcraqrapvrf.yax
+  HRZR_EHACVQY:%pfvqy2%\Snore Gblf\NhgbEha.yax
+  HRZR_EHACVQY:%pfvqy2%\Ntrag Arjfernqre\Ntrag.yax
+  HRZR_EHACVQY:%pfvqy2%\123 JNFC\123 JNFC.yax
+  HRZR_EHACVQY:%pfvqy2%\Ybbx@YNA
+  HRZR_EHACVQY:%pfvqy2%\Ybbx@YNA\Havafgnyy Ybbx@YNA.yax
+  HRZR_EHACVQY:%pfvqy2%\Ybbx@YNA\Ybbx@YNA.yax
+  HRZR_EHACVQY:%pfvqy2%\Ybbx@YNA\Ybbx@Ubfg.yax
+  HRZR_EHACVQY:%pfvqy2%\Argjbex Fghzoyre.yax
+
+----------------------------------------
+knowndev v.20200515
+(NTUSER.DAT) Gets user's KnownDevices key contents
+
+Software\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers\KnownDevices not found.
+----------------------------------------
+cached v.20200525
+(NTUSER.DAT) Gets cached Shell Extensions from NTUSER.DAT hive
+
+Software\Microsoft\Windows\CurrentVersion\Shell Extensions\Cached not found.
+----------------------------------------
+gpohist_tln v.
+(Software) Collects system/user GPO history (TLN)
+
+----------------------------------------
+msoffice v.20200518
+
+----------------------------------------
+----------------------------------------
+runmru v.20200525
+(NTUSER.DAT) Gets contents of user's RunMRU key
+
+RunMru
+Software\Microsoft\Windows\CurrentVersion\Explorer\RunMRU
+LastWrite Time 2004-08-26 15:05:15Z
+MRUList = dcba
+a   www.cnn.com\1
+b   cmd\1
+c   www.google.com\1
+d   telnet\1
+----------------------------------------
+pslogging v.20200515
+(NTUSER.DAT, Software) Extracts PowerShell logging settings
+
+Software\Policies\Microsoft\Windows\PowerShell not found.
+Policies\Microsoft\Windows\PowerShell not found.
+----------------------------------------
+disablemru v.20190924
+(NTUSER.DAT, Software) Checks settings disabling user's MRUs
+
+----------------------------------------
+jumplistdata v.20200517
+Gets contents of user's JumpListData key
+
+Software\Microsoft\Windows\CurrentVersion\Search\JumpListData not found.
+----------------------------------------
+----------------------------------------
+environment v.20200512
+(System, NTUSER.DAT) Get environment vars from NTUSER.DAT & System hives
+
+Environment
+LastWrite Time: 2004-08-19 23:04:06Z
+
+TEMP                      %USERPROFILE%\Local Settings\Temp                 
+TMP                       %USERPROFILE%\Local Settings\Temp                 
+----------------------------------------
+typedurls v.20200526
+(NTUSER.DAT) Returns contents of user's TypedURLs key.
+
+TypedURLs
+Software\Microsoft\Internet Explorer\TypedURLs
+LastWrite Time 2004-08-27 15:44:44Z
+  url1 -> http://www.maktoob.com/
+  url2 -> http://www.ethereal.com/
+  url3 -> http://www.wardriving.com/
+  url4 -> http://4.12.220.254/temp/
+  url5 -> ftp://4.12.220.254/temp
+  url6 -> ftp://4.12.220.254
+  url7 -> http://www.drudgereport.com/
+  url8 -> http://www.majorgeeks.com/
+  url9 -> http://www.yahoo.com/
+  url10 -> http://www.2600.org/
+  url11 -> http://www.microsoft.com/isapi/redir.dll?prd=ie&pver=6&ar=msnhome
+----------------------------------------
+allowedenum v.20200511
+(NTUSER.DAT, Software) Extracts AllowedEnumeration values to determine hidden special folders
+
+Software\Microsoft\Windows\CurrentVersion\Explorer\AllowedEnumeration not found.
+Microsoft\Windows\CurrentVersion\Explorer\AllowedEnumeration not found.
+----------------------------------------
+OSVersion value not found.
+----------------------------------------
+putty v.20200515
+(NTUSER.DAT) Extracts the saved SshHostKeys for PuTTY.
+
+Software\SimonTatham\PuTTY\SshHostKeys not found.
+
+----------------------------------------
+----------------------------------------
+----------------------------------------
+1093015287|REG|||{aa630441-f1ff-11d8-8a13-806d6172696f} Volume MP2 key LastWrite
+1092934138|REG|||{aa630441-f1ff-11d8-8a13-806d6172696f} Vol GUID date
+1092956698|REG|||{aa630442-f1ff-11d8-8a13-806d6172696f} Volume MP2 key LastWrite
+1092934138|REG|||{aa630442-f1ff-11d8-8a13-806d6172696f} Vol GUID date
+----------------------------------------
+winrar v.20200526
+(NTUSER.DAT) Get WinRAR\ArcHistory entries
+
+Software\WinRAR\ArcHistory not found.
+----------------------------------------
+identities v.20200525
+(NTUSER.DAT) Extracts values from Identities key; NTUSER.DAT
+
+Identities
+LastWrite Time 2004-08-20 21:13:24Z
+
+Identity Ordinal                         2                             
+Migrated5                                1                             
+Last Username                            Main Identity                 
+Last User ID                             {EF086998-1115-4ECD-9B13-9ADC067B4929}
+Default User ID                          {EF086998-1115-4ECD-9B13-9ADC067B4929}
+
+----------------------------------------
+muicache v.20200525
+(NTUSER.DAT,USRCLASS.DAT) Gets EXEs from user's MUICache key
+
+Software\Microsoft\Windows\ShellNoRoam\MUICache
+LastWrite Time 2004-08-27 15:46:13Z
+  C:\Program Files\Internet Explorer\iexplore.exe (Internet Explorer)
+  C:\Program Files\Cain\Cain.exe (Cain - Password Recovery Utility)
+  C:\Program Files\Ethereal\ethereal.exe (Ethereal)
+  C:\WINDOWS\notepad.exe (Notepad)
+  C:\WINDOWS\Explorer.EXE (Windows Explorer)
+Local Settings\Software\Microsoft\Windows\Shell\MUICache not found.
+----------------------------------------
+wc_shares v.20200515
+- Gets contents of user's WorkgroupCrawler/Shares subkeys
+
+ANDREWS-1/A [2004-08-26 16:03:45Z]
+  Filename        = a on Andrews-1
+  DateLastVisited = 2004-08-26 16:03:45Z
+
+ANDREWS-1/ANDREWS (C) [2004-08-26 16:03:45Z]
+  Filename        = andrews (c) on Andrews-1
+  DateLastVisited = 2004-08-26 16:03:45Z
+
+ANDREWS-1/CD Drive (F) [2004-08-26 16:03:45Z]
+  Filename        = CD Drive (F) on Andrews-1
+  DateLastVisited = 2004-08-26 16:03:45Z
+
+ANDREWS-1/D [2004-08-26 16:03:45Z]
+  Filename        = d on Andrews-1
+  DateLastVisited = 2004-08-26 16:03:45Z
+
+ANDREWS-1/E [2004-08-26 16:03:45Z]
+  Filename        = e on Andrews-1
+  DateLastVisited = 2004-08-26 16:03:45Z
+
+N-1A9ODN6ZXK4LQ/Temp [2004-08-26 16:03:45Z]
+  Filename        = Temp on N-1a9odn6zxk4lq
+  DateLastVisited = 2004-08-26 16:03:45Z
+
+----------------------------------------
+injectdll64 v.20200427
+(NTUSER.DAT, Software) Retrieve values set to weaken Chrome security
+
+Software\Policies\Google\Chrome\CertificateTransparencyEnforcementDisabledForUrls not found.
+Policies\Google\Chrome\CertificateTransparencyEnforcementDisabledForUrls not found.
+----------------------------------------
+[-] SOFTWARE\HeidiSQL not found.
+[-] SOFTWARE\HeidiSQL\Servers not found.
+
+----------------------------------------
+shc v.20200427
+(NTUSER.DAT) Gets SHC entries from user hive
+
+Software\Microsoft\Windows\CurrentVersion\UFH\SHC not found.
+----------------------------------------
+----------------------------------------
+mixer v.20200517
+(NTUSER.DAT) Checks user's audio mixer settings
+
+----------------------------------------
+OSVersion
+Software\Microsoft
+LastWrite Time 2004-08-26 15:05:16Z
+
+OSVersion value not found.
+----------------------------------------
+outlookhomepage v.20201002
+(NTUSER.DAT, Software) Retrieve values set to attack Outlook WebView Homepage
+
+Looking for webview homepage modifications. If this value is pointing
+to a URL outside the corporate domain it may be a malicious site.
+
+Looking for key values associated with security.
+If you see:
+[Example]  EnableRoamingFolderHomepages : 1
+[Example]  NonDefaultStoreScript : 1
+[Example]  EnableUnsafeClientMailRules : 1
+You may have a security vulnerability that allows attackers to hijack the URL
+
+----------------------------------------
+appx v.20200427
+(NTUSER.DAT, USRCLASS.DAT) Checks for persistence via Universal Windows Platform Apps
+
+----------------------------------------
+----------------------------------------
+----------------------------------------
+cached_tln v.20150608
+(NTUSER.DAT) Gets cached Shell Extensions from NTUSER.DAT hive (TLN)
+
+Software\Microsoft\Windows\CurrentVersion\Shell Extensions\Cached not found.
+----------------------------------------
+----------------------------------------
+listsoft v.20200517
+(NTUSER.DAT) Lists contents of user's Software key
+
+List the contents of the Software key in the NTUSER.DAT hive
+file, in order by LastWrite time.
+
+2004-08-27 15:12:36Z 	Bogosoft
+2004-08-26 15:05:16Z 	Microsoft
+2004-08-25 16:18:37Z 	Cain
+2004-08-25 15:56:25Z 	Borland
+2004-08-20 19:45:44Z 	Forte
+2004-08-20 15:24:49Z 	mIRC
+2004-08-20 15:10:48Z 	AnalogX
+2004-08-20 15:09:02Z 	GlobalSCAPE
+2004-08-19 23:04:06Z 	Intel
+2004-08-19 23:04:06Z 	Netscape
+2004-08-19 23:04:06Z 	Policies
+----------------------------------------

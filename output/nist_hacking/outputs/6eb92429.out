@@ -1,0 +1,11 @@
+muicache v.20200525
+(NTUSER.DAT,USRCLASS.DAT) Gets EXEs from user's MUICache key
+
+Software\Microsoft\Windows\ShellNoRoam\MUICache
+LastWrite Time 2004-08-27 15:46:13Z
+  C:\Program Files\Internet Explorer\iexplore.exe (Internet Explorer)
+  C:\Program Files\Cain\Cain.exe (Cain - Password Recovery Utility)
+  C:\Program Files\Ethereal\ethereal.exe (Ethereal)
+  C:\WINDOWS\notepad.exe (Notepad)
+  C:\WINDOWS\Explorer.EXE (Windows Explorer)
+Local Settings\Software\Microsoft\Windows\Shell\MUICache not found.

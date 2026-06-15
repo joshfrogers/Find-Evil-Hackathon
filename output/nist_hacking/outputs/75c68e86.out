@@ -1,0 +1,34 @@
+MFT Entry Header Values:
+Entry: 5        Sequence: 5
+$LogFile Sequence Number: 38008078
+Allocated Directory
+Links: 1
+
+$STANDARD_INFORMATION Attribute Values:
+Flags: Hidden, System, Archive
+Owner ID: 0
+Security ID: 0  ()
+Created:	2004-08-19 16:57:43.694987200 (UTC)
+File Modified:	2004-08-26 15:46:18.490958400 (UTC)
+MFT Modified:	2004-08-27 15:08:18.937950400 (UTC)
+Accessed:	2004-08-27 15:08:05.969302400 (UTC)
+
+$FILE_NAME Attribute Values:
+Flags: Directory, Hidden, System
+Name: .
+Parent MFT Entry: 5 	Sequence: 5
+Allocated Size: 0   	Actual Size: 0
+Created:	2004-08-19 16:57:43.694987200 (UTC)
+File Modified:	2004-08-19 16:57:43.694987200 (UTC)
+MFT Modified:	2004-08-19 16:57:43.694987200 (UTC)
+Accessed:	2004-08-19 16:57:43.694987200 (UTC)
+
+Attributes: 
+Type: $STANDARD_INFORMATION (16-0)   Name: N/A   Resident   size: 48
+Type: $FILE_NAME (48-1)   Name: N/A   Resident   size: 68
+Type: $SECURITY_DESCRIPTOR (80-2)   Name: N/A   Resident   size: 284
+Type: $INDEX_ROOT (144-21)   Name: $I30   Resident   size: 168
+Type: $INDEX_ALLOCATION (160-23)   Name: $I30   Non-Resident   size: 8192  init_size: 8192
+4883210 4883211 4883212 4883213 4883214 4883215 4883216 4883217 
+4883218 4883219 4883220 4883221 4883222 4883223 4883224 4883225 
+Type: $BITMAP (176-22)   Name: $I30   Resident   size: 8

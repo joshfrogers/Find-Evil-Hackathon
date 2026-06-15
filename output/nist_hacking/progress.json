@@ -1,0 +1,395 @@
+{
+  "investigation_id": "inv-e8a6ec7b",
+  "evidence_path": "/cases/evidence/4Dell Latitude CPi.E01",
+  "evidence_type": "disk",
+  "started_at": "2026-06-15T03:35:58Z",
+  "hypotheses": [
+    {
+      "id": "H1",
+      "description": "The system was a Windows 98 machine that was later upgraded or migrated to Windows XP (NTFS), leaving behind dual-OS artifacts. The investigation should establish the true OS history and what data persisted across the transition.",
+      "status": "contested",
+      "evidence_for": [
+        "Dual-OS artifacts present: root contains both Windows 98 era files (IO.SYS, MSDOS.SYS, MSDOS.---, SYSTEM.1ST, SUHDLOG.DAT, DETLOG.TXT, NETLOG.TXT, SETUPLOG.TXT, FRUNLOG.TXT, VIDEOROM.BIN, a WIN98 directory) AND Windows XP files (ntldr, ntdetect.com, WINDOWS, Documents and Settings). This is consistent with a Windows 98 machine later upgraded/migrated to Windows XP on NTFS.",
+        "BOOTSECT.DOS present at the volume root \u2014 this file is created by the Windows NT/XP setup process when installing over an existing DOS/Win9x system, preserving the original boot sector. Its presence is strong corroboration that XP was installed onto a system that previously booted DOS/Windows 98.",
+        "User profile 'Mr. Evil' exists under Documents and Settings, indicating a Windows XP-style user profile that persisted on the system. This is the primary interactive user account.",
+        "The filesystem contains a Windows XP 'Documents and Settings' profile tree with Application Data structures (Microsoft Crypto RSA/DSS MachineKeys, Dr Watson crash logs drwtsn32.log and user.dmp, Media Index wmplibrary_v_0_12.db), all characteristic of Windows XP rather than Windows 98."
+      ],
+      "evidence_against": [
+        "The active filesystem on the disk is NTFS, version 'Windows XP', with Volume Serial Number B26CB1CE6CB18D9B, sector size 512, cluster size 512. This confirms the current OS is Windows XP on NTFS (not the FAT filesystem a Windows 98 install would use).",
+        "The active filesystem on the analyzed volume (sector offset 63) is NTFS, OEM/version string 'Windows XP', Volume Serial Number B26CB1CE6CB18D9B. This confirms the volume is an NTFS filesystem created by Windows XP.",
+        "Root of the volume contains BOTH Windows 9x boot artifacts (IO.SYS, MSDOS.SYS, SUHDLOG.DAT, SYSTEM.1ST, DETLOG.TXT, NETLOG.TXT, SETUPLOG.TXT, a WIN98 directory) AND Windows XP/NT boot artifacts (ntldr, ntdetect.com, pagefile.sys, hiberfil.sys, WINDOWS directory, Documents and Settings). The coexistence of Win98 and WinXP system files on a single NTFS volume supports the dual-OS / migration hypothesis.",
+        "The active filesystem is NTFS, OEM 'NTFS', Version 'Windows XP', Volume Serial Number B26CB1CE6CB18D9B. The presence of XP boot files (ntldr, ntdetect.com, hiberfil.sys, pagefile.sys, WINDOWS dir, Documents and Settings) confirms the system was running Windows XP at acquisition.",
+        "Active filesystem on the volume (partition offset 63) is NTFS, version Windows XP. Volume serial number B26CB1CE6CB18D9B. This establishes the current OS as Windows XP on an NTFS filesystem.",
+        "Windows XP boot loader and NTFS structures are present at the volume root: ntldr, ntdetect.com, boot.ini, hiberfil.sys, pagefile.sys, RECYCLER, System Volume Information, and a WINDOWS directory. These are characteristic of an active Windows XP/NT installation.",
+        "The analyzed volume (sector offset 63) is an NTFS filesystem identified as 'Windows XP' in the $Volume/boot record. Volume Serial Number B26CB1CE6CB18D9B, 512-byte sectors and clusters, MFT range 0-12305. This confirms the live OS at imaging time was Windows XP on NTFS, not Windows 98 (FAT)."
+      ],
+      "formed_at": "2026-06-15T03:36:12Z",
+      "resolved_at": "",
+      "followup_spawned": true
+    },
+    {
+      "id": "H2",
+      "description": "User activity and document handling occurred on the XP install; relevant files (and potentially deleted/recycled ones) reside under Documents and Settings, My Documents, RECYCLER, and Temp and should be examined for the case-relevant actions.",
+      "status": "contested",
+      "evidence_for": [
+        "The provided tool outputs are all from the SIFT analysis workstation itself (hostname 'siftworkstation'), not from the subject XP install. netstat shows live network connections of the analyst host, not artifacts from any disk image. None of the hypothesized paths (Documents and Settings, My Documents, RECYCLER, Temp) were examined by these tools.",
+        "Active SSH session into the SIFT workstation from 192.168.182.1 (source port 63149) \u2014 the analyst's remote management connection, not subject activity.",
+        "Numerous outbound HTTPS connections from the SIFT workstation to 160.79.104.10 (many TIME_WAIT/ESTABLISHED/SYN_SENT) \u2014 activity of the analysis host, unrelated to subject XP artifacts.",
+        "SIFT workstation listening services: SMB (microsoft-ds/445), NetBIOS-ssn (139), SSH (22), CUPS/IPP (631), HTTP (tcp6), local DNS proxy/stub (53), and UDP 2055 (NetFlow). These are analysis-host services, not subject-system findings.",
+        "'My Documents' contains a structured collection of hacking-related folders: ARCHIVE, COMMANDS, DICTIONARIES, ENUMERATION, EXPLOITATION, FOOTPRINTING, MISCELLANEOUS, NOVELL \u2014 consistent with attacker tooling and password-cracking material.",
+        "Program Files contains numerous security/hacking and network tools: Cain, Ethereal, Network Stumbler, WinPcap, Whois, Look@LAN, Anonymizer, 123WASP, Faber Toys, mIRC \u2014 indicating use of sniffing, password-recovery, and network reconnaissance utilities.",
+        "IE browsing history directories under Mr. Evil's profile span dated ranges in August 2004 (MSHist012004081620040823, MSHist012004082520040826, MSHist012004082620040827), bounding the period of user web activity.",
+        "Mr. Evil Local Settings Temp contains 'Temporary Directory 1 for powertoysetup.zip', showing an archive (powertoysetup.zip) was opened/extracted from the user's temp folder.",
+        "Mr. Evil NetHood contains mapped network places referencing remote host 'Andrews-1' (shares a, andrews (c), CD Drive (F), d, e), host 'N-1a9odn6zxk4lq', and a Temp share on 'm1200' at IP 4.12.220.254 \u2014 evidence of network shares accessed by the user.",
+        "Mr. Evil Start Menu Programs lists installed/hacker-relevant applications including '123 WASP', 'Agent Newsreader', and 'Anonymizer Toolbar', indicating tools relevant to the case were installed under this user.",
+        "Mr. Evil profile contains a Desktop/Tools folder, indicating a collection of tools placed on the user's desktop for examination."
+      ],
+      "evidence_against": [
+        "Analysis host network identity: hostname 'siftworkstation' on subnet 192.168.182.0/24 (interface ens33). DHCP exchange observed: local bootpc (DHCP client) connected to DHCP/bootps server at 192.168.182.254.",
+        "RECYCLER folder contains a per-user recycle bin keyed to SID S-1-5-21-2000478354-688789844-1708537768-1003, indicating deleted-file activity tied to that account.",
+        "Mr. Evil profile shows network sniffer usage: Application Data\\Ethereal present, plus Outlook Express identity, IE history, cookies, and a Desktop\\Tools folder \u2014 evidence of email, web browsing, and tool staging activity.",
+        "Standard XP per-user document and activity folders (My Documents, My Music, My Pictures, Recent, Cookies, Favorites) are present under the Mr. Evil profile and should be examined for case-relevant documents."
+      ],
+      "formed_at": "2026-06-15T03:36:12Z",
+      "resolved_at": "",
+      "followup_spawned": true
+    },
+    {
+      "id": "H3",
+      "description": "Files were deleted or hidden on the volume and may be recoverable; some entries already appear unallocated/orphaned and warrant deep-dive recovery.",
+      "status": "contested",
+      "evidence_for": [
+        "Subject volume is an NTFS filesystem (Windows XP version) with Volume Serial Number B26CB1CE6CB18D9B, sector/cluster size 512 bytes, MFT range 0-12305. Confirms the volume supports MFT-based deleted-file recovery.",
+        "Multiple deleted/unallocated files exist under 'Documents and Settings/Default User/' (MPC*.tmp series). Several have non-zero MFT inodes (e.g. 6366-6372, 6386-6392, 6408-6413) and are recoverable; others (inode 0, e.g. MPC7A4.tmp, MPC7A5.tmp, MPC7B8.tmp, MPC7CC.tmp) are orphaned with reallocated MFT entries and are not directly recoverable by inode. This confirms the hypothesis that deleted files are present and partly recoverable.",
+        "The subject system is a Windows installation using the legacy 'Documents and Settings' profile structure (Windows XP/2000 era), consistent with the image name 'Dell Latitude CPi'. Profile directories 'All Users' and 'Default User' are present, along with Dr Watson crash dumps (drwtsn32.log, user.dmp) and Windows Media Player library (wmplibrary_v_0_12.db).",
+        "Recursive fls listing confirms an active NTFS filesystem (offset 63) with a Windows XP-style 'Documents and Settings' tree, including a user profile named 'Mr. Evil', confirming the volume is browsable and contains user data.",
+        "A deleted directory entry was found under the LocalService profile's Temporary Internet Files cache: 'Content.IE5/TFR9CXUT', indicating deleted browser cache content that may warrant deep-dive recovery.",
+        "Standard system application-data files are present and allocated, including Dr Watson crash logs (drwtsn32.log, user.dmp), Windows Media Player library (wmplibrary_v_0_12.db), and RAS phonebook (rasphone.pbk, sharedaccess.ini) \u2014 potential sources of further account/network data.",
+        "Subject volume is an NTFS filesystem (Windows XP) with 512-byte sectors/clusters, Volume Serial Number B26CB1CE6CB18D9B, MFT entry range 0-12305. Confirms a single-volume NTFS partition at sector offset 63 suitable for deleted-file recovery analysis."
+      ],
+      "evidence_against": [
+        "Deleted file entries also exist under the 'Mr. Evil' user profile (output truncated at 'Documents and Settings/Mr. Evil/Local Settings/Tem...'), indicating deleted artifacts within the primary user-of-interest's profile that warrant targeted recovery.",
+        "The recovered script (inode 6366) declares a 'remoteServer' variable ('var remoteServer;//local if not set'), indicating the utility can operate against a remote server when configured \u2014 relevant for understanding intended network behavior of the deleted artifact."
+      ],
+      "formed_at": "2026-06-15T03:36:12Z",
+      "resolved_at": "",
+      "followup_spawned": true
+    },
+    {
+      "id": "H-7d7b1bba",
+      "description": "Resolve the conflict in H1 (The system was a Windows 98 machine that was later upgraded or migrated to Windows XP (NTFS), leaving behind dual-OS artifacts. The investigation should establish the true OS history and what data persisted across the transition.): reconcile support [Dual-OS artifacts present: root contains both Windows 98 era files (IO.SYS, MSDOS.SYS, MSDOS.---, SYSTEM.1ST, SUHDLOG.DAT, DETLOG.TXT, NETLOG.TXT, SETUPLOG.TXT, FRUNLOG.TXT, VIDEOROM.BIN, a WIN98 directory) AND Windows XP files (ntldr, ntdetect.com, WINDOWS, Documents and Settings). This is consistent with a Windows 98 machine later upgraded/migrated to Windows XP on NTFS.] against refutation [The active filesystem on the disk is NTFS, version 'Windows XP', with Volume Serial Number B26CB1CE6CB18D9B, sector size 512, cluster size 512. This confirms the current OS is Windows XP on NTFS (not the FAT filesystem a Windows 98 install would use).] with targeted, corroborating evidence.",
+      "status": "contested",
+      "evidence_for": [
+        "The NTFS root/Documents and Settings tree contains a standard Windows XP profile layout (All Users, Application Data, Microsoft Crypto/DSS/RSA MachineKeys, User Account Pictures default bitmaps), confirming a fully provisioned Windows XP installation on the current NTFS volume.",
+        "Active/current operating system is Windows XP installed on an NTFS filesystem. fsstat reports File System Type NTFS, Version 'Windows XP', Volume Serial Number B26CB1CE6CB18D9B, sector size 512, cluster size 512. boot.ini lists a single OS entry: multi(0)disk(0)rdisk(0)partition(1)\\WINDOWS='Microsoft Windows XP Professional' /fastdetect. This confirms the current OS is Windows XP/NTFS, not FAT.",
+        "MSDOS.SYS confirms a genuine prior Windows 98 installation: it specifies WinDir=C:\\WINDOWS, WinBootDir=C:\\WINDOWS, BootMulti=1, BootGUI=1, AutoScan=1, and WinVer=4.10.2222 \u2014 the Windows 98 Second Edition (98 SE) version string. This is authentic Win98 configuration content, not a placeholder, establishing the machine previously ran Windows 98 SE.",
+        "Active filesystem on partition (offset 63) is NTFS, OEM 'NTFS', Version 'Windows XP', Volume Serial Number B26CB1CE6CB18D9B, sector size 512, cluster size 512. The current/active operating system on this disk is Windows XP installed on NTFS, not the FAT filesystem that a native Windows 98 install would use.",
+        "Root directory of the single NTFS volume contains BOTH Windows 98-era files (IO.SYS, MSDOS.SYS, MSDOS.---, SYSTEM.1ST, SUHDLOG.DAT, DETLOG.TXT, NETLOG.TXT, SETUPLOG.TXT, FRUNLOG.TXT, BOOTLOG.TXT, BOOTLOG.PRV, COMMAND.COM, AUTOEXEC.BAT, CONFIG.SYS, VIDEOROM.BIN, BOOTSECT.DOS, a WIN98 directory) AND Windows XP files (ntldr, ntdetect.com, boot.ini, WINDOWS, Documents and Settings, RECYCLER, System Volume Information). All co-reside on the same NTFS filesystem, so the Win98 artifacts persisted onto the XP NTFS volume rather than living on a separate FAT partition.",
+        "boot.ini contains only a single Windows XP boot entry: default multi(0)disk(0)rdisk(0)partition(1)\\WINDOWS = 'Microsoft Windows XP Professional' /fastdetect, with no DOS/Win98 multi-boot entry. This shows the boot loader was reconfigured purely for XP; the Win98 boot files are residual, not part of an active dual-boot menu.",
+        "SETUPLOG.TXT records the original Windows 98 install: 'Windows 98 Second Edition CD-ROM', InstallType=1, InstallDir=C:\\WINDOWS, source path C:\\WIN98 (CmdLine /SrcDir=C:\\WIN98), with destination map placing WIN98 at C:\\WIN98 and the OS into C:\\WINDOWS. Confirms the machine was originally a Windows 98 SE installation.",
+        "MSDOS.SYS confirms Windows 98 SE configuration: [Paths] WinDir=C:\\WINDOWS, WinBootDir=C:\\WINDOWS, HostWinBootDrv=C; [Options] BootMulti=1, BootGUI=1, WinVer=4.10.2222 (Windows 98 Second Edition build). Establishes the prior OS version on the disk.",
+        "DETLOG.TXT system detection was run on 08/18/04 16:47:01 (SDMVer=040a.2222, WinVer=070a040a, Build=04.0a.2222) detecting legacy Dell Latitude CPi hardware (Intel 8086/7190 PCI host bridge, NeoMagic/PCI video VEN_10C8, TI CardBus VEN_104C, PNP BIOS). This 2004 Win98-format detection log shows Win98 setup detection activity occurred in August 2004, contemporaneous with the XP migration timeframe.",
+        "ntldr (MFT entry 3662, the XP boot loader) has Created/Modified timestamps of 2001-08-23 18:00:00 UTC (the canonical Windows XP RTM file date) and MFT Modified 2004-08-19 17:02:11 UTC. The XP loader files were placed on the volume in August 2004, the same window as the IO.SYS MFT re-stamp, dating the Win98->XP transition to ~2004-08-19.",
+        "SETUPLOG.TXT is a Windows 98 Setup log; its [OptionalComponents] section enumerates Windows 98-specific components (e.g. 'Drive Converter (FAT32)', 'Web TV for Windows', 'WaveTop Data Broadcasting', 'Windows 98', 'Microsoft Chat 2.5', America Online/CompuServe/Prodigy online services). These component names are exclusive to Windows 98 Setup, corroborating that Windows 98 was previously installed on this machine.",
+        "The WINDOWS directory (inode 458) contains a standard Windows XP installation tree (PCHEALTH/HELPCTR Help Center binaries HelpCtr.exe/HelpHost.exe/HelpSvc.exe/msconfig.exe, ODBCINST.INI, OEWABLog.txt, ntdtcsetup.log, msmqinst.log), confirming a full Windows XP OS is installed in the WINDOWS folder referenced by boot.ini."
+      ],
+      "evidence_against": [
+        "The active filesystem on the disk is NTFS labelled Version 'Windows XP', Volume Serial Number B26CB1CE6CB18D9B, sector size 512, cluster size 512, MFT range 0-12305. This confirms the CURRENT operating system is Windows XP installed on NTFS, not the FAT used by a native Windows 98 install.",
+        "Dual-OS artifacts coexist on the single NTFS volume: Windows 98-era boot/setup files (IO.SYS, MSDOS.SYS, MSDOS.---, COMMAND.COM, SYSTEM.1ST, SUHDLOG.DAT, DETLOG.TXT, NETLOG.TXT, SETUPLOG.TXT, FRUNLOG.TXT, BOOTLOG.TXT, BOOTLOG.PRV, VIDEOROM.BIN, AUTOEXEC.BAT, CONFIG.SYS, a WIN98 directory, and a BOOTSECT.DOS) are present in the NTFS root alongside Windows XP files (ntldr inode 3662, ntdetect.com inode 3663, boot.ini, WINDOWS directory inode 458, 'Documents and Settings' inode 3671). The presence of BOOTSECT.DOS plus both boot loaders indicates a system that booted Win98 (DOS) prior to the XP/NTFS install.",
+        "SETUPLOG.TXT is a Windows 98 setup log (OptionalComponents include 'Windows 98', 'Drive Converter (FAT32)', 'Outlook Express', 'NetMeeting', 'Web TV for Windows'), corroborating that Windows 98 setup ran on this hardware before the later Windows XP/NTFS migration.",
+        "IO.SYS (MFT entry 133) carries Windows 98-era $STANDARD_INFORMATION and $FILE_NAME Created/Modified timestamps of 1999-04-23 22:22:00 UTC, but MFT Modified is 2004-08-19 17:02:21 UTC. The 1999 content dates predate the disk's NTFS/XP install, while the 2004 MFT-modified date marks when the file was written/re-stamped onto the NTFS volume \u2014 i.e. Win98 files were carried forward onto the XP NTFS filesystem during a 2004 migration.",
+        "OS-history reconciliation: the disk is a single NTFS (Windows XP) volume that ALSO contains Windows 98 SE artifacts. Combining the boot.ini (XP-only loader), the Win98 SETUPLOG/MSDOS.SYS (original Win98 SE install to C:\\WINDOWS), and the MFT timestamps (Win98 IO.SYS content dated 1999 but MFT-modified 2004-08-19, XP ntldr placed 2004-08-19), the evidence is consistent with a system originally running Windows 98 SE that was upgraded/migrated to Windows XP on NTFS around 2004-08-19, leaving residual Win98 files on the XP volume. The refutation (NTFS = current XP) and support (dual-OS artifacts) are thus reconciled: XP is the current OS, Win98 is the prior OS that persisted as legacy files.",
+        "Active filesystem on the disk is NTFS, OEM 'NTFS', Version 'Windows XP', Volume Serial Number B26CB1CE6CB18D9B, sector size 512, cluster size 512. The current/active operating system is Windows XP on NTFS \u2014 not the FAT filesystem a native Windows 98 install would use. This confirms the refutation: the live OS is Windows XP.",
+        "Root of the NTFS volume simultaneously contains Windows XP boot files (ntldr inode 3662, ntdetect.com inode 3663, boot.ini inode 3664, WINDOWS directory inode 458, 'Documents and Settings' inode 3671) AND Windows 98-era files (IO.SYS, MSDOS.SYS, MSDOS.---, SYSTEM.1ST, SUHDLOG.DAT, DETLOG.TXT, NETLOG.TXT, SETUPLOG.TXT, FRUNLOG.TXT, VIDEOROM.BIN, COMMAND.COM, BOOTLOG.TXT/PRV, BOOTSECT.DOS, CONFIG.SYS, AUTOEXEC.BAT, and a WIN98 directory inode 17). The coexistence of both OS file sets on one NTFS volume is consistent with a Windows 98 system later upgraded/migrated to Windows XP, with legacy files persisting across the transition.",
+        "boot.ini (NTLDR boot menu) declares a single boot entry: multi(0)disk(0)rdisk(0)partition(1)\\WINDOWS=\"Microsoft Windows XP Professional\" /fastdetect. The active boot configuration loads only Windows XP Professional \u2014 confirming Windows XP is the operative OS while the Win98 artifacts are residual, not a dual-boot configuration.",
+        "The active filesystem on the disk is NTFS with version string 'Windows XP', confirming the current operating system is Windows XP on NTFS. Volume Serial Number B26CB1CE6CB18D9B, sector size 512, cluster size 512, MFT range 0-12305. This is the live filesystem, not the FAT filesystem a native Windows 98 install would use.",
+        "Windows 98-era boot and setup artifacts (IO.SYS, MSDOS.SYS, SYSTEM.1ST, DETLOG.TXT, SETUPLOG.TXT) coexist on the root of the NTFS volume alongside Windows XP boot files (ntldr, ntdetect.com). The presence of legacy Win98 files as ordinary files retained on an NTFS volume\u2014rather than on a FAT volume\u2014indicates these are residual/migrated artifacts carried over onto the Windows XP install, not an active Win98 filesystem.",
+        "A duplicate setuplog.txt exists inside the WINDOWS directory (WINDOWS/setuplog.txt) in addition to the root-level SETUPLOG.TXT, consistent with a Windows XP setup process that recorded its own install log while the legacy Win98 root-level log persisted, supporting an upgrade/migration scenario rather than two independent OS volumes.",
+        "The NTFS volume contains a standard Windows XP directory structure including 'Documents and Settings', 'Documents and Settings/All Users/Application Data/Microsoft' subtree (Crypto, Dr Watson, HTML Help, Media Index, Network/Connections, User Account Pictures). The Dr Watson crash dump (user.dmp, drwtsn32.log) and Windows Media Player library (wmplibrary_v_0_12.db) confirm active Windows XP usage on the NTFS filesystem."
+      ],
+      "formed_at": "2026-06-15T03:41:59Z",
+      "resolved_at": "",
+      "followup_spawned": true
+    },
+    {
+      "id": "H-d5d9e29c",
+      "description": "Resolve the conflict in H2 (User activity and document handling occurred on the XP install; relevant files (and potentially deleted/recycled ones) reside under Documents and Settings, My Documents, RECYCLER, and Temp and should be examined for the case-relevant actions.): reconcile support [The provided tool outputs are all from the SIFT analysis workstation itself (hostname 'siftworkstation'), not from the subject XP install. netstat shows live network connections of the analyst host, not artifacts from any disk image. None of the hypothesized paths (Documents and Settings, My Documents, RECYCLER, Temp) were examined by these tools.] against refutation [Analysis host network identity: hostname 'siftworkstation' on subnet 192.168.182.0/24 (interface ens33). DHCP exchange observed: local bootpc (DHCP client) connected to DHCP/bootps server at 192.168.182.254.] with targeted, corroborating evidence.",
+      "status": "contested",
+      "evidence_for": [
+        "The mounted evidence is the subject Windows XP install, NOT the SIFT analysis workstation. The filesystem root contains XP system files (IO.SYS, MSDOS.SYS, hiberfil.sys) and the XP profile structure 'Documents and Settings' with a user profile 'Mr. Evil'. This refutes the claim that prior outputs reflected only the analyst host; the hypothesized paths (Documents and Settings, My Documents) do exist on the subject disk image.",
+        "User account/profile 'Mr. Evil' exists on the subject XP system (Documents and Settings/Mr. Evil). Additional standard XP profiles present: All Users, Default User, LocalService, NetworkService.",
+        "A top-level 'My Documents' folder on the subject disk contains hacking-tool categorized subdirectories: ARCHIVE, COMMANDS, DICTIONARIES, ENUMERATION, EXPLOITATION, FOOTPRINTING, MISCELLANEOUS \u2014 indicating document handling / hacking tool organization occurred on the XP install, supporting H2.",
+        "Subject system carries an 'All Users' all-profiles directory under Documents and Settings (inode 3673-144-7), with Application Data tree including Microsoft Crypto, Network/Connections, Dr Watson, Media Index and User Account Pictures subtrees \u2014 typical of a Windows XP profile layout.",
+        "Dr Watson crash artifacts present on the subject system: drwtsn32.log (inode 10979-128-3) and user.dmp (inode 10980-128-3) under All Users/Application Data/Microsoft/Dr Watson, indicating at least one application crash was recorded.",
+        "Windows Media Player library database present (wmplibrary_v_0_12.db, inode 6074-128-5) under All Users/Application Data/Microsoft/Media Index, indicating media playback/indexing activity on the subject XP install.",
+        "The disk image at /cases/evidence/4Dell Latitude CPi.E01 (Dell Latitude CPi) is the SUBJECT system, distinct from the SIFT analysis host. Its NTFS root volume at sector offset 63 contains all the hypothesized user-activity/document-handling paths: 'Documents and Settings' (inode 3671), 'My Documents' (inode 330), 'RECYCLER' (inode 11736), and 'Temp' (inode 10519), plus a WINDOWS directory and Win9x boot artifacts (IO.SYS, MSDOS.SYS, COMMAND.COM, WIN98). This refutes the claim that no subject-disk paths were examined: they are present and examinable on the image.",
+        "fls recursive listing of the subject disk image '/cases/evidence/4Dell Latitude CPi.E01' (partition offset 63) confirms a Windows XP filesystem rooted at 'Documents and Settings', directly proving these tool outputs derive from the subject XP image and NOT from the SIFT analysis host. This reconciles the H2 conflict: the analysis host network identity (siftworkstation/DHCP) was unrelated background, and the actual case-relevant XP directory structure exists in the evidence image."
+      ],
+      "evidence_against": [
+        "Windows Dr Watson crash-handler artifacts present on the subject XP install: drwtsn32.log (inode 10979) and user.dmp (inode 10980) under Documents and Settings/All Users/Application Data/Microsoft/Dr Watson, indicating at least one application crash was recorded on the subject system.",
+        "RAS/dial-up networking configuration present on the subject system: rasphone.pbk (inode 10982-128-1) and sharedaccess.ini (inode 4765-128-4) under All Users/Application Data/Microsoft/Network/Connections/Pbk, indicating dial-up/Internet Connection Sharing configuration existed on the XP install.",
+        "Subject image contains a RECYCLER directory (MFT inode 11736) at the NTFS volume root, the standard Windows Recycle Bin store where deleted/recycled documents reside \u2014 directly supporting the H2 hypothesis that deleted/recycled case-relevant files should be examined."
+      ],
+      "formed_at": "2026-06-15T03:41:59Z",
+      "resolved_at": "",
+      "followup_spawned": true
+    },
+    {
+      "id": "H-0755779a",
+      "description": "Resolve the conflict in H3 (Files were deleted or hidden on the volume and may be recoverable; some entries already appear unallocated/orphaned and warrant deep-dive recovery.): reconcile support [Subject volume is an NTFS filesystem (Windows XP version) with Volume Serial Number B26CB1CE6CB18D9B, sector/cluster size 512 bytes, MFT range 0-12305. Confirms the volume supports MFT-based deleted-file recovery.] against refutation [Deleted file entries also exist under the 'Mr. Evil' user profile (output truncated at 'Documents and Settings/Mr. Evil/Local Settings/Tem...'), indicating deleted artifacts within the primary user-of-interest's profile that warrant targeted recovery.] with targeted, corroborating evidence.",
+      "status": "contested",
+      "evidence_for": [
+        "Subject volume is an NTFS filesystem (Windows XP version) with Volume Serial Number B26CB1CE6CB18D9B, sector size 512 bytes, cluster size 512 bytes, MFT entry size 1024 bytes, and MFT entry range 0-12305. This confirms the volume uses an MFT that supports recovery of deleted file metadata and content.",
+        "Subject volume is an NTFS filesystem formatted under Windows XP, with Volume Serial Number B26CB1CE6CB18D9B. Sector size and cluster size are both 512 bytes. MFT entry size is 1024 bytes, first MFT cluster at 2097152, MFT mirror at 4755208, and the MFT entry range is 0-12305. The volume supports MFT-based deleted-file recovery.",
+        "A deleted directory entry exists under the LocalService profile: 'Documents and Settings/LocalService/Local Settings/Temporary Internet Files/Content.IE5/TFR9CXUT' flagged deleted with inode 0 (d/- * 0), indicating an unallocated/orphaned IE cache directory that is not directly inode-recoverable.",
+        "Subject volume confirmed as NTFS (Windows XP version) with Volume Serial Number B26CB1CE6CB18D9B, 512-byte sectors and clusters, MFT entry size 1024 bytes, MFT range 0-12305. This confirms the volume retains an intact MFT and therefore supports MFT-based deleted-file recovery.",
+        "Recursive fls listing confirms a Windows XP profile layout under 'Documents and Settings' (All Users, Default User, LocalService, Mr. Evil), establishing the user-of-interest profile 'Mr. Evil' exists on the volume.",
+        "Subject volume is an NTFS filesystem (Windows XP version) with Volume Serial Number B26CB1CE6CB18D9B, sector size 512 bytes and cluster size 512 bytes, MFT entry size 1024 bytes, MFT range 0-12305. The presence of an intact $MFT and standard NTFS metadata attributes confirms the volume supports MFT-based deleted-file recovery (deleted entries retain their MFT records and runlists until overwritten)."
+      ],
+      "evidence_against": [
+        "fls -rd enumeration confirms numerous deleted file entries on the volume. Multiple deleted entries in Documents and Settings/Default User/ retain valid non-zero MFT inode addresses (e.g. inodes 6366-6413 for MPC7A6.tmp through MPC7D3.tmp), meaning their metadata is intact and content is recoverable via icat. Entries with inode 0 (e.g. MPC7A4.tmp) have had their MFT entry reallocated/overwritten and are only recoverable via carving. This reconciles H3: the volume supports MFT-based recovery and many orphaned/unallocated entries remain recoverable.",
+        "Deleted (orphaned/unallocated) file entry exists under the 'Mr. Evil' user profile: 'Documents and Settings/Mr. Evil/Local Settings/Tem...' (output truncated). The entry is flagged deleted with inode 0 (r/- * 0), meaning the MFT metadata pointer has been recycled and this specific entry is NOT directly recoverable via icat by inode; deep-dive/carving would be required. This confirms deleted artifacts exist within the primary user-of-interest's profile.",
+        "Numerous deleted temporary files (MPC7xx/MPC8xx*.tmp and ~DF45C5.tmp) exist under 'Documents and Settings/Default User/'. Many carry valid non-zero MFT inode numbers (e.g. 6366-6553), indicating these orphaned/deleted entries ARE recoverable via icat by inode, while interleaved entries with inode 0 are not. This reconciles H3: the NTFS MFT supports recovery and concrete recoverable deleted entries are present on the volume.",
+        "Deleted file entries exist under the 'Mr. Evil' user profile: a deleted entry is listed at 'Documents and Settings/Mr. Evil/Local Settings/Tem...' (output truncated). This confirms deleted artifacts within the primary user-of-interest's profile warranting targeted recovery, reconciling the H3 conflict \u2014 the volume-level NTFS/MFT support (corroborating) and the profile-level deleted entries (corroborating) are complementary, not contradictory.",
+        "H3 conflict resolved: the volume-level support and the profile-level refutation are not contradictory but complementary. The NTFS volume retains an intact MFT (support) AND deleted entries are present both volume-wide (Default User .tmp files with recoverable non-zero inodes) and within the Mr. Evil user profile (refutation). The reconciled conclusion is that targeted MFT recovery of non-zero-inode entries plus unallocated-space carving for zero-inode entries (including the Mr. Evil profile) is the appropriate deep-dive recovery approach."
+      ],
+      "formed_at": "2026-06-15T03:41:59Z",
+      "resolved_at": "",
+      "followup_spawned": true
+    },
+    {
+      "id": "H-4c45be1f",
+      "description": "The subject is the well-known 'Mr. Evil' / John Smith network-intrusion scenario: a wireless-equipped laptop used to sniff and harvest credentials/communications from a third party (e.g., an ISP or local network), with the wireless capture and chat/email artifacts being the central evidence. Investigation should correlate Ethereal/NetworkStumbler captures, mIRC logs, and Outlook Express stores to reconstruct intercepted communications and identify victims.",
+      "status": "contested",
+      "evidence_for": [
+        "mIRC IRC client is installed under Program Files/mIRC, supporting the chat-harvesting aspect of the hypothesis.",
+        "Ethereal network sniffer is installed (Program Files/Ethereal) with per-user application data under Mr. Evil's profile, supporting the packet-capture aspect of the hypothesis.",
+        "Ethereal saved display filter targets a specific TCP conversation: ip.addr 192.168.254.2 (local) and 207.68.174.248, tcp.port 1337 and 80 \u2014 demonstrating focused inspection/interception of captured HTTP traffic.",
+        "mIRC IRC client installed on the subject system: shortcuts present in the Mr. Evil Desktop\\Tools folder and in the All Users Start Menu, consistent with chat-client activity.",
+        "Outlook Express identity GUID {EF086998-1115-4ECD-9B13-9ADC067B4929} identifies the mail/news identity used by Mr. Evil.",
+        "Contents of alt.2600.cardz.dbx parsed: numerous newsgroup messages about credit-card carding (subjects: 'Hundreds of easy cards.', 'verify your CC easily', 'free card, FULL info, working now!', 'CVVS', 'More CVVs from Zee', 'Ideas for drops?'). News server used: newsmst01a.news.prodigy.com / news.dallas.sbcglobal.net.",
+        "Sender email addresses extracted from alt.2600.cardz.dbx carding messages include lucky@aol.com, spankme@aol.com, dr_fleks@yahoo.com, mrflym@hotmail.com, regalyke@yahoo.com, idscanz@aol.com, com2die@aol.com, lc20@rediffmail.com \u2014 participants in carding/credit-card-fraud discussions.",
+        "Mr. Evil profile SID is S-1-5-21-2000478354-688789844-1708537768-1003, recovered from the Credentials directory path."
+      ],
+      "evidence_against": [
+        "Ethereal (Wireshark predecessor) packet-sniffer application data present in the Mr. Evil profile, indicating network capture activity by the subject.",
+        "Ethereal 'recent' config shows the last capture file opened was C:\\Documents and Settings\\Mr. Evil\\interception, confirming a packet capture file ('interception') was loaded into the sniffer. Last file-open directory was the Mr. Evil profile root.",
+        "The 'interception' capture file exists as a file in the Mr. Evil profile root, corroborating the Ethereal recent-file reference to a packet capture.",
+        "NetworkStumbler usage indicated by an Internet Explorer cookie for www.netstumbler.com in the Mr. Evil profile, consistent with wireless-survey tool interest.",
+        "Outlook Express message stores (.dbx) present in the Mr. Evil identity, with numerous newsgroup mailboxes subscribed to hacking/carding groups (alt.2600.cardz, alt.2600.crackz, alt.2600.hackerz, alt.dss.hack, alt.binaries.hacking.*, etc.), consistent with the intrusion scenario.",
+        "IE browsing history present for the Mr. Evil user spanning Aug 16-27, 2004 (History.IE5 MSHist folders MSHist012004081620040823, MSHist012004082520040826, MSHist012004082620040827), establishing the activity window of the subject."
+      ],
+      "formed_at": "2026-06-15T03:42:24Z",
+      "resolved_at": "",
+      "followup_spawned": true
+    },
+    {
+      "id": "H-2deb321a",
+      "description": "The Win98 boot artifacts are residual leftovers from a manufacturer/clean-install baseline (Dell Latitude CPi shipped with Win9x) that were never deleted during the XP install, and have no evidentiary bearing on user activity. The dual-OS files should be deprioritized as non-probative chrome rather than treated as a substantive OS-history question.",
+      "status": "contested",
+      "evidence_for": [
+        "Single NTFS volume (offset 63) contains BOTH Windows 98/DOS boot artifacts (IO.SYS, MSDOS.SYS, COMMAND.COM, AUTOEXEC.BAT, CONFIG.SYS, BOOTLOG.TXT, SETUPLOG.TXT, NETLOG.TXT, DETLOG.TXT, SUHDLOG.DAT, SYSTEM.1ST, BOOTSECT.DOS, a WIN98 directory) AND a Windows XP install (ntldr, ntdetect.com, boot.ini, WINDOWS dir, Documents and Settings, RECYCLER). The Win98 files reside on the same NTFS filesystem as XP, not on a separate FAT partition \u2014 they were carried into/left on the XP volume.",
+        "IO.SYS (Win9x boot file) carries an internal $STANDARD_INFORMATION and $FILE_NAME created/modified timestamp of 1999-04-23 22:22:00 UTC, but its MFT-Modified time is 2004-08-19 17:02:21 UTC. The 1999 date reflects the original file build date; the file was actually written to this NTFS volume during the August 2004 XP install. This shows the Win9x file dates are inherited metadata from copied source files, not evidence the volume was running Win98 in 1999.",
+        "BOOTLOG.TXT (inode 119) was created and modified 2004-08-19 15:39:26 UTC. This boot log post-dates the WIN98 directory creation and falls within the XP install/configuration window, indicating boot logging during the 2004 setup activity rather than a 1999 Win98 boot.",
+        "Root filesystem is NTFS and contains both XP boot loader files (ntldr inode 3662, ntdetect.com 3663, boot.ini 3664) and Win9x boot/setup artifacts (IO.SYS, MSDOS.SYS, COMMAND.COM, AUTOEXEC.BAT, CONFIG.SYS, BOOTLOG.TXT, SETUPLOG.TXT, SUHDLOG.DAT, SYSTEM.1ST, BOOTSECT.DOS, and a WIN98 setup-source directory). The XP install created Documents and Settings, WINDOWS, Program Files, RECYCLER and System Volume Information. Overall picture: a single NTFS/XP volume with copied Win98 setup media, not a true prior dual-OS history."
+      ],
+      "evidence_against": [
+        "Win9x boot/setup artifacts present at NTFS volume root alongside XP files: IO.SYS, MSDOS.SYS, MSDOS.---, COMMAND.COM, CONFIG.SYS, AUTOEXEC.BAT, BOOTLOG.TXT/PRV, DETLOG.TXT, NETLOG.TXT, SETUPLOG.TXT, SUHDLOG.DAT, FRUNLOG.TXT, SYSTEM.1ST, VIDEOROM.BIN, BOOTSECT.DOS, and a WIN98 directory. The presence of Win98 SETUP logs (DETLOG/NETLOG/SETUPLOG) indicates a Win98 setup was actually run on this volume, not merely a few stray loader files.",
+        "SYSTEM.1ST (MFT 132), the Win9x first-boot registry backup, was CREATED 2004-08-18 16:40:54 UTC \u2014 within the same install window as the XP boot.ini (created 2004-08-19 16:47:33 UTC). This contradicts the hypothesis that the Win98 artifacts are a years-old shipped manufacturer baseline; both the Win98 and XP environments were laid down in the same Aug 2004 install session, indicating an intentional same-session dual-OS/clean install rather than untouched factory chrome.",
+        "SYSTEM.1ST (the Win98 first-boot registry snapshot, written at the end of a Win98 install) is an ALLOCATED file with $STANDARD_INFORMATION and $FILE_NAME Created/Modified timestamps all 2004-08-18 16:40:54 UTC. This dates the Win98 installation event to 2004-08-18, contradicting the 'shipped-with-Win9x manufacturer baseline' premise of the hypothesis (Dell Latitude CPi era hardware, but the Win98 install was performed on the XP-era volume in 2004).",
+        "MSDOS.SYS boot configuration confirms a Win98 boot environment: WinDir=C:\\WINDOWS, WinBootDir=C:\\WINDOWS, HostWinBootDrv=C, BootMulti=1, BootGUI=1, AutoScan=1, WinVer=4.10.2222. BootMulti=1 indicates the system was configured for multi-boot, consistent with a dual-OS (Win98 + XP via BOOTSECT.DOS) configuration rather than a discarded baseline.",
+        "XP boot loader chaining to the prior DOS/Win98 boot sector is present: ntldr, ntdetect.com, boot.ini and BOOTSECT.DOS all exist as allocated files at the volume root. BOOTSECT.DOS is the saved Win9x/DOS boot sector that NTLDR uses to multi-boot into the legacy OS, demonstrating the Win98 install was deliberately preserved as a selectable boot option after XP setup \u2014 not orphaned residue."
+      ],
+      "formed_at": "2026-06-15T03:42:24Z",
+      "resolved_at": "",
+      "followup_spawned": true
+    }
+  ],
+  "failed_approaches": [
+    {
+      "tool": "/usr/local/bin/rip.pl",
+      "args": [
+        "-r",
+        "/tmp/agentic-sift-evidence-mhmhnwjl/mnt/vol0/WINDOWS/system32/config/software",
+        "-p",
+        "winnt_cv"
+      ],
+      "failure": "exit code 2: /usr/share/regripper/plugins/winnt_cv.pl not found.\n",
+      "lesson": "rip.pl failed (exit code 2: /usr/share/regripper/plugins/winnt_cv.pl not found.\n) \u2014 falling back to regslack.pl",
+      "timestamp": "2026-06-15T03:36:29Z"
+    },
+    {
+      "tool": "/usr/local/bin/regslack.pl",
+      "args": [
+        "-r",
+        "/tmp/agentic-sift-evidence-mhmhnwjl/mnt/vol0/WINDOWS/system32/config/software",
+        "-p",
+        "winnt_cv"
+      ],
+      "failure": "exit code -1: Cannot execute /usr/local/bin/regslack.pl: [Errno 8] Exec format error: '/usr/local/bin/regslack.pl'",
+      "lesson": "regslack.pl failed (exit code -1: Cannot execute /usr/local/bin/regslack.pl: [Errno 8] Exec format error: '/usr/local/bin/regslack.pl') \u2014 no working alternative available",
+      "timestamp": "2026-06-15T03:36:29Z"
+    },
+    {
+      "tool": "/usr/local/bin/rip.pl",
+      "args": [
+        "-r",
+        "/tmp/agentic-sift-evidence-mhmhnwjl/mnt/vol0/WINDOWS/system32/config/software",
+        "-p",
+        "winnt_cv"
+      ],
+      "failure": "exit code 2: /usr/share/regripper/plugins/winnt_cv.pl not found.\n",
+      "lesson": "rip.pl failed (exit code 2: /usr/share/regripper/plugins/winnt_cv.pl not found.\n) \u2014 no working alternative available",
+      "timestamp": "2026-06-15T03:36:40Z"
+    },
+    {
+      "tool": "/usr/bin/ls",
+      "args": [
+        "-la",
+        "/tmp/agentic-sift-evidence-mhmhnwjl/mnt/vol0/Documents and Settings"
+      ],
+      "failure": "rejected (Tool not in allowlist: /usr/bin/ls)",
+      "lesson": "ls failed (rejected (Tool not in allowlist: /usr/bin/ls)) \u2014 no working alternative available",
+      "timestamp": "2026-06-15T03:37:49Z"
+    },
+    {
+      "tool": "/bin/ls",
+      "args": [
+        "-la",
+        "/tmp/agentic-sift-evidence-mhmhnwjl/mnt/vol0"
+      ],
+      "failure": "rejected (Tool not in allowlist: /bin/ls)",
+      "lesson": "ls failed (rejected (Tool not in allowlist: /bin/ls)) \u2014 no working alternative available",
+      "timestamp": "2026-06-15T03:37:52Z"
+    },
+    {
+      "tool": "/usr/bin/find",
+      "args": [
+        "/tmp/agentic-sift-evidence-mhmhnwjl/mnt/vol0/Documents and Settings",
+        "-maxdepth 1",
+        "-type d"
+      ],
+      "failure": "exit code 1: /usr/bin/find: unknown predicate `-maxdepth 1'\n",
+      "lesson": "find failed (exit code 1: /usr/bin/find: unknown predicate `-maxdepth 1'\n) \u2014 no working alternative available",
+      "timestamp": "2026-06-15T03:37:56Z"
+    },
+    {
+      "tool": "/usr/bin/find",
+      "args": [
+        "/tmp/agentic-sift-evidence-mhmhnwjl/mnt/vol0/Documents and Settings/Mr. Evil",
+        "-maxdepth 3",
+        "-type d"
+      ],
+      "failure": "exit code 1: /usr/bin/find: unknown predicate `-maxdepth 3'\n",
+      "lesson": "find failed (exit code 1: /usr/bin/find: unknown predicate `-maxdepth 3'\n) \u2014 no working alternative available",
+      "timestamp": "2026-06-15T03:38:00Z"
+    },
+    {
+      "tool": "/usr/bin/find",
+      "args": [
+        "/tmp/agentic-sift-evidence-mhmhnwjl/mnt/vol0/My Documents",
+        "-maxdepth 2",
+        "-type f"
+      ],
+      "failure": "exit code 1: /usr/bin/find: unknown predicate `-maxdepth 2'\n",
+      "lesson": "find failed (exit code 1: /usr/bin/find: unknown predicate `-maxdepth 2'\n) \u2014 no working alternative available",
+      "timestamp": "2026-06-15T03:38:00Z"
+    },
+    {
+      "tool": "/usr/bin/cat",
+      "args": [
+        "/tmp/agentic-sift-evidence-mhmhnwjl/mnt/vol0/MSDOS.SYS"
+      ],
+      "failure": "rejected (Tool not in allowlist: /usr/bin/cat)",
+      "lesson": "cat failed (rejected (Tool not in allowlist: /usr/bin/cat)) \u2014 no working alternative available",
+      "timestamp": "2026-06-15T03:38:03Z"
+    },
+    {
+      "tool": "/usr/bin/find",
+      "args": [
+        "/tmp/agentic-sift-evidence-mhmhnwjl/mnt/vol0/WIN98",
+        "-maxdepth 1",
+        "-printf",
+        "%y %p\\n"
+      ],
+      "failure": "exit code 1: /usr/bin/find: unknown predicate `-maxdepth 1'\n",
+      "lesson": "find failed (exit code 1: /usr/bin/find: unknown predicate `-maxdepth 1'\n) \u2014 no working alternative available",
+      "timestamp": "2026-06-15T03:38:03Z"
+    },
+    {
+      "tool": "/usr/bin/head",
+      "args": [
+        "-50",
+        "/tmp/agentic-sift-evidence-mhmhnwjl/mnt/vol0/SETUPLOG.TXT"
+      ],
+      "failure": "rejected (Tool not in allowlist: /usr/bin/head)",
+      "lesson": "head failed (rejected (Tool not in allowlist: /usr/bin/head)) \u2014 no working alternative available",
+      "timestamp": "2026-06-15T03:38:03Z"
+    },
+    {
+      "tool": "/usr/bin/fls",
+      "args": [
+        "-o",
+        "63",
+        "-r",
+        "-p",
+        "/cases/evidence/4Dell Latitude CPi.E01",
+        "Documents and Settings"
+      ],
+      "failure": "exit code 1: Error stat(ing) image file (raw_open: image \"Documents and Settings\" - No such file or directory)\n",
+      "lesson": "fls failed (exit code 1: Error stat(ing) image file (raw_open: image \"Documents and Settings\" - No such file or directory)\n) \u2014 no working alternative available",
+      "timestamp": "2026-06-15T03:42:33Z"
+    },
+    {
+      "tool": "/usr/bin/strings",
+      "args": [
+        "/tmp/agentic-sift-evidence-mhmhnwjl/mnt/vol0/SETUPLOG.TXT"
+      ],
+      "failure": "rejected (Tool not in allowlist: /usr/bin/strings)",
+      "lesson": "strings failed (rejected (Tool not in allowlist: /usr/bin/strings)) \u2014 no working alternative available",
+      "timestamp": "2026-06-15T03:42:45Z"
+    },
+    {
+      "tool": "/usr/bin/fls",
+      "args": [
+        "-r",
+        "-d",
+        "-p",
+        "-o",
+        "63",
+        "/cases/evidence/4Dell Latitude CPi.E01",
+        "27"
+      ],
+      "failure": "exit code 1: Attribute not found in file (tsk_fs_attrlist_get: Attribute 144 not found) (  - dent_walk: $IDX_ROOT not found)\n",
+      "lesson": "fls failed (exit code 1: Attribute not found in file (tsk_fs_attrlist_get: Attribute 144 not found) (  - dent_walk: $IDX_ROOT not found)\n) \u2014 no working alternative available",
+      "timestamp": "2026-06-15T03:43:13Z"
+    },
+    {
+      "tool": "/usr/bin/srch_strings",
+      "args": [
+        "/tmp/agentic-sift-evidence-mhmhnwjl/mnt/vol0/AUTOEXEC.BAT"
+      ],
+      "failure": "exit code 1: ",
+      "lesson": "srch_strings failed (exit code 1: ) \u2014 no working alternative available",
+      "timestamp": "2026-06-15T03:44:14Z"
+    }
+  ],
+  "strategy_pivots": [
+    {
+      "from_strategy": "H1: establish the true OS history of a Win98-to-XP migration",
+      "to_strategy": "Treat OS history as resolved (XP/NTFS with residual 9x install leftovers) and redirect effort to user-activity and intercepted-communications artifacts",
+      "reason": "H1's central question is now fully confirmed and explained; further OS-history work is non-probative. The dual-OS artifacts are expected install residue, not a substantive lead.",
+      "timestamp": "2026-06-15T03:42:24Z"
+    },
+    {
+      "from_strategy": "H2: generic examination of Documents and Settings/My Documents/RECYCLER/Temp for 'case-relevant actions'",
+      "to_strategy": "Targeted reconstruction of the sniffing/interception activity via Ethereal capture files, mIRC logs, Outlook Express DBX stores, and registry execution evidence",
+      "reason": "The folder inventory is largely complete and confirms attacker tooling; the next gain is content-level analysis of the specific capture/communication artifacts rather than continued directory enumeration.",
+      "timestamp": "2026-06-15T03:42:24Z"
+    }
+  ],
+  "findings_summary": [],
+  "iteration": 2,
+  "max_iterations": 3,
+  "status": "completed"
+}

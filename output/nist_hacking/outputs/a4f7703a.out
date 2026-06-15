@@ -1,0 +1,32 @@
+MFT Entry Header Values:
+Entry: 126        Sequence: 126
+$LogFile Sequence Number: 9765988
+Allocated File
+Links: 1
+
+$STANDARD_INFORMATION Attribute Values:
+Flags: Read Only, Hidden, System, Archive
+Owner ID: 0
+Security ID: 0  ()
+Version 6370040 of 468224
+Created:	2004-08-18 16:50:14.000000000 (UTC)
+File Modified:	2004-08-18 16:50:14.000000000 (UTC)
+MFT Modified:	2004-08-19 17:02:21.553545600 (UTC)
+Accessed:	2004-08-18 00:00:00.000000000 (UTC)
+
+$FILE_NAME Attribute Values:
+Flags: Read Only, Hidden, System
+Name: MSDOS.SYS
+Parent MFT Entry: 5 	Sequence: 5
+Allocated Size: 2048   	Actual Size: 1676
+Created:	2004-08-18 16:50:14.000000000 (UTC)
+File Modified:	2004-08-18 16:50:14.000000000 (UTC)
+MFT Modified:	2004-08-18 16:50:14.000000000 (UTC)
+Accessed:	2004-08-18 00:00:00.000000000 (UTC)
+
+Attributes: 
+Type: $STANDARD_INFORMATION (16-0)   Name: N/A   Resident   size: 48
+Type: $FILE_NAME (48-1)   Name: N/A   Resident   size: 84
+Type: $SECURITY_DESCRIPTOR (80-2)   Name: N/A   Resident   size: 128
+Type: $DATA (128-3)   Name: N/A   Non-Resident   size: 1676  init_size: 1676
+623910 623911 623912 623913 

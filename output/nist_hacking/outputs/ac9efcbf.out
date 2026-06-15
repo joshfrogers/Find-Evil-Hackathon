@@ -1,0 +1,4 @@
+nic2 v.20200525
+(System) Gets NIC info from System hive
+
+ControlSet00\Services\Tcpip\Parameters\Interfaces not found.

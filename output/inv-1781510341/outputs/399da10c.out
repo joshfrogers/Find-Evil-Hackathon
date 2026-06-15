@@ -1,0 +1,38 @@
+-/d 4186-144-1:	Startup
+r/r 9762-128-3:	Startup/desktop.ini
+-/d 4746-144-6:	Accessories
+-/d 5502-144-1:	Accessories/Entertainment
+r/r 9770-128-3:	Accessories/Entertainment/desktop.ini
+-/d 5712-144-6:	Accessories/Accessibility
+-/r 9773-128-4:	Accessories/Accessibility/Utility Manager.lnk
+-/r 9774-128-4:	Accessories/Accessibility/On-Screen Keyboard.lnk
+-/r 9775-128-4:	Accessories/Accessibility/Narrator.lnk
+-/r 9776-128-4:	Accessories/Accessibility/Magnifier.lnk
+-/r 9777-128-3:	Accessories/Accessibility/desktop.ini
+-/r 9765-128-4:	Accessories/Windows Explorer.lnk
+-/r 9766-128-4:	Accessories/Tour Windows XP.lnk
+-/r 9767-128-4:	Accessories/Synchronize.lnk
+-/r 9768-128-3:	Accessories/Program Compatibility Wizard.lnk
+-/r 9769-128-4:	Accessories/Notepad.lnk
+-/r 9771-128-3:	Accessories/desktop.ini
+-/r 9772-128-4:	Accessories/Command Prompt.lnk
+-/r 9845-128-4:	Accessories/Address Book.lnk
+-/r 9761-128-5:	Windows Media Player.lnk
+-/r 9763-128-4:	Remote Assistance.lnk
+-/r 9764-128-3:	desktop.ini
+-/r 9838-128-4:	Outlook Express.lnk
+-/r 9850-128-4:	Internet Explorer.lnk
+-/d 9936-144-6:	Anonymizer Toolbar
+-/r 9937-128-4:	Anonymizer Toolbar/Uninstall.lnk
+-/r 9939-128-1:	Anonymizer Toolbar/Help.lnk
+-/r 9940-128-1:	Anonymizer Toolbar/Anonymizer WebSite.lnk
+-/d 9964-144-1:	Cain
+r/r 9965-128-4:	Cain/Cain v2.5.lnk
+r/r 9966-128-4:	Cain/Uninstall Cain.lnk
+-/d 10063-144-1:	Agent Newsreader
+r/r 10065-128-4:	Agent Newsreader/Agent Help.lnk
+r/r 10066-128-1:	Agent Newsreader/Readme.lnk
+-/d 10188-144-1:	123 WASP
+r/r 10192-128-1:	123 WASP/HELP.lnk
+r/r 10193-128-1:	123 WASP/LICENSE.lnk
+-/r 12029-128-4:	Network Stumbler.lnk

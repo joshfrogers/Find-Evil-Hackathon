@@ -1,0 +1,15 @@
+EvtxECmd version 1.5.2.0
+
+Author: Eric Zimmerman (saericzimmerman@gmail.com)
+https://github.com/EricZimmerman/evtx
+
+Command line: -d /cases/evidence --csv /cases/out
+
+CSV output will be saved to /cases/out/20260615035054_EvtxECmd_Output.csv
+
+Maps loaded: 453
+Looking for event log files in /cases/evidence
+
+
+Processed 0 files in 0.3730 seconds
+

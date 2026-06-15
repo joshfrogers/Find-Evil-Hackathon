@@ -1,0 +1,218 @@
+Parsed Plugins file.
+Launching routes v.20200526
+Error in routes: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/routes.pl line 47.
+
+routes complete.
+Launching pagefile v.20140505
+Error in pagefile: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/pagefile.pl line 45.
+
+pagefile complete.
+Launching profiler v.20200525
+Error in profiler: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/profiler.pl line 45.
+
+profiler complete.
+Launching disableeventlog v.20230710
+Error in disableeventlog: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/disableeventlog.pl line 46.
+
+disableeventlog complete.
+Launching remoteaccess v.20200517
+Error in remoteaccess: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/remoteaccess.pl line 48.
+
+remoteaccess complete.
+Error in printmon_tln: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/printmon_tln.pl line 47.
+
+printmon_tln complete.
+Launching processor_architecture v.20140505
+Error in processor_architecture: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/processor_architecture.pl line 41.
+
+processor_architecture complete.
+Launching termserv v.20200506
+Error in termserv: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/termserv.pl line 58.
+
+termserv complete.
+Launching termcert v.20200526
+Error in termcert: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/termcert.pl line 40.
+
+termcert complete.
+Launching shimcache_tln v.20220921
+Error in shimcache_tln: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/shimcache_tln.pl line 59.
+
+shimcache_tln complete.
+Launching disableremotescm v.20200513
+Error in disableremotescm: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/disableremotescm.pl line 45.
+
+disableremotescm complete.
+Error in usbdevices: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/usbdevices.pl line 41.
+
+usbdevices complete.
+Launching wpdbusenum v.20200515
+Error in wpdbusenum: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/wpdbusenum.pl line 48.
+
+wpdbusenum complete.
+Launching dafupnp v.20200525
+Error in dafupnp: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/dafupnp.pl line 44.
+
+dafupnp complete.
+Launching svc v.20200525
+Error in svc: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/svc.pl line 85.
+
+svc complete.
+Launching timezone v.20200518
+Error in timezone: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/timezone.pl line 49.
+
+timezone complete.
+Launching imagedev v.20140104
+Error in imagedev: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/imagedev.pl line 41.
+
+imagedev complete.
+Launching prefetch v.20200515
+Error in prefetch: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/prefetch.pl line 45.
+
+prefetch complete.
+Launching svcdll v.20200525
+Error in svcdll: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/svcdll.pl line 66.
+
+svcdll complete.
+Launching usb v.20200515
+Error in usb: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/usb.pl line 45.
+
+usb complete.
+Launching bthenum v.20200515
+Error in bthenum: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/bthenum.pl line 43.
+
+bthenum complete.
+Launching mountdev2 v.20200517
+Error in mountdev2: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/mountdev2.pl line 77.
+
+mountdev2 complete.
+Launching svc_tln v.20130911
+Error in svc_tln: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/svc_tln.pl line 82.
+
+svc_tln complete.
+Launching appcertdlls v.20200427
+Error in appcertdlls: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/appcertdlls.pl line 47.
+
+appcertdlls complete.
+Launching usbstor v.20200515
+Error in usbstor: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/usbstor.pl line 50.
+
+usbstor complete.
+Launching ScanButton v.20131210
+Error in ScanButton: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/ScanButton.pl line 52.
+
+ScanButton complete.
+Launching shimcache v.20220921
+Error in shimcache: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/shimcache.pl line 61.
+
+shimcache complete.
+Launching rdpport v.20200526
+Error in rdpport: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/rdpport.pl line 44.
+
+rdpport complete.
+Launching pending v.20130711
+Error in pending: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/pending.pl line 47.
+
+pending complete.
+Launching nic2 v.20200525
+Error in nic2: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/nic2.pl line 45.
+
+nic2 complete.
+Launching netlogon v.20200515
+Error in netlogon: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/netlogon.pl line 50.
+
+netlogon complete.
+Launching services v.20191024
+Error in services: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/services.pl line 63.
+
+services complete.
+Launching appcompatcache_tln v.20220921
+Error in appcompatcache_tln: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/appcompatcache_tln.pl line 70.
+
+appcompatcache_tln complete.
+Launching devclass v.20200525
+Error in devclass: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/devclass.pl line 44.
+
+devclass complete.
+Launching compname v.20090727
+Error in compname: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/compname.pl line 42.
+
+compname complete.
+Error in bam_tln: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/bam_tln.pl line 46.
+
+bam_tln complete.
+Launching ntds v.20200427
+Error in ntds: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/ntds.pl line 49.
+
+ntds complete.
+Launching bthport_tln v.20180705
+Error in bthport_tln: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/bthport_tln.pl line 45.
+
+bthport_tln complete.
+Launching lsa v.20200517
+Error in lsa: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/lsa.pl line 51.
+
+lsa complete.
+Launching environment v.20200512
+Error in environment: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/environment.pl line 47.
+
+environment complete.
+Launching disablelastaccess v.20200517
+Error in disablelastaccess: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/disablelastaccess.pl line 52.
+
+disablelastaccess complete.
+Launching shutdown v.20200518
+Error in shutdown: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/shutdown.pl line 44.
+
+shutdown complete.
+Launching mountdev v.20200517
+Error in mountdev: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/mountdev.pl line 47.
+
+mountdev complete.
+Launching backuprestore v.20200517
+Error in backuprestore: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/backuprestore.pl line 51.
+
+backuprestore complete.
+Launching bthport v.20200517
+Error in bthport: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/bthport.pl line 46.
+
+bthport complete.
+Launching bam v.20200427
+Error in bam: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/bam.pl line 50.
+
+bam complete.
+Launching macaddr v.20200515
+Error in macaddr: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/macaddr.pl line 45.
+
+macaddr complete.
+Launching ips v.20200518
+Error in ips: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/ips.pl line 45.
+
+ips complete.
+Launching appcompatcache v.20220921
+Error in appcompatcache: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/appcompatcache.pl line 71.
+
+appcompatcache complete.
+Launching source_os v.20200511
+Error in source_os: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/source_os.pl line 49.
+
+source_os complete.
+Launching shares v.20200525
+Error in shares: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/shares.pl line 50.
+
+shares complete.
+Launching printmon v.20200427
+Error in printmon: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/printmon.pl line 48.
+
+printmon complete.
+Launching PortProxy v.20210622
+Error in portproxy: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/portproxy.pl line 47.
+
+portproxy complete.
+Launching securityproviders v.20200526
+Error in securityproviders: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/securityproviders.pl line 44.
+
+securityproviders complete.
+Launching networksetup2 v.20191004
+Error in networksetup2: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/networksetup2.pl line 46.
+
+networksetup2 complete.

@@ -1,0 +1,107 @@
+r/r 4116-128-4:	msgsocm.log
+r/r 4110-128-4:	msmqinst.log
+d/d 3633-144-3:	mui
+r/r 3858-128-4:	NOTEPAD.EXE
+r/r 4105-128-5:	ntdtcsetup.log
+r/r 4096-128-4:	ocgen.log
+r/r 4128-128-4:	ocmsn.log
+r/r 4090-128-4:	ODBCINST.INI
+r/r 7277-128-4:	OEWABLog.txt
+d/d 6330-144-1:	Offline Web Pages
+d/d 5609-144-1:	PCHEALTH
+r/r 5030-128-4:	Prairie Wind.bmp
+d/d 432-144-6:	Prefetch
+r/r 3649-128-3:	regedit.exe
+d/d 5462-144-7:	Registration
+r/- * 0:	regopt.log
+d/d 2257-144-6:	repair
+d/d 3620-144-4:	Resources
+r/r 5031-128-4:	Rhododendron.bmp
+r/r 5032-128-4:	River Sumida.bmp
+r/r 5033-128-4:	Santa Fe Stucco.bmp
+d/d 3593-144-6:	security
+r/r 5506-128-5:	sessmgr.setup.log
+r/r 3737-128-4:	SET3.tmp
+r/r 3745-128-4:	SET7.tmp
+r/r 3679-128-6:	setupact.log
+r/r 3706-128-6:	setupapi.log
+r/r 9808-128-6:	0.log
+d/d 3588-144-3:	addins
+d/d 3607-144-3:	AppPatch
+r/r 5024-128-4:	Blue Lace 16.bmp
+r/r 333-128-1:	bootstat.dat
+r/r 3660-128-3:	clock.avi
+r/r 5026-128-4:	Coffee Bean.bmp
+r/r 4103-128-4:	comsetup.log
+d/d 3485-144-3:	Config
+d/d 3589-144-4:	Connection Wizard
+r/r 6073-128-1:	control.ini
+d/d 3513-144-7:	Cursors
+d/d 3618-144-6:	Debug
+r/r 5714-128-1:	desktop.ini
+d/d 10152-144-1:	Downloaded Installations
+d/d 6328-144-1:	Downloaded Program Files
+d/d 3590-144-4:	Driver Cache
+r/r 5456-128-1:	DtcInstall.log
+r/r 3648-128-3:	explorer.exe
+d/d 2930-144-3:	Help
+r/r 3652-128-3:	hh.exe
+r/r 4101-128-4:	iis6.log
+d/d 3637-144-3:	ime
+r/r 4112-128-4:	imsins.log
+d/d 2259-144-3:	inf
+d/d 3551-144-3:	java
+d/d 3514-144-3:	Media
+d/d 3486-144-3:	msagent
+d/d 3605-144-3:	msapps
+r/r 3675-128-6:	setuplog.txt
+r/r 5025-128-4:	Soap Bubbles.bmp
+d/d 220-144-6:	srchasst
+r/r 4145-128-1:	Sti_Trace.log
+d/d 2254-144-6:	system
+r/r 3646-128-3:	system.ini
+d/d 459-144-6:	system32
+r/r 3859-128-4:	TASKMAN.EXE
+d/d 5541-144-1:	Tasks
+d/d 3602-144-6:	Temp
+r/r 4108-128-4:	tsoc.log
+r/r 3654-128-3:	twain.dll
+d/d 3603-144-3:	twain_32
+r/r 3655-128-3:	twain_32.dll
+r/r 3656-128-3:	twunk_16.exe
+r/r 3657-128-3:	twunk_32.exe
+r/- * 0:	vb.ini
+r/r 5465-128-1:	vbaddin.ini
+r/r 3661-128-3:	vmmreg32.dll
+d/d 3554-144-7:	Web
+r/r 4747-128-1:	wiadebug.log
+r/r 4745-128-1:	wiaservc.log
+r/r 3647-128-3:	win.ini
+r/r 6611-128-1:	Windows Update.log
+r/r 6323-128-5:	WindowsShell.Manifest
+r/r 3658-128-3:	winhelp.exe
+r/r 3659-128-3:	winhlp32.exe
+r/r 5716-128-4:	winnt.bmp
+r/r 5717-128-4:	winnt256.bmp
+d/d 3634-144-6:	WinSxS
+r/r 7284-128-4:	WMSysPrx.prx
+r/r 5034-128-4:	Zapotec.bmp
+r/r 3650-128-3:	_default.pif
+r/r 4098-128-4:	FaxSetup.log
+r/r 5027-128-4:	FeatherTexture.bmp
+d/d 3400-144-6:	Fonts
+r/r 5028-128-4:	Gone Fishing.bmp
+r/r 5029-128-4:	Greenstone.bmp
+d/d 9846-144-6:	Installer
+r/r 11772-128-3:	iun6002.exe
+r/r 11734-128-4:	Look@LAN Setup Log.txt
+r/r 3651-128-3:	explorer.scf
+r/r 3653-128-3:	msdfmap.ini
+r/r 339-128-3:	REGLOCS.OLD
+r/r 3680-128-1:	setuperr.log
+r/r 5464-128-1:	vb.ini
+r/r 3901-128-4:	regopt.log
+r/r 431-128-3:	SchedLgU.Txt
+r/- * 0:	~GLC0000.TMP
+r/- * 0:	~GLH0000.TMP
+r/- * 0:	~GLH0001.TMP

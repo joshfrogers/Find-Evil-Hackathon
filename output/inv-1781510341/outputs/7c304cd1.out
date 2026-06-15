@@ -1,0 +1,1048 @@
+-/r 345-128-4:	NTUSER.DAT
+-/d 346-144-6:	Templates
+r/r 9760-128-4:	Templates/amipro.sam
+r/r 9759-128-4:	Templates/excel.xls
+r/r 9758-128-4:	Templates/excel4.xls
+r/r 9757-128-4:	Templates/lotus.wk4
+r/r 9756-128-4:	Templates/powerpnt.ppt
+r/r 9755-128-3:	Templates/presenta.shw
+r/r 9754-128-4:	Templates/quattro.wb2
+r/r 9753-128-3:	Templates/sndrec.wav
+r/r 9752-128-4:	Templates/winword.doc
+r/r 9750-128-4:	Templates/winword2.doc
+r/r 9751-128-3:	Templates/wordpfct.wpd
+r/r 9749-128-3:	Templates/wordpfct.wpg
+-/d 3665-144-1:	Start Menu
+r/r 9778-128-3:	Start Menu/desktop.ini
+d/d 4156-144-5:	Start Menu/Programs
+-/d 4186-144-1:	Start Menu/Programs/Startup
+r/r 9762-128-3:	Start Menu/Programs/Startup/desktop.ini
+-/d 4746-144-6:	Start Menu/Programs/Accessories
+-/d 5502-144-1:	Start Menu/Programs/Accessories/Entertainment
+r/r 9770-128-3:	Start Menu/Programs/Accessories/Entertainment/desktop.ini
+-/d 5712-144-6:	Start Menu/Programs/Accessories/Accessibility
+-/r 9773-128-4:	Start Menu/Programs/Accessories/Accessibility/Utility Manager.lnk
+-/r 9774-128-4:	Start Menu/Programs/Accessories/Accessibility/On-Screen Keyboard.lnk
+-/r 9775-128-4:	Start Menu/Programs/Accessories/Accessibility/Narrator.lnk
+-/r 9776-128-4:	Start Menu/Programs/Accessories/Accessibility/Magnifier.lnk
+-/r 9777-128-3:	Start Menu/Programs/Accessories/Accessibility/desktop.ini
+-/r 9765-128-4:	Start Menu/Programs/Accessories/Windows Explorer.lnk
+-/r 9766-128-4:	Start Menu/Programs/Accessories/Tour Windows XP.lnk
+-/r 9767-128-4:	Start Menu/Programs/Accessories/Synchronize.lnk
+-/r 9768-128-3:	Start Menu/Programs/Accessories/Program Compatibility Wizard.lnk
+-/r 9769-128-4:	Start Menu/Programs/Accessories/Notepad.lnk
+-/r 9771-128-3:	Start Menu/Programs/Accessories/desktop.ini
+-/r 9772-128-4:	Start Menu/Programs/Accessories/Command Prompt.lnk
+-/r 9845-128-4:	Start Menu/Programs/Accessories/Address Book.lnk
+-/r 9761-128-5:	Start Menu/Programs/Windows Media Player.lnk
+-/r 9763-128-4:	Start Menu/Programs/Remote Assistance.lnk
+-/r 9764-128-3:	Start Menu/Programs/desktop.ini
+-/r 9838-128-4:	Start Menu/Programs/Outlook Express.lnk
+-/r 9850-128-4:	Start Menu/Programs/Internet Explorer.lnk
+-/d 9936-144-6:	Start Menu/Programs/Anonymizer Toolbar
+-/r 9937-128-4:	Start Menu/Programs/Anonymizer Toolbar/Uninstall.lnk
+-/r 9939-128-1:	Start Menu/Programs/Anonymizer Toolbar/Help.lnk
+-/r 9940-128-1:	Start Menu/Programs/Anonymizer Toolbar/Anonymizer WebSite.lnk
+-/d 9964-144-1:	Start Menu/Programs/Cain
+r/r 9965-128-4:	Start Menu/Programs/Cain/Cain v2.5.lnk
+r/r 9966-128-4:	Start Menu/Programs/Cain/Uninstall Cain.lnk
+-/d 10063-144-1:	Start Menu/Programs/Agent Newsreader
+r/r 10065-128-4:	Start Menu/Programs/Agent Newsreader/Agent Help.lnk
+r/r 10066-128-1:	Start Menu/Programs/Agent Newsreader/Readme.lnk
+-/d 10188-144-1:	Start Menu/Programs/123 WASP
+r/r 10192-128-1:	Start Menu/Programs/123 WASP/HELP.lnk
+r/r 10193-128-1:	Start Menu/Programs/123 WASP/LICENSE.lnk
+-/r 12029-128-4:	Start Menu/Programs/Network Stumbler.lnk
+-/d 7281-144-5:	SendTo
+-/r 9779-128-3:	SendTo/Mail Recipient.MAPIMail
+-/r 9780-128-3:	SendTo/desktop.ini
+-/r 9784-128-3:	SendTo/Desktop (create shortcut).DeskLink
+-/r 9785-128-3:	SendTo/Compressed (zipped) Folder.ZFSendToTarget
+-/r 9817-128-1:	SendTo/My Documents.mydocs
+-/d 7282-144-5:	Recent
+-/d 7319-144-1:	PrintHood
+-/d 7321-144-5:	NetHood
+d/d 11894-144-1:	NetHood/a on Andrews-1
+r/r 11895-128-1:	NetHood/a on Andrews-1/Desktop.ini
+r/r 11896-128-1:	NetHood/a on Andrews-1/target.lnk
+d/d 11889-144-1:	NetHood/andrews (c) on Andrews-1
+r/r 11890-128-1:	NetHood/andrews (c) on Andrews-1/Desktop.ini
+r/r 11891-128-1:	NetHood/andrews (c) on Andrews-1/target.lnk
+d/d 11886-144-1:	NetHood/CD Drive (F) on Andrews-1
+r/r 11887-128-1:	NetHood/CD Drive (F) on Andrews-1/Desktop.ini
+r/r 11888-128-1:	NetHood/CD Drive (F) on Andrews-1/target.lnk
+d/d 11884-144-1:	NetHood/d on Andrews-1
+r/r 11892-128-1:	NetHood/d on Andrews-1/Desktop.ini
+r/r 11893-128-1:	NetHood/d on Andrews-1/target.lnk
+d/d 11897-144-1:	NetHood/e on Andrews-1
+r/r 11898-128-1:	NetHood/e on Andrews-1/Desktop.ini
+r/r 11899-128-1:	NetHood/e on Andrews-1/target.lnk
+d/d 11907-144-1:	NetHood/Temp on m1200 (4.12.220.254)
+r/r 11908-128-1:	NetHood/Temp on m1200 (4.12.220.254)/Desktop.ini
+r/r 11909-128-1:	NetHood/Temp on m1200 (4.12.220.254)/target.lnk
+d/d 11565-144-1:	NetHood/Temp on N-1a9odn6zxk4lq
+r/r 11882-128-1:	NetHood/Temp on N-1a9odn6zxk4lq/Desktop.ini
+r/r 11883-128-1:	NetHood/Temp on N-1a9odn6zxk4lq/target.lnk
+-/d 7356-144-6:	My Documents
+-/r 9810-128-1:	My Documents/desktop.ini
+-/d 9811-144-1:	My Documents/My Pictures
+r/r 9812-128-1:	My Documents/My Pictures/Desktop.ini
+r/r 9813-128-4:	My Documents/My Pictures/Sample Pictures.lnk
+-/d 9814-144-1:	My Documents/My Music
+r/r 9815-128-1:	My Documents/My Music/Desktop.ini
+r/r 9816-128-4:	My Documents/My Music/Sample Music.lnk
+-/d 8330-144-6:	Local Settings
+-/d 8332-144-1:	Local Settings/Temporary Internet Files
+d/d 8334-144-1:	Local Settings/Temporary Internet Files/Content.IE5
+r/r 9790-128-3:	Local Settings/Temporary Internet Files/Content.IE5/desktop.ini
+d/d 8375-144-6:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0
+r/r 11112-128-5:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/en-us_CSS_Classic[2].css
+r/r 11307-128-1:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/extra[1].htm
+r/r 11403-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/F91L22J5}F2`0`@5!AY1CA[1].jpg
+r/r 11847-128-1:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/favs[1].gif
+r/r 11611-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/feeds[1].jpg
+r/r 11667-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/flash_wrap_v4[1].js
+r/r 11013-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/fox_hp_logo2[1].gif
+r/r 12000-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/fpcount[1].gif
+r/r 11985-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/front-wind[1].png
+r/r 11662-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/front[1].asp
+r/r 11663-128-5:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/front[2].htm
+r/r 11696-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/gazeta_logo[1].gif
+-/r 11302-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/hb[1].gif
+-/r 11102-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/homeban[1].gif
+-/r 11193-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/id_checkc48eca59[1]
+-/r 11185-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/id_check[1]
+-/r 11699-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/il96300_2_small[1].jpg
+r/r 11835-128-1:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/javaxp[1].htm
+r/r 11838-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/javaxp[1].mspx
+r/r 11610-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/j[1].ad
+r/r 9986-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/L5C{9[_,N61R`YEVQZ,2B+[1].jpg
+r/r 11197-128-5:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/last[1].htm
+r/r 11009-128-1:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/left[1].gif
+r/r 11354-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/liberty.vs.cnn[1].jpg
+r/r 11154-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/login[1].first=1
+r/r 11203-128-5:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/login[1].htm
+r/r 11657-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/logo3[1].gif
+r/r 11146-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/metapos[1].gif
+r/r 11618-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/mgpick[1].gif
+r/r 11673-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/mg_sd_336_rd[1].gif
+r/r 11638-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/mg_sd_600_hd[1].gif
+r/r 11065-128-1:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/mon_rpt[1].gif
+r/r 11723-128-1:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/mosnews[1].htm
+r/r 11265-128-1:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/rc_wc3c5_se_1[1].gif
+r/r 11230-128-1:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/rc_wg2w_sw_1[1].gif
+r/r 11037-128-1:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/rd_rt[1].gif
+r/r 11557-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/results[1].aspx
+r/r 11558-128-5:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/results[1].htm
+r/r 11608-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/right-r[1].gif
+r/r 11085-128-1:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/scales[1].gif
+r/r 11959-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/scripts[1].js
+r/r 11334-128-1:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/search[1].gif
+r/r 11626-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/search[2].gif
+r/r 11956-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/setup[1].php
+r/r 11299-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/sf[1].gif
+r/r 11001-128-1:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/sf_btm[1].gif
+r/r 11115-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/sf_srch[1].jpg
+r/r 11717-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/675[1].gif
+r/r 11380-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/AAAAABTOOS[1].gif
+r/r 11362-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/adsEnd[1].js
+r/r 11274-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/adsWrapper[1].js
+r/r 11979-128-5:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/ads[1].htm
+r/r 11135-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/advertisebutton[1].gif
+r/r 12300-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/aramex[1].gif
+r/r 11488-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/army[1].css
+r/r 11489-128-1:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/arow_right[1].gif
+r/r 11130-128-1:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/arrow[1].gif
+r/r 11842-128-1:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/arrow_px_up[1].gif
+r/r 12289-128-1:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/arrow_redright[1].gif
+r/r 11347-128-1:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/audio[1].gif
+r/r 11826-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/ballz[1].jpg
+r/r 12286-128-1:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/banners[1].htm
+r/r 12287-128-1:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/banners[2].htm
+r/r 11057-128-1:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/dbr_rpt[1].gif
+r/r 11573-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/dell_825[1].jpg
+r/r 9788-128-3:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/desktop.ini
+r/r 10996-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/dfbb[1].gif
+r/r 11053-128-1:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/dgr_lt[1].gif
+r/r 11649-128-5:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/download3365[2].html
+r/r 11665-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/downloadget[1].php
+r/r 11632-128-5:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/downloads2[2].html
+r/r 11990-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/download[1].html
+r/r 11061-128-1:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/dpp_rt[1].gif
+r/r 11041-128-1:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/drd_rt[1].gif
+r/r 11396-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/partner_fortune[1].gif
+r/r 11680-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/picture1_s[1].jpg
+r/r 11704-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/picture2_s[1].jpg
+r/r 11381-128-1:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/politics[1].gif
+r/r 11596-128-1:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/printer2[1].gif
+r/r 11712-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/putin_phonentv_small[1].jpg
+r/r 11339-128-1:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/px_c00[1].gif
+r/r 11392-128-1:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/px_ccc[1].gif
+r/r 12276-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/mabrook[1].gif
+r/r 11323-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/make.homepage[1].gif
+r/r 11045-128-1:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/mbl_rpt[1].gif
+-/r 9985-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/C3JZ262FN`19KNZ~Y9@HO}[1].jpg
+-/r 9994-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/CAJIGZ3H.com%2F
+-/r 10986-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/css-font[1].css
+-/r 10991-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/msft_118x35[1].gif
+-/r 11000-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/ql_bg[1].gif
+-/r 11018-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/`5Y0EXTBL42-[JQ0N~G,[@[1].jpg
+-/r 11023-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/]4B2,]W{U[5UV-93_}+P3K[1].gif
+-/r 11025-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/~MO4EMM,8U+[QLA9ZH{`F[1].gif
+-/r 11030-128-1:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/shade[1].gif
+-/r 11033-128-1:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/or_rpt[1].gif
+-/r 11049-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/bb_r-col[1].gif
+-/r 11077-128-1:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/1[1].gif
+-/r 11082-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/storeadmed[1].jpg
+-/r 11090-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/hacked_pages[1].htm
+-/r 11093-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/hackedlead2[1].gif
+-/r 11094-128-1:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/00online_yo[1].gif
+-/r 11103-128-1:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/yelnew2[1].gif
+-/r 11120-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/nav[1].css
+-/r 11123-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/virus[1].gif
+-/r 11126-128-1:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/site_info_icon[1].gif
+-/r 11138-128-1:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/new[1].gif
+-/r 11142-128-1:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/td[1].gif
+-/r 11150-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/barlogo[1].gif
+-/r 11163-128-1:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/space[1].gif
+-/r 11166-128-1:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/up[1].gif
+-/r 11174-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/3box_1[1].jpg
+-/r 11175-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/3box_2[1].jpg
+-/r 11176-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/3box_3[1].jpg
+-/r 11189-128-1:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/16_warn[1].gif
+-/r 11209-128-1:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/uh_tcrn[1].gif
+-/r 11216-128-1:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/bulb1[1].gif
+-/r 11219-128-1:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/25x25_0709804[1].gif
+-/r 11222-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/breeze070704_stacked[1].gif
+-/r 11223-128-1:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/sntc1[1].gif
+-/r 11226-128-1:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/shd_r_1[1].gif
+-/r 11237-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/ShowFolder[1]
+-/r 11238-128-5:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/ShowFolder[1].htm
+-/r 11246-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/ShowLetter[1]
+-/r 11247-128-5:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/ShowLetter[1].htm
+-/r 11248-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/umbrella_super_v3_081604[1].jpg
+-/r 11254-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/template1_girl[1].jpg
+-/r 11261-128-1:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/logo_25x25[1].gif
+-/r 11278-128-1:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/vote_01[1].gif
+-/r 11282-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/chs[1]
+-/r 11283-128-1:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/vote_05[1].gif
+-/r 11290-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/index[1].html
+-/r 11291-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/uar[1].gif
+-/r 11312-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/bg1[1].jpg
+-/r 11329-128-1:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/top.right.corner[1].gif
+-/r 11343-128-1:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/nav_at_si[1].gif
+-/r 11357-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/65x49.zahn[1].jpg
+-/r 11366-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/tz_career_boss[1].jpg
+-/r 11370-128-1:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/cookie[1].gif
+-/r 11371-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/tz.kerry.08.20.ap[1].jpg
+-/r 11374-128-1:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/us[1].gif
+-/r 11388-128-1:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/business[1].gif
+-/r 11402-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/WYVGE4B~953+1`-K6E_!LT[1].jpg
+-/r 11435-128-3:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/wbk28.tmp
+-/r 11436-128-1:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/[1]
+-/r 11460-128-3:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/wbk4B.tmp
+-/r 11461-128-1:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/[2]
+-/r 11462-128-3:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/wbk4D.tmp
+-/r 11463-128-1:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/[3]
+-/r 11464-128-3:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/wbk4F.tmp
+-/r 11465-128-1:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/[4]
+-/r 11466-128-1:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/wbk51.tmp
+-/r 11467-128-1:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/[5]
+-/r 11468-128-1:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/wbk53.tmp
+-/r 11469-128-1:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/[6]
+-/r 11471-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/pappa[1].css
+-/r 11476-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/nav_2[1].gif
+-/r 11479-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/nav_4[1].gif
+-/r 11484-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/nav_9[1].jpg
+-/r 11490-128-1:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/wbk55.tmp
+-/r 11491-128-1:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/[7]
+-/r 11569-128-5:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/yahoo[3]
+-/r 11576-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/040824_300x100[1].swf
+-/r 11582-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/yg_csstare[1].js
+-/r 11585-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/080604ad-super-antispy-zipper_alt[1].jpg
+-/r 11586-128-1:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/clear[1].gif
+-/r 11599-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/getavgrate3[1]
+-/r 11602-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/__utm[1].js
+-/r 11643-128-1:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/star2[1].gif
+-/r 11681-128-1:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/gray[1].gif
+-/r 11690-128-3:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/CALC0NX5.swf
+-/r 11691-128-3:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/CA8PEXXM.swf
+-/r 11709-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/544[1].gif
+-/r 11801-128-5:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/google[1]
+-/r 11805-128-1:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/nav_current[1].gif
+-/r 11808-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/toolbar_promo[1].gif
+-/r 11811-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/whatismyip[1]
+-/r 11815-128-5:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/newsticker[1].html
+-/r 11818-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/updu[1].gif
+-/r 11823-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/crock1[1].gif
+-/r 11827-128-1:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/spacer[1].gif
+-/r 11879-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/WAONY9RAM`5O1NQ4-R3QLO[1].jpg
+-/r 11880-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/+M_7D6WVZL,RT{{Y~~J[A[1].jpg
+-/r 11955-128-1:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/gold-star[1].gif
+-/r 11962-128-1:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/nsstylelarge[1].css
+-/r 11966-128-1:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/t_large[1].gif
+-/r 11970-128-1:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/xml[1].gif
+-/r 11976-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/pagead[2]
+-/r 11987-128-1:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/binary[1].gif
+-/r 11991-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/CA012Z45.com%2F
+-/r 12004-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/capture[1].gif
+-/r 12257-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/0000012657_000000000000000099444[1].swf
+-/r 12258-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/S_S_look_309x60_0704[1].gif
+-/r 12265-128-1:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/index[1].htm
+-/r 12283-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/h_mandms[1].js
+-/r 12299-128-4:	Local Settings/Temporary Internet Files/Content.IE5/HYU1BON0/snickers_100[1].gif
+r/r 9787-128-4:	Local Settings/Temporary Internet Files/Content.IE5/index.dat
+d/d 8361-144-6:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X
+r/r 11292-128-1:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/eh[1].gif
+r/r 11258-128-1:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/em2_cr3[1].gif
+r/r 11255-128-1:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/em2_cr8[1].gif
+r/r 12296-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/en[1].swf
+r/r 11982-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/ethereal-3-0[1].css
+r/r 11977-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/ethereal[1]
+r/r 11178-128-5:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/eval_register[1].htm
+r/r 11177-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/eval_register[1].last=
+r/r 11820-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/faq2[1].gif
+r/r 11848-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/feedback[1].gif
+r/r 11006-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/flash[1].js
+r/r 11836-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/fosi-2[1].gif
+r/r 11364-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/ftn.280x32.breaking.alerts[1].gif
+r/r 11628-128-1:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/google120[1].html
+r/r 11330-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/gradient.line[1].gif
+r/r 11156-128-1:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/hdr_bluyel_w[1].gif
+r/r 11113-128-5:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/helppane26[2].js
+r/r 11349-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/tz[1].gif
+r/r 11706-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/ubs_small[1].jpg
+r/r 11367-128-1:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/us[1].gif
+r/r 11157-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/vacatn16[1].gif
+r/r 11831-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/vsright[1].gif
+r/r 11945-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/wardriving[1]
+r/r 11377-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/weather_bg[1].jpg
+r/r 11839-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/windows_masthead_ltr[1].gif
+r/r 11997-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/winpcap.mirror.ethereal[1]
+r/r 11946-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/wwwdbutton[1].jpg
+r/r 11335-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/yahoo.logo[1].gif
+r/r 11344-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/yahoo_nav[1].gif
+r/r 11170-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/yg_dom[1].js
+r/r 11128-128-1:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/_(1)[1].gif
+r/r 12001-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/IPv6-enabled[1].gif
+r/r 9982-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/j[1].ad
+r/r 11606-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/j[2].ad
+r/r 11644-128-1:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/j[3].ad
+r/r 11645-128-1:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/j[4].ad
+r/r 11653-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/j[5].ad
+r/r 11382-128-1:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/law[1].gif
+r/r 11062-128-1:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/lbl_lt[1].gif
+r/r 11604-128-1:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/left-r[1].gif
+r/r 11324-128-1:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/left.corner[1].gif
+r/r 11207-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/login[1].lg%3dus
+r/r 11678-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/logo9[1].gif
+r/r 11819-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/logofoz[1].jpg
+r/r 12277-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/logo[1].gif
+r/r 11967-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/logo_bg[1].gif
+r/r 12268-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/logo_largest[1].gif
+r/r 11496-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/LSniper[1].jpg
+r/r 11161-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/mag_tag_w[1].gif
+r/r 11633-128-1:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/frame[1].swf
+r/r 11668-128-1:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/frame[2].swf
+r/r 11210-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/fs_pb_fitted_072002b[1].js
+r/r 11054-128-1:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/dgr_rpt[1].gif
+r/r 11389-128-1:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/diagonal[1].gif
+r/r 12005-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/disk[1].gif
+r/r 11828-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/dl2eft[1].gif
+r/r 11568-128-1:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/dn[1].gif
+r/r 11397-128-1:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/dotted.line[1].gif
+r/r 11666-128-5:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/downloadget[1].htm
+r/r 11975-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/downloads[1].htm
+r/r 11676-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/drudgereport[1]
+r/r 12284-128-1:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/d[1].gif
+r/r 11015-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/E6S!Q391ZN5QA-FB3GWX[X[1].jpg
+r/r 11095-128-1:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/99online_yo[1].gif
+r/r 11485-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/add2favourites[1].gif
+r/r 11363-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/adsPopup2[1].htm
+r/r 11321-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/adsPopup2[1].js
+r/r 11623-128-5:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/ads[1]
+r/r 11132-128-5:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/ads[1].htm
+r/r 12034-128-5:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/ads[2].htm
+r/r 11627-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/affiliate[1].gif
+r/r 11654-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/american_flag[1].gif
+-/r 9786-128-3:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/desktop.ini
+-/r 9988-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/-51@4-B]UU4KEMFB1IB7IE[1].jpg
+-/r 9989-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/8A{XA_M@}-12ZG~[YXVOJ4[1].jpg
+-/r 10566-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/cnn[1].htm
+-/r 10987-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/home-ie6[1].css
+-/r 10988-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/home-bb-ie6[1].css
+-/r 10997-128-1:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/sbb[1].gif
+-/r 11002-128-1:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/ccol[1].gif
+-/r 11010-128-1:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/right[1].gif
+-/r 11014-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/0000052422_000000000000000098319[1].swf
+-/r 11016-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/S_S_find_309x60_0704[1].gif
+-/r 11019-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/PJLBI]NA{G3`J1F0LK-_,][1].jpg
+-/r 11026-128-1:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/bg_rt[1].gif
+-/r 11031-128-1:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/nip_rt[1].gif
+-/r 11034-128-1:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/or_rt[1].gif
+-/r 11038-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/bb_bg[1].jpg
+-/r 11042-128-1:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/bg_lt[1].gif
+-/r 11046-128-1:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/mbl_lt[1].gif
+-/r 11050-128-1:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/rcol_top[1].gif
+-/r 11058-128-1:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/dbr_rt[1].gif
+-/r 11078-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/masthead2[1].jpg
+-/r 11083-128-1:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/speaker[1].gif
+-/r 11086-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/mic-blk[1].gif
+-/r 11091-128-1:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/00[1].gif
+-/r 11098-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/thomas.loc[1].htm
+-/r 11104-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/crhead[1].gif
+-/r 11106-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/cihead[1].gif
+-/r 11116-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/MSFT_118x35[1].gif
+-/r 11121-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/IDN_logo[1].gif
+-/r 11124-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/shim[1].gif
+-/r 11131-128-3:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/CAMBAJEL
+-/r 11139-128-1:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/tu[1].gif
+-/r 11143-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/buynow[1].gif
+-/r 11147-128-1:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/1px_666666[1].gif
+-/r 11151-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/otheropp_hd[1].gif
+-/r 11164-128-1:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/tr14x15_1[1].gif
+-/r 11167-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/nextag_0701[1].gif
+-/r 11171-128-5:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/MailReg[1].v=8
+-/r 11186-128-5:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/id_check[1].htm
+-/r 11190-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/idhelper_head[1].gif
+-/r 11194-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/id_check63759919[1]
+-/r 11198-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/arrow_regconf[1].gif
+-/r 11204-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/mail_blue_all[1].css
+-/r 11205-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/mailcommonlib[1].js
+-/r 11217-128-1:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/inbc1[1].gif
+-/r 11220-128-1:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/newmail1[1].gif
+-/r 11224-128-1:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/tshc1[1].gif
+-/r 11227-128-1:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/shd_m_1[1].gif
+-/r 11231-128-1:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/rc_wg2w_se_1[1].gif
+-/r 11234-128-1:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/qt_lo_1[1].gif
+-/r 11239-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/ct_yad_031016[1].js
+-/r 11243-128-1:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/px_w[1].gif
+-/r 11249-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/020204_checkbook[1].gif
+-/r 11251-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/burst_mail[1].gif
+-/r 11262-128-1:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/rc_wc3c5_nw_1[1].gif
+-/r 11279-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/t50[1].gif
+-/r 11284-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/eht[1].gif
+-/r 11287-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/home[1].gif
+-/r 11295-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/chs[1]
+-/r 11300-128-1:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/ht[1].gif
+-/r 11303-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/topvlog[1].htm
+-/r 11308-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/t50new[1].gif
+-/r 11341-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/tz.03.moonwalk.ap[1].jpg
+-/r 11348-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/aol[1].gif
+-/r 11358-128-1:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/arrow_up[1].gif
+-/r 11372-128-1:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/market_bg[1].jpg
+-/r 11385-128-1:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/travel[1].gif
+-/r 11393-128-1:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/icon_external[1].gif
+-/r 11404-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/N78+D-HOZU5]X}]MXJ4,NA[1].jpg
+-/r 11438-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/coUAprint[1].css
+-/r 11472-128-1:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/back_pattern[1].gif
+-/r 11477-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/nav_3[1].gif
+-/r 11480-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/nav_5[1].gif
+-/r 11492-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/bottom[1].jpg
+-/r 11497-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/RSniper[1].jpg
+-/r 11561-128-1:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/clrchng[1].js
+-/r 11578-128-1:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/62-default_1x1[1].gif
+-/r 11583-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/main5[1].gif
+-/r 11587-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/reuters120[1].gif
+-/r 11591-128-1:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/ar[1].gif
+-/r 11592-128-1:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/mail[1].gif
+-/r 11593-128-1:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/boards_mini[1].gif
+-/r 11603-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/STENCIL3[1].eot
+-/r 11612-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/58436[1].gif
+-/r 11613-128-1:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/tab_r_14x19[1].jpg
+-/r 11619-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/mghot[1].gif
+-/r 11631-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/pop[1].htm
+-/r 11652-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/frame[1].htm
+-/r 11684-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/r27530485[1].jpg
+-/r 11686-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/picture_s[1].jpg
+-/r 11689-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/mosnews_section[1].gif
+-/r 11697-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/calendar[1].js
+-/r 11700-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/picture[1].jpg
+-/r 11713-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/saakashvilintv-s[1].jpg
+-/r 11718-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/revolution[1].htm
+-/r 11719-128-1:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/time[1].htm
+-/r 11800-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/summer2004_hurdles[1].gif
+-/r 11806-128-1:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/nav_page[1].gif
+-/r 11810-128-5:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/search[2]
+-/r 11816-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/power220[1].jpg
+-/r 11843-128-1:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/print[1].gif
+-/r 11950-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/sp_cov[1].gif
+-/r 11951-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/banner[1].gif
+-/r 11952-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/0672320584.01.MZZZZZZZ[1].jpg
+-/r 11963-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/ns_logo[1].jpg
+-/r 11971-128-3:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/CAG5AN81.php
+-/r 11980-128-1:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/back[1].gif
+-/r 11986-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/NISlogo75[1].gif
+-/r 12262-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/S_S_fndlook_309x60_0704[1].gif
+-/r 12274-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/MAIN[1].htm
+-/r 12290-128-1:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/corner[1].gif
+-/r 12292-128-1:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/space[1].gif
+-/r 12295-128-4:	Local Settings/Temporary Internet Files/Content.IE5/JIRVJY9X/banner2copy[1].jpg
+d/d 8356-144-6:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM
+r/r 10999-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/lfade[1].gif
+r/r 12267-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/line[1].gif
+r/r 11257-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/l[1].gif
+r/r 11559-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/mag-style[1].css
+r/r 11160-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/mag_hdr_w[1].gif
+r/r 11162-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/mag_img_w[1].jpg
+r/r 11173-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/mailma1[1].gif
+r/r 11165-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/mail[1].gif
+r/r 11846-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/mail[2].gif
+r/r 11119-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/main[1].css
+r/r 12281-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/maktoobTracking[1].htm
+r/- * 0:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/my16[1].gif
+-/r 11475-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/nav_1_login[1].jpg
+-/r 11483-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/nav_8[1].jpg
+-/r 11081-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/newsheader[1].gif
+-/r 11440-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/note[1].gif
+-/r 11326-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/ns.logo.standalone[1].gif
+r/r 11242-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/sort_dn_1[1].gif
+r/r 11182-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/spacer[1].gif
+r/r 11384-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/space[1].gif
+r/r 11387-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/sports[1].gif
+r/r 11184-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/Sr2qFOVZFel_3ptUEV6HmIQxZi1avtoHeA4LQ9xnk5T7vyjql4MhuXip1pussNrgmxSBdz27Jjwd[1].jpg
+r/r 11233-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/src_wc4w_ne_1[1].gif
+r/r 11236-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/src_wc4w_se_1[1].gif
+r/r 11208-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/stw2[1].gif
+r/r 11817-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/swcom_234x60_v1[1].gif
+r/r 11556-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/S_TB_htmailprpl_309x60_0204[1].gif
+r/r 11305-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/t50[1].htm
+r/r 11373-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/tab_gradient_bg[1].gif
+r/r 11615-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/tank[1].gif
+r/r 11379-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/technology[1].gif
+r/r 11595-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/techwk65_50[1].jpg
+-/r 11024-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/}Y_Z,QW`~10M3M@+RH],T[1].gif
+r/r 11830-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/dlright[1].gif
+r/r 11642-128-5:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/download[1].htm
+r/r 11641-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/download[1].php
+r/r 12003-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/download[2].htm
+r/r 11060-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/dpp_rpt[1].gif
+r/r 11040-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/drd_rpt[1].gif
+r/r 11281-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/dutch[1].gif
+r/r 11277-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/elitehackers[1]
+r/r 11250-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/em2_cr1[1].gif
+r/r 11253-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/em2_cr7[1].gif
+r/r 12008-128-6:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/ethereal-setup-0.10.6[1].exe
+r/r 11084-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/exclam[1].gif
+r/r 11311-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/extra[1].gif
+r/r 11052-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/F@I74H!M0-5UGQTD}]_O4@[1].gif
+r/r 9992-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/ads[1]
+r/r 11989-128-5:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/ads[1].htm
+r/r 9993-128-5:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/ads[2].htm
+r/r 11834-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/allofmp3[1].gif
+r/r 11841-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/arrowLTR[1].gif
+r/r 11017-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/ATGTL`WVG!4QYYC}R+,Y9U[1].jpg
+r/r 11574-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/att_240[1].gif
+r/r 11360-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/at_cnnmoney[1].gif
+r/r 11338-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/a_most_pop[1].gif
+r/r 11825-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/ball63[1].gif
+r/r 12279-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/banners[1].htm
+r/r 12280-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/banners[2].htm
+r/r 12294-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/banners[3].htm
+r/r 11007-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/bbip[1].css
+r/r 11145-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/benefits_mem_hd[1].gif
+r/r 11048-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/bg_grad[1].gif
+r/r 11044-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/bg_rt[1].gif
+r/r 11647-128-3:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/CAOX6B0T.swf
+r/r 11822-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/casino[1].gif
+r/r 11215-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/cc_b_25x25_0803_3[1].gif
+r/r 11474-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/center_pimp[1].jpg
+r/r 11294-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/cf[1].gif
+r/r 11286-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/chs1[1].jpg
+r/r 11437-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/coUA[1].css
+r/r 11999-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/curve[1].gif
+r/r 11056-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/dbr_lt[1].gif
+r/r 9783-128-3:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/desktop.ini
+-/r 10985-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/P73BC`7DD1!KNMTEYH2,G[1].jpg
+-/r 10990-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/home[1].js
+-/r 10995-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/F]@U_E74A,4WNO]F[VG9,+[1].gif
+-/r 11005-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/slideshow[1].js
+-/r 11008-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/3{2PKBGCNL15UJ,HZ@,,N,[1].jpg
+-/r 11022-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/Q7~8GPE1U4~~-PYUHTS}K[1].gif
+-/r 11029-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/000000[1].gif
+-/r 11032-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/or_lt[1].gif
+-/r 11036-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/rd_rpt[1].gif
+-/r 11064-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/lbl_rt[1].gif
+-/r 11076-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/masthead[1].gif
+-/r 11088-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/oldmasthead[1].gif
+-/r 11089-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/725274831586[1].gif
+-/r 11097-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/sch23[1].gif
+-/r 11101-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/faq[1].gif
+-/r 11105-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/leghead[1].gif
+-/r 11109-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/results[1].aspx
+-/r 11110-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/pricelist[1].htm
+-/r 11111-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/hdr35[1].js
+-/r 11118-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/hacking[1].htm
+-/r 11127-128-5:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/show_ads[2].js
+-/r 11134-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/get_cd_ad[1].gif
+-/r 11137-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/body[1].gif
+-/r 11141-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/cam[1].gif
+-/r 11149-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/sdk3_img[1].gif
+-/r 11153-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/_(2)[1].gif
+-/r 11169-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/1092998864[1].jpg
+-/r 11180-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/yih2[1].js
+-/r 11188-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/yih[1].css
+-/r 11192-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/id_check62f59919[1]
+-/r 11196-128-5:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/id_check[1]
+-/r 11201-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/bl[1].gif
+-/r 11206-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/ygma[1].css
+-/r 11218-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/282153_021004ratemymortgage21_25x25[1].gif
+-/r 11221-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/dftc1[1].gif
+-/r 11225-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/shift1[1].gif
+-/r 11229-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/rc_wg2w_ne_1[1].gif
+-/r 11245-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/bt_b_dd_2[1].gif
+-/r 11260-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/ShowLetter[1].htm
+-/r 11264-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/rc_wc3c5_sw_1[1].gif
+-/r 11268-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/optn=1[1]
+-/r 11289-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/blank[1].gif
+-/r 11298-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/home[1].gif
+-/r 11301-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/plus[1].gif
+-/r 11310-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/youngnhot3[1].jpg
+-/r 11322-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/1[1].gif
+-/r 11332-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/search.right[1].gif
+-/r 11342-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/tz.1[1].gif
+-/r 11346-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/1[2].gif
+-/r 11352-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/premium[1].gif
+-/r 11353-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/top.mosque.fri.ap[1].jpg
+-/r 11356-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/tv.schedule._blue[1].gif
+-/r 11361-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/business.news.blue[1].gif
+-/r 11376-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/world[1].gif
+-/r 11391-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/quickvote.no.sponsor[1].gif
+-/r 11395-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/partner_si[1].gif
+-/r 11399-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/icon_premium[1].gif
+-/r 11470-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/wbk59.tmp
+-/r 11481-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/[1]
+-/r 11487-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/pimpslap[1].gif
+-/r 11495-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/v[1].htm
+-/r 11501-128-3:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/wbk5B.tmp
+-/r 11502-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/[2]
+-/r 11503-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/wbk5D.tmp
+-/r 11504-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/[3]
+-/r 11506-128-3:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/wbk60.tmp
+-/r 11507-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/[4]
+-/r 11508-128-3:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/wbk62.tmp
+-/r 11509-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/[5]
+-/r 11510-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/wbk64.tmp
+-/r 11511-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/[6]
+-/r 11512-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/wbk66.tmp
+-/r 11513-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/[7]
+-/r 11514-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/wbk68.tmp
+-/r 11515-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/[8]
+-/r 11517-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/wbk6B.tmp
+-/r 11518-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/[9]
+-/r 11519-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/wbk6D.tmp
+-/r 11520-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/[10]
+-/r 11521-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/wbk6F.tmp
+-/r 11522-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/[11]
+-/r 11524-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/wbk72.tmp
+-/r 11525-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/[12]
+-/r 11526-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/wbk74.tmp
+-/r 11527-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/[13]
+-/r 11528-128-3:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/wbk76.tmp
+-/r 11529-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/[14]
+-/r 11530-128-3:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/wbk78.tmp
+-/r 11531-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/[15]
+-/r 11532-128-3:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/wbk7A.tmp
+-/r 11533-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/[16]
+-/r 11534-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/wbk7C.tmp
+-/r 11535-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/[17]
+-/r 11537-128-3:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/wbk7F.tmp
+-/r 11538-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/[18]
+-/r 11540-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/wbk82.tmp
+-/r 11541-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/[19]
+-/r 11542-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/wbk84.tmp
+-/r 11543-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/[20]
+-/r 11544-128-3:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/wbk86.tmp
+-/r 11545-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/[21]
+-/r 11546-128-3:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/wbk88.tmp
+-/r 11547-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/[22]
+-/r 11548-128-3:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/wbk8A.tmp
+-/r 11549-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/[23]
+-/r 11550-128-3:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/wbk8C.tmp
+-/r 11551-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/[24]
+-/r 11552-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/wbk8E.tmp
+-/r 11553-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/[25]
+-/r 11554-128-3:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/wbk90.tmp
+-/r 11555-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/[26]
+-/r 11563-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/usa[1].xml
+-/r 11572-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/ipod_img_w[1].jpg
+-/r 11575-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/1093431699[1].jpg
+-/r 11584-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/pbhp_84x28_blu_yahoonews[1].swf
+-/r 11590-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/my16[1].gif
+-/r 11594-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/sky_backup_060404[1].gif
+-/r 11605-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/geeklogo2[1].gif
+-/r 11607-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/j[1].ad
+-/r 11617-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/mgnew[1].gif
+-/r 11621-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/wayoff[1].gif
+-/r 11622-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/flashwrapv4[1].js
+-/r 11625-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/info[1].jpg
+-/r 11630-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/func[1].js
+-/r 11637-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/button[1].swf
+-/r 11648-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/j[2].ad
+-/r 11651-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/folder[1].gif
+-/r 11656-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/zoom[1].gif
+-/r 11659-128-3:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/CAIROTUB.swf
+-/r 11661-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/187566[1].jpg
+-/r 11672-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/button[2].swf
+-/r 11674-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/internetend[1].htm
+-/r 11675-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/picture1_s[1].jpg
+-/r 11677-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/mosnews[1].css
+-/r 11679-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/j[3].ad
+-/r 11695-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/mn_logo[1].gif
+-/r 11698-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/t[1].gif
+-/r 11702-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/picture_s[1].jpg
+-/r 11708-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/mosnews_small[1].gif
+-/r 11720-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/police2[1].jpg
+-/r 11721-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/picture2[1].jpg
+-/r 11802-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/nav_first[1].gif
+-/r 11807-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/nav_next[1].gif
+-/r 11809-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/fosi.ural[1]
+-/r 11833-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/320x60_amn[1].jpg
+-/r 11878-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/ORRM2Z8XK1{]J1_D]_ZU8[1].jpg
+-/r 11953-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/0399149864.01.LZZZZZZZ[1].jpg
+-/r 11954-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/0471253111.01.MZZZZZZZ[1].jpg
+-/r 11958-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/netstumbler[1].htm
+-/r 11961-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/nsstylemedium[1].css
+-/r 11965-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/t_medium[1].gif
+-/r 11969-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/menu[1].jpg
+-/r 11973-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/box_bottom[1].gif
+-/r 11974-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/box_top[1].gif
+-/r 11984-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/go-button[1].gif
+-/r 11993-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/folder[2].gif
+-/r 11995-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/blank[2].gif
+-/r 12256-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/KNE!WVQE~D1WBBXC,CD8YN[1].jpg
+-/r 12271-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/verticaldots[1].gif
+-/r 12275-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/homepage_new[1].css
+-/r 12298-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PN0J7OQM/shuftak_icon[1].gif
+d/d 8354-144-6:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ
+r/r 11155-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/m6v8c[1].gif
+r/r 11562-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/magnescan%20web%20header9[1].jpg
+r/r 11172-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/mail_style[1].css
+r/r 11271-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/main[1].css
+r/r 10567-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/main[1].js
+r/r 11266-128-5:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/majorgeeks[2]
+r/r 12266-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/maktoob[1].htm
+r/r 11047-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/mbl_rt[1].gif
+r/r 11634-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/mg120[1].jpg
+-/r 11482-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/nav_6[1].gif
+-/r 11337-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/nav_at_money[1].gif
+-/r 11581-128-5:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/news[2]
+-/r 11003-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/nip_lt[1].gif
+-/r 11375-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/novell[1].gif
+-/r 11351-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/olympics.link.mainpage[1].gif
+-/r 11080-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/onehundredtwo[1].png
+-/r 11191-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/or[1].gif
+r/r 11114-128-5:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/utils[2].js
+r/r 11829-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/vsleft[1].gif
+r/r 11570-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/wap_mail[1].gif
+r/r 11494-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/wbk57.tmp
+r/r 11949-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/WDlogo[1].gif
+r/r 11148-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/whatshot_hd[1].gif
+r/r 12006-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/win32[1]
+r/r 11998-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/winpcap[1].css
+r/r 11478-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/x-click-but04[1].gif
+r/r 11187-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/yg_csstare[1].js
+r/r 11179-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/yg_util[1].js
+r/r 11499-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/[1]
+r/r 9991-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/_@BC[WTX`U4O345CL0-L`@[1].jpg
+r/r 11125-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/_[1].gif
+r/r 11378-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/entertainment[1].gif
+r/r 11405-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/FFFFFF[1].gif
+r/r 11609-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/files[1].jpg
+r/r 11589-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/fs_sky_031223[1].js
+r/r 11365-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/ftn.345x32.whats.on.cnn.tv.tonight.find.out[1].gif
+r/r 11620-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/FUCWMHCQLGSCGHNJQSSPEFMWLPPWNGPOXEEMRGQRSMQXNINHLOPNGPJHKBYOWDQLKTENPD[1].gif
+r/r 11304-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/gatebg[1].jpg
+r/r 11650-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/gd4125[1].gif
+r/r 11614-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/grenade[1].gif
+r/r 11597-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/headerwk65[1].gif
+r/r 11383-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/health[1].gif
+r/r 12291-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/advertise_withus[1].gif
+r/r 11350-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/aol[1].gif
+r/r 11994-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/apache-dirindex[1].css
+r/r 11710-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/arbatov[1].htm
+r/r 11144-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/arrow_px_up[1].gif
+r/r 11129-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/arrow_right[1].gif
+r/r 11655-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/australian_flag2[1].gif
+r/r 12270-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/a_please[1].gif
+r/r 12293-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/banners[1].htm
+r/r 11027-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/bbip[1].jpg
+r/r 11359-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/bc-logo-transparent[1].gif
+r/r 11500-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/benchmark2[1].gif
+r/r 11021-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/bg_lt[1].gif
+r/r 11968-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/bg_right[1].gif
+r/r 11043-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/bg_rpt[1].gif
+r/r 11813-128-5:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/site[2].html
+r/r 11199-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/slv_rc[1].gif
+r/r 11296-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/spacer[1].gif
+r/r 12278-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/space[1].gif
+r/r 11646-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/spit[1].asp
+r/r 11664-128-5:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/spit[1].htm
+r/r 11232-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/src_wc4w_nw_1[1].gif
+r/r 11235-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/src_wc4w_sw_1[1].gif
+r/r 11051-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/stock-up[1].gif
+r/r 11636-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/j[1].ad
+r/r 11658-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/j[2].ad
+r/r 11195-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/last[1]
+r/r 11063-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/lbl_rpt[1].gif
+r/r 11107-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/lc2[1].gif
+r/r 11087-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/liveradio_anim[1].gif
+r/r 11267-128-5:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/login[1].htm
+r/r 11325-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/logo[1].gif
+-/r 9782-128-3:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/desktop.ini
+-/r 9990-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/0000012657_000000000000000099446[1].swf
+-/r 10989-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/helppane26[1].js
+-/r 10992-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/c[1].gif
+-/r 10998-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/signin[1].gif
+-/r 11004-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/center_top[1].jpg
+-/r 11011-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/LTO[+@EEJ20IPG{QY9!,8[1].jpg
+-/r 11012-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/P0,3Q6QC2K4[~+TNVG@XXX[1].jpg
+-/r 11020-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/IS_p_frwl3mbl_309x60_0204[1].gif
+-/r 11028-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/bullet[1].gif
+-/r 11035-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/rd_lt[1].gif
+-/r 11039-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/drd_lt[1].gif
+-/r 11055-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/dgr_rt[1].gif
+-/r 11059-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/dpp_lt[1].gif
+-/r 11075-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/2600[1]
+-/r 11079-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/su04tn[1].gif
+-/r 11092-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/01[1].gif
+-/r 11096-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/submit_hack[1].gif
+-/r 11099-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/bkgfade[1].gif
+-/r 11100-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/tomthumb[1].gif
+-/r 11117-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/sfg_lb[1].gif
+-/r 11122-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/search_btn[1].gif
+-/r 11133-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/1dot[1].gif
+-/r 11136-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/subject[1].gif
+-/r 11140-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/email_this[1].gif
+-/r 11152-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/powered_by_white_95x30[1].gif
+-/r 11158-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/040820_300x100[1].swf
+-/r 11159-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/powrdbyhp_blu_84x28_yahoo[1].gif
+-/r 11168-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/tri2[1].gif
+-/r 11181-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/reg2[1].css
+-/r 11183-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/popicon_1[1].gif
+-/r 11200-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/pers[1].gif
+-/r 11202-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/uh_bk[1].gif
+-/r 11211-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/pbhp_84x28_blu_yahoomail[1].swf
+-/r 11212-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/uh_crn2[1].gif
+-/r 11213-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/shd_l_1[1].gif
+-/r 11214-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/bt_dd_2[1].gif
+-/r 11228-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/rc_wg2w_nw_1[1].gif
+-/r 11240-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/61104_728_jsp_backupgames[1].gif
+-/r 11241-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/inbo1[1].gif
+-/r 11244-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/perc1[1].gif
+-/r 11252-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/em2_cr2[1].gif
+-/r 11256-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/em2_cr4[1].gif
+-/r 11259-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/bt_s_dd_2[1].gif
+-/r 11263-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/rc_wc3c5_ne_1[1].gif
+-/r 11280-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/elitetop[1].gif
+-/r 11285-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/book[1].gif
+-/r 11288-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/ua[1]
+-/r 11293-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/uar_03[1].gif
+-/r 11297-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/bookmark[1].gif
+-/r 11309-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/icon1[1].gif
+-/r 11331-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/CC0000.px[1].gif
+-/r 11336-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/search.bottom[1].gif
+-/r 11345-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/premium[1].gif
+-/r 11355-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/more.video.blue[1].gif
+-/r 11368-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/politics[1].gif
+-/r 11386-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/education[1].gif
+-/r 11390-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/reports[1].gif
+-/r 11394-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/partner_time[1].gif
+-/r 11398-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/icon.external.links[1].gif
+-/r 11439-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/shared[1].js
+-/r 11473-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/top[1].jpg
+-/r 11486-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/hotd_sm[1].gif
+-/r 11493-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/bottom_back_pattern[1].gif
+-/r 11560-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/drop[1].js
+-/r 11571-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/tag_bktsch_w[1].gif
+-/r 11588-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/icon_xml2[1].gif
+-/r 11616-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/SIBanner_IM2_12x90[1].gif
+-/r 11624-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/1x1[1].gif
+-/r 11629-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/ads[1]
+-/r 11635-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/040811_728x90_generic_survey_badw_sc[1].swf
+-/r 11639-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/pixel[1].gif
+-/r 11640-128-5:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/ads[1].htm
+-/r 11669-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/040519_468x60_yahoo_menu_ad_c[1].swf
+-/r 11671-128-5:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/adframe[1].htm
+-/r 11685-128-3:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/CA6FUZIH.swf
+-/r 11687-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/ITCMKNENBCQJEPINOMLJTHUXSQEYONKJMSKQSXLKRPDNBGOUKHMLKEKSWTDRUJUDVLFDJOHJHU[1].gif
+-/r 11693-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/nemov-s[1].bmp
+-/r 11694-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/policeman2[1].jpg
+-/r 11701-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/picture_s[1].jpg
+-/r 11703-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/crash2[1].jpg
+-/r 11707-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/picture1_s[1].jpg
+-/r 11711-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/picture_s[2].jpg
+-/r 11714-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/picture[1].jpg
+-/r 11715-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/109[1].gif
+-/r 11803-128-5:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/search[2]
+-/r 11804-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/summer2004_synchro_results[1].gif
+-/r 11821-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/downdu[1].gif
+-/r 11824-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/blline2[1].gif
+-/r 11832-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/hosting[1].gif
+-/r 11837-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/bug_u[1].gif
+-/r 11840-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/sb_ie_ltr[1].gif
+-/r 11845-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/trans_pixel[1].gif
+-/r 11849-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/CAI3TRV5.HTM
+-/r 11947-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/0672324881.01._PE_PI_SCMZZZZZZZ_[1].jpg
+-/r 11948-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/0130259624.01.MZZZZZZZ[1].jpg
+-/r 11957-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/code[1].php
+-/r 11960-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/nsstyle[1].css
+-/r 11964-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/t_small[1].gif
+-/r 11972-128-5:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/ads[2].htm
+-/r 11978-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/CAJQA5BJ.com%2F
+-/r 11983-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/elogo-64-trans[1].gif
+-/r 11988-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/ads[2]
+-/r 11992-128-5:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/ads[3].htm
+-/r 12002-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/curvedown[1].gif
+-/r 12254-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/QXX[072-H5SKH8L+UYL]Q[1].jpg
+-/r 12269-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/please[1].gif
+-/r 12285-128-1:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/corner_a[1].gif
+-/r 12297-128-4:	Local Settings/Temporary Internet Files/Content.IE5/PTV39NDQ/im_killer_e1[1].gif
+r/r 9781-128-1:	Local Settings/Temporary Internet Files/desktop.ini
+-/d 8384-144-5:	Local Settings/Temp
+-/r 10068-128-3:	Local Settings/Temp/GLFE.tmp
+-/d 10142-144-1:	Local Settings/Temp/Temporary Directory 1 for powertoysetup.zip
+r/r 10143-128-4:	Local Settings/Temp/Temporary Directory 1 for powertoysetup.zip/PowerToySetup.exe
+-/d 8386-144-1:	Local Settings/History
+r/r 9832-128-1:	Local Settings/History/desktop.ini
+d/d 8388-144-5:	Local Settings/History/History.IE5
+-/d 452-144-1:	Local Settings/History/History.IE5/MSHist012004082520040826
+r/r 454-128-3:	Local Settings/History/History.IE5/MSHist012004082520040826/index.dat
+-/r 9789-128-4:	Local Settings/History/History.IE5/index.dat
+-/r 9792-128-3:	Local Settings/History/History.IE5/desktop.ini
+-/d 11566-144-1:	Local Settings/History/History.IE5/MSHist012004081620040823
+r/r 11567-128-3:	Local Settings/History/History.IE5/MSHist012004081620040823/index.dat
+-/d 11716-144-1:	Local Settings/History/History.IE5/MSHist012004082720040828
+r/r 11881-128-3:	Local Settings/History/History.IE5/MSHist012004082720040828/index.dat
+-/d 11904-144-1:	Local Settings/History/History.IE5/MSHist012004082620040827
+r/r 11905-128-3:	Local Settings/History/History.IE5/MSHist012004082620040827/index.dat
+-/d 8390-144-6:	Local Settings/Application Data
+-/r 413-128-4:	Local Settings/Application Data/IconCache.db
+-/d 9799-144-6:	Local Settings/Application Data/Microsoft
+-/d 9800-144-1:	Local Settings/Application Data/Microsoft/Windows
+r/r 9801-128-3:	Local Settings/Application Data/Microsoft/Windows/UsrClass.dat
+r/r 9802-128-4:	Local Settings/Application Data/Microsoft/Windows/UsrClass.dat.LOG
+-/d 9804-144-1:	Local Settings/Application Data/Microsoft/Credentials
+d/d 9805-144-1:	Local Settings/Application Data/Microsoft/Credentials/S-1-5-21-2000478354-688789844-1708537768-1003
+-/d 9870-144-1:	Local Settings/Application Data/Microsoft/CD Burning
+-/d 10993-144-1:	Local Settings/Application Data/Microsoft/Internet Explorer
+r/r 10994-128-3:	Local Settings/Application Data/Microsoft/Internet Explorer/MSIMGSIZ.DAT
+-/d 11408-144-1:	Local Settings/Application Data/Identities
+d/d 11409-144-1:	Local Settings/Application Data/Identities/{EF086998-1115-4ECD-9B13-9ADC067B4929}
+d/d 11412-144-1:	Local Settings/Application Data/Identities/{EF086998-1115-4ECD-9B13-9ADC067B4929}/Microsoft
+d/d 11424-144-6:	Local Settings/Application Data/Identities/{EF086998-1115-4ECD-9B13-9ADC067B4929}/Microsoft/Outlook Express
+r/r 11431-128-3:	Local Settings/Application Data/Identities/{EF086998-1115-4ECD-9B13-9ADC067B4929}/Microsoft/Outlook Express/cleanup.log
+-/r 11425-128-3:	Local Settings/Application Data/Identities/{EF086998-1115-4ECD-9B13-9ADC067B4929}/Microsoft/Outlook Express/Outbox.dbx
+-/r 11426-128-3:	Local Settings/Application Data/Identities/{EF086998-1115-4ECD-9B13-9ADC067B4929}/Microsoft/Outlook Express/Folders.dbx
+-/r 11429-128-3:	Local Settings/Application Data/Identities/{EF086998-1115-4ECD-9B13-9ADC067B4929}/Microsoft/Outlook Express/Offline.dbx
+-/r 11432-128-3:	Local Settings/Application Data/Identities/{EF086998-1115-4ECD-9B13-9ADC067B4929}/Microsoft/Outlook Express/Inbox.dbx
+-/r 11441-128-4:	Local Settings/Application Data/Identities/{EF086998-1115-4ECD-9B13-9ADC067B4929}/Microsoft/Outlook Express/Deleted Items.dbx
+-/r 11442-128-4:	Local Settings/Application Data/Identities/{EF086998-1115-4ECD-9B13-9ADC067B4929}/Microsoft/Outlook Express/alt.2600.dbx
+-/r 11443-128-4:	Local Settings/Application Data/Identities/{EF086998-1115-4ECD-9B13-9ADC067B4929}/Microsoft/Outlook Express/alt.2600.cardz.dbx
+-/r 11444-128-4:	Local Settings/Application Data/Identities/{EF086998-1115-4ECD-9B13-9ADC067B4929}/Microsoft/Outlook Express/alt.2600.codez.dbx
+-/r 11445-128-4:	Local Settings/Application Data/Identities/{EF086998-1115-4ECD-9B13-9ADC067B4929}/Microsoft/Outlook Express/alt.2600.crackz.dbx
+-/r 11446-128-4:	Local Settings/Application Data/Identities/{EF086998-1115-4ECD-9B13-9ADC067B4929}/Microsoft/Outlook Express/alt.2600.moderated.dbx
+-/r 11447-128-4:	Local Settings/Application Data/Identities/{EF086998-1115-4ECD-9B13-9ADC067B4929}/Microsoft/Outlook Express/alt.binaries.hacking.utilities.dbx
+-/r 11448-128-4:	Local Settings/Application Data/Identities/{EF086998-1115-4ECD-9B13-9ADC067B4929}/Microsoft/Outlook Express/alt.stupidity.hackers.malicious.dbx
+-/r 11449-128-4:	Local Settings/Application Data/Identities/{EF086998-1115-4ECD-9B13-9ADC067B4929}/Microsoft/Outlook Express/free.binaries.hackers.malicious.dbx
+-/r 11450-128-4:	Local Settings/Application Data/Identities/{EF086998-1115-4ECD-9B13-9ADC067B4929}/Microsoft/Outlook Express/free.binaries.hacking.talentless.troll_haven.dbx
+-/r 11451-128-4:	Local Settings/Application Data/Identities/{EF086998-1115-4ECD-9B13-9ADC067B4929}/Microsoft/Outlook Express/free.binaries.hacking.talentless.troll-haven.dbx
+-/r 11452-128-4:	Local Settings/Application Data/Identities/{EF086998-1115-4ECD-9B13-9ADC067B4929}/Microsoft/Outlook Express/alt.nl.binaries.hack.dbx
+-/r 11453-128-4:	Local Settings/Application Data/Identities/{EF086998-1115-4ECD-9B13-9ADC067B4929}/Microsoft/Outlook Express/free.binaries.hacking.beginner.dbx
+-/r 11454-128-4:	Local Settings/Application Data/Identities/{EF086998-1115-4ECD-9B13-9ADC067B4929}/Microsoft/Outlook Express/free.binaries.hacking.computers.dbx
+-/r 11455-128-4:	Local Settings/Application Data/Identities/{EF086998-1115-4ECD-9B13-9ADC067B4929}/Microsoft/Outlook Express/free.binaries.hacking.utilities.dbx
+-/r 11456-128-4:	Local Settings/Application Data/Identities/{EF086998-1115-4ECD-9B13-9ADC067B4929}/Microsoft/Outlook Express/free.binaries.hacking.websites.dbx
+-/r 11457-128-4:	Local Settings/Application Data/Identities/{EF086998-1115-4ECD-9B13-9ADC067B4929}/Microsoft/Outlook Express/alt.binaries.hacking.computers.dbx
+-/r 11458-128-4:	Local Settings/Application Data/Identities/{EF086998-1115-4ECD-9B13-9ADC067B4929}/Microsoft/Outlook Express/alt.binaries.hacking.websites.dbx
+-/r 11459-128-4:	Local Settings/Application Data/Identities/{EF086998-1115-4ECD-9B13-9ADC067B4929}/Microsoft/Outlook Express/alt.dss.hack.dbx
+-/r 11505-128-4:	Local Settings/Application Data/Identities/{EF086998-1115-4ECD-9B13-9ADC067B4929}/Microsoft/Outlook Express/alt.binaries.hacking.beginner.dbx
+-/r 11516-128-4:	Local Settings/Application Data/Identities/{EF086998-1115-4ECD-9B13-9ADC067B4929}/Microsoft/Outlook Express/alt.hacking.dbx
+-/r 11523-128-4:	Local Settings/Application Data/Identities/{EF086998-1115-4ECD-9B13-9ADC067B4929}/Microsoft/Outlook Express/alt.2600.programz.dbx
+-/r 11536-128-4:	Local Settings/Application Data/Identities/{EF086998-1115-4ECD-9B13-9ADC067B4929}/Microsoft/Outlook Express/alt.2600.phreakz.dbx
+-/r 11539-128-4:	Local Settings/Application Data/Identities/{EF086998-1115-4ECD-9B13-9ADC067B4929}/Microsoft/Outlook Express/alt.2600.hackerz.dbx
+-/r 9793-128-3:	Local Settings/desktop.ini
+-/d 8392-144-6:	Favorites
+-/d 9791-144-5:	Favorites/Links
+-/r 9865-128-1:	Favorites/Links/Customize Links.url
+-/r 9866-128-1:	Favorites/Links/Free Hotmail.url
+-/r 9867-128-1:	Favorites/Links/Windows.url
+-/r 9868-128-1:	Favorites/Links/Windows Media.url
+-/r 9848-128-1:	Favorites/Desktop.ini
+-/r 9863-128-1:	Favorites/MSN.com.url
+-/r 9864-128-1:	Favorites/Radio Station Guide.url
+-/d 8394-144-5:	Desktop
+-/d 10141-144-7:	Desktop/Tools
+r/r 10191-128-4:	Desktop/Tools/123 WASP.lnk
+r/r 10064-128-1:	Desktop/Tools/Agent.lnk
+r/r 9967-128-4:	Desktop/Tools/Cain v2.5.lnk
+r/r 10117-128-3:	Desktop/Tools/CuteFTP.lnk
+r/r 10131-128-3:	Desktop/Tools/CuteHTML.lnk
+r/r 12248-128-1:	Desktop/Tools/Ethereal.lnk
+r/r 10002-128-4:	Desktop/Tools/Faber Toys.lnk
+r/r 11782-128-4:	Desktop/Tools/Look@Host.lnk
+r/r 11780-128-3:	Desktop/Tools/Look@LAN.lnk
+r/r 10085-128-1:	Desktop/Tools/mIRC.lnk
+r/r 12030-128-4:	Desktop/Tools/Network Stumbler.lnk
+r/r 10140-128-4:	Desktop/Tools/Shortcut to whois.lnk
+-/d 8396-144-5:	Cookies
+r/r 11670-128-1:	Cookies/mr. evil@www.drudgereport[1].txt
+-/r 461-128-1:	Cookies/mr. evil@atdmt[2].txt
+-/r 9794-128-4:	Cookies/index.dat
+-/r 11108-128-1:	Cookies/mr. evil@search.msn[1].txt
+-/r 11270-128-1:	Cookies/mr. evil@advertising[2].txt
+-/r 11333-128-1:	Cookies/mr. evil@atwola[2].txt
+-/r 11340-128-1:	Cookies/mr. evil@www.cnn[1].txt
+-/r 11369-128-1:	Cookies/mr. evil@cnn[1].txt
+-/r 11414-128-1:	Cookies/mr. evil@google[1].txt
+-/r 11498-128-1:	Cookies/mr. evil@revenue[2].txt
+-/r 11577-128-1:	Cookies/mr. evil@doubleclick[1].txt
+-/r 11580-128-1:	Cookies/mr. evil@yahoo[1].txt
+-/r 11660-128-1:	Cookies/mr. evil@centrport[1].txt
+-/r 11682-128-1:	Cookies/mr. evil@tribalfusion[1].txt
+-/r 11683-128-1:	Cookies/mr. evil@fastclick[1].txt
+-/r 11688-128-1:	Cookies/mr. evil@servedby.advertising[2].txt
+-/r 11705-128-1:	Cookies/mr. evil@sj9[1].txt
+-/r 11722-128-1:	Cookies/mr. evil@list[1].txt
+-/r 11844-128-1:	Cookies/mr. evil@microsoft[1].txt
+-/r 11877-128-1:	Cookies/mr. evil@msn[2].txt
+-/r 11981-128-1:	Cookies/mr. evil@www.netstumbler[2].txt
+-/r 12272-128-1:	Cookies/mr. evil@maktoob[1].txt
+-/r 12273-128-1:	Cookies/mr. evil@www.maktoob[2].txt
+-/r 12282-128-1:	Cookies/mr[2].txt
+-/r 12288-128-1:	Cookies/mr[1].txt
+-/d 8398-144-6:	Application Data
+r/r 9797-128-3:	Application Data/desktop.ini
+d/d 12260-144-1:	Application Data/Ethereal
+r/r 12261-128-4:	Application Data/Ethereal/preferences
+r/r 12301-128-3:	Application Data/Ethereal/recent
+d/d 9835-144-1:	Application Data/Identities
+d/d 9836-144-1:	Application Data/Identities/{EF086998-1115-4ECD-9B13-9ADC067B4929}
+d/d 8432-144-6:	Application Data/Microsoft
+-/d 198-144-1:	Application Data/Microsoft/Windows
+d/d 199-144-1:	Application Data/Microsoft/Windows/Themes
+r/r 222-128-4:	Application Data/Microsoft/Windows/Themes/Custom.theme
+-/d 8434-144-1:	Application Data/Microsoft/SystemCertificates
+d/d 8437-144-1:	Application Data/Microsoft/SystemCertificates/My
+d/d 8443-144-1:	Application Data/Microsoft/SystemCertificates/My/Certificates
+d/d 8441-144-1:	Application Data/Microsoft/SystemCertificates/My/CRLs
+d/d 8439-144-1:	Application Data/Microsoft/SystemCertificates/My/CTLs
+-/d 8449-144-1:	Application Data/Microsoft/Internet Explorer
+r/r 9796-128-5:	Application Data/Microsoft/Internet Explorer/brndlog.bak
+r/r 9795-128-6:	Application Data/Microsoft/Internet Explorer/brndlog.txt
+r/r 9833-128-3:	Application Data/Microsoft/Internet Explorer/Desktop.htt
+d/d 9819-144-6:	Application Data/Microsoft/Internet Explorer/Quick Launch
+-/r 231-128-1:	Application Data/Microsoft/Internet Explorer/Quick Launch/Show Desktop.scf
+-/r 9821-128-1:	Application Data/Microsoft/Internet Explorer/Quick Launch/desktop.ini
+-/r 9829-128-4:	Application Data/Microsoft/Internet Explorer/Quick Launch/Windows Media Player.lnk
+-/r 9849-128-4:	Application Data/Microsoft/Internet Explorer/Quick Launch/Launch Internet Explorer Browser.lnk
+-/r 10003-128-4:	Application Data/Microsoft/Internet Explorer/Quick Launch/Faber Toys.lnk
+-/d 9806-144-1:	Application Data/Microsoft/Credentials
+d/d 9807-144-1:	Application Data/Microsoft/Credentials/S-1-5-21-2000478354-688789844-1708537768-1003
+-/d 11427-144-1:	Application Data/Microsoft/Address Book
+r/r 11428-128-4:	Application Data/Microsoft/Address Book/Mr_ Evil.wab
+-/d 11433-144-1:	Application Data/Microsoft/HTML Help
+r/r 11434-128-3:	Application Data/Microsoft/HTML Help/hh.dat
+-/r 9798-128-4:	ntuser.dat.LOG
+-/r 9803-128-1:	ntuser.ini
+-/r 12263-128-1:	.gtk-bookmarks
+-/r 12264-128-4:	interception

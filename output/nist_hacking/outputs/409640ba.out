@@ -1,0 +1,17 @@
+
+exif2map.pl v2012.05.24
+Perl script to take the output of exiftool and conjure up a web link
+to google maps if the image has stored GPS lat/long info.
+
+Usage: exif2map.pl [-h|help] [-f filename] [-html]
+-h|help .......... Help (print this information). Does not run anything else.
+-f filename ...... File(s) to extract lat/long from
+-dir directory ... Absolute/Relative path to folder containing file(s) to extract lat/long from
+-html ............ Also output results as a timestamped html file in current directory
+
+Example: exif2map.pl -f /cases/galloping-gonzo.jpg -f /cases/krazy-kermit.jpg
+Example: exif2map.pl -f /cases/krazy-kermit.jpg -dir /cases/rockin-rowlf-pics/ -html
+
+Note: Outputs results to command line and (if specified) to a timestamped html file
+in the current directory (e.g. exif2map-output-TIMESTAMP.html)
+

@@ -1,0 +1,1895 @@
+-/d 220-144-6:	srchasst
+d/d 6267-144-1:	srchasst/chars
+r/r 6268-128-4:	srchasst/chars/courtney.acs
+r/r 6269-128-4:	srchasst/chars/earl.acs
+r/r 6270-128-4:	srchasst/chars/rover.acs
+r/r 6263-128-4:	srchasst/msgr3en.dll
+d/d 6271-144-1:	srchasst/mui
+d/d 6272-144-6:	srchasst/mui/0409
+r/r 6273-128-4:	srchasst/mui/0409/balloon.xsl
+r/r 6274-128-4:	srchasst/mui/0409/bar.xsl
+r/r 6275-128-1:	srchasst/mui/0409/charchsr.xml
+r/r 6276-128-1:	srchasst/mui/0409/charctxt.xml
+r/r 6277-128-1:	srchasst/mui/0409/error.xml
+r/r 6278-128-4:	srchasst/mui/0409/finish.xml
+r/r 6279-128-4:	srchasst/mui/0409/indxsvc.xml
+r/r 6280-128-4:	srchasst/mui/0409/inetfind.xml
+r/r 6281-128-4:	srchasst/mui/0409/inetopts.xml
+r/r 6282-128-4:	srchasst/mui/0409/inetpref.xml
+r/r 6283-128-4:	srchasst/mui/0409/inetsrch.xml
+r/r 6284-128-4:	srchasst/mui/0409/intents.xml
+r/r 6285-128-4:	srchasst/mui/0409/intro.xml
+r/r 6286-128-4:	srchasst/mui/0409/lcladv.xml
+r/r 6287-128-4:	srchasst/mui/0409/lcladvd.xml
+r/r 6288-128-4:	srchasst/mui/0409/lcladvdf.xml
+r/r 6289-128-4:	srchasst/mui/0409/lcladvmm.xml
+r/r 6290-128-4:	srchasst/mui/0409/lclcomp.xml
+r/r 6291-128-4:	srchasst/mui/0409/lcldate.xml
+r/r 6292-128-4:	srchasst/mui/0409/lcldocs.xml
+r/r 6293-128-1:	srchasst/mui/0409/lclkwrds.xml
+r/r 6294-128-1:	srchasst/mui/0409/lcllook.xml
+r/r 6295-128-4:	srchasst/mui/0409/lclmm.xml
+r/r 6296-128-1:	srchasst/mui/0409/lclmode.xml
+r/r 6297-128-4:	srchasst/mui/0409/lclother.xml
+r/r 6298-128-4:	srchasst/mui/0409/lclprog.xml
+r/r 6299-128-4:	srchasst/mui/0409/lclrfine.xml
+r/r 6300-128-4:	srchasst/mui/0409/lclsize.xml
+r/r 6301-128-4:	srchasst/mui/0409/lclsrch.xml
+r/r 6302-128-4:	srchasst/mui/0409/lcltechy.xml
+r/r 6264-128-4:	srchasst/nls302en.lex
+r/r 6265-128-4:	srchasst/srchctls.dll
+r/r 6266-128-4:	srchasst/srchui.dll
+-/r 333-128-1:	bootstat.dat
+-/r 339-128-3:	REGLOCS.OLD
+-/r 431-128-3:	SchedLgU.Txt
+-/d 432-144-6:	Prefetch
+r/r 9851-128-4:	Prefetch/RUNDLL32.EXE-137CCEC6.pf
+r/r 12036-128-4:	Prefetch/RUNDLL32.EXE-16B6BC1C.pf
+r/r 9841-128-4:	Prefetch/RUNDLL32.EXE-18E3301D.pf
+r/r 9825-128-4:	Prefetch/RUNDLL32.EXE-19076CE2.pf
+r/r 11564-128-4:	Prefetch/RUNDLL32.EXE-268BFF96.pf
+r/r 229-128-4:	Prefetch/RUNDLL32.EXE-26DA8C9B.pf
+r/r 9886-128-4:	Prefetch/RUNDLL32.EXE-271001B4.pf
+r/r 10978-128-4:	Prefetch/RUNDLL32.EXE-28A04614.pf
+r/r 9818-128-4:	Prefetch/RUNDLL32.EXE-2F982821.pf
+-/r 417-128-4:	Prefetch/NTOSBOOT-B00DFAAD.pf
+-/r 433-128-4:	Prefetch/SPOOLSV.EXE-282F76A7.pf
+-/r 444-128-4:	Prefetch/RUNDLL32.EXE-451FC2C0.pf
+-/r 445-128-4:	Prefetch/LSASS.EXE-20DB6D1B.pf
+-/r 446-128-4:	Prefetch/SVCHOST.EXE-3530F672.pf
+-/r 447-128-4:	Prefetch/MSOOBE.EXE-30411B02.pf
+-/r 448-128-4:	Prefetch/AGENTSVR.EXE-002E45AB.pf
+-/r 453-128-4:	Prefetch/WMIPRVSE.EXE-28F301A9.pf
+-/r 455-128-4:	Prefetch/USERINIT.EXE-30B18140.pf
+-/r 462-128-4:	Prefetch/WMIADAP.EXE-2DF425B2.pf
+-/r 2919-128-4:	Prefetch/NOTEPAD.EXE-336351A9.pf
+-/r 4728-128-4:	Prefetch/ETHEREAL.EXE-1C148EEF.pf
+-/r 9809-128-4:	Prefetch/LOGONUI.EXE-0AF22957.pf
+-/r 9820-128-4:	Prefetch/IE4UINIT.EXE-169A5A39.pf
+-/r 9826-128-4:	Prefetch/EXPLORER.EXE-082F38A9.pf
+-/r 9830-128-4:	Prefetch/UNREGMP2.EXE-07CACB61.pf
+-/r 9831-128-4:	Prefetch/RUNDLL32.EXE-304A2AEA.pf
+-/r 9834-128-4:	Prefetch/REGSVR32.EXE-25EEFE2F.pf
+-/r 9839-128-4:	Prefetch/SETUP50.EXE-362FF7C9.pf
+-/r 9853-128-4:	Prefetch/MSIEXEC.EXE-2F8A8CAE.pf
+-/r 9869-128-4:	Prefetch/RUNDLL32.EXE-33D7466C.pf
+-/r 9872-128-4:	Prefetch/MSTINIT.EXE-39813B24.pf
+-/r 9890-128-4:	Prefetch/MSMSGS.EXE-2B6052DE.pf
+-/r 9901-128-4:	Prefetch/RUNDLL32.EXE-445649BB.pf
+-/r 9938-128-4:	Prefetch/SETUP.EXE-046E69FA.pf
+-/r 9941-128-4:	Prefetch/IEXPLORE.EXE-27122324.pf
+-/r 9945-128-4:	Prefetch/A32-19.EXE-311D8B04.pf
+-/r 9946-128-4:	Prefetch/FABERTOYS_FULLSETUP.EXE-316A62F8.pf
+-/r 9948-128-4:	Prefetch/INS6.TMP-22CFFAF5.pf
+-/r 9968-128-4:	Prefetch/CAIN25B45.EXE-056F3A6E.pf
+-/r 9987-128-4:	Prefetch/UNINSTALL.EXE-0D9C8DD2.pf
+-/r 9995-128-4:	Prefetch/NPF_MGM.EXE-189CE5D1.pf
+-/r 9996-128-4:	Prefetch/DAEMON_MGM.EXE-3B573ED8.pf
+-/r 9997-128-4:	Prefetch/WINPCA~1.EXE-054DDBB5.pf
+-/r 10006-128-4:	Prefetch/CUTE3032.EXE-1F409A25.pf
+-/r 10070-128-4:	Prefetch/WORDPAD.EXE-24533991.pf
+-/r 10090-128-4:	Prefetch/MIRC612.EXE-02791C37.pf
+-/r 10092-128-4:	Prefetch/30.EXE-02F7CFE8.pf
+-/r 10132-128-4:	Prefetch/WHOIS.EXE-3AFF2064.pf
+-/r 10148-128-4:	Prefetch/123WASP_SETUP.EXE-333BB1F4.pf
+-/r 10155-128-4:	Prefetch/POWERTOYSETUP.EXE-312B2326.pf
+-/r 10194-128-4:	Prefetch/GLJ15.TMP-2FFB7B2A.pf
+-/r 10289-128-4:	Prefetch/RUNDLL32.EXE-46215CAC.pf
+-/r 10981-128-4:	Prefetch/ICWCONN1.EXE-24884676.pf
+-/r 10983-128-4:	Prefetch/DWWIN.EXE-30875ADC.pf
+-/r 10984-128-4:	Prefetch/DRWTSN32.EXE-2B4B52AC.pf
+-/r 11071-128-4:	Prefetch/MIRC.EXE-0661EC22.pf
+-/r 11318-128-4:	Prefetch/LOGON.SCR-151EFAEA.pf
+-/r 11319-128-4:	Prefetch/CMD.EXE-087B4001.pf
+-/r 11320-128-4:	Prefetch/PING.EXE-31216D26.pf
+-/r 11413-128-4:	Prefetch/AGENT.EXE-07F13C20.pf
+-/r 11430-128-4:	Prefetch/MSIMN.EXE-38BA891D.pf
+-/r 11579-128-4:	Prefetch/DUMPREP.EXE-1B46F901.pf
+-/r 11600-128-4:	Prefetch/FABER TOYS.EXE-286A3C88.pf
+-/r 11601-128-4:	Prefetch/FTINIT.EXE-0441E9C9.pf
+-/r 11724-128-4:	Prefetch/LOOKATLAN.EXE-1F991DD9.pf
+-/r 11725-128-4:	Prefetch/LOOKATHOST.EXE-34BB6F8B.pf
+-/r 11733-128-4:	Prefetch/LALSETUP250.EXE-36C95679.pf
+-/r 11735-128-4:	Prefetch/IRSETUP.EXE-2E1C7790.pf
+-/r 11872-128-4:	Prefetch/CAIN.EXE-23D61279.pf
+-/r 11876-128-4:	Prefetch/WHOIS.EXE-38443FF6.pf
+-/r 11885-128-4:	Prefetch/TELNET.EXE-24182D40.pf
+-/r 11900-128-4:	Prefetch/TASKMGR.EXE-20256C55.pf
+-/r 11901-128-3:	Prefetch/Layout.ini
+-/r 11910-128-4:	Prefetch/DEFRAG.EXE-273F131E.pf
+-/r 11911-128-4:	Prefetch/DFRGNTFS.EXE-269967DF.pf
+-/r 11913-128-4:	Prefetch/HELPSVC.EXE-2878DDA2.pf
+-/r 12007-128-4:	Prefetch/RUNDLL32.EXE-35BB92D4.pf
+-/r 12009-128-4:	Prefetch/NETSTUMBLERINSTALLER_0_4_0.EX-0BD9920C.pf
+-/r 12010-128-4:	Prefetch/HH.EXE-2D1A70B3.pf
+-/r 12031-128-4:	Prefetch/NETSTUMBLER.EXE-0BFEE568.pf
+-/r 12040-128-4:	Prefetch/ETHEREAL-SETUP-0.10.6.EXE-1D932600.pf
+-/r 12057-128-4:	Prefetch/WINPCAP_3_01_A.EXE-1E3EDEDC.pf
+-/d 459-144-6:	system32
+-/d 2254-144-6:	system
+r/r 3860-128-4:	system/AVICAP.DLL
+r/r 3861-128-4:	system/AVIFILE.DLL
+r/r 3862-128-4:	system/COMMDLG.DLL
+r/r 3864-128-4:	system/KEYBOARD.DRV
+r/r 3863-128-4:	system/LZEXPAND.DLL
+r/r 3865-128-4:	system/MCIAVI.DRV
+r/r 3866-128-4:	system/MCISEQ.DRV
+r/r 3867-128-4:	system/MCIWAVE.DRV
+r/r 3868-128-4:	system/MMSYSTEM.DLL
+r/r 3869-128-4:	system/MMTASK.TSK
+r/r 3870-128-4:	system/MOUSE.DRV
+r/r 3871-128-4:	system/MSVIDEO.DLL
+r/r 3872-128-4:	system/OLECLI.DLL
+r/r 3873-128-4:	system/OLESVR.DLL
+r/r 2255-128-3:	system/setup.inf
+r/r 3874-128-4:	system/SHELL.DLL
+r/r 3875-128-4:	system/SOUND.DRV
+r/r 2256-128-3:	system/stdole.tlb
+r/r 3876-128-4:	system/SYSTEM.DRV
+r/r 3877-128-4:	system/TAPI.DLL
+r/r 3878-128-4:	system/TIMER.DRV
+r/r 3879-128-4:	system/VER.DLL
+r/r 3880-128-4:	system/VGA.DRV
+r/r 3881-128-4:	system/WFWNET.DRV
+r/r 3882-128-4:	system/WINSPOOL.DRV
+-/d 2257-144-6:	repair
+r/r 9747-128-4:	repair/autoexec.nt
+r/r 9748-128-4:	repair/config.nt
+r/r 9743-128-4:	repair/default
+r/r 9746-128-4:	repair/ntuser.dat
+r/r 9745-128-4:	repair/sam
+r/r 7326-128-4:	repair/secsetup.inf
+r/r 9744-128-4:	repair/security
+r/r 2258-128-3:	repair/setup.log
+r/r 9742-128-4:	repair/software
+r/r 9741-128-4:	repair/system
+-/d 2259-144-3:	inf
+-/d 2930-144-3:	Help
+-/d 3400-144-6:	Fonts
+-/r 3401-128-3:	Fonts/vgaoem.fon
+-/r 3402-128-3:	Fonts/vgasys.fon
+-/r 3403-128-3:	Fonts/vgafix.fon
+-/r 3404-128-3:	Fonts/dosapp.fon
+-/r 3405-128-3:	Fonts/ega80woa.fon
+-/r 3406-128-3:	Fonts/ega40woa.fon
+-/r 3407-128-3:	Fonts/cga80woa.fon
+-/r 3408-128-3:	Fonts/cga40woa.fon
+-/r 3409-128-3:	Fonts/roman.fon
+-/r 3410-128-3:	Fonts/script.fon
+-/r 3411-128-3:	Fonts/modern.fon
+-/r 3412-128-3:	Fonts/smalle.fon
+-/r 3413-128-3:	Fonts/symbole.fon
+-/r 3414-128-3:	Fonts/coure.fon
+-/r 3415-128-3:	Fonts/sserife.fon
+-/r 3416-128-3:	Fonts/serife.fon
+-/r 3417-128-3:	Fonts/tahomabd.ttf
+-/r 3418-128-3:	Fonts/tahoma.ttf
+-/r 3419-128-3:	Fonts/marlett.ttf
+-/r 3420-128-3:	Fonts/micross.ttf
+-/r 3421-128-3:	Fonts/estre.ttf
+-/r 3422-128-3:	Fonts/gautami.ttf
+-/r 3423-128-3:	Fonts/latha.ttf
+-/r 3424-128-3:	Fonts/mangal.ttf
+-/r 3425-128-3:	Fonts/mvboli.ttf
+-/r 3426-128-3:	Fonts/raavi.ttf
+-/r 3427-128-3:	Fonts/shruti.ttf
+-/r 3428-128-3:	Fonts/tunga.ttf
+-/r 3429-128-3:	Fonts/arial.ttf
+-/r 3430-128-3:	Fonts/trebuc.ttf
+-/r 3431-128-3:	Fonts/trebucbd.ttf
+-/r 3432-128-3:	Fonts/verdana.ttf
+-/r 3433-128-3:	Fonts/arialbd.ttf
+-/r 3434-128-3:	Fonts/arialbi.ttf
+-/r 3435-128-3:	Fonts/ariali.ttf
+-/r 3436-128-3:	Fonts/ariblk.ttf
+-/r 3437-128-3:	Fonts/comic.ttf
+-/r 3438-128-3:	Fonts/comicbd.ttf
+-/r 3439-128-3:	Fonts/cour.ttf
+-/r 3440-128-3:	Fonts/courbd.ttf
+-/r 3441-128-3:	Fonts/courbi.ttf
+-/r 3442-128-3:	Fonts/couri.ttf
+-/r 3443-128-3:	Fonts/georgia.ttf
+-/r 3444-128-3:	Fonts/georgiab.ttf
+-/r 3445-128-3:	Fonts/georgiai.ttf
+-/r 3446-128-3:	Fonts/georgiaz.ttf
+-/r 3447-128-3:	Fonts/impact.ttf
+-/r 3448-128-3:	Fonts/l_10646.ttf
+-/r 3449-128-3:	Fonts/lucon.ttf
+-/r 3450-128-3:	Fonts/pala.ttf
+-/r 3451-128-3:	Fonts/palab.ttf
+-/r 3452-128-3:	Fonts/palabi.ttf
+-/r 3453-128-3:	Fonts/palai.ttf
+-/r 3454-128-3:	Fonts/symbol.ttf
+-/r 3455-128-3:	Fonts/timesbd.ttf
+-/r 3456-128-3:	Fonts/timesbi.ttf
+-/r 3457-128-3:	Fonts/timesi.ttf
+-/r 3458-128-3:	Fonts/trebucbi.ttf
+-/r 3459-128-3:	Fonts/trebucit.ttf
+-/r 3460-128-3:	Fonts/verdanai.ttf
+-/r 3461-128-3:	Fonts/verdanaz.ttf
+-/r 3462-128-3:	Fonts/webdings.ttf
+-/r 3463-128-3:	Fonts/wingding.ttf
+-/r 3464-128-3:	Fonts/times.ttf
+-/r 3465-128-3:	Fonts/verdanab.ttf
+-/r 3466-128-3:	Fonts/cga40850.fon
+-/r 3467-128-3:	Fonts/cga80850.fon
+-/r 3468-128-3:	Fonts/courf.fon
+-/r 3469-128-4:	Fonts/desktop.ini
+-/r 3470-128-3:	Fonts/ega40850.fon
+-/r 3471-128-3:	Fonts/ega80850.fon
+-/r 3472-128-3:	Fonts/framd.ttf
+-/r 3473-128-3:	Fonts/framdit.ttf
+-/r 3474-128-3:	Fonts/seriff.fon
+-/r 3475-128-3:	Fonts/sseriff.fon
+-/r 3476-128-3:	Fonts/sylfaen.ttf
+-/r 3477-128-3:	Fonts/vga850.fon
+-/r 3478-128-3:	Fonts/wst_czec.fon
+-/r 3479-128-3:	Fonts/wst_engl.fon
+-/r 3480-128-3:	Fonts/wst_fren.fon
+-/r 3481-128-3:	Fonts/wst_germ.fon
+-/r 3482-128-3:	Fonts/wst_ital.fon
+-/r 3483-128-3:	Fonts/wst_span.fon
+-/r 3484-128-3:	Fonts/wst_swed.fon
+-/r 3892-128-4:	Fonts/8514fix.fon
+-/r 3893-128-4:	Fonts/8514oem.fon
+-/r 3894-128-4:	Fonts/8514sys.fon
+-/r 3895-128-4:	Fonts/app850.fon
+-/r 3896-128-4:	Fonts/smallf.fon
+-/r 3897-128-4:	Fonts/vga860.fon
+-/r 3898-128-4:	Fonts/vga863.fon
+-/r 3899-128-4:	Fonts/vga865.fon
+-/r 3919-128-4:	Fonts/8514fixe.fon
+-/r 3920-128-4:	Fonts/8514oeme.fon
+-/r 3921-128-4:	Fonts/8514syse.fon
+-/r 3922-128-4:	Fonts/app852.fon
+-/r 3923-128-4:	Fonts/cga40852.fon
+-/r 3924-128-4:	Fonts/cga80852.fon
+-/r 3925-128-4:	Fonts/couree.fon
+-/r 3926-128-4:	Fonts/courfe.fon
+-/r 3927-128-4:	Fonts/ega40852.fon
+-/r 3928-128-4:	Fonts/ega80852.fon
+-/r 3929-128-4:	Fonts/serifee.fon
+-/r 3930-128-4:	Fonts/seriffe.fon
+-/r 3931-128-4:	Fonts/smallee.fon
+-/r 3932-128-4:	Fonts/smallfe.fon
+-/r 3933-128-4:	Fonts/sserifee.fon
+-/r 3934-128-4:	Fonts/sseriffe.fon
+-/r 3935-128-4:	Fonts/vga852.fon
+-/r 3936-128-4:	Fonts/vgafixe.fon
+-/r 3937-128-4:	Fonts/vgasyse.fon
+-/r 3952-128-4:	Fonts/85775.fon
+-/r 3953-128-4:	Fonts/85f1257.fon
+-/r 3954-128-4:	Fonts/85s1257.fon
+-/r 3955-128-4:	Fonts/app775.fon
+-/r 3956-128-4:	Fonts/coue1257.fon
+-/r 3957-128-4:	Fonts/couf1257.fon
+-/r 3958-128-4:	Fonts/sere1257.fon
+-/r 3959-128-4:	Fonts/serf1257.fon
+-/r 3960-128-4:	Fonts/smae1257.fon
+-/r 3961-128-4:	Fonts/smaf1257.fon
+-/r 3962-128-4:	Fonts/ssee1257.fon
+-/r 3963-128-4:	Fonts/ssef1257.fon
+-/r 3964-128-4:	Fonts/vga775.fon
+-/r 3965-128-4:	Fonts/vgaf1257.fon
+-/r 3966-128-4:	Fonts/vgas1257.fon
+-/r 3979-128-4:	Fonts/8514fixg.fon
+-/r 3980-128-4:	Fonts/8514oemg.fon
+-/r 3981-128-4:	Fonts/8514sysg.fon
+-/r 3982-128-4:	Fonts/cga40737.fon
+-/r 3983-128-4:	Fonts/cga40869.fon
+-/r 3984-128-4:	Fonts/cga80737.fon
+-/r 3985-128-4:	Fonts/cga80869.fon
+-/r 3986-128-4:	Fonts/coureg.fon
+-/r 3987-128-4:	Fonts/courfg.fon
+-/r 3988-128-4:	Fonts/dos737.fon
+-/r 3989-128-4:	Fonts/ega40737.fon
+-/r 3990-128-4:	Fonts/ega40869.fon
+-/r 3991-128-4:	Fonts/ega80737.fon
+-/r 3992-128-4:	Fonts/ega80869.fon
+-/r 3993-128-4:	Fonts/serifeg.fon
+-/r 3994-128-4:	Fonts/seriffg.fon
+-/r 3995-128-4:	Fonts/smalleg.fon
+-/r 3996-128-4:	Fonts/smallfg.fon
+-/r 3997-128-4:	Fonts/sserifeg.fon
+-/r 3998-128-4:	Fonts/sseriffg.fon
+-/r 3999-128-4:	Fonts/vga737.fon
+-/r 4000-128-4:	Fonts/vga869.fon
+-/r 4001-128-4:	Fonts/vgafixg.fon
+-/r 4002-128-4:	Fonts/vgasysg.fon
+-/r 4020-128-4:	Fonts/8514fixr.fon
+-/r 4021-128-4:	Fonts/8514oemr.fon
+-/r 4022-128-4:	Fonts/8514sysr.fon
+-/r 4023-128-4:	Fonts/85855.fon
+-/r 4024-128-4:	Fonts/app855.fon
+-/r 4025-128-4:	Fonts/app866.fon
+-/r 4026-128-4:	Fonts/cga40866.fon
+-/r 4027-128-4:	Fonts/cga80866.fon
+-/r 4028-128-4:	Fonts/courer.fon
+-/r 4029-128-4:	Fonts/courfr.fon
+-/r 4030-128-4:	Fonts/ega40866.fon
+-/r 4031-128-4:	Fonts/ega80866.fon
+-/r 4032-128-4:	Fonts/serifer.fon
+-/r 4033-128-4:	Fonts/seriffr.fon
+-/r 4034-128-4:	Fonts/smaller.fon
+-/r 4035-128-4:	Fonts/smallfr.fon
+-/r 4036-128-4:	Fonts/sserifer.fon
+-/r 4037-128-4:	Fonts/sseriffr.fon
+-/r 4038-128-4:	Fonts/vga855.fon
+-/r 4039-128-4:	Fonts/vga866.fon
+-/r 4040-128-4:	Fonts/vgafixr.fon
+-/r 4041-128-4:	Fonts/vgasysr.fon
+-/r 4050-128-4:	Fonts/8514fixt.fon
+-/r 4051-128-4:	Fonts/8514oemt.fon
+-/r 4052-128-4:	Fonts/8514syst.fon
+-/r 4053-128-4:	Fonts/app857.fon
+-/r 4054-128-4:	Fonts/cga40857.fon
+-/r 4055-128-4:	Fonts/cga80857.fon
+-/r 4056-128-4:	Fonts/couret.fon
+-/r 4057-128-4:	Fonts/courft.fon
+-/r 4058-128-4:	Fonts/ega40857.fon
+-/r 4059-128-4:	Fonts/ega80857.fon
+-/r 4060-128-4:	Fonts/serifet.fon
+-/r 4061-128-4:	Fonts/serifft.fon
+-/r 4062-128-4:	Fonts/smallet.fon
+-/r 4063-128-4:	Fonts/smallft.fon
+-/r 4064-128-4:	Fonts/sserifet.fon
+-/r 4065-128-4:	Fonts/sserifft.fon
+-/r 4066-128-4:	Fonts/vga857.fon
+-/r 4067-128-4:	Fonts/vgafixt.fon
+-/r 4068-128-4:	Fonts/vgasyst.fon
+-/d 3485-144-3:	Config
+-/d 3486-144-3:	msagent
+-/d 3487-144-3:	msagent/intl
+-/r 3488-128-3:	msagent/intl/agt0406.dll
+-/r 3489-128-3:	msagent/intl/agt0407.dll
+-/r 3490-128-3:	msagent/intl/agt0409.dll
+-/r 3491-128-3:	msagent/intl/agt040b.dll
+-/r 3492-128-3:	msagent/intl/agt040c.dll
+-/r 3493-128-3:	msagent/intl/agt0410.dll
+-/r 3494-128-3:	msagent/intl/agt0413.dll
+-/r 3495-128-3:	msagent/intl/agt0414.dll
+-/r 3496-128-3:	msagent/intl/agt0416.dll
+-/r 3497-128-3:	msagent/intl/agt041d.dll
+-/r 3498-128-3:	msagent/intl/agt0816.dll
+-/r 3499-128-3:	msagent/intl/agt0c0a.dll
+-/r 3938-128-4:	msagent/intl/agt0405.dll
+-/r 3939-128-4:	msagent/intl/agt040e.dll
+-/r 3940-128-4:	msagent/intl/agt0415.dll
+-/r 4003-128-4:	msagent/intl/agt0408.dll
+-/r 4042-128-4:	msagent/intl/agt0419.dll
+-/r 4069-128-4:	msagent/intl/agt041f.dll
+-/d 3500-144-3:	msagent/chars
+r/r 3501-128-3:	msagent/chars/merlin.acs
+-/r 3502-128-3:	msagent/agentanm.dll
+-/r 3503-128-3:	msagent/agentctl.dll
+-/r 3504-128-3:	msagent/agentdp2.dll
+-/r 3505-128-3:	msagent/agentdpv.dll
+-/r 3506-128-3:	msagent/agentmpx.dll
+-/r 3507-128-3:	msagent/agentpsh.dll
+-/r 3508-128-3:	msagent/agentsr.dll
+-/r 3509-128-3:	msagent/agentsvr.exe
+-/r 3510-128-3:	msagent/agtctl15.tlb
+-/r 3511-128-3:	msagent/agtintl.dll
+-/r 3512-128-3:	msagent/mslwvtts.dll
+-/d 3513-144-7:	Cursors
+r/r 5069-128-4:	Cursors/3dgarro.cur
+r/r 5070-128-4:	Cursors/3dgmove.cur
+r/r 5071-128-4:	Cursors/3dgnesw.cur
+r/r 5072-128-4:	Cursors/3dgno.cur
+r/r 5073-128-4:	Cursors/3dgns.cur
+r/r 5074-128-4:	Cursors/3dgnwse.cur
+r/r 5075-128-4:	Cursors/3dgwe.cur
+r/r 5076-128-4:	Cursors/3dsmove.cur
+r/r 5077-128-4:	Cursors/3dsns.cur
+r/r 5078-128-4:	Cursors/3dsnwse.cur
+r/r 5079-128-4:	Cursors/3dwarro.cur
+r/r 5080-128-4:	Cursors/3dwmove.cur
+r/r 5081-128-4:	Cursors/3dwnesw.cur
+r/r 5082-128-4:	Cursors/3dwno.cur
+r/r 5083-128-4:	Cursors/3dwns.cur
+r/r 5084-128-4:	Cursors/3dwnwse.cur
+r/r 5085-128-4:	Cursors/3dwwe.cur
+r/r 5035-128-4:	Cursors/appstar2.ani
+r/r 5036-128-4:	Cursors/appstar3.ani
+r/- * 0:	Cursors/appstart.ani
+r/r 5144-128-1:	Cursors/arrow_r.cur
+r/r 5145-128-4:	Cursors/arrow_rl.cur
+r/r 5146-128-4:	Cursors/arrow_rm.cur
+r/r 5038-128-4:	Cursors/banana.ani
+r/r 5039-128-4:	Cursors/barber.ani
+r/r 5147-128-1:	Cursors/beam_r.cur
+r/r 5040-128-4:	Cursors/coin.ani
+r/r 5041-128-4:	Cursors/counter.ani
+r/r 5086-128-4:	Cursors/cross.cur
+r/r 5042-128-4:	Cursors/dinosau2.ani
+r/r 5043-128-4:	Cursors/dinosaur.ani
+r/r 5044-128-4:	Cursors/drum.ani
+r/r 5045-128-4:	Cursors/fillitup.ani
+r/r 5046-128-4:	Cursors/hand.ani
+r/r 5047-128-4:	Cursors/handapst.ani
+r/r 5048-128-4:	Cursors/handnesw.ani
+r/r 5049-128-4:	Cursors/handno.ani
+r/r 5051-128-4:	Cursors/handnwse.ani
+r/r 5052-128-4:	Cursors/handwait.ani
+r/r 5053-128-4:	Cursors/handwe.ani
+r/r 5087-128-4:	Cursors/harrow.cur
+r/r 5088-128-4:	Cursors/hcross.cur
+r/r 5198-128-1:	Cursors/help_i.cur
+r/r 5199-128-4:	Cursors/help_il.cur
+r/r 5200-128-4:	Cursors/help_im.cur
+r/r 5237-128-4:	Cursors/help_l.cur
+r/r 5238-128-4:	Cursors/help_m.cur
+r/r 5156-128-1:	Cursors/help_r.cur
+r/r 5157-128-4:	Cursors/help_rl.cur
+r/r 5158-128-4:	Cursors/help_rm.cur
+r/r 5089-128-4:	Cursors/hibeam.cur
+r/r 5090-128-4:	Cursors/hmove.cur
+r/r 5091-128-4:	Cursors/hnesw.cur
+r/r 5092-128-4:	Cursors/hnodrop.cur
+r/r 5093-128-4:	Cursors/hns.cur
+r/r 5094-128-4:	Cursors/hnwse.cur
+r/r 5054-128-4:	Cursors/horse.ani
+r/r 5055-128-4:	Cursors/hourgla2.ani
+r/r 5056-128-4:	Cursors/hourgla3.ani
+r/r 5057-128-4:	Cursors/hourglas.ani
+r/r 5095-128-4:	Cursors/hwe.cur
+r/r 5096-128-4:	Cursors/lappstrt.cur
+r/r 5097-128-4:	Cursors/larrow.cur
+r/r 5059-128-4:	Cursors/piano.ani
+r/r 5060-128-4:	Cursors/rainbow.ani
+r/r 5061-128-4:	Cursors/raindrop.ani
+r/r 5062-128-4:	Cursors/sizenesw.ani
+r/r 5063-128-4:	Cursors/sizens.ani
+r/r 5064-128-4:	Cursors/sizenwse.ani
+r/r 5065-128-4:	Cursors/sizewe.ani
+r/r 5066-128-4:	Cursors/stopwtch.ani
+r/r 5067-128-4:	Cursors/vanisher.ani
+r/r 5068-128-4:	Cursors/wagtail.ani
+r/r 5099-128-4:	Cursors/libeam.cur
+r/r 5100-128-4:	Cursors/lmove.cur
+r/r 5101-128-4:	Cursors/lnesw.cur
+r/r 5102-128-4:	Cursors/lnodrop.cur
+r/r 5103-128-4:	Cursors/lns.cur
+r/r 5104-128-4:	Cursors/lnwse.cur
+r/r 5105-128-4:	Cursors/lwait.cur
+r/r 5106-128-4:	Cursors/lwe.cur
+r/r 5058-128-4:	Cursors/metronom.ani
+r/r 5201-128-1:	Cursors/move_i.cur
+r/r 5202-128-4:	Cursors/move_il.cur
+r/r 5203-128-4:	Cursors/move_im.cur
+r/r 5239-128-4:	Cursors/move_l.cur
+r/r 5240-128-4:	Cursors/move_m.cur
+r/r 5159-128-1:	Cursors/move_r.cur
+r/r 5160-128-4:	Cursors/move_rl.cur
+r/r 5161-128-4:	Cursors/move_rm.cur
+r/r 5204-128-1:	Cursors/no_i.cur
+r/r 5205-128-4:	Cursors/no_il.cur
+r/r 5206-128-4:	Cursors/no_im.cur
+r/r 5241-128-4:	Cursors/no_l.cur
+r/r 5242-128-4:	Cursors/no_m.cur
+r/r 5162-128-1:	Cursors/no_r.cur
+r/r 5163-128-4:	Cursors/no_rl.cur
+r/r 5164-128-4:	Cursors/no_rm.cur
+r/r 5207-128-1:	Cursors/pen_i.cur
+r/r 5208-128-4:	Cursors/pen_il.cur
+r/r 5209-128-4:	Cursors/pen_im.cur
+r/r 5243-128-4:	Cursors/pen_l.cur
+r/r 5244-128-4:	Cursors/pen_m.cur
+r/r 5165-128-1:	Cursors/pen_r.cur
+r/r 5166-128-4:	Cursors/pen_rl.cur
+r/r 5167-128-4:	Cursors/pen_rm.cur
+r/r 5186-128-1:	Cursors/arrow_i.cur
+r/r 5187-128-4:	Cursors/arrow_il.cur
+r/r 5188-128-4:	Cursors/arrow_im.cur
+r/r 5229-128-4:	Cursors/arrow_l.cur
+r/r 5230-128-4:	Cursors/arrow_m.cur
+r/r 5189-128-1:	Cursors/beam_i.cur
+r/r 5190-128-4:	Cursors/beam_il.cur
+r/r 5191-128-4:	Cursors/beam_im.cur
+r/r 5231-128-4:	Cursors/beam_l.cur
+r/r 5232-128-4:	Cursors/beam_m.cur
+r/r 5148-128-4:	Cursors/beam_rl.cur
+r/r 5149-128-4:	Cursors/beam_rm.cur
+r/r 5192-128-1:	Cursors/busy_i.cur
+r/r 5193-128-4:	Cursors/busy_il.cur
+r/r 5194-128-4:	Cursors/busy_im.cur
+r/r 5233-128-4:	Cursors/busy_l.cur
+r/r 5234-128-4:	Cursors/busy_m.cur
+r/r 5150-128-1:	Cursors/busy_r.cur
+r/- * 0:	Cursors/cross_il.cur
+r/r 5197-128-4:	Cursors/cross_im.cur
+r/r 5153-128-1:	Cursors/cross_r.cur
+r/r 5154-128-4:	Cursors/cross_rl.cur
+r/r 5155-128-4:	Cursors/cross_rm.cur
+r/r 5037-128-4:	Cursors/appstart.ani
+r/r 5151-128-4:	Cursors/busy_rl.cur
+r/r 5050-128-4:	Cursors/handns.ani
+r/r 5098-128-4:	Cursors/lcross.cur
+r/r 5176-128-4:	Cursors/size3_rm.cur
+r/r 5210-128-1:	Cursors/size1_i.cur
+r/r 5211-128-4:	Cursors/size1_il.cur
+r/r 5212-128-4:	Cursors/size1_im.cur
+r/r 5245-128-4:	Cursors/size1_l.cur
+r/r 5246-128-4:	Cursors/size1_m.cur
+r/r 5168-128-1:	Cursors/size1_r.cur
+r/r 5169-128-4:	Cursors/size1_rl.cur
+r/r 5170-128-4:	Cursors/size1_rm.cur
+r/r 5213-128-1:	Cursors/size2_i.cur
+r/r 5214-128-4:	Cursors/size2_il.cur
+r/r 5215-128-4:	Cursors/size2_im.cur
+r/r 5247-128-4:	Cursors/size2_l.cur
+r/r 5248-128-4:	Cursors/size2_m.cur
+r/r 5171-128-1:	Cursors/size2_r.cur
+r/r 5172-128-4:	Cursors/size2_rl.cur
+r/r 5173-128-4:	Cursors/size2_rm.cur
+r/r 5216-128-1:	Cursors/size3_i.cur
+r/r 5217-128-4:	Cursors/size3_il.cur
+r/r 5218-128-4:	Cursors/size3_im.cur
+r/r 5249-128-4:	Cursors/size3_l.cur
+r/r 5250-128-4:	Cursors/size3_m.cur
+r/r 5174-128-1:	Cursors/size3_r.cur
+r/r 5175-128-4:	Cursors/size3_rl.cur
+r/r 5180-128-1:	Cursors/up_r.cur
+r/r 5181-128-1:	Cursors/up_rl.cur
+r/r 5182-128-1:	Cursors/up_rm.cur
+r/r 5183-128-1:	Cursors/wait_r.cur
+r/r 5184-128-4:	Cursors/wait_rl.cur
+r/r 5185-128-4:	Cursors/wait_rm.cur
+r/r 5219-128-1:	Cursors/size4_i.cur
+r/r 5220-128-4:	Cursors/size4_il.cur
+r/r 5221-128-4:	Cursors/size4_im.cur
+r/r 5251-128-4:	Cursors/size4_l.cur
+r/r 5252-128-4:	Cursors/size4_m.cur
+r/r 5177-128-1:	Cursors/size4_r.cur
+r/r 5178-128-4:	Cursors/size4_rl.cur
+r/r 5179-128-4:	Cursors/size4_rm.cur
+r/r 5223-128-1:	Cursors/up_i.cur
+r/r 5224-128-1:	Cursors/up_il.cur
+r/r 5225-128-1:	Cursors/up_im.cur
+r/r 5253-128-4:	Cursors/up_l.cur
+r/r 5254-128-4:	Cursors/up_m.cur
+r/r 5226-128-1:	Cursors/wait_i.cur
+r/r 5227-128-4:	Cursors/wait_il.cur
+r/r 5228-128-4:	Cursors/wait_im.cur
+r/r 5255-128-4:	Cursors/wait_l.cur
+r/r 5256-128-4:	Cursors/wait_m.cur
+r/r 5152-128-4:	Cursors/busy_rm.cur
+r/r 5195-128-1:	Cursors/cross_i.cur
+r/r 5196-128-4:	Cursors/cross_il.cur
+r/r 5235-128-4:	Cursors/cross_l.cur
+r/r 5236-128-4:	Cursors/cross_m.cur
+-/d 3514-144-3:	Media
+r/r 3527-128-4:	Media/Windows XP Balloon.wav
+-/r 3515-128-3:	Media/chord.wav
+-/r 3516-128-3:	Media/chimes.wav
+-/r 3517-128-3:	Media/ding.wav
+-/r 3518-128-3:	Media/flourish.mid
+-/r 3519-128-3:	Media/notify.wav
+-/r 3520-128-3:	Media/onestop.mid
+-/r 3521-128-3:	Media/recycle.wav
+-/r 3522-128-3:	Media/ringin.wav
+-/r 3523-128-3:	Media/ringout.wav
+-/r 3524-128-3:	Media/start.wav
+-/r 3525-128-3:	Media/tada.wav
+-/r 3526-128-3:	Media/town.mid
+-/r 3528-128-4:	Media/Windows XP Battery Critical.wav
+-/r 3529-128-4:	Media/Windows XP Battery Low.wav
+-/r 3530-128-4:	Media/Windows XP Critical Stop.wav
+-/r 3531-128-4:	Media/Windows XP Default.wav
+-/r 3532-128-4:	Media/Windows XP Ding.wav
+-/r 3533-128-4:	Media/Windows XP Error.wav
+-/r 3534-128-4:	Media/Windows XP Exclamation.wav
+-/r 3535-128-4:	Media/Windows XP Hardware Fail.wav
+-/r 3536-128-4:	Media/Windows XP Hardware Insert.wav
+-/r 3537-128-4:	Media/Windows XP Hardware Remove.wav
+-/r 3538-128-4:	Media/Windows XP Logoff Sound.wav
+-/r 3539-128-4:	Media/Windows XP Logon Sound.wav
+-/r 3540-128-4:	Media/Windows XP Menu Command.wav
+-/r 3541-128-4:	Media/Windows XP Minimize.wav
+-/r 3542-128-4:	Media/Windows XP Notify.wav
+-/r 3543-128-4:	Media/Windows XP Print complete.wav
+-/r 3544-128-4:	Media/Windows XP Recycle.wav
+-/r 3545-128-4:	Media/Windows XP Restore.wav
+-/r 3546-128-4:	Media/Windows XP Ringin.wav
+-/r 3547-128-4:	Media/Windows XP Ringout.wav
+-/r 3548-128-4:	Media/Windows XP Shutdown.wav
+-/r 3549-128-4:	Media/Windows XP Start.wav
+-/r 3550-128-4:	Media/Windows XP Startup.wav
+-/d 3551-144-3:	java
+d/d 3552-144-3:	java/classes
+d/d 3553-144-3:	java/trustlib
+-/d 3554-144-7:	Web
+-/d 3555-144-3:	Web/printers
+d/d 3556-144-3:	Web/printers/images
+r/r 3557-128-3:	Web/printers/images/ipp_0002.gif
+r/r 3558-128-3:	Web/printers/images/ipp_0003.gif
+r/r 3559-128-3:	Web/printers/images/ipp_0004.gif
+r/r 3560-128-3:	Web/printers/images/ipp_0005.gif
+r/r 3561-128-3:	Web/printers/images/ipp_0012.gif
+r/r 3562-128-3:	Web/printers/images/ipp_0015.gif
+r/r 3563-128-3:	Web/printers/ipp_0000.inc
+r/r 3564-128-3:	Web/printers/ipp_0001.asp
+r/r 3565-128-3:	Web/printers/ipp_0002.asp
+r/r 3566-128-3:	Web/printers/ipp_0003.asp
+r/r 3567-128-3:	Web/printers/ipp_0004.asp
+r/r 3568-128-3:	Web/printers/ipp_0005.asp
+r/r 3569-128-3:	Web/printers/ipp_0006.asp
+r/r 3570-128-3:	Web/printers/ipp_0007.asp
+r/r 3571-128-3:	Web/printers/ipp_0008.asp
+r/r 3572-128-3:	Web/printers/ipp_0009.asp
+r/r 3573-128-3:	Web/printers/ipp_0010.asp
+r/r 3574-128-3:	Web/printers/ipp_0011.asp
+r/r 3575-128-3:	Web/printers/ipp_0012.asp
+r/r 3576-128-3:	Web/printers/ipp_0013.asp
+r/r 3577-128-3:	Web/printers/ipp_0014.asp
+r/r 3578-128-4:	Web/printers/ipp_0015.asp
+r/r 3579-128-3:	Web/printers/ipp_0016.asp
+r/r 3580-128-3:	Web/printers/ipp_adsi.inc
+r/r 3581-128-3:	Web/printers/ipp_res.inc
+r/r 3582-128-3:	Web/printers/ipp_util.inc
+r/r 3583-128-3:	Web/printers/page1.asp
+r/r 3584-128-3:	Web/printers/prtwebvw.css
+-/r 3585-128-3:	Web/related.htm
+-/r 3586-128-3:	Web/tip.htm
+-/r 3587-128-3:	Web/tips.gif
+-/r 5689-128-4:	Web/safemode.htt
+-/r 5690-128-4:	Web/deskmovr.htt
+-/r 5691-128-1:	Web/bullet.gif
+-/r 5692-128-4:	Web/exclam.gif
+-/d 5693-144-7:	Web/Wallpaper
+-/r 5694-128-4:	Web/Wallpaper/Moon flower.jpg
+-/r 5695-128-4:	Web/Wallpaper/Red moon desert.jpg
+-/r 5696-128-4:	Web/Wallpaper/Vortec space.jpg
+-/r 5697-128-4:	Web/Wallpaper/Ascent.jpg
+-/r 5698-128-4:	Web/Wallpaper/Autumn.jpg
+-/r 5699-128-4:	Web/Wallpaper/Friend.jpg
+-/r 5700-128-4:	Web/Wallpaper/Home.jpg
+-/r 5701-128-4:	Web/Wallpaper/Peace.jpg
+-/r 5702-128-4:	Web/Wallpaper/Power.jpg
+-/r 5703-128-4:	Web/Wallpaper/Purple flower.jpg
+-/r 5704-128-4:	Web/Wallpaper/Radiance.jpg
+-/r 5705-128-4:	Web/Wallpaper/Stonehenge.jpg
+-/r 5706-128-4:	Web/Wallpaper/Tulips.jpg
+-/r 5707-128-4:	Web/Wallpaper/Wind.jpg
+-/r 5708-128-4:	Web/Wallpaper/Crystal.jpg
+-/r 5709-128-4:	Web/Wallpaper/Ripple.jpg
+-/r 5710-128-4:	Web/Wallpaper/Azul.jpg
+-/r 5711-128-4:	Web/Wallpaper/Follow.jpg
+-/r 5713-128-4:	Web/Wallpaper/Windows XP.jpg
+-/r 6333-128-4:	Web/Wallpaper/Bliss.bmp
+-/d 3588-144-3:	addins
+-/d 3589-144-4:	Connection Wizard
+-/d 3590-144-4:	Driver Cache
+d/d 3591-144-3:	Driver Cache/i386
+r/r 3592-128-3:	Driver Cache/i386/driver.cab
+-/d 3593-144-6:	security
+d/d 4143-144-1:	security/Database
+r/r 4144-128-4:	security/Database/secedit.sdb
+r/r 4141-128-4:	security/edb.chk
+r/r 4136-128-4:	security/edb.log
+r/r 4137-128-4:	security/edb00002.log
+d/d 3601-144-3:	security/logs
+r/r 7297-128-4:	security/logs/backup.log
+r/r 4150-128-4:	security/logs/SceRoot.log
+r/r 4142-128-6:	security/logs/scesetup.log
+r/r 4139-128-4:	security/res1.log
+r/r 4138-128-4:	security/res2.log
+d/d 3594-144-4:	security/templates
+r/r 3595-128-3:	security/templates/compatws.inf
+r/r 3597-128-3:	security/templates/hisecdc.inf
+r/r 3596-128-3:	security/templates/hisecws.inf
+r/r 3598-128-3:	security/templates/rootsec.inf
+r/r 3599-128-3:	security/templates/securedc.inf
+r/r 3600-128-3:	security/templates/securews.inf
+r/r 4149-128-6:	security/templates/setup security.inf
+r/- * 0:	security/tmp.edb
+-/d 3602-144-6:	Temp
+r/- * 0:	Temp/~DF992E.tmp
+r/- * 0:	Temp/~DF9936.tmp
+r/- * 0:	Temp/~DF99E3.tmp
+r/- * 0:	Temp/~DF99EB.tmp
+r/- * 346:	Temp/~DF99EB.tmp
+-/d 3603-144-3:	twain_32
+r/r 3604-128-3:	twain_32/wiatwain.ds
+-/d 3605-144-3:	msapps
+d/d 3606-144-3:	msapps/msinfo
+-/d 3607-144-3:	AppPatch
+-/r 3608-128-3:	AppPatch/AcGenral.dll
+-/r 3609-128-3:	AppPatch/AcLayers.dll
+-/r 3610-128-3:	AppPatch/AcLua.dll
+-/r 3611-128-3:	AppPatch/AcSpecfc.dll
+-/r 3612-128-3:	AppPatch/AcVerfyr.dll
+-/r 3613-128-3:	AppPatch/AcXtrnal.dll
+-/r 3614-128-3:	AppPatch/apphelp.sdb
+-/r 3615-128-3:	AppPatch/drvmain.sdb
+-/r 3616-128-3:	AppPatch/msimain.sdb
+-/r 3617-128-3:	AppPatch/sysmain.sdb
+-/d 3618-144-6:	Debug
+-/r 337-128-1:	Debug/oakley.log.sav
+-/r 397-128-1:	Debug/oakley.log
+-/d 3619-144-3:	Debug/UserMode
+r/r 4767-128-4:	Debug/UserMode/userenv.log
+-/r 3674-128-8:	Debug/PASSWD.LOG
+-/r 4764-128-4:	Debug/NetSetup.LOG
+-/d 3620-144-4:	Resources
+d/d 3621-144-3:	Resources/Themes
+-/d 3622-144-3:	Resources/Themes/Luna
+r/r 3630-128-4:	Resources/Themes/Luna/luna.msstyles
+d/d 3623-144-3:	Resources/Themes/Luna/Shell
+d/d 3628-144-4:	Resources/Themes/Luna/Shell/Homestead
+r/r 3629-128-4:	Resources/Themes/Luna/Shell/Homestead/shellstyle.dll
+d/d 3626-144-3:	Resources/Themes/Luna/Shell/Metallic
+r/r 3627-128-4:	Resources/Themes/Luna/Shell/Metallic/shellstyle.dll
+d/d 3624-144-4:	Resources/Themes/Luna/Shell/NormalColor
+r/r 3625-128-4:	Resources/Themes/Luna/Shell/NormalColor/shellstyle.dll
+-/r 3631-128-4:	Resources/Themes/Windows Classic.theme
+-/r 3632-128-4:	Resources/Themes/Luna.theme
+-/d 3633-144-3:	mui
+-/d 3634-144-6:	WinSxS
+-/d 3635-144-7:	WinSxS/Manifests
+-/r 3686-128-5:	WinSxS/Manifests/x86_Microsoft.Windows.GdiPlus_6595b64144ccf1df_1.0.0.0_x-ww_8d353f13.cat
+-/r 3687-128-5:	WinSxS/Manifests/x86_Microsoft.Windows.GdiPlus_6595b64144ccf1df_1.0.0.0_x-ww_8d353f13.Manifest
+-/r 3688-128-5:	WinSxS/Manifests/x86_Microsoft.Windows.SystemCompatible_6595b64144ccf1df_5.1.0.0_x-ww_fc342b0b.cat
+-/r 3689-128-5:	WinSxS/Manifests/x86_Microsoft.Windows.SystemCompatible_6595b64144ccf1df_5.1.0.0_x-ww_fc342b0b.Manifest
+-/r 3695-128-5:	WinSxS/Manifests/x86_Microsoft.Tools.VisualCPlusPlus.Runtime-Libraries_6595b64144ccf1df_6.0.0.0_x-ww_ff9986d7.cat
+-/r 3696-128-5:	WinSxS/Manifests/x86_Microsoft.Tools.VisualCPlusPlus.Runtime-Libraries_6595b64144ccf1df_6.0.0.0_x-ww_ff9986d7.Manifest
+-/r 3699-128-5:	WinSxS/Manifests/x86_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.0.0_x-ww_1382d70a.cat
+-/r 3700-128-5:	WinSxS/Manifests/x86_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.0.0_x-ww_1382d70a.Manifest
+-/r 3704-128-5:	WinSxS/Manifests/x86_Microsoft.Windows.CPlusPlusRuntime_6595b64144ccf1df_7.0.0.0_x-ww_2726e76a.cat
+-/r 3705-128-5:	WinSxS/Manifests/x86_Microsoft.Windows.CPlusPlusRuntime_6595b64144ccf1df_7.0.0.0_x-ww_2726e76a.Manifest
+-/d 3636-144-4:	WinSxS/InstallTemp
+-/d 3684-144-1:	WinSxS/x86_Microsoft.Windows.GdiPlus_6595b64144ccf1df_1.0.0.0_x-ww_8d353f13
+r/r 3685-128-4:	WinSxS/x86_Microsoft.Windows.GdiPlus_6595b64144ccf1df_1.0.0.0_x-ww_8d353f13/GdiPlus.dll
+-/d 3690-144-10:	WinSxS/x86_Microsoft.Tools.VisualCPlusPlus.Runtime-Libraries_6595b64144ccf1df_6.0.0.0_x-ww_ff9986d7
+r/r 3693-128-4:	WinSxS/x86_Microsoft.Tools.VisualCPlusPlus.Runtime-Libraries_6595b64144ccf1df_6.0.0.0_x-ww_ff9986d7/atl.dll
+r/r 3692-128-4:	WinSxS/x86_Microsoft.Tools.VisualCPlusPlus.Runtime-Libraries_6595b64144ccf1df_6.0.0.0_x-ww_ff9986d7/mfc42.dll
+r/r 3691-128-4:	WinSxS/x86_Microsoft.Tools.VisualCPlusPlus.Runtime-Libraries_6595b64144ccf1df_6.0.0.0_x-ww_ff9986d7/mfc42u.dll
+r/r 3694-128-4:	WinSxS/x86_Microsoft.Tools.VisualCPlusPlus.Runtime-Libraries_6595b64144ccf1df_6.0.0.0_x-ww_ff9986d7/msvcp60.dll
+-/d 3697-144-1:	WinSxS/x86_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.0.0_x-ww_1382d70a
+r/r 3698-128-4:	WinSxS/x86_Microsoft.Windows.Common-Controls_6595b64144ccf1df_6.0.0.0_x-ww_1382d70a/comctl32.dll
+-/d 3701-144-7:	WinSxS/x86_Microsoft.Windows.CPlusPlusRuntime_6595b64144ccf1df_7.0.0.0_x-ww_2726e76a
+r/r 3703-128-4:	WinSxS/x86_Microsoft.Windows.CPlusPlusRuntime_6595b64144ccf1df_7.0.0.0_x-ww_2726e76a/msvcirt.dll
+r/r 3702-128-4:	WinSxS/x86_Microsoft.Windows.CPlusPlusRuntime_6595b64144ccf1df_7.0.0.0_x-ww_2726e76a/msvcrt.dll
+-/d 3637-144-3:	ime
+d/d 7351-144-1:	ime/chsime
+d/d 7352-144-1:	ime/chsime/applets
+d/d 3640-144-3:	ime/CHTIME
+d/d 3641-144-3:	ime/CHTIME/Applets
+d/d 3638-144-3:	ime/imejp
+d/d 3639-144-3:	ime/imejp/applets
+d/d 3642-144-3:	ime/imejp98
+d/d 7339-144-1:	ime/imjp8_1
+d/d 7346-144-1:	ime/imjp8_1/applets
+d/d 7344-144-1:	ime/imkr6_1
+d/d 7347-144-1:	ime/imkr6_1/applets
+d/d 7345-144-1:	ime/imkr6_1/dicts
+r/r 3644-128-3:	ime/mscandui.dll
+d/d 7349-144-1:	ime/shared
+d/d 7350-144-1:	ime/shared/res
+r/r 3645-128-3:	ime/SOFTKBD.DLL
+r/r 3643-128-3:	ime/SPTIP.dll
+-/r 3646-128-3:	system.ini
+-/r 3647-128-3:	win.ini
+-/r 3648-128-3:	explorer.exe
+-/r 3649-128-3:	regedit.exe
+-/r 3650-128-3:	_default.pif
+-/r 3651-128-3:	explorer.scf
+-/r 3652-128-3:	hh.exe
+-/r 3653-128-3:	msdfmap.ini
+-/r 3654-128-3:	twain.dll
+-/r 3655-128-3:	twain_32.dll
+-/r 3656-128-3:	twunk_16.exe
+-/r 3657-128-3:	twunk_32.exe
+-/r 3658-128-3:	winhelp.exe
+-/r 3659-128-3:	winhlp32.exe
+-/r 3660-128-3:	clock.avi
+-/r 3661-128-3:	vmmreg32.dll
+-/r 3675-128-6:	setuplog.txt
+-/r 3679-128-6:	setupact.log
+-/r 3680-128-1:	setuperr.log
+-/r 3706-128-6:	setupapi.log
+-/r 3737-128-4:	SET3.tmp
+-/r 3745-128-4:	SET7.tmp
+-/r 3858-128-4:	NOTEPAD.EXE
+-/r 3859-128-4:	TASKMAN.EXE
+-/r 3901-128-4:	regopt.log
+-/r 4090-128-4:	ODBCINST.INI
+-/r 4096-128-4:	ocgen.log
+-/r 4098-128-4:	FaxSetup.log
+-/r 4101-128-4:	iis6.log
+-/r 4103-128-4:	comsetup.log
+-/r 4105-128-5:	ntdtcsetup.log
+-/r 4108-128-4:	tsoc.log
+-/r 4110-128-4:	msmqinst.log
+-/r 4112-128-4:	imsins.log
+-/r 4116-128-4:	msgsocm.log
+-/r 4128-128-4:	ocmsn.log
+-/r 4145-128-1:	Sti_Trace.log
+-/r 4745-128-1:	wiaservc.log
+-/r 4747-128-1:	wiadebug.log
+-/r 5024-128-4:	Blue Lace 16.bmp
+-/r 5025-128-4:	Soap Bubbles.bmp
+-/r 5026-128-4:	Coffee Bean.bmp
+-/r 5027-128-4:	FeatherTexture.bmp
+-/r 5028-128-4:	Gone Fishing.bmp
+-/r 5029-128-4:	Greenstone.bmp
+-/r 5030-128-4:	Prairie Wind.bmp
+-/r 5031-128-4:	Rhododendron.bmp
+-/r 5032-128-4:	River Sumida.bmp
+-/r 5033-128-4:	Santa Fe Stucco.bmp
+-/r 5034-128-4:	Zapotec.bmp
+-/r 5456-128-1:	DtcInstall.log
+-/d 5462-144-7:	Registration
+-/d 5463-144-1:	Registration/CRMLog
+-/r 5467-128-1:	Registration/R000000000001.clb
+-/r 5469-128-5:	Registration/R000000000003.clb
+-/r 7276-128-5:	Registration/{02D4B3F1-FD88-11D1-960D-00805FC79235}.{8E0BCC9B-2B80-4A10-8754-9B63956D4B01}.crmlog
+-/r 7279-128-5:	Registration/R000000000006.clb
+-/r 7280-128-5:	Registration/R000000000007.clb
+-/r 5464-128-1:	vb.ini
+-/r 5465-128-1:	vbaddin.ini
+-/r 5506-128-5:	sessmgr.setup.log
+-/d 5541-144-1:	Tasks
+r/r 5542-128-1:	Tasks/desktop.ini
+r/r 5468-128-8:	Tasks/SA.DAT
+-/d 5609-144-1:	PCHEALTH
+d/d 5610-144-6:	PCHEALTH/HELPCTR
+-/d 5611-144-1:	PCHEALTH/HELPCTR/BATCH
+-/d 5726-144-6:	PCHEALTH/HELPCTR/Binaries
+-/r 5727-128-4:	PCHEALTH/HELPCTR/Binaries/HCAppRes.dll
+-/r 5728-128-4:	PCHEALTH/HELPCTR/Binaries/HelpCtr.exe
+-/r 5729-128-4:	PCHEALTH/HELPCTR/Binaries/HelpHost.exe
+-/r 5730-128-4:	PCHEALTH/HELPCTR/Binaries/HelpSvc.exe
+-/r 5731-128-4:	PCHEALTH/HELPCTR/Binaries/brpinfo.dll
+-/r 5732-128-4:	PCHEALTH/HELPCTR/Binaries/msconfig.exe
+-/r 5733-128-4:	PCHEALTH/HELPCTR/Binaries/msinfo.dll
+-/r 5734-128-4:	PCHEALTH/HELPCTR/Binaries/notiflag.exe
+-/r 5735-128-4:	PCHEALTH/HELPCTR/Binaries/pchdt_w3.cab
+-/r 5736-128-4:	PCHEALTH/HELPCTR/Binaries/pchshell.dll
+-/r 5737-128-4:	PCHEALTH/HELPCTR/Binaries/pchsvc.dll
+-/d 6335-144-6:	PCHEALTH/HELPCTR/Config
+d/d 6563-144-1:	PCHEALTH/HELPCTR/Config/Cache
+r/r 6561-128-5:	PCHEALTH/HELPCTR/Config/Cache/Professional_32_1033.dat.bak
+d/d 6562-144-1:	PCHEALTH/HELPCTR/Config/CheckPoint
+r/r 7254-128-5:	PCHEALTH/HELPCTR/Config/Cntstore.bin
+r/r 6342-128-4:	PCHEALTH/HELPCTR/Config/dataspec.xml
+r/r 5612-128-5:	PCHEALTH/HELPCTR/Config/SAFStore.xml
+r/r 6621-128-5:	PCHEALTH/HELPCTR/Config/sereg.xml
+-/d 6336-144-6:	PCHEALTH/HELPCTR/DataColl
+r/r 11914-128-4:	PCHEALTH/HELPCTR/DataColl/CollectedData_1.xml
+r/r 11936-128-4:	PCHEALTH/HELPCTR/DataColl/CollectedData_10.xml
+r/r 11937-128-4:	PCHEALTH/HELPCTR/DataColl/CollectedData_11.xml
+r/r 11938-128-4:	PCHEALTH/HELPCTR/DataColl/CollectedData_12.xml
+r/r 11939-128-4:	PCHEALTH/HELPCTR/DataColl/CollectedData_13.xml
+r/r 11940-128-4:	PCHEALTH/HELPCTR/DataColl/CollectedData_14.xml
+r/r 11941-128-4:	PCHEALTH/HELPCTR/DataColl/CollectedData_15.xml
+r/r 11915-128-4:	PCHEALTH/HELPCTR/DataColl/CollectedData_2.xml
+r/r 11916-128-4:	PCHEALTH/HELPCTR/DataColl/CollectedData_3.xml
+r/r 11917-128-4:	PCHEALTH/HELPCTR/DataColl/CollectedData_4.xml
+r/r 11931-128-4:	PCHEALTH/HELPCTR/DataColl/CollectedData_5.xml
+r/r 11932-128-4:	PCHEALTH/HELPCTR/DataColl/CollectedData_6.xml
+r/r 11933-128-4:	PCHEALTH/HELPCTR/DataColl/CollectedData_7.xml
+r/r 11934-128-4:	PCHEALTH/HELPCTR/DataColl/CollectedData_8.xml
+r/r 11935-128-4:	PCHEALTH/HELPCTR/DataColl/CollectedData_9.xml
+r/r 11942-128-4:	PCHEALTH/HELPCTR/DataColl/history_db.xml
+-/d 6337-144-1:	PCHEALTH/HELPCTR/Logs
+r/r 6566-128-4:	PCHEALTH/HELPCTR/Logs/hcupdate.log
+-/d 6338-144-1:	PCHEALTH/HELPCTR/Temp
+-/d 6339-144-7:	PCHEALTH/HELPCTR/OfflineCache
+r/r 6622-128-5:	PCHEALTH/HELPCTR/OfflineCache/index.dat
+d/d 6623-144-8:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409
+r/r 6919-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000018b.query
+r/r 6624-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000000.query
+r/r 6625-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000001.query
+r/r 6626-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000002.query
+r/r 6627-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000004.query
+r/r 6628-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000005.query
+r/r 6629-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000006.query
+r/r 6630-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000008.query
+r/r 6631-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000009.query
+r/r 6632-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000000a.query
+r/r 6633-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000000c.query
+r/r 6634-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000000e.query
+r/r 6635-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000000f.query
+r/r 6636-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000010.query
+r/r 6637-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000012.query
+r/r 6638-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000013.query
+r/r 6639-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000014.query
+r/- * 0:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000016.query
+r/- * 0:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000017.query.new
+r/r 6641-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000017.query
+r/r 6642-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000018.query
+r/r 6643-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000001a.query
+r/r 6644-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000001b.query
+r/r 6645-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000001c.query
+r/r 6646-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000001d.query
+r/r 6647-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000001e.query
+r/r 6648-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000020.query
+r/r 6649-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000021.query
+r/r 6650-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000022.query
+r/r 6651-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000024.query
+r/r 6652-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000025.query
+r/r 6653-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000026.query
+r/r 6654-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000028.query
+r/r 6655-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000029.query
+r/r 6656-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000002a.query
+r/r 6657-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000002c.query
+r/- * 0:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000002d.query
+r/r 6659-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000002e.query
+r/r 6660-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000030.query
+r/r 6661-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000031.query
+r/r 6662-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000032.query
+r/r 6663-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000034.query
+r/r 6664-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000035.query
+r/r 6665-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000036.query
+r/r 6666-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000038.query
+r/r * 6667-128-5(realloc):	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000039.query.new
+r/r 6667-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000039.query
+r/r 6668-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000003a.query
+r/r 6669-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000003c.query
+r/r 6670-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000003e.query
+r/r 6671-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000003f.query
+r/r 6672-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000040.query
+r/r 6673-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000042.query
+r/r 6674-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000043.query
+r/r 6675-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000044.query
+r/- * 0:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000046.query
+r/r 6677-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000047.query
+r/r 6678-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000048.query
+r/r 6679-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000004a.query
+r/r 6680-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000004b.query
+r/r 6681-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000004c.query
+r/r 6682-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000004d.query
+r/r 6683-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000004e.query
+r/r 6684-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000050.query
+r/r * 6685-128-5(realloc):	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000051.query.new
+r/r 6640-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000016.query
+r/r 6658-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000002d.query
+r/r 6676-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000046.query
+r/r 6694-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000005e.query
+r/r 6712-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000075.query
+r/r 6730-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000008e.query
+r/r 6748-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000000a6.query
+r/r 6766-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000000be.query
+r/r 6784-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000000d6.query
+r/r 6802-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000000ee.query
+r/r 6833-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000118.query
+r/r 6850-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000130.query
+r/r 6867-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000146.query
+r/r 6884-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000015e.query
+r/r 6901-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000174.query
+r/r 6937-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000001a2.query
+r/r 6955-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000001bb.query
+r/r 6685-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000051.query
+r/r 6686-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000052.query
+r/r 6687-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000054.query
+r/r 6688-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000055.query
+r/r 6689-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000056.query
+r/r 6690-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000058.query
+r/r 6691-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000059.query
+r/r 6692-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000005a.query
+r/r 6693-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000005c.query
+r/- * 0:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000005e.query
+r/r 6695-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000005f.query
+r/r 6696-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000060.query
+r/r 6697-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000062.query
+r/r 6698-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000063.query
+r/r 6699-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000064.query
+r/r 6700-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000065.query
+r/r 6701-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000066.query
+r/r 6702-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000068.query
+r/r * 6703-128-5(realloc):	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000006a.query.new
+r/r 6703-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000006a.query
+r/r 6704-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000006b.query
+r/r 6705-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000006c.query
+r/r 6706-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000006d.query
+r/r 6707-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000006e.query
+r/r 6708-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000070.query
+r/r 6709-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000072.query
+r/r 6710-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000073.query
+r/r 6711-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000074.query
+r/- * 0:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000075.query
+r/r 6713-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000076.query
+r/r 6714-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000078.query
+r/r 6715-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000007a.query
+r/r 6716-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000007b.query
+r/r 6717-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000007c.query
+r/r 6718-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000007e.query
+r/r 6719-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000007f.query
+r/r 6720-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000080.query
+r/r 6721-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000082.query
+r/r 6722-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000083.query
+r/r 6723-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000084.query
+r/r 6724-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000086.query
+r/r 6725-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000087.query
+r/r 6726-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000088.query
+r/r 6727-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000008a.query
+r/r 6728-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000008b.query
+r/r 6729-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000008c.query
+r/- * 0:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000008e.query
+r/r 6731-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000008f.query
+r/r 6732-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000090.query
+r/r * 6733-128-5(realloc):	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000092.query.new
+r/r 6733-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000092.query
+r/r 6734-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000093.query
+r/r 6735-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000094.query
+r/r 6736-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000095.query
+r/r 6737-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000096.query
+r/r 6738-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000098.query
+r/r 6739-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000009a.query
+r/r 6740-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000009b.query
+r/r 6741-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000009c.query
+r/r 6742-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000009e.query
+r/r 6743-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000009f.query
+r/r 6744-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000000a0.query
+r/r 6745-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000000a2.query
+r/r 6746-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000000a3.query
+r/r 6747-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000000a4.query
+r/- * 0:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000000a6.query
+r/r 6749-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000000a7.query
+r/r 6750-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000000a8.query
+r/r * 6751-128-5(realloc):	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000000aa.query.new
+r/r 6751-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000000aa.query
+r/r 6752-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000000ab.query
+r/r 6753-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000000ac.query
+r/r 6754-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000000ae.query
+r/r 6755-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000000af.query
+r/r 6756-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000000b0.query
+r/r 6757-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000000b2.query
+r/r 6758-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000000b3.query
+r/r 6759-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000000b4.query
+r/r 6760-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000000b6.query
+r/r 6761-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000000b7.query
+r/r 6762-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000000b8.query
+r/r 6763-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000000ba.query
+r/r 6764-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000000bb.query
+r/r 6765-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000000bc.query
+r/- * 0:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000000be.query
+r/r 6767-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000000bf.query
+r/r 6768-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000000c0.query
+r/r * 6769-128-5(realloc):	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000000c2.query.new
+r/r 6769-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000000c2.query
+r/r 6770-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000000c3.query
+r/r 6771-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000000c4.query
+r/r 6772-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000000c5.query
+r/r 6773-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000000c6.query
+r/r 6774-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000000c8.query
+r/r 6775-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000000c9.query
+r/r 6776-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000000ca.query
+r/r 6777-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000000cc.query
+r/r 6778-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000000ce.query
+r/r 6779-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000000cf.query
+r/r 6780-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000000d0.query
+r/r 6781-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000000d2.query
+r/r 6782-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000000d3.query
+r/r 6783-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000000d4.query
+r/- * 0:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000000d6.query
+r/r 6785-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000000d7.query
+r/r 6786-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000000d8.query
+r/r * 6787-128-5(realloc):	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000000da.query.new
+r/r 6787-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000000da.query
+r/r 6788-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000000db.query
+r/r 6789-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000000dc.query
+r/r 6790-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000000de.query
+r/r 6791-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000000df.query
+r/r 6792-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000000e0.query
+r/r 6793-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000000e2.query
+r/r 6794-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000000e3.query
+r/r 6795-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000000e4.query
+r/r 6796-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000000e6.query
+r/r 6797-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000000e7.query
+r/r 6798-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000000e8.query
+r/r 6799-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000000ea.query
+r/r 6800-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000000eb.query
+r/r 6801-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000000ec.query
+r/- * 0:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000000ee.query
+r/r 6803-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000000ef.query
+r/r 6804-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000000f0.query
+r/r * 6805-128-5(realloc):	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000000f1.query.new
+r/r 6805-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000000f1.query
+r/r 6806-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000000f2.query
+r/r 6807-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000000f4.query
+r/r 6808-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000000f5.query
+r/r 6809-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000000f6.query
+r/r 6810-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000000f7.query
+r/r 6811-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000000f8.query
+r/r 6812-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000000f9.query
+r/r 6813-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000000fa.query
+r/r 6814-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000000fc.query
+r/r 6815-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000000fe.query
+r/r 6816-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000000ff.query
+r/r 6817-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000100.query
+r/r 6818-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000102.query
+r/r 6819-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000103.query
+r/r * 6820-128-1(realloc):	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000104.query.new
+r/r 6820-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000104.query
+r/r 6821-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000106.query
+r/r 6822-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000107.query
+r/r 6823-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000108.query
+r/r 6824-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000010c.query
+r/r 6825-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000010d.query
+r/r 6826-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000010e.query
+r/r 6827-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000110.query
+r/r 6828-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000112.query
+r/r 6829-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000113.query
+r/r 6830-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000114.query
+r/r 6831-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000116.query
+r/r 6832-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000117.query
+r/- * 0:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000118.query
+r/- * 0:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000119.query.new
+r/r 6834-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000119.query
+r/r 6835-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000011a.query
+r/r 6836-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000011b.query
+r/r 6837-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000011c.query
+r/r 6838-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000011e.query
+r/r 6839-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000011f.query
+r/r 6840-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000120.query
+r/r 6841-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000122.query
+r/r 6842-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000123.query
+r/r 6843-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000124.query
+r/r 6844-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000128.query
+r/r 6845-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000129.query
+r/r 6846-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000012a.query
+r/r 6847-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000012c.query
+r/r 6848-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000012d.query
+r/r 6849-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000012e.query
+r/- * 0:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000130.query
+r/- * 0:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000131.query.new
+r/r 6851-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000131.query
+r/r 6852-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000132.query
+r/r 6853-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000134.query
+r/r 6854-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000135.query
+r/r 6855-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000136.query
+r/r 6856-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000138.query
+r/r 6857-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000139.query
+r/r 6858-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000013a.query
+r/r 6859-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000013c.query
+r/r 6860-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000013e.query
+r/r 6861-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000013f.query
+r/r 6862-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000140.query
+r/r 6863-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000142.query
+r/r 6864-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000143.query
+r/r 6865-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000144.query
+r/r 6866-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000145.query
+r/- * 0:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000146.query
+r/- * 0:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000148.query.new
+r/r 6868-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000148.query
+r/r 6869-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000014a.query
+r/r 6870-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000014b.query
+r/r 6871-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000014c.query
+r/r 6872-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000014e.query
+r/r 6873-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000014f.query
+r/r 6874-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000150.query
+r/r 6875-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000152.query
+r/r 6876-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000153.query
+r/r 6877-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000154.query
+r/r 6878-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000156.query
+r/r 6879-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000157.query
+r/r 6880-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000158.query
+r/r 6881-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000159.query
+r/r 6882-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000015a.query
+r/r 6883-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000015c.query
+r/- * 0:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000015e.query
+r/- * 0:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000015f.query.new
+r/r 6885-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000015f.query
+r/r 6886-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000160.query
+r/r 6887-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000162.query
+r/r 6888-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000163.query
+r/r 6889-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000164.query
+r/r 6890-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000166.query
+r/r 6891-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000167.query
+r/r 6892-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000168.query
+r/r 6893-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000016a.query
+r/r 6894-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000016b.query
+r/r 6895-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000016c.query
+r/r 6896-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000016e.query
+r/r 6897-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000016f.query
+r/r 6898-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000170.query
+r/r 6899-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000172.query
+r/r 6900-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000173.query
+r/- * 0:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000174.query
+r/- * 0:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000175.query.new
+r/r 6902-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000175.query
+r/r 6903-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000176.query
+r/r 6904-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000178.query
+r/r 6905-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000017a.query
+r/r 6906-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000017b.query
+r/r 6907-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000017c.query
+r/r 6908-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000017e.query
+r/r 6909-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000017f.query
+r/r 6910-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000180.query
+r/r 6911-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000182.query
+r/r 6912-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000183.query
+r/r 6913-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000184.query
+r/r 6914-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000186.query
+r/r 6915-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000187.query
+r/r 6916-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000188.query
+r/r 6917-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000189.query
+r/r 6918-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000018a.query
+r/- * 0:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000018b.query
+r/r 6920-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000018c.query
+r/r 6921-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000018e.query
+r/r 6922-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000018f.query
+r/r 6923-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000190.query
+r/r 6924-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000192.query
+r/r 6925-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000193.query
+r/r 6926-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000194.query
+r/r 6927-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000196.query
+r/r 6928-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000197.query
+r/r 6929-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000198.query
+r/r 6930-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000019a.query
+r/r 6931-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000019b.query
+r/r * 6932-128-1(realloc):	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000019c.query.new
+r/r 6932-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000019c.query
+r/r 6933-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000019d.query
+r/r 6934-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000019e.query
+r/r 6935-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000001a0.query
+r/r 6936-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000001a1.query
+r/- * 0:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000001a2.query
+r/r 6938-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000001a4.query
+r/r 6939-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000001a6.query
+r/r 6940-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000001a7.query
+r/r 6941-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000001a8.query
+r/r 6942-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000001aa.query
+r/r 6943-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000001ab.query
+r/r 6944-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000001ac.query
+r/r 6945-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000001ad.query
+r/r 6946-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000001ae.query
+r/r 6947-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000001b0.query
+r/r 6948-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000001b2.query
+r/r 6949-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000001b3.query
+r/r * 6950-128-1(realloc):	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000001b4.query.new
+r/r 6950-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000001b4.query
+r/r 6951-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000001b6.query
+r/r 6952-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000001b7.query
+r/r 6953-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000001b8.query
+r/r 6954-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000001ba.query
+r/- * 0:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000001bb.query
+r/r 6956-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000001bc.query
+r/r 6957-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000001be.query
+r/r 6958-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000001bf.query
+r/r 6959-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000001c0.query
+r/r 6960-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000001c2.query
+r/r 6961-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000001c3.query
+r/r 6962-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000001c4.query
+r/r 6963-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000001c6.query
+r/r 6964-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000001c7.query
+r/r 6965-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000001c8.query
+r/r 6966-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000001ca.query
+r/r 6967-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000001cb.query
+r/r * 6968-128-1(realloc):	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000001cc.query.new
+r/r 6968-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000001cc.query
+r/r 6969-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000001ce.query
+r/r 6970-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000001cf.query
+r/r 6971-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000001d0.query
+r/r 6972-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000001d2.query
+r/- * 0:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000001d3.query
+r/r 6974-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000001d4.query
+r/r 6975-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000001d6.query
+r/r 6976-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000001d7.query
+r/r 6977-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000001d8.query
+r/r 6978-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000001dc.query
+r/r 6979-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000001dd.query
+r/r 6980-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000001de.query
+r/r 6981-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000001e0.query
+r/r 6982-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000001e1.query
+r/r 6983-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000001e2.query
+r/r 6984-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000001e3.query
+r/r 6985-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000001e4.query
+r/r * 6986-128-1(realloc):	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000001e6.query.new
+r/r 6973-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000001d3.query
+r/r 6991-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000001ec.query
+r/r 7005-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000201.query
+r/r 7023-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000218.query
+r/r 7041-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000230.query
+r/r 7059-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000248.query
+r/r 7077-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000260.query
+r/r 7095-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000278.query
+r/r 6986-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000001e6.query
+r/r 6987-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000001e7.query
+r/r 6988-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000001e8.query
+r/r 6989-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000001ea.query
+r/r 6990-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000001eb.query
+r/- * 0:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000001ec.query
+r/r 6992-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000001f0.query
+r/r 6993-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000001f2.query
+r/r 6994-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000001f3.query
+r/r 6995-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000001f4.query
+r/r 6996-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000001f5.query
+r/r 6997-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000001f6.query
+r/r 6998-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000001f8.query
+r/r 6999-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000001f9.query
+r/r 7000-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000001fa.query
+r/r 7001-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000001fc.query
+r/r 7002-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000001fd.query
+r/r 7003-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/000001fe.query
+r/r * 7004-128-1(realloc):	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000200.query.new
+r/r 7004-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000200.query
+r/- * 0:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000201.query
+r/r 7006-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000202.query
+r/r 7007-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000204.query
+r/r 7008-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000206.query
+r/r 7009-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000207.query
+r/r 7010-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000208.query
+r/r 7011-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000209.query
+r/r 7012-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000020a.query
+r/r 7013-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000020b.query
+r/r 7014-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000020c.query
+r/r 7015-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000020d.query
+r/r 7016-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000020e.query
+r/r 7017-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000210.query
+r/r * 7018-128-5(realloc):	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000211.query.new
+r/r 7018-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000211.query
+r/r 7019-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000212.query
+r/r 7020-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000214.query
+r/r 7021-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000216.query
+r/r 7022-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000217.query
+r/- * 0:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000218.query
+r/r 7024-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000219.query
+r/r 7025-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000021a.query
+r/r 7026-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000021c.query
+r/r 7027-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000021d.query
+r/r 7028-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000021e.query
+r/r 7029-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000220.query
+r/r 7030-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000222.query
+r/r 7031-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000223.query
+r/r 7032-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000224.query
+r/r 7033-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000226.query
+r/r 7034-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000227.query
+r/r 7035-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000228.query
+r/r * 7036-128-5(realloc):	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000022a.query.new
+r/r 7036-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000022a.query
+r/r 7037-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000022b.query
+r/r 7038-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000022c.query
+r/r 7039-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000022e.query
+r/r 7040-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000022f.query
+r/- * 0:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000230.query
+r/r 7042-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000231.query
+r/r 7043-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000232.query
+r/r 7044-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000234.query
+r/r 7045-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000236.query
+r/r 7046-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000237.query
+r/r 7047-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000238.query
+r/r 7048-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000023a.query
+r/r 7049-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000023b.query
+r/r 7050-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000023c.query
+r/r 7051-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000023e.query
+r/r 7052-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000023f.query
+r/r 7053-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000240.query
+r/r * 7054-128-5(realloc):	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000241.query.new
+r/r 7054-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000241.query
+r/r 7055-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000242.query
+r/r 7056-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000244.query
+r/r 7057-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000245.query
+r/r 7058-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000246.query
+r/- * 0:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000248.query
+r/r 7060-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000024a.query
+r/r 7061-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000024b.query
+r/r 7062-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000024c.query
+r/r 7063-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000024e.query
+r/r 7064-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000024f.query
+r/r 7065-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000250.query
+r/r 7066-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000252.query
+r/r 7067-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000253.query
+r/r 7068-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000254.query
+r/r 7069-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000256.query
+r/r 7070-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000257.query
+r/r 7071-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000258.query
+r/r * 7072-128-5(realloc):	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000259.query.new
+r/r 7072-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000259.query
+r/r 7073-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000025a.query
+r/r 7074-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000025c.query
+r/r 7075-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000025e.query
+r/r 7076-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000025f.query
+r/- * 0:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000260.query
+r/r 7078-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000261.query
+r/r 7079-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000262.query
+r/r 7080-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000264.query
+r/r 7081-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000265.query
+r/r 7082-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000266.query
+r/r 7083-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000268.query
+r/r 7084-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000026a.query
+r/r 7085-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000026b.query
+r/r 7086-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000026c.query
+r/r 7087-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000026e.query
+r/r 7088-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000026f.query
+r/r 7089-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000270.query
+r/r * 7090-128-5(realloc):	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000271.query.new
+r/r 7090-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000271.query
+r/r 7091-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000272.query
+r/r 7092-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000274.query
+r/r 7093-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000276.query
+r/r 7094-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000277.query
+r/- * 0:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000278.query
+r/r 7096-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000027a.query
+r/r 7097-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000027b.query
+r/r 7098-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000027c.query
+r/r 7099-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000027e.query
+r/r 7100-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000027f.query
+r/r 7101-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000280.query
+r/r 7102-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000282.query
+r/r 7103-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000283.query
+r/r 7104-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000284.query
+r/r 7105-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000285.query
+r/r 7106-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000286.query
+r/r 7107-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000287.query
+r/r * 7108-128-1(realloc):	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000288.query.new
+r/r 7108-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000288.query
+r/r 7109-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000028a.query
+r/r 7110-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000028b.query
+r/r 7111-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000028c.query
+r/r 7112-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000028e.query
+r/r 7113-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/0000028f.query
+r/r 7114-128-1:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000290.query
+r/r 7115-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000292.query
+r/r 7116-128-5:	PCHEALTH/HELPCTR/OfflineCache/Professional_32#0409/00000293.query
+-/d 6340-144-1:	PCHEALTH/HELPCTR/InstalledSKUs
+-/d 6341-144-7:	PCHEALTH/HELPCTR/PackageStore
+r/r 7274-128-1:	PCHEALTH/HELPCTR/PackageStore/CRC_Disk
+r/r 6343-128-5:	PCHEALTH/HELPCTR/PackageStore/instance_Professional_32_1033.cab
+r/r 6565-128-5:	PCHEALTH/HELPCTR/PackageStore/package_1.cab
+r/r 6346-128-5:	PCHEALTH/HELPCTR/PackageStore/package_2.cab
+r/r 6348-128-5:	PCHEALTH/HELPCTR/PackageStore/package_3.cab
+r/r 6593-128-5:	PCHEALTH/HELPCTR/PackageStore/package_4.cab
+r/r 7117-128-5:	PCHEALTH/HELPCTR/PackageStore/SkuStore.bin
+r/- * 0:	PCHEALTH/HELPCTR/PackageStore/SkuStore.bin
+-/d 6347-144-6:	PCHEALTH/HELPCTR/Database
+r/r 6564-128-4:	PCHEALTH/HELPCTR/Database/HCdata.edb
+r/- * 0:	PCHEALTH/HELPCTR/Database/newsgroups.cab
+r/- * 0:	PCHEALTH/HELPCTR/Database/pss.cab
+r/- * 0:	PCHEALTH/HELPCTR/Database/rcBuddy.cab
+-/d 6349-144-6:	PCHEALTH/HELPCTR/Indices
+r/r 6612-128-4:	PCHEALTH/HELPCTR/Indices/merged.hhk
+r/r 6613-128-4:	PCHEALTH/HELPCTR/Indices/scoped_2.hhk
+r/r 6614-128-4:	PCHEALTH/HELPCTR/Indices/scoped_3.hhk
+r/r 6620-128-4:	PCHEALTH/HELPCTR/Indices/scoped_4.hhk
+r/r 6618-128-4:	PCHEALTH/HELPCTR/Indices/scoped_5.hhk
+r/r 6619-128-4:	PCHEALTH/HELPCTR/Indices/scoped_6.hhk
+r/r 6617-128-4:	PCHEALTH/HELPCTR/Indices/scoped_7.hhk
+r/r 6616-128-4:	PCHEALTH/HELPCTR/Indices/scoped_8.hhk
+r/r 6615-128-4:	PCHEALTH/HELPCTR/Indices/scoped_9.hhk
+-/d 6350-144-6:	PCHEALTH/HELPCTR/System
+d/d 6380-144-6:	PCHEALTH/HELPCTR/System/blurbs
+r/r 6383-128-5:	PCHEALTH/HELPCTR/System/blurbs/about_support.htm
+r/r 6571-128-5:	PCHEALTH/HELPCTR/System/blurbs/Favorites.htm
+r/r 6384-128-4:	PCHEALTH/HELPCTR/System/blurbs/ftshelp.htm
+r/r 6381-128-4:	PCHEALTH/HELPCTR/System/blurbs/History.htm
+r/r 6382-128-4:	PCHEALTH/HELPCTR/System/blurbs/Index.htm
+r/r 6385-128-4:	PCHEALTH/HELPCTR/System/blurbs/isupport.htm
+r/r 6386-128-5:	PCHEALTH/HELPCTR/System/blurbs/keywordhelp.htm
+r/r 6387-128-4:	PCHEALTH/HELPCTR/System/blurbs/options.htm
+r/r 6388-128-5:	PCHEALTH/HELPCTR/System/blurbs/searchblurb.htm
+r/r 6389-128-5:	PCHEALTH/HELPCTR/System/blurbs/searchtips.htm
+r/r 6390-128-4:	PCHEALTH/HELPCTR/System/blurbs/tools.htm
+r/r 6516-128-5:	PCHEALTH/HELPCTR/System/blurbs/watermark_300x.bmp
+r/r 6391-128-5:	PCHEALTH/HELPCTR/System/blurbs/windows_newsgroups.htm
+d/d 6392-144-7:	PCHEALTH/HELPCTR/System/CompatCtr
+r/r 6572-128-5:	PCHEALTH/HELPCTR/System/CompatCtr/AboutCompat.htm
+r/r 6393-128-5:	PCHEALTH/HELPCTR/System/CompatCtr/CompatMode.htm
+r/r 6395-128-5:	PCHEALTH/HELPCTR/System/CompatCtr/CompatOffline.htm
+r/r 6396-128-5:	PCHEALTH/HELPCTR/System/CompatCtr/LearnCompat.htm
+d/d 6397-144-1:	PCHEALTH/HELPCTR/System/css
+r/r 6517-128-5:	PCHEALTH/HELPCTR/System/css/Behaviors.css
+r/r 6573-128-1:	PCHEALTH/HELPCTR/System/css/Layout.css
+d/d 6398-144-6:	PCHEALTH/HELPCTR/System/DFS
+r/r 6574-128-4:	PCHEALTH/HELPCTR/System/DFS/privacy.htm
+r/r 6399-128-5:	PCHEALTH/HELPCTR/System/DFS/uplddrvinfo.htm
+r/r 6400-128-1:	PCHEALTH/HELPCTR/System/DFS/viewmode.xml
+r/r 6401-128-5:	PCHEALTH/HELPCTR/System/DFS/xmldialog.htm
+r/r 6402-128-5:	PCHEALTH/HELPCTR/System/DFS/xmldisplay.xsl
+d/d 6403-144-1:	PCHEALTH/HELPCTR/System/dialogs
+r/r 6575-128-4:	PCHEALTH/HELPCTR/System/dialogs/DlgLib.js
+r/r 6404-128-4:	PCHEALTH/HELPCTR/System/dialogs/Print.dlg
+d/d 6567-144-1:	PCHEALTH/HELPCTR/System/DVDUpgrd
+r/r 6568-128-4:	PCHEALTH/HELPCTR/System/DVDUpgrd/dvdupgrd.htm
+r/r 6354-128-4:	PCHEALTH/HELPCTR/System/DVDUpgrd/dvdupgrd.js
+r/r 6442-128-4:	PCHEALTH/HELPCTR/System/DVDUpgrd/stripe.jpg
+d/d 6405-144-1:	PCHEALTH/HELPCTR/System/ErrMsg
+r/r 6576-128-5:	PCHEALTH/HELPCTR/System/ErrMsg/ErrorMessagesOffline.htm
+d/d 6406-144-6:	PCHEALTH/HELPCTR/System/errors
+r/r 6577-128-4:	PCHEALTH/HELPCTR/System/errors/badurl.htm
+r/r 6407-128-5:	PCHEALTH/HELPCTR/System/errors/connection.htm
+r/r 6408-128-5:	PCHEALTH/HELPCTR/System/errors/indexfirstlevel.htm
+r/r 6409-128-4:	PCHEALTH/HELPCTR/System/errors/notfound.htm
+r/r 6410-128-4:	PCHEALTH/HELPCTR/System/errors/offline.htm
+r/r 6411-128-4:	PCHEALTH/HELPCTR/System/errors/redirect.htm
+r/r 6412-128-5:	PCHEALTH/HELPCTR/System/errors/unreachable.htm
+r/r 6355-128-5:	PCHEALTH/HELPCTR/System/Headlines.htm
+r/r 6443-128-4:	PCHEALTH/HELPCTR/System/HelpCtr.mmf
+r/r 6356-128-5:	PCHEALTH/HELPCTR/System/HomePage__DESKTOP.htm
+r/r 6357-128-5:	PCHEALTH/HELPCTR/System/HomePage__SERVER.htm
+d/d 6518-144-6:	PCHEALTH/HELPCTR/System/images
+d/d 6586-144-6:	PCHEALTH/HELPCTR/System/images/16x16
+r/r 6587-128-5:	PCHEALTH/HELPCTR/System/images/16x16/arrow_blue_normal_shadow.bmp
+r/r 6519-128-5:	PCHEALTH/HELPCTR/System/images/16x16/arrow_green_normal_shadow.bmp
+r/r 6520-128-4:	PCHEALTH/HELPCTR/System/images/16x16/compat.bmp
+r/r 6521-128-4:	PCHEALTH/HELPCTR/System/images/16x16/errmsg.bmp
+r/r 6522-128-4:	PCHEALTH/HELPCTR/System/images/16x16/support.bmp
+r/r 6523-128-4:	PCHEALTH/HELPCTR/System/images/16x16/tools.bmp
+r/r 6524-128-4:	PCHEALTH/HELPCTR/System/images/16x16/update.bmp
+r/r 6525-128-4:	PCHEALTH/HELPCTR/System/images/16x16/warning.gif
+d/d 6526-144-6:	PCHEALTH/HELPCTR/System/images/24x24
+r/r 6588-128-5:	PCHEALTH/HELPCTR/System/images/24x24/arrow_green_mousedown.bmp
+r/r 6527-128-5:	PCHEALTH/HELPCTR/System/images/24x24/arrow_green_mouseover.bmp
+r/r 6528-128-5:	PCHEALTH/HELPCTR/System/images/24x24/arrow_green_normal.bmp
+d/d 6529-144-1:	PCHEALTH/HELPCTR/System/images/32x32
+r/r 6589-128-4:	PCHEALTH/HELPCTR/System/images/32x32/logo.bmp
+d/d 6530-144-6:	PCHEALTH/HELPCTR/System/images/48x48
+r/r 6590-128-5:	PCHEALTH/HELPCTR/System/images/48x48/desktop_icon_01.bmp
+r/r 6531-128-5:	PCHEALTH/HELPCTR/System/images/48x48/desktop_icon_02.bmp
+r/r 6532-128-5:	PCHEALTH/HELPCTR/System/images/48x48/desktop_icon_03.bmp
+r/r 6533-128-5:	PCHEALTH/HELPCTR/System/images/48x48/desktop_icon_04.bmp
+r/r 6534-128-5:	PCHEALTH/HELPCTR/System/images/48x48/desktop_icon_generic.bmp
+d/d 6535-144-1:	PCHEALTH/HELPCTR/System/images/Centers
+r/r 6538-128-5:	PCHEALTH/HELPCTR/System/images/Centers/blue_arrow.gif
+r/r 6591-128-4:	PCHEALTH/HELPCTR/System/images/Centers/Connect.gif
+r/r 6536-128-4:	PCHEALTH/HELPCTR/System/images/Centers/IULogo.gif
+r/r 6537-128-4:	PCHEALTH/HELPCTR/System/images/Centers/Uabrand.gif
+r/r 6543-128-4:	PCHEALTH/HELPCTR/System/images/error.gif
+d/d 6539-144-6:	PCHEALTH/HELPCTR/System/images/Expando
+r/r 6592-128-1:	PCHEALTH/HELPCTR/System/images/Expando/collapsed.gif
+r/r 6540-128-1:	PCHEALTH/HELPCTR/System/images/Expando/endnode.gif
+r/r 6541-128-1:	PCHEALTH/HELPCTR/System/images/Expando/expanded.gif
+r/r 6542-128-1:	PCHEALTH/HELPCTR/System/images/Expando/helpdoc.gif
+r/r 6544-128-4:	PCHEALTH/HELPCTR/System/images/feedback.gif
+r/r 6545-128-1:	PCHEALTH/HELPCTR/System/images/flyout_arrow.gif
+r/r 6546-128-4:	PCHEALTH/HELPCTR/System/images/get_conn.gif
+r/r 6547-128-5:	PCHEALTH/HELPCTR/System/images/icon_articles_12x.bmp
+r/r 6548-128-5:	PCHEALTH/HELPCTR/System/images/icon_blank_12x.bmp
+r/r 6549-128-5:	PCHEALTH/HELPCTR/System/images/icon_newwindow_12x.bmp
+r/r 6550-128-5:	PCHEALTH/HELPCTR/System/images/icon_onlineinline_12x.bmp
+r/r 6551-128-5:	PCHEALTH/HELPCTR/System/images/icon_tours_12x.bmp
+r/r 6552-128-5:	PCHEALTH/HELPCTR/System/images/icon_tutorials_12x.bmp
+r/r 6553-128-4:	PCHEALTH/HELPCTR/System/images/info.gif
+r/r 6554-128-4:	PCHEALTH/HELPCTR/System/images/progbar.gif
+r/r 6555-128-4:	PCHEALTH/HELPCTR/System/images/warning.gif
+r/r 6556-128-1:	PCHEALTH/HELPCTR/System/images/wrapperhelp.gif
+d/d 6358-144-1:	PCHEALTH/HELPCTR/System/NetDiag
+r/r 6569-128-4:	PCHEALTH/HELPCTR/System/NetDiag/dglogs.htm
+r/r 6359-128-5:	PCHEALTH/HELPCTR/System/NetDiag/dglogshelp.htm
+d/d 6413-144-6:	PCHEALTH/HELPCTR/System/panels
+r/r 6578-128-5:	PCHEALTH/HELPCTR/System/panels/AdvSearch.htm
+r/r 6424-128-4:	PCHEALTH/HELPCTR/System/panels/blank.htm
+r/r 6414-128-4:	PCHEALTH/HELPCTR/System/panels/Context.htm
+r/r 6425-128-5:	PCHEALTH/HELPCTR/System/panels/firstpage.htm
+r/r 6415-128-5:	PCHEALTH/HELPCTR/System/panels/HHWrapper.htm
+r/r 6416-128-5:	PCHEALTH/HELPCTR/System/panels/MiniNavBar.htm
+r/r 6417-128-5:	PCHEALTH/HELPCTR/System/panels/MiniNavBar.xml
+r/r 6418-128-4:	PCHEALTH/HELPCTR/System/panels/NavBar.htm
+r/r 6419-128-4:	PCHEALTH/HELPCTR/System/panels/NavBar.xml
+r/r 6420-128-4:	PCHEALTH/HELPCTR/System/panels/Options.htm
+r/r 6421-128-5:	PCHEALTH/HELPCTR/System/panels/RemoteHelp.htm
+r/r 6422-128-5:	PCHEALTH/HELPCTR/System/panels/ShareHelp.htm
+d/d 6426-144-7:	PCHEALTH/HELPCTR/System/panels/subpanels
+r/r 6579-128-4:	PCHEALTH/HELPCTR/System/panels/subpanels/Channels.htm
+r/r 6427-128-5:	PCHEALTH/HELPCTR/System/panels/subpanels/Favorites.htm
+r/r 6428-128-4:	PCHEALTH/HELPCTR/System/panels/subpanels/History.htm
+r/r 6429-128-4:	PCHEALTH/HELPCTR/System/panels/subpanels/Index.htm
+r/r 6430-128-4:	PCHEALTH/HELPCTR/System/panels/subpanels/Options.htm
+r/r 6431-128-4:	PCHEALTH/HELPCTR/System/panels/subpanels/Search.htm
+r/r 6432-128-4:	PCHEALTH/HELPCTR/System/panels/subpanels/Subsite.htm
+r/r 6423-128-4:	PCHEALTH/HELPCTR/System/panels/Topics.htm
+d/d 6433-144-1:	PCHEALTH/HELPCTR/System/rc
+r/r 6580-128-5:	PCHEALTH/HELPCTR/System/rc/rcRequest.htm
+d/d 7179-144-7:	PCHEALTH/HELPCTR/System/Remote Assistance
+d/d 7244-144-6:	PCHEALTH/HELPCTR/System/Remote Assistance/Common
+r/r 7245-128-4:	PCHEALTH/HELPCTR/System/Remote Assistance/Common/common.js
+r/r 7249-128-5:	PCHEALTH/HELPCTR/System/Remote Assistance/Common/ConnIssue.htm
+r/r 7246-128-5:	PCHEALTH/HELPCTR/System/Remote Assistance/Common/constants.js
+r/r 7252-128-5:	PCHEALTH/HELPCTR/System/Remote Assistance/Common/icon_information_32x.gif
+r/r 7251-128-5:	PCHEALTH/HELPCTR/System/Remote Assistance/Common/icon_warning_32x.gif
+r/r 7250-128-5:	PCHEALTH/HELPCTR/System/Remote Assistance/Common/LearnInternet.htm
+r/r 7247-128-4:	PCHEALTH/HELPCTR/System/Remote Assistance/Common/RAHelp.htm
+r/r 7248-128-5:	PCHEALTH/HELPCTR/System/Remote Assistance/Common/RCMoreInfo.htm
+d/d 7240-144-1:	PCHEALTH/HELPCTR/System/Remote Assistance/Css
+r/r 7243-128-4:	PCHEALTH/HELPCTR/System/Remote Assistance/Css/RAChat.css
+r/r 7242-128-4:	PCHEALTH/HELPCTR/System/Remote Assistance/Css/rc.css
+r/r 7241-128-4:	PCHEALTH/HELPCTR/System/Remote Assistance/Css/rcbuddy.css
+r/r 7186-128-4:	PCHEALTH/HELPCTR/System/Remote Assistance/ding.wav
+r/r 7187-128-5:	PCHEALTH/HELPCTR/System/Remote Assistance/helpeeaccept.htm
+d/d 7188-144-1:	PCHEALTH/HELPCTR/System/Remote Assistance/Interaction
+d/d 7189-144-6:	PCHEALTH/HELPCTR/System/Remote Assistance/Interaction/Client
+r/r 7204-128-5:	PCHEALTH/HELPCTR/System/Remote Assistance/Interaction/Client/Animation.gif
+r/r 7206-128-1:	PCHEALTH/HELPCTR/System/Remote Assistance/Interaction/Client/combobox_line.gif
+r/r 7205-128-5:	PCHEALTH/HELPCTR/System/Remote Assistance/Interaction/Client/connected.gif
+r/r 7207-128-5:	PCHEALTH/HELPCTR/System/Remote Assistance/Interaction/Client/DividerBar.gif
+r/r 7198-128-1:	PCHEALTH/HELPCTR/System/Remote Assistance/Interaction/Client/DividerBar.htm
+r/r 7200-128-5:	PCHEALTH/HELPCTR/System/Remote Assistance/Interaction/Client/DownArrow.gif
+r/r 7197-128-5:	PCHEALTH/HELPCTR/System/Remote Assistance/Interaction/Client/RAChatClient.htm
+r/r 7192-128-4:	PCHEALTH/HELPCTR/System/Remote Assistance/Interaction/Client/RAClient.htm
+r/r 7199-128-4:	PCHEALTH/HELPCTR/System/Remote Assistance/Interaction/Client/RAClient.js
+r/r 7196-128-5:	PCHEALTH/HELPCTR/System/Remote Assistance/Interaction/Client/RAStatusBar.htm
+r/r 7194-128-5:	PCHEALTH/HELPCTR/System/Remote Assistance/Interaction/Client/RAToolBar.htm
+r/r 7195-128-5:	PCHEALTH/HELPCTR/System/Remote Assistance/Interaction/Client/RAToolBar.xml
+r/r 7191-128-5:	PCHEALTH/HELPCTR/System/Remote Assistance/Interaction/Client/rcscreen6_head.htm
+r/r 7190-128-5:	PCHEALTH/HELPCTR/System/Remote Assistance/Interaction/Client/rctoolScreen1.htm
+r/r 7193-128-4:	PCHEALTH/HELPCTR/System/Remote Assistance/Interaction/Client/setting.htm
+r/r 7203-128-5:	PCHEALTH/HELPCTR/System/Remote Assistance/Interaction/Client/TakeControl.bmp
+r/r 7202-128-5:	PCHEALTH/HELPCTR/System/Remote Assistance/Interaction/Client/TakeControl.gif
+r/r 7201-128-4:	PCHEALTH/HELPCTR/System/Remote Assistance/Interaction/Client/UpArrow.gif
+d/d 7221-144-6:	PCHEALTH/HELPCTR/System/Remote Assistance/Interaction/Common
+r/r 7224-128-5:	PCHEALTH/HELPCTR/System/Remote Assistance/Interaction/Common/ErrorMsgs.htm
+r/r 7239-128-5:	PCHEALTH/HELPCTR/System/Remote Assistance/Interaction/Common/HelpCenter.bmp
+r/r 7238-128-5:	PCHEALTH/HELPCTR/System/Remote Assistance/Interaction/Common/HelpCenter.gif
+r/r 7226-128-1:	PCHEALTH/HELPCTR/System/Remote Assistance/Interaction/Common/hide-chat.gif
+r/r 7253-128-4:	PCHEALTH/HELPCTR/System/Remote Assistance/Interaction/Common/info.gif
+r/r 7229-128-4:	PCHEALTH/HELPCTR/System/Remote Assistance/Interaction/Common/Options.bmp
+r/r 7228-128-4:	PCHEALTH/HELPCTR/System/Remote Assistance/Interaction/Common/Options.gif
+r/r 7231-128-4:	PCHEALTH/HELPCTR/System/Remote Assistance/Interaction/Common/Quit.bmp
+r/r 7230-128-4:	PCHEALTH/HELPCTR/System/Remote Assistance/Interaction/Common/Quit.gif
+r/r 7223-128-5:	PCHEALTH/HELPCTR/System/Remote Assistance/Interaction/Common/RAControl.js
+r/r 7222-128-5:	PCHEALTH/HELPCTR/System/Remote Assistance/Interaction/Common/RCFileXfer.htm
+r/r 7232-128-4:	PCHEALTH/HELPCTR/System/Remote Assistance/Interaction/Common/SendChat.gif
+r/r 7234-128-4:	PCHEALTH/HELPCTR/System/Remote Assistance/Interaction/Common/SendFile.bmp
+r/r 7233-128-4:	PCHEALTH/HELPCTR/System/Remote Assistance/Interaction/Common/SendFile.gif
+r/r 7236-128-5:	PCHEALTH/HELPCTR/System/Remote Assistance/Interaction/Common/SendVoice.bmp
+r/r 7235-128-5:	PCHEALTH/HELPCTR/System/Remote Assistance/Interaction/Common/SendVoice.gif
+r/r 7237-128-5:	PCHEALTH/HELPCTR/System/Remote Assistance/Interaction/Common/SendVoiceOn.gif
+r/r 7227-128-1:	PCHEALTH/HELPCTR/System/Remote Assistance/Interaction/Common/show-chat.gif
+r/r 7225-128-4:	PCHEALTH/HELPCTR/System/Remote Assistance/Interaction/Common/VOIPMsgs.htm
+d/d 7208-144-6:	PCHEALTH/HELPCTR/System/Remote Assistance/Interaction/Server
+r/r 7212-128-1:	PCHEALTH/HELPCTR/System/Remote Assistance/Interaction/Server/DividerBar1.htm
+r/r 7213-128-1:	PCHEALTH/HELPCTR/System/Remote Assistance/Interaction/Server/DividerBar2.htm
+r/r 7220-128-4:	PCHEALTH/HELPCTR/System/Remote Assistance/Interaction/Server/ESC_key.gif
+r/r 7219-128-1:	PCHEALTH/HELPCTR/System/Remote Assistance/Interaction/Server/Helpee_line.gif
+r/r 7210-128-5:	PCHEALTH/HELPCTR/System/Remote Assistance/Interaction/Server/RAChatServer.htm
+r/r 7209-128-4:	PCHEALTH/HELPCTR/System/Remote Assistance/Interaction/Server/RAServer.htm
+r/r 7216-128-4:	PCHEALTH/HELPCTR/System/Remote Assistance/Interaction/Server/RAServer.js
+r/r 7211-128-5:	PCHEALTH/HELPCTR/System/Remote Assistance/Interaction/Server/RAServerToolBar.htm
+r/r 7214-128-5:	PCHEALTH/HELPCTR/System/Remote Assistance/Interaction/Server/SettingServer.htm
+r/r 7218-128-5:	PCHEALTH/HELPCTR/System/Remote Assistance/Interaction/Server/StopControl.bmp
+r/r 7217-128-5:	PCHEALTH/HELPCTR/System/Remote Assistance/Interaction/Server/StopControl.gif
+r/r 7215-128-5:	PCHEALTH/HELPCTR/System/Remote Assistance/Interaction/Server/TakeControlMsgs.htm
+r/r 7180-128-1:	PCHEALTH/HELPCTR/System/Remote Assistance/RAClientLayout.xml
+r/r 7183-128-1:	PCHEALTH/HELPCTR/System/Remote Assistance/RAHelpeeAcceptLayout.xml
+r/r 7182-128-1:	PCHEALTH/HELPCTR/System/Remote Assistance/RAIMLayout.xml
+r/r 7185-128-5:	PCHEALTH/HELPCTR/System/Remote Assistance/RAStartPage.htm
+r/r 7181-128-1:	PCHEALTH/HELPCTR/System/Remote Assistance/RAURA.xml
+r/r 7184-128-4:	PCHEALTH/HELPCTR/System/Remote Assistance/rcBuddy.htm
+d/d 6434-144-6:	PCHEALTH/HELPCTR/System/scripts
+r/r 6557-128-4:	PCHEALTH/HELPCTR/System/scripts/Common.js
+r/r 6558-128-5:	PCHEALTH/HELPCTR/System/scripts/HomePage__DESKTOP.js
+r/r 6559-128-5:	PCHEALTH/HELPCTR/System/scripts/HomePage__SERVER.js
+r/r 6581-128-5:	PCHEALTH/HELPCTR/System/scripts/HomePage__SHARED.js
+r/r 6560-128-5:	PCHEALTH/HELPCTR/System/scripts/wrapperparam.js
+d/d 6360-144-6:	PCHEALTH/HELPCTR/System/sysinfo
+r/r 6362-128-5:	PCHEALTH/HELPCTR/System/sysinfo/commonFunc.js
+d/d 6444-144-6:	PCHEALTH/HELPCTR/System/sysinfo/graphics
+d/d 6583-144-6:	PCHEALTH/HELPCTR/System/sysinfo/graphics/33x16pie
+r/r 6584-128-4:	PCHEALTH/HELPCTR/System/sysinfo/graphics/33x16pie/0_chart.gif
+r/r 6445-128-5:	PCHEALTH/HELPCTR/System/sysinfo/graphics/33x16pie/100_chart.gif
+r/r 6446-128-4:	PCHEALTH/HELPCTR/System/sysinfo/graphics/33x16pie/10_chart.gif
+r/r 6447-128-4:	PCHEALTH/HELPCTR/System/sysinfo/graphics/33x16pie/15_chart.gif
+r/r 6448-128-4:	PCHEALTH/HELPCTR/System/sysinfo/graphics/33x16pie/20_chart.gif
+r/r 6449-128-4:	PCHEALTH/HELPCTR/System/sysinfo/graphics/33x16pie/25_chart.gif
+r/r 6450-128-4:	PCHEALTH/HELPCTR/System/sysinfo/graphics/33x16pie/30_chart.gif
+r/r 6451-128-4:	PCHEALTH/HELPCTR/System/sysinfo/graphics/33x16pie/35_chart.gif
+r/r 6452-128-4:	PCHEALTH/HELPCTR/System/sysinfo/graphics/33x16pie/40_chart.gif
+r/r 6453-128-4:	PCHEALTH/HELPCTR/System/sysinfo/graphics/33x16pie/45_chart.gif
+r/r 6454-128-4:	PCHEALTH/HELPCTR/System/sysinfo/graphics/33x16pie/50_chart.gif
+r/r 6455-128-4:	PCHEALTH/HELPCTR/System/sysinfo/graphics/33x16pie/55_chart.gif
+r/r 6456-128-4:	PCHEALTH/HELPCTR/System/sysinfo/graphics/33x16pie/5_chart.gif
+r/r 6457-128-4:	PCHEALTH/HELPCTR/System/sysinfo/graphics/33x16pie/60_chart.gif
+r/r 6458-128-4:	PCHEALTH/HELPCTR/System/sysinfo/graphics/33x16pie/65_chart.gif
+r/r 6459-128-4:	PCHEALTH/HELPCTR/System/sysinfo/graphics/33x16pie/70_chart.gif
+r/r 6460-128-4:	PCHEALTH/HELPCTR/System/sysinfo/graphics/33x16pie/75_chart.gif
+r/r 6461-128-4:	PCHEALTH/HELPCTR/System/sysinfo/graphics/33x16pie/80_chart.gif
+r/r 6462-128-4:	PCHEALTH/HELPCTR/System/sysinfo/graphics/33x16pie/85_chart.gif
+r/r 6463-128-4:	PCHEALTH/HELPCTR/System/sysinfo/graphics/33x16pie/90_chart.gif
+r/r 6464-128-4:	PCHEALTH/HELPCTR/System/sysinfo/graphics/33x16pie/95_chart.gif
+d/d 6465-144-6:	PCHEALTH/HELPCTR/System/sysinfo/graphics/47x24pie
+r/r 6585-128-4:	PCHEALTH/HELPCTR/System/sysinfo/graphics/47x24pie/0_chart.gif
+r/r 6466-128-5:	PCHEALTH/HELPCTR/System/sysinfo/graphics/47x24pie/100_chart.gif
+r/r 6467-128-4:	PCHEALTH/HELPCTR/System/sysinfo/graphics/47x24pie/10_chart.gif
+r/r 6468-128-4:	PCHEALTH/HELPCTR/System/sysinfo/graphics/47x24pie/15_chart.gif
+r/r 6469-128-4:	PCHEALTH/HELPCTR/System/sysinfo/graphics/47x24pie/20_chart.gif
+r/r 6470-128-4:	PCHEALTH/HELPCTR/System/sysinfo/graphics/47x24pie/25_chart.gif
+r/r 6471-128-4:	PCHEALTH/HELPCTR/System/sysinfo/graphics/47x24pie/30_chart.gif
+r/r 6472-128-4:	PCHEALTH/HELPCTR/System/sysinfo/graphics/47x24pie/35_chart.gif
+r/r 6473-128-4:	PCHEALTH/HELPCTR/System/sysinfo/graphics/47x24pie/40_chart.gif
+r/r 6474-128-4:	PCHEALTH/HELPCTR/System/sysinfo/graphics/47x24pie/45_chart.gif
+r/r 6475-128-4:	PCHEALTH/HELPCTR/System/sysinfo/graphics/47x24pie/50_chart.gif
+r/r 6476-128-4:	PCHEALTH/HELPCTR/System/sysinfo/graphics/47x24pie/55_chart.gif
+r/r 6477-128-4:	PCHEALTH/HELPCTR/System/sysinfo/graphics/47x24pie/5_chart.gif
+r/r 6478-128-4:	PCHEALTH/HELPCTR/System/sysinfo/graphics/47x24pie/60_chart.gif
+r/r 6479-128-4:	PCHEALTH/HELPCTR/System/sysinfo/graphics/47x24pie/65_chart.gif
+r/r 6480-128-4:	PCHEALTH/HELPCTR/System/sysinfo/graphics/47x24pie/70_chart.gif
+r/r 6481-128-4:	PCHEALTH/HELPCTR/System/sysinfo/graphics/47x24pie/75_chart.gif
+r/r 6482-128-4:	PCHEALTH/HELPCTR/System/sysinfo/graphics/47x24pie/80_chart.gif
+r/r 6483-128-4:	PCHEALTH/HELPCTR/System/sysinfo/graphics/47x24pie/85_chart.gif
+r/r 6484-128-4:	PCHEALTH/HELPCTR/System/sysinfo/graphics/47x24pie/90_chart.gif
+r/r 6485-128-4:	PCHEALTH/HELPCTR/System/sysinfo/graphics/47x24pie/95_chart.gif
+r/r 6492-128-1:	PCHEALTH/HELPCTR/System/sysinfo/graphics/alert.gif
+r/r 6486-128-4:	PCHEALTH/HELPCTR/System/sysinfo/graphics/BArrow.gif
+r/r 6493-128-1:	PCHEALTH/HELPCTR/System/sysinfo/graphics/card.gif
+r/r 6494-128-1:	PCHEALTH/HELPCTR/System/sysinfo/graphics/cd.gif
+r/r 6495-128-1:	PCHEALTH/HELPCTR/System/sysinfo/graphics/check.gif
+r/r 6496-128-1:	PCHEALTH/HELPCTR/System/sysinfo/graphics/chip.gif
+r/r 6497-128-4:	PCHEALTH/HELPCTR/System/sysinfo/graphics/down.bmp
+r/r 6498-128-1:	PCHEALTH/HELPCTR/System/sysinfo/graphics/drive.gif
+r/r 6499-128-1:	PCHEALTH/HELPCTR/System/sysinfo/graphics/error.gif
+r/r 6500-128-1:	PCHEALTH/HELPCTR/System/sysinfo/graphics/floppy.gif
+r/r 6487-128-4:	PCHEALTH/HELPCTR/System/sysinfo/graphics/GArrow.gif
+r/r 6501-128-1:	PCHEALTH/HELPCTR/System/sysinfo/graphics/gears.gif
+r/r 6502-128-4:	PCHEALTH/HELPCTR/System/sysinfo/graphics/greendot.jpg
+r/r 6503-128-1:	PCHEALTH/HELPCTR/System/sysinfo/graphics/info.gif
+r/r 6504-128-1:	PCHEALTH/HELPCTR/System/sysinfo/graphics/monitor.gif
+r/r 6505-128-1:	PCHEALTH/HELPCTR/System/sysinfo/graphics/personalizing.gif
+r/r 6488-128-4:	PCHEALTH/HELPCTR/System/sysinfo/graphics/PieChart.gif
+r/r 6489-128-1:	PCHEALTH/HELPCTR/System/sysinfo/graphics/PieGrey.gif
+r/r 6490-128-1:	PCHEALTH/HELPCTR/System/sysinfo/graphics/PieWhite.gif
+r/r 6506-128-1:	PCHEALTH/HELPCTR/System/sysinfo/graphics/printer.gif
+r/r 6507-128-1:	PCHEALTH/HELPCTR/System/sysinfo/graphics/r1_c1.gif
+r/r 6508-128-1:	PCHEALTH/HELPCTR/System/sysinfo/graphics/r1_c2.gif
+r/r 6509-128-1:	PCHEALTH/HELPCTR/System/sysinfo/graphics/r1_c3.gif
+r/r 6510-128-1:	PCHEALTH/HELPCTR/System/sysinfo/graphics/r3_c2.gif
+r/r 6511-128-1:	PCHEALTH/HELPCTR/System/sysinfo/graphics/spacer.gif
+r/r 6512-128-1:	PCHEALTH/HELPCTR/System/sysinfo/graphics/system.gif
+r/r 6491-128-4:	PCHEALTH/HELPCTR/System/sysinfo/graphics/Untitled.gif
+r/r 6513-128-4:	PCHEALTH/HELPCTR/System/sysinfo/graphics/up.bmp
+r/r 6514-128-1:	PCHEALTH/HELPCTR/System/sysinfo/graphics/usb.gif
+r/r 6515-128-1:	PCHEALTH/HELPCTR/System/sysinfo/graphics/windows.gif
+r/r 6363-128-5:	PCHEALTH/HELPCTR/System/sysinfo/loc_strings.xml
+r/r 6440-128-4:	PCHEALTH/HELPCTR/System/sysinfo/msinfo.htm
+r/r 6441-128-1:	PCHEALTH/HELPCTR/System/sysinfo/msinfo.xml
+r/r 6364-128-5:	PCHEALTH/HELPCTR/System/sysinfo/msinfohss.css
+r/r 6570-128-4:	PCHEALTH/HELPCTR/System/sysinfo/RSoP.htm
+r/r 6361-128-4:	PCHEALTH/HELPCTR/System/sysinfo/RSoP.js
+r/r 6365-128-5:	PCHEALTH/HELPCTR/System/sysinfo/sysComponentInfo.htm
+r/r 6366-128-5:	PCHEALTH/HELPCTR/System/sysinfo/sysComponentInfo.js
+r/r 6367-128-5:	PCHEALTH/HELPCTR/System/sysinfo/sysConfigLaunch.htm
+r/r 6368-128-5:	PCHEALTH/HELPCTR/System/sysinfo/sysDiskTS.htm
+r/r 6369-128-5:	PCHEALTH/HELPCTR/System/sysinfo/sysEvtLogInfo.htm
+r/r 6372-128-5:	PCHEALTH/HELPCTR/System/sysinfo/sysInfoLaunch.htm
+r/r 6377-128-5:	PCHEALTH/HELPCTR/System/sysinfo/sysinfomain.htm
+r/r 6378-128-5:	PCHEALTH/HELPCTR/System/sysinfo/sysinfosum.htm
+r/r 6373-128-5:	PCHEALTH/HELPCTR/System/sysinfo/sysRemoteInfo.htm
+r/r 6374-128-5:	PCHEALTH/HELPCTR/System/sysinfo/sysServicesInfo.htm
+r/r 6375-128-5:	PCHEALTH/HELPCTR/System/sysinfo/sysSoftwareInfo.htm
+r/r 6376-128-5:	PCHEALTH/HELPCTR/System/sysinfo/sysSoftwareInfo.js
+r/r 6370-128-5:	PCHEALTH/HELPCTR/System/sysinfo/sysHealthInfo.htm
+r/r 6371-128-5:	PCHEALTH/HELPCTR/System/sysinfo/sysHealthInfo.js
+r/r 6379-128-4:	PCHEALTH/HELPCTR/System/sysinfo/wmi_data.js
+d/d 6435-144-7:	PCHEALTH/HELPCTR/System/UpdateCtr
+r/r 6582-128-4:	PCHEALTH/HELPCTR/System/UpdateCtr/AboutWU.htm
+r/r 6436-128-4:	PCHEALTH/HELPCTR/System/UpdateCtr/Learn.htm
+r/r 6437-128-5:	PCHEALTH/HELPCTR/System/UpdateCtr/LearnInternet.htm
+r/r 6438-128-4:	PCHEALTH/HELPCTR/System/UpdateCtr/learnWU.htm
+r/r 6439-128-5:	PCHEALTH/HELPCTR/System/UpdateCtr/updatecenter.htm
+-/d 6351-144-1:	PCHEALTH/HELPCTR/System_OEM
+-/d 6352-144-1:	PCHEALTH/HELPCTR/Vendors
+d/d 7118-144-7:	PCHEALTH/HELPCTR/Vendors/CN=Microsoft Corporation,L=Redmond,S=Washington,C=US
+r/r 7262-128-5:	PCHEALTH/HELPCTR/Vendors/CN=Microsoft Corporation,L=Redmond,S=Washington,C=US/Connection.htm
+r/r 7271-128-4:	PCHEALTH/HELPCTR/Vendors/CN=Microsoft Corporation,L=Redmond,S=Washington,C=US/GArrow.gif
+r/r 7270-128-1:	PCHEALTH/HELPCTR/Vendors/CN=Microsoft Corporation,L=Redmond,S=Washington,C=US/GRect.gif
+r/r 7269-128-1:	PCHEALTH/HELPCTR/Vendors/CN=Microsoft Corporation,L=Redmond,S=Washington,C=US/Info_Icon.gif
+r/r 7261-128-5:	PCHEALTH/HELPCTR/Vendors/CN=Microsoft Corporation,L=Redmond,S=Washington,C=US/OfflineDC.htm
+r/r 7260-128-5:	PCHEALTH/HELPCTR/Vendors/CN=Microsoft Corporation,L=Redmond,S=Washington,C=US/OfflineOptions.htm
+r/r 7273-128-4:	PCHEALTH/HELPCTR/Vendors/CN=Microsoft Corporation,L=Redmond,S=Washington,C=US/PSS.css
+r/r 7257-128-5:	PCHEALTH/HELPCTR/Vendors/CN=Microsoft Corporation,L=Redmond,S=Washington,C=US/pssmachinesnapshot-less.xml
+r/r 7258-128-5:	PCHEALTH/HELPCTR/Vendors/CN=Microsoft Corporation,L=Redmond,S=Washington,C=US/pssmachinesnapshot-wo-com.xml
+r/r 7256-128-5:	PCHEALTH/HELPCTR/Vendors/CN=Microsoft Corporation,L=Redmond,S=Washington,C=US/pssmachinesnapshot.xml
+r/r 7263-128-5:	PCHEALTH/HELPCTR/Vendors/CN=Microsoft Corporation,L=Redmond,S=Washington,C=US/pss_getting_worldwide_help.htm
+r/r 7268-128-1:	PCHEALTH/HELPCTR/Vendors/CN=Microsoft Corporation,L=Redmond,S=Washington,C=US/r1_c1.gif
+r/r 7267-128-1:	PCHEALTH/HELPCTR/Vendors/CN=Microsoft Corporation,L=Redmond,S=Washington,C=US/r1_c2.gif
+r/r 7266-128-1:	PCHEALTH/HELPCTR/Vendors/CN=Microsoft Corporation,L=Redmond,S=Washington,C=US/r1_c3.gif
+r/r 7265-128-1:	PCHEALTH/HELPCTR/Vendors/CN=Microsoft Corporation,L=Redmond,S=Washington,C=US/r3_c2.gif
+r/r 7259-128-1:	PCHEALTH/HELPCTR/Vendors/CN=Microsoft Corporation,L=Redmond,S=Washington,C=US/Redirect.htm
+d/d 7119-144-7:	PCHEALTH/HELPCTR/Vendors/CN=Microsoft Corporation,L=Redmond,S=Washington,C=US/Remote Assistance
+d/d 7170-144-6:	PCHEALTH/HELPCTR/Vendors/CN=Microsoft Corporation,L=Redmond,S=Washington,C=US/Remote Assistance/Common
+r/r 7171-128-4:	PCHEALTH/HELPCTR/Vendors/CN=Microsoft Corporation,L=Redmond,S=Washington,C=US/Remote Assistance/Common/common.js
+r/r 7175-128-5:	PCHEALTH/HELPCTR/Vendors/CN=Microsoft Corporation,L=Redmond,S=Washington,C=US/Remote Assistance/Common/ConnIssue.htm
+r/r 7172-128-5:	PCHEALTH/HELPCTR/Vendors/CN=Microsoft Corporation,L=Redmond,S=Washington,C=US/Remote Assistance/Common/constants.js
+r/r 7178-128-5:	PCHEALTH/HELPCTR/Vendors/CN=Microsoft Corporation,L=Redmond,S=Washington,C=US/Remote Assistance/Common/icon_information_32x.gif
+r/r 7177-128-5:	PCHEALTH/HELPCTR/Vendors/CN=Microsoft Corporation,L=Redmond,S=Washington,C=US/Remote Assistance/Common/icon_warning_32x.gif
+r/r 7176-128-5:	PCHEALTH/HELPCTR/Vendors/CN=Microsoft Corporation,L=Redmond,S=Washington,C=US/Remote Assistance/Common/LearnInternet.htm
+r/r 7173-128-4:	PCHEALTH/HELPCTR/Vendors/CN=Microsoft Corporation,L=Redmond,S=Washington,C=US/Remote Assistance/Common/RAHelp.htm
+r/r 7174-128-5:	PCHEALTH/HELPCTR/Vendors/CN=Microsoft Corporation,L=Redmond,S=Washington,C=US/Remote Assistance/Common/RCMoreInfo.htm
+r/r 7120-128-4:	PCHEALTH/HELPCTR/Vendors/CN=Microsoft Corporation,L=Redmond,S=Washington,C=US/Remote Assistance/confirm.htm
+d/d 7166-144-1:	PCHEALTH/HELPCTR/Vendors/CN=Microsoft Corporation,L=Redmond,S=Washington,C=US/Remote Assistance/Css
+r/r 7169-128-4:	PCHEALTH/HELPCTR/Vendors/CN=Microsoft Corporation,L=Redmond,S=Washington,C=US/Remote Assistance/Css/RAChat.css
+r/r 7168-128-4:	PCHEALTH/HELPCTR/Vendors/CN=Microsoft Corporation,L=Redmond,S=Washington,C=US/Remote Assistance/Css/rc.css
+r/r 7167-128-4:	PCHEALTH/HELPCTR/Vendors/CN=Microsoft Corporation,L=Redmond,S=Washington,C=US/Remote Assistance/Css/rcbuddy.css
+d/d 7122-144-1:	PCHEALTH/HELPCTR/Vendors/CN=Microsoft Corporation,L=Redmond,S=Washington,C=US/Remote Assistance/Escalation
+d/d 7123-144-6:	PCHEALTH/HELPCTR/Vendors/CN=Microsoft Corporation,L=Redmond,S=Washington,C=US/Remote Assistance/Escalation/Common
+r/r 7131-128-1:	PCHEALTH/HELPCTR/Vendors/CN=Microsoft Corporation,L=Redmond,S=Washington,C=US/Remote Assistance/Escalation/Common/address_book.gif
+r/r 7133-128-4:	PCHEALTH/HELPCTR/Vendors/CN=Microsoft Corporation,L=Redmond,S=Washington,C=US/Remote Assistance/Escalation/Common/arrow.gif
+r/r 7132-128-5:	PCHEALTH/HELPCTR/Vendors/CN=Microsoft Corporation,L=Redmond,S=Washington,C=US/Remote Assistance/Escalation/Common/attention.gif
+r/r 7134-128-1:	PCHEALTH/HELPCTR/Vendors/CN=Microsoft Corporation,L=Redmond,S=Washington,C=US/Remote Assistance/Escalation/Common/buddy.gif
+r/r 7135-128-5:	PCHEALTH/HELPCTR/Vendors/CN=Microsoft Corporation,L=Redmond,S=Washington,C=US/Remote Assistance/Escalation/Common/buddy_attention.gif
+r/r 7137-128-1:	PCHEALTH/HELPCTR/Vendors/CN=Microsoft Corporation,L=Redmond,S=Washington,C=US/Remote Assistance/Escalation/Common/buddy_away.gif
+r/r 7138-128-1:	PCHEALTH/HELPCTR/Vendors/CN=Microsoft Corporation,L=Redmond,S=Washington,C=US/Remote Assistance/Escalation/Common/buddy_busy.gif
+r/r 7139-128-5:	PCHEALTH/HELPCTR/Vendors/CN=Microsoft Corporation,L=Redmond,S=Washington,C=US/Remote Assistance/Escalation/Common/buddy_none.gif
+r/r 7140-128-1:	PCHEALTH/HELPCTR/Vendors/CN=Microsoft Corporation,L=Redmond,S=Washington,C=US/Remote Assistance/Escalation/Common/buddy_offline.gif
+r/r 7147-128-1:	PCHEALTH/HELPCTR/Vendors/CN=Microsoft Corporation,L=Redmond,S=Washington,C=US/Remote Assistance/Escalation/Common/Envelope.gif
+r/r 7148-128-1:	PCHEALTH/HELPCTR/Vendors/CN=Microsoft Corporation,L=Redmond,S=Washington,C=US/Remote Assistance/Escalation/Common/floppy.gif
+r/r 7141-128-5:	PCHEALTH/HELPCTR/Vendors/CN=Microsoft Corporation,L=Redmond,S=Washington,C=US/Remote Assistance/Escalation/Common/generic_mail.gif
+r/- * 0:	PCHEALTH/HELPCTR/Vendors/CN=Microsoft Corporation,L=Redmond,S=Washington,C=US/Remote Assistance/Escalation/Common/logon_anim.gif
+r/r 7129-128-5:	PCHEALTH/HELPCTR/Vendors/CN=Microsoft Corporation,L=Redmond,S=Washington,C=US/Remote Assistance/Escalation/Common/monitor_left.gif
+r/r 7130-128-5:	PCHEALTH/HELPCTR/Vendors/CN=Microsoft Corporation,L=Redmond,S=Washington,C=US/Remote Assistance/Escalation/Common/monitor_right.gif
+r/r 7127-128-5:	PCHEALTH/HELPCTR/Vendors/CN=Microsoft Corporation,L=Redmond,S=Washington,C=US/Remote Assistance/Escalation/Common/rcConnection.htm
+r/r 7124-128-5:	PCHEALTH/HELPCTR/Vendors/CN=Microsoft Corporation,L=Redmond,S=Washington,C=US/Remote Assistance/Escalation/Common/rcscreen1.htm
+r/r 7125-128-5:	PCHEALTH/HELPCTR/Vendors/CN=Microsoft Corporation,L=Redmond,S=Washington,C=US/Remote Assistance/Escalation/Common/rcscreen2.htm
+r/r 7126-128-1:	PCHEALTH/HELPCTR/Vendors/CN=Microsoft Corporation,L=Redmond,S=Washington,C=US/Remote Assistance/Escalation/Common/rcscreen3.htm
+r/r 7128-128-5:	PCHEALTH/HELPCTR/Vendors/CN=Microsoft Corporation,L=Redmond,S=Washington,C=US/Remote Assistance/Escalation/Common/Remote_Assistance_Graphic.png
+r/r 7150-128-1:	PCHEALTH/HELPCTR/Vendors/CN=Microsoft Corporation,L=Redmond,S=Washington,C=US/Remote Assistance/Escalation/Common/icon_extweb.gif
+r/r 7149-128-1:	PCHEALTH/HELPCTR/Vendors/CN=Microsoft Corporation,L=Redmond,S=Washington,C=US/Remote Assistance/Escalation/Common/IM_icon.gif
+r/r 7142-128-4:	PCHEALTH/HELPCTR/Vendors/CN=Microsoft Corporation,L=Redmond,S=Washington,C=US/Remote Assistance/Escalation/Common/info.gif
+r/r 7136-128-5:	PCHEALTH/HELPCTR/Vendors/CN=Microsoft Corporation,L=Redmond,S=Washington,C=US/Remote Assistance/Escalation/Common/logon_anim.gif
+r/r 7143-128-5:	PCHEALTH/HELPCTR/Vendors/CN=Microsoft Corporation,L=Redmond,S=Washington,C=US/Remote Assistance/Escalation/Common/messenger_big.gif
+r/r 7145-128-1:	PCHEALTH/HELPCTR/Vendors/CN=Microsoft Corporation,L=Redmond,S=Washington,C=US/Remote Assistance/Escalation/Common/outlook.gif
+r/r 7146-128-1:	PCHEALTH/HELPCTR/Vendors/CN=Microsoft Corporation,L=Redmond,S=Washington,C=US/Remote Assistance/Escalation/Common/outlook_express.gif
+r/r 7144-128-1:	PCHEALTH/HELPCTR/Vendors/CN=Microsoft Corporation,L=Redmond,S=Washington,C=US/Remote Assistance/Escalation/Common/square_bullet.gif
+d/d 7151-144-6:	PCHEALTH/HELPCTR/Vendors/CN=Microsoft Corporation,L=Redmond,S=Washington,C=US/Remote Assistance/Escalation/Email
+r/r 7161-128-1:	PCHEALTH/HELPCTR/Vendors/CN=Microsoft Corporation,L=Redmond,S=Washington,C=US/Remote Assistance/Escalation/Email/check.gif
+r/r 7162-128-1:	PCHEALTH/HELPCTR/Vendors/CN=Microsoft Corporation,L=Redmond,S=Washington,C=US/Remote Assistance/Escalation/Email/help.gif
+r/r 7160-128-5:	PCHEALTH/HELPCTR/Vendors/CN=Microsoft Corporation,L=Redmond,S=Washington,C=US/Remote Assistance/Escalation/Email/rcDetails.htm
+r/r 7156-128-5:	PCHEALTH/HELPCTR/Vendors/CN=Microsoft Corporation,L=Redmond,S=Washington,C=US/Remote Assistance/Escalation/Email/rcInviteStatus.htm
+r/r 7152-128-5:	PCHEALTH/HELPCTR/Vendors/CN=Microsoft Corporation,L=Redmond,S=Washington,C=US/Remote Assistance/Escalation/Email/rcscreen4.htm
+r/r 7153-128-5:	PCHEALTH/HELPCTR/Vendors/CN=Microsoft Corporation,L=Redmond,S=Washington,C=US/Remote Assistance/Escalation/Email/rcscreen5.htm
+r/r 7154-128-5:	PCHEALTH/HELPCTR/Vendors/CN=Microsoft Corporation,L=Redmond,S=Washington,C=US/Remote Assistance/Escalation/Email/rcscreen6.htm
+r/r 7155-128-5:	PCHEALTH/HELPCTR/Vendors/CN=Microsoft Corporation,L=Redmond,S=Washington,C=US/Remote Assistance/Escalation/Email/rcscreen6_head.htm
+r/r 7157-128-5:	PCHEALTH/HELPCTR/Vendors/CN=Microsoft Corporation,L=Redmond,S=Washington,C=US/Remote Assistance/Escalation/Email/rcscreen7.htm
+r/r 7158-128-5:	PCHEALTH/HELPCTR/Vendors/CN=Microsoft Corporation,L=Redmond,S=Washington,C=US/Remote Assistance/Escalation/Email/rcscreen8.htm
+r/r 7159-128-5:	PCHEALTH/HELPCTR/Vendors/CN=Microsoft Corporation,L=Redmond,S=Washington,C=US/Remote Assistance/Escalation/Email/rcscreen9.htm
+r/r 7163-128-5:	PCHEALTH/HELPCTR/Vendors/CN=Microsoft Corporation,L=Redmond,S=Washington,C=US/Remote Assistance/Escalation/Email/rcscreenshot3.gif
+d/d 7164-144-1:	PCHEALTH/HELPCTR/Vendors/CN=Microsoft Corporation,L=Redmond,S=Washington,C=US/Remote Assistance/Escalation/Unsolicited
+r/r 7165-128-5:	PCHEALTH/HELPCTR/Vendors/CN=Microsoft Corporation,L=Redmond,S=Washington,C=US/Remote Assistance/Escalation/Unsolicited/UnSolicitedRCUI.htm
+r/r 7121-128-4:	PCHEALTH/HELPCTR/Vendors/CN=Microsoft Corporation,L=Redmond,S=Washington,C=US/Remote Assistance/rcstatus.htm
+r/r 7264-128-1:	PCHEALTH/HELPCTR/Vendors/CN=Microsoft Corporation,L=Redmond,S=Washington,C=US/spacer.gif
+r/r 7272-128-1:	PCHEALTH/HELPCTR/Vendors/CN=Microsoft Corporation,L=Redmond,S=Washington,C=US/status_ok.gif
+-/d 6353-144-1:	PCHEALTH/HELPCTR/HelpFiles
+d/d 5743-144-1:	PCHEALTH/UploadLB
+d/d 5744-144-1:	PCHEALTH/UploadLB/Binaries
+r/r 5745-128-4:	PCHEALTH/UploadLB/Binaries/UploadM.exe
+d/d 6344-144-1:	PCHEALTH/UploadLB/Config
+r/r 6345-128-1:	PCHEALTH/UploadLB/Config/config.xml
+-/r 5714-128-1:	desktop.ini
+-/r 5716-128-4:	winnt.bmp
+-/r 5717-128-4:	winnt256.bmp
+-/r 6073-128-1:	control.ini
+-/r 6323-128-5:	WindowsShell.Manifest
+-/d 6328-144-1:	Downloaded Program Files
+r/r 6329-128-1:	Downloaded Program Files/desktop.ini
+-/d 6330-144-1:	Offline Web Pages
+r/r 6331-128-1:	Offline Web Pages/desktop.ini
+-/r 6611-128-1:	Windows Update.log
+-/r 7277-128-4:	OEWABLog.txt
+-/r 7284-128-4:	WMSysPrx.prx
+-/r 9808-128-6:	0.log
+-/d 9846-144-6:	Installer
+-/r 9860-128-3:	Installer/d2a9f.msi
+-/d 9861-144-1:	Installer/{350C97B0-3D7C-4EE8-BAA9-00BCB3D54227}
+r/r 9862-128-3:	Installer/{350C97B0-3D7C-4EE8-BAA9-00BCB3D54227}/places.exe
+-/r 10179-128-3:	Installer/ac704.msi
+-/d 10180-144-6:	Installer/{6C31E111-96BB-4ADC-9C81-E6D3EEDDD8D3}
+-/r 10181-128-3:	Installer/{6C31E111-96BB-4ADC-9C81-E6D3EEDDD8D3}/htmlgen.exe
+-/r 10182-128-4:	Installer/{6C31E111-96BB-4ADC-9C81-E6D3EEDDD8D3}/PowerCalc.exe
+-/r 10183-128-4:	Installer/{6C31E111-96BB-4ADC-9C81-E6D3EEDDD8D3}/ARPPRODUCTICON.exe
+-/r 10184-128-4:	Installer/{6C31E111-96BB-4ADC-9C81-E6D3EEDDD8D3}/Timershot.exe
+-/r 10185-128-3:	Installer/{6C31E111-96BB-4ADC-9C81-E6D3EEDDD8D3}/Readme
+-/r 10186-128-3:	Installer/{6C31E111-96BB-4ADC-9C81-E6D3EEDDD8D3}/TweakUI.exe
+-/d 10152-144-1:	Downloaded Installations
+r/r 10153-128-4:	Downloaded Installations/Powertoys For Windows XP.msi
+-/r 11734-128-4:	Look@LAN Setup Log.txt
+-/r 11772-128-3:	iun6002.exe

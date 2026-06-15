@@ -1,0 +1,3 @@
+Launching compname v.20090727
+Error in /usr/share/regripper/plugins/compname.pl: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/compname.pl line 42.
+

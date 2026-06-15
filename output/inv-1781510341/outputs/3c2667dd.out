@@ -1,0 +1,102 @@
+-/d 220-144-6:	srchasst
+-/r 333-128-1:	bootstat.dat
+-/r 339-128-3:	REGLOCS.OLD
+-/r 431-128-3:	SchedLgU.Txt
+-/d 432-144-6:	Prefetch
+-/d 459-144-6:	system32
+-/d 2254-144-6:	system
+-/d 2257-144-6:	repair
+-/d 2259-144-3:	inf
+-/d 2930-144-3:	Help
+-/d 3400-144-6:	Fonts
+-/d 3485-144-3:	Config
+-/d 3486-144-3:	msagent
+-/d 3513-144-7:	Cursors
+-/d 3514-144-3:	Media
+-/d 3551-144-3:	java
+-/d 3554-144-7:	Web
+-/d 3588-144-3:	addins
+-/d 3589-144-4:	Connection Wizard
+-/d 3590-144-4:	Driver Cache
+-/d 3593-144-6:	security
+-/d 3602-144-6:	Temp
+-/d 3603-144-3:	twain_32
+-/d 3605-144-3:	msapps
+-/d 3607-144-3:	AppPatch
+-/d 3618-144-6:	Debug
+-/d 3620-144-4:	Resources
+-/d 3633-144-3:	mui
+-/d 3634-144-6:	WinSxS
+-/d 3637-144-3:	ime
+-/r 3646-128-3:	system.ini
+-/r 3647-128-3:	win.ini
+-/r 3648-128-3:	explorer.exe
+-/r 3649-128-3:	regedit.exe
+-/r 3650-128-3:	_default.pif
+-/r 3651-128-3:	explorer.scf
+-/r 3652-128-3:	hh.exe
+-/r 3653-128-3:	msdfmap.ini
+-/r 3654-128-3:	twain.dll
+-/r 3655-128-3:	twain_32.dll
+-/r 3656-128-3:	twunk_16.exe
+-/r 3657-128-3:	twunk_32.exe
+-/r 3658-128-3:	winhelp.exe
+-/r 3659-128-3:	winhlp32.exe
+-/r 3660-128-3:	clock.avi
+-/r 3661-128-3:	vmmreg32.dll
+-/r 3675-128-6:	setuplog.txt
+-/r 3679-128-6:	setupact.log
+-/r 3680-128-1:	setuperr.log
+-/r 3706-128-6:	setupapi.log
+-/r 3737-128-4:	SET3.tmp
+-/r 3745-128-4:	SET7.tmp
+-/r 3858-128-4:	NOTEPAD.EXE
+-/r 3859-128-4:	TASKMAN.EXE
+-/r 3901-128-4:	regopt.log
+-/r 4090-128-4:	ODBCINST.INI
+-/r 4096-128-4:	ocgen.log
+-/r 4098-128-4:	FaxSetup.log
+-/r 4101-128-4:	iis6.log
+-/r 4103-128-4:	comsetup.log
+-/r 4105-128-5:	ntdtcsetup.log
+-/r 4108-128-4:	tsoc.log
+-/r 4110-128-4:	msmqinst.log
+-/r 4112-128-4:	imsins.log
+-/r 4116-128-4:	msgsocm.log
+-/r 4128-128-4:	ocmsn.log
+-/r 4145-128-1:	Sti_Trace.log
+-/r 4745-128-1:	wiaservc.log
+-/r 4747-128-1:	wiadebug.log
+-/r 5024-128-4:	Blue Lace 16.bmp
+-/r 5025-128-4:	Soap Bubbles.bmp
+-/r 5026-128-4:	Coffee Bean.bmp
+-/r 5027-128-4:	FeatherTexture.bmp
+-/r 5028-128-4:	Gone Fishing.bmp
+-/r 5029-128-4:	Greenstone.bmp
+-/r 5030-128-4:	Prairie Wind.bmp
+-/r 5031-128-4:	Rhododendron.bmp
+-/r 5032-128-4:	River Sumida.bmp
+-/r 5033-128-4:	Santa Fe Stucco.bmp
+-/r 5034-128-4:	Zapotec.bmp
+-/r 5456-128-1:	DtcInstall.log
+-/d 5462-144-7:	Registration
+-/r 5464-128-1:	vb.ini
+-/r 5465-128-1:	vbaddin.ini
+-/r 5506-128-5:	sessmgr.setup.log
+-/d 5541-144-1:	Tasks
+-/d 5609-144-1:	PCHEALTH
+-/r 5714-128-1:	desktop.ini
+-/r 5716-128-4:	winnt.bmp
+-/r 5717-128-4:	winnt256.bmp
+-/r 6073-128-1:	control.ini
+-/r 6323-128-5:	WindowsShell.Manifest
+-/d 6328-144-1:	Downloaded Program Files
+-/d 6330-144-1:	Offline Web Pages
+-/r 6611-128-1:	Windows Update.log
+-/r 7277-128-4:	OEWABLog.txt
+-/r 7284-128-4:	WMSysPrx.prx
+-/r 9808-128-6:	0.log
+-/d 9846-144-6:	Installer
+-/d 10152-144-1:	Downloaded Installations
+-/r 11734-128-4:	Look@LAN Setup Log.txt
+-/r 11772-128-3:	iun6002.exe

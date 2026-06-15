@@ -1,0 +1,3 @@
+Launching winver v.20200525
+Error in /usr/share/regripper/plugins/winver.pl: Can't call method "get_root_key" on an undefined value at /usr/share/regripper/plugins/winver.pl line 53.
+

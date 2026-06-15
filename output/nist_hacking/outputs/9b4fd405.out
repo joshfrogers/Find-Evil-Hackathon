@@ -1,0 +1,132 @@
+samparse v.20220921
+(SAM) Parse SAM file for user & group mbrshp info
+
+
+User Information
+-------------------------
+Username        : Administrator [500]
+SID             : S-1-5-21-2000478354-688789844-1708537768-500
+Full Name       : 
+User Comment    : Built-in account for administering the computer/domain
+Account Type    : Default Admin User
+Account Created : Thu Aug 19 16:59:24 2004 Z
+Name            :  
+Last Login Date : Never
+Pwd Reset Date  : Thu Aug 19 17:17:29 2004 Z
+Pwd Fail Date   : Never
+Login Count     : 0
+  --> Normal user account
+  --> Password does not expire
+
+Username        : Guest [501]
+SID             : S-1-5-21-2000478354-688789844-1708537768-501
+Full Name       : 
+User Comment    : Built-in account for guest access to the computer/domain
+Account Type    : Default Guest Acct
+Account Created : Thu Aug 19 16:59:24 2004 Z
+Name            :  
+Last Login Date : Never
+Pwd Reset Date  : Never
+Pwd Fail Date   : Never
+Login Count     : 0
+  --> Password not required
+  --> Normal user account
+  --> Password does not expire
+
+Username        : HelpAssistant [1000]
+SID             : S-1-5-21-2000478354-688789844-1708537768-1000
+Full Name       : Remote Desktop Help Assistant Account
+User Comment    : Account for Providing Remote Assistance
+Account Type    : Custom Limited Acct
+Account Created : Thu Aug 19 22:28:24 2004 Z
+Name            :  
+Last Login Date : Never
+Pwd Reset Date  : Thu Aug 19 22:28:24 2004 Z
+Pwd Fail Date   : Never
+Login Count     : 0
+  --> Normal user account
+  --> Password does not expire
+
+Username        : SUPPORT_388945a0 [1002]
+SID             : S-1-5-21-2000478354-688789844-1708537768-1002
+Full Name       : CN=Microsoft Corporation,L=Redmond,S=Washington,C=US
+User Comment    : This is a vendor's account for the Help and Support Service
+Account Type    : Custom Limited Acct
+Account Created : Thu Aug 19 22:35:19 2004 Z
+Name            :  
+Last Login Date : Never
+Pwd Reset Date  : Thu Aug 19 22:35:19 2004 Z
+Pwd Fail Date   : Never
+Login Count     : 0
+  --> Normal user account
+  --> Account Disabled
+  --> Password does not expire
+
+Username        : Mr. Evil [1003]
+SID             : S-1-5-21-2000478354-688789844-1708537768-1003
+Full Name       : 
+User Comment    : 
+Account Type    : Default Admin User
+Account Created : Thu Aug 19 23:03:54 2004 Z
+Name            :  
+Last Login Date : Fri Aug 27 15:08:23 2004 Z
+Pwd Reset Date  : Thu Aug 19 23:03:54 2004 Z
+Pwd Fail Date   : Never
+Login Count     : 15
+  --> Normal user account
+  --> Password does not expire
+
+-------------------------
+Group Membership Information
+-------------------------
+Group Name    : Replicator [0]
+LastWrite     : Thu Aug 19 16:59:24 2004 Z
+Group Comment : Supports file replication in a domain
+Users         : None
+
+Group Name    : Guests [1]
+LastWrite     : Thu Aug 19 16:59:24 2004 Z
+Group Comment : Guests have the same access as members of the Users group by default, except for the Guest account which is further restricted
+Users :
+  S-1-5-21-2000478354-688789844-1708537768-501
+
+Group Name    : Remote Desktop Users [0]
+LastWrite     : Thu Aug 19 16:59:25 2004 Z
+Group Comment : Members in this group are granted the right to logon remotely
+Users         : None
+
+Group Name    : Users [2]
+LastWrite     : Thu Aug 19 17:01:55 2004 Z
+Group Comment : Users are prevented from making accidental or intentional system-wide changes.  Thus, Users can run certified applications, but not most legacy applications
+Users :
+  S-1-5-4
+  S-1-5-11
+
+Group Name    : Backup Operators [0]
+LastWrite     : Thu Aug 19 16:59:24 2004 Z
+Group Comment : Backup Operators can override security restrictions for the sole purpose of backing up or restoring files
+Users         : None
+
+Group Name    : Administrators [2]
+LastWrite     : Thu Aug 19 23:03:54 2004 Z
+Group Comment : Administrators have complete and unrestricted access to the computer/domain
+Users :
+  S-1-5-21-2000478354-688789844-1708537768-1003
+  S-1-5-21-2000478354-688789844-1708537768-500
+
+Group Name    : Network Configuration Operators [0]
+LastWrite     : Thu Aug 19 16:59:25 2004 Z
+Group Comment : Members in this group can have some administrative privileges to manage configuration of networking features
+Users         : None
+
+Group Name    : Power Users [0]
+LastWrite     : Thu Aug 19 16:59:24 2004 Z
+Group Comment : Power Users possess most administrative powers with some restrictions.  Thus, Power Users can run legacy applications in addition to certified applications
+Users         : None
+
+Analysis Tips:
+ - For well-known SIDs, see http://support.microsoft.com/kb/243330
+     - S-1-5-4  = Interactive
+     - S-1-5-11 = Authenticated Users
+ - Correlate the user SIDs to the output of the ProfileList plugin
+

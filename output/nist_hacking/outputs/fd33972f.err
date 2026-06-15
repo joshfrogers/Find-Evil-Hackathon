@@ -1,0 +1,5 @@
+usage: mac_apt_artifact_only.py [-h] [-i INPUT_PATH [INPUT_PATH ...]]
+                                [-o OUTPUT_PATH] [-x] [-c] [-t] [-j]
+                                [-l LOG_LEVEL] [--plugin_help]
+                                plugin
+mac_apt_artifact_only.py: error: the following arguments are required: plugin

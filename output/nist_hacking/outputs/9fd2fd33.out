@@ -1,0 +1,306 @@
+disablesr v.20200515
+(Software) Gets the value that turns System Restore either on or off
+
+----------------------------------------
+runonceex v.20200427
+(Software) Gets contents of RunOnceEx values
+
+RunOnceEx
+----------------------------------------
+srum v.20200518
+(Software) Gets contents of SRUM subkeys
+
+----------------------------------------
+----------------------------------------
+Launching tracing v.20200511
+----------------------------------------
+dcom v.20200525
+(Software) Check DCOM Ports
+
+----------------------------------------
+inprocserver v.20200427
+(Software) Checks CLSID InProcServer32 values for indications of malware
+
+----------------------------------------
+----------------------------------------
+printdemon v.20200514
+(Software) Gets value assoc with printer ports and descriptions
+
+----------------------------------------
+emdmgmt v.20200511
+(Software) Gets contents of EMDMgmt subkeys and values
+
+----------------------------------------
+shelloverlay v.20100308
+(Software) Gets ShellIconOverlayIdentifiers values
+
+----------------------------------------
+----------------------------------------
+Launching direct v.20200515
+----------------------------------------
+----------------------------------------
+uninstall v.20200525
+(Software, NTUSER.DAT) Gets contents of Uninstall keys from Software, NTUSER.DAT hives
+
+----------------------------------------
+run v.20200511
+(Software, NTUSER.DAT) [Autostart] Get autostart key contents from Software hive
+
+----------------------------------------
+heap v.20200427
+(Software) Checks HeapLeakDetection\DiagnosedApplications Subkeys
+
+----------------------------------------
+appcompatflags v.20200525
+(NTUSER.DAT, Software) Extracts AppCompatFlags for Windows.
+
+----------------------------------------
+powershellcore v.20200525
+(Software) Extracts PowerShellCore settings
+
+----------------------------------------
+spp_clients v.20130429
+(Software) Determines volumes monitored by VSS
+
+----------------------------------------
+clsid v.20200526
+(Software, USRCLASS.DAT) Get list of CLSID/registered classes
+
+----------------------------------------
+----------------------------------------
+Launching systemindex v.20200518
+(Software) Gets systemindex\..\Paths info from Windows Search key
+
+----------------------------------------
+calibrator v.20200427
+(Software) Checks DisplayCalibrator value (possible bypass assoc with LockBit ransomware)
+
+----------------------------------------
+susclient v.20200518
+(Software) Extracts SusClient* info, including HDD SN (if avail)
+
+----------------------------------------
+----------------------------------------
+tasks v.20200427
+(Software) Checks TaskCache\Tasks subkeys
+
+----------------------------------------
+----------------------------------------
+scriptleturl v.20200525
+(Software, USRCLASS.DAT) Check CLSIDs for ScriptletURL subkeys
+
+----------------------------------------
+ddpe v.20221128
+(Software) Get the Machine ID (MCID) and Shield ID (DCID) needed to decrypt files using Dell Encryption. Also reports the Dell Server URI.
+
+----------------------------------------
+wbem v.20200511
+(Software) Get some contents from WBEM key
+
+----------------------------------------
+----------------------------------------
+gpohist v.
+(Software) Collects system/user GPO history
+
+----------------------------------------
+----------------------------------------
+apppaths v.20200511
+(NTUSER.DAT,Software) Gets content of App Paths subkeys
+
+----------------------------------------
+----------------------------------------
+taskcache v.20200427
+(Software) Checks TaskCache\Tree root keys (not subkeys)
+
+----------------------------------------
+uac v.20200427
+(Software) Get Select User Account Control (UAC) Values from HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System
+
+----------------------------------------
+wow64 v.20200515
+(Software) Gets contents of WOW64\x86 key
+
+WOW64
+----------------------------------------
+----------------------------------------
+watp v.20200427
+(Software) Gets contents of Windows Advanced Threat Protection key
+
+----------------------------------------
+netsh v.20200515
+(Software) Gets list of NetSH helper DLLs
+
+NetSH
+----------------------------------------
+appkeys v.20200517
+(NTUSER.DAT, Software) Extracts AppKeys entries.
+
+----------------------------------------
+audiodev v.20200525
+(Software) Gets audio capture/render devices
+
+----------------------------------------
+lastloggedon v.20200517
+(Software) Gets LastLoggedOn* values from LogonUI key
+
+----------------------------------------
+execpolicy v.20200517
+(Software) Gets PowerShell Execution Policy
+
+----------------------------------------
+Launching btconfig v.20200526
+(Software) Determines BlueTooth devices 'seen' by BroadComm drivers
+
+----------------------------------------
+drivers32 v.20200525
+(Software) Get values from the Drivers32 key
+
+----------------------------------------
+runvirtual v.20200427
+(NTUSER.DAT, Software) Gets RunVirtual entries
+
+----------------------------------------
+wab v.20200427
+(Software) Get WAB DLLPath settings
+
+----------------------------------------
+gpohist_tln v.
+(Software) Collects system/user GPO history (TLN)
+
+----------------------------------------
+msis v.20200517
+(Software) Determine MSI packages installed on the system
+
+----------------------------------------
+secctr v.20200517
+(Software) Get data from Security Center key
+
+----------------------------------------
+appinitdlls v.20200427
+(Software) Gets contents of AppInit_DLLs value
+
+AppInit_DLLs
+----------------------------------------
+----------------------------------------
+winver v.20200525
+(Software) Get Windows version & build info
+
+----------------------------------------
+pslogging v.20200515
+(NTUSER.DAT, Software) Extracts PowerShell logging settings
+
+----------------------------------------
+disablemru v.20190924
+(NTUSER.DAT, Software) Checks settings disabling user's MRUs
+
+----------------------------------------
+Launching installer v.20200517
+(Software) Determines product install information
+
+----------------------------------------
+thispcpolicy v.20200511
+(Software) Gets ThisPCPolicy values
+
+----------------------------------------
+Launching tracing v.20120608
+----------------------------------------
+----------------------------------------
+profilelist v.20200518
+(Software) Get content of ProfileList key
+
+----------------------------------------
+ssid v.20200515
+(Software) Get WZCSVC SSID Info
+
+----------------------------------------
+defender v.20200427
+(Software) Get Windows Defender settings
+
+----------------------------------------
+allowedenum v.20200511
+(NTUSER.DAT, Software) Extracts AllowedEnumeration values to determine hidden special folders
+
+----------------------------------------
+sfc v.20200517
+(Software) Get SFC values
+
+----------------------------------------
+killsuit v.20200427
+(Software) Check for indications of Danderspritz Killsuit installation
+
+----------------------------------------
+at v.20200525
+(Software) Checks Software hive for AT jobs
+
+----------------------------------------
+ryuk_gpo v.20200427
+(Software) Get GPO policy settings from Software hive related to Ryuk
+
+----------------------------------------
+ica_sessions v.20200528
+(Software) ARETE ONLY - Extracts Citrix ICA Session info
+
+----------------------------------------
+----------------------------------------
+macaddr v.20200515
+(System,Software)  -- 
+
+/tmp/agentic-sift-evidence-mhmhnwjl/mnt/vol0/WINDOWS/SYSTEM32/CONFIG/SOFTWARE may not be a valid hive.
+----------------------------------------
+licenses v.20200526
+(Software) Get contents of HKLM/Software/Licenses key
+
+----------------------------------------
+injectdll64 v.20200427
+(NTUSER.DAT, Software) Retrieve values set to weaken Chrome security
+
+----------------------------------------
+uacbypass v.20200511
+(USRCLASS.DAT, Software) Get possible UAC bypass settings
+
+----------------------------------------
+networkcards v.20200518
+(Software) Get NetworkCards Info
+
+----------------------------------------
+cmd_shell v.20200515
+(Software) Gets shell open cmds for various file types
+
+----------------------------------------
+Launching volinfocache v.20200518
+(Software) Gets VolumeInfoCache from Windows Search key
+
+----------------------------------------
+outlookhomepage v.20201002
+(NTUSER.DAT, Software) Retrieve values set to attack Outlook WebView Homepage
+
+----------------------------------------
+exefile v.20211214
+(USRCLASS.DAT,Software) Get file associations using exefile file handler and modified open handler for exefile
+
+Hive /tmp/agentic-sift-evidence-mhmhnwjl/mnt/vol0/WINDOWS/SYSTEM32/CONFIG/SOFTWARE
+----------------------------------------
+schedagent v.20200518
+(Software) Get SchedulingAgent key contents
+
+----------------------------------------
+----------------------------------------
+wsh_settings v.20200517
+(Software) Gets WSH Settings
+
+----------------------------------------
+----------------------------------------
+----------------------------------------
+----------------------------------------
+portdev v.20090118
+(Software) Parses Windows Portable Devices key contents
+
+----------------------------------------
+Launching networklist v.20200518
+(Software) Collects network info from NetworkList key
+
+----------------------------------------
+imagefile v.20200515
+(Software) Checks ImageFileExecutionOptions subkeys values
+
+----------------------------------------

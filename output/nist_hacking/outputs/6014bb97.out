@@ -1,0 +1,6 @@
+shutdown v.20200518
+(System) Gets ShutdownTime value from System hive
+
+ControlSet001\Control\Windows key, ShutdownTime value
+LastWrite time: 2004-08-27 15:46:33Z
+ShutdownTime  : 2004-08-27 15:46:33Z

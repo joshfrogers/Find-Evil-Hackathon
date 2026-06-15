@@ -1,0 +1,402 @@
+Parsed Plugins file.
+Launching winscp v.20201227
+Error in winscp: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/winscp.pl line 63.
+
+winscp complete.
+Launching profiler v.20200525
+Error in profiler: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/profiler.pl line 44.
+
+profiler complete.
+Launching recentapps_tln v.20190513
+Error in recentapps_tln: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/recentapps_tln.pl line 38.
+
+recentapps_tln complete.
+Launching recentdocs_tln v.20140220
+Error in recentdocs_tln: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/recentdocs_tln.pl line 44.
+
+recentdocs_tln complete.
+Error in appx_tln: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/appx_tln.pl line 43.
+
+appx_tln complete.
+Launching adobe v.20200522
+Error in adobe: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/adobe.pl line 52.
+
+adobe complete.
+Launching recentdocs v.20200427
+Error in recentdocs: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/recentdocs.pl line 47.
+
+recentdocs complete.
+Error in lxss_tln: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/lxss_tln.pl line 43.
+
+lxss_tln complete.
+Launching mp2 v.20200526
+Error in mp2: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/mp2.pl line 52.
+
+mp2 complete.
+Launching compdesc v.20200511
+Error in compdesc: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/compdesc.pl line 42.
+
+compdesc complete.
+Launching inprocserver v.20200427
+Error in inprocserver: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/inprocserver.pl line 65.
+
+inprocserver complete.
+Launching mndmru v.20120829
+Error in mndmru_tln: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/mndmru_tln.pl line 41.
+
+mndmru_tln complete.
+[*] Launching iconlayouts v.20211001
+Error in iconlayouts: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/iconlayouts.pl line 41.
+
+iconlayouts complete.
+Launching cmdproc_tln v.20130425
+Error in cmdproc_tln: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/cmdproc_tln.pl line 43.
+
+cmdproc_tln complete.
+Launching mmc v.20200517
+Error in mmc: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/mmc.pl line 43.
+
+mmc complete.
+Launching attachmgr v.20200525
+Error in attachmgr: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/attachmgr.pl line 51.
+
+attachmgr complete.
+Launching uninstall v.20200525
+Error in uninstall: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/uninstall.pl line 56.
+
+uninstall complete.
+Launching shellfolders v.20200515
+Error in shellfolders: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/shellfolders.pl line 46.
+
+shellfolders complete.
+Launching run v.20200511
+Error in run: Can't call method "get_embedded_filename" on an undefined value at /usr/local/bin/rip.pl line 460.
+
+run complete.
+Launching lxss v.20200511
+Error in lxss: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/lxss.pl line 42.
+
+lxss complete.
+Launching WinZip v.20200526
+Error in winzip: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/winzip.pl line 39.
+
+winzip complete.
+Launching appcompatflags v.20200525
+Error in appcompatflags: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/appcompatflags.pl line 66.
+
+appcompatflags complete.
+Launching speech v.20200427
+Error in speech: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/speech.pl line 47.
+
+speech complete.
+Launching featureusage v.20200511
+Error in featureusage: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/featureusage.pl line 46.
+
+featureusage complete.
+Launching run_tln v.20221222
+Error in run_tln: Can't call method "get_embedded_filename" on an undefined value at /usr/local/bin/rip.pl line 460.
+
+run_tln complete.
+Launching userassist_tln v.20180710
+Error in userassist_tln: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/userassist_tln.pl line 45.
+
+userassist_tln complete.
+Launching oisc v.20091125
+Error in oisc: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/oisc.pl line 57.
+
+oisc complete.
+Launching typedurlstime v.20200526
+Error in typedurlstime: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/typedurlstime.pl line 47.
+
+typedurlstime complete.
+Launching psscript v.20200525
+Error in psscript: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/psscript.pl line 44.
+
+psscript complete.
+Launching recentapps v.20200515
+Error in recentapps: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/recentapps.pl line 41.
+
+recentapps complete.
+Launching applets_tln v.20120613
+Error in applets_tln: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/applets_tln.pl line 41.
+
+applets_tln complete.
+Launching uninstall v.20120523
+Error in uninstall_tln: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/uninstall_tln.pl line 52.
+
+uninstall_tln complete.
+Launching mpmru v.20200517
+Error in mpmru: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/mpmru.pl line 42.
+
+mpmru complete.
+Launching onedrivev.20200515
+Error in onedrive: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/onedrive.pl line 42.
+
+onedrive complete.
+Launching appspecific v.20200515
+Error in appspecific: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/appspecific.pl line 40.
+
+appspecific complete.
+Error in msoffice_tln: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/msoffice_tln.pl line 55.
+
+msoffice_tln complete.
+Launching cmdproc v.20200515
+Error in cmdproc: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/cmdproc.pl line 47.
+
+cmdproc complete.
+Launching 7-zip v.20210329
+Error in sevenzip: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/sevenzip.pl line 48.
+
+sevenzip complete.
+Launching gpohist v.
+Error in gpohist: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/gpohist.pl line 51.
+
+gpohist complete.
+Error in wordwheelquery_tln: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/wordwheelquery_tln.pl line 43.
+
+wordwheelquery_tln complete.
+Launching disableuserassist v.20230710
+Error in disableuserassist: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/disableuserassist.pl line 42.
+
+disableuserassist complete.
+Launching applets v.20200525
+Error in applets: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/applets.pl line 45.
+
+applets complete.
+Launching typedurls v.20120827
+Error in typedurls_tln: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/typedurls_tln.pl line 53.
+
+typedurls_tln complete.
+Launching attachmgr_tln v.20130425
+Error in attachmgr_tln: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/attachmgr_tln.pl line 48.
+
+attachmgr_tln complete.
+Launching load v.20200517
+Error in load: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/load.pl line 44.
+
+load complete.
+Launching apppaths v.20200511
+Error in apppaths: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/apppaths.pl line 53.
+
+apppaths complete.
+Launching DDO v.20140414
+Error in ddo: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/ddo.pl line 41.
+
+ddo complete.
+Launching runmru v.20120828
+Error in runmru_tln: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/runmru_tln.pl line 41.
+
+runmru_tln complete.
+Launching tsclient v.20200518
+Error in tsclient: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/tsclient.pl line 43.
+
+tsclient complete.
+Launching comdlg32 v.20200517
+Error in comdlg32: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/comdlg32.pl line 93.
+
+comdlg32 complete.
+Launching sysinternals v.20080324
+Error in sysinternals: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/sysinternals.pl line 40.
+
+sysinternals complete.
+Launching arpcache v.20200515
+Error in arpcache: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/arpcache.pl line 52.
+
+arpcache complete.
+Launching searchscopes v.20200517
+Error in searchscopes: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/searchscopes.pl line 43.
+
+searchscopes complete.
+Launching mndmru v.20200517
+Error in mndmru: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/mndmru.pl line 41.
+
+mndmru complete.
+Launching typedpaths v.20200526
+Error in typedpaths: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/typedpaths.pl line 41.
+
+typedpaths complete.
+Launching appkeys v.20200517
+Error in appkeys: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/appkeys.pl line 45.
+
+appkeys complete.
+Launching mmo v.20200517
+Error in mmo: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/mmo.pl line 51.
+
+mmo complete.
+Launching appassoc v.20200515
+Error in appassoc: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/appassoc.pl line 41.
+
+appassoc complete.
+Error in speech_tln: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/speech_tln.pl line 46.
+
+speech_tln complete.
+Launching pendinggpos v.20200427
+Error in pendinggpos: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/pendinggpos.pl line 43.
+
+pendinggpos complete.
+Launching mixer v.20141112
+Error in mixer_tln: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/mixer_tln.pl line 46.
+
+mixer_tln complete.
+Error in onedrive_tln: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/onedrive_tln.pl line 40.
+
+onedrive_tln complete.
+Launching wordwheelquery v.20200823
+Error in wordwheelquery: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/wordwheelquery.pl line 43.
+
+wordwheelquery complete.
+Launching mmc v.20120828
+Error in mmc_tln: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/mmc_tln.pl line 41.
+
+mmc_tln complete.
+Launching logonstats v.20200517
+Error in logonstats: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/logonstats.pl line 40.
+
+logonstats complete.
+Launching runvirtual v.20200427
+Error in runvirtual: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/runvirtual.pl line 42.
+
+runvirtual complete.
+Launching tsclient v.20120827
+Error in tsclient_tln: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/tsclient_tln.pl line 40.
+
+tsclient_tln complete.
+Launching userassist v.20170204
+Error in userassist: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/userassist.pl line 45.
+
+userassist complete.
+Launching knowndev v.20200515
+Error in knowndev: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/knowndev.pl line 43.
+
+knowndev complete.
+Launching cached v.20200525
+Error in cached: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/cached.pl line 59.
+
+cached complete.
+Launching gpohist_tln v.
+Error in gpohist_tln: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/gpohist_tln.pl line 50.
+
+gpohist_tln complete.
+Launching  msoffice v.20200518
+Error in msoffice: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/msoffice.pl line 57.
+
+msoffice complete.
+Launching winrar v.20120829
+Error in winrar_tln: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/winrar_tln.pl line 38.
+
+winrar_tln complete.
+Launching runmru v.20200525
+Error in runmru: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/runmru.pl line 44.
+
+runmru complete.
+Launching pslogging v.20200515
+Error in pslogging: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/pslogging.pl line 44.
+
+pslogging complete.
+Launching disablemru v.20190924
+Error in disablemru: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/disablemru.pl line 41.
+
+disablemru complete.
+Launching jumplistdata v.20200517
+Error in jumplistdata: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/jumplistdata.pl line 42.
+
+jumplistdata complete.
+Launching apppaths_tln v.20130429
+Error in apppaths_tln: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/apppaths_tln.pl line 47.
+
+apppaths_tln complete.
+Launching environment v.20200512
+Error in environment: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/environment.pl line 46.
+
+environment complete.
+Launching typedurls v.20200526
+Error in typedurls: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/typedurls.pl line 56.
+
+typedurls complete.
+Launching allowedenum v.20200511
+Error in allowedenum: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/allowedenum.pl line 53.
+
+allowedenum complete.
+Launching osversion_tln v.20120608
+Error in osversion_tln: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/osversion_tln.pl line 42.
+
+osversion_tln complete.
+Launching putty v.20200515
+Error in putty: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/putty.pl line 43.
+
+putty complete.
+Launching typedpaths v.20120828
+Error in typedpaths_tln: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/typedpaths_tln.pl line 39.
+
+typedpaths_tln complete.
+Launching typedurlstime v.20120613
+Error in typedurlstime_tln: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/typedurlstime_tln.pl line 44.
+
+typedurlstime_tln complete.
+Error in mp2_tln: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/mp2_tln.pl line 52.
+
+mp2_tln complete.
+Launching winrar v.20200526
+Error in winrar: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/winrar.pl line 41.
+
+winrar complete.
+Launching identities v.20200525
+Error in identities: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/identities.pl line 42.
+
+identities complete.
+Launching muicache v.20200525
+Error in muicache: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/muicache.pl line 43.
+
+muicache complete.
+Launching wc_shares v.20200515
+Error in wc_shares: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/wc_shares.pl line 42.
+
+wc_shares complete.
+Launching injectdll64 v.20200427
+Error in injectdll64: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/injectdll64.pl line 48.
+
+injectdll64 complete.
+[*] Launching heidisql v.20201227
+Error in heidisql: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/heidisql.pl line 45.
+
+heidisql complete.
+Launching shc v.20200427
+Error in shc: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/shc.pl line 49.
+
+shc complete.
+Error in muicache_tln: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/muicache_tln.pl line 40.
+
+muicache_tln complete.
+Launching mixer v.20200517
+Error in mixer: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/mixer.pl line 47.
+
+mixer complete.
+Launching osversion v.20200511
+Error in osversion: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/osversion.pl line 43.
+
+osversion complete.
+Launching outlook_homepage v.20201002
+Error in outlook_homepage: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/outlook_homepage.pl line 48.
+
+outlook_homepage complete.
+Launching appx v.20200427
+Error in appx: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/appx.pl line 44.
+
+appx complete.
+Error in appkeys_tln: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/appkeys_tln.pl line 43.
+
+appkeys_tln complete.
+Launching sysinternals_tln v.20080324
+Error in sysinternals_tln: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/sysinternals_tln.pl line 39.
+
+sysinternals_tln complete.
+Launching cached_tln v.20150608
+Error in cached_tln: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/cached_tln.pl line 44.
+
+cached_tln complete.
+Error in runvirtual_tln: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/runvirtual_tln.pl line 41.
+
+runvirtual_tln complete.
+Error in listsoft: Unable to open 'Documents and Settings/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/listsoft.pl line 39.
+
+listsoft complete.

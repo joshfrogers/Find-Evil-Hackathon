@@ -1,0 +1,3 @@
+Launching recentdocs v.20200427
+Error in /usr/share/regripper/plugins/recentdocs.pl: Unable to open '/cases/Mr. Evil/NTUSER.DAT': No such file or directory at /usr/share/regripper/plugins/recentdocs.pl line 47.
+

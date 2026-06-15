@@ -1,0 +1,48 @@
+MFT Entry Header Values:
+Entry: 6366        Sequence: 2
+$LogFile Sequence Number: 17264376
+Allocated File
+Links: 2
+
+$STANDARD_INFORMATION Attribute Values:
+Flags: Archive
+Owner ID: 0
+Security ID: 0  ()
+Created:	2004-08-19 22:34:29.625025600 (UTC)
+File Modified:	2004-08-19 22:34:25.058459200 (UTC)
+MFT Modified:	2004-08-19 22:34:25.058459200 (UTC)
+Accessed:	2004-08-19 22:34:29.635040000 (UTC)
+
+$FILE_NAME Attribute Values:
+Flags: Archive
+Name: SYSCOM~1.JS
+Parent MFT Entry: 6360 	Sequence: 2
+Allocated Size: 0   	Actual Size: 0
+Created:	2004-08-19 22:34:29.625025600 (UTC)
+File Modified:	2004-08-19 22:34:29.625025600 (UTC)
+MFT Modified:	2004-08-19 22:34:29.625025600 (UTC)
+Accessed:	2004-08-19 22:34:29.625025600 (UTC)
+
+$FILE_NAME Attribute Values:
+Flags: Archive
+Name: sysComponentInfo.js
+Parent MFT Entry: 6360 	Sequence: 2
+Allocated Size: 0   	Actual Size: 0
+Created:	2004-08-19 22:34:29.625025600 (UTC)
+File Modified:	2004-08-19 22:34:29.625025600 (UTC)
+MFT Modified:	2004-08-19 22:34:29.625025600 (UTC)
+Accessed:	2004-08-19 22:34:29.625025600 (UTC)
+
+Attributes: 
+Type: $STANDARD_INFORMATION (16-0)   Name: N/A   Resident   size: 72
+Type: $FILE_NAME (48-3)   Name: N/A   Resident   size: 88
+Type: $FILE_NAME (48-2)   Name: N/A   Resident   size: 104
+Type: $SECURITY_DESCRIPTOR (80-4)   Name: N/A   Resident   size: 120
+Type: $DATA (128-5)   Name: N/A   Non-Resident   size: 26046  init_size: 26046
+518405 518406 518407 518408 518409 518410 518411 518412 
+518413 518414 518415 518416 518417 518418 518419 518420 
+518421 518422 518423 518424 518425 518426 518427 518428 
+518429 518430 518431 518432 518433 518434 518435 518436 
+518437 518438 518439 518440 518441 518442 518443 518444 
+518445 518446 518447 518448 518449 518450 518451 518452 
+518453 518454 518455 

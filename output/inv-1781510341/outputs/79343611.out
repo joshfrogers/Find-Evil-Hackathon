@@ -1,0 +1,35 @@
+
+DensityScout (Build 45)
+
+Author: Christian Wojner, CERT.at
+
+Syntax: densityscout [options] file_or_directory
+
+options: -a .............. Show errors and empties, too
+         -d .............. Just output data (Format: density|path)
+         -l density ...... Just files with density lower than the given value
+         -g density ...... Just files with density greater than the given value
+         -n number ....... Maximum number of lines to print
+         -m mode ......... Mode ABS (default) or CHI (for filesize > 100 Kb)
+         -o file ......... File to write output to
+         -p density ...... Immediately print if lower than the given density
+         -P density ...... Immediately print if greater than the given density
+         -r .............. Walk recursively
+         -s suffix(es) ... Filetype(s) (i.e.: dll or dll,exe,...)
+         -S suffix(es) ... Filetype(s) to ignore (i.e.: dll or dll,exe)
+         -pe ............. Include all portable executables by magic number
+         -PE ............. Ignore all portable executables by magic number
+
+Note:    Packed and/or encrypted data usually has a much higher density than
+         normal data (like text or executable binaries).
+
+Modes:   ABS ... Computes the average distance from the ideal quantity for each
+                 byte-state according to the overall byte-quantity of the
+                 evaluated file.
+                 Typical ABS-density for a packed file: < 0.1
+                 Typical ABS-density for a normal file: > 0.9
+
+         CHI ... Just the same as ABS but actually squaring each distance.
+                 Typical CHI-density for a packed file: < 100.0
+                 Typical CHI-density for a normal file: > 1000.0
+

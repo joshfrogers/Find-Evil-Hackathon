@@ -1,0 +1,3147 @@
+P/1.1
+GET /hm/folder.aspx HTTP/1.1
+Accept: */*
+UA-OS: Windows CE (Pocket PC) - Version 4.20
+UA-color: color16
+UA-pixels: 240x320
+UA-CPU: Intel(R) PXA255
+UA-Voice: FALSE
+Referer: http://mobile.msn.com/hm/folder.aspx?ts=1093601294&fts=1093566459&folder=ACTIVE&msg=0
+UA-Language: JavaScript
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)
+Host: mobile.msn.com
+Connection: Keep-Alive
+Cookie: lc=en-US; cr=1; MSPAuth=5vuMneQNFDh0sFVrAbKrt*q6edOGfSSmKzi3lT1CIh6FdbNqQyPyqubrB97DYRuoTwoA5kp1iTd3eTZ3TUiZ45LQ$$; MSPProf=5ynNj8z2mEi3KQzUnhBOK5dmrXWUam5W2H3bXqJgZE5uFZ7OFVIdTd8rwZLZfLhhQB8q*Sto5O8d!UJp8ulXjB5g4RJME!*WBUVqwsUvAh8UuflyJMTMQt*6C4vjOyvqgDT5F!XAMjAg0!vkXYwzhbCkVlAO1b2zXMjlXnmPnOpETgsIPX0coWMQ$$
+U/Ay
+HTTP/1.1 302 Found
+Server: Microsoft-IIS/5.0
+Date: Fri, 27 Aug 2004 15:36:35 GMT
+X-Powered-By: ASP.NET
+P3P: CP="BUS CUR CONo FIN IVDo ONL OUR PHY SAMo TELo"
+Location: http://mobile.msn.com/hm/folder.aspx?ts=1093601294&fts=1093566459&folder=ACTIVE&msg=0
+Cache-Control: private
+Content-Type: text/html; charset=utf-8
+Content-Length: 214
+Expires: -1
+<html><head><title>Object moved</title></head><body>
+<h2>Object moved to <a href='http://mobile.msn.com/hm/folder.aspx?ts=1093601294&amp;fts=1093566459&amp;folder=ACTIVE&amp;msg=0'>here</a>.</h2>
+</body></html>
+U/A*
+GET /hm/folder.aspx?ts=1093601294&fts=1093566459&folder=ACTIVE&msg=0 HTTP/1.1
+Accept: */*
+UA-OS: Windows CE (Pocket PC) - Version 4.20
+UA-color: color16
+UA-pixels: 240x320
+UA-CPU: Intel(R) PXA255
+UA-Voice: FALSE
+Referer: http://mobile.msn.com/hm/folder.aspx?ts=1093601294&fts=1093566459&folder=ACTIVE&msg=0
+UA-Language: JavaScript
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)
+Host: mobile.msn.com
+Connection: Keep-Alive
+Cookie: lc=en-US; cr=1; MSPAuth=5vuMneQNFDh0sFVrAbKrt*q6edOGfSSmKzi3lT1CIh6FdbNqQyPyqubrB97DYRuoTwoA5kp1iTd3eTZ3TUiZ45LQ$$; MSPProf=5ynNj8z2mEi3KQzUnhBOK5dmrXWUam5W2H3bXqJgZE5uFZ7OFVIdTd8rwZLZfLhhQB8q*Sto5O8d!UJp8ulXjB5g4RJME!*WBUVqwsUvAh8UuflyJMTMQt*6C4vjOyvqgDT5F!XAMjAg0!vkXYwzhbCkVlAO1b2zXMjlXnmPnOpETgsIPX0coWMQ$$
+nt-weight:noraml}.checkbox {font-family:Tahoma, sans-serif;font-size:11px;color:#000000;text-decoration:none;font-weight:noraml}.textarea {font-family:Tahoma, sans-serif;font-size:11px;border-bottom: 1px solid #104A7B;border-right: 1px solid #104A7B;border-left: 1px solid #AFC4D5;border-top:1px solid #AFC4D5;color:#000000;text-decoration:none;font-weight:noraml}TABLE.Mtable TD {border-bottom:solid #93BEE2 1px; }TABLE.Mtable TR.H	{BACKGROUND-COLOR: #C3D6E6}</style><body leftmargin="0" rightmargin="0" topmargin="0" bottommargin="0">
+<form id="FolderView" name="FolderView" method="post" action="folder.aspx?__ufps=482245&ts=1093601294&fts=1093566459&folder=ACTIVE&msg=0">
+<input type="hidden" name="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" value="">
+<script language=javascript><!--
+function __doPostBack(target, argument){
+  var theform = document.FolderView
+  theform.__EVENTTARGET.value = target
+  theform.__EVENTARGUMENT.value = argument
+  theform.submit()
+// -->
+</script>
+<div nowrap>
+                    <!-- Begin Header -->
+                    <table width="240" border="0" cellpadding="0" cellspacing="0" bgcolor="#D6E3EF">
+                    <tr><td width="100%" height="1" align="left"></td></tr>
+                    </table>
+                    <table width="240" border="0" cellpadding="0" cellspacing="0" bgcolor="#336699">
+                    <tr><td width="85" height="30"><a href=
+"/pocketpc/menu.aspx"><img src="/content/images/img_ppc_sharkfin_MSNLogo.gif" alt="MSN" border="0"></a></td>
+                    <td align="right"><font color='white'><b><A HREF="http://login.passport.com/logout.srf?lc=1033&id=961&ru=http%3a%2f%2fmobile.msn.com%2fscripts%2flogoutgif.asp%3fru%3d%2f&tw=14400&kv=5&ct=1093620995&ems=1&ver=2.5.1016.0&tpf=b8ccd6c1f528c699542236fcee0d1593"><IMG SRC="http://www.passportimages.com/1033/signout.gif" CLASS="PassportSignOut" BORDER="0" ALT="Sign out of .NET Passport sites"/></A></b></font></td></tr>
+                    </table>
+                    <table width="240" border="0" cellpadding="0" cellspacing="0" bgcolor="#D6E3EF">
+                    <tr><td width="100%" height="1" align="left"></td></tr>
+                    </table>
+                    <table width="240" border="0" cellpadding="0" cellspacing="0" bgcolor="#99CCFF">
+                    <tr><td width="100%" height="20" align="left"><a title="Hotmail" href="/hm/folder.aspx"><font color='white' face="Arial, Verdana"><b>Hotmail</b></font></a></td></tr>
+                    </table>
+                    <!-- End Header -->
+                
+                <table height="*" width="100%" border="0" cellspacing="0" cellpadding="2" class="Mtable">
+                    <tr class="columnheader" >
+                        <td bgcolor="#336699"><font color="#ffffff"><b>Inbox(0)</b></font></td>
+                    </tr>
+      
+U/A6y
+          </table>
+            
+                
+                <table width="100%" border="0" cellpadding-left="2" cellspacing-right="2" class"toolbar">
+                    <tr>
+                        <td width="22px"><a id="Toolbar__ctl0_WriteEmailImageLink" href="composeppc.aspx"><img src="/images/ppc/hotmail/IconHotmail.gif" alt="" border="0" /></a></td>
+                        <td><a id="Toolbar__ctl0_WriteEmailTextLink" class="toolbar" href="composeppc.aspx">Write E-mail</a></td>
+                        <td width="22px"><a id="Toolbar__ctl0_InboxImageLink" href="folder.aspx"><img src="/images/ppc/hotmail/IconInbox.gif" alt="" border="0" /></a></td>
+                        <td><a id="Toolbar__ctl0_InboxTextLink" class="toolbar" href="folder.aspx">Inbox</a></td>
+                    </tr>
+                    <tr>
+                        <td width="22px"><a id="Toolbar__ctl0_AddressBookImageLink" href="contacts.aspx"><img src="/images/ppc/hotmail/IconAddressBook.gif" alt="" border="0" /></a></td>
+                        <td><a id="Toolbar__ctl0_AddressBookTextLink" class="toolbar" href="contacts.aspx">Address Book</a></td>
+                        <td width="22px"><a id="Toolbar__ctl0_FoldersImageLink" href="folders.aspx"><img src="/images/ppc/hotmail/IconFolder.gif" alt="" border="0" /></a></td>
+                        <td><a id="Toolbar__ctl0_FoldersTextLink" class="toolbar" href="folders.aspx">Folders</a></
+HTTP/1.1 200 OK
+Server: Microsoft-IIS/5.0
+Date: Fri, 27 Aug 2004 15:36:35 GMT
+X-Powered-By: ASP.NET
+P3P:CP="BUS CUR CONo FIN IVDo ONL OUR PHY SAMo TELo"
+Cache-Control: private, max-age=3600
+Content-Type: text/html; charset=utf-8
+Content-Length: 8294
+<html>
+<head>
+<title>MSN Hotmail</title>
+</head>
+<style>.text {font-family:Tahoma;font-size:11px;color:#000080;}A {color:#0000FF;}A:Hover {text-decoration:none;}A.header {color:#000080;}A.header:Hover {text-decoration:underline;}.header {font-family:Tahoma;font-size:11px;color:#000080;font-weight:bold;}.columnheader {font-family:Tahoma;font-size:11px;font-weight:bold;color:#FFFFFF;}.title {font-family:Tahoma;font-size:11px;color:#000080;font-weight:bold;}.footer {font-family:Tahoma;font-size:9px;color:#000080;}.toolbar {font-family:Tahoma;font-size:11px;font-weight:bold;color:#000080}A.toolbar {text-decoration:none;}A.toolbar:Hover {color:#0000FF;text-decoration:underline;}.button {font-family:Tahoma, sans-serif;font-size:11px;background: #D6E7EF;border-bottom: 1px solid #104A7B;border-right: 1px solid #104A7B;border-left: 1px solid #AFC4D5;border-top:1px solid #AFC4D5;color:#000000;height:19px;text-decoration:none;cursor:hand;font-weight:noraml}.input {font-family:Tahoma, sans-serif;font-size:11px;border-bottom: 1px solid #104A7B;border-right: 1px solid #104A7B;border-left: 1px solid #AFC4D5;border-top:1px solid #AFC4D5;color:#000000;height:19px;text-decoration:none;fo
+U/A<
+HTTP/1
+nt-wei
+U/Ap
+                    </tr>
+                </table>
+            
+                        <div>
+                            <input type="submit" name="opdel_1" value="Delete" class="button"/>
+                            <input type="submit" name="opmov_1" value="Move To..." class="button"/>
+                        </div>
+                        <table height="*" width="100%" border="0" cellspacing="0" cellpadding="2" class="Mtable">
+                            <tr class="columnheader" >
+                                <td bgcolor="#336699" width="10px">&nbsp;</td>
+                                <td bgcolor="#336699"><font color="#ffffff"><b>&nbsp;&nbsp;From,
+                                Subject</b></font></td>
+                            </tr>
+                        </table>
+                        <div>
+                        <span class="text">
+                            This folder is empty.
+                            <br>
+                        </span>
+                        
+</div>
+                    
+                            <div>
+                                <input type="submit" name="opdel_2" value="Delete" class="button"/>
+                                <input type="submit" name="opmov_2" value="Move To..." class="button"/>                                                        
+                            </div>                    
+                            <table h
+P/1.1
+eight="*" width="100%" border="0" cellspacing="0" cellpadding="2" class="Mtable">
+                                <tr class="columnheader" >
+                                    <td bgcolor="#336699" align="right"><b>
+                                        <a style="color:White;">< Previous 20</a>
+                                    </b></td>
+                                    <td bgcolor="#336699" width="10px">&nbsp;</td>
+                                    <td bgcolor="#336699" align="left"><b>
+                                        <a style="color:White;">Next 20 ></a>
+                                    </b></td>
+                                </tr>
+                            </table>
+                    
+                <hr size="1" noshade>
+                <font size="1"><br/></font>
+                <p align="center"><font size="1" face="Arial, Verdana">
+                    &copy; 2003 Microsoft Corp. All rights reserved.&nbsp;
+                    &nbsp;
+                    <br>
+                    <a href="http://go.msn.com/ad/4/">Terms Of Use</a>&nbsp;
+                    <a href="http://go.msn.com/ac/6/">Privacy Statement</a>
+                    <!-- SvrID: A03 -->
+                    </font></p>
+            
+</div></form></body></html>
+HTTP/1
+U/AH
+U/AlO
+GET /content/images/img_ppc_sharkfin_MSNLogo.gif HTTP/1.1
+Accept: */*
+UA-OS: Windows CE (Pocket PC) - Version 4.20
+UA-color: color16
+UA-pixels: 240x320
+UA-CPU: Intel(R) PXA255
+UA-Voice: FALSE
+Referer: http://mobile.msn.com/hm/folder.aspx?ts=1093601294&fts=1093566459&folder=ACTIVE&msg=0
+UA-Language: JavaScript
+Accept-Encoding: gzip, deflate
+If-Modified-Since: Wed, 19 May 2004 18:47:04 GMT
+If-None-Match: "4098f2add13dc41:8e4"
+User-Agent: Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)
+Host: mobile.msn.com
+Connection: Keep-Alive
+Cookie: lc=en-US; cr=1; MSPAuth=5vuMneQNFDh0sFVrAbKrt*q6edOGfSSmKzi3lT1CIh6FdbNqQyPyqubrB97DYRuoTwoA5kp1iTd3eTZ3TUiZ45LQ$$; MSPProf=5ynNj8z2mEi3KQzUnhBOK5dmrXWUam5W2H3bXqJgZE5uFZ7OFVIdTd8rwZLZfLhhQB8q*Sto5O8d!UJp8ulXjB5g4RJME!*WBUVqwsUvAh8UuflyJMTMQt*6C4vjOyvqgDT5F!XAMjAg0!vkXYwzhbCkVlAO1b2zXMjlXnmPnOpETgsIPX0coWMQ$$
+U/Azx
+HTTP/1.1 304 Not Modified
+Server: Microsoft-IIS/5.0
+Date: Fri, 27 Aug 2004 15:36:35 GMT
+X-Powered-By: ASP.NET
+P3P:CP="BUS CUR CONo FIN IVDo ONL OUR PHY SAMo TELo"
+ETag: "4098f2add13dc41:8e5"
+Content-Length: 0
+JNOTIFY * HTTP/1.1
+Host:239.255.255.250:1900
+Cache-Control:max-age=60
+Location:http://192.168.254.254:80/upnp/service/descrip.xml
+NT:uuid:upnp-InternetGatewayDevice-1_0-00c002b90078
+NTS:ssdp:alive
+Server:NT/5.0 UPnP/1.0
+USN:uuid:upnp-InternetGatewayDevice-1_0-00c002b90078
+NOTIFY * HTTP/1.1
+Host:239.255.255.250:1900
+Cache-Control:max-age=60
+Location:http://192.168.254.254:80/upnp/service/descrip.xml
+NT:urn:schemas-upnp-org:device:InternetGatewayDevice:1
+NTS:ssdp:alive
+Server:NT/5.0 UPnP/1.0
+USN:uuid:upnp-InternetGatewayDevice-1_0-00c002b90078::urn:schemas-upnp-org:device:InternetGatewayDevice:1
+NOTIFY * HTTP/1.1
+Host:239.255.255.250:1900
+Cache-Control:max-age=60
+Location:http://192.168.254.254:80/upnp/service/descrip.xml
+NT:upnp:rootdevice
+NTS:ssdp:alive
+Server:NT/5.0 UPnP/1.0
+USN:uuid:upnp-InternetGatewayDevice-1_0-00c002b90078::upnp:rootdevice
+NOTIFY * HTTP/1.1
+Host:239.255.255.250:1900
+Cache-Control:max-age=60
+Location:http://192.168.254.254:80/upnp/service/descrip.xml
+NT:uuid:upnp-WANDevice-1_0-00c002b90078
+NTS:ssdp:alive
+Server:NT/5.0 UPnP/1.0
+USN:uuid:upnp-WANDevice-1_0-00c002b90078
+U/Au
+0NOTIFY * HTTP/1.1
+Host:239.255.255.250:1900
+Cache-Control:max-age=60
+Location:http://192.168.254.254:80/upnp/service/descrip.xml
+NT:urn:schemas-upnp-org:device:WANDevice:1
+NTS:ssdp:alive
+Server:NT/5.0 UPnP/1.0
+USN:uuid:upnp-WANDevice-1_0-00c002b90078::urn:schemas-upnp-org:device:WANDevice:1
+NOTIFY * HTTP/1.1
+Host:239.255.255.250:1900
+Cache-Control:max-age=60
+Location:http://192.168.254.254:80/upnp/service/descrip.xml
+NT:uuid:upnp-WANConnectionDevice-1_0-00c002b90078
+NTS:ssdp:alive
+Server:NT/5.0 UPnP/1.0
+USN:uuid:upnp-WANConnectionDevice-1_0-00c002b90078
+NOTIFY * HTTP/1.1
+Host:239.255.255.250:1900
+Cache-Control:max-age=60
+Location:http://192.168.254.254:80/upnp/service/descrip.xml
+NT:urn:schemas-upnp-org:device:WANConnectionDevice:1
+NTS:ssdp:alive
+Server:NT/5.0 UPnP/1.0
+USN:uuid:upnp-WANConnectionDevice-1_0-00c002b90078::urn:schemas-upnp-org:device:WANConnectionDevice:1
+NOTIFY * HTTP/1.1
+Host:239.255.255.250:1900
+Cache-Control:max-age=60
+Location:http://192.168.254.254:80/upnp/service/descrip.xml
+NT:urn:schemas-upnp-org:service:Layer3Forwarding:1
+NTS:ssdp:alive
+Server:NT/5.0 UPnP/1.0
+USN:uuid:upnp-InternetGatewayDevice-1_0-00c002b90078::urn:schemas-upnp-org:service:Layer3Forwarding:1
+U/A|
+V)iNOTIFY * HTTP/1.1
+Host:239.255.255.250:1900
+Cache-Control:max-age=60
+Location:http://192.168.254.254:80/upnp/service/descrip.xml
+NT:urn:schemas-upnp-org:service:WANCommonInterfaceConfig:1
+NTS:ssdp:alive
+Server:NT/5.0 UPnP/1.0
+USN:uuid:upnp-WANDevice-1_0-00c002b90078::urn:schemas-upnp-org:service:WANCommonInterfaceConfig:1
+NOTIFY * HTTP/1.1
+Host:239.255.255.250:1900
+Cache-Control:max-age=60
+Location:http://192.168.254.254:80/upnp/service/descrip.xml
+NT:urn:schemas-upnp-org:service:WANIPConnection:1
+NTS:ssdp:alive
+Server:NT/5.0 UPnP/1.0
+USN:uuid:upnp-WANConnectionDevice-1_0-00c002b90078::urn:schemas-upnp-org:service:WANIPConnection:1
+U/AD(
+U/Ae.
+P/1.1
+U/A4=
+GET /hm/folder.aspx HTTP/1.1
+Accept: */*
+UA-OS: Windows CE (Pocket PC) - Version 4.20
+UA-color: color16
+UA-pixels: 240x320
+UA-CPU: Intel(R) PXA255
+UA-Voice: FALSE
+Referer: http://mobile.msn.com/hm/folder.aspx?ts=1093601294&fts=1093566459&folder=ACTIVE&msg=0
+UA-Language: JavaScript
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)
+Host: mobile.msn.com
+Connection: Keep-Alive
+Cookie: lc=en-US; cr=1; MSPAuth=5vuMneQNFDh0sFVrAbKrt*q6edOGfSSmKzi3lT1CIh6FdbNqQyPyqubrB97DYRuoTwoA5kp1iTd3eTZ3TUiZ45LQ$$; MSPProf=5ynNj8z2mEi3KQzUnhBOK5dmrXWUam5W2H3bXqJgZE5uFZ7OFVIdTd8rwZLZfLhhQB8q*Sto5O8d!UJp8ulXjB5g4RJME!*WBUVqwsUvAh8UuflyJMTMQt*6C4vjOyvqgDT5F!XAMjAg0!vkXYwzhbCkVlAO1b2zXMjlXnmPnOpETgsIPX0coWMQ$$
+U/A:
+HTTP/1.1 302 Found
+Server: Microsoft-IIS/5.0
+Date: Fri, 27 Aug 2004 15:36:42 GMT
+X-Powered-By: ASP.NET
+P3P: CP="BUS CUR CONo FIN IVDo ONL OUR PHY SAMo TELo"
+Location: http://mobile.msn.com/hm/folder.aspx?ts=1093601294&fts=1093566459&folder=ACTIVE&msg=0
+Cache-Control: private
+Content-Type: text/html; charset=utf-8
+Content-Length: 214
+Expires: -1
+<html><head><title>Object moved</title></head><body>
+<h2>Object moved to <a href='http://mobile.msn.com/hm/folder.aspx?ts=1093601294&amp;fts=1093566459&amp;folder=ACTIVE&amp;msg=0'>here</a>.</h2>
+</body></html>
+GET /hm/folder.aspx?ts=1093601294&fts=1093566459&folder=ACTIVE&msg=0 HTTP/1.1
+Accept: */*
+UA-OS: Windows CE (Pocket PC) - Version 4.20
+UA-color: color16
+UA-pixels: 240x320
+UA-CPU: Intel(R) PXA255
+UA-Voice: FALSE
+Referer: http://mobile.msn.com/hm/folder.aspx?ts=1093601294&fts=1093566459&folder=ACTIVE&msg=0
+UA-Language: JavaScript
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)
+Host: mobile.msn.com
+Connection: Keep-Alive
+Cookie: lc=en-US; cr=1; MSPAuth=5vuMneQNFDh0sFVrAbKrt*q6edOGfSSmKzi3lT1CIh6FdbNqQyPyqubrB97DYRuoTwoA5kp1iTd3eTZ3TUiZ45LQ$$; MSPProf=5ynNj8z2mEi3KQzUnhBOK5dmrXWUam5W2H3bXqJgZE5uFZ7OFVIdTd8rwZLZfLhhQB8q*Sto5O8d!UJp8ulXjB5g4RJME!*WBUVqwsUvAh8UuflyJMTMQt*6C4vjOyvqgDT5F!XAMjAg0!vkXYwzhbCkVlAO1b2zXMjlXnmPnOpETgsIPX0coWMQ$$
+U/A)
+U/A$
+HTTP/1.1 200 OK
+Server: Microsoft-IIS/5.0
+Date: Fri, 27 Aug 2004 15:36:43 GMT
+X-Powered-By: ASP.NET
+P3P:CP="BUS CUR CONo FIN IVDo ONL OUR PHY SAMo TELo"
+Cache-Control: private, max-age=3600
+Content-Type: text/html; charset=utf-8
+Content-Length: 8294
+<html>
+<head>
+<title>MSN Hotmail</title>
+</head>
+<style>.text {font-family:Tahoma;font-size:11px;color:#000080;}A {color:#0000FF;}A:Hover {text-decoration:none;}A.header {color:#000080;}A.header:Hover {text-decoration:underline;}.header {font-family:Tahoma;font-size:11px;color:#000080;font-weight:bold;}.columnheader {font-family:Tahoma;font-size:11px;font-weight:bold;color:#FFFFFF;}.title {font-family:Tahoma;font-size:11px;color:#000080;font-weight:bold;}.footer {font-family:Tahoma;font-size:9px;color:#000080;}.toolbar {font-family:Tahoma;font-size:11px;font-weight:bold;color:#000080}A.toolbar {text-decoration:none;}A.toolbar:Hover {color:#0000FF;text-decoration:underline;}.button {font-family:Tahoma, sans-serif;font-size:11px;background: #D6E7EF;border-bottom: 1px solid #104A7B;border-right: 1px solid #104A7B;border-left: 1px solid #AFC4D5;border-top:1px solid #AFC4D5;color:#000000;height:19px;text-decoration:none;cursor:hand;font-weight:noraml}.input {font-family:Tahoma, sans-serif;font-size:11px;border-bottom: 1px solid #104A7B;border-right: 1px solid #104A7B;border-left: 1px solid #AFC4D5;border-top:1px solid #AFC4D5;color:#000000;height:19px;text-decoration:none;fo
+U/AG
+GET /h
+U/A7
+nt-weight:noraml}.checkbox {font-family:Tahoma, sans-serif;font-size:11px;color:#000000;text-decoration:none;font-weight:noraml}.textarea {font-family:Tahoma, sans-serif;font-size:11px;border-bottom: 1px solid #104A7B;border-right: 1px solid #104A7B;border-left: 1px solid #AFC4D5;border-top:1px solid #AFC4D5;color:#000000;text-decoration:none;font-weight:noraml}TABLE.Mtable TD {border-bottom:solid #93BEE2 1px; }TABLE.Mtable TR.H	{BACKGROUND-COLOR: #C3D6E6}</style><body leftmargin="0" rightmargin="0" topmargin="0" bottommargin="0">
+<form id="FolderView" name="FolderView" method="post" action="folder.aspx?__ufps=728145&ts=1093601294&fts=1093566459&folder=ACTIVE&msg=0">
+<input type="hidden" name="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" value="">
+<script language=javascript><!--
+function __doPostBack(target, argument){
+  var theform = document.FolderView
+  theform.__EVENTTARGET.value = target
+  theform.__EVENTARGUMENT.value = argument
+  theform.submit()
+// -->
+</script>
+<div nowrap>
+                    <!-- Begin Header -->
+                    <table width="240" border="0" cellpadding="0" cellspacing="0" bgcolor="#D6E3EF">
+                    <tr><td width="100%" height="1" align="left"></td></tr>
+                    </table>
+                    <table width="240" border="0" cellpadding="0" cellspacing="0" bgcolor="#336699">
+                    <tr><td width="85" height="30"><a href=
+U/Al
+U/At
+"/pocketpc/menu.aspx"><img src="/content/images/img_ppc_sharkfin_MSNLogo.gif" alt="MSN" border="0"></a></td>
+                    <td align="right"><font color='white'><b><A HREF="http://login.passport.com/logout.srf?lc=1033&id=961&ru=http%3a%2f%2fmobile.msn.com%2fscripts%2flogoutgif.asp%3fru%3d%2f&tw=14400&kv=5&ct=1093621004&ems=1&ver=2.5.1016.0&tpf=76adf7b34c2cc6ca027fcfce760dc182"><IMG SRC="http://www.passportimages.com/1033/signout.gif" CLASS="PassportSignOut" BORDER="0" ALT="Sign out of .NET Passport sites"/></A></b></font></td></tr>
+                    </table>
+                    <table width="240" border="0" cellpadding="0" cellspacing="0" bgcolor="#D6E3EF">
+                    <tr><td width="100%" height="1" align="left"></td></tr>
+                    </table>
+                    <table width="240" border="0" cellpadding="0" cellspacing="0" bgcolor="#99CCFF">
+                    <tr><td width="100%" height="20" align="left"><a title="Hotmail" href="/hm/folder.aspx"><font color='white' face="Arial, Verdana"><b>Hotmail</b></font></a></td></tr>
+                    </table>
+                    <!-- End Header -->
+                
+                <table height="*" width="100%" border="0" cellspacing="0" cellpadding="2" class="Mtable">
+                    <tr class="columnheader" >
+                        <td bgcolor="#336699"><font color="#ffffff"><b>Inbox(0)</b></font></td>
+                    </tr>
+      
+          </table>
+            
+                
+                <table width="100%" border="0" cellpadding-left="2" cellspacing-right="2" class"toolbar">
+                    <tr>
+                        <td width="22px"><a id="Toolbar__ctl0_WriteEmailImageLink" href="composeppc.aspx"><img src="/images/ppc/hotmail/IconHotmail.gif" alt="" border="0" /></a></td>
+                        <td><a id="Toolbar__ctl0_WriteEmailTextLink" class="toolbar" href="composeppc.aspx">Write E-mail</a></td>
+                        <td width="22px"><a id="Toolbar__ctl0_InboxImageLink" href="folder.aspx"><img src="/images/ppc/hotmail/IconInbox.gif" alt="" border="0" /></a></td>
+                        <td><a id="Toolbar__ctl0_InboxTextLink" class="toolbar" href="folder.aspx">Inbox</a></td>
+                    </tr>
+                    <tr>
+                        <td width="22px"><a id="Toolbar__ctl0_AddressBookImageLink" href="contacts.aspx"><img src="/images/ppc/hotmail/IconAddressBook.gif" alt="" border="0" /></a></td>
+                        <td><a id="Toolbar__ctl0_AddressBookTextLink" class="toolbar" href="contacts.aspx">Address Book</a></td>
+                        <td width="22px"><a id="Toolbar__ctl0_FoldersImageLink" href="folders.aspx"><img src="/images/ppc/hotmail/IconFolder.gif" alt="" border="0" /></a></td>
+                        <td><a id="Toolbar__ctl0_FoldersTextLink" class="toolbar" href="folders.aspx">Folders</a></
+P/1.1
+U/AW
+                    </tr>
+                </table>
+            
+                        <div>
+                            <input type="submit" name="opdel_1" value="Delete" class="button"/>
+                            <input type="submit" name="opmov_1" value="Move To..." class="button"/>
+                        </div>
+                        <table height="*" width="100%" border="0" cellspacing="0" cellpadding="2" class="Mtable">
+                            <tr class="columnheader" >
+                                <td bgcolor="#336699" width="10px">&nbsp;</td>
+                                <td bgcolor="#336699"><font color="#ffffff"><b>&nbsp;&nbsp;From,
+                                Subject</b></font></td>
+                            </tr>
+                        </table>
+                        <div>
+                        <span class="text">
+                            This folder is empty.
+                            <br>
+                        </span>
+                        
+</div>
+                    
+                            <div>
+                                <input type="submit" name="opdel_2" value="Delete" class="button"/>
+                                <input type="submit" name="opmov_2" value="Move To..." class="button"/>                                                        
+                            </div>                    
+                            <table h
+U/AT
+HTTP/1
+U/AH
+eight="*" width="100%" border="0" cellspacing="0" cellpadding="2" class="Mtable">
+                                <tr class="columnheader" >
+                                    <td bgcolor="#336699" align="right"><b>
+                                        <a style="color:White;">< Previous 20</a>
+                                    </b></td>
+                                    <td bgcolor="#336699" width="10px">&nbsp;</td>
+                                    <td bgcolor="#336699" align="left"><b>
+                                        <a style="color:White;">Next 20 ></a>
+                                    </b></td>
+                                </tr>
+                            </table>
+                    
+                <hr size="1" noshade>
+                <font size="1"><br/></font>
+                <p align="center"><font size="1" face="Arial, Verdana">
+                    &copy; 2003 Microsoft Corp. All rights reserved.&nbsp;
+                    &nbsp;
+                    <br>
+                    <a href="http://go.msn.com/ad/4/">Terms Of Use</a>&nbsp;
+                    <a href="http://go.msn.com/ac/6/">Privacy Statement</a>
+                    <!-- SvrID: B04 -->
+                    </font></p>
+            
+</div></form></body></html>
+"/pock
+{<NP
+P/1.1
+{<NP
+GET /content/images/img_ppc_sharkfin_MSNLogo.gif HTTP/1.1
+Accept: */*
+UA-OS: Windows CE (Pocket PC) - Version 4.20
+UA-color: color16
+UA-pixels: 240x320
+UA-CPU: Intel(R) PXA255
+UA-Voice: FALSE
+Referer: http://mobile.msn.com/hm/folder.aspx?ts=1093601294&fts=1093566459&folder=ACTIVE&msg=0
+UA-Language: JavaScript
+Accept-Encoding: gzip, deflate
+If-Modified-Since: Wed, 19 May 2004 18:47:04 GMT
+If-None-Match: "4098f2add13dc41:8e4"
+User-Agent: Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)
+Host: mobile.msn.com
+Connection: Keep-Alive
+Cookie: lc=en-US; cr=1; MSPAuth=5vuMneQNFDh0sFVrAbKrt*q6edOGfSSmKzi3lT1CIh6FdbNqQyPyqubrB97DYRuoTwoA5kp1iTd3eTZ3TUiZ45LQ$$; MSPProf=5ynNj8z2mEi3KQzUnhBOK5dmrXWUam5W2H3bXqJgZE5uFZ7OFVIdTd8rwZLZfLhhQB8q*Sto5O8d!UJp8ulXjB5g4RJME!*WBUVqwsUvAh8UuflyJMTMQt*6C4vjOyvqgDT5F!XAMjAg0!vkXYwzhbCkVlAO1b2zXMjlXnmPnOpETgsIPX0coWMQ$$
+HTTP/1.1 304 Not Modified
+Server: Microsoft-IIS/5.0
+Date: Fri, 27 Aug 2004 15:36:44 GMT
+X-Powered-By: ASP.NET
+P3P:CP="BUS CUR CONo FIN IVDo ONL OUR PHY SAMo TELo"
+ETag: "4098f2add13dc41:8c5"
+Content-Length: 0
+U/AP
+{<NP
+"/pock
+U/A'
+U/A.
+GET /hm/composeppc.aspx HTTP/1.1
+Accept: */*
+UA-OS: Windows CE (Pocket PC) - Version 4.20
+UA-color: color16
+UA-pixels: 240x320
+UA-CPU: Intel(R) PXA255
+UA-Voice: FALSE
+Referer: http://mobile.msn.com/hm/folder.aspx?ts=1093601294&fts=1093566459&folder=ACTIVE&msg=0
+UA-Language: JavaScript
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)
+Host: mobile.msn.com
+Connection: Keep-Alive
+Cookie: lc=en-US; cr=1; MSPAuth=5vuMneQNFDh0sFVrAbKrt*q6edOGfSSmKzi3lT1CIh6FdbNqQyPyqubrB97DYRuoTwoA5kp1iTd3eTZ3TUiZ45LQ$$; MSPProf=5ynNj8z2mEi3KQzUnhBOK5dmrXWUam5W2H3bXqJgZE5uFZ7OFVIdTd8rwZLZfLhhQB8q*Sto5O8d!UJp8ulXjB5g4RJME!*WBUVqwsUvAh8UuflyJMTMQt*6C4vjOyvqgDT5F!XAMjAg0!vkXYwzhbCkVlAO1b2zXMjlXnmPnOpETgsIPX0coWMQ$$
+U/AWY
+HTTP/1.1 200 OK
+Server: Microsoft-IIS/5.0
+Date: Fri, 27 Aug 2004 15:36:47 GMT
+X-Powered-By: ASP.NET
+P3P: CP="BUS CUR CONo FIN IVDo ONL OUR PHY SAMo TELo"
+Cache-Control: private
+Content-Type: text/html; charset=utf-8
+Content-Length: 7983
+Expires: -1
+<html>
+<head>
+<title>MSN Hotmail</title>
+</head>
+<style>.text {font-family:Tahoma;font-size:11px;color:#000080;}A {color:#0000FF;}A:Hover {text-decoration:none;}A.header {color:#000080;}A.header:Hover {text-decoration:underline;}.header {font-family:Tahoma;font-size:11px;color:#000080;font-weight:bold;}.columnheader {font-family:Tahoma;font-size:11px;font-weight:bold;color:#FFFFFF;}.title {font-family:Tahoma;font-size:11px;color:#000080;font-weight:bold;}.footer {font-family:Tahoma;font-size:9px;color:#000080;}.toolbar {font-family:Tahoma;font-size:11px;font-weight:bold;color:#000080}A.toolbar {text-decoration:none;}A.toolbar:Hover {color:#0000FF;text-decoration:underline;}.button {font-family:Tahoma, sans-serif;font-size:11px;background: #D6E7EF;border-bottom: 1px solid #104A7B;border-right: 1px solid #104A7B;border-left: 1px solid #AFC4D5;border-top:1px solid #AFC4D5;color:#000000;height:19px;text-decoration:none;cursor:hand;font-weight:noraml}.input {font-family:Tahoma, sans-serif;font-size:11px;border-bottom: 1px solid #104A7B;border-right: 1px solid #104A7B;border-left: 1px solid #AFC4D5;border-top:1px solid #AFC4D5;color:#000000;height:19px;text-decoration:none;fo
+nt-weight:noraml}.checkbox {font-family:Tahoma, sans-serif;font-size:11px;color:#000000;text-decoration:none;font-weight:noraml}.textarea {font-family:Tahoma, sans-serif;font-size:11px;border-bottom: 1px solid #104A7B;border-right: 1px solid #104A7B;border-left: 1px solid #AFC4D5;border-top:1px solid #AFC4D5;color:#000000;text-decoration:none;font-weight:noraml}TABLE.Mtable TD {border-bottom:solid #93BEE2 1px; }TABLE.Mtable TR.H	{BACKGROUND-COLOR: #C3D6E6}</style><body leftmargin="0" rightmargin="0" topmargin="0" bottommargin="0">
+<form id="ComposeForm" name="ComposeForm" method="post" action="composeppc.aspx?__ufps=950075">
+<input type="hidden" name="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" value="">
+<script language=javascript><!--
+function __doPostBack(target, argument){
+  var theform = document.ComposeForm
+  theform.__EVENTTARGET.value = target
+  theform.__EVENTARGUMENT.value = argument
+  theform.submit()
+// -->
+</script>
+                    <!-- Begin Header -->
+                    <table width="240" border="0" cellpadding="0" cellspacing="0" bgcolor="#D6E3EF">
+                    <tr><td width="100%" height="1" align="left"></td></tr>
+                    </table>
+                    <table width="240" border="0" cellpadding="0" cellspacing="0" bgcolor="#336699">
+                    <tr><td width="85" height="30"><a href="/pocketpc/menu.aspx"><img src="/content/images/img_pp
+GET /h
+U/At
+                <table width="100%" border="0" cellpadding-left="2" cellspacing-right="2" class"toolbar">
+                    <tr>
+                        <td width="22px"><a id="Toolbar__ctl0_WriteEmailImageLink" href="composeppc.aspx"><img src="/images/ppc/hotmail/IconHotmail.gif" alt="" border="0" /></a></td>
+                        <td><a id="Toolbar__ctl0_WriteEmailTextLink" class="toolbar" href="composeppc.aspx">Write E-mail</a></td>
+                        <td width="22px"><a id="Toolbar__ctl0_InboxImageLink" href="folder.aspx"><img src="/images/ppc/hotmail/IconInbox.gif" alt="" border="0" /></a></td>
+                        <td><a id="Toolbar__ctl0_InboxTextLink" class="toolbar" href="folder.aspx">Inbox</a></td>
+                    </tr>
+                    <tr>
+                        <td width="22px"><a id="Toolbar__ctl0_AddressBookImageLink" href="contacts.aspx"><img src="/images/ppc/hotmail/IconAddressBook.gif" alt="" border="0" /></a></td>
+                        <td><a id="Toolbar__ctl0_AddressBookTextLink" class="toolbar" href="contacts.aspx">Address Book</a></td>
+                        <td width="22px"><a id="Toolbar__ctl0_FoldersImageLink" href="folders.aspx"><img src="/images/ppc/hotmail/IconFolder.gif" alt="" border="0" /></a></td>
+                        <td><a id="Toolbar__ctl0_FoldersTextLink" class="toolbar" href="folders.aspx">Folders</a></td>
+                    </tr>
+                </
+table>
+            
+<table id="Table1" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#93BEE2">
+	<tr>
+		<td align="right">
+                <b><a id="ToLink" class="text" href="javascript:__doPostBack('ToLink','')">To:</a></b>
+                </td>
+		<td align="center">
+            <input name="ToTextBox" type="text" maxlength="512" size="16" id="ToTextBox" class="input" /></td>
+	</tr>
+	<tr>
+		<td align="right">
+                <b><a id="CcLink" class="text" href="javascript:__doPostBack('CcLink','')">Cc:</a></b>
+                </td>
+		<td align="center">            
+            <input name="CcTextBox" type="text" maxlength="512" size="16" id="CcTextBox" class="input" /></td>
+	</tr>
+	<tr>
+		<td align="right">
+                <b><a id="BccLink" class="text" href="javascript:__doPostBack('BccLink','')">Bcc:</a></b>
+                </td>
+		<td align="center">            
+            <input name="BccTextBox" type="text" maxlength="512" size="16" id="BccTextBox" class="input" /></td>
+	</tr>
+	<tr>
+		<td align="right">
+	    <b><span id="SubjectLabel" class="text">Subject:</span></b></td>
+		<td align="center">            
+            <input name="SubjectTextBox" type="text" maxlength="200" size="16" id="SubjectTextBox" class="input" /></td>
+	</tr>
+	<tr>
+		<td align="right" colspan="2">
+            <textarea name="BodyTextBox" rows="8" cols="30" id="BodyTextBox" class="textarea"></textare
+U/AQr
+U/AJ
+a></td>
+	</tr>
+</table>
+<table id="Table2" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#93BEE2">
+	<tr>
+		<td>
+            <input type="submit" name="CancelCommand" value="Cancel" id="CancelCommand" class="button" />
+        </td>
+		<td align="right" width="10px">
+            <input type="submit" name="SendCommand" value="Send" id="SendCommand" class="button" />
+        </td>
+	</tr>
+</table>
+                <hr size="1" noshade>
+                <font size="1"><br/></font>
+                <p align="center"><font size="1" face="Arial, Verdana">
+                    &copy; 2003 Microsoft Corp. All rights reserved.&nbsp;
+                    &nbsp;
+                    <br>
+                    <a href="http://go.msn.com/ad/4/">Terms Of Use</a>&nbsp;
+                    <a href="http://go.msn.com/ac/6/">Privacy Statement</a>
+                    <!-- SvrID: A05 -->
+                    </font></p>
+            
+</form></body></html>
+HTTP/1
+U/A`
+table>
+GET /content/images/img_ppc_sharkfin_MSNLogo.gif HTTP/1.1
+Accept: */*
+UA-OS: Windows CE (Pocket PC) - Version 4.20
+UA-color: color16
+UA-pixels: 240x320
+UA-CPU: Intel(R) PXA255
+UA-Voice: FALSE
+Referer: http://mobile.msn.com/hm/composeppc.aspx
+UA-Language: JavaScript
+Accept-Encoding: gzip, deflate
+If-Modified-Since: Wed, 19 May 2004 18:47:04 GMT
+If-None-Match: "4098f2add13dc41:8e4"
+User-Agent: Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)
+Host: mobile.msn.com
+Connection: Keep-Alive
+Cookie: lc=en-US; cr=1; MSPAuth=5vuMneQNFDh0sFVrAbKrt*q6edOGfSSmKzi3lT1CIh6FdbNqQyPyqubrB97DYRuoTwoA5kp1iTd3eTZ3TUiZ45LQ$$; MSPProf=5ynNj8z2mEi3KQzUnhBOK5dmrXWUam5W2H3bXqJgZE5uFZ7OFVIdTd8rwZLZfLhhQB8q*Sto5O8d!UJp8ulXjB5g4RJME!*WBUVqwsUvAh8UuflyJMTMQt*6C4vjOyvqgDT5F!XAMjAg0!vkXYwzhbCkVlAO1b2zXMjlXnmPnOpETgsIPX0coWMQ$$
+HTTP/1.1 304 Not Modified
+Server: Microsoft-IIS/5.0
+Date: Fri, 27 Aug 2004 15:36:47 GMT
+X-Powered-By: ASP.NET
+P3P:CP="BUS CUR CONo FIN IVDo ONL OUR PHY SAMo TELo"
+ETag: "4098f2add13dc41:8ec"
+Content-Length: 0
+'U/AGK
+JNOTIFY * HTTP/1.1
+Host:239.255.255.250:1900
+Cache-Control:max-age=60
+Location:http://192.168.254.254:80/upnp/service/descrip.xml
+NT:uuid:upnp-InternetGatewayDevice-1_0-00c002b90078
+NTS:ssdp:alive
+Server:NT/5.0 UPnP/1.0
+USN:uuid:upnp-InternetGatewayDevice-1_0-00c002b90078
+'U/A
+NOTIFY * HTTP/1.1
+Host:239.255.255.250:1900
+Cache-Control:max-age=60
+Location:http://192.168.254.254:80/upnp/service/descrip.xml
+NT:urn:schemas-upnp-org:device:InternetGatewayDevice:1
+NTS:ssdp:alive
+Server:NT/5.0 UPnP/1.0
+USN:uuid:upnp-InternetGatewayDevice-1_0-00c002b90078::urn:schemas-upnp-org:device:InternetGatewayDevice:1
+'U/A
+NOTIFY * HTTP/1.1
+Host:239.255.255.250:1900
+Cache-Control:max-age=60
+Location:http://192.168.254.254:80/upnp/service/descrip.xml
+NT:upnp:rootdevice
+NTS:ssdp:alive
+Server:NT/5.0 UPnP/1.0
+USN:uuid:upnp-InternetGatewayDevice-1_0-00c002b90078::upnp:rootdevice
+'U/A
+NOTIFY * HTTP/1.1
+Host:239.255.255.250:1900
+Cache-Control:max-age=60
+Location:http://192.168.254.254:80/upnp/service/descrip.xml
+NT:uuid:upnp-WANDevice-1_0-00c002b90078
+NTS:ssdp:alive
+Server:NT/5.0 UPnP/1.0
+USN:uuid:upnp-WANDevice-1_0-00c002b90078
+'U/A
+0NOTIFY * HTTP/1.1
+Host:239.255.255.250:1900
+Cache-Control:max-age=60
+Location:http://192.168.254.254:80/upnp/service/descrip.xml
+NT:urn:schemas-upnp-org:device:WANDevice:1
+NTS:ssdp:alive
+Server:NT/5.0 UPnP/1.0
+USN:uuid:upnp-WANDevice-1_0-00c002b90078::urn:schemas-upnp-org:device:WANDevice:1
+'U/A
+NOTIFY * HTTP/1.1
+Host:239.255.255.250:1900
+Cache-Control:max-age=60
+Location:http://192.168.254.254:80/upnp/service/descrip.xml
+NT:uuid:upnp-WANConnectionDevice-1_0-00c002b90078
+NTS:ssdp:alive
+Server:NT/5.0 UPnP/1.0
+USN:uuid:upnp-WANConnectionDevice-1_0-00c002b90078
+'U/AX{
+NOTIFY * HTTP/1.1
+Host:239.255.255.250:1900
+Cache-Control:max-age=60
+Location:http://192.168.254.254:80/upnp/service/descrip.xml
+NT:urn:schemas-upnp-org:device:WANConnectionDevice:1
+NTS:ssdp:alive
+Server:NT/5.0 UPnP/1.0
+USN:uuid:upnp-WANConnectionDevice-1_0-00c002b90078::urn:schemas-upnp-org:device:WANConnectionDevice:1
+'U/A
+NOTIFY * HTTP/1.1
+Host:239.255.255.250:1900
+Cache-Control:max-age=60
+Location:http://192.168.254.254:80/upnp/service/descrip.xml
+NT:urn:schemas-upnp-org:service:Layer3Forwarding:1
+NTS:ssdp:alive
+Server:NT/5.0 UPnP/1.0
+USN:uuid:upnp-InternetGatewayDevice-1_0-00c002b90078::urn:schemas-upnp-org:service:Layer3Forwarding:1
+'U/A$
+V)iNOTIFY * HTTP/1.1
+Host:239.255.255.250:1900
+Cache-Control:max-age=60
+Location:http://192.168.254.254:80/upnp/service/descrip.xml
+NT:urn:schemas-upnp-org:service:WANCommonInterfaceConfig:1
+NTS:ssdp:alive
+Server:NT/5.0 UPnP/1.0
+USN:uuid:upnp-WANDevice-1_0-00c002b90078::urn:schemas-upnp-org:service:WANCommonInterfaceConfig:1
+'U/A
+NOTIFY * HTTP/1.1
+Host:239.255.255.250:1900
+Cache-Control:max-age=60
+Location:http://192.168.254.254:80/upnp/service/descrip.xml
+NT:urn:schemas-upnp-org:service:WANIPConnection:1
+NTS:ssdp:alive
+Server:NT/5.0 UPnP/1.0
+USN:uuid:upnp-WANConnectionDevice-1_0-00c002b90078::urn:schemas-upnp-org:service:WANIPConnection:1
+DU/A
+JNOTIFY * HTTP/1.1
+Host:239.255.255.250:1900
+Cache-Control:max-age=60
+Location:http://192.168.254.254:80/upnp/service/descrip.xml
+NT:uuid:upnp-InternetGatewayDevice-1_0-00c002b90078
+NTS:ssdp:alive
+Server:NT/5.0 UPnP/1.0
+USN:uuid:upnp-InternetGatewayDevice-1_0-00c002b90078
+DU/AJ
+NOTIFY * HTTP/1.1
+Host:239.255.255.250:1900
+Cache-Control:max-age=60
+Location:http://192.168.254.254:80/upnp/service/descrip.xml
+NT:urn:schemas-upnp-org:device:InternetGatewayDevice:1
+NTS:ssdp:alive
+Server:NT/5.0 UPnP/1.0
+USN:uuid:upnp-InternetGatewayDevice-1_0-00c002b90078::urn:schemas-upnp-org:device:InternetGatewayDevice:1
+DU/Af
+NOTIFY * HTTP/1.1
+Host:239.255.255.250:1900
+Cache-Control:max-age=60
+Location:http://192.168.254.254:80/upnp/service/descrip.xml
+NT:upnp:rootdevice
+NTS:ssdp:alive
+Server:NT/5.0 UPnP/1.0
+USN:uuid:upnp-InternetGatewayDevice-1_0-00c002b90078::upnp:rootdevice
+DU/A
+NOTIFY * HTTP/1.1
+Host:239.255.255.250:1900
+Cache-Control:max-age=60
+Location:http://192.168.254.254:80/upnp/service/descrip.xml
+NT:uuid:upnp-WANDevice-1_0-00c002b90078
+NTS:ssdp:alive
+Server:NT/5.0 UPnP/1.0
+USN:uuid:upnp-WANDevice-1_0-00c002b90078
+DU/A
+0NOTIFY * HTTP/1.1
+Host:239.255.255.250:1900
+Cache-Control:max-age=60
+Location:http://192.168.254.254:80/upnp/service/descrip.xml
+NT:urn:schemas-upnp-org:device:WANDevice:1
+NTS:ssdp:alive
+Server:NT/5.0 UPnP/1.0
+USN:uuid:upnp-WANDevice-1_0-00c002b90078::urn:schemas-upnp-org:device:WANDevice:1
+DU/Ag
+NOTIFY * HTTP/1.1
+Host:239.255.255.250:1900
+Cache-Control:max-age=60
+Location:http://192.168.254.254:80/upnp/service/descrip.xml
+NT:uuid:upnp-WANConnectionDevice-1_0-00c002b90078
+NTS:ssdp:alive
+Server:NT/5.0 UPnP/1.0
+USN:uuid:upnp-WANConnectionDevice-1_0-00c002b90078
+DU/A
+NOTIFY * HTTP/1.1
+Host:239.255.255.250:1900
+Cache-Control:max-age=60
+Location:http://192.168.254.254:80/upnp/service/descrip.xml
+NT:urn:schemas-upnp-org:device:WANConnectionDevice:1
+NTS:ssdp:alive
+Server:NT/5.0 UPnP/1.0
+USN:uuid:upnp-WANConnectionDevice-1_0-00c002b90078::urn:schemas-upnp-org:device:WANConnectionDevice:1
+DU/A
+NOTIFY * HTTP/1.1
+Host:239.255.255.250:1900
+Cache-Control:max-age=60
+Location:http://192.168.254.254:80/upnp/service/descrip.xml
+NT:urn:schemas-upnp-org:service:Layer3Forwarding:1
+NTS:ssdp:alive
+Server:NT/5.0 UPnP/1.0
+USN:uuid:upnp-InternetGatewayDevice-1_0-00c002b90078::urn:schemas-upnp-org:service:Layer3Forwarding:1
+DU/Au
+V)iNOTIFY * HTTP/1.1
+Host:239.255.255.250:1900
+Cache-Control:max-age=60
+Location:http://192.168.254.254:80/upnp/service/descrip.xml
+NT:urn:schemas-upnp-org:service:WANCommonInterfaceConfig:1
+NTS:ssdp:alive
+Server:NT/5.0 UPnP/1.0
+USN:uuid:upnp-WANDevice-1_0-00c002b90078::urn:schemas-upnp-org:service:WANCommonInterfaceConfig:1
+DU/A
+NOTIFY * HTTP/1.1
+Host:239.255.255.250:1900
+Cache-Control:max-age=60
+Location:http://192.168.254.254:80/upnp/service/descrip.xml
+NT:urn:schemas-upnp-org:service:WANIPConnection:1
+NTS:ssdp:alive
+Server:NT/5.0 UPnP/1.0
+USN:uuid:upnp-WANConnectionDevice-1_0-00c002b90078::urn:schemas-upnp-org:service:WANIPConnection:1
+SU/A2A
+SU/A
+SU/A
+P/1.1
+SU/A
+POST /hm/composeppc.aspx?__ufps=950075 HTTP/1.1
+Accept: */*
+UA-OS: Windows CE (Pocket PC) - Version 4.20
+UA-color: color16
+UA-pixels: 240x320
+UA-CPU: Intel(R) PXA255
+UA-Voice: FALSE
+Content-Type: application/x-www-form-urlencoded
+Referer: http://mobile.msn.com/hm/composeppc.aspx
+UA-Language: JavaScript
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)
+Host: mobile.msn.com
+Content-Length: 160
+Connection: Keep-Alive
+Cookie: lc=en-US; cr=1; MSPAuth=5vuMneQNFDh0sFVrAbKrt*q6edOGfSSmKzi3lT1CIh6FdbNqQyPyqubrB97DYRuoTwoA5kp1iTd3eTZ3TUiZ45LQ$$; MSPProf=5ynNj8z2mEi3KQzUnhBOK5dmrXWUam5W2H3bXqJgZE5uFZ7OFVIdTd8rwZLZfLhhQB8q*Sto5O8d!UJp8ulXjB5g4RJME!*WBUVqwsUvAh8UuflyJMTMQt*6C4vjOyvqgDT5F!XAMjAg0!vkXYwzhbCkVlAO1b2zXMjlXnmPnOpETgsIPX0coWMQ$$
+__EVENTTARGET=&__EVENTARGUMENT=&ToTextBox=rudy@hotmail.com&CcTextBox=&BccTextBox=&SubjectTextBox=Hey%2C+This+is+Mr+Evil&BodyTextBox=Hi.+Call+me&SendCommand=SendSU/A[
+SU/Aa
+HTTP/1.1 100 Continue
+Server: Microsoft-IIS/5.0
+Date: Fri, 27 Aug 2004 15:37:55 GMT
+X-Powered-By: ASP.NET
+P3P:CP="BUS CUR CONo FIN IVDo ONL OUR PHY SAMo TELo"
+SU/A
+SU/A
+HTTP/1.1 302 Found
+Server: Microsoft-IIS/5.0
+Date: Fri, 27 Aug 2004 15:37:55 GMT
+X-Powered-By: ASP.NET
+P3P: CP="BUS CUR CONo FIN IVDo ONL OUR PHY SAMo TELo"
+Location: http://mobile.msn.com/hm/docompose.aspx?__redir=1&rru=folder.aspx&time=632292178755527999
+Cache-Control: private
+Content-Type: text/html; charset=utf-8
+Content-Length: 214
+Expires: -1
+<html><head><title>Object moved</title></head><body>
+<h2>Object moved to <a href='http://mobile.msn.com/hm/docompose.aspx?__redir=1&amp;rru=folder.aspx&amp;time=632292178755527999'>here</a>.</h2>
+</body></html>
+SU/A
+GET /hm/docompose.aspx?__redir=1&rru=folder.aspx&time=632292178755527999 HTTP/1.1
+Accept: */*
+UA-OS: Windows CE (Pocket PC) - Version 4.20
+UA-color: color16
+UA-pixels: 240x320
+UA-CPU: Intel(R) PXA255
+UA-Voice: FALSE
+Referer: http://mobile.msn.com/hm/composeppc.aspx
+UA-Language: JavaScript
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)
+Host: mobile.msn.com
+Cookie: lc=en-US; cr=1; MSPAuth=5vuMneQNFDh0sFVrAbKrt*q6edOGfSSmKzi3lT1CIh6FdbNqQyPyqubrB97DYRuoTwoA5kp1iTd3eTZ3TUiZ45LQ$$; MSPProf=5ynNj8z2mEi3KQzUnhBOK5dmrXWUam5W2H3bXqJgZE5uFZ7OFVIdTd8rwZLZfLhhQB8q*Sto5O8d!UJp8ulXjB5g4RJME!*WBUVqwsUvAh8UuflyJMTMQt*6C4vjOyvqgDT5F!XAMjAg0!vkXYwzhbCkVlAO1b2zXMjlXnmPnOpETgsIPX0coWMQ$$
+Connection: Keep-Alive
+SU/A
+SU/A
+HTTP/1.1 200 OK
+Server: Microsoft-IIS/5.0
+Date: Fri, 27 Aug 2004 15:37:55 GMT
+X-Powered-By: ASP.NET
+P3P: CP="BUS CUR CONo FIN IVDo ONL OUR PHY SAMo TELo"
+Cache-Control: private
+Content-Type: text/html; charset=utf-8
+Content-Length: 4715
+Expires: -1
+<html>
+<head>
+<title>MSN Hotmail</title>
+</head>
+<style>.text {font-family:Tahoma;font-size:11px;color:#000080;}A {color:#0000FF;}A:Hover {text-decoration:none;}A.header {color:#000080;}A.header:Hover {text-decoration:underline;}.header {font-family:Tahoma;font-size:11px;color:#000080;font-weight:bold;}.columnheader {font-family:Tahoma;font-size:11px;font-weight:bold;color:#FFFFFF;}.title {font-family:Tahoma;font-size:11px;color:#000080;font-weight:bold;}.footer {font-family:Tahoma;font-size:9px;color:#000080;}.toolbar {font-family:Tahoma;font-size:11px;font-weight:bold;color:#000080}A.toolbar {text-decoration:none;}A.toolbar:Hover {color:#0000FF;text-decoration:underline;}.button {font-family:Tahoma, sans-serif;font-size:11px;background: #D6E7EF;border-bottom: 1px solid #104A7B;border-right: 1px solid #104A7B;border-left: 1px solid #AFC4D5;border-top:1px solid #AFC4D5;color:#000000;height:19px;text-decoration:none;cursor:hand;font-weight:noraml}.input {font-family:Tahoma, sans-serif;font-size:11px;border-bottom: 1px solid #104A7B;border-right: 1px solid #104A7B;border-left: 1px solid #AFC4D5;border-top:1px solid #AFC4D5;color:#000000;height:19px;text-decoration:none;foSU/A>
+P/1.1
+SU/A
+nt-weight:noraml}.checkbox {font-family:Tahoma, sans-serif;font-size:11px;color:#000000;text-decoration:none;font-weight:noraml}.textarea {font-family:Tahoma, sans-serif;font-size:11px;border-bottom: 1px solid #104A7B;border-right: 1px solid #104A7B;border-left: 1px solid #AFC4D5;border-top:1px solid #AFC4D5;color:#000000;text-decoration:none;font-weight:noraml}TABLE.Mtable TD {border-bottom:solid #93BEE2 1px; }TABLE.Mtable TR.H	{BACKGROUND-COLOR: #C3D6E6}</style><body leftmargin="0" rightmargin="0" topmargin="0" bottommargin="0">
+<form id="ConfirmForm" name="ConfirmForm" method="post" action="docompose.aspx?__ufps=862227&rru=folder.aspx&time=632292178755527999">
+<input type="hidden" name="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" value="">
+<script language=javascript><!--
+function __doPostBack(target, argument){
+  var theform = document.ConfirmForm
+  theform.__EVENTTARGET.value = target
+  theform.__EVENTARGUMENT.value = argument
+  theform.submit()
+// -->
+</script>
+                    <!-- Begin Header -->
+                    <table width="240" border="0" cellpadding="0" cellspacing="0" bgcolor="#D6E3EF">
+                    <tr><td width="100%" height="1" align="left"></td></tr>
+                    </table>
+                    <table width="240" border="0" cellpadding="0" cellspacing="0" bgcolor="#336699">
+                    <tr><td width="85" height="30"><a href="/pocketpc/menuTU/A
+TU/A
+.aspx"><img src="/content/images/img_ppc_sharkfin_MSNLogo.gif" alt="MSN" border="0"></a></td>
+                    <td align="right"><font color='white'><b><A HREF="http://login.passport.com/logout.srf?lc=1033&id=961&ru=http%3a%2f%2fmobile.msn.com%2fscripts%2flogoutgif.asp%3fru%3d%2f&tw=14400&kv=5&ct=1093621076&ems=1&ver=2.5.1016.0&tpf=9b89da28be314acd249279639d83d955"><IMG SRC="http://www.passportimages.com/1033/signout.gif" CLASS="PassportSignOut" BORDER="0" ALT="Sign out of .NET Passport sites"/></A></b></font></td></tr>
+                    </table>
+                    <table width="240" border="0" cellpadding="0" cellspacing="0" bgcolor="#D6E3EF">
+                    <tr><td width="100%" height="1" align="left"></td></tr>
+                    </table>
+                    <table width="240" border="0" cellpadding="0" cellspacing="0" bgcolor="#99CCFF">
+                    <tr><td width="100%" height="20" align="left"><a title="Hotmail" href="/hm/folder.aspx"><font color='white' face="Arial, Verdana"><b>Hotmail</b></font></a></td></tr>
+                    </table>
+                    <!-- End Header -->
+                
+                <table height="*" width="100%" border="0" cellspacing="0" cellpadding="2" class="Mtable">
+                    <tr class="columnheader" >
+                        <td bgcolor="#336699"><font color="#ffffff"><b></b></font></td>
+                    </tr>
+                </table>
+   TU/A
+HTTP/1TU/A>
+         
+Message sent!<br>
+<a href="folder.aspx">Go</a><br>
+                <hr size="1" noshade>
+                <font size="1"><br/></font>
+                <p align="center"><font size="1" face="Arial, Verdana">
+                    &copy; 2003 Microsoft Corp. All rights reserved.&nbsp;
+                    &nbsp;
+                    <br>
+                    <a href="http://go.msn.com/ad/4/">Terms Of Use</a>&nbsp;
+                    <a href="http://go.msn.com/ac/6/">Privacy Statement</a>
+                    <!-- SvrID: B03 -->
+                    </font></p>
+            
+</form></body></html>TU/A
+P/1.1
+TU/A
+HTTP/1TU/AWr
+TU/A
+TU/A
+e0A6
+TU/A]
+      TU/AI
+AI[E
+TU/A
+P/1.1
+TU/A)%
+GET /1033/signout.gif HTTP/1.1
+Accept: */*
+UA-OS: Windows CE (Pocket PC) - Version 4.20
+UA-color: color16
+UA-pixels: 240x320
+UA-CPU: Intel(R) PXA255
+UA-Voice: FALSE
+Referer: http://mobile.msn.com/hm/docompose.aspx?__redir=1&rru=folder.aspx&time=632292178755527999
+UA-Language: JavaScript
+Accept-Encoding: gzip, deflate
+If-Modified-Since: Tue, 01 Jun 2004 05:54:54 GMT
+If-None-Match: "3c7571f69c47c41:d93"
+User-Agent: Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)
+Host: www.passportimages.com
+Connection: Keep-Alive
+TU/A	9
+GET /content/images/img_ppc_sharkfin_MSNLogo.gif HTTP/1.1
+Accept: */*
+UA-OS: Windows CE (Pocket PC) - Version 4.20
+UA-color: color16
+UA-pixels: 240x320
+UA-CPU: Intel(R) PXA255
+UA-Voice: FALSE
+Referer: http://mobile.msn.com/hm/docompose.aspx?__redir=1&rru=folder.aspx&time=632292178755527999
+UA-Language: JavaScript
+Accept-Encoding: gzip, deflate
+If-Modified-Since: Wed, 19 May 2004 18:47:04 GMT
+If-None-Match: "4098f2add13dc41:8e4"
+User-Agent: Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)
+Host: mobile.msn.com
+Connection: Keep-Alive
+Cookie: lc=en-US; cr=1; MSPAuth=5vuMneQNFDh0sFVrAbKrt*q6edOGfSSmKzi3lT1CIh6FdbNqQyPyqubrB97DYRuoTwoA5kp1iTd3eTZ3TUiZ45LQ$$; MSPProf=5ynNj8z2mEi3KQzUnhBOK5dmrXWUam5W2H3bXqJgZE5uFZ7OFVIdTd8rwZLZfLhhQB8q*Sto5O8d!UJp8ulXjB5g4RJME!*WBUVqwsUvAh8UuflyJMTMQt*6C4vjOyvqgDT5F!XAMjAg0!vkXYwzhbCkVlAO1b2zXMjlXnmPnOpETgsIPX0coWMQ$$
+TU/An
+TU/A
+HTTP/1.1 304 Not Modified
+Server: Microsoft-IIS/5.0
+Date: Fri, 27 Aug 2004 15:37:56 GMT
+PPServer: H: BAYPPIMG2A02
+Cache-Control: max-age=1296000
+Expires: Sat, 11 Sep 2004 15:37:56 GMT
+Connection: close
+ETag: "e0e43a626a27c41:d93"
+Content-Length: 0
+TU/A
+TU/A
+      TU/AL#
+AI[E
+TU/AU-
+P/1.1
+TU/A
+AI[E
+HTTP/1.1 304 Not Modified
+Server: Microsoft-IIS/5.0
+Date: Fri, 27 Aug 2004 15:37:55 GMT
+X-Powered-By: ASP.NET
+P3P:CP="BUS CUR CONo FIN IVDo ONL OUR PHY SAMo TELo"
+ETag: "4098f2add13dc41:8eb"
+Content-Length: 0
+TU/A
+HI[FoP
+\U/A
+HI[FoP
+HTTP/1\U/A
+\U/A&
+\U/A\
+HTTP/1\U/A
+GET /hm/folder.aspx HTTP/1.1
+Accept: */*
+UA-OS: Windows CE (Pocket PC) - Version 4.20
+UA-color: color16
+UA-pixels: 240x320
+UA-CPU: Intel(R) PXA255
+UA-Voice: FALSE
+Referer: http://mobile.msn.com/hm/docompose.aspx?__redir=1&rru=folder.aspx&time=632292178755527999
+UA-Language: JavaScript
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)
+Host: mobile.msn.com
+Connection: Keep-Alive
+Cookie: lc=en-US; cr=1; MSPAuth=5vuMneQNFDh0sFVrAbKrt*q6edOGfSSmKzi3lT1CIh6FdbNqQyPyqubrB97DYRuoTwoA5kp1iTd3eTZ3TUiZ45LQ$$; MSPProf=5ynNj8z2mEi3KQzUnhBOK5dmrXWUam5W2H3bXqJgZE5uFZ7OFVIdTd8rwZLZfLhhQB8q*Sto5O8d!UJp8ulXjB5g4RJME!*WBUVqwsUvAh8UuflyJMTMQt*6C4vjOyvqgDT5F!XAMjAg0!vkXYwzhbCkVlAO1b2zXMjlXnmPnOpETgsIPX0coWMQ$$
+\U/A
+\U/A
+HTTP/1.1 302 Found
+Server: Microsoft-IIS/5.0
+Date: Fri, 27 Aug 2004 15:38:04 GMT
+X-Powered-By: ASP.NET
+P3P: CP="BUS CUR CONo FIN IVDo ONL OUR PHY SAMo TELo"
+Location: http://mobile.msn.com/hm/folder.aspx?ts=1093601294&fts=1093566459&folder=ACTIVE&msg=0
+Cache-Control: private
+Content-Type: text/html; charset=utf-8
+Content-Length: 214
+Expires: -1
+<html><head><title>Object moved</title></head><body>
+<h2>Object moved to <a href='http://mobile.msn.com/hm/folder.aspx?ts=1093601294&amp;fts=1093566459&amp;folder=ACTIVE&amp;msg=0'>here</a>.</h2>
+</body></html>
+\U/A
+GET /hm/folder.aspx?ts=1093601294&fts=1093566459&folder=ACTIVE&msg=0 HTTP/1.1
+Accept: */*
+UA-OS: Windows CE (Pocket PC) - Version 4.20
+UA-color: color16
+UA-pixels: 240x320
+UA-CPU: Intel(R) PXA255
+UA-Voice: FALSE
+Referer: http://mobile.msn.com/hm/docompose.aspx?__redir=1&rru=folder.aspx&time=632292178755527999
+UA-Language: JavaScript
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)
+Host: mobile.msn.com
+Connection: Keep-Alive
+Cookie: lc=en-US; cr=1; MSPAuth=5vuMneQNFDh0sFVrAbKrt*q6edOGfSSmKzi3lT1CIh6FdbNqQyPyqubrB97DYRuoTwoA5kp1iTd3eTZ3TUiZ45LQ$$; MSPProf=5ynNj8z2mEi3KQzUnhBOK5dmrXWUam5W2H3bXqJgZE5uFZ7OFVIdTd8rwZLZfLhhQB8q*Sto5O8d!UJp8ulXjB5g4RJME!*WBUVqwsUvAh8UuflyJMTMQt*6C4vjOyvqgDT5F!XAMjAg0!vkXYwzhbCkVlAO1b2zXMjlXnmPnOpETgsIPX0coWMQ$$
+]U/A6
+]U/A
+HTTP/1.1 200 OK
+Server: Microsoft-IIS/5.0
+Date: Fri, 27 Aug 2004 15:38:04 GMT
+X-Powered-By: ASP.NET
+P3P:CP="BUS CUR CONo FIN IVDo ONL OUR PHY SAMo TELo"
+Cache-Control: private, max-age=3600
+Content-Type: text/html; charset=utf-8
+Content-Length: 8294
+<html>
+<head>
+<title>MSN Hotmail</title>
+</head>
+<style>.text {font-family:Tahoma;font-size:11px;color:#000080;}A {color:#0000FF;}A:Hover {text-decoration:none;}A.header {color:#000080;}A.header:Hover {text-decoration:underline;}.header {font-family:Tahoma;font-size:11px;color:#000080;font-weight:bold;}.columnheader {font-family:Tahoma;font-size:11px;font-weight:bold;color:#FFFFFF;}.title {font-family:Tahoma;font-size:11px;color:#000080;font-weight:bold;}.footer {font-family:Tahoma;font-size:9px;color:#000080;}.toolbar {font-family:Tahoma;font-size:11px;font-weight:bold;color:#000080}A.toolbar {text-decoration:none;}A.toolbar:Hover {color:#0000FF;text-decoration:underline;}.button {font-family:Tahoma, sans-serif;font-size:11px;background: #D6E7EF;border-bottom: 1px solid #104A7B;border-right: 1px solid #104A7B;border-left: 1px solid #AFC4D5;border-top:1px solid #AFC4D5;color:#000000;height:19px;text-decoration:none;cursor:hand;font-weight:noraml}.input {font-family:Tahoma, sans-serif;font-size:11px;border-bottom: 1px solid #104A7B;border-right: 1px solid #104A7B;border-left: 1px solid #AFC4D5;border-top:1px solid #AFC4D5;color:#000000;height:19px;text-decoration:none;fo]U/A~
+]U/A
+nt-weight:noraml}.checkbox {font-family:Tahoma, sans-serif;font-size:11px;color:#000000;text-decoration:none;font-weight:noraml}.textarea {font-family:Tahoma, sans-serif;font-size:11px;border-bottom: 1px solid #104A7B;border-right: 1px solid #104A7B;border-left: 1px solid #AFC4D5;border-top:1px solid #AFC4D5;color:#000000;text-decoration:none;font-weight:noraml}TABLE.Mtable TD {border-bottom:solid #93BEE2 1px; }TABLE.Mtable TR.H	{BACKGROUND-COLOR: #C3D6E6}</style><body leftmargin="0" rightmargin="0" topmargin="0" bottommargin="0">
+<form id="FolderView" name="FolderView" method="post" action="folder.aspx?__ufps=708032&ts=1093601294&fts=1093566459&folder=ACTIVE&msg=0">
+<input type="hidden" name="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" value="">
+<script language=javascript><!--
+function __doPostBack(target, argument){
+  var theform = document.FolderView
+  theform.__EVENTTARGET.value = target
+  theform.__EVENTARGUMENT.value = argument
+  theform.submit()
+// -->
+</script>
+<div nowrap>
+                    <!-- Begin Header -->
+                    <table width="240" border="0" cellpadding="0" cellspacing="0" bgcolor="#D6E3EF">
+                    <tr><td width="100%" height="1" align="left"></td></tr>
+                    </table>
+                    <table width="240" border="0" cellpadding="0" cellspacing="0" bgcolor="#336699">
+                    <tr><td width="85" height="30"><a href=]U/A
+GET /h]U/A
+"/pocketpc/menu.aspx"><img src="/content/images/img_ppc_sharkfin_MSNLogo.gif" alt="MSN" border="0"></a></td>
+                    <td align="right"><font color='white'><b><A HREF="http://login.passport.com/logout.srf?lc=1033&id=961&ru=http%3a%2f%2fmobile.msn.com%2fscripts%2flogoutgif.asp%3fru%3d%2f&tw=14400&kv=5&ct=1093621085&ems=1&ver=2.5.1016.0&tpf=e5d150bc02380575db2ca2981ca00dea"><IMG SRC="http://www.passportimages.com/1033/signout.gif" CLASS="PassportSignOut" BORDER="0" ALT="Sign out of .NET Passport sites"/></A></b></font></td></tr>
+                    </table>
+                    <table width="240" border="0" cellpadding="0" cellspacing="0" bgcolor="#D6E3EF">
+                    <tr><td width="100%" height="1" align="left"></td></tr>
+                    </table>
+                    <table width="240" border="0" cellpadding="0" cellspacing="0" bgcolor="#99CCFF">
+                    <tr><td width="100%" height="20" align="left"><a title="Hotmail" href="/hm/folder.aspx"><font color='white' face="Arial, Verdana"><b>Hotmail</b></font></a></td></tr>
+                    </table>
+                    <!-- End Header -->
+                
+                <table height="*" width="100%" border="0" cellspacing="0" cellpadding="2" class="Mtable">
+                    <tr class="columnheader" >
+                        <td bgcolor="#336699"><font color="#ffffff"><b>Inbox(0)</b></font></td>
+                    </tr>
+      ]U/Ac"
+]U/A)
+          </table>
+            
+                
+                <table width="100%" border="0" cellpadding-left="2" cellspacing-right="2" class"toolbar">
+                    <tr>
+                        <td width="22px"><a id="Toolbar__ctl0_WriteEmailImageLink" href="composeppc.aspx"><img src="/images/ppc/hotmail/IconHotmail.gif" alt="" border="0" /></a></td>
+                        <td><a id="Toolbar__ctl0_WriteEmailTextLink" class="toolbar" href="composeppc.aspx">Write E-mail</a></td>
+                        <td width="22px"><a id="Toolbar__ctl0_InboxImageLink" href="folder.aspx"><img src="/images/ppc/hotmail/IconInbox.gif" alt="" border="0" /></a></td>
+                        <td><a id="Toolbar__ctl0_InboxTextLink" class="toolbar" href="folder.aspx">Inbox</a></td>
+                    </tr>
+                    <tr>
+                        <td width="22px"><a id="Toolbar__ctl0_AddressBookImageLink" href="contacts.aspx"><img src="/images/ppc/hotmail/IconAddressBook.gif" alt="" border="0" /></a></td>
+                        <td><a id="Toolbar__ctl0_AddressBookTextLink" class="toolbar" href="contacts.aspx">Address Book</a></td>
+                        <td width="22px"><a id="Toolbar__ctl0_FoldersImageLink" href="folders.aspx"><img src="/images/ppc/hotmail/IconFolder.gif" alt="" border="0" /></a></td>
+                        <td><a id="Toolbar__ctl0_FoldersTextLink" class="toolbar" href="folders.aspx">Folders</a></]U/AZ
+HTTP/1]U/A
+                    </tr>
+                </table>
+            
+                        <div>
+                            <input type="submit" name="opdel_1" value="Delete" class="button"/>
+                            <input type="submit" name="opmov_1" value="Move To..." class="button"/>
+                        </div>
+                        <table height="*" width="100%" border="0" cellspacing="0" cellpadding="2" class="Mtable">
+                            <tr class="columnheader" >
+                                <td bgcolor="#336699" width="10px">&nbsp;</td>
+                                <td bgcolor="#336699"><font color="#ffffff"><b>&nbsp;&nbsp;From,
+                                Subject</b></font></td>
+                            </tr>
+                        </table>
+                        <div>
+                        <span class="text">
+                            This folder is empty.
+                            <br>
+                        </span>
+                        
+</div>
+                    
+                            <div>
+                                <input type="submit" name="opdel_2" value="Delete" class="button"/>
+                                <input type="submit" name="opmov_2" value="Move To..." class="button"/>                                                        
+                            </div>                    
+                            <table h]U/A
+]U/AX
+eight="*" width="100%" border="0" cellspacing="0" cellpadding="2" class="Mtable">
+                                <tr class="columnheader" >
+                                    <td bgcolor="#336699" align="right"><b>
+                                        <a style="color:White;">< Previous 20</a>
+                                    </b></td>
+                                    <td bgcolor="#336699" width="10px">&nbsp;</td>
+                                    <td bgcolor="#336699" align="left"><b>
+                                        <a style="color:White;">Next 20 ></a>
+                                    </b></td>
+                                </tr>
+                            </table>
+                    
+                <hr size="1" noshade>
+                <font size="1"><br/></font>
+                <p align="center"><font size="1" face="Arial, Verdana">
+                    &copy; 2003 Microsoft Corp. All rights reserved.&nbsp;
+                    &nbsp;
+                    <br>
+                    <a href="http://go.msn.com/ad/4/">Terms Of Use</a>&nbsp;
+                    <a href="http://go.msn.com/ac/6/">Privacy Statement</a>
+                    <!-- SvrID: B02 -->
+                    </font></p>
+            
+</div></form></body></html>]U/A
+]U/A
+]U/A
+C3~:'
+F46p
+]U/A.
+F463~:(P
+ ]U/A
+F463~:(P
+GET /content/images/img_ppc_sharkfin_MSNLogo.gif HTTP/1.1
+Accept: */*
+UA-OS: Windows CE (Pocket PC) - Version 4.20
+UA-color: color16
+UA-pixels: 240x320
+UA-CPU: Intel(R) PXA255
+UA-Voice: FALSE
+Referer: http://mobile.msn.com/hm/folder.aspx?ts=1093601294&fts=1093566459&folder=ACTIVE&msg=0
+UA-Language: JavaScript
+Accept-Encoding: gzip, deflate
+If-Modified-Since: Wed, 19 May 2004 18:47:04 GMT
+If-None-Match: "4098f2add13dc41:8e4"
+User-Agent: Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)
+Host: mobile.msn.com
+Connection: Keep-Alive
+Cookie: lc=en-US; cr=1; MSPAuth=5vuMneQNFDh0sFVrAbKrt*q6edOGfSSmKzi3lT1CIh6FdbNqQyPyqubrB97DYRuoTwoA5kp1iTd3eTZ3TUiZ45LQ$$; MSPProf=5ynNj8z2mEi3KQzUnhBOK5dmrXWUam5W2H3bXqJgZE5uFZ7OFVIdTd8rwZLZfLhhQB8q*Sto5O8d!UJp8ulXjB5g4RJME!*WBUVqwsUvAh8UuflyJMTMQt*6C4vjOyvqgDT5F!XAMjAg0!vkXYwzhbCkVlAO1b2zXMjlXnmPnOpETgsIPX0coWMQ$$
+]U/A
+C3~:(
+]U/A
+C3~:(
+HTTP/1.1 304 Not Modified
+Server: Microsoft-IIS/5.0
+Date: Fri, 27 Aug 2004 15:38:05 GMT
+X-Powered-By: ASP.NET
+P3P:CP="BUS CUR CONo FIN IVDo ONL OUR PHY SAMo TELo"
+ETag: "4098f2add13dc41:8e5"
+Content-Length: 0
+^U/A
+3~:(P
+aU/A
+JNOTIFY * HTTP/1.1
+Host:239.255.255.250:1900
+Cache-Control:max-age=60
+Location:http://192.168.254.254:80/upnp/service/descrip.xml
+NT:uuid:upnp-InternetGatewayDevice-1_0-00c002b90078
+NTS:ssdp:alive
+Server:NT/5.0 UPnP/1.0
+USN:uuid:upnp-InternetGatewayDevice-1_0-00c002b90078
+aU/A
+NOTIFY * HTTP/1.1
+Host:239.255.255.250:1900
+Cache-Control:max-age=60
+Location:http://192.168.254.254:80/upnp/service/descrip.xml
+NT:urn:schemas-upnp-org:device:InternetGatewayDevice:1
+NTS:ssdp:alive
+Server:NT/5.0 UPnP/1.0
+USN:uuid:upnp-InternetGatewayDevice-1_0-00c002b90078::urn:schemas-upnp-org:device:InternetGatewayDevice:1
+aU/A
+NOTIFY * HTTP/1.1
+Host:239.255.255.250:1900
+Cache-Control:max-age=60
+Location:http://192.168.254.254:80/upnp/service/descrip.xml
+NT:upnp:rootdevice
+NTS:ssdp:alive
+Server:NT/5.0 UPnP/1.0
+USN:uuid:upnp-InternetGatewayDevice-1_0-00c002b90078::upnp:rootdevice
+bU/AD
+NOTIFY * HTTP/1.1
+Host:239.255.255.250:1900
+Cache-Control:max-age=60
+Location:http://192.168.254.254:80/upnp/service/descrip.xml
+NT:uuid:upnp-WANDevice-1_0-00c002b90078
+NTS:ssdp:alive
+Server:NT/5.0 UPnP/1.0
+USN:uuid:upnp-WANDevice-1_0-00c002b90078
+bU/A
+0NOTIFY * HTTP/1.1
+Host:239.255.255.250:1900
+Cache-Control:max-age=60
+Location:http://192.168.254.254:80/upnp/service/descrip.xml
+NT:urn:schemas-upnp-org:device:WANDevice:1
+NTS:ssdp:alive
+Server:NT/5.0 UPnP/1.0
+USN:uuid:upnp-WANDevice-1_0-00c002b90078::urn:schemas-upnp-org:device:WANDevice:1
+bU/A^
+NOTIFY * HTTP/1.1
+Host:239.255.255.250:1900
+Cache-Control:max-age=60
+Location:http://192.168.254.254:80/upnp/service/descrip.xml
+NT:uuid:upnp-WANConnectionDevice-1_0-00c002b90078
+NTS:ssdp:alive
+Server:NT/5.0 UPnP/1.0
+USN:uuid:upnp-WANConnectionDevice-1_0-00c002b90078
+bU/A
+NOTIFY * HTTP/1.1
+Host:239.255.255.250:1900
+Cache-Control:max-age=60
+Location:http://192.168.254.254:80/upnp/service/descrip.xml
+NT:urn:schemas-upnp-org:device:WANConnectionDevice:1
+NTS:ssdp:alive
+Server:NT/5.0 UPnP/1.0
+USN:uuid:upnp-WANConnectionDevice-1_0-00c002b90078::urn:schemas-upnp-org:device:WANConnectionDevice:1
+bU/A
+NOTIFY * HTTP/1.1
+Host:239.255.255.250:1900
+Cache-Control:max-age=60
+Location:http://192.168.254.254:80/upnp/service/descrip.xml
+NT:urn:schemas-upnp-org:service:Layer3Forwarding:1
+NTS:ssdp:alive
+Server:NT/5.0 UPnP/1.0
+USN:uuid:upnp-InternetGatewayDevice-1_0-00c002b90078::urn:schemas-upnp-org:service:Layer3Forwarding:1
+bU/A
+V)iNOTIFY * HTTP/1.1
+Host:239.255.255.250:1900
+Cache-Control:max-age=60
+Location:http://192.168.254.254:80/upnp/service/descrip.xml
+NT:urn:schemas-upnp-org:service:WANCommonInterfaceConfig:1
+NTS:ssdp:alive
+Server:NT/5.0 UPnP/1.0
+USN:uuid:upnp-WANDevice-1_0-00c002b90078::urn:schemas-upnp-org:service:WANCommonInterfaceConfig:1
+bU/A
+NOTIFY * HTTP/1.1
+Host:239.255.255.250:1900
+Cache-Control:max-age=60
+Location:http://192.168.254.254:80/upnp/service/descrip.xml
+NT:urn:schemas-upnp-org:service:WANIPConnection:1
+NTS:ssdp:alive
+Server:NT/5.0 UPnP/1.0
+USN:uuid:upnp-WANConnectionDevice-1_0-00c002b90078::urn:schemas-upnp-org:service:WANIPConnection:1
+JNOTIFY * HTTP/1.1
+Host:239.255.255.250:1900
+Cache-Control:max-age=60
+Location:http://192.168.254.254:80/upnp/service/descrip.xml
+NT:uuid:upnp-InternetGatewayDevice-1_0-00c002b90078
+NTS:ssdp:alive
+Server:NT/5.0 UPnP/1.0
+USN:uuid:upnp-InternetGatewayDevice-1_0-00c002b90078
+U/A k
+NOTIFY * HTTP/1.1
+Host:239.255.255.250:1900
+Cache-Control:max-age=60
+Location:http://192.168.254.254:80/upnp/service/descrip.xml
+NT:urn:schemas-upnp-org:device:InternetGatewayDevice:1
+NTS:ssdp:alive
+Server:NT/5.0 UPnP/1.0
+USN:uuid:upnp-InternetGatewayDevice-1_0-00c002b90078::urn:schemas-upnp-org:device:InternetGatewayDevice:1
+NOTIFY * HTTP/1.1
+Host:239.255.255.250:1900
+Cache-Control:max-age=60
+Location:http://192.168.254.254:80/upnp/service/descrip.xml
+NT:upnp:rootdevice
+NTS:ssdp:alive
+Server:NT/5.0 UPnP/1.0
+USN:uuid:upnp-InternetGatewayDevice-1_0-00c002b90078::upnp:rootdevice
+NOTIFY * HTTP/1.1
+Host:239.255.255.250:1900
+Cache-Control:max-age=60
+Location:http://192.168.254.254:80/upnp/service/descrip.xml
+NT:uuid:upnp-WANDevice-1_0-00c002b90078
+NTS:ssdp:alive
+Server:NT/5.0 UPnP/1.0
+USN:uuid:upnp-WANDevice-1_0-00c002b90078
+U/Au
+0NOTIFY * HTTP/1.1
+Host:239.255.255.250:1900
+Cache-Control:max-age=60
+Location:http://192.168.254.254:80/upnp/service/descrip.xml
+NT:urn:schemas-upnp-org:device:WANDevice:1
+NTS:ssdp:alive
+Server:NT/5.0 UPnP/1.0
+USN:uuid:upnp-WANDevice-1_0-00c002b90078::urn:schemas-upnp-org:device:WANDevice:1
+NOTIFY * HTTP/1.1
+Host:239.255.255.250:1900
+Cache-Control:max-age=60
+Location:http://192.168.254.254:80/upnp/service/descrip.xml
+NT:uuid:upnp-WANConnectionDevice-1_0-00c002b90078
+NTS:ssdp:alive
+Server:NT/5.0 UPnP/1.0
+USN:uuid:upnp-WANConnectionDevice-1_0-00c002b90078
+U/Av
+NOTIFY * HTTP/1.1
+Host:239.255.255.250:1900
+Cache-Control:max-age=60
+Location:http://192.168.254.254:80/upnp/service/descrip.xml
+NT:urn:schemas-upnp-org:device:WANConnectionDevice:1
+NTS:ssdp:alive
+Server:NT/5.0 UPnP/1.0
+USN:uuid:upnp-WANConnectionDevice-1_0-00c002b90078::urn:schemas-upnp-org:device:WANConnectionDevice:1
+NOTIFY * HTTP/1.1
+Host:239.255.255.250:1900
+Cache-Control:max-age=60
+Location:http://192.168.254.254:80/upnp/service/descrip.xml
+NT:urn:schemas-upnp-org:service:Layer3Forwarding:1
+NTS:ssdp:alive
+Server:NT/5.0 UPnP/1.0
+USN:uuid:upnp-InternetGatewayDevice-1_0-00c002b90078::urn:schemas-upnp-org:service:Layer3Forwarding:1
+V)iNOTIFY * HTTP/1.1
+Host:239.255.255.250:1900
+Cache-Control:max-age=60
+Location:http://192.168.254.254:80/upnp/service/descrip.xml
+NT:urn:schemas-upnp-org:service:WANCommonInterfaceConfig:1
+NTS:ssdp:alive
+Server:NT/5.0 UPnP/1.0
+USN:uuid:upnp-WANDevice-1_0-00c002b90078::urn:schemas-upnp-org:service:WANCommonInterfaceConfig:1
+NOTIFY * HTTP/1.1
+Host:239.255.255.250:1900
+Cache-Control:max-age=60
+Location:http://192.168.254.254:80/upnp/service/descrip.xml
+NT:urn:schemas-upnp-org:service:WANIPConnection:1
+NTS:ssdp:alive
+Server:NT/5.0 UPnP/1.0
+USN:uuid:upnp-WANConnectionDevice-1_0-00c002b90078::urn:schemas-upnp-org:service:WANIPConnection:1
+U/A1
+JNOTIFY * HTTP/1.1
+Host:239.255.255.250:1900
+Cache-Control:max-age=60
+Location:http://192.168.254.254:80/upnp/service/descrip.xml
+NT:uuid:upnp-InternetGatewayDevice-1_0-00c002b90078
+NTS:ssdp:alive
+Server:NT/5.0 UPnP/1.0
+USN:uuid:upnp-InternetGatewayDevice-1_0-00c002b90078
+NOTIFY * HTTP/1.1
+Host:239.255.255.250:1900
+Cache-Control:max-age=60
+Location:http://192.168.254.254:80/upnp/service/descrip.xml
+NT:urn:schemas-upnp-org:device:InternetGatewayDevice:1
+NTS:ssdp:alive
+Server:NT/5.0 UPnP/1.0
+USN:uuid:upnp-InternetGatewayDevice-1_0-00c002b90078::urn:schemas-upnp-org:device:InternetGatewayDevice:1
+NOTIFY * HTTP/1.1
+Host:239.255.255.250:1900
+Cache-Control:max-age=60
+Location:http://192.168.254.254:80/upnp/service/descrip.xml
+NT:upnp:rootdevice
+NTS:ssdp:alive
+Server:NT/5.0 UPnP/1.0
+USN:uuid:upnp-InternetGatewayDevice-1_0-00c002b90078::upnp:rootdevice
+NOTIFY * HTTP/1.1
+Host:239.255.255.250:1900
+Cache-Control:max-age=60
+Location:http://192.168.254.254:80/upnp/service/descrip.xml
+NT:uuid:upnp-WANDevice-1_0-00c002b90078
+NTS:ssdp:alive
+Server:NT/5.0 UPnP/1.0
+USN:uuid:upnp-WANDevice-1_0-00c002b90078
+0NOTIFY * HTTP/1.1
+Host:239.255.255.250:1900
+Cache-Control:max-age=60
+Location:http://192.168.254.254:80/upnp/service/descrip.xml
+NT:urn:schemas-upnp-org:device:WANDevice:1
+NTS:ssdp:alive
+Server:NT/5.0 UPnP/1.0
+USN:uuid:upnp-WANDevice-1_0-00c002b90078::urn:schemas-upnp-org:device:WANDevice:1
+U/AW
+NOTIFY * HTTP/1.1
+Host:239.255.255.250:1900
+Cache-Control:max-age=60
+Location:http://192.168.254.254:80/upnp/service/descrip.xml
+NT:uuid:upnp-WANConnectionDevice-1_0-00c002b90078
+NTS:ssdp:alive
+Server:NT/5.0 UPnP/1.0
+USN:uuid:upnp-WANConnectionDevice-1_0-00c002b90078
+NOTIFY * HTTP/1.1
+Host:239.255.255.250:1900
+Cache-Control:max-age=60
+Location:http://192.168.254.254:80/upnp/service/descrip.xml
+NT:urn:schemas-upnp-org:device:WANConnectionDevice:1
+NTS:ssdp:alive
+Server:NT/5.0 UPnP/1.0
+USN:uuid:upnp-WANConnectionDevice-1_0-00c002b90078::urn:schemas-upnp-org:device:WANConnectionDevice:1
+NOTIFY * HTTP/1.1
+Host:239.255.255.250:1900
+Cache-Control:max-age=60
+Location:http://192.168.254.254:80/upnp/service/descrip.xml
+NT:urn:schemas-upnp-org:service:Layer3Forwarding:1
+NTS:ssdp:alive
+Server:NT/5.0 UPnP/1.0
+USN:uuid:upnp-InternetGatewayDevice-1_0-00c002b90078::urn:schemas-upnp-org:service:Layer3Forwarding:1
+U/A 
+V)iNOTIFY * HTTP/1.1
+Host:239.255.255.250:1900
+Cache-Control:max-age=60
+Location:http://192.168.254.254:80/upnp/service/descrip.xml
+NT:urn:schemas-upnp-org:service:WANCommonInterfaceConfig:1
+NTS:ssdp:alive
+Server:NT/5.0 UPnP/1.0
+USN:uuid:upnp-WANDevice-1_0-00c002b90078::urn:schemas-upnp-org:service:WANCommonInterfaceConfig:1
+NOTIFY * HTTP/1.1
+Host:239.255.255.250:1900
+Cache-Control:max-age=60
+Location:http://192.168.254.254:80/upnp/service/descrip.xml
+NT:urn:schemas-upnp-org:service:WANIPConnection:1
+NTS:ssdp:alive
+Server:NT/5.0 UPnP/1.0
+USN:uuid:upnp-WANConnectionDevice-1_0-00c002b90078::urn:schemas-upnp-org:service:WANIPConnection:1
+U/AMG
+JNOTIFY * HTTP/1.1
+Host:239.255.255.250:1900
+Cache-Control:max-age=60
+Location:http://192.168.254.254:80/upnp/service/descrip.xml
+NT:uuid:upnp-InternetGatewayDevice-1_0-00c002b90078
+NTS:ssdp:alive
+Server:NT/5.0 UPnP/1.0
+USN:uuid:upnp-InternetGatewayDevice-1_0-00c002b90078
+U/AmO
+NOTIFY * HTTP/1.1
+Host:239.255.255.250:1900
+Cache-Control:max-age=60
+Location:http://192.168.254.254:80/upnp/service/descrip.xml
+NT:urn:schemas-upnp-org:device:InternetGatewayDevice:1
+NTS:ssdp:alive
+Server:NT/5.0 UPnP/1.0
+USN:uuid:upnp-InternetGatewayDevice-1_0-00c002b90078::urn:schemas-upnp-org:device:InternetGatewayDevice:1
+NOTIFY * HTTP/1.1
+Host:239.255.255.250:1900
+Cache-Control:max-age=60
+Location:http://192.168.254.254:80/upnp/service/descrip.xml
+NT:upnp:rootdevice
+NTS:ssdp:alive
+Server:NT/5.0 UPnP/1.0
+USN:uuid:upnp-InternetGatewayDevice-1_0-00c002b90078::upnp:rootdevice
+NOTIFY * HTTP/1.1
+Host:239.255.255.250:1900
+Cache-Control:max-age=60
+Location:http://192.168.254.254:80/upnp/service/descrip.xml
+NT:uuid:upnp-WANDevice-1_0-00c002b90078
+NTS:ssdp:alive
+Server:NT/5.0 UPnP/1.0
+USN:uuid:upnp-WANDevice-1_0-00c002b90078
+0NOTIFY * HTTP/1.1
+Host:239.255.255.250:1900
+Cache-Control:max-age=60
+Location:http://192.168.254.254:80/upnp/service/descrip.xml
+NT:urn:schemas-upnp-org:device:WANDevice:1
+NTS:ssdp:alive
+Server:NT/5.0 UPnP/1.0
+USN:uuid:upnp-WANDevice-1_0-00c002b90078::urn:schemas-upnp-org:device:WANDevice:1
+NOTIFY * HTTP/1.1
+Host:239.255.255.250:1900
+Cache-Control:max-age=60
+Location:http://192.168.254.254:80/upnp/service/descrip.xml
+NT:uuid:upnp-WANConnectionDevice-1_0-00c002b90078
+NTS:ssdp:alive
+Server:NT/5.0 UPnP/1.0
+USN:uuid:upnp-WANConnectionDevice-1_0-00c002b90078
+NOTIFY * HTTP/1.1
+Host:239.255.255.250:1900
+Cache-Control:max-age=60
+Location:http://192.168.254.254:80/upnp/service/descrip.xml
+NT:urn:schemas-upnp-org:device:WANConnectionDevice:1
+NTS:ssdp:alive
+Server:NT/5.0 UPnP/1.0
+USN:uuid:upnp-WANConnectionDevice-1_0-00c002b90078::urn:schemas-upnp-org:device:WANConnectionDevice:1
+NOTIFY * HTTP/1.1
+Host:239.255.255.250:1900
+Cache-Control:max-age=60
+Location:http://192.168.254.254:80/upnp/service/descrip.xml
+NT:urn:schemas-upnp-org:service:Layer3Forwarding:1
+NTS:ssdp:alive
+Server:NT/5.0 UPnP/1.0
+USN:uuid:upnp-InternetGatewayDevice-1_0-00c002b90078::urn:schemas-upnp-org:service:Layer3Forwarding:1
+V)iNOTIFY * HTTP/1.1
+Host:239.255.255.250:1900
+Cache-Control:max-age=60
+Location:http://192.168.254.254:80/upnp/service/descrip.xml
+NT:urn:schemas-upnp-org:service:WANCommonInterfaceConfig:1
+NTS:ssdp:alive
+Server:NT/5.0 UPnP/1.0
+USN:uuid:upnp-WANDevice-1_0-00c002b90078::urn:schemas-upnp-org:service:WANCommonInterfaceConfig:1
+NOTIFY * HTTP/1.1
+Host:239.255.255.250:1900
+Cache-Control:max-age=60
+Location:http://192.168.254.254:80/upnp/service/descrip.xml
+NT:urn:schemas-upnp-org:service:WANIPConnection:1
+NTS:ssdp:alive
+Server:NT/5.0 UPnP/1.0
+USN:uuid:upnp-WANConnectionDevice-1_0-00c002b90078::urn:schemas-upnp-org:service:WANIPConnection:1
+JNOTIFY * HTTP/1.1
+Host:239.255.255.250:1900
+Cache-Control:max-age=60
+Location:http://192.168.254.254:80/upnp/service/descrip.xml
+NT:uuid:upnp-InternetGatewayDevice-1_0-00c002b90078
+NTS:ssdp:alive
+Server:NT/5.0 UPnP/1.0
+USN:uuid:upnp-InternetGatewayDevice-1_0-00c002b90078
+NOTIFY * HTTP/1.1
+Host:239.255.255.250:1900
+Cache-Control:max-age=60
+Location:http://192.168.254.254:80/upnp/service/descrip.xml
+NT:urn:schemas-upnp-org:device:InternetGatewayDevice:1
+NTS:ssdp:alive
+Server:NT/5.0 UPnP/1.0
+USN:uuid:upnp-InternetGatewayDevice-1_0-00c002b90078::urn:schemas-upnp-org:device:InternetGatewayDevice:1
+NOTIFY * HTTP/1.1
+Host:239.255.255.250:1900
+Cache-Control:max-age=60
+Location:http://192.168.254.254:80/upnp/service/descrip.xml
+NT:upnp:rootdevice
+NTS:ssdp:alive
+Server:NT/5.0 UPnP/1.0
+USN:uuid:upnp-InternetGatewayDevice-1_0-00c002b90078::upnp:rootdevice
+NOTIFY * HTTP/1.1
+Host:239.255.255.250:1900
+Cache-Control:max-age=60
+Location:http://192.168.254.254:80/upnp/service/descrip.xml
+NT:uuid:upnp-WANDevice-1_0-00c002b90078
+NTS:ssdp:alive
+Server:NT/5.0 UPnP/1.0
+USN:uuid:upnp-WANDevice-1_0-00c002b90078
+U/AK
+0NOTIFY * HTTP/1.1
+Host:239.255.255.250:1900
+Cache-Control:max-age=60
+Location:http://192.168.254.254:80/upnp/service/descrip.xml
+NT:urn:schemas-upnp-org:device:WANDevice:1
+NTS:ssdp:alive
+Server:NT/5.0 UPnP/1.0
+USN:uuid:upnp-WANDevice-1_0-00c002b90078::urn:schemas-upnp-org:device:WANDevice:1
+NOTIFY * HTTP/1.1
+Host:239.255.255.250:1900
+Cache-Control:max-age=60
+Location:http://192.168.254.254:80/upnp/service/descrip.xml
+NT:uuid:upnp-WANConnectionDevice-1_0-00c002b90078
+NTS:ssdp:alive
+Server:NT/5.0 UPnP/1.0
+USN:uuid:upnp-WANConnectionDevice-1_0-00c002b90078
+NOTIFY * HTTP/1.1
+Host:239.255.255.250:1900
+Cache-Control:max-age=60
+Location:http://192.168.254.254:80/upnp/service/descrip.xml
+NT:urn:schemas-upnp-org:device:WANConnectionDevice:1
+NTS:ssdp:alive
+Server:NT/5.0 UPnP/1.0
+USN:uuid:upnp-WANConnectionDevice-1_0-00c002b90078::urn:schemas-upnp-org:device:WANConnectionDevice:1
+U/A"
+NOTIFY * HTTP/1.1
+Host:239.255.255.250:1900
+Cache-Control:max-age=60
+Location:http://192.168.254.254:80/upnp/service/descrip.xml
+NT:urn:schemas-upnp-org:service:Layer3Forwarding:1
+NTS:ssdp:alive
+Server:NT/5.0 UPnP/1.0
+USN:uuid:upnp-InternetGatewayDevice-1_0-00c002b90078::urn:schemas-upnp-org:service:Layer3Forwarding:1
+V)iNOTIFY * HTTP/1.1
+Host:239.255.255.250:1900
+Cache-Control:max-age=60
+Location:http://192.168.254.254:80/upnp/service/descrip.xml
+NT:urn:schemas-upnp-org:service:WANCommonInterfaceConfig:1
+NTS:ssdp:alive
+Server:NT/5.0 UPnP/1.0
+USN:uuid:upnp-WANDevice-1_0-00c002b90078::urn:schemas-upnp-org:service:WANCommonInterfaceConfig:1
+U/A	
+NOTIFY * HTTP/1.1
+Host:239.255.255.250:1900
+Cache-Control:max-age=60
+Location:http://192.168.254.254:80/upnp/service/descrip.xml
+NT:urn:schemas-upnp-org:service:WANIPConnection:1
+NTS:ssdp:alive
+Server:NT/5.0 UPnP/1.0
+USN:uuid:upnp-WANConnectionDevice-1_0-00c002b90078::urn:schemas-upnp-org:service:WANIPConnection:1
+U/AM
+ EOCNDBEBDJEPEEEODGFKFIELDEEMFBAA
+ ABACFPFPENFDECFCEPFHFDEFFPFPACAB
+SMB%
+\MAILSLOT\BROWSE
+EVIL
+N-1A9ODN6ZXK4LQ
+ EOC
+U/Ag
+U/An
+FY * HTTP/1.1
+U/AaP
+P/1.1
+GET /logout.srf?lc=1033&id=961&ru=http%3a%2f%2fmobile.msn.com%2fscripts%2flogoutgif.asp%3fru%3d%2f&tw=14400&kv=5&ct=1093621085&ems=1&ver=2.5.1016.0&tpf=e5d150bc02380575db2ca2981ca00dea HTTP/1.1
+Accept: */*
+UA-OS: Windows CE (Pocket PC) - Version 4.20
+UA-color: color16
+UA-pixels: 240x320
+UA-CPU: Intel(R) PXA255
+UA-Voice: FALSE
+Referer: http://mobile.msn.com/hm/folder.aspx?ts=1093601294&fts=1093566459&folder=ACTIVE&msg=0
+UA-Language: JavaScript
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)
+Host: login.passport.com
+Connection: Keep-Alive
+Cookie: MSPPre=findme69@hotmail.com; BrowserTest=Success?; MSPPost=1; MSPAuth=6jjJk8xxgDPX1OTv6h0F3ydIbKC0W6*4W3bwbg7PgYGamHQAeW7VyR90OFS4SXW4mqrx9secN2ayyG13Mo6gAlAA$$; MSPProf=6PHGFkxLDA86SZsTsoQtGmBSv9cGKEy1XLoBHA59EnL4u9DhKuO9czP8B3vIIuTr1txesDJ9lqo8OXbK7yyVcrVpWCjFqLqgfk6HLSs3!ArIyyDzAgsVAdZqjTea4Htlu6; MSPVis=961; MSPSoftVis=@0@:@; MSPRequ=lt=1093620869&co=1&id=961
+U/A'
+HTTP/1.1 200 OK
+Connection: close
+Date: Fri, 27 Aug 2004 15:40:15 GMT
+Server: Microsoft-IIS/6.0
+PPServer: H: BAYPPLOG3B08
+Content-Type: text/html
+Expires: Fri, 27 Aug 2004 19:40:15 GMT
+Cache-Control: private
+cachecontrol: no-store
+Pragma: no-cache
+P3P: CP="DSP CUR OTPi IND OTRi ONL FIN"
+Set-Cookie: MSPAuth= ; expires=Thu, 30-Oct-1980 16:00:00 GMT;domain=.passport.com;path=/;HTTPOnly= ;version=1
+Set-Cookie: MSPProf= ; expires=Thu, 30-Oct-1980 16:00:00 GMT;domain=.passport.com;path=/;HTTPOnly= ;version=1
+Set-Cookie: MSPSec= ; expires=Thu, 30-Oct-1980 16:00:00 GMT;domain=.passport.com;path=/;HTTPOnly= ;version=1
+Set-Cookie: MSPSec1= ; expires=Thu, 30-Oct-1980 16:00:00 GMT;domain=.passport.com;path=/;HTTPOnly= ;version=1
+Set-Cookie: MSPSec= ; expires=Thu, 30-Oct-1980 16:00:00 GMT;domain=.passport.com;path=/ppsecure;HTTPOnly= ;version=1
+Set-Cookie: MSPDom= ; expires=Thu, 30-Oct-1980 16:00:00 GMT;domain=.passport.com;path=/;HTTPOnly= ;version=1
+Set-Cookie: MSPSoftVis=@:@; domain=.passport.com;path=/;version=1
+Authentication-Info: Passport1.4 da-status=logout
+Authentication-Info: Passport1.4 da-status=logout
+Set-Cookie: MSPPost=0; domain=.passport.com;path=/;version=1
+Content-Length: 1426
+P/1.1
+<html><head><script language="javascript">var submitted = false;function GetCookie(sName){var aCookie = document.cookie.split("; ");for(var i = 0; i < aCookie.length; i++){var aCrumb = aCookie[i].split("=");if (sName == aCrumb[0]) return unescape(aCrumb[1]);} return null;}function DoSubmit(){var CookieVal = GetCookie("MSPPost");if("1" == CookieVal){document.cookie = "MSPPost=0;;path=/;domain=.passport.com";history.go(-1);}else if (!submitted){submitted = true;document.cookie = "BrowserTest=Success?;;path=/;domain=.passport.com";document.cookie = "MSPPost=1;;path=/;domain=.passport.com";document.hiddenform.submit();}}function OnBack(){}</script></head><body onload="javascript:DoSubmit();"><form name=hiddenform action="http://login.passport.net/uilogout.srf?lc=1033&id=961&ru=http%3a%2f%2fmobile.msn.com%2fscripts%2flogoutgif.asp%3fru%3d%2f&tw=14400&kv=5&ct=1093621085&ems=1&ver=2.5.1016.0&tpf=e5d150bc02380575db2ca2981ca00dea" method=POST target="_top"><input type=hidden name="vis" value="961"><BR><noscript><img src="http://www.passportimages.com/1033/PassportLogoTrans.gif" height="34" width="153" border="0" align="left" alt="Microsoft Passport"><br><br><br>Please click the button below to continue. This manual step is neccessary because your browser has scripting disabled<br><br><input type="submit" tabindex="1" value="Continue" id="submit1" name="submit1" class="PPRSbmtBtn"></noscript></form></body></html>
+U/AQq
+,QA6
+U/AWr
+P/1.1
+GET /l
+U/Ae0
+POST /uilogout.srf?lc=1033&id=961&ru=http%3a%2f%2fmobile.msn.com%2fscripts%2flogoutgif.asp%3fru%3d%2f&tw=14400&kv=5&ct=1093621085&ems=1&ver=2.5.1016.0&tpf=e5d150bc02380575db2ca2981ca00dea HTTP/1.1
+Accept: */*
+UA-OS: Windows CE (Pocket PC) - Version 4.20
+UA-color: color16
+UA-pixels: 240x320
+UA-CPU: Intel(R) PXA255
+UA-Voice: FALSE
+Content-Type: application/x-www-form-urlencoded
+Referer: http://login.passport.com/logout.srf?lc=1033&id=961&ru=http%3a%2f%2fmobile.msn.com%2fscripts%2flogoutgif.asp%3fru%3d%2f&tw=14400&kv=5&ct=1093621085&ems=1&ver=2.5.1016.0&tpf=e5d150bc02380575db2ca2981ca00dea
+UA-Language: JavaScript
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)
+Host: login.passport.net
+Content-Length: 7
+Connection: Keep-Alive
+Cookie: MSPRequ=lt=1093620869&co=1&id=961
+vis=961
+U/A\a
+HTTP/1.1 200 OK
+Connection: close
+Date: Fri, 27 Aug 2004 15:40:15 GMT
+Server: Microsoft-IIS/6.0
+PPServer: H: BAYPPLOGU2A01
+Content-Type: text/html
+Expires: Fri, 27 Aug 2004 15:39:15 GMT
+Cache-Control: no-cache
+cachecontrol: no-store
+Pragma: no-cache
+P3P: CP="DSP CUR OTPi IND OTRi ONL FIN"
+Set-Cookie: MSPVis= ; expires=Thu, 30-Oct-1980 16:00:00 GMT;domain=.passport.net;path=/;version=1
+Set-Cookie: MSPAuth= ; expires=Thu, 30-Oct-1980 16:00:00 GMT;domain=.passport.net;path=/;HTTPOnly= ;version=1
+Set-Cookie: MSPProf= ; expires=Thu, 30-Oct-1980 16:00:00 GMT;domain=.passport.net;path=/;HTTPOnly= ;version=1
+Set-Cookie: MSPSec= ; expires=Thu, 30-Oct-1980 16:00:00 GMT;domain=.passport.net;path=/;HTTPOnly= ;version=1
+Set-Cookie: MSPSec1= ; expires=Thu, 30-Oct-1980 16:00:00 GMT;domain=.passport.net;path=/;HTTPOnly= ;version=1
+Set-Cookie: MSPSec= ; expires=Thu, 30-Oct-1980 16:00:00 GMT;domain=.passport.net;path=/ppsecure;HTTPOnly= ;version=1
+Set-Cookie: MSPDom= ; expires=Thu, 30-Oct-1980 16:00:00 GMT;domain=.passport.net;path=/;HTTPOnly= ;version=1
+Authentication-Info: Passport1.4 da-status=logout
+Set-Cookie: MSPVis=961; expires=Wed, 30-Dec-2037 16:00:00 GMT;domain=.passport.net;path=/;version=1
+Content-Length: 13317
+U/AH
+                                        
+<html dir="ltr">
+<head>
+<META http-equiv="REFRESH" content="8;url=http://mobile.msn.com">
+<title>Sign out of .NET Passport</title>
+<link rel="stylesheet" type="text/css" href="/1033/L/PPIE.css">
+<link rel="stylesheet" type="text/css" href="http://mobile.msn.com/scripts/cobrandcss.asp?PP_PAGE=ppLogout&lid=1033">
+<script language="javascript">
+var iTotalImage = 0;
+var ids = new Array('961','3');
+    if (ids.length == 0) {
+        TimeoutReturn();
+    }
+var idLoggedIn = new Array(ids.length);
+var badImageSrc = "http://www.passportimages.com/1033/signout_bad.gif";
+var goodImageSrc = "http://www.passportimages.com/1033/signout_good.gif";
+for (var i=0; i < idLoggedIn.length; i++) {
+    idLoggedIn[i] = 0;
+function getCookieVal (offset) {
+    var endstr = document.cookie.indexOf (";", offset);
+    if (endstr == -1)
+        endstr = document.cookie.length;
+    return unescape(document.cookie.substring(offset, endstr));
+function GetCookie(name) {
+    var arg = name + "=";
+    var alen = arg.length;
+    var clen = document.cookie.length;
+    var i = 0;
+    while (i < clen) {
+        var j = i + alen;
+        if (document.cookie.substring(i, j) == arg)
+            return getCookieVal (j);
+        i = document.cookie.indexOf(" ", i) + 1;
+        if (i == 0) break; 
+    }
+    return null;
+function SetCookie(name,value,expires,path,domain,secure) {
+    do
+U/A.
+P/1.1
+U/A9
+cument.cookie = name + "=" + value +
+    ((expires) ? "; expires=" + expires.toGMTString() : "") +
+    ((path) ? "; path=" + path : "") +
+    ((domain) ? "; domain=" + domain : "") +
+    ((secure) ? "; secure" : "");
+function DeleteCookie(name,path,domain) {
+    if (GetCookie(name)) {
+        document.cookie = name + "=+" +
+            ((path) ? "; path=" + path : "") +
+            ((domain) ? "; domain=" + domain : "") +
+            "; expires=Thu, 30 Oct 1980 16:00:00 GMT";
+    }
+function SetVisitedSites(value) {
+    var persistDate = new Date(2037, 11, 30);
+    SetCookie("MSPVis", value, persistDate, "/", ".passport.net", false);
+function ExpireVisitedSites() {
+    DeleteCookie("MSPVis", "/", ".passport.net")
+function ResetVisitedCookie() 
+    var visSites = "";
+    var hasID = false;
+    var badImage;
+    for (var i=0; i < idLoggedIn.length; i++) {
+        if (idLoggedIn[i] > 1) {
+            if (hasID)
+                visSites += "$" + ids[i];
+            else
+                visSites += ids[i];
+            hasID = true;
+        }
+    }
+    if (hasID) {
+        SetVisitedSites(visSites);
+        window.location.href = "http://login.passport.net/uilogout.srf?lc=1033&id=961&ru=http%3a%2f%2fmobile.msn.com%2fscripts%2flogoutgif.asp%3fru%3d%2f&tw=14400&kv=5&ct=1093621085&ems=1&ver=2.5.1016.0&tpf=e5d150bc02380575db2ca2981ca00dea&ec=1&vis=";
+    } else {
+        ExpireVisitedSites()
+GET /l
+        window.location.href = "http://mobile.msn.com";
+        window.setTimeout("TimeoutReturn()", 1000);
+    }
+function SiteLogout(index)
+    if (idLoggedIn[index] == 0)
+    {
+        idLoggedIn[index] = 1;
+        iTotalImage++;
+        if (idLoggedIn.length == iTotalImage)
+        {
+            ResetVisitedCookie();
+        }
+    }
+function BadImage(index)
+    if (idLoggedIn[index] == 0)
+    {
+        idLoggedIn[index] = 2;
+        iTotalImage++;
+        if (idLoggedIn.length == iTotalImage)
+        {
+            ResetVisitedCookie();
+        }
+    }
+function TimeoutReturn()
+    top.location.href = "http://mobile.msn.com";
+function BodyLoad() 
+    if (idLoggedIn.length == 0) {
+        TimeoutReturn();
+    }
+function OnBack(){}
+</script>
+<script language="JavaScript"><!-- //
+var CBLogoutHead = "", CBLogoutBody = "", CBLogoutOnLoad = "";
+var CBToken = "PASSPORT_UI", CBBodyDefault = "", CBLogo = "http://mobile.msn.com/images/ppcobrandimage.gif", CBLogoHREF = "http://mobile.msn.com?lc=1033";
+var PPCBBodyPre = "", PPCBBodyPost = "";
+function MPS_BodyOnload() { if (CBLogoutOnLoad != "") { eval(CBLogoutOnLoad); } }
+function MPS_NormalizeURL(szURL) {
+  var szNURL = szURL;
+  if (window.location.protocol == "http:"){
+   if (szURL.substring(0,5).toLowerCase() == "https")
+    szNURL = "http" + szURL.substring(5, szURL.length);}
+  return(szNURL);
+// --></script>
+<script language="JavaScript" src="http://mobile.msn.com/scripts/cobrand.asp?PP_PAGE=ppLogout&lid=1033"></script>
+<script language="JavaScript"><!-- //
+if (CBLogo > " ") { CBLogo = MPS_NormalizeURL(CBLogo); }
+if (CBLogoutHead) { document.write(CBLogoutHead); }
+// --></script>
+</head>
+<body topmargin="0" leftmargin="0" rightmargin="0" marginheight="0" marginwidth="0" onLoad="BodyLoad()">
+<noscript>
+<center>
+<table cellpadding="0" cellspacing="0" border="0" width="500">
+  <tr>
+      <td><a href="http://mobile.msn.com?lc=1033" target="_top"><img src="http://mobile.msn.com/images/ppcobrandimage.gif" width="468" height="60" border="0" alt="MSN Mobile"></a></td>
+    </tr>
+  <tr><td>
+</noscript>
+<script language="JavaScript"><!-- //
+  CBBodyDefault = '<center><table cellpadding="0" cellspacing="0" border="0" width="500"><tr><td>';
+  if (CBLogo) 
+    if (CBLogoHREF) 
+    { 
+      CBBodyDefault += '<a href="' + CBLogoHREF + '" target="_top"><img src="' + CBLogo + '" width="468" height="60" border="0" alt="' + 'MSN Mobile' + '"></a></td>'; 
+    } else {
+      CBBodyDefault += '<img src="' + CBLogo + '" width="468" height="60" border="0" alt="' + 'MSN Mobile' + '"></td>';
+    }
+    CBBodyDefault += '</tr><tr><td valign="top">' + CBToken + '</td></tr></table></center>';
+  } else {
+    CBBodyDefault += '<img src="/images/T.gif" width="1" height="1" border="0"></td></tr>';
+    CBBodyDefault += '<tr><td valign
+U/AS6
+U/A6:
+P/1.1
+U/A'D
+GET /1033/L/PPIE.css HTTP/1.1
+Accept: */*
+UA-OS: Windows CE (Pocket PC) - Version 4.20
+UA-color: color16
+UA-pixels: 240x320
+UA-CPU: Intel(R) PXA255
+UA-Voice: FALSE
+Referer: http://login.passport.net/uilogout.srf?lc=1033&id=961&ru=http%3a%2f%2fmobile.msn.com%2fscripts%2flogoutgif.asp%3fru%3d%2f&tw=14400&kv=5&ct=1093621085&ems=1&ver=2.5.1016.0&tpf=e5d150bc02380575db2ca2981ca00dea
+UA-Language: JavaScript
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)
+Host: login.passport.net
+Connection: Keep-Alive
+Cookie: MSPRequ=lt=1093620869&co=1&id=961; MSPVis=961
+="top">' + CBToken + '</td></tr></table></center>';
+var ppuiIndex = -1;
+var ppuiCB = false;
+if (CBLogoutBody) {
+	ppuiCB = true;
+	ppuiIndex = CBLogoutBody.indexOf(CBToken);
+if (ppuiIndex == -1) {
+	CBLogoutBody = CBBodyDefault;
+	ppuiIndex = CBLogoutBody.indexOf(CBToken);
+PPCBBodyPre = CBLogoutBody.substring(0, ppuiIndex);
+PPCBBodyPost = CBLogoutBody.substring(ppuiIndex + CBToken.length);
+document.write(PPCBBodyPre);
+// --></script>
+<table border="0" cellpadding="0" cellspacing="0" width=468>
+	<tr>
+		<td rowspan=200><img src="/images/trans_pixel.gif" width="1" height="1"></td>
+		<td colspan=3><img src="/images/trans_pixel.gif" width="466" height="1"></td>
+		<td rowspan=200><img src="/images/trans_pixel.gif" width="1" height="1"></td>
+	</tr>
+	<tr>
+		<td rowspan=200><img src="/images/trans_pixel.gif" width="5" height="1"></td>
+		<td><img src="/images/trans_pixel.gif" width="454" height="1"></td>
+		<td rowspan=200><img src="/images/trans_pixel.gif" width="5" height="1"></td>
+	</tr>
+	<tr>
+		<td><table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tr>
+				<td><img src="/images/trans_pixel.gif" width="10" height="2"></td>
+				<td><img src="/images/trans_pixel.gif" width="5" height="1"></td>
+			</tr>
+			<tr>
+				<td align=left valign=middle>Sign out of .NET Passport</td>
+				<td align=right valign=middle>
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+  <tr>
+ <td width="100%" valign="bottom"><table cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td background="/images/yellow.gif"><img src="/images/T.gif" width="1" height="4" border="0"></td></tr></table></td>
+    <td align="right"><a href="http://www.passport.net/default.asp?lc=1033&id=961" target="_top"><img src="http://www.passportimages.com/1033/dotnetlogoBIG.gif" alt=QuotedReplacement(www.passport.com) height="34" width="153" border="0"></a></td>
+  </tr>
+</table>
+				</td>
+			</tr>
+			<tr>
+				<td colspan=2><img src="/images/trans_pixel.gif" width="1" height="2"></td>
+			</tr>
+			</table></td>
+	</tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width=468>
+	<tr>
+		<td rowspan=200><img src="/images/trans_pixel.gif" width="1" height="1"></td>
+		<td colspan=3><img src="/images/trans_pixel.gif" width="463" height="1"></td>
+		<td rowspan=200><img src="/images/trans_pixel.gif" width="1" height="1"></td>
+	</tr>
+	<tr>
+		<td rowspan=200><img src="/images/trans_pixel.gif" width="5" height="1"></td>
+		<td><img src="/images/trans_pixel.gif" width="454" height="1"></td>
+		<td rowspan=200><img src="/images/trans_pixel.gif" width="5" height="1"></td>
+	</tr>
+	<tr>
+		<td><img src="/images/trans_pixel.gif" width="1" height="5"></td>
+	</tr>
+	<tr> 
+		<td ALIGN="left"><font><b><b>Please wait while you are signed out of the following sites.</b></b></font></td>
+	</tr>
+	<tr>
+		<td><img src="/image
+U/A7e
+s/trans_pixel.gif" width="5" height="1"></td>
+	</tr>
+	<tr>
+		<td>
+			<table cellpadding="3" cellspacing="0" border="1">
+				<tr>
+					<td>
+						<font>
+							<img src="http://www.passportimages.com/1033/signout_good.gif"> = sign out successful.<br>
+							<img src="http://www.passportimages.com/1033/signout_bad.gif"> = sign out failed.
+						</font></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td><img src="/images/trans_pixel.gif" width="1" height="5"></td>
+	</tr>
+	<tr>
+		<td><table BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=466>
+<tr><td>
+<script language="JavaScript"><!-- //
+function SiteLogout0() {
+   SiteLogout(0);
+function BadImage0() {
+   BadImage(0);
+// -->
+</script>
+<img name="ID0" width="0" height="0" onload="SiteLogout0()" onerror="BadImage0()" src="http://mobile.msn.com/scripts/logoutgif.asp?ct=1093621215">
+<img name="ID2" width="17" height="13" src="/images/T.gif">
+&nbsp;<font size="2" face="Arial,Helvetica"><b>MSN Mobile<b></font><br><img src="/images/T.gif" width="1" height="10" border="0"></td></tr>
+<tr><td>
+<script language="JavaScript"><!-- //
+SiteLogout(1);
+// -->
+</script>
+			</table></td>
+	</tr>
+	<tr>
+		<td><img src="/images/trans_pixel.gif" width="1" height="10"></td>
+	</tr>
+	<tr>
+		<td>A green check mark (<img src="http://www.passportimages.com/1033/signout_good.gif">) appears next to each site as you sign out. If a green check mark does not appear next to every site, o
+U/Ap
+r a red (<img src="http://www.passportimages.com/1033/signout_bad.gif">) appears next to any site, try to <a target="_top" href="http://login.passport.net/uilogout.srf?lc=1033&id=961&ru=http%3a%2f%2fmobile.msn.com%2fscripts%2flogoutgif.asp%3fru%3d%2f&tw=14400&kv=5&ct=1093621085&ems=1&ver=2.5.1016.0&tpf=e5d150bc02380575db2ca2981ca00dea">sign out again</a>.  If you don't see the check marks at all, make sure your browser is set to show pictures or you will not be able to sign out.  <script language="JavaScript">window.name='msnMain';</script><a href="http://help.msn.com/en_us/frameset.asp?INI=ppv2.ini&H_APP=Microsoft%20Passport&Topic=SISOToSignOut.htm&H_VER=1.5&v3=1033">Need help signing out?</a></td>
+	</tr>
+	<tr>
+		<td><img src="/images/trans_pixel.gif" width="1" height="10"></td>
+	</tr>
+	<tr>
+		<td><a target="_top" href="http://mobile.msn.com"><b>Click here to continue using MSN Mobile</b></a></td>
+	</tr>
+	<tr>
+		<td><img src="/images/trans_pixel.gif" width="1" height="10"></td>
+	</tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width=468>
+	<tr>
+		<td rowspan=200><img src="/images/trans_pixel.gif" width="1" height="1"></td>
+		<td colspan=3><img src="/images/trans_pixel.gif" width="454" height="1"></td>
+		<td rowspan=200><img src="/images/trans_pixel.gif" width="1" height="1"></td>
+	</tr>
+	<tr>
+		<td COLSPAN="2" HEIGHT="10"></td>
+	</tr>
+	<!-- Footer -->
+	<tr>
+		<td align=center>
+<table cellp
+P/1.1
+U/A/x
+adding="0" cellspacing="0" border="0" width="100%" class="PPFooterTbl">
+  <tr>
+    <td rowspan="2"><img src="/images/T.gif" width="10" height="1" border="0"></td>
+    <td width="100%"><img src="/images/T.gif" width="1" height="5" border="0"></td>
+    <td rowspan="2"><img src="/images/T.gif" width="10" height="1" border="0"></td>
+  </tr>
+  <tr>    
+    <td class="PPFooterTxt">
+              <nobr><a href="http://memberservices.passport.net/memberservice.srf?ru=http%3a%2f%2fmobile.msn.com%2fscripts%2flogoutgif.asp%3fru%3d%2f&tw=14400&kv=5&ct=1093621085&ems=1&ver=2.5.1016.0&tpf=e5d150bc02380575db2ca2981ca00dea&lc=1033&id=961" target="_top">Member Services</a>&nbsp;</nobr>
+                    <nobr><a href="http://www.passport.net/consumer/termsofuse.asp?lc=1033&id=961" target="_top">Terms of Use</a>&nbsp;</nobr>
+                    <nobr><a href="http://www.passport.net/consumer/privacypolicy.asp?lc=1033&id=961" target="_top">Privacy Statement</a></nobr>
+                    <br><img src="/images/T.gif" width="1" height="5" border="0"><br>
+        Some elements &copy; 1999 - 2004 Microsoft&reg; Corporation. All rights reserved.<br>
+            <img src="/images/T.gif" width="1" height="5" border="0"></td>
+  </tr>
+</table>
+<!-- ServerInfo: BAYPPLOGU2A01 2004.06.01.01.17.13 Live1 HMStage:4 MSNIAStage:1 -->
+<!-- Version: 2.5  Build 1043 -->
+		</td>
+	</tr>
+	<tr>
+		<td colspan=3><img src="/images/trans_pixel.gif" wi
+ xx-small; }
+.PPHelpText A
+{ COLOR: #0000ff;
+  FONT-SIZE: xx-small;
+  TEXT-DECORATION: underline; }
+/* SignInName Text */
+.PPSignInName
+{ COLOR: #000000;
+  FONT-FAMILY: Arial, Helvetica, sans-serif;
+  FONT-SIZE: x-small;
+  FONT-STYLE: italic;
+  FONT-WEIGHT: bold; }
+/* Text style formating of the fields error text bold. */
+.PPErrBoldTxt
+{ COLOR: #ff0000;
+  FONT-FAMILY: Arial, Helvetica, sans-serif;
+  FONT-SIZE: x-small;
+  FONT-WEIGHT: bold; }
+/* Text style formating for signup button. */
+.PPRSbmtBtn
+{ FONT-FAMILY: Arial, Helvetica, sans-serif;
+  FONT-SIZE: x-small;
+  FONT-WEIGHT: bold; }
+/* Color of Page */
+.PPPageBG
+{ BACKGROUND-COLOR: #ffffff; }
+/* Color of module border */
+.PPModuleBrd
+{ BACKGROUND-COLOR: #0033cc; }
+/* Color of module title table */
+.PPModuleTtlTbl
+{ BACKGROUND-COLOR: #0033cc; }
+/* Text style of module title text */
+.PPModuleTtlTxt
+{ COLOR: #ffffff;
+  FONT-FAMILY: Arial, Helvetica, sans-serif;
+  FONT-SIZE: medium;
+  FONT-WEIGHT: normal; }
+/* Text style of descriptive text. */
+.PPDesTxt
+{ COLOR: #000000;
+  FONT-FAMILY: Arial, Helvetica, sans-serif;
+  FONT-SIZE: x-small; }
+.PPDesTxt A
+{ COLOR: #0000ff;
+  FONT-SIZE: x-small;
+  TEXT-DECORATION: underline; }
+/* Text style of module help link */
+.PPHelpTxt A
+{ COLOR: #0000ff;
+  FONT-FAMILY: Arial, Helvetica, sans-serif;
+  FONT-SIZE: x-small;
+  TEXT-DECORATION: underline;
+  FONT-WEIGHT: bold; }
+/* Text style forma
+U/A,
+dth="454" height="1"></td>
+	</tr>
+</table>
+<noscript>
+</td></tr></table></center>
+</noscript>
+<script language="JavaScript"><!-- //
+if (PPCBBodyPost) { document.write(PPCBBodyPost); }		
+// --></script>
+</body>
+</html>
+                    
+WS,~
+U/AX(
+HTTP/1.1 200 OK
+Content-Length: 3638
+Content-Type: text/css
+Last-Modified: Tue, 29 Jun 2004 22:49:29 GMT
+Accept-Ranges: bytes
+ETag: "62efea552b5ec41:4e5"
+Server: Microsoft-IIS/6.0
+PPServer: H: BAYPPLOGU2B05
+Date: Fri, 27 Aug 2004 15:40:14 GMT
+Connection: close
+/* Color of Footer Area */
+.PPFooterTbl
+{ BACKGROUND-COLOR: #ffffff; }
+/* Color of line break */
+.PPLineBreak
+{ BACKGROUND-COLOR: #999999; }
+/* Color of dynamic table */
+.PPDynamicTbl
+{ BACKGROUND-COLOR: #eeeee2; }
+/* Color of "Don't have a Passport" Area */
+.PPNoPassportTbl
+{ BACKGROUND-COLOR: #e2e1d8; }
+/* Text style of footer text */
+.PPFooterTxt
+{ COLOR: #000000;
+  FONT-FAMILY: Arial, Helvetica, sans-serif;
+  FONT-SIZE: xx-small; }
+.PPFooterTxt A
+{ COLOR: #0000ff;
+  FONT-SIZE: xx-small;
+  TEXT-DECORATION: underline; }
+/* Color of Security Key Input Fields */
+.PPSecKeyBdr
+{ BORDER-STYLE: solid;
+  BORDER-WIDTH: 1px;
+  BORDER-COLOR: #000000; }
+/* Text style formating of the field label. */
+.PPLabel
+{ COLOR: #000000;
+  FONT-FAMILY: Verdana, Helvetica, sans-serif;
+  FONT-SIZE: xx-small;
+  FONT-WEIGHT: bold; }
+/* Text style of module help link */
+.PPHelp A
+{ COLOR: #ffffff;
+  FONT-FAMILY: verdana,arial,helvetica,sans-serif;
+  FONT-SIZE: xx-small;
+  TEXT-DECORATION: underline;
+  FONT-WEIGHT: bold; }
+/* Text style of small help text. */
+.PPHelpText
+{ COLOR: #000000;
+  FONT-FAMILY: Arial, Helvetica, sans-serif;
+  FONT-SIZE:
+dth="4
+ting of the field label. */
+.PPRLabelText
+{ COLOR: #000000;
+  FONT-FAMILY: Verdana, Helvetica, sans-serif;
+  FONT-SIZE: xx-small;
+  FONT-WEIGHT: bold; }
+/* Text style formating of the input box. */
+.PPRField
+{ COLOR: #000000;
+  FONT-FAMILY: Arial, Helvetica, sans-serif;
+  FONT-SIZE: x-small;
+  BACKGROUND-COLOR: #ffffff; }
+/* Text style and color of Help Text area. */
+.PPHelpTextArea
+{ COLOR: #000000;
+  FONT-FAMILY: Arial, Helvetica, sans-serif;
+  FONT-SIZE: xx-small; }
+.PPHelpTextArea A
+{ COLOR: #0000ff;
+  FONT-FAMILY: Arial, Helvetica, sans-serif;
+  FONT-SIZE: xx-small; }
+/* Text style formating of the field label. */
+.PPSmallDesText
+{ COLOR: #000000;
+  FONT-FAMILY: Verdana, Helvetica, sans-serif;
+  FONT-SIZE: xx-small; }
+.PPSmallDesText A
+{ COLOR: #0000ff;
+  FONT-FAMILY: Verdana, Helvetica, sans-serif;
+  FONT-SIZE: xx-small;
+  FONT-WEIGHT: bold;
+  TEXT-DECORATION: underline; }
+/* Set the background color of the page.*/
+BODY
+{  BACKGROUND-COLOR: #ffffff; }
+r a re
+U/AaY
+P/1.1
+U/A>
+U/A*
+U/Am
+GET /scripts/cobrandcss.asp?PP_PAGE=ppLogout&lid=1033 HTTP/1.1
+Accept: */*
+UA-OS: Windows CE (Pocket PC) - Version 4.20
+UA-color: color16
+UA-pixels: 240x320
+UA-CPU: Intel(R) PXA255
+UA-Voice: FALSE
+Referer: http://login.passport.net/uilogout.srf?lc=1033&id=961&ru=http%3a%2f%2fmobile.msn.com%2fscripts%2flogoutgif.asp%3fru%3d%2f&tw=14400&kv=5&ct=1093621085&ems=1&ver=2.5.1016.0&tpf=e5d150bc02380575db2ca2981ca00dea
+UA-Language: JavaScript
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)
+Host: mobile.msn.com
+Connection: Keep-Alive
+Cookie: lc=en-US; cr=1; MSPAuth=5vuMneQNFDh0sFVrAbKrt*q6edOGfSSmKzi3lT1CIh6FdbNqQyPyqubrB97DYRuoTwoA5kp1iTd3eTZ3TUiZ45LQ$$; MSPProf=5ynNj8z2mEi3KQzUnhBOK5dmrXWUam5W2H3bXqJgZE5uFZ7OFVIdTd8rwZLZfLhhQB8q*Sto5O8d!UJp8ulXjB5g4RJME!*WBUVqwsUvAh8UuflyJMTMQt*6C4vjOyvqgDT5F!XAMjAg0!vkXYwzhbCkVlAO1b2zXMjlXnmPnOpETgsIPX0coWMQ$$
+HTTP/1.1 200 OK
+Server: Microsoft-IIS/5.0
+Date: Fri, 27 Aug 2004 15:40:18 GMT
+X-Powered-By: ASP.NET
+P3P: CP="BUS CUR CONo FIN IVDo ONL OUR PHY SAMo TELo"
+Content-Length: 59
+Content-Type: text/html
+Cache-control: private
+Expires: -1
+ xx-sm
+.clSigninBackground
+    BACKGROUND-COLOR: #D6DFEF;
+GET /s
+U/Aa
+U/AV
+ xx-sm
+U/Att
+GET /scripts/cobrand.asp?PP_PAGE=ppLogout&lid=1033 HTTP/1.1
+Accept: */*
+UA-OS: Windows CE (Pocket PC) - Version 4.20
+UA-color: color16
+UA-pixels: 240x320
+UA-CPU: Intel(R) PXA255
+UA-Voice: FALSE
+Referer: http://login.passport.net/uilogout.srf?lc=1033&id=961&ru=http%3a%2f%2fmobile.msn.com%2fscripts%2flogoutgif.asp%3fru%3d%2f&tw=14400&kv=5&ct=1093621085&ems=1&ver=2.5.1016.0&tpf=e5d150bc02380575db2ca2981ca00dea
+UA-Language: JavaScript
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)
+Host: mobile.msn.com
+Connection: Keep-Alive
+Cookie: lc=en-US; cr=1; MSPAuth=5vuMneQNFDh0sFVrAbKrt*q6edOGfSSmKzi3lT1CIh6FdbNqQyPyqubrB97DYRuoTwoA5kp1iTd3eTZ3TUiZ45LQ$$; MSPProf=5ynNj8z2mEi3KQzUnhBOK5dmrXWUam5W2H3bXqJgZE5uFZ7OFVIdTd8rwZLZfLhhQB8q*Sto5O8d!UJp8ulXjB5g4RJME!*WBUVqwsUvAh8UuflyJMTMQt*6C4vjOyvqgDT5F!XAMjAg0!vkXYwzhbCkVlAO1b2zXMjlXnmPnOpETgsIPX0coWMQ$$
+U/A3G
+U/A&{
+HTTP/1.1 302 Object moved
+Server: Microsoft-IIS/5.0
+Date: Fri, 27 Aug 2004 15:40:19 GMT
+X-Powered-By: ASP.NET
+P3P: CP="BUS CUR CONo FIN IVDo ONL OUR PHY SAMo TELo"
+Location: /passport/cobrand.asp?PP_PAGE=ppLogout&lid=1033
+Content-Length: 121
+Content-Type: text/html
+Cache-control: private
+Expires: -1
+U/A)
+U/ABD
+<head><title>Object moved</title></head>
+<body><h1>Object Moved</h1>This object may be found <a HREF="">here</a>.</body>
+~N=7
+GET /passport/cobrand.asp?PP_PAGE=ppLogout&lid=1033 HTTP/1.1
+Accept: */*
+UA-OS: Windows CE (Pocket PC) - Version 4.20
+UA-color: color16
+UA-pixels: 240x320
+UA-CPU: Intel(R) PXA255
+UA-Voice: FALSE
+Referer: http://login.passport.net/uilogout.srf?lc=1033&id=961&ru=http%3a%2f%2fmobile.msn.com%2fscripts%2flogoutgif.asp%3fru%3d%2f&tw=14400&kv=5&ct=1093621085&ems=1&ver=2.5.1016.0&tpf=e5d150bc02380575db2ca2981ca00dea
+UA-Language: JavaScript
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)
+Host: mobile.msn.com
+Connection: Keep-Alive
+Cookie: lc=en-US; cr=1; MSPAuth=5vuMneQNFDh0sFVrAbKrt*q6edOGfSSmKzi3lT1CIh6FdbNqQyPyqubrB97DYRuoTwoA5kp1iTd3eTZ3TUiZ45LQ$$; MSPProf=5ynNj8z2mEi3KQzUnhBOK5dmrXWUam5W2H3bXqJgZE5uFZ7OFVIdTd8rwZLZfLhhQB8q*Sto5O8d!UJp8ulXjB5g4RJME!*WBUVqwsUvAh8UuflyJMTMQt*6C4vjOyvqgDT5F!XAMjAg0!vkXYwzhbCkVlAO1b2zXMjlXnmPnOpETgsIPX0coWMQ$$
+HTTP/1.1 200 OK
+Server: Microsoft-IIS/5.0
+Date: Fri, 27 Aug 2004 15:40:20 GMT
+X-Powered-By: ASP.NET
+P3P: CP="BUS CUR CONo FIN IVDo ONL OUR PHY SAMo TELo"
+Content-Length: 3131
+Content-Type: application/x-javascript
+Cache-control: private
+Expires: -1
+    CBLoginBody = "<script type='text/javascript' src='http://sc.msn.com/global/scr/lg/hdr35.js'>&nbsp;</script>";
+    CBLoginBody += "<STYLE>";
+    CBLoginBody += "table {font-family:tahoma, sans-serif;color:black}";
+    CBLoginBody += "a {text-decoration:none}";
+    CBLoginBody += "a:visited {text-decoration:none}";
+    CBLoginBody += "a:hover {text-decoration:underline}";
+    CBLoginBody += ".terms {color:white}";
+    CBLoginBody += ".sf {color:white}";
+    CBLoginBody += ".sf a{color:white}";
+    CBLoginBody += ".sfr {font-size:1px}";
+    CBLoginBody += ".body {background:#1A60A8}";
+    CBLoginBody += ".sfl {font-size:24px;border-bottom: 1px solid #3E9DDA;white-space:nowrap}";
+    CBLoginBody += ".sfm {border-bottom: 1px solid #83C5EE}";
+    CBLoginBody += ".sflb {font-size:1px;background:#2A79BA;border-bottom: 1px solid #83C5EE}";
+    CBLoginBody += ".sfi {background:#0F669F;background-image:url(http://sc.msn.com/global/c/sf/sfg_mb.gif);border-bottom:1px solid #87B3D0;border-top:1px solid #3E9DDA;border-right:1px solid #0C5280;padding:0px 0px 9px 0px;}";
+    CBLoginBody += ".terms td {border-top-width:1px;border-top-color:#5F90C2;border-top-style:solid}";
+    CBLoginBody += "</STYLE>";
+    CBLoginBody += "<table width='100%' height='100%' cellpadding='0' cellspacing='0' valign='top' class='body'>";
+    CBLoginBody += "<tr><td width='100%' valign='top'>";
+    CBLoginBody += "<table width='779
+U/A.w
+U/A4
+' cellpadding='0' cellspacing='0' class='sf'>";
+    CBLoginBody += "<tr>";
+    CBLoginBody += "<td rowspan='2' width='118' class='sfl'><a href='http://go.msn.com/AC/1/'>";
+    CBLoginBody += "<img src='http://sc.msn.com/global/c/lg/TESE_118x35.gif' width='118' height='35' border='0' />";
+    CBLoginBody += "</a></td>";
+    CBLoginBody += "<td rowspan='2' width='*' class='sfl' valign='bottom'><a href='http://mobile.msn.com'>Mobile</a></td>";
+    CBLoginBody += "<td rowspan='3' width='113' class='sfm'><img src='http://sc.msn.com/global/c/sf/sf_mb.jpg' width='113' height='44' border='0'></td>";
+    CBLoginBody += "<td width='458' class='sfr'>&nbsp;</td>";
+    CBLoginBody += "<td height='10'></td>";
+    CBLoginBody += "</tr>";
+    CBLoginBody += "<tr>";
+    CBLoginBody += "<td rowspan='2' class='sfi' valign='bottom' align='right'>&nbsp;</td>";
+    CBLoginBody += "<td height='26'></td>";
+    CBLoginBody += "</tr>";
+    CBLoginBody += "<tr>";
+    CBLoginBody += "<td colspan='2' class='sflb'>&nbsp;</td>";
+    CBLoginBody += "<td height='9'></td>";
+    CBLoginBody += "</tr>";
+    CBLoginBody += "</table>";
+    CBLoginBody += "<TABLE width='779' cellpadding='0' cellspacing='0'><tr><td background='http://mobile.msn.com/content/images/img_PassportBackground.gif' width='779' height='422' align='center'>PASSPORT_UI</td></tr></table>";
+    CBLoginBody += "<table width='779' height='10' cellpadding='0' cellspacing
+U/Au
+='0' class='terms'>";
+    CBLoginBody += "<tr><td height='10' width='118' class='sflb'>&nbsp;</td></tr></table>";
+    CBLoginBody += "</td></tr></table>";
+    CBLogo = "http://mobile.msn.com/images/ppcobrandimage.gif";
+U/A<
+GET /s
+U/A}
+.clSig
+U/A,O
+IRC9
+='0' c
+GET /images/ppcobrandimage.gif HTTP/1.1
+Accept: */*
+UA-OS: Windows CE (Pocket PC) - Version 4.20
+UA-color: color16
+UA-pixels: 240x320
+UA-CPU: Intel(R) PXA255
+UA-Voice: FALSE
+Referer: http://login.passport.net/uilogout.srf?lc=1033&id=961&ru=http%3a%2f%2fmobile.msn.com%2fscripts%2flogoutgif.asp%3fru%3d%2f&tw=14400&kv=5&ct=1093621085&ems=1&ver=2.5.1016.0&tpf=e5d150bc02380575db2ca2981ca00dea
+UA-Language: JavaScript
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)
+Host: mobile.msn.com
+Connection: Keep-Alive
+Cookie: lc=en-US; cr=1; MSPAuth=5vuMneQNFDh0sFVrAbKrt*q6edOGfSSmKzi3lT1CIh6FdbNqQyPyqubrB97DYRuoTwoA5kp1iTd3eTZ3TUiZ45LQ$$; MSPProf=5ynNj8z2mEi3KQzUnhBOK5dmrXWUam5W2H3bXqJgZE5uFZ7OFVIdTd8rwZLZfLhhQB8q*Sto5O8d!UJp8ulXjB5g4RJME!*WBUVqwsUvAh8UuflyJMTMQt*6C4vjOyvqgDT5F!XAMjAg0!vkXYwzhbCkVlAO1b2zXMjlXnmPnOpETgsIPX0coWMQ$$
+BrA6
+HTTP/1
+U/A3
+GET /images/trans_pixel.gif HTTP/1.1
+Accept: */*
+UA-OS: Windows CE (Pocket PC) - Version 4.20
+UA-color: color16
+UA-pixels: 240x320
+UA-CPU: Intel(R) PXA255
+UA-Voice: FALSE
+Referer: http://login.passport.net/uilogout.srf?lc=1033&id=961&ru=http%3a%2f%2fmobile.msn.com%2fscripts%2flogoutgif.asp%3fru%3d%2f&tw=14400&kv=5&ct=1093621085&ems=1&ver=2.5.1016.0&tpf=e5d150bc02380575db2ca2981ca00dea
+UA-Language: JavaScript
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)
+Host: login.passport.net
+Connection: Keep-Alive
+Cookie: MSPRequ=lt=1093620869&co=1&id=961; MSPVis=961
+IRC9
+IRC9
+HTTP/1.1 200 OK
+Server: Microsoft-IIS/5.0
+X-Powered-By: ASP.NET
+P3P:CP="BUS CUR CONo FIN IVDo ONL OUR PHY SAMo TELo"
+Cache-Control: max-age=604800
+Expires: Fri, 03 Sep 2004 15:40:19 GMT
+Date: Fri, 27 Aug 2004 15:40:19 GMT
+Content-Type: image/gif
+Accept-Ranges: bytes
+Last-Modified: Thu, 20 May 2004 01:47:12 GMT
+ETag: "0508c5ec3ec41:8eb"
+Content-Length: 2707
+GIF89a
+33333f33
+f33f3ff3
+3f33ff3f
+ff3fffff
+([yY
+aKu^]*
+YAw+5
+U/A?
+IRC?
+QdM)PzB
+z\cM
+`jGy
+08B1
+[YJk
+PH1[
+D}IR
+1p0o
+>B80
+1b6TU
+mMT_A
+ETe8
+P;d^
+0f5n
+S{Q*
+H|1)
+RCE/P
+GET /i
+<EA6
+HTTP/1.1 404 Not Found
+Content-Length: 1886
+Content-Type: text/html
+Server: Microsoft-IIS/6.0
+PPServer: H: BAYPPLOGU2B08
+Date: Fri, 27 Aug 2004 15:40:20 GMT
+Connection: close
+<html>
+<head>
+<meta http-equiv=PICS-Label content='(PICS-1.1 "http://www.rsac.org/ratingsv01.html" l comment "RSACi North America Server" by "inet@microsoft.com" r (n 0 s 0 v 0 l 0))'>
+</head>
+<body leftmargin="0" bgcolor="#FFFFFF" text="#000000" link="#000000" vlink="#000000" alink="#000000">
+&nbsp;&nbsp;&nbsp;<a href="http://www.passport.com"><img src="http://www.passportimages.com/1033/PassportLogo140x44.gif" border="0" width="140" height="44" alt="Go to www.passport.com"></a>
+<br><br><br>
+<table cellpadding="0" cellspacing="0" border="0" bgcolor="#666699" width="100%" height="50">
+   <tr>
+       <td width="25%"></td>
+       <td align="left" valign="center"><font face="arial,sans serif" size="4" color="#FFFFFF">We're
+           sorry, but the page you're trying to reach is temporarily unavailable or the page may no
+           longer exist.</font></td>
+       <td width="20"></td>
+   </tr>
+</table>
+<br>
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+   <tr>
+       <td width="25%"></td>
+       <td><font face="arial,sans serif" size="2">Please try one of the following:
+           <ul>
+               <li>Click the <b>Refresh</b> button on your browser toolbar to try reconnecting.
+               <li>Check the sp
+U/A?
+elling of the URL to make sure the address is
+               correct (capitalization and punctuation are important) and then
+               click your <b>Refresh</b> button.
+               <li>Click the <b>Back</b> button on your browser toolbar to return to the previous page.
+               <li>Go to the <a href="http://www.passport.com">Passport home page</a>.
+               <li>Go to <a href="http://www.passport.com/memberservices.asp">Passport Member Services</a>.
+           </ul></font></td>
+       <td width="20"></td>
+   </tr>
+</table>
+<!-- H: BAYPPLOGU2B08-->
+<!-- I: 404-->
+</body>
+</html>
+RCE/P
+GET /i
+IRCE/
+oN<&'
+6?	zav-
+U/AQ
+HTTP/1
+U/AZ
+GET /i
+HTTP/1
+U/A}
+U/A4
+U/A1
+GET /images/T.gif HTTP/1.1
+Accept: */*
+UA-OS: Windows CE (Pocket PC) - Version 4.20
+UA-color: color16
+UA-pixels: 240x320
+UA-CPU: Intel(R) PXA255
+UA-Voice: FALSE
+Referer: http://login.passport.net/uilogout.srf?lc=1033&id=961&ru=http%3a%2f%2fmobile.msn.com%2fscripts%2flogoutgif.asp%3fru%3d%2f&tw=14400&kv=5&ct=1093621085&ems=1&ver=2.5.1016.0&tpf=e5d150bc02380575db2ca2981ca00dea
+UA-Language: JavaScript
+Accept-Encoding: gzip, deflate
+If-Modified-Since: Tue, 29 Jun 2004 22:49:32 GMT
+If-None-Match: "9e26e9572b5ec41:3fe"
+User-Agent: Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)
+Host: login.passport.net
+Connection: Keep-Alive
+Cookie: MSPRequ=lt=1093620869&co=1&id=961; MSPVis=961
+HTTP/1
+GET /images/yellow.gif HTTP/1.1
+Accept: */*
+UA-OS: Windows CE (Pocket PC) - Version 4.20
+UA-color: color16
+UA-pixels: 240x320
+UA-CPU: Intel(R) PXA255
+UA-Voice: FALSE
+Referer: http://login.passport.net/uilogout.srf?lc=1033&id=961&ru=http%3a%2f%2fmobile.msn.com%2fscripts%2flogoutgif.asp%3fru%3d%2f&tw=14400&kv=5&ct=1093621085&ems=1&ver=2.5.1016.0&tpf=e5d150bc02380575db2ca2981ca00dea
+UA-Language: JavaScript
+Accept-Encoding: gzip, deflate
+If-Modified-Since: Tue, 29 Jun 2004 22:49:32 GMT
+If-None-Match: "9e26e9572b5ec41:4c7"
+User-Agent: Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)
+Host: login.passport.net
+Connection: Keep-Alive
+Cookie: MSPRequ=lt=1093620869&co=1&id=961; MSPVis=961
+HTTP/1.1 200 OK
+Cache-Control: max-age=1296000
+Content-Length: 43
+Content-Type: image/gif
+Last-Modified: Tue, 29 Jun 2004 22:49:32 GMT
+Accept-Ranges: bytes
+ETag: "9e26e9572b5ec41:3aa"
+Server: Microsoft-IIS/6.0
+PPServer: H: BAYPPLOGU2A04
+Date: Fri, 27 Aug 2004 15:40:21 GMT
+Connection: close
+GIF89a
+U/AR$
+U/A]`
+HTTP/1.1 200 OK
+Cache-Control: max-age=1296000
+Content-Length: 44
+Content-Type: image/gif
+Last-Modified: Tue, 29 Jun 2004 22:49:32 GMT
+Accept-Ranges: bytes
+ETag: "9e26e9572b5ec41:704"
+Server: Microsoft-IIS/6.0
+PPServer: H: BAYPPLOGU2A03
+Date: Fri, 27 Aug 2004 15:40:20 GMT
+Connection: close
+GIF89a
+GET /i
+U/A@/	
+\UA6
+GET /1033/dotnetlogoBIG.gif HTTP/1.1
+Accept: */*
+UA-OS: Windows CE (Pocket PC) - Version 4.20
+UA-color: color16
+UA-pixels: 240x320
+UA-CPU: Intel(R) PXA255
+UA-Voice: FALSE
+Referer: http://login.passport.net/uilogout.srf?lc=1033&id=961&ru=http%3a%2f%2fmobile.msn.com%2fscripts%2flogoutgif.asp%3fru%3d%2f&tw=14400&kv=5&ct=1093621085&ems=1&ver=2.5.1016.0&tpf=e5d150bc02380575db2ca2981ca00dea
+UA-Language: JavaScript
+Accept-Encoding: gzip, deflate
+If-Modified-Since: Tue, 01 Jun 2004 05:54:54 GMT
+If-None-Match: "42ed48f69c47c41:d93"
+User-Agent: Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)
+Host: www.passportimages.com
+Connection: Keep-Alive
+U/A>
+\+A6
+GET /i
+GET /1033/signout_good.gif HTTP/1.1
+Accept: */*
+UA-OS: Windows CE (Pocket PC) - Version 4.20
+UA-color: color16
+UA-pixels: 240x320
+UA-CPU: Intel(R) PXA255
+UA-Voice: FALSE
+Referer: http://login.passport.net/uilogout.srf?lc=1033&id=961&ru=http%3a%2f%2fmobile.msn.com%2fscripts%2flogoutgif.asp%3fru%3d%2f&tw=14400&kv=5&ct=1093621085&ems=1&ver=2.5.1016.0&tpf=e5d150bc02380575db2ca2981ca00dea
+UA-Language: JavaScript
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)
+Host: www.passportimages.com
+Connection: Keep-Alive
+Apm.
+U/Af
+HTTP/1.1 304 Not Modified
+Server: Microsoft-IIS/5.0
+Date: Fri, 27 Aug 2004 15:40:21 GMT
+PPServer: H: BAYPPIMG2B01
+Cache-Control: max-age=1296000
+Expires: Sat, 11 Sep 2004 15:40:21 GMT
+Connection: close
+ETag: "42ed48f69c47c41:d93"
+Content-Length: 0
+Apl*
+U/A\
+U/A%
+GET /1
+U/A*
+HTTP/1.1 200 OK
+Server: Microsoft-IIS/5.0
+PPServer: H: BAYPPIMG2B01
+Cache-Control: max-age=1296000
+Expires: Sat, 11 Sep 2004 15:40:22 GMT
+Connection: close
+Date: Fri, 27 Aug 2004 15:40:22 GMT
+Content-Type: image/gif
+Accept-Ranges: bytes
+Last-Modified: Tue, 01 Jun 2004 05:54:54 GMT
+ETag: "96d773f69c47c41:d93"
+Content-Length: 143
+GIF89a
+ $Xqa
+pIQaL
+$  %L
+GET /i
+U/AP
+U/Adt
+GET /1033/signout_bad.gif HTTP/1.1
+Accept: */*
+UA-OS: Windows CE (Pocket PC) - Version 4.20
+UA-color: color16
+UA-pixels: 240x320
+UA-CPU: Intel(R) PXA255
+UA-Voice: FALSE
+Referer: http://login.passport.net/uilogout.srf?lc=1033&id=961&ru=http%3a%2f%2fmobile.msn.com%2fscripts%2flogoutgif.asp%3fru%3d%2f&tw=14400&kv=5&ct=1093621085&ems=1&ver=2.5.1016.0&tpf=e5d150bc02380575db2ca2981ca00dea
+UA-Language: JavaScript
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)
+Host: www.passportimages.com
+Connection: Keep-Alive
+U/Ayp
+GET /scripts/logoutgif.asp?ct=1093621215 HTTP/1.1
+Accept: */*
+UA-OS: Windows CE (Pocket PC) - Version 4.20
+UA-color: color16
+UA-pixels: 240x320
+UA-CPU: Intel(R) PXA255
+UA-Voice: FALSE
+Referer: http://login.passport.net/uilogout.srf?lc=1033&id=961&ru=http%3a%2f%2fmobile.msn.com%2fscripts%2flogoutgif.asp%3fru%3d%2f&tw=14400&kv=5&ct=1093621085&ems=1&ver=2.5.1016.0&tpf=e5d150bc02380575db2ca2981ca00dea
+UA-Language: JavaScript
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)
+Host: mobile.msn.com
+Connection: Keep-Alive
+Cookie: lc=en-US; cr=1; MSPAuth=5vuMneQNFDh0sFVrAbKrt*q6edOGfSSmKzi3lT1CIh6FdbNqQyPyqubrB97DYRuoTwoA5kp1iTd3eTZ3TUiZ45LQ$$; MSPProf=5ynNj8z2mEi3KQzUnhBOK5dmrXWUam5W2H3bXqJgZE5uFZ7OFVIdTd8rwZLZfLhhQB8q*Sto5O8d!UJp8ulXjB5g4RJME!*WBUVqwsUvAh8UuflyJMTMQt*6C4vjOyvqgDT5F!XAMjAg0!vkXYwzhbCkVlAO1b2zXMjlXnmPnOpETgsIPX0coWMQ$$
+U/AZ
+U/Ah
+HTTP/1.1 200 OK
+Server: Microsoft-IIS/5.0
+PPServer: H: BAYPPIMG2B02
+Cache-Control: max-age=1296000
+Expires: Sat, 11 Sep 2004 15:40:22 GMT
+Connection: close
+Date: Fri, 27 Aug 2004 15:40:22 GMT
+Content-Type: image/gif
+Accept-Ranges: bytes
+Last-Modified: Wed, 21 Apr 2004 06:32:14 GMT
+ETag: "e0e43a626a27c41:ead"
+Content-Length: 191
+GIF89a
+U/Av
+HTTP/1.1 200 OK
+Server: Microsoft-IIS/5.0
+Date: Fri, 27 Aug 2004 15:40:22 GMT
+X-Powered-By: ASP.NET
+P3P:CP="BUS CUR CONo FIN IVDo ONL OUR PHY SAMo TELo"
+Set-Cookie: MSPProf=%20;path=/;domain=.msn.com;expires=Tue, 01-Jan-1980 00:00:00 GMT
+Set-Cookie: MSPAuth=%20;path=/;domain=.msn.com;expires=Tue, 01-Jan-1980 00:00:00 GMT
+Set-Cookie: MobileProf=%20;path=/;domain=.msn.com;expires=Tue, 01-Jan-1980 00:00:00 GMT
+Set-Cookie: HMSC0899=%20;path=/;domain=.msn.com;expires=Tue, 01-Jan-1980 00:00:00 GMT
+Content-Length: 88
+Content-Type: image/gif
+Expires: Fri, 27 Aug 2004 15:39:22 GMT
+Set-Cookie: MOBILE%5FAUTHTICKET=+; expires=Thu, 01-Jan-1998 08:00:00 GMT; path=/
+Set-Cookie: Admin=UserID=+; expires=Thu, 01-Jan-1998 08:00:00 GMT; path=/
+Set-Cookie: cr=+; expires=Tue, 01-Jan-1980 08:00:00 GMT; path=/
+Cache-control: private
+GET /s
+U/A$
+GIF89a
+U/A}
+U/Ae
+U/AU
+GET / HTTP/1.1
+Accept: */*
+UA-OS: Windows CE (Pocket PC) - Version 4.20
+UA-color: color16
+UA-pixels: 240x320
+UA-CPU: Intel(R) PXA255
+UA-Voice: FALSE
+UA-Language: JavaScript
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)
+Host: mobile.msn.com
+Connection: Keep-Alive
+Cache-Control: no-cache
+Cookie: lc=en-US
+U/A)
+HTTP/1.1 200 OK
+Server: Microsoft-IIS/5.0
+Date: Fri, 27 Aug 2004 15:40:23 GMT
+X-Powered-By: ASP.NET
+P3P: CP="BUS CUR CONo FIN IVDo ONL OUR PHY SAMo TELo"
+Set-Cookie: cr=1; path=/
+Cache-Control: private
+Content-Type: text/html; charset=utf-8
+Content-Length: 6961
+Expires: -1
+<html>
+<head>
+<title>MSN Mobile</title>
+</head>
+<style>.text {font-family:Tahoma;font-size:11px;color:#000080;}A {color:#0000FF;}A:Hover {text-decoration:none;}A.header {color:#000080;}A.header:Hover {text-decoration:underline;}.header {font-family:Tahoma;font-size:11px;color:#000080;font-weight:bold;}.columnheader {font-family:Tahoma;font-size:11px;font-weight:bold;color:#FFFFFF;}.title {font-family:Tahoma;font-size:11px;color:#000080;font-weight:bold;}.footer {font-family:Tahoma;font-size:9px;color:#000080;}.toolbar {font-family:Tahoma;font-size:11px;font-weight:bold;color:#000080}A.toolbar {text-decoration:none;}A.toolbar:Hover {color:#0000FF;text-decoration:underline;}.button {font-family:Tahoma, sans-serif;font-size:11px;background: #D6E7EF;border-bottom: 1px solid #104A7B;border-right: 1px solid #104A7B;border-left: 1px solid #AFC4D5;border-top:1px solid #AFC4D5;color:#000000;height:19px;text-decoration:none;cursor:hand;font-weight:noraml}.input {font-family:Tahoma, sans-serif;font-size:11px;border-bottom: 1px solid #104A7B;border-right: 1px solid #104A7B;border-left: 1px solid #AFC4D5;border-top:1px solid #AFC4D5;color:#000000;height:19p
+U/A~
+x;text-decoration:none;font-weight:noraml}.checkbox {font-family:Tahoma, sans-serif;font-size:11px;color:#000000;text-decoration:none;font-weight:noraml}.textarea {font-family:Tahoma, sans-serif;font-size:11px;border-bottom: 1px solid #104A7B;border-right: 1px solid #104A7B;border-left: 1px solid #AFC4D5;border-top:1px solid #AFC4D5;color:#000000;text-decoration:none;font-weight:noraml}TABLE.Mtable TD {border-bottom:solid #93BEE2 1px; }TABLE.Mtable TR.H	{BACKGROUND-COLOR: #C3D6E6}</style><body leftmargin="0" rightmargin="0" topmargin="0" bottommargin="0">
+<form id="MenuForm" name="MenuForm" method="post" action="default.aspx?__ufps=535636">
+<input type="hidden" name="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" value="">
+<script language=javascript><!--
+function __doPostBack(target, argument){
+  var theform = document.MenuForm
+  theform.__EVENTTARGET.value = target
+  theform.__EVENTARGUMENT.value = argument
+  theform.submit()
+// -->
+</script>
+<table border=0 cellpadding=0 cellspacing=0 width=240 bgcolor="#336699"><tr><td></td></tr></table>
+                    <!-- Begin Header -->
+                    <table width="240" border="0" cellpadding="0" cellspacing="0" bgcolor="#D6E3EF">
+                    <tr><td width="100%" height="1" align="left"></td></tr>
+                    </table>
+                    <table width="240" border="0" cellpadding="0" cellspacing="0" bgcolor="#336699">
+U/A@
+                  <tr><td width="85" height="30"><a href="/pocketpc/menu.aspx"><img src="/content/images/img_ppc_sharkfin_MSNLogo.gif" alt="MSN" border="0"></a></td>
+                    <td align="right"><font color='white'><b><A HREF="http://mobile.msn.com/pocketpc/default.aspx?msppchlg=1&mspplogin=http://login.passport.com/login.srf%3Flc%3D1033%26id%3D961%26ru%3Dhttp%253a%252f%252fmobile.msn.com%252fpocketpc%252fdefault.aspx%26tw%3D14400%26kv%3D5%26ct%3D1093621223%26ns%3Dhotmail.com%26ver%3D2.5.1016.0%26tpf%3D45ab41b989db44e211b719cbf6dc7b97"><IMG SRC="http://www.passportimages.com/1033/signin.gif" CLASS="PassportSignIn" BORDER="0" ALT="Sign in with your .NET Passport"/></A></b></font></td></tr>
+                    </table>
+                    <table width="240" border="0" cellpadding="0" cellspacing="0" bgcolor="#D6E3EF">
+                    <tr><td width="100%" height="1" align="left"></td></tr>
+                    </table>
+                    <table width="240" border="0" cellpadding="0" cellspacing="0" bgcolor="#99CCFF">
+                    <tr><td width="100%" height="20" align="left"><a title="MSN Mobile" href="/pocketpc/default.aspx"><font color='white' face="Arial, Verdana"><b>MSN Mobile</b></font></a></td></tr>
+                    </table>
+                    <!-- End Header -->
+                
+                        <table width="100%" border="0" cellpadding="2" cellspacing="0">
+                    
+U/AS
+GET /s
+                        <tr><td valign="top" align="center" width="30"><img src="/images/ppc/msn/IconHotmail.gif" alt=">" border="0" /></td>
+                        <td><a href="/hm/folder.aspx"><font size="-1"><b>MSN Hotmail</b></font></a></td></tr>
+                    
+                        <tr><td valign="top" align="center" width="30"><img src="/images/ppc/msn/IconMapPoint.gif" alt=">" border="0" /></td>
+                        <td><a href="/maps/maps.aspx"><font size="-1"><b>Maps &amp; Directions</b></font></a></td></tr>
+                    
+                        <tr><td valign="top" align="center" width="30"><img src="/content/images/ppc_winmedia.gif" alt=">" border="0" /></td>
+                        <td><a href="http://windowsmedia.com/mobile"><font size="-1"><b>WindowsMedia.com</b></font></a></td></tr>
+                    
+                        <tr><td valign="top" align="center" width="30"><img src="/content/images/ppc_money.gif" alt=">" border="0" /></td>
+                        <td><a href="http://usmoneymobile.msn.com"><font size="-1"><b>Money</b></font></a></td></tr>
+                    
+                        <tr><td valign="top" align="center" width="30"><img src="/content/images/ppc_news.gif" alt=">" border="0" /></td>
+                        <td><a href="/pocketpc/default.aspx/News/"><font size="-1"><b>News</b></font></a></td></tr>
+                    
+                        <tr><td valig
+n="top" align="center" width="30"><img src="/content/images/ppc_weather.gif" alt=">" border="0" /></td>
+                        <td><a href="/pocketpc/weather.asp"><font size="-1"><b>Weather</b></font></a></td></tr>
+                    
+                        <tr><td valign="top" align="center" width="30"><img src="/content/images/ppc_sports.gif" alt=">" border="0" /></td>
+                        <td><a href="http://pocket.espn.go.com/"><font size="-1"><b>Sports (ESPN)</b></font></a></td></tr>
+                    
+                        <tr><td valign="top" align="center" width="30"><img src="/content/images/ppc_entertainment.gif" alt=">" border="0" /></td>
+                        <td><a href="/pocketpc/default.aspx/Entertainment/"><font size="-1"><b>Entertainment</b></font></a></td></tr>
+                    
+                        </table>
+                    
+                <hr size="1" noshade>
+                <font size="1"><br/></font>
+                <p align="center"><font size="1" face="Arial, Verdana">
+                    &copy; 2003 Microsoft Corp. All rights reserved.&nbsp;
+                    &nbsp;
+                    <br>
+                    <a href="http://go.msn.com/ad/4/">Terms Of Use</a>&nbsp;
+                    <a href="http://go.msn.com/ac/6/">Privacy Statement</a>
+                    <!-- SvrID: A02 -->
+                    </font></p>
+            
+</form></body></html>
+x;text
+U/AM
+U/AK
+GET /s
+U/Ai
+GET /content/images/img_ppc_sharkfin_MSNLogo.gif HTTP/1.1
+Accept: */*
+UA-OS: Windows CE (Pocket PC) - Version 4.20
+UA-color: color16
+UA-pixels: 240x320
+UA-CPU: Intel(R) PXA255
+UA-Voice: FALSE
+Referer: http://mobile.msn.com/
+UA-Language: JavaScript
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)
+Host: mobile.msn.com
+Connection: Keep-Alive
+Cache-Control: no-cache
+Cookie: lc=en-US; cr=1
+U/A#x	
+U/A	~	
+x;text
+U/A>
+GET /1033/signin.gif HTTP/1.1
+Accept: */*
+UA-OS: Windows CE (Pocket PC) - Version 4.20
+UA-color: color16
+UA-pixels: 240x320
+UA-CPU: Intel(R) PXA255
+UA-Voice: FALSE
+Referer: http://mobile.msn.com/
+UA-Language: JavaScript
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)
+Host: www.passportimages.com
+Connection: Keep-Alive
+Cache-Control: no-cache
+BC	^
+HTTP/1.1 200 OK
+Server: Microsoft-IIS/5.0
+X-Powered-By: ASP.NET
+P3P:CP="BUS CUR CONo FIN IVDo ONL OUR PHY SAMo TELo"
+Date: Fri, 27 Aug 2004 15:40:23 GMT
+Content-Type: image/gif
+Accept-Ranges: bytes
+Last-Modified: Wed, 19 May 2004 18:47:04 GMT
+ETag: "4098f2add13dc41:8e5"
+Content-Length: 578
+GIF89a>
+rEFs
+l{X1)	
+zm?U"
+R5b"
+JMD4
+@N#X
+HTTP/1.1 200 OK
+Server: Microsoft-IIS/5.0
+PPServer: H: BAYPPIMG2B02
+Cache-Control: max-age=1296000
+Expires: Sat, 11 Sep 2004 15:40:24 GMT
+Connection: close
+Date: Fri, 27 Aug 2004 15:40:24 GMT
+Content-Type: image/gif
+Accept-Ranges: bytes
+Last-Modified: Wed, 21 Apr 2004 06:32:14 GMT
+ETag: "868238626a27c41:ead"
+Content-Length: 702
+GIF89aB
+pdl)
+s0)uwx
+JD(!
+xTLc
+U/AE
+x;text
+T -9S
+U/AR
+d -9TP
+HTTP/1
+d -9TP
+GET /images/ppc/msn/IconHotmail.gif HTTP/1.1
+Accept: */*
+UA-OS: Windows CE (Pocket PC) - Version 4.20
+UA-color: color16
+UA-pixels: 240x320
+UA-CPU: Intel(R) PXA255
+UA-Voice: FALSE
+Referer: http://mobile.msn.com/
+UA-Language: JavaScript
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)
+Host: mobile.msn.com
+Connection: Keep-Alive
+Cache-Control: no-cache
+Cookie: lc=en-US; cr=1
+U/Ag
+HTTP/1
+GET /images/ppc/msn/IconMapPoint.gif HTTP/1.1
+Accept: */*
+UA-OS: Windows CE (Pocket PC) - Version 4.20
+UA-color: color16
+UA-pixels: 240x320
+UA-CPU: Intel(R) PXA255
+UA-Voice: FALSE
+Referer: http://mobile.msn.com/
+UA-Language: JavaScript
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)
+Host: mobile.msn.com
+Connection: Keep-Alive
+Cache-Control: no-cache
+Cookie: lc=en-US; cr=1
+T -9T
+T -9T
+HTTP/1.1 200 OK
+Server: Microsoft-IIS/5.0
+X-Powered-By: ASP.NET
+P3P:CP="BUS CUR CONo FIN IVDo ONL OUR PHY SAMo TELo"
+Cache-Control: max-age=604800
+Expires: Fri, 03 Sep 2004 15:40:24 GMT
+Date: Fri, 27 Aug 2004 15:40:24 GMT
+Content-Type: image/gif
+Accept-Ranges: bytes
+Last-Modified: Thu, 20 May 2004 01:47:14 GMT
+ETag: "07dbd5fc3ec41:8e6"
+Content-Length: 230
+GIF89a
+K1ip}
+$ -;
+U/A;
+$ -;
+U/AA4
+U/As`
+HTTP/1.1 200 OK
+Server: Microsoft-IIS/5.0
+X-Powered-By: ASP.NET
+P3P:CP="BUS CUR CONo FIN IVDo ONL OUR PHY SAMo TELo"
+Cache-Control: max-age=604800
+Expires: Fri, 03 Sep 2004 15:40:24 GMT
+Date: Fri, 27 Aug 2004 15:40:24 GMT
+Content-Type: image/gif
+Accept-Ranges: bytes
+Last-Modified: Thu, 20 May 2004 01:47:14 GMT
+ETag: "07dbd5fc3ec41:8c5"
+Content-Length: 242
+GIF89a
+@8:_
+xjoXr
+9xQ5
+G[8t
+GET /i
+HTTP/1
+GET /content/images/ppc_winmedia.gif HTTP/1.1
+Accept: */*
+UA-OS: Windows CE (Pocket PC) - Version 4.20
+UA-color: color16
+UA-pixels: 240x320
+UA-CPU: Intel(R) PXA255
+UA-Voice: FALSE
+Referer: http://mobile.msn.com/
+UA-Language: JavaScript
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)
+Host: mobile.msn.com
+Connection: Keep-Alive
+Cache-Control: no-cache
+Cookie: lc=en-US; cr=1
+U/Aeo
+W<zaF
+{<zaGP
+U/A9
+{<zaGP
+GET /content/images/ppc_money.gif HTTP/1.1
+Accept: */*
+UA-OS: Windows CE (Pocket PC) - Version 4.20
+UA-color: color16
+UA-pixels: 240x320
+UA-CPU: Intel(R) PXA255
+UA-Voice: FALSE
+Referer: http://mobile.msn.com/
+UA-Language: JavaScript
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)
+Host: mobile.msn.com
+Connection: Keep-Alive
+Cache-Control: no-cache
+Cookie: lc=en-US; cr=1
+BOzH
+U/A6
+HTTP/1.1 200 OK
+Server: Microsoft-IIS/5.0
+X-Powered-By: ASP.NET
+P3P:CP="BUS CUR CONo FIN IVDo ONL OUR PHY SAMo TELo"
+Date: Fri, 27 Aug 2004 15:40:24 GMT
+Content-Type: image/gif
+Accept-Ranges: bytes
+Last-Modified: Wed, 19 May 2004 18:47:04 GMT
+ETag: "f883feadd13dc41:8f5"
+Content-Length: 163
+GIF89a
+7 7y$hrdi
+Prh^
+q<zaGP
+HTTP/1
+W<zaG
+U/Ai]
+W<zaG
+HTTP/1.1 200 OK
+Server: Microsoft-IIS/5.0
+X-Powered-By: ASP.NET
+P3P:CP="BUS CUR CONo FIN IVDo ONL OUR PHY SAMo TELo"
+Date: Fri, 27 Aug 2004 15:40:25 GMT
+Content-Type: image/gif
+Accept-Ranges: bytes
+Last-Modified: Wed, 19 May 2004 18:47:04 GMT
+ETag: "a021fcadd13dc41:8e5"
+Content-Length: 195
+GIF89a
+`(~L
+U/A:j
+U/AS
+U/A?
+U/AW
+GET /content/images/ppc_news.gif HTTP/1.1
+Accept: */*
+UA-OS: Windows CE (Pocket PC) - Version 4.20
+UA-color: color16
+UA-pixels: 240x320
+UA-CPU: Intel(R) PXA255
+UA-Voice: FALSE
+Referer: http://mobile.msn.com/
+UA-Language: JavaScript
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)
+Host: mobile.msn.com
+Connection: Keep-Alive
+Cache-Control: no-cache
+Cookie: lc=en-US; cr=1
+U/A1n	
+HTTP/1
+U/Aq|	
+GET /content/images/ppc_weather.gif HTTP/1.1
+Accept: */*
+UA-OS: Windows CE (Pocket PC) - Version 4.20
+UA-color: color16
+UA-pixels: 240x320
+UA-CPU: Intel(R) PXA255
+UA-Voice: FALSE
+Referer: http://mobile.msn.com/
+UA-Language: JavaScript
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)
+Host: mobile.msn.com
+Connection: Keep-Alive
+Cache-Control: no-cache
+Cookie: lc=en-US; cr=1
+HTTP/1.1 200 OK
+Server: Microsoft-IIS/5.0
+X-Powered-By: ASP.NET
+P3P:CP="BUS CUR CONo FIN IVDo ONL OUR PHY SAMo TELo"
+Date: Fri, 27 Aug 2004 15:40:25 GMT
+Content-Type: image/gif
+Accept-Ranges: bytes
+Last-Modified: Wed, 19 May 2004 18:47:04 GMT
+ETag: "a021fcadd13dc41:8e1"
+Content-Length: 247
+GIF89a
+hi	ym7}
+$'_pl
+U/A[Z
+HTTP/1.1 200 OK
+Server: Microsoft-IIS/5.0
+X-Powered-By: ASP.NET
+P3P:CP="BUS CUR CONo FIN IVDo ONL OUR PHY SAMo TELo"
+Date: Fri, 27 Aug 2004 15:40:25 GMT
+Content-Type: image/gif
+Accept-Ranges: bytes
+Last-Modified: Wed, 19 May 2004 18:47:04 GMT
+ETag: "a021fcadd13dc41:8f5"
+Content-Length: 172
+GIF89a
+l	%sz>
+U/A	l
+U/A?
+HTTP/1
+U/AB
+U/At
+GET /content/images/ppc_sports.gif HTTP/1.1
+Accept: */*
+UA-OS: Windows CE (Pocket PC) - Version 4.20
+UA-color: color16
+UA-pixels: 240x320
+UA-CPU: Intel(R) PXA255
+UA-Voice: FALSE
+Referer: http://mobile.msn.com/
+UA-Language: JavaScript
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)
+Host: mobile.msn.com
+Connection: Keep-Alive
+Cache-Control: no-cache
+Cookie: lc=en-US; cr=1
+U/A*n
+U/ALt
+HTTP/1
+GET /content/images/ppc_entertainment.gif HTTP/1.1
+Accept: */*
+UA-OS: Windows CE (Pocket PC) - Version 4.20
+UA-color: color16
+UA-pixels: 240x320
+UA-CPU: Intel(R) PXA255
+UA-Voice: FALSE
+Referer: http://mobile.msn.com/
+UA-Language: JavaScript
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)
+Host: mobile.msn.com
+Connection: Keep-Alive
+Cache-Control: no-cache
+Cookie: lc=en-US; cr=1
+U/A:
+HTTP/1.1 200 OK
+Server: Microsoft-IIS/5.0
+X-Powered-By: ASP.NET
+P3P:CP="BUS CUR CONo FIN IVDo ONL OUR PHY SAMo TELo"
+Date: Fri, 27 Aug 2004 15:40:25 GMT
+Content-Type: image/gif
+Accept-Ranges: bytes
+Last-Modified: Wed, 19 May 2004 18:47:04 GMT
+ETag: "a021fcadd13dc41:8e6"
+Content-Length: 186
+GIF89a
+AHLWz
+L0;(B
+=0z|iZY
+& Q]jJ.
+k]q5
+BJKW
+U/Ai&
+HTTP/1.1 200 OK
+Server: Microsoft-IIS/5.0
+X-Powered-By: ASP.NET
+P3P:CP="BUS CUR CONo FIN IVDo ONL OUR PHY SAMo TELo"
+Date: Fri, 27 Aug 2004 15:40:25 GMT
+Content-Type: image/gif
+Accept-Ranges: bytes
+Last-Modified: Wed, 19 May 2004 18:47:04 GMT
+ETag: "48bff9add13dc41:8eb"
+Content-Length: 255
+GIF89a
+GET /c
