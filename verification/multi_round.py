@@ -97,11 +97,20 @@ class MultiRoundVerifier:
             rounds = round_num
             if result.counter_evidence:
                 counter_evidence = result.counter_evidence
+
+            if result.llm_failed:
+                # The verification LLM was unavailable this round. We must NOT
+                # report the finding as "confirmed"/verified — that would present
+                # an UNVERIFIED claim at parity with a genuinely challenged one.
+                # Emit a distinct "unverified" verdict the orchestrator handles by
+                # keeping the finding without marking it verified.
+                verdict = "unverified"
+                chain.append(self._summarize(round_num, result, corroboration_count))
+                break
+
             verdict = result.verdict
             chain.append(self._summarize(round_num, result, corroboration_count))
 
-            if result.llm_failed:
-                break
             if not result.supports_claim or result.verdict == "refuted":
                 verdict = "refuted"
                 break
@@ -130,7 +139,7 @@ class MultiRoundVerifier:
     ) -> str:
         bits = [f"Round {round_num}: verdict={result.verdict}"]
         if result.llm_failed:
-            bits.append("LLM unavailable (defaulted to confirmed)")
+            bits.append("LLM unavailable (finding left unverified)")
         elif not result.supports_claim:
             bits.append("original output does not support the claim")
         else:

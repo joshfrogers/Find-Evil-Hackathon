@@ -118,8 +118,9 @@ class ReportGenerator:
             "inconclusive": "INCONCLUSIVE",
         }
         for h in hypotheses:
-            label = status_labels.get(h["status"], h["status"].upper())
-            lines.append(f"### {h['id']}: {h['description']}")
+            status = h.get("status", "")
+            label = status_labels.get(status, status.upper() or "UNKNOWN")
+            lines.append(f"### {h.get('id', 'N/A')}: {h.get('description', '')}")
             lines.append(f"**Status:** {label}")
             if h.get("evidence_for"):
                 lines.append("**Evidence for:**")
@@ -150,8 +151,8 @@ class ReportGenerator:
             triage_tag = ""
             if is_triage_only:
                 triage_tag = " **[TRIAGE-ONLY - not verified]**"
-            lines.append(f"### Finding {i}: {f['description']}{triage_tag}")
-            lines.append(f"**Confidence:** {f['confidence']}{verified_text}")
+            lines.append(f"### Finding {i}: {f.get('description', '')}{triage_tag}")
+            lines.append(f"**Confidence:** {f.get('confidence', 'N/A')}{verified_text}")
             lines.append(f"**Agent:** {f.get('agent', 'N/A')}")
             if f.get("ioc_type"):
                 lines.append(f"**IOC:** {f['ioc_type']} = `{f.get('ioc_value', '')}`")
@@ -166,7 +167,7 @@ class ReportGenerator:
                 for link in f.get("evidence_links", []):
                     ex = r.get("executions", {}).get(link)
                     if ex:
-                        cmd = " ".join([ex.get("tool", "")] + ex.get("args", []))
+                        cmd = " ".join([ex.get("tool", "")] + (ex.get("args") or []))
                         lines.append(
                             f"- `{cmd}`  (exit {ex.get('exit_code', '?')}, exec {link})"
                         )
@@ -220,7 +221,7 @@ class ReportGenerator:
         lines.append("| Type | Value |")
         lines.append("|------|-------|")
         for ioc in iocs:
-            lines.append(f"| {ioc['type']} | `{ioc['value']}` |")
+            lines.append(f"| {ioc.get('type', '')} | `{ioc.get('value', '')}` |")
         lines.append("")
 
     def _render_timeline(self, r: dict, lines: list[str]) -> None:
@@ -241,8 +242,8 @@ class ReportGenerator:
             lines.append("|------------|----------|-------------|")
             for entry in timeline:
                 lines.append(
-                    f"| {entry['timestamp']} | {entry['artifact_type']} "
-                    f"| {entry['description']} |"
+                    f"| {entry.get('timestamp', '')} | {entry.get('artifact_type', '')} "
+                    f"| {entry.get('description', '')} |"
                 )
             lines.append("")
 
@@ -251,8 +252,9 @@ class ReportGenerator:
             lines.append("")
             for chain in chains:
                 lines.append(
-                    f"- **{chain['chain_id']}** ({chain['confidence']}): "
-                    f"{chain['description']}"
+                    f"- **{chain.get('chain_id', 'N/A')}** "
+                    f"({chain.get('confidence', 'N/A')}): "
+                    f"{chain.get('description', '')}"
                 )
             lines.append("")
 
@@ -261,9 +263,9 @@ class ReportGenerator:
             lines.append("")
             for gap in timeline_gaps:
                 lines.append(
-                    f"- **{gap['anomaly_id']}** [{gap['gap_type']}]: "
-                    f"{gap['description']} "
-                    f"({gap['gap_start']} — {gap['gap_end']})"
+                    f"- **{gap.get('anomaly_id', 'N/A')}** [{gap.get('gap_type', '')}]: "
+                    f"{gap.get('description', '')} "
+                    f"({gap.get('gap_start', '?')} — {gap.get('gap_end', '?')})"
                 )
             lines.append("")
 
@@ -271,8 +273,8 @@ class ReportGenerator:
             lines.append("### Semantic Activity Groups")
             lines.append("")
             for sc in semantic:
-                ids = ", ".join(sc["finding_ids"])
-                lines.append(f"- **{sc['label']}** ({ids})")
+                ids = ", ".join(sc.get("finding_ids") or [])
+                lines.append(f"- **{sc.get('label', 'N/A')}** ({ids})")
                 if sc.get("reasoning"):
                     lines.append(f"  - {sc['reasoning']}")
             lines.append("")
@@ -284,8 +286,8 @@ class ReportGenerator:
         lines.append("## Failed Approaches")
         lines.append("")
         for fa in failed:
-            lines.append(f"- **{fa['tool']}**: {fa['failure']}")
-            lines.append(f"  Lesson: {fa['lesson']}")
+            lines.append(f"- **{fa.get('tool', 'N/A')}**: {fa.get('failure', '')}")
+            lines.append(f"  Lesson: {fa.get('lesson', '')}")
         lines.append("")
 
     def _render_limitations(self, r: dict, lines: list[str]) -> None:
@@ -308,9 +310,9 @@ class ReportGenerator:
         lines.append("## Strategy Pivots")
         lines.append("")
         for sp in pivots:
-            lines.append(f"- From: {sp['from']}")
-            lines.append(f"  To: {sp['to']}")
-            lines.append(f"  Reason: {sp['reason']}")
+            lines.append(f"- From: {sp.get('from', '')}")
+            lines.append(f"  To: {sp.get('to', '')}")
+            lines.append(f"  Reason: {sp.get('reason', '')}")
         lines.append("")
 
     def _render_accuracy(self, r: dict, lines: list[str]) -> None:

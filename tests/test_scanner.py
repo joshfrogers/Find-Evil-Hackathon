@@ -224,5 +224,34 @@ class DiffCatalogTest(unittest.TestCase):
             self.assertIsInstance(part, list)
 
 
+class RunSubprocessTest(unittest.TestCase):
+    """_run must be bounded and never raise: a hung dpkg/apt-mark call would
+    otherwise deadlock the whole catalog refresh."""
+
+    def test_run_passes_a_timeout(self):
+        import subprocess
+
+        captured = {}
+
+        def fake_run(cmd, **kwargs):
+            captured.update(kwargs)
+            return subprocess.CompletedProcess(cmd, 0, stdout="ok", stderr="")
+
+        with patch.object(scanner.subprocess, "run", side_effect=fake_run):
+            out = scanner._run(["dpkg", "-L", "sleuthkit"])
+        self.assertEqual(out, "ok")
+        self.assertIn("timeout", captured)
+        self.assertGreater(captured["timeout"], 0)
+
+    def test_run_returns_empty_on_timeout(self):
+        import subprocess
+
+        def boom(cmd, **kwargs):
+            raise subprocess.TimeoutExpired(cmd=cmd, timeout=30)
+
+        with patch.object(scanner.subprocess, "run", side_effect=boom):
+            self.assertEqual(scanner._run(["dpkg", "-L", "x"]), "")
+
+
 if __name__ == "__main__":
     unittest.main()

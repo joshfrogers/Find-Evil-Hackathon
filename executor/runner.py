@@ -214,21 +214,51 @@ class Executor(ABC):
             # would be resolved as paths and wrongly rejected.
             if arg == ".." or "/" in arg:
                 return arg
+        # A plain relative path (no leading dash) carrying a separator, e.g.
+        # "subdir/output". Without this it would never be path-checked at all;
+        # validate_paths resolves it against the execution cwd so it cannot
+        # silently escape the sandbox unvalidated. (Relative paths that stay
+        # within cwd are benign; an escaping "../" was already caught above.)
+        if "/" in arg and not arg.startswith("-"):
+            return arg
         return None
 
-    def validate_paths(self, args: list[str]) -> Optional[str]:
-        """Check that any path-like arguments resolve under evidence roots."""
+    def validate_paths(self, args: list[str], cwd: Optional[str] = None) -> Optional[str]:
+        """Check that any path-like arguments resolve under evidence roots.
+
+        A RELATIVE path is interpreted by the tool relative to its working
+        directory, so it is resolved against ``cwd`` here — not the orchestrator's
+        process CWD, which ``Path.resolve()`` would otherwise use, making the
+        validation base differ from the execution base. ``cwd`` is also treated as
+        an allowed base: a relative path that stays inside it is benign even when
+        cwd is not a configured evidence root (e.g. the default ``/tmp``), while a
+        path that escapes via ``..`` resolves outside it and is checked against the
+        evidence roots like any other.
+        """
+        base: Optional[Path] = None
+        if cwd:
+            try:
+                base = Path(cwd).resolve()
+            except (OSError, ValueError):
+                base = None
+        allowed_roots = list(self._evidence_roots)
+        if base is not None:
+            allowed_roots.append(base)
+
         for arg in args:
             path_str = self._extract_path_from_arg(arg)
             if path_str is None:
                 continue
             try:
-                resolved = Path(path_str).resolve()
+                if path_str.startswith("/"):
+                    resolved = Path(path_str).resolve()
+                elif base is not None:
+                    resolved = (base / path_str).resolve()
+                else:
+                    resolved = Path(path_str).resolve()
             except (OSError, ValueError):
                 return f"Path could not be resolved (fail closed): {path_str}"
-            if not any(
-                self._is_under_root(resolved, root) for root in self._evidence_roots
-            ):
+            if not any(self._is_under_root(resolved, root) for root in allowed_roots):
                 if path_str in self._allowed_tools:
                     continue
                 return f"Path not under allowed evidence roots: {path_str}"
@@ -275,7 +305,7 @@ class Executor(ABC):
                 timestamp=ts,
             ).to_execution_result()
 
-        rejection = self.validate_paths(args)
+        rejection = self.validate_paths(args, cwd)
         if rejection:
             return RejectedExecution(
                 execution_id=exec_id,

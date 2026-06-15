@@ -399,8 +399,13 @@ class Investigator:
 
             # The investigation itself (triage, hypothesis loop, verification,
             # finding acceptance) is finished here, so mark the run complete
-            # before post-processing.
-            self.progress.complete()
+            # before post-processing — but ONLY if the loop didn't already set a
+            # terminal status. increment_iteration() sets "iteration_limit" when
+            # the round budget is exhausted; unconditionally calling complete()
+            # would clobber that back to "completed" and mislabel a cut-short run
+            # (suppressing the report's triage-only warning).
+            if self.progress.status == "in_progress":
+                self.progress.complete()
 
             # Phase 4: Correlate findings. Temporal correlation (timeline,
             # event chains, gaps) runs first; semantic grouping is a separate
@@ -1174,7 +1179,15 @@ If nothing new is warranted, return empty lists."""
             if not round_findings:
                 return
 
-        corroboration = CorroborationIndex(round_findings)
+        # Corroborate against every finding accepted so far (prior rounds and the
+        # always-on system-characterization facts), not just this round — a
+        # finding supported by an earlier round's cross-domain finding should be
+        # credited, which a round-scoped index silently misses. for_finding() is
+        # only queried for this round's findings; the accepted ones serve purely
+        # as additional corroborators.
+        corroboration = CorroborationIndex(
+            list(round_findings) + list(self.accepted_findings)
+        )
         verifier = MultiRoundVerifier(
             VerifierAgent(
                 executor=self.executor,
@@ -1224,6 +1237,24 @@ If nothing new is warranted, return empty lists."""
                         "finding unverified."
                     ),
                 )
+                self.accepted_findings.append(finding)
+                continue
+
+            if outcome.verdict == "unverified":
+                # The verifier LLM was unavailable (not an exception, but no usable
+                # response). Keep the finding but do NOT mark it verified or
+                # recalibrate its confidence — it must not be presented at parity
+                # with a genuinely challenged finding.
+                self._verification_meta[finding.finding_id] = {
+                    "rounds_taken": outcome.rounds_taken,
+                    "verdict": "unverified",
+                    "corroboration_ids": corr.corroborating_ids,
+                    "corroboration_count": corr.count,
+                    "reasoning_chain": outcome.reasoning_chain,
+                    "recalibration_reason": "verifier LLM unavailable; left unverified",
+                    "previous_confidence": finding.confidence,
+                    "final_confidence": finding.confidence,
+                }
                 self.accepted_findings.append(finding)
                 continue
 
@@ -1368,6 +1399,11 @@ If nothing new is warranted, return empty lists."""
             # Mark handled regardless of whether a follow-up is actually added,
             # so a contested hypothesis is never re-queued for an identical replay.
             h.followup_spawned = True
+            # Stamp the resolution time too: a retired contested hypothesis is
+            # done being worked, so it should carry a resolved_at like any other
+            # resolved hypothesis (update_hypothesis only stamps terminal verdicts).
+            if not h.resolved_at:
+                h.resolved_at = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
             if len(existing) >= cap:
                 continue
             desc = self._contested_followup_text(h)

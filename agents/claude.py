@@ -67,21 +67,22 @@ _ANTHROPIC_VERSION = "2023-06-01"
 #   AGENTIC_SIFT_API_HOST  - override host to route through a self-hosted proxy (optional)
 _DEFAULT_API_HOST = "api.anthropic.com"
 
-# Cache the (host, headers, ssl_context) target so it is built once and reused
-# across calls/threads (a fresh HTTPSConnection per call is created from this
-# shared, read-only context — thread-safe).
-_TARGET: Optional[tuple] = None
+# Only the SSL context is cached (building one is the expensive part, and it is a
+# read-only object safe to share across calls/threads — a fresh HTTPSConnection
+# per call is created from it). The host/headers/API key are re-read from the
+# environment on every call so a changed ANTHROPIC_API_KEY / AGENTIC_SIFT_API_HOST
+# takes effect immediately rather than being pinned at first use.
+_SSL_CONTEXT: Optional[ssl.SSLContext] = None
 
 
 def _request_target() -> tuple:
     """Resolve (host, base_headers, ssl_context) for the Messages API.
 
     Authenticated by ``ANTHROPIC_API_KEY`` against ``api.anthropic.com`` (or
-    ``AGENTIC_SIFT_API_HOST`` if set). Cached after first resolution.
+    ``AGENTIC_SIFT_API_HOST`` if set). Re-resolved each call (only the SSL context
+    is cached).
     """
-    global _TARGET
-    if _TARGET is not None:
-        return _TARGET
+    global _SSL_CONTEXT
 
     # NOTE: no ``anthropic-beta: prompt-caching-*`` header. Prompt caching is GA
     # — ``cache_control`` blocks are honored without it.
@@ -98,8 +99,10 @@ def _request_target() -> tuple:
             "Messages API."
         )
     headers["x-api-key"] = key
-    _TARGET = (host, headers, ssl.create_default_context())
-    return _TARGET
+
+    if _SSL_CONTEXT is None:
+        _SSL_CONTEXT = ssl.create_default_context()
+    return (host, headers, _SSL_CONTEXT)
 
 
 def _int_env(name: str, default: int) -> int:

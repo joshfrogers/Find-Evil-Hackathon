@@ -99,6 +99,24 @@ class TestPathValidation(unittest.TestCase):
         reason = ex.validate_paths(["../../etc/passwd"])
         self.assertIsNotNone(reason)
 
+    def test_relative_path_resolved_against_cwd(self):
+        # A relative path is interpreted by the tool relative to its working
+        # directory, so it is validated against the execution cwd (not the
+        # orchestrator's process CWD).
+        ex = _make_executor()  # evidence roots = ["/cases"]
+        # A plain relative path carrying a separator is now extracted and checked
+        # (previously it slipped through unvalidated).
+        self.assertEqual(
+            ex._extract_path_from_arg("out/timeline.body"), "out/timeline.body"
+        )
+        # A relative path that stays inside cwd is allowed even when cwd is not a
+        # configured evidence root (e.g. a scratch dir).
+        self.assertIsNone(
+            ex.validate_paths(["out/timeline.body"], cwd="/tmp/scratch-xyz")
+        )
+        # A relative path that escapes cwd and lands outside every root is rejected.
+        self.assertIsNotNone(ex.validate_paths(["../../etc/passwd"], cwd="/cases"))
+
 
 class TestOutputPersistence(unittest.TestCase):
     """Raw stdout/stderr are persisted per execution so a finding can be traced
