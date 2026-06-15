@@ -392,7 +392,7 @@ class LocalExecutor(Executor):
                 stderr_truncated=False,
                 timestamp=timestamp,
             )
-        except FileNotFoundError:
+        except OSError as exc:
             return ExecutionResult(
                 execution_id=exec_id,
                 tool=argv[0],
@@ -401,7 +401,7 @@ class LocalExecutor(Executor):
                 exit_code=-1,
                 duration_ms=0,
                 stdout="",
-                stderr=f"Binary not found: {argv[0]}",
+                stderr=f"Cannot execute {argv[0]}: {exc}",
                 stdout_truncated=False,
                 stderr_truncated=False,
                 timestamp=timestamp,

@@ -475,9 +475,20 @@ class DomainAgent:
             # Gate 3: execute. Run from the writable scratch directory so a tool
             # that writes a relative output path lands in an allowlisted location
             # rather than an un-allowlisted /tmp (which the executor rejects).
-            exec_result = self.executor.run(
-                tool_path=tool_path, args=args, cwd=self._scratch_dir() or "/tmp"
-            )
+            try:
+                exec_result = self.executor.run(
+                    tool_path=tool_path, args=args, cwd=self._scratch_dir() or "/tmp"
+                )
+            except Exception as exc:
+                error_msg = f"{type(exc).__name__}: {exc}"
+                self.advisor.record_result(
+                    tool_path, success=False, error=error_msg[:200]
+                )
+                result.errors.append(f"Crashed: {tool_name} — {error_msg}")
+                tool_path = self._route_fallback(
+                    tool_path, tool_dict, args, error_msg[:200]
+                )
+                continue
             self.audit.log_tool_execution_from_result(exec_result)
             result.tools_used.append(tool_path)
 

@@ -207,7 +207,26 @@ class TestExecution(unittest.TestCase):
         ex = _make_executor()
         result = ex.run("/usr/bin/fls", ["-r", "/cases/image.E01"])
         self.assertEqual(result.exit_code, -1)
-        self.assertIn("not found", result.stderr)
+        self.assertIn("Cannot execute", result.stderr)
+
+    def test_exec_format_error_is_caught(self):
+        """OSError [Errno 8] (exec format error) from scripts without a valid
+        shebang must be caught and returned as a failed result, not raised."""
+        with tempfile.NamedTemporaryFile(suffix=".pl", delete=False, mode="w") as f:
+            f.write("# no shebang — kernel cannot exec this\nprint 'hi';\n")
+            script = f.name
+        os.chmod(script, 0o755)
+        try:
+            ex = LocalExecutor(
+                allowed_tools={script: "bad-script"},
+                evidence_roots=["/cases"],
+            )
+            result = ex.run(script, [])
+            self.assertEqual(result.exit_code, -1)
+            self.assertIn("Cannot execute", result.stderr)
+            self.assertFalse(result.rejected)
+        finally:
+            os.unlink(script)
 
     def test_real_command(self):
         ex = _make_executor(
