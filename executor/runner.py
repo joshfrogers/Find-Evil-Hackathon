@@ -205,6 +205,9 @@ class Executor(ABC):
             _, _, val = arg.partition("=")
             if val.startswith("/"):
                 return val
+            if val == ".." or "/" in val:
+                return val
+            return None
         if ".." in arg:
             # Only treat a "..": containing argument as a path when it actually
             # looks like one — a real traversal carries a path separator
