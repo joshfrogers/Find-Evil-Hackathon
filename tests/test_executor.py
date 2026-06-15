@@ -120,6 +120,23 @@ class TestOutputPersistence(unittest.TestCase):
             with open(result.stdout_path) as f:
                 self.assertEqual(f.read().strip(), "hello-trace")
 
+    def test_persisted_stdout_is_full_even_when_result_is_truncated(self):
+        with tempfile.TemporaryDirectory() as out:
+            ex = LocalExecutor(
+                allowed_tools={sys.executable: "python"},
+                evidence_roots=["/cases"],
+                output_dir=out,
+                max_output_bytes=5,
+            )
+            result = ex.run(
+                sys.executable,
+                ["-c", "import sys; sys.stdout.write('abcdefghi')"],
+            )
+            self.assertEqual(result.stdout, "abcde")
+            self.assertTrue(result.stdout_truncated)
+            with open(result.stdout_path) as f:
+                self.assertEqual(f.read(), "abcdefghi")
+
     def test_stderr_persisted_to_file(self):
         with tempfile.TemporaryDirectory() as out:
             ex = LocalExecutor(

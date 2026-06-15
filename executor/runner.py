@@ -76,6 +76,11 @@ class ExecutionResult:
     # executor was configured with an output directory; None otherwise.
     stdout_path: Optional[str] = None
     stderr_path: Optional[str] = None
+    # Full decoded output before the audit/report truncation cap is applied.
+    # These are only used for persistence; stdout/stderr remain capped so audit
+    # events and report JSON stay bounded.
+    raw_stdout: Optional[str] = None
+    raw_stderr: Optional[str] = None
 
 
 @dataclass(frozen=True)
@@ -303,8 +308,14 @@ class Executor(ABC):
         # Pin UTF-8 so non-ASCII tool output is never lost to a non-UTF-8
         # process locale (e.g. LANG=C), which would otherwise raise
         # UnicodeEncodeError and drop the audit output.
-        out_path.write_text(result.stdout, encoding="utf-8")
-        err_path.write_text(result.stderr, encoding="utf-8")
+        out_path.write_text(
+            result.raw_stdout if result.raw_stdout is not None else result.stdout,
+            encoding="utf-8",
+        )
+        err_path.write_text(
+            result.raw_stderr if result.raw_stderr is not None else result.stderr,
+            encoding="utf-8",
+        )
         return replace(result, stdout_path=str(out_path), stderr_path=str(err_path))
 
     @abstractmethod
@@ -376,6 +387,8 @@ class LocalExecutor(Executor):
                 stdout_truncated=stdout_trunc,
                 stderr_truncated=stderr_trunc,
                 timestamp=timestamp,
+                raw_stdout=raw_stdout,
+                raw_stderr=raw_stderr,
             )
         except subprocess.TimeoutExpired:
             duration_ms = int((time.monotonic() - start) * 1000)
@@ -543,6 +556,8 @@ class SSHExecutor(Executor):
                 stdout_truncated=stdout_trunc,
                 stderr_truncated=stderr_trunc,
                 timestamp=timestamp,
+                raw_stdout=raw_stdout,
+                raw_stderr=raw_stderr,
             )
         except subprocess.TimeoutExpired:
             duration_ms = int((time.monotonic() - start) * 1000)

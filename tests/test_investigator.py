@@ -1303,6 +1303,7 @@ class ReportOnErrorTest(unittest.TestCase):
         # The in-memory report is still returned, with the write failure recorded.
         self.assertIsInstance(report, dict)
         self.assertIn("disk full", report.get("error", ""))
+        self.assertIs(report.get("report_write_failed"), True)
 
 
 class ReportExecutionsMapTest(unittest.TestCase):

@@ -465,6 +465,7 @@ class Investigator:
                 f"{self._run_error}; {write_error}" if self._run_error else write_error
             )
             report["error"] = self._run_error
+            report["report_write_failed"] = True
             logger.warning(
                 "Report write failed — returning in-memory report", exc_info=True
             )

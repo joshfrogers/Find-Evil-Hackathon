@@ -9,7 +9,12 @@ from unittest.mock import MagicMock, patch
 PROJECT_ROOT = Path(__file__).parent.parent
 sys.path.insert(0, str(PROJECT_ROOT))
 
-from agents.claude import _parse_json_response, call_claude, ClaudeError
+from agents.claude import (
+    _parse_json_response,
+    call_claude,
+    call_claude_json,
+    ClaudeError,
+)
 
 
 class ParseJsonResponseTest(unittest.TestCase):
@@ -80,6 +85,13 @@ class CallClaudeErrorSurfacingTest(unittest.TestCase):
         with self.assertRaises(ClaudeError) as ctx:
             call_claude("hi", timeout=1)
         self.assertIn("prompt is too long", str(ctx.exception))
+
+
+class CallClaudeJsonShapeTest(unittest.TestCase):
+    @patch("agents.claude.call_claude")
+    def test_top_level_array_returns_none(self, mock_call):
+        mock_call.return_value = '[{"commands": []}]'
+        self.assertIsNone(call_claude_json("prompt"))
 
 
 if __name__ == "__main__":

@@ -229,6 +229,16 @@ class ToolAdvisor:
             idx = out.index(flag)
             if idx + 1 < len(out):
                 requested = out[idx + 1]
+                if scratch_dir and os.path.isabs(requested):
+                    requested_real = os.path.realpath(requested)
+                    root_real = os.path.realpath(root)
+                    if not self._is_under_dir(requested_real, root_real):
+                        name = (
+                            os.path.basename(requested.rstrip("/"))
+                            or self._outdir_name()
+                        )
+                        out[idx + 1] = os.path.join(root, name)
+                        return out
                 parent = os.path.dirname(requested.rstrip("/")) or root
                 if not self._make_writable_dir(parent):
                     # Requested parent is unwritable — redirect under the scratch root.
@@ -252,6 +262,13 @@ class ToolAdvisor:
         except OSError:
             return False
         return os.access(path, os.W_OK)
+
+    @staticmethod
+    def _is_under_dir(path: str, root: str) -> bool:
+        try:
+            return os.path.commonpath([path, root]) == root
+        except ValueError:
+            return False
 
     @staticmethod
     def _outdir_name() -> str:

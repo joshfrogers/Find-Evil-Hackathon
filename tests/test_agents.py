@@ -1,5 +1,6 @@
 """Tests for sub-agents and verifier agents."""
 
+import os
 import sys
 import tempfile
 import unittest
@@ -797,6 +798,25 @@ class VerifierAgentTest(unittest.TestCase):
         self.assertEqual(verdict, "confirmed")
 
     @patch("agents.base.call_claude_json")
+    def test_counter_evidence_runs_from_scratch_dir(self, mock_claude):
+        mock_claude.side_effect = [
+            {
+                "output_supports_claim": True,
+                "counter_evidence_commands": [
+                    {"tool_path": "/usr/bin/fls", "args": ["-r"], "looking_for": "x"}
+                ],
+            },
+            {"verdict": "confirmed", "reasoning": "still supported"},
+        ]
+        self.executor.run.return_value = _make_exec_result()
+        self.executor.scratch_dir = "/work/scratch"
+
+        verifier = VerifierAgent(self.executor, self.audit, self.tools)
+        verifier.challenge_once(_make_finding(), [], "/cases/img.E01")
+
+        self.assertEqual(self.executor.run.call_args.kwargs["cwd"], "/work/scratch")
+
+    @patch("agents.base.call_claude_json")
     def test_verify_defaults_to_confirmed_on_claude_failure(self, mock_claude):
         mock_claude.return_value = None
 
@@ -1027,6 +1047,42 @@ class SubAgentScratchTest(unittest.TestCase):
         ]
         self._agent().investigate("Map disk", "/cases/img.E01", "disk hypothesis")
         self.assertEqual(self.executor.run.call_args.kwargs["cwd"], "/work/scratch")
+
+    @patch("agents.base.call_claude_json")
+    def test_bulk_extractor_output_dir_uses_scratch_dir(self, mock_claude):
+        scratch = str(Path(self._tmpdir) / "scratch")
+        self.executor.scratch_dir = scratch
+        self.tools.append(
+            {
+                "name": "bulk_extractor",
+                "display_name": "bulk_extractor",
+                "path": "/usr/bin/bulk_extractor",
+                "description": "Extract features",
+            }
+        )
+        mock_claude.side_effect = [
+            {
+                "commands": [
+                    {
+                        "tool_path": "/usr/bin/bulk_extractor",
+                        "args": ["/cases/img.E01"],
+                        "reasoning": "extract features",
+                        "expected_outcome": "features",
+                    }
+                ]
+            },
+            {"findings": [
+                {"description": "ok", "confidence": "possible",
+                 "evidence_links": ["e001"]}
+            ]},
+        ]
+
+        self._agent().investigate("Extract features", "/cases/img.E01", "disk")
+
+        args = self.executor.run.call_args.kwargs["args"]
+        self.assertIn("-o", args)
+        outdir = args[args.index("-o") + 1]
+        self.assertTrue(outdir.startswith(scratch + os.sep))
 
     @patch("agents.base.call_claude_json")
     def test_plan_prompt_includes_primary_offset(self, mock_claude):

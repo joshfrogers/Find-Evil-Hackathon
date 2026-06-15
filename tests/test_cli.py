@@ -20,6 +20,7 @@ from cli.main import (
     build_evidence_specs,
     build_executor,
     cmd_compare_agents,
+    cmd_investigate,
     cmd_refresh,
     cmd_score,
     load_catalog_tools,
@@ -109,6 +110,128 @@ class BuildEvidenceSpecsTest(unittest.TestCase):
     def test_more_types_than_evidence_exits(self):
         with self.assertRaises(SystemExit):
             build_evidence_specs(["/cases/a.E01"], ["disk", "memory"])
+
+
+class InvestigateCommandTest(unittest.TestCase):
+    def test_errored_report_exits_nonzero(self):
+        import cli.main as m
+
+        class _Executor:
+            def ensure_scratch(self):
+                pass
+
+            def cleanup_scratch(self):
+                pass
+
+        class _Investigator:
+            def __init__(self, *args, **kwargs):
+                pass
+
+            def investigate_evidence(self, specs, focus=None, brief=None):
+                return {
+                    "status": "errored",
+                    "rounds_completed": 0,
+                    "findings": [],
+                    "iocs": [],
+                }
+
+        orig_sudo = m._acquire_local_sudo_password
+        orig_load = m.load_catalog_tools
+        orig_stale = m._print_staleness
+        orig_build = m.build_executor
+        orig_inv = m.Investigator
+        self.addCleanup(lambda: setattr(m, "_acquire_local_sudo_password", orig_sudo))
+        self.addCleanup(lambda: setattr(m, "load_catalog_tools", orig_load))
+        self.addCleanup(lambda: setattr(m, "_print_staleness", orig_stale))
+        self.addCleanup(lambda: setattr(m, "build_executor", orig_build))
+        self.addCleanup(lambda: setattr(m, "Investigator", orig_inv))
+        m._acquire_local_sudo_password = lambda: None
+        m.load_catalog_tools = lambda catalog: ([], Path("/tmp/tool_catalog.json"))
+        m._print_staleness = lambda cat_path: None
+        m.build_executor = lambda *args, **kwargs: _Executor()
+        m.Investigator = _Investigator
+
+        args = argparse.Namespace(
+            fast=False,
+            remote_mount=None,
+            catalog=None,
+            evidence_roots=None,
+            output=None,
+            remote=None,
+            remote_user=None,
+            focus=None,
+            brief=None,
+            brief_file=None,
+            evidence=["/cases/missing.E01"],
+            type=["disk"],
+            max_rounds=1,
+            baseline=None,
+        )
+        with self.assertRaises(SystemExit) as ctx:
+            with redirect_stdout(io.StringIO()):
+                cmd_investigate(args)
+        self.assertEqual(ctx.exception.code, 1)
+
+    def test_report_write_failure_exits_nonzero(self):
+        import cli.main as m
+
+        class _Executor:
+            def ensure_scratch(self):
+                pass
+
+            def cleanup_scratch(self):
+                pass
+
+        class _Investigator:
+            def __init__(self, *args, **kwargs):
+                pass
+
+            def investigate_evidence(self, specs, focus=None, brief=None):
+                return {
+                    "status": "completed",
+                    "rounds_completed": 0,
+                    "findings": [],
+                    "iocs": [],
+                    "error": "Report write failed: disk full",
+                    "report_write_failed": True,
+                }
+
+        orig_sudo = m._acquire_local_sudo_password
+        orig_load = m.load_catalog_tools
+        orig_stale = m._print_staleness
+        orig_build = m.build_executor
+        orig_inv = m.Investigator
+        self.addCleanup(lambda: setattr(m, "_acquire_local_sudo_password", orig_sudo))
+        self.addCleanup(lambda: setattr(m, "load_catalog_tools", orig_load))
+        self.addCleanup(lambda: setattr(m, "_print_staleness", orig_stale))
+        self.addCleanup(lambda: setattr(m, "build_executor", orig_build))
+        self.addCleanup(lambda: setattr(m, "Investigator", orig_inv))
+        m._acquire_local_sudo_password = lambda: None
+        m.load_catalog_tools = lambda catalog: ([], Path("/tmp/tool_catalog.json"))
+        m._print_staleness = lambda cat_path: None
+        m.build_executor = lambda *args, **kwargs: _Executor()
+        m.Investigator = _Investigator
+
+        args = argparse.Namespace(
+            fast=False,
+            remote_mount=None,
+            catalog=None,
+            evidence_roots=None,
+            output=None,
+            remote=None,
+            remote_user=None,
+            focus=None,
+            brief=None,
+            brief_file=None,
+            evidence=["/cases/img.E01"],
+            type=["disk"],
+            max_rounds=1,
+            baseline=None,
+        )
+        with self.assertRaises(SystemExit) as ctx:
+            with redirect_stdout(io.StringIO()):
+                cmd_investigate(args)
+        self.assertEqual(ctx.exception.code, 1)
 
 
 class LoadCatalogToolsTest(unittest.TestCase):

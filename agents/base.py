@@ -450,7 +450,9 @@ class DomainAgent:
             # (invalid flags, missing writable output dirs) before spending a
             # slot — otherwise every alternative reuses the same args and fails
             # identically, turning a fixable invocation into a hard failure.
-            args = self.advisor.normalize_args(tool_dict, tool_path, args)
+            args = self.advisor.normalize_args(
+                tool_dict, tool_path, args, scratch_dir=self._scratch_dir()
+            )
 
             # Gate 1: skip tools already known bad on this image.
             if self.advisor.is_known_bad(tool_path):
@@ -1022,6 +1024,7 @@ class VerifierAgent:
             exec_result = self.executor.run(
                 tool_path=cmd.get("tool_path", ""),
                 args=cmd.get("args", []),
+                cwd=self._scratch_dir() or "/tmp",
             )
             self.audit.log_tool_execution_from_result(exec_result)
             if not exec_result.rejected:
@@ -1034,6 +1037,10 @@ class VerifierAgent:
                     }
                 )
         return counter_results
+
+    def _scratch_dir(self) -> str | None:
+        """The executor's writable scratch directory, or None if it has none."""
+        return getattr(self.executor, "scratch_dir", None)
 
     def _verifier_preamble(self) -> list[dict]:
         """Cached system blocks for the verifier: framing + tool menu + schema.

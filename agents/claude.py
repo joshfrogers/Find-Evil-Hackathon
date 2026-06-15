@@ -269,6 +269,13 @@ def call_claude_json(
             f"json parse failed; raw response ({len(response)} chars): "
             f"{response[:1000]!r}"
         )
+        return None
+    if not isinstance(parsed, dict):
+        _debug(
+            f"json parse returned non-object {type(parsed).__name__}; "
+            f"raw response ({len(response)} chars): {response[:1000]!r}"
+        )
+        return None
     return parsed
 
 

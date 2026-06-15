@@ -502,6 +502,8 @@ def cmd_investigate(args: argparse.Namespace) -> None:
             logger.warning("scratch cleanup failed", exc_info=True)
 
     _print_investigation_summary(report, output_dir)
+    if report.get("status") == "errored" or report.get("report_write_failed"):
+        sys.exit(1)
 
 
 def _load_audit_events(audit_path: Path) -> list[dict]:

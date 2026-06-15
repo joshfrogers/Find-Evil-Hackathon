@@ -119,21 +119,30 @@ def open_evidence(
     still be analyzed directly (e.g. with Sleuth Kit). The investigation
     degrades to raw access rather than failing outright.
     """
-    if evidence_type not in MOUNTABLE_TYPES:
-        return EvidenceView(raw_path=evidence_path)
-
-    # Pre-mounted / extracted tree: a DIRECTORY is treated as an already-mounted
-    # read-only filesystem and analyzed directly — no image attach, no mount, no
-    # root, no EWF/libewf. This is the portable path for environments without the
-    # full forensic stack (or for an image mounted by other means / a carved file
-    # tree). Live-file analysis only; raw-image deleted-file recovery (Sleuth Kit
-    # on the container) is unavailable because there is no raw image.
+    # Pre-mounted / extracted disk tree: a DIRECTORY is treated as an
+    # already-mounted read-only filesystem and analyzed directly — no image
+    # attach, no mount, no root, no EWF/libewf. This is the portable path for
+    # environments without the full forensic stack (or for an image mounted by
+    # other means / a carved file tree). Live-file analysis only; raw-image
+    # deleted-file recovery (Sleuth Kit on the container) is unavailable because
+    # there is no raw image.
     if os.path.isdir(evidence_path):
+        if evidence_type not in MOUNTABLE_TYPES:
+            raise IsADirectoryError(
+                f"Evidence path is a directory, not a {evidence_type} evidence file: "
+                f"{evidence_path}"
+            )
         if executor is not None:
             executor.add_evidence_root(evidence_path)
         return EvidenceView(
             raw_path=evidence_path, mount_roots=[evidence_path], session=None
         )
+
+    if not os.path.isfile(evidence_path):
+        raise FileNotFoundError(f"Evidence file not found: {evidence_path}")
+
+    if evidence_type not in MOUNTABLE_TYPES:
+        return EvidenceView(raw_path=evidence_path)
 
     if runner is None:
         # Imported and constructed lazily so that non-mount evidence and tests

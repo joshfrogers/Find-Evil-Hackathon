@@ -7,6 +7,7 @@ advisor's matrix, pre-validation, and fallback routing directly.
 import os
 import shutil
 import sys
+import tempfile
 import unittest
 from pathlib import Path
 
@@ -211,6 +212,20 @@ class NormalizeArgsTest(unittest.TestCase):
         )
         self.assertEqual(out, ["-o", target, "/cases/img.E01"])
         self.assertTrue(os.path.isdir("/tmp/be_test_parent_xyz"))
+
+    def test_bulk_extractor_redirects_absolute_output_outside_scratch(self):
+        scratch = tempfile.mkdtemp()
+        self.addCleanup(shutil.rmtree, scratch, ignore_errors=True)
+        target = "/tmp/be_outside_scratch/out"
+        out = self.advisor.normalize_args(
+            self.bulk,
+            self.bulk["path"],
+            ["-o", target, "/cases/img.E01"],
+            scratch_dir=scratch,
+        )
+        self.assertEqual(out[0], "-o")
+        self.assertTrue(out[1].startswith(scratch + os.sep))
+        self.assertIn("/cases/img.E01", out)
 
     def test_unknown_tool_passes_through(self):
         fls = {"name": "fls", "path": "/usr/bin/fls"}

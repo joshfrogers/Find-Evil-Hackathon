@@ -79,15 +79,31 @@ def _factory_returning(session_holder):
     return factory
 
 
+def _make_image(testcase: unittest.TestCase) -> str:
+    """Create a real temporary evidence file for opener validation tests."""
+    fd, path = tempfile.mkstemp(suffix=".E01")
+    os.close(fd)
+    testcase.addCleanup(lambda: os.path.exists(path) and os.remove(path))
+    return path
+
+
+def _make_file(testcase: unittest.TestCase, suffix: str = "") -> str:
+    fd, path = tempfile.mkstemp(suffix=suffix)
+    os.close(fd)
+    testcase.addCleanup(lambda: os.path.exists(path) and os.remove(path))
+    return path
+
+
 class OpenEvidenceTest(unittest.TestCase):
     def test_memory_evidence_is_raw_only(self):
         created: list = []
+        image = _make_file(self, ".raw")
         view = open_evidence(
-            "/cases/mem.raw",
+            image,
             "memory",
             session_factory=_factory_returning(created),
         )
-        self.assertEqual(view.raw_path, "/cases/mem.raw")
+        self.assertEqual(view.raw_path, image)
         self.assertEqual(view.mount_roots, [])
         self.assertIsNone(view.session)
         self.assertFalse(view.is_mounted)
@@ -95,18 +111,31 @@ class OpenEvidenceTest(unittest.TestCase):
         self.assertEqual(created, [])
 
     def test_pcap_and_logs_are_raw_only(self):
-        for etype, path in (("pcap", "/cases/cap.pcapng"), ("logs", "/cases/x.log")):
+        for etype, suffix in (("pcap", ".pcapng"), ("logs", ".log")):
             created: list = []
+            path = _make_file(self, suffix)
             view = open_evidence(
                 path, etype, session_factory=_factory_returning(created)
             )
             self.assertFalse(view.is_mounted)
             self.assertEqual(created, [])
 
+    def test_missing_non_disk_evidence_raises(self):
+        missing = os.path.join(tempfile.gettempdir(), "agentic-sift-missing.raw")
+        if os.path.exists(missing):
+            os.remove(missing)
+        with self.assertRaises(FileNotFoundError):
+            open_evidence(
+                missing,
+                "memory",
+                session_factory=_factory_returning([]),
+            )
+
     def test_disk_evidence_is_mounted_and_exposes_roots(self):
         created: list = []
+        image = _make_image(self)
         view = open_evidence(
-            "/cases/img.E01",
+            image,
             "disk",
             work_dir="/tmp/wd",
             session_factory=_factory_returning(created),
@@ -148,11 +177,26 @@ class OpenEvidenceTest(unittest.TestCase):
         finally:
             os.rmdir(d)
 
+    def test_non_disk_directory_evidence_is_rejected(self):
+        d = tempfile.mkdtemp()
+        try:
+            for etype in ("memory", "pcap", "logs"):
+                with self.subTest(evidence_type=etype):
+                    with self.assertRaises(IsADirectoryError):
+                        open_evidence(
+                            d,
+                            etype,
+                            session_factory=_factory_returning([]),
+                        )
+        finally:
+            os.rmdir(d)
+
     def test_executor_and_work_dir_are_threaded_to_session(self):
         created: list = []
         sentinel_executor = object()
+        image = _make_image(self)
         open_evidence(
-            "/cases/img.E01",
+            image,
             "disk",
             executor=sentinel_executor,
             work_dir="/tmp/custom-wd",
@@ -163,6 +207,7 @@ class OpenEvidenceTest(unittest.TestCase):
 
     def test_mount_failure_degrades_to_raw_only(self):
         created: list = []
+        image = _make_image(self)
 
         def failing_factory(image_path, *, runner, work_dir, executor=None):
             sess = _FakeSession(
@@ -173,7 +218,7 @@ class OpenEvidenceTest(unittest.TestCase):
             return sess
 
         view = open_evidence(
-            "/cases/weird.E01",
+            image,
             "disk",
             work_dir="/tmp/wd",
             session_factory=failing_factory,
@@ -181,13 +226,26 @@ class OpenEvidenceTest(unittest.TestCase):
         # Mounting failed, but Sleuth Kit can still read the raw image, so the
         # view degrades to raw-only rather than aborting the investigation.
         self.assertFalse(view.is_mounted)
-        self.assertEqual(view.raw_path, "/cases/weird.E01")
+        self.assertEqual(view.raw_path, image)
         self.assertIsNone(view.session)
+
+    def test_missing_disk_evidence_raises(self):
+        missing = os.path.join(tempfile.gettempdir(), "agentic-sift-missing.E01")
+        if os.path.exists(missing):
+            os.remove(missing)
+        with self.assertRaises(FileNotFoundError):
+            open_evidence(
+                missing,
+                "disk",
+                work_dir="/tmp/wd",
+                session_factory=_factory_returning([]),
+            )
 
     def test_open_failure_cleans_up_work_dir_it_created(self):
         # When open_evidence creates its own temp work_dir and the mount fails,
         # that directory must be removed rather than leaked.
         created_dir = tempfile.mkdtemp()
+        image = _make_image(self)
 
         def failing_factory(image_path, *, runner, work_dir, executor=None):
             sess = _FakeSession(
@@ -198,7 +256,7 @@ class OpenEvidenceTest(unittest.TestCase):
 
         with patch("evidence.view.tempfile.mkdtemp", return_value=created_dir):
             view = open_evidence(
-                "/cases/x.E01", "disk", session_factory=failing_factory
+                image, "disk", session_factory=failing_factory
             )
         self.assertFalse(view.is_mounted)
         self.assertFalse(os.path.exists(created_dir))
@@ -206,6 +264,7 @@ class OpenEvidenceTest(unittest.TestCase):
     def test_open_failure_keeps_caller_provided_work_dir(self):
         # A caller-supplied work_dir is the caller's to manage — never delete it.
         caller_dir = tempfile.mkdtemp()
+        image = _make_image(self)
 
         def failing_factory(image_path, *, runner, work_dir, executor=None):
             sess = _FakeSession(
@@ -215,7 +274,7 @@ class OpenEvidenceTest(unittest.TestCase):
             return sess
 
         view = open_evidence(
-            "/cases/x.E01",
+            image,
             "disk",
             work_dir=caller_dir,
             session_factory=failing_factory,
@@ -235,8 +294,9 @@ class CloseEvidenceTest(unittest.TestCase):
 
     def test_close_mounted_view_tears_down_and_returns_integrity(self):
         created: list = []
+        image = _make_image(self)
         view = open_evidence(
-            "/cases/img.E01",
+            image,
             "disk",
             work_dir="/tmp/wd",
             session_factory=_factory_returning(created),
@@ -249,8 +309,9 @@ class CloseEvidenceTest(unittest.TestCase):
 
     def test_close_reports_spoliation_instead_of_raising(self):
         created: list = []
+        image = _make_image(self)
         view = open_evidence(
-            "/cases/img.E01",
+            image,
             "disk",
             work_dir="/tmp/wd",
             session_factory=_factory_returning(created),
