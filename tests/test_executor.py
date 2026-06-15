@@ -99,6 +99,54 @@ class TestPathValidation(unittest.TestCase):
         reason = ex.validate_paths(["../../etc/passwd"])
         self.assertIsNotNone(reason)
 
+    def test_relative_path_resolved_against_cwd(self):
+        # A relative path is interpreted by the tool relative to its working
+        # directory, so it is validated against the execution cwd (not the
+        # orchestrator's process CWD).
+        ex = _make_executor()  # evidence roots = ["/cases"]
+        # A plain relative path carrying a separator is now extracted and checked
+        # (previously it slipped through unvalidated).
+        self.assertEqual(
+            ex._extract_path_from_arg("out/timeline.body"), "out/timeline.body"
+        )
+        # A relative path that stays inside cwd is allowed even when cwd is not a
+        # configured evidence root (e.g. a scratch dir).
+        self.assertIsNone(
+            ex.validate_paths(["out/timeline.body"], cwd="/tmp/scratch-xyz")
+        )
+        # A relative path that escapes cwd and lands outside every root is rejected.
+        self.assertIsNotNone(ex.validate_paths(["../../etc/passwd"], cwd="/cases"))
+
+    def test_option_relative_path_resolved_against_cwd(self):
+        # --key=value arguments must validate the VALUE, not the whole option
+        # string. Otherwise --out=../leak appears to stay inside cwd as a fake
+        # filename while the tool interprets ../leak and escapes.
+        ex = _make_executor()
+
+        self.assertEqual(
+            ex._extract_path_from_arg("--out=out/timeline.body"), "out/timeline.body"
+        )
+        self.assertIsNone(
+            ex.validate_paths(["--out=out/timeline.body"], cwd="/tmp/scratch-xyz")
+        )
+
+        self.assertEqual(ex._extract_path_from_arg("--out=../leak"), "../leak")
+        self.assertIsNotNone(
+            ex.validate_paths(["--out=../leak"], cwd="/tmp/scratch-xyz")
+        )
+        self.assertIsNotNone(
+            ex.validate_paths(["--out=../../etc/passwd"], cwd="/tmp/scratch-xyz")
+        )
+
+    def test_option_absolute_paths_still_validated(self):
+        ex = _make_executor()
+
+        self.assertEqual(
+            ex._extract_path_from_arg("--image=/cases/image.E01"), "/cases/image.E01"
+        )
+        self.assertIsNone(ex.validate_paths(["--image=/cases/image.E01"]))
+        self.assertIsNotNone(ex.validate_paths(["--out=/etc/passwd"]))
+
 
 class TestOutputPersistence(unittest.TestCase):
     """Raw stdout/stderr are persisted per execution so a finding can be traced

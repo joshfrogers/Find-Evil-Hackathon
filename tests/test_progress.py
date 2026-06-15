@@ -106,6 +106,74 @@ class ProgressTrackerTest(unittest.TestCase):
         self.assertIn("permission denied", output)
         self.assertIn("Run as root", output)
 
+    def test_update_missing_hypothesis_does_not_raise(self):
+        # A missing id must degrade gracefully (log + ignore), never crash the
+        # orchestrator loop with a KeyError.
+        self.tracker.update_hypothesis("H-nope", "supported")  # must not raise
+
+    def test_status_property(self):
+        self.assertEqual(self.tracker.status, "in_progress")
+        self.tracker.complete()
+        self.assertEqual(self.tracker.status, "completed")
+
+
+class ProgressTrackerConcurrencyTest(unittest.TestCase):
+    """All read-modify-write mutators must hold the lock: a worker's
+    record_failure -> save() -> asdict() must not iterate a list another thread
+    is concurrently appending to (RuntimeError: changed size during iteration)."""
+
+    def test_concurrent_mutation_and_save_is_safe(self):
+        import threading
+
+        tmp = tempfile.mkdtemp()
+        tracker = ProgressTracker(str(Path(tmp) / "progress.json"))
+        tracker.start("inv-conc", "/cases/img.E01", "disk")
+
+        errors: list[BaseException] = []
+        barrier = threading.Barrier(3)
+
+        def add_hypotheses() -> None:
+            barrier.wait()
+            try:
+                for i in range(200):
+                    tracker.add_hypothesis(f"H{i}", f"hypothesis {i}")
+            except BaseException as exc:  # pragma: no cover - failure path
+                errors.append(exc)
+
+        def record_failures() -> None:
+            barrier.wait()
+            try:
+                for i in range(200):
+                    tracker.record_failure(f"tool{i}", ["-x"], "boom", "lesson")
+            except BaseException as exc:  # pragma: no cover - failure path
+                errors.append(exc)
+
+        def record_pivots() -> None:
+            barrier.wait()
+            try:
+                for i in range(200):
+                    tracker.record_pivot("a", "b", f"reason {i}")
+            except BaseException as exc:  # pragma: no cover - failure path
+                errors.append(exc)
+
+        threads = [
+            threading.Thread(target=add_hypotheses),
+            threading.Thread(target=record_failures),
+            threading.Thread(target=record_pivots),
+        ]
+        for t in threads:
+            t.start()
+        for t in threads:
+            t.join()
+
+        self.assertEqual(errors, [], f"concurrent mutation raised: {errors}")
+        self.assertEqual(len(tracker.progress.hypotheses), 200)
+        self.assertEqual(len(tracker.progress.failed_approaches), 200)
+        self.assertEqual(len(tracker.progress.strategy_pivots), 200)
+        # The on-disk snapshot must still be valid JSON after the storm.
+        with open(Path(tmp) / "progress.json") as f:
+            json.load(f)
+
 
 if __name__ == "__main__":
     unittest.main()

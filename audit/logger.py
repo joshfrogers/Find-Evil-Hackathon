@@ -404,6 +404,11 @@ class AuditLogger:
         return len(self._events)
 
     def get_events(self, event_type: Optional[str] = None) -> list[dict[str, Any]]:
+        # Take the same lock _write holds: a reader iterating self._events while a
+        # worker thread appends would otherwise risk a torn read / "list changed
+        # size during iteration". Snapshot under the lock, then filter.
+        with self._lock:
+            snapshot = list(self._events)
         if event_type:
-            return [e for e in self._events if e["event_type"] == event_type]
-        return list(self._events)
+            return [e for e in snapshot if e.get("event_type") == event_type]
+        return snapshot

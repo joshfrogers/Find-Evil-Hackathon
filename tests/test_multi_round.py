@@ -100,12 +100,16 @@ class MultiRoundVerifierTest(unittest.TestCase):
         self.assertEqual(outcome.verdict, "confirmed")
         self.assertEqual(outcome.rounds_taken, 2)
 
-    def test_llm_failure_stops_with_confirmed_default(self):
+    def test_llm_failure_stops_with_unverified_verdict(self):
+        # When the verification LLM is unavailable, the finding must NOT be
+        # reported as "confirmed" (that would present an unverified claim at
+        # parity with a genuinely challenged one). It stops with a distinct
+        # "unverified" verdict the orchestrator keeps but does not mark verified.
         self.challenger.challenge_once.side_effect = [
             _result("confirmed", llm_failed=True)
         ]
         outcome = self._verifier().verify(_finding(), [], "/img")
-        self.assertEqual(outcome.verdict, "confirmed")
+        self.assertEqual(outcome.verdict, "unverified")
         self.assertEqual(outcome.rounds_taken, 1)
 
     def test_time_budget_caps_rounds(self):

@@ -71,11 +71,18 @@ _BIN_DIR_PREFIXES = (
 # ---------------------------------------------------------------------------
 
 
+# Per-command wall-clock cap. dpkg -L / apt-mark can stall (locked dpkg db, slow
+# disk); without a bound a single hung call deadlocks the whole catalog refresh,
+# which iterates over every manually-installed package. 30s is generous for these
+# metadata queries while still guaranteeing forward progress.
+_RUN_TIMEOUT_S = 30
+
+
 def _run(cmd: list[str]) -> str:
     """Run a command and return its stdout as text (empty string on failure).
 
     The single choke-point for subprocess use in this module so tests can stub
-    it. Never raises — a missing binary or non-zero exit yields "".
+    it. Never raises — a missing binary, non-zero exit, or timeout yields "".
     """
     try:
         proc = subprocess.run(
@@ -84,9 +91,10 @@ def _run(cmd: list[str]) -> str:
             stderr=subprocess.DEVNULL,
             text=True,
             check=False,
+            timeout=_RUN_TIMEOUT_S,
         )
         return proc.stdout or ""
-    except (OSError, ValueError):
+    except (OSError, ValueError, subprocess.TimeoutExpired):
         return ""
 
 

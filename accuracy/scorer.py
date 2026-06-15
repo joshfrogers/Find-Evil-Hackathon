@@ -110,13 +110,18 @@ def score_report(
     audit.jsonl event list; ``baseline`` is from ``load_baseline``.
     """
     findings = list(report.get("findings", []))
-    matches, used_baseline_ids = _match_findings(findings, baseline.findings)
+    matches, used_baseline_ids, matched_indices = _match_findings(
+        findings, baseline.findings
+    )
 
-    matched_finding_ids = {m.finding_id for m in matches}
+    # Compute false positives by POSITION, not by finding_id: ids default to ""
+    # and can collide, so a set keyed on finding_id would let a real false
+    # positive that shares a (blank/duplicate) id with a matched finding escape
+    # the extra list and silently inflate precision.
     extra = [
-        f.get("finding_id", "")
-        for f in findings
-        if f.get("finding_id", "") not in matched_finding_ids
+        findings[i].get("finding_id", "")
+        for i in range(len(findings))
+        if i not in matched_indices
     ]
     missed = [b.id for b in baseline.required_findings if b.id not in used_baseline_ids]
 
@@ -149,17 +154,22 @@ def score_report(
 
 def _match_findings(
     findings: list[dict[str, Any]], baseline_findings: list[BaselineFinding]
-) -> tuple[list[MatchedFinding], set[str]]:
+) -> tuple[list[MatchedFinding], set[str], set[int]]:
     """Match each agent finding to at most one baseline item.
 
     Greedy first-match-wins across two passes: exact IOC first (high
     precision), then description fuzzy match (handles paraphrases without
     IOCs). A baseline item, once matched, cannot match a second finding.
+
+    Returns ``(matches, used_baseline_ids, matched_finding_indices)``. The index
+    set lets the caller compute false positives positionally, so blank/duplicate
+    ``finding_id`` values can't corrupt the extra accounting.
     """
     matches: list[MatchedFinding] = []
     used: set[str] = set()
+    matched_indices: set[int] = set()
 
-    for f in findings:
+    for i, f in enumerate(findings):
         m = _try_ioc_match(f, baseline_findings, used)
         if m is None:
             m = _try_path_ioc_match(f, baseline_findings, used)
@@ -168,8 +178,9 @@ def _match_findings(
         if m is not None:
             matches.append(m)
             used.add(m.baseline_id)
+            matched_indices.add(i)
 
-    return matches, used
+    return matches, used, matched_indices
 
 
 def _try_ioc_match(

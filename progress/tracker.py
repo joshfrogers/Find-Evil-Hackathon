@@ -11,6 +11,7 @@ requirement #8 (iteration-over-iteration traces).
 from __future__ import annotations
 
 import json
+import logging
 import os
 import tempfile
 import threading
@@ -18,6 +19,8 @@ import time
 from dataclasses import asdict, dataclass, field
 from pathlib import Path
 from typing import Optional
+
+logger = logging.getLogger(__name__)
 
 
 @dataclass
@@ -176,8 +179,13 @@ class ProgressTracker:
 
     def add_hypothesis(self, hypothesis_id: str, description: str) -> Hypothesis:
         h = Hypothesis(id=hypothesis_id, description=description)
-        self.progress.hypotheses.append(h)
-        self.save()
+        # All read-modify-write mutators take the lock: sub-agents run
+        # concurrently and a worker's record_failure -> save() -> asdict() can
+        # otherwise iterate a list this thread is appending to ("changed size
+        # during iteration"). RLock so the nested save() re-enters cleanly.
+        with self._lock:
+            self.progress.hypotheses.append(h)
+            self.save()
         return h
 
     def update_hypothesis(
@@ -187,18 +195,23 @@ class ProgressTracker:
         evidence_for: Optional[list[str]] = None,
         evidence_against: Optional[list[str]] = None,
     ) -> None:
-        for h in self.progress.hypotheses:
-            if h.id == hypothesis_id:
-                h.status = status
-                if evidence_for:
-                    h.evidence_for.extend(evidence_for)
-                if evidence_against:
-                    h.evidence_against.extend(evidence_against)
-                if status in ("supported", "refuted", "inconclusive"):
-                    h.resolved_at = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
-                self.save()
-                return
-        raise KeyError(f"Hypothesis not found: {hypothesis_id}")
+        with self._lock:
+            for h in self.progress.hypotheses:
+                if h.id == hypothesis_id:
+                    h.status = status
+                    if evidence_for:
+                        h.evidence_for.extend(evidence_for)
+                    if evidence_against:
+                        h.evidence_against.extend(evidence_against)
+                    if status in ("supported", "refuted", "inconclusive"):
+                        h.resolved_at = time.strftime(
+                            "%Y-%m-%dT%H:%M:%SZ", time.gmtime()
+                        )
+                    self.save()
+                    return
+        # A missing id must not crash the orchestrator loop; log and ignore so a
+        # diverged hypothesis list degrades gracefully rather than aborting a run.
+        logger.warning("update_hypothesis: hypothesis not found: %s", hypothesis_id)
 
     def record_failure(
         self,
@@ -214,42 +227,52 @@ class ProgressTracker:
             self.save()
 
     def record_pivot(self, from_strategy: str, to_strategy: str, reason: str) -> None:
-        self.progress.strategy_pivots.append(
-            StrategyPivot(
-                from_strategy=from_strategy, to_strategy=to_strategy, reason=reason
+        with self._lock:
+            self.progress.strategy_pivots.append(
+                StrategyPivot(
+                    from_strategy=from_strategy, to_strategy=to_strategy, reason=reason
+                )
             )
-        )
-        self.save()
+            self.save()
 
     def add_finding_summary(self, summary: str) -> None:
-        self.progress.findings_summary.append(summary)
-        self.save()
+        with self._lock:
+            self.progress.findings_summary.append(summary)
+            self.save()
 
     def increment_iteration(self) -> bool:
         """Increment iteration counter. Returns False if limit reached."""
-        self.progress.iteration += 1
-        if self.progress.iteration >= self.progress.max_iterations:
-            self.progress.status = "iteration_limit"
+        with self._lock:
+            self.progress.iteration += 1
+            if self.progress.iteration >= self.progress.max_iterations:
+                self.progress.status = "iteration_limit"
+                self.save()
+                return False
             self.save()
-            return False
-        self.save()
-        return True
+            return True
 
     def complete(self) -> None:
-        self.progress.status = "completed"
-        self.save()
+        with self._lock:
+            self.progress.status = "completed"
+            self.save()
 
     def timeout(self) -> None:
-        self.progress.status = "timed_out"
-        self.save()
+        with self._lock:
+            self.progress.status = "timed_out"
+            self.save()
 
     def error(self) -> None:
-        self.progress.status = "errored"
-        self.save()
+        with self._lock:
+            self.progress.status = "errored"
+            self.save()
 
     @property
     def iteration(self) -> int:
         return self.progress.iteration
+
+    @property
+    def status(self) -> str:
+        return self.progress.status
 
     @property
     def can_continue(self) -> bool:

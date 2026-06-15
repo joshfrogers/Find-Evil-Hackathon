@@ -811,6 +811,27 @@ class MultiRoundVerifyTest(unittest.TestCase):
         # A refuted weak finding is dropped instead of polluting the report.
         self.assertNotIn(f, self.inv.accepted_findings)
 
+    @patch("orchestrator.investigator.MultiRoundVerifier")
+    def test_unverified_outcome_keeps_finding_without_marking_verified(
+        self, mock_mrv_cls
+    ):
+        # When the verifier LLM is unavailable the outcome is "unverified": the
+        # finding is KEPT (not dropped) but must NOT be marked verified or have
+        # its confidence recalibrated — otherwise an unverified claim would be
+        # presented at parity with a genuinely challenged one.
+        from verification.multi_round import VerificationOutcome
+
+        mock_mrv_cls.return_value.verify.return_value = VerificationOutcome(
+            "unverified", 1, [], []
+        )
+        f = self._finding("F-1", "disk_agent", conf="confirmed", links=["e1"])
+        self.inv._verify_round([f], {}, "/img")
+
+        self.assertFalse(f.verified)
+        self.assertEqual(f.confidence, "confirmed")  # unchanged, not recalibrated
+        self.assertIn(f, self.inv.accepted_findings)  # kept, not dropped
+        self.assertEqual(len(self.inv.audit.get_events("self_correction")), 0)
+
 
 class SemanticCorrelationWiringTest(unittest.TestCase):
     """The orchestrator runs semantic correlation over accepted findings and
@@ -1280,6 +1301,41 @@ class ReportOnErrorTest(unittest.TestCase):
         # A finished investigation that only failed in post-processing stays
         # "completed" rather than being flipped to "errored".
         self.assertEqual(report["status"], "completed")
+
+    def test_iteration_limit_status_is_not_overwritten_by_complete(self):
+        # A run that exhausts its round budget ends with status "iteration_limit"
+        # (set by increment_iteration). The post-loop complete() must NOT clobber
+        # that back to "completed" — otherwise a cut-short run is mislabeled and
+        # the report's triage-only warning never fires.
+        tmp = tempfile.mkdtemp()
+        executor = MagicMock(spec=LocalExecutor)
+
+        def opener(path, etype, **kwargs):
+            return EvidenceView(raw_path=path)
+
+        inv = Investigator(
+            executor, [], str(Path(tmp) / "inv"), max_rounds=1, evidence_opener=opener
+        )
+        inv._run_triage_all = MagicMock(return_value="triage output")
+        inv._characterize_systems = MagicMock(return_value=([], {}))
+
+        def _form(*_a, **_k):
+            inv.progress.add_hypothesis("H1", "a hypothesis worth one round")
+
+        inv._form_hypotheses = MagicMock(side_effect=_form)
+        # The round dispatches but produces nothing; the hypothesis stays open, so
+        # the loop would continue — except the 1-round budget stops it.
+        inv._dispatch_sub_agents = MagicMock(return_value=([], {}))
+        inv._verify_round = MagicMock()
+        inv._evaluate_hypotheses = MagicMock()
+        inv._spawn_contested_followups = MagicMock(return_value=0)
+        inv._rehypothesize = MagicMock()
+
+        inv.investigate("/cases/img.E01", "disk")
+
+        report = json.loads((Path(tmp) / "inv" / "report.json").read_text())
+        self.assertEqual(report["status"], "iteration_limit")
+        self.assertTrue(report["findings_unverified"])
 
     def test_report_write_failure_is_surfaced_not_propagated(self):
         # The final report-write step is itself wrapped: if writing the report to
